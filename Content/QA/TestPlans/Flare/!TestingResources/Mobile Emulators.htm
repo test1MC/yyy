@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2100" MadCap:lastWidth="852" MadCap:ignoredWords="QA" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h1>Mobile Emulators</h1>
+        <p>Installation Location:	<a href="file://dc2/QA/Mobile Emulators">\\DC2\QA\Testing Tools\Mobile Emulators</a></p>
+        <h2>iPhone</h2>
+        <p>Network access is normal. You can use UNC paths to access network locations.</p>
+        <h3>How to install:</h3>
+        <ul>
+            <li>Install iPhone SDK</li>
+        </ul>
+        <h3>How to use:</h3>
+        <ul>
+            <li>Open “iPhone Simulator” from the dock.</li>
+            <li>Open Safari browser.</li>
+            <li>Navigate to the Help system</li>
+        </ul>
+        <p>&#160;</p>
+        <h2>Windows Mobile</h2>
+        <p>Emulator images are based on Microsoft Virtual PC.</p>
+        <p>Network access is normal. You can use UNC paths to access network locations.</p>
+        <p>State can be saved and cleared.</p>
+        <h3>How to install:</h3>
+        <ul>
+            <li>Install Virtual PC.</li>
+            <li>Install Windows Mobile SDK.</li>
+            <li>Install additional emulator images for V6.1, V6.5, and eventually V7.</li>
+        </ul>
+        <h3>How to use:</h3>
+        <ul>
+            <li>Launch Device Emulator Manager<ul><li>C:\Program Files\Microsoft Device Emulator\1.0\dvcemumanager.exe</li></ul></li>
+            <li>Right-click the emulator image you want to use and select “Connect”.</li>
+            <li>Set up network access (this can be done once and then saved to the state of the image):<ul><li>File | Configure... | Network</li><li>Check “Enable NE2000 PCMCIA network adapter and bind to:”</li><li>Click “OK”</li><li>Start | Settings | Connections | Advanced | Select Networks</li><li>In the first drop-down, select “My Work Network”.</li><li>Click “Edit…”</li><li>Click “Proxy Settings”</li><li>Check “This network connects to the Internet”</li><li>Click “OK”, “OK”, “OK”</li><li>At this point, you will probably want to save the state of the emulator image.<ul><li>Close the emulator window.</li><li>When you’re prompted to save the state, select “Yes”.</li></ul></li></ul></li>
+            <li>Open the browser.</li>
+            <li>Navigate to the Help system.</li>
+            <li>To clear the save state, launch Device Emulator Manager, right-click the emulator image and select “Clear Save State”.</li>
+        </ul>
+        <h2>Palm webOS</h2>
+        <p>Emulator images are based on Sun Virtual Box.</p>
+        <p>Network access maps http://10.0.2.2 to http://localhost.</p>
+        <p>Multiple states can be saved, reverted to, and cleared.</p>
+        <h3>How to install:</h3>
+        <ul>
+            <li>Install Virtual Box. Must be version 3.0.12.</li>
+            <li>Install Palm SDK.</li>
+        </ul>
+        <h3>How to use:</h3>
+        <ul>
+            <li>Launch Palm Emulator<ul><li>Start | Programs | Palm | SDK | Palm Emulator</li></ul></li>
+            <li>Select the emulator you need to test (different resolutions) and click “Start Emulator”.</li>
+            <li>Open the browser.</li>
+            <li>Navigate to the Help system.</li>
+        </ul>
+        <p>&#160;</p>
+        <h2>BlackBerry</h2>
+        <p>Network access is normal. You can use UNC paths to access network locations.</p>
+        <h3>How to install:</h3>
+        <ul>
+            <li>Install JDK.</li>
+            <li>Install Email and MDS Services Simulator.</li>
+            <li>Install each phone simulator that you need to test.</li>
+        </ul>
+        <h3>How to use:</h3>
+        <ul>
+            <li>Launch  Email and MDS Services Simulator<ul><li>Start | Programs | Research In Motion | BlackBerry Email and MDS Services Simulators 4.1.4 | MDS</li></ul></li>
+            <li>Launch the particular phone simulator that you need to test.</li>
+        </ul>
+        <p>&#160;</p>
+        <h2>Android</h2>
+        <p>Network access maps http://10.0.2.2 to http://localhost</p>
+        <p>State can be saved and cleared.</p>
+        <h3>How to install:</h3>
+        <ul>
+            <li>Unzip Android SDK.</li>
+            <li>Launch “SDK Setup.exe”.</li>
+            <li>There may be an error regarding “Failed to fetch URL” due to “HTTPS SSL error”. If so follow these steps:<ul><li>Click “Close” on the error message.</li><li>When prompted to “Choose Packages to Install”, click “Cancel”.</li><li>Select “Settings”.</li><li>Enable “Force https://... Sources to be fetched using http://...”.</li><li>Click “Save &amp; Apply”.</li><li>Select “Installed Packages”.</li><li>Click “Update All…”.</li></ul></li>
+            <li>When prompted to “Choose Packages to Install”, select all SDK Platforms (1.1, 1.5, 1.6, 2.0).</li>
+            <li>Select “Virtual Devices”.</li>
+            <li>Click “New…”</li>
+            <li>Enter a name for the virtual device.</li>
+            <li>Select the target in the drop-down (Android 2.0).</li>
+            <li>Click “Create AVD”.</li>
+            <li>You should get a confirmation that it was successfully created. Click “OK”.</li>
+        </ul>
+        <h3>How to use:</h3>
+        <ul>
+            <li>Launch  “SDK Setup.exe” from the Android SDK folder.</li>
+            <li>When prompted to “Choose Packages to Install”, click “Cancel”.</li>
+            <li>Select “Virtual Devices”.</li>
+            <li>Select the AVD you created previously and click “Start…”</li>
+            <li>	In the Launch Options dialog, there is an option to wipe user data.</li>
+            <li>Click “Launch”</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

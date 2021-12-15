@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="3798" MadCap:lastWidth="2640" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <p>
+            <head>
+            </head>
+        </p>
+        <body>
+            <h2>Annotations - Editing                                       </h2>
+            <h4>Opening the UI</h4>
+            <ul class="checkbox">
+                <li>!Review | Insert Annotation</li>
+                <li>Turn on Track Changes, highlight some text and right-click that text | insert annotation</li>
+            </ul>
+            <h4>Context Menu (removed in Flare v.7)</h4>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/Annotation---Context.png" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <p style="font-weight: bold;">Evoking the Context Menu</p>
+                <ul class="checkbox">
+                    <li style="font-weight: normal;">There should be no circumstance under which you are able to evoke this context menu or see an annotation block bar element. Make you cannot access the menu or cause the block bar to appear in the following scenarios:<ul class="checkbox"><li>Right-clicking the annotation box (when you have show changes on) should not evoke the context menu</li><li style="font-weight: normal;">Multi-clicking the element should not allow you to select the annotation tag and evoke this menu</li><li style="font-weight: normal;">Cut/Copy &amp; Pasting should not duplicate this element</li><li style="font-weight: normal;">Selecting the element should not cause a corresponding caret tag to appear</li></ul></li>
+                </ul>
+            </div>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+            <p>Verify that Togglers are <u>removed</u> or <u>unbound</u> from Outputs depending on the Condition tag settings.</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+            <h4>Code</h4>
+            <p class="bold">Simple annotation:</p><pre xml:space="preserve">&lt;p&gt;Delete this text and replace it with your own &lt;MadCap:annotation MadCap:createDate="2009-09-01T15:08:12.9155388-07:00" MadCap:creator="mferguson@MADCAP" MadCap:initials="MF" MadCap:comment="annotation content" MadCap:editDate="2009-09-01T15:35:35.1696388-07:00" MadCap:editor="mferguson@MADCAP"&gt;content&lt;/MadCap:annotation&gt;.&lt;/p&gt;</pre>
+            <p>&#160;</p>
+        </body>
+    </body>
+</html>

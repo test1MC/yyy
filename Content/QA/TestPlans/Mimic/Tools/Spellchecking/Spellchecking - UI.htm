@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3246" MadCap:lastWidth="732" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>Spellchecking - UI  </h2>
+        <h3>Opening the Spell Check pane</h3>
+        <p>!Tools |&#160;Spell Check Window</p>
+        <p>Press &lt;F7&gt; on the keyboard</p>
+        <h3>Spell Check pane - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/SpellCheckPane.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <p class="bold">Misspelled Word</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(misspelled word box): </span>Displays the word that Flare considers misspelled. The word is also highlighted in the topic.</li>
+            <li><span class="bold">Find Next: </span>Click this button to initiate the spell check search. This button is replaced by the <span class="bold">Skip</span> button after user clicks it.</li>
+            <li><span class="bold">Skip: </span>Temporarily ignores the spelling of the word (this occurrence only) and moves on to the next misspelled word. If other occurrences of the word are found in the topic, they will be flagged as questionable spellings.</li>
+            <li><span class="bold">Add To Dictionary: </span>Adds the word to the project dictionary so that it is not flagged as a questionable spelling in the future. Flare then moves on to the next misspelled word.</li>
+            <li><span class="bold">Ignore: </span>Ignores the spelling of the word and moves on to the next misspelled word. Flare also adds the spelling of this word to the Ignored Words dialog (for this topic only). This means that if other occurrences of the word are found in the topic, they will not be flagged as questionable spellings.</li>
+            <li><span class="bold">Ignore in All Files: </span>Ignores the spelling of the word and moves on to the next misspelled word. Flare also adds the spelling of this word to the Ignored Words dialog (for all topics included in the search). This means that if other occurrences of the word are found in any other topics included in the search, they will not be flagged as questionable spellings.</li>
+            <li><span class="bold">Start Spell Check: </span>Click the down arrow and select one of the following:<ul style="list-style-type: circle;"><li><span class="bold">(current document): </span>Flare checks the spelling in the active topic only.</li><li><span class="bold">(whole project): </span>Flare checks the spelling in every topic in the project.</li><li><span class="bold">(all open documents): </span>Flare checks the spelling in all topics currently open in the interface.</li><li><span class="bold">(documents in same folder): </span>Flare checks the spelling in all topics located in the same folder as the current one in the Content Explorer.</li></ul></li>
+            <li><span class="bold">[ &gt;&gt; ] : </span>Skips searching in the current topic and moves on to the next file.</li>
+        </ul>
+        <p class="bold">Suggestions:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(suggestion box):&#160;</span>Displays a suggested word to replace the misspelled word. Additional suggestions are listed below. You can use the suggested term, type user’s own corrected word in this field, or select a word from the list (which is then automatically added to the Suggestions field).</li>
+            <li><span class="bold">Change: </span>Changes only that occurrence of the misspelled word to the word in the suggestion box..</li>
+            <li><span class="bold">Change in All Files: </span>Changes that occurrence of the misspelled word, as well as any other occurrences of it in the rest of the project.</li>
+            <li><span class="bold">(further suggestions box):&#160;</span>Lists additional suggestions. Clicking any suggestion in this lower box will put that suggestion in the upper suggestion box where it can be used to replace the misspelled word.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Setting the Language</h3>
+        <h4>Setting the language of your project</h4>
+        <p>Set the project/movie language in the by viewing <span class="UI">Project Properties/Movie Properties</span> (Language tab). Mimic will use this language when spell checking your project. Test that Spell Check works correctly with different project/movie languages set.</p>
+        <h3>Select Language  - UI Test Cases</h3>
+        <p class="bold">To open the dialog:</p>
+        <ul>
+            <li>Click on the Edit File Properties button<img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Movie/UI--Toolbar File Properties.png" />in the Frame Editor | Language Tab</li>
+            <li>!File | Properties | Language Tab</li>
+            <li>!Movie | Movie Properties | Language Tab</li>
+        </ul>
+        <ul>
+            <li>Click on the Project Properties button<img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Project/UI--Icon Project Properties.png" />in the Standard Toolbar | Language Tab</li>
+            <li>Click on the Project Properties button<img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Project/UI--Icon Project Properties.png" />on the local toolbar of the Movies Pane | Language Tab</li>
+            <li>!Project | Project Properties | Language Tab</li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Movie/UI--Language Movie Properties.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Language list):&#160;</span>Displays a list of all languages that can be used to tag content.</li>
+            <li><span class="bold">Hide unsupported languages:&#160;</span>Reduces the list of visible languages to those which have spell check support.</li>
+        </ul>
+        <h3>Ignored Words - UI&#160;Test Cases</h3>
+        <p class="bold">Opening the Ignored Words dialog:</p>
+        <p>Since ignored words are per topic, first open the topic that you want to view the Ignored Words list for. </p>
+        <p class="bold">!Tools |&#160;Ignored Words</p>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/UI---IgnoredWords.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Ignored Words):&#160;</span>To add a word to the list, simply click inside the section and type one word per line. (Words are also added to this list automatically when user clicks Ignore or Ignore All when performing a manual spell check or when right-clicking .)</li>
+        </ul>
+    </body>
+</html>

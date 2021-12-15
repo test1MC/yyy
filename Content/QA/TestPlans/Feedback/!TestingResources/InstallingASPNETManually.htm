@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="320" MadCap:lastWidth="1073">
+    <head>
+    </head>
+    <body>
+        <h1>Installing ASP.NET Manually</h1>
+        <p>Released versions of Feedback Server Admin should provide functionality in the <MadCap:xref href="../Feedback Server Admin General/Install SQL Database/Install SQL Database - UI.htm#Required" class="TitleOnly">Required Windows Components dialog</MadCap:xref> to install the necessary versions of ASP.NET&#160;that are required for Feedback/Pulse to function properly. However, if new features eventually require newer versions of ASP.NET to be installed, you may find need to register it manually during development (until that version of ASP.NET&#160;is ultimately included). </p>
+        <p>&#160;</p>
+        <p>It is also worth noting that there is a bug which causes the <MadCap:xref href="../Feedback Server Admin General/Install SQL Database/Install SQL Database - UI.htm#Required" class="TitleOnly">Required Windows Components dialog</MadCap:xref> to incorrectly identify that ASP.NET&#160;is installed which it is in fact not. The only workaround for this is to install ASP.NET&#160;manually.</p>
+        <p>&#160;</p>
+        <p>To install ASP.NET&#160;manually:</p>
+        <ol>
+            <li>Launch the Command Prompt (you may need to launch it in Administrator mode)</li>
+            <li>Navigate to C:\Windows\Microsoft.NET\Framework\</li>
+            <li>
+                <p>Navigate down one more directory for the version of ASP.NET&#160;you want to install:</p>
+                <p>Example:&#160;C:\Windows\Microsoft.NET\Framework\v4.0.30319</p>
+            </li>
+            <li>Type&#160;"aspnet_regiis -i" and press Enter</li>
+            <li>You should see two prompts indicating Start and Finish of the install</li>
+        </ol>
+    </body>
+</html>

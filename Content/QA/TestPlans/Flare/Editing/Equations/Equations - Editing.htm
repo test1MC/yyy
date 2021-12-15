@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6035" MadCap:lastWidth="815" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Equations - Editing</h2>
+        <h3>Equation menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Equations/Equation--EditingRightClick.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp">
+        </MadCap:snippetBlock>
+        <h3>General Editing</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Pasting another equation over the existing one should replace the selected equation – Verify that it renders and display in the block bar correctly.</li>
+                <li>Pasting another element or text over a selected equation will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Inserting another element or typing over a selected equation will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Test lots of different characters including foreign characters and make sure they all render correctly</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <p>&#160;</p>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p><b>No Class:</b>
+        </p>
+        <p>&lt;MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML"&gt;</p>
+        <p>&lt;math&gt;</p>
+        <p>&lt;mrow&gt;</p>
+        <p>&lt;mn&gt;2&lt;/mn&gt;</p>
+        <p>&lt;mo&gt;+&lt;/mo&gt;</p>
+        <p>&lt;mn&gt;2&lt;/mn&gt;</p>
+        <p>&lt;/mrow&gt;</p>
+        <p>&lt;/math&gt;</p>
+        <p>&lt;/MadCap:equation&gt;</p>
+        <p>&#160;</p>
+        <p><b>With Class:</b>
+        </p>
+        <p>&lt;MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" class="equation"&gt;</p>
+        <p>&lt;math&gt;</p>
+        <p>&lt;mrow&gt;</p>
+        <p>&lt;mn&gt;2&lt;/mn&gt;</p>
+        <p>&lt;mo&gt;+&lt;/mo&gt;</p>
+        <p>&lt;mn&gt;2&lt;/mn&gt;</p>
+        <p>&lt;/mrow&gt;</p>
+        <p>&lt;/math&gt;</p>
+        <p>&lt;/MadCap:equation&gt;</p>
+    </body>
+</html>

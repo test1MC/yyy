@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="17191" MadCap:lastWidth="1212" MadCap:conditionTagExpression="include[Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.TableStyle] exclude[Default.UITestsDialogs or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Table Styles - Editor</h2>
+        <h3>Opening a Table Style File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ContentExplorer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--FileList.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <p class="bold">The Table Style file associated with a particular table:</p>
+        <p>Open a topic, masterpage or snippet which contains a table associated with a table style:</p>
+        <ul class="checkbox">
+            <li><span class="UI">XML Editor</span>:<ul class="checkbox"><li>Right-click the "table" block bar and select <span class="MenuItem">Table Style |&#160;Edit Style</span></li><li>In the Toolstrip interface, place the insertion point inside the table and select <span class="MenuItem">!Table |&#160;Table Style |&#160;Edit Style</span></li><li>In the Ribbon interface, place the insertion point inside the table and select <span class="RibbonItem">!Table |&#160;Edit Table Style</span></li></ul></li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <h3>Table Style Editor - UI Test Cases</h3>
+        <h4>Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--LocalToolbar.png" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">Medium (Medium:([current medium])): </span>Lets you select the medium of the table stylesheet that you want to edit. The list of available mediums should include any medium added to any stylesheet in the project.<ul class="checkbox"><li><span class="bold">Apply Style… (Apply Style…): </span>Invokes the <span class="UI">Apply Table Style</span> dialog. <MadCap:xref href="Table Styles - Applying.htm" target="" title="" alt="">See Table Styles - Applying</MadCap:xref>. </li></ul></li>
+        </ul>
+        <h4>General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--GeneralTabadv.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Table Margins: </span>Lets you specify the settings for the table margins (the amount of space around the table).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left margin.</li><li><span class="bold">Right: </span>Sets the right margin.</li><li><span class="bold">Top: </span>Sets the top margin.</li><li><span class="bold">Bottom: </span>Sets the bottom margin.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the table margin fields.</li></ul></li>
+            <li><span class="bold">Outer Borders:
+</span>Lets you specify the settings for the table border in the style sheet.          <ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left border style.</li><li><span class="bold">Right: </span>Sets the right border style.</li><li><span class="bold">Top: </span>Sets the top border style.</li><li><span class="bold">Bottom: </span>Sets the bottom border style.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the border fields.</li></ul></li>
+            <li><span class="bold">Background: </span>Use this section to set general background properties for the entire table style.<ul style="list-style-type: square;"><li><span class="bold">Color: </span>Select a color to be used in the background of the table.</li><li><span class="bold">Image: </span>Select an image to be used in the background of the table.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">: </span>Invokes the <span class="UI">Insert Picture</span> dialog which lets you select any image already included in the project or lets you browse for an external image (which will then be added to the project).</li><li><span class="bold">Repeat: </span>If a background image is selected above, used this option to set the repeat behavior of the background image.</li><li><span class="bold">X: </span>If a background image is selected above, used this option to set the horizontal starting point of the upper-left corner of the image.</li><li><span class="bold">Y: </span>If a background image is selected above, used this option to set the vertical starting point of the upper-left corner of the image.</li></ul></li>
+            <li><b>Border Radius:</b> Used to curve the corners of a table<ul><li><span class="bold">Top-Left: </span>Sets the top-left border radius style.</li><li><span class="bold">Top-Right: </span>Sets the top-right border radius style.</li><li><span class="bold">Bottom-right: </span>Sets the bottom-right border radius style.</li><li><span class="bold">Bottom-left: </span>Sets the bottom-left border radius style.</li></ul></li>
+            <li><span class="bold">Cell Border Collapse: </span>Select whether you want to collapse the cell borders in the style sheet.<ul style="list-style-type: square;"><li><span class="bold">Collapse cell borders: </span>If you collapse the cell borders, the row and cell borders of a table are joined in a single border.</li><li><span class="bold">Do not collapse cell borders: </span>If you do not collapse the cell borders, the row and cell borders of a table are detached.</li></ul></li>
+            <li><span class="bold">Cell Border Spacing: </span>Use this area to increase or decrease the amount of spacing for a cell border.<ul style="list-style-type: square;"><li><span class="bold">Vertical: </span>Set vertical spacing for a cell border.</li><li><span class="bold">Horizontal: </span>Set horizontal spacing for a cell border.</li></ul></li>
+            <li><b>Advanced:</b>
+                <ul>
+                    <li><b>Hide bottom ruling when table crosses a page break:</b>
+                    </li>
+                </ul>
+                <ul class="checkbox">
+                    <li><b>True:</b> Will hide the bottom border when the table continues on another page</li>
+                    <li><b>False:</b> Default setting</li>
+                </ul>
+                <ul>
+                    <li><b>Overflow:</b> Determines what happens if the content overflows the table.</li>
+                </ul>
+                <ul class="checkbox">
+                    <li><b>Visible:</b> The overflow is not clipped. It renders outside the table. This is the default state.</li>
+                    <li style="font-style: normal;font-weight: normal;"><b>Hidden:</b> The overflow is clipped and the rest of the content will be invisible. (<span style="color: #0000ff;">**This must be set if using border-radius**</span>)</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Scroll:</b> The overflow is clipped, but a scroll-bar is added to see the rest of the content.</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Auto:</b> If overflow is clipped, a scroll-bar shoud be added to see the rest of the content.</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Inherit:</b> The value of the overflow property is inherited from the parent element.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li><span class="bold">Cell Padding: </span>Lets you specify the settings for the cell padding (the amount of space between the edge of the table cell and the content in the cell).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left padding.</li><li><span class="bold">Right: </span>Sets the right padding.</li><li><span class="bold">Top: </span>Sets the top padding.</li><li><span class="bold">Bottom: </span>Sets the bottom padding.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the cell padding fields.</li></ul></li>
+            <li><b>Print Options:</b> Opens the Breaks dialog.</li>
+        </ul>
+        <h4>Breaks Dialog (from General tab)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--Breaks--TableStyleEditorGeneralTab.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/Breaks.flsnp" />
+        <h4>Rows Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--RowsTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Patterns grid: </span>Lets you create patterns for the table style</p>
+                <p class="bold">Vertical Toolbar (tooltips in parentheses)</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" /> <span class="bold">(New item):</span>Creates a new pattern.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> <span class="bold">(Delete): </span>Deletes the selected patterns.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png" /> <span class="bold">(Move up): </span>Moves the selected patterns up in the sequence.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png" /> <span class="bold">(Move down): </span>Moves the selected patterns down in the sequence.</li>
+                </ul>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Set the pattern name.</li>
+                    <li><span class="bold">Type: </span>Set the pattern type. </li>
+                    <li><span class="bold">Repeat: </span>Set the number of times the pattern will repeat in the table style before proceeding to the next pattern.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Row Style: </span>Lets you set properties for the pattern selected above.<ul style="list-style-type: square;"><li><span class="bold">Height: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the row height.</li><li><span class="bold">Font: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the text.</li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--FontWeight.png" /></li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--Font.png" style="width: 221px;height: 211px;" /></li><li><span class="bold">Ruler: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a ruler between the rows or columns within the pattern. The "Repeat"&#160;value of the pattern must be 2 or greater for this option to be enabled.</li><li><span class="bold">Separator: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a separator between the final row or column in the pattern and the first row or column in the next pattern.</li><li><span class="bold">Alignment: </span>Select an option for aligning text in the row or column horizontally.</li><li><span class="bold">Vertical Alignment: </span>Select an option for aligning text in the row or column vertically.</li><li><span class="bold">Background: </span>Select a pattern from the section above. Then use this area to set background properties for the table rows for that pattern.<ul style="list-style-type: square;"><li><span class="bold">Color: </span>Select a pattern from the section above. Then select a color to be used in the background of the table rows for that pattern.</li><li><span class="bold">Image: </span>Select a pattern from the section above. Then select an image to be used in the background of the table rows for that pattern.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">: </span>Invokes the <span class="UI">Insert Picture</span> dialog which lets you select any image already included in the project or lets you browse for an external image (which will then be added to the project).</li><li><span class="bold">Repeat: </span>If a background image is selected above, used this option to set the repeat behavior of the background image.</li><li><span class="bold">X: </span>If a background image is selected above, used this option to set the horizontal starting point of the upper-left corner of the image.</li><li><span class="bold">Y: </span>If a background image is selected above, used this option to set the vertical starting point of the upper-left corner of the image.</li></ul></li></ul></li>
+            <li><span class="bold">Cell Padding: </span>Lets you specify the settings for the cell padding (the amount of space between the edge of the table cell and the content in the cell).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left padding.</li><li><span class="bold">Right: </span>Sets the right padding.</li><li><span class="bold">Top: </span>Sets the top padding.</li><li><span class="bold">Bottom: </span>Sets the bottom padding.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the cell padding fields.</li></ul></li>
+            <li><b>Print Options Button:</b> Invokes the <span class="UI">Breaks</span> dialog. Break styles set in the General tab apply to the whole table. Break styles set from the Rows tab apply to the selected Row Styles. The <span class="UI">Breaks</span> dialog invoked from the General tab will include the Widows &amp;&#160;Orphans section while the <span class="UI">Breaks</span> dialog invoked from the Rows tab will not. (same as above but setting Break styles here only apply to the selected row pattern)</li>
+        </ul>
+        <h4>Breaks Dialog (from Rows tab)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--Breaks--TableStyleEditorRowsTab.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/Breaks.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Columns Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--ColumnsTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Patterns grid: </span>Lets you create patterns for the table style</p>
+                <p class="bold">Vertical Toolbar (tooltips in parentheses)</p>
+                <ul class="checkbox">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png">
+                        </img> <span class="bold">(New item):</span>Creates a new pattern.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png">
+                        </img> <span class="bold">(Delete): </span>Deletes the selected patterns.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png">
+                        </img> <span class="bold">(Move up): </span>Moves the selected patterns up in the sequence.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png">
+                        </img> <span class="bold">(Move down): </span>Moves the selected patterns down in the sequence.</li>
+                </ul>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">Name: </span>Set the pattern name.</li>
+                    <li><span class="bold">Type: </span>Set the pattern type. </li>
+                    <li><span class="bold">Repeat: </span>Set the number of times the pattern will repeat in the table style before proceeding to the next pattern.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Column Style: </span>Lets you set properties for the pattern selected above.<ul style="list-style-type: square;"><li><span class="bold">Width: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the column width.</li><li><span class="bold">Font: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the text.</li><li><p><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--FontWeight.png" /></p><p><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--Font.png" style="width: 221px;height: 211px;" /></p></li><li><span class="bold">Ruler: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a ruler between the rows or columns within the pattern. The "Repeat"&#160;value of the pattern must be 2 or greater for this option to be enabled.</li><li><span class="bold">Separator: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a separator between the final row or column in the pattern and the first row or column in the next pattern.</li><li><span class="bold">Alignment: </span>Select an option for aligning text in the row or column horizontally.</li><li><span class="bold">Vertical Alignment: </span>Select an option for aligning text in the row or column vertically.</li><li><span class="bold">Background: </span>Select a pattern from the section above. Then use this area to set background properties for the table rows for that pattern.<ul style="list-style-type: square;"><li><span class="bold">Color: </span>Select a pattern from the section above. Then select a color to be used in the background of the table rows for that pattern.</li><li><span class="bold">Image: </span>Select a pattern from the section above. Then select an image to be used in the background of the table rows for that pattern.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">: </span>Invokes the <span class="UI">Insert Picture</span> dialog which lets you select any image already included in the project or lets you browse for an external image (which will then be added to the project).</li><li><span class="bold">Repeat: </span>If a background image is selected above, used this option to set the repeat behavior of the background image.</li><li><span class="bold">X: </span>If a background image is selected above, used this option to set the horizontal starting point of the upper-left corner of the image.</li><li><span class="bold">Y: </span>If a background image is selected above, used this option to set the vertical starting point of the upper-left corner of the image.</li></ul></li></ul></li>
+            <li><span class="bold">Cell Padding: </span>Lets you specify the settings for the cell padding (the amount of space between the edge of the table cell and the content in the cell).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left padding.</li><li><span class="bold">Right: </span>Sets the right padding.</li><li><span class="bold">Top: </span>Sets the top padding.</li><li><span class="bold">Bottom: </span>Sets the bottom padding.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the cell padding fields.</li></ul></li>
+        </ul>
+        <h4>Header Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--HeaderTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Patterns grid: </span>Lets you create patterns for the table style</p>
+                <p class="bold">Vertical Toolbar (tooltips in parentheses)</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png">
+                        </img> <span class="bold">(New item):</span>Creates a new pattern</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png">
+                        </img> <span class="bold">(Delete): </span>Deletes the selected patterns.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png">
+                        </img> <span class="bold">(Move up): </span>Moves the selected patterns up in the sequence.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png">
+                        </img> <span class="bold">(Move down): </span>Moves the selected patterns down in the sequence.</li>
+                </ul>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Set the pattern name.</li>
+                    <li><span class="bold">Type: </span>Set the pattern type. </li>
+                    <li><span class="bold">Repeat: </span>Set the number of times the pattern will repeat in the table style before proceeding to the next pattern.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Header Style: </span>Lets you set properties for the pattern selected above.<ul style="list-style-type: square;"><li><span class="bold">Height: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the row height.</li><li><span class="bold">Font: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the text.</li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--FontWeight.png" /></li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--Font.png" style="width: 221px;height: 211px;" /></li><li><span class="bold">Ruler: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a ruler between the rows or columns within the pattern. The "Repeat"&#160;value of the pattern must be 2 or greater for this option to be enabled.</li><li><span class="bold">Separator: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a separator between the final row or column in the pattern and the first row or column in the next pattern.</li><li><span class="bold">Alignment: </span>Select an option for aligning text in the row or column horizontally.</li><li><span class="bold">Vertical Alignment: </span>Select an option for aligning text in the row or column vertically.</li><li><span class="bold">Background: </span>Select a pattern from the section above. Then use this area to set background properties for the table rows for that pattern.<ul style="list-style-type: square;"><li><span class="bold">Color: </span>Select a pattern from the section above. Then select a color to be used in the background of the table rows for that pattern.</li><li><span class="bold">Image: </span>Select a pattern from the section above. Then select an image to be used in the background of the table rows for that pattern.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">: </span>Invokes the <span class="UI">Insert Picture</span> dialog which lets you select any image already included in the project or lets you browse for an external image (which will then be added to the project).</li><li><span class="bold">Repeat: </span>If a background image is selected above, used this option to set the repeat behavior of the background image.</li><li><span class="bold">X: </span>If a background image is selected above, used this option to set the horizontal starting point of the upper-left corner of the image.</li><li><span class="bold">Y: </span>If a background image is selected above, used this option to set the vertical starting point of the upper-left corner of the image.</li></ul></li></ul></li>
+            <li><span class="bold">Cell Padding: </span>Lets you specify the settings for the cell padding (the amount of space between the edge of the table cell and the content in the cell).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left padding.</li><li><span class="bold">Right: </span>Sets the right padding.</li><li><span class="bold">Top: </span>Sets the top padding.</li><li><span class="bold">Bottom: </span>Sets the bottom padding.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the cell padding fields.</li></ul></li>
+        </ul>
+        <h4>Footer Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--FooterTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Patterns grid: </span>Lets you create patterns for the table style</p>
+                <p class="bold">Vertical Toolbar (tooltips in parentheses)</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png">
+                        </img> <span class="bold">(New item):</span>Creates a new pattern</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png">
+                        </img> <span class="bold">(Delete): </span>Deletes the selected patterns.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png">
+                        </img> <span class="bold">(Move up): </span>Moves the selected patterns up in the sequence.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png">
+                        </img> <span class="bold">(Move down): </span>Moves the selected patterns down in the sequence.</li>
+                </ul>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Set the pattern name.</li>
+                    <li><span class="bold">Type: </span>Set the pattern type. </li>
+                    <li><span class="bold">Repeat: </span>Set the number of times the pattern will repeat in the table style before proceeding to the next pattern.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Footer Style: </span>Lets you set properties for the pattern selected above.<ul style="list-style-type: square;"><li><span class="bold">Height: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the row height.</li><li><span class="bold">Font: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for the text.</li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--FontWeight.png" /></li><li><img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--TableStyleEditor--Font.png" style="width: 221px;height: 211px;" /></li><li><span class="bold">Ruler: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a ruler between the rows or columns within the pattern. The "Repeat"&#160;value of the pattern must be 2 or greater for this option to be enabled.</li><li><span class="bold">Separator: </span>Select a pattern from the section above. Then click this field to open a small popup, which lets you set properties for a separator between the final row or column in the pattern and the first row or column in the next pattern.</li><li><span class="bold">Alignment: </span>Select an option for aligning text in the row or column horizontally.</li><li><span class="bold">Vertical Alignment: </span>Select an option for aligning text in the row or column vertically.</li><li><span class="bold">Background: </span>Select a pattern from the section above. Then use this area to set background properties for the table rows for that pattern.<ul style="list-style-type: square;"><li><span class="bold">Color: </span>Select a pattern from the section above. Then select a color to be used in the background of the table rows for that pattern.</li><li><span class="bold">Image: </span>Select a pattern from the section above. Then select an image to be used in the background of the table rows for that pattern.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">: </span>Invokes the <span class="UI">Insert Picture</span> dialog which lets you select any image already included in the project or lets you browse for an external image (which will then be added to the project).</li><li><span class="bold">Repeat: </span>If a background image is selected above, used this option to set the repeat behavior of the background image.</li><li><span class="bold">X: </span>If a background image is selected above, used this option to set the horizontal starting point of the upper-left corner of the image.</li><li><span class="bold">Y: </span>If a background image is selected above, used this option to set the vertical starting point of the upper-left corner of the image.</li></ul></li></ul></li>
+            <li><span class="bold">Cell Padding: </span>Lets you specify the settings for the cell padding (the amount of space between the edge of the table cell and the content in the cell).<ul style="list-style-type: square;"><li><span class="bold">Left: </span>Sets the left padding.</li><li><span class="bold">Right: </span>Sets the right padding.</li><li><span class="bold">Top: </span>Sets the top padding.</li><li><span class="bold">Bottom: </span>Sets the bottom padding.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /><span class="bold">:&#160;</span>Lets you apply settings to all of the cell padding fields.</li></ul></li>
+        </ul>
+        <h3>Table Styles - General Editing Test Cases</h3>
+        <h4>Code</h4>
+        <p>Sample Table style/* MadCap Table Style: */</p>
+        <p>/*&lt;meta Version="9" /&gt;*/</p>
+        <p>mcTableStyle</p>
+        <p>{</p>
+        <p>name: NewStyle;</p>
+        <p>border-collapse: separate;</p>
+        <p>border-left-style: solid;</p>
+        <p>border-left-width: 1px;</p>
+        <p>border-left-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-top-style: solid;</p>
+        <p>border-top-width: 1px;</p>
+        <p>border-top-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>max-id: 3;</p>
+        <p>background-image: url('../Images/muave.gif');</p>
+        <p>background-repeat: repeat-x;</p>
+        <p>background-position-y: top;</p>
+        <p>background-position-x: left;</p>
+        <p>border-top-left-radius: 5px 5px;</p>
+        <p>border-top-right-radius: 5px 5px;</p>
+        <p>border-bottom-right-radius: 5px 5px;</p>
+        <p>border-bottom-left-radius: 5px 5px;</p>
+        <p>}</p>
+        <p>mcTableColumnStyle</p>
+        <p>{</p>
+        <p>span: 1;</p>
+        <p>separator-style: solid;</p>
+        <p>separator-width: 1px;</p>
+        <p>separator-color: #000000;</p>
+        <p>name: Column1;</p>
+        <p>id: 0;</p>
+        <p>}</p>
+        <p>mcTableHeadStyle</p>
+        <p>{</p>
+        <p>span: 1;</p>
+        <p>separator-style: solid;</p>
+        <p>separator-width: 1px;</p>
+        <p>separator-color: #000000;</p>
+        <p>name: Header1;</p>
+        <p>id: 2;</p>
+        <p>}</p>
+        <p>mcTableBodyStyle</p>
+        <p>{</p>
+        <p>span: 1;</p>
+        <p>separator-style: solid;</p>
+        <p>separator-width: 1px;</p>
+        <p>separator-color: #000000;</p>
+        <p>name: Body1;</p>
+        <p>id: 1;</p>
+        <p>}</p>
+        <p>mcTableFootStyle</p>
+        <p>{</p>
+        <p>span: 1;</p>
+        <p>separator-style: solid;</p>
+        <p>separator-width: 1px;</p>
+        <p>separator-color: #000000;</p>
+        <p>name: Footer1;</p>
+        <p>id: 3;</p>
+        <p>}</p>
+        <p>/* Cell Styles: */</p>
+        <p>&#160;</p>
+        <p>.TableStyle-NewStyle</p>
+        <p>{</p>
+        <p>border-collapse: separate;</p>
+        <p>background-image: url('../Images/muave.gif');</p>
+        <p>background-repeat: repeat-x;</p>
+        <p>background-position-x: left;</p>
+        <p>background-position-y: top;</p>
+        <p>border-left-style: solid;</p>
+        <p>border-left-color: #000000;</p>
+        <p>border-left-width: 1px;</p>
+        <p>border-right-style: solid;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-top-style: solid;</p>
+        <p>border-top-color: #000000;</p>
+        <p>border-top-width: 1px;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-top-left-radius: 5px 5px;</p>
+        <p>border-top-right-radius: 5px 5px;</p>
+        <p>border-bottom-right-radius: 5px 5px;</p>
+        <p>border-bottom-left-radius: 5px 5px;</p>
+        <p>border-spacing: 0px 0px;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-Column-Column1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-Head-Header1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadI-Column1-Header1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadI-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadE-Column1-Header1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadE-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadF-Column1-Header1</p>
+        <p>{</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadF-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadH-Column1-Header1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadH-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadD-Column1-Header1</p>
+        <p>{</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadD-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadC-Column1-Header1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadC-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadB-Column1-Header1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadB-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadA-Column1-Header1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadA-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadG-Column1-Header1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-HeadG-Column1-Header1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-Foot-Footer1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootI-Column1-Footer1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootI-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootE-Column1-Footer1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>border-top-width: 1px;</p>
+        <p>border-top-color: #000000;</p>
+        <p>border-top-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootE-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootF-Column1-Footer1</p>
+        <p>{</p>
+        <p>border-top-width: 1px;</p>
+        <p>border-top-color: #000000;</p>
+        <p>border-top-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootF-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootH-Column1-Footer1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootH-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootD-Column1-Footer1</p>
+        <p>{</p>
+        <p>border-top-width: 1px;</p>
+        <p>border-top-color: #000000;</p>
+        <p>border-top-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootD-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootC-Column1-Footer1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootC-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootB-Column1-Footer1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootB-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootA-Column1-Footer1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootA-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootG-Column1-Footer1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-FootG-Column1-Footer1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-Body-Body1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyI-Column1-Body1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyI-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyE-Column1-Body1</p>
+        <p>{</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyE-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyF-Column1-Body1</p>
+        <p>{</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyF-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyH-Column1-Body1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyH-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyD-Column1-Body1</p>
+        <p>{</p>
+        <p>border-bottom-width: 1px;</p>
+        <p>border-bottom-color: #000000;</p>
+        <p>border-bottom-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyD-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyC-Column1-Body1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyC-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyB-Column1-Body1</p>
+        <p>{</p>
+        <p>border-right-width: 1px;</p>
+        <p>border-right-color: #000000;</p>
+        <p>border-right-style: solid;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyB-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyA-Column1-Body1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyA-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyG-Column1-Body1</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+        <p>.TableStyle-NewStyle-BodyG-Column1-Body1 p</p>
+        <p>{</p>
+        <p>&#160;</p>
+        <p>}</p>
+    </body>
+</html>

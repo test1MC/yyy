@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3160" MadCap:lastWidth="1115" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Output WebHelp Plus - Setup</h2>
+        <p>The following will assist you in setting up a machine to serve a WebHelp Plus output. WebHelp Plus can be built from any Flare installation, but in order to test the server-based features (basic TOC, Index, Browse Sequence, Search, Search Filters), you will need to:</p>
+        <ul>
+            <li>Install Internet Information Services (IIS) on the machine that will host the Help system</li>
+            <li>Publish the Flare output to the IIS server</li>
+            <li>Convert the output "Service"&#160;folder to an application in IIS</li>
+            <li>Configure Windows Indexing Service (XP or Server 2003) or Windows Search (Vista, Win 7, Win 8, Server 2008, Server 2008 R2, Server 2012) for the published output</li>
+            <li>Create an "AutoMergeCache"&#160;folder in the published output and setup its permissions</li>
+        </ul>
+        <p>Additionally, to test more advanced WebHelp Plus features (merged WebHelp systems, expanded AutoSearch) you will need to:</p>
+        <ul>
+            <li>Copy additional WebHelp or WebHelp Plus outputs to the published output's "AutoMerge"&#160;folder</li>
+            <li>Create SearchFolders.xml file to identify additional AutoSearch directories</li>
+        </ul>
+        <h3>Installing IIS</h3>
+        <p>Internet Information Services (IIS)&#160;must be installed on the machine hosting the WebHelp Plus Help System. Steps for installing IIS&#160;will differ slightly depending on your operating system. Detailed instructions are available here:</p>
+        <p><a href="../../../Feedback/!TestingResources/Installing IIS/IIS-WindowsVista.htm">Installing IIS - Windows Vista</a>
+        </p>
+        <p><a href="../../../Feedback/!TestingResources/Installing IIS/IIS-Windows7.htm">Installing IIS - Windows 7</a>
+        </p>
+        <p>Installing IIS - Windows 8</p>
+        <p><a href="../../../Feedback/!TestingResources/Installing IIS/IIS-Windows2003Server.htm">Installing IIS - Windows 2003 Server</a>
+        </p>
+        <p><a href="../../../Feedback/!TestingResources/Installing IIS/IIS-Windows2008Server.htm">Installing IIS - Windows 2008 Server</a>
+        </p>
+        <p>Installing IIS - Windows 2008 R2 Server</p>
+        <p><a href="../../../Feedback/!TestingResources/Installing IIS/IIS-Windows2012Server.htm">Installing IIS - Windows 2012 Server</a>
+        </p>
+        <h3>Publishing the Output to IIS</h3>
+        <p>The easiest way to publish your Help System to the IIS&#160;server is to setup a Destination in the Flare project and simply publish from Flare after building. By default, the path for the IIS&#160;Default Web&#160;Site is C:\inetpub\wwwroot, so you'd want to set that path in the Destination file. </p>
+        <p>In lieu of publishing, you can also just manually copy the WebHelp Plus output folder to C:\inetpub\wwwroot, but be careful not to "Move"&#160;the output folder (for example, dragging and dropping a folder on the same machine will Move the folder as opposed to copying it). When you Move a folder in Windows, all permissions are moved with the folder. When you Copy the output folder to C:\inetpub\wwwroot, permissions are inherited from wwwroot. </p>
+        <h3>Converting the "Service"&#160;Folder to an Application</h3>
+        <ol>
+            <li>Launch the Internet Information Services (IIS)&#160;Manager:&#160;Click the Start button in the Task Bar and enter "IIS"&#160;in the Search filed. Information Services (IIS)&#160;Manager should appear under programs.</li>
+            <li>Under Connections, expand the localhost (the machine name) folder</li>
+            <li>Expand Sites</li>
+            <li>Expand Default Web Site</li>
+            <li>
+                <p>Expand the folder of the WebHelp Plus output you published and locate the Service folder</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Output WebHelp Plus/UI--IISManager--ServiceFolder.png" />
+                </p>
+            </li>
+            <li>Right-click the Service folder and select Convert to Application</li>
+            <li>In the Add Application dialog, click OK</li>
+            <li>The icon for the Service folder should change to <img src="../../../../../Resources/Images/TestPlans/Flare/Output WebHelp Plus/UI--IISManager--ConvertedServiceFolder.png" /> indicating the folder has been converted to an application.</li>
+        </ol>
+        <h3>Configuring Windows Indexing Service (XP or Server 2003)</h3>
+        <ol>
+            <li>In Windows Explorer, browse into the Service folder of your published output (C:\inetpub\wwwroot\[output folder name]\Service)</li>
+            <li>Open the folder "Console.ConfigureSearch"</li>
+            <li>Double-click ConfigureSearch.exe</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The published output folder will now have been added to Windows Indexing Service. To verify this:</p>
+        <ol>
+            <li>TBW (provide screenshot from XP&#160;and/or Server 2003)</li>
+        </ol>
+        <h3>Configuring Windows Search (Vista, Win 7, Win 8, Server 2008, Server 2008 R2, Server 2012)</h3>
+        <ol>
+            <li>In Windows Explorer, browse into the Service folder of your published output (C:\inetpub\wwwroot\[output folder name]\Service)</li>
+            <li>Open the folder "Console.ConfigureSearch"</li>
+            <li>Double-click ConfigureSearch.exe</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The published output folder will now have been added to Windows Search. To verify this:</p>
+        <ol>
+            <li>Click the Start button on the Windows Task Bar</li>
+            <li>In the "Start Search" field, enter "index"</li>
+            <li>
+                <p>Under Programs, select Indexing Options. The Indexing Options dialog will open and you should see the output folder for your Help System listed in the Included Locations column</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Output WebHelp Plus/UI--WindowsIndexingOptions.png" />
+                </p>
+            </li>
+        </ol>
+        <h3>Create and Setup the AutoMergeCache Folder</h3>
+        <p>A folder called "AutoMergeCache"&#160;must be created and set up with appropriate permissions to house cache files of the TOC, Index, etc.</p>
+        <ol>
+            <li>In Windows Explorer, browse into the folder of your published Help System (C:\inetpub\wwwroot\WebHelp Plus Output\)</li>
+            <li>Create a new folder called "AutoMergeCache" (C:\inetpub\wwwroot\WebHelp Plus Output\AutoMergeCache)</li>
+            <li>Right-click the AutoMergeCache folder and select Properties</li>
+            <li>Select the Security tab</li>
+            <li>Click Edit to invoke <span class="UI">Permissions for AutoMergeCache</span></li>
+            <li>Click Add to invoke the <span class="UI">Select Users, Computers or Groups</span> dialog</li>
+            <li>
+                <p>Enter "Everyone" as the object name, and click OK</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Output WebHelp Plus/UI--AutoMergeCache--SelectUsers.png" />
+                </p>
+            </li>
+            <li>
+                <p>Back in the <span class="UI">Permissions for AutoMergeCache</span> dialog, with "Everyone"&#160;selected above, enable the option to allow full control and click OK.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Output WebHelp Plus/UI--AutoMergeCache--FullControl.png" />
+                </p>
+            </li>
+            <li>Click OK to dismiss the <span class="UI">AutoMergeCache Properties</span> dialog</li>
+        </ol>
+        <h3>Merge Additional WebHelp Output</h3>
+        <p>To merge additional WebHelp or WebHelp Plus systems, copy the output of any project into the AutoMerge folder in the parent project's Output folder.</p>
+        <h3>Add AutoSearch Files and Setup Extended AutoSearch</h3>
+        <p>You can add non-project files to the output and these files will become searchable in the context of the Help System. Copy any documents (*.doc, *.txt, etc.) that you want to make searchable to the AutoSearch folder in the project's Output folder.</p>
+        <p>Additionally you can setup an extended AutoSearch by creating a text file called "SearchFolders.xml" and placing that in the AutoSearch Folder. In SearchFolders.xml, you can define as many additional directories as you would like to have the Help System search.</p>
+        <p>Example of SearchFolders.xml</p><pre xml:space="preserve">&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre xml:space="preserve">&lt;SearchFolders&gt;</pre><pre xml:space="preserve">&lt;Url&gt;/SearchFolder1&lt;/Url&gt;</pre><pre xml:space="preserve">&lt;Url&gt;/SearchFolder2&lt;/Url&gt;</pre><pre xml:space="preserve">&lt;/SearchFolders&gt;</pre>
+        <p>For more detail about this feature, see the topic "Including Non-XHTML Files in WebHelp Plus Search"&#160;in the Flare documentation.</p>
+    </body>
+</html>

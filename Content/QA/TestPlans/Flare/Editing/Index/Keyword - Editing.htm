@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="7385" MadCap:lastWidth="793" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FontProperties or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Keyword - Editing                                </h2>
+        <h3>Inserting a Keyword</h3>
+        <h4>In the XML Editor from existing content</h4>
+        <p class="bold">Basic Test Cases</p>
+        <ul class="checkbox">
+            <li>Place the insertion point in or next to a word in the <span class="UI">XML Editor</span> and press <span class="KeyboardShortcut">F10</span></li>
+            <li>Select a word or phrase in the <span class="UI">XML Editor</span> and press <span class="KeyboardShortcut">F10</span></li>
+            <li>Toolstrip interface:&#160;Place the insertion point in or next to a word in the <span class="UI">XML Editor</span> and <span class="MenuItem">!Tools |&#160;Index |&#160;Insert "[the word]"&#160;as Index Keyword</span></li>
+            <li>Toolstrip interface:&#160;Select a word or phrase in the <span class="UI">XML Editor</span> and <span class="MenuItem">!Tools |&#160;Index |&#160;Insert "[the selection]"&#160;as Index Keyword</span></li>
+            <li>Ribbon interface:&#160;Place the insertion point in or next to a word in the <span class="UI">XML Editor</span> and <span class="RibbonItem">!Insert | Keyword</span></li>
+            <li>Ribbon interface:&#160;Select a word or phrase in the <span class="UI">XML Editor</span> and <span class="RibbonItem">!Insert | Keyword</span></li>
+        </ul>
+        <p class="bold">Additional Test Cases</p>
+        <ul class="checkbox">
+            <li>Test inserting keywords with these methods into various elements within a topic<ul class="checkbox"><li>Table</li><li>List</li><li>Drop-down</li><li>Expanding text</li><li>Etc.</li></ul></li>
+        </ul>
+        <h4>With the Index Window</h4>
+        <p class="bold">Steps to Insert</p>
+        <ol>
+            <li>Open the <span class="UI">Index</span> window<ul><li>Press <span class="KeyboardShortcut">F9</span> <![CDATA[ ]]></li><li>Toolstrip interface:&#160;Select <span class="MenuItem">!Tools | Index | Index Window</span></li><li>Ribbon interface:&#160;Select <span class="RibbonItem">!View |&#160;Index Window</span></li></ul></li>
+            <li>Open the topic to which you wish to add the keyword</li>
+            <li>Place the insertion point where you would like to insert the keyword</li>
+            <li>Select an empty field in the Terms section of the <span class="UI">Index</span> window</li>
+            <li>Type the keyword</li>
+            <li>Press Enter</li>
+        </ol>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Inserting a keyword with the Index window works</li>
+            <li>Test inserting keywords with this method into various elements within a topic<ul class="checkbox"><li>Table</li><li>List</li><li>Drop-down</li><li>Expanding text</li><li>Etc.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p>Further test cases will be covered in the <MadCap:xref href="Index Window - UI.htm" class="TitleOnly">Index - UI</MadCap:xref>  test plan.</p>
+        <h4>With Index Entry Mode</h4>
+        <p>Index Entry Mode lets add keywords quickly throughout your topics by letting you type them directly in the <span class="UI">XML Editor</span>.</p>
+        <p>&#160;</p>
+        <p class="bold">Steps to Insert</p>
+        <ol>
+            <li>Open the topic to which you wish to add the keyword</li>
+            <li>Enable Index Entry Mode<ul><li>Toggle "on"&#160;the Index Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---IndexEntryMode.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li><li>Toolstrip interface:&#160;<span class="MenuItem">!Tools | Index | Index Entry Mode</span></li></ul></li>
+            <li>Notice the cursor changes, displaying a “i” next to it</li>
+            <li>Click at the place in your topic where you want to add the keyword</li>
+            <li>Type the word or phrase that you want to add as the keyword</li>
+            <li>When you start typing, the <span class="UI">Index </span>window opens and the phrase is added to the first empty field under the Terms column</li>
+            <li>Notice the cursor does not lose focus in the <span class="UI">XML Editor</span></li>
+            <li>Press Enter</li>
+            <li>Place the insertion point where you want to enter the next keyword (in the same topic or another)&#160;and repeat. </li>
+            <li>When you are finished, disable Index Entry Mode<ul><li>Toggle "on"&#160;the Index Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---IndexEntryMode.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li><li>Right-click in the <span class="UI">XML Editor</span> to toggle off Index Entry Mode</li><li>Toolstrip interface:&#160;<span class="MenuItem">!Tools | Index | Index Entry Mode</span></li></ul></li>
+        </ol>
+        <p class="bold">&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Inserting a keyword with the Index Entry Mode works</li>
+            <li>Test inserting keywords with this method into various elements within a topic<ul class="checkbox"><li>Table</li><li>List</li><li>Drop-down</li><li>Expanding text</li><li>Etc.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p>Further testing will be covered in the <MadCap:xref href="Index and Concept Entry Mode - UI.htm" target="" title="" alt="" class="TitleOnly">Index and Concept Entry Mode - UI</MadCap:xref> test plan.</p>
+        <h4>With Drag and Drop</h4>
+        <p>The Drag and Drop method requires that you have an existing keyword, and you now want to add it to a different topic.</p>
+        <ol>
+            <li>Open the Topic to which you wish to add the keyword </li>
+            <li>Open the <span class="UI">Index</span> window (see above)</li>
+            <li>In the lower portion of the <span class="UI">Index Window</span>, click the keyword you want and drag it to the location in the topic where you want to insert it.</li>
+        </ol>
+        <h4>Auto-complete option</h4>
+        <p>The "Auto-complete Index Entries"&#160;option applies to both Index Keywords and Concepts. To enable or disable "Auto-complete Index Entries":</p>
+        <ul style="list-style-type: square;">
+            <li>!Tools |&#160;Index |&#160;(toggle on)&#160;Auto-complete Index Entries</li>
+            <li>In the XML&#160;Editor's local toolbar, expand the menu under the Index Entry button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---IndexEntryMode.png" />, and toggle on Auto-complete Index Entries</li>
+        </ul>
+        <p>&#160;</p>
+        <p>If "Auto-complete Index Entries"&#160;is enabled, index keywords and concepts will auto-complete when you start typing them in the <span class="UI">Index Window</span> and <span class="UI">Concept Window</span>.</p>
+        <h3>Keywords in the XML Editor</h3>
+        <p>A keyword will appear as follows in the <span class="UI">XML Editor</span>:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Keyword---XMLEditor.png" />
+        </p>
+        <p>&#160;</p>
+        <p>Hovering over a keyword marker in the XML Editor will produce a tooltip that displays all keywords that have been entered in to that specific keyword tag:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Keyword---Tooltip.png" alt="" title="" />
+        </p>
+        <p class="note">The placement of keywords within a topic is significant as in the output, when using the index to open a topic, that topic should scroll to the place in the topic where the keyword is inserted. Be sure to create some keywords in long topics so this can be tested when you get to the output portion of this module.</p>
+        <h3>Editing a Keyword</h3>
+        <p>To edit a keyword (the actual word(s)), you need to do so in the <span class="UI">Index Window</span>.  It is possible to edit a single instance of a keyword within a topic (using the upper portion of the <span class="UI">Keyword Window</span>), or you can globally edit all instances of a keyword (using the lower portion of the <span class="UI">Index Window</span>).</p>
+        <p class="bold">Editing a single instance of a keyword:</p>
+        <ul style="list-style-type: square;">
+            <li>With the <span class="UI">Index Window</span> open, select an existing keyword. Any keyword(s)&#160;in the selected MadCap:keyword tag should appear in the <span class="UI">Index Window</span> pane for editing</li>
+            <li>Right-click an existing keyword in the <span class="UI">XML Editor</span> and select Edit Index Keyword…. This should open the <span class="UI">Index Window</span> pane and display any keywords in the selected MadCap:keyword tag for editing.</li>
+            <li>Right-click on the MadCap:keyword Span Bar node and select Edit Index Keyword… . This should open the <span class="UI">Index Window</span> pane and display any keywords in the selected MadCap:keyword tag for editing.</li>
+            <li>Right-click on the MadCap:keyword Caret Tag Neighborhood node and select Edit the Keyword Association… . This should open the <span class="UI">Index Window</span> pane and display any keywords in the selected MadCap:keyword tag for editing.</li>
+        </ul>
+        <p class="bold">Editing all instances of a keyword:</p>
+        <p>In the lower portion of the <span class="UI">Index Window</span>…</p>
+        <ul style="list-style-type: square;">
+            <li>Right-click any existing keyword and select Rename Keyword. </li>
+            <li>Select any existing keyword and press [F2].</li>
+            <li>Slowly click on any existing keyword twice.</li>
+        </ul>
+        <p>This will affect all instances of that keyword in all topics throughout the project. This is covered in greater detail in the <MadCap:xref href="Index Window - UI.htm" target="" title="" alt="" class="TitleOnly">Index - UI</MadCap:xref> test plan.</p>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Keyword---Context.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">One term:</p><pre>&lt;MadCap:keyword term="keyword" /&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Multiple terms and condition:</p><pre xml:space="preserve">&lt;MadCap:keyword term="keyword;bagel;donut" MadCap:conditions="Default.ScreenOnly" /&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

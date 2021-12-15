@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="114" MadCap:lastWidth="1075">
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            <!--
+			if (parent.name == "body") {
+			parent.location.href = window.location.href;
+			}
+			//-->
+        </script>
+        <MadCap:topicToolbarProxy class="FloatRight" style="mc-topic-toolbar-items: ;" />
+        <div style="float: right;clear: left;border-left-style: none;border-left-width: 2px;border-left-color: #ff0000;border-right-style: none;border-right-width: 2px;border-right-color: #ff0000;border-top-style: none;border-top-width: 2px;border-top-color: #ff0000;border-bottom-style: none;border-bottom-width: 2px;border-bottom-color: #ff0000;width: 64px;height: 23px;">
+            <p><a href="../../QATestPlans.htm" title="Test Plans" alt="Test Plans"><img src="../Images/tp.png" style="border-left-style: none;border-left-width: ;border-left-color: ;border-right-style: none;border-right-width: ;border-right-color: ;border-top-style: none;border-top-width: ;border-top-color: ;border-bottom-style: none;border-bottom-width: ;border-bottom-color: ;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px;margin-left: 0px;margin-right: 0px;margin-top: 0px;margin-bottom: 0px;" /></a>
+            </p>
+        </div>
+        <MadCap:bodyProxy />
+    </body>
+</html>

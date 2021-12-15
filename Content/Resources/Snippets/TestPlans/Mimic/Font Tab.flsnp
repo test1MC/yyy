@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Color:</span> Sets a color for the text</li>
+            <li>
+                <span class="bold">Bold: </span> Will bold the text</li>
+            <li>
+                <span class="bold">Italic: </span> Will italicize the text</li>
+            <li>
+                <span class="bold">Underline: </span> Will underline the text</li>
+            <li>
+                <span class="bold">Font Picker: </span> Sets a font for the text<ul><li><span class="bold">(default): </span> will set the font to the default font</li><li><span class="bold">(as is): </span> Will leave the current choice as the font (useful for multiple selections)</li><li><span class="bold">Font area: </span> All supported fonts are listed here. Selecting one will set the object to use that font</li></ul></li>
+            <li>
+                <span class="bold">Font Size: </span> Select a font size for the text<ul><li><span class="bold">(default): </span> Will set the font size to the default size</li><li><span class="bold">(as is): </span> Will leave the current choice as the font size (useful for multiple selections)</li><li><span class="bold">Size area: </span> Sets a size for the font</li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5521" MadCap:lastWidth="1298" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Import/New/Open Project-- UI  </h2>
+        <h3>Opening the UI</h3>
+        <p style="margin-left: 60px;">
+            <img src="../../../../../Resources/Images/UI--NewProject--Menu.png" style="width: 122px;height: 284px;" class="left" /> 1. Opening the Start new project Wizard</p>
+        <p style="margin-left: 60px;"> &#160;&#160;&#160;&#160;&#160;&#160;! File | New Project  or Press <b>CTRL+Shift+N</b> on your keyboard</p>
+        <p style="margin-left: 60px;"> &#160;&#160;&#160;&#160;&#160;&#160;From the Start Page, click Create a New Project</p>
+        <p>2.&#160;&#160;Click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---StartNewProjectWizard.png" />  in Standard toolbar</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>UI </h3>
+        <h4>Start New Project Wizard-Enter name and folder for the translated project...</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProjectSelectLanguage--Dialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Name:</b> Type an appropriate name for your project.</li>
+            <li><b>Folder:</b> By default, a path to the Documents\My Translated Projects folder on your hard drive is entered in the Folder field. (Lingo creates the My Translated Projects folder when you install the program.) All subfolders and files related to the translated project will be placed in this folder as you work on the project.  If you want to have the project files placed in a different folder, use the "Browse" button.</li>
+            <li><b>Domain:</b> You can type a subject category for your project, or select one from the drop-down. If you enter your own custom category in the Domain field, it will appear in the drop-down the next time you create a new project. Domain metadata appears throughout the project, such as when you select a suggestion in the translation memory.</li>
+            <li><b>Client:</b>You can type the name of the client you are creating a translation project for. When you enter a client name in the field, it will appear in the Client drop-down the next time you create a new project. Client metadata appears throughout the project, such as when you select a suggestion in the translation memory.</li>
+            <li><b>Source language:</b> 	Select the original language that is used in the project you are translating.</li>
+            <li><b>Target language:</b>	Select the language(s) that you want to use for the translation and click the right arrow to move it to the Selected Languages grid. If you need to remove a language from the Selected Languages grid, click the left arrow.</li>
+            <li><b>Back:</b> 	This button is disabled in this window.</li>
+            <li><b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li><b>Finish:</b>This button is disabled in this window.</li>
+            <li><b>Cancel:</b>	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Make sure that ‘Generate’ generates project name with the format ProjectName{n+}</li>
+            <li>Clicking ’Browse’ invokes the Browse For Folder dialog window.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Select files or project to translate...</h4>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProject--Dialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Add&#160;Files:</b>Will open the ‘Select file(s) or project to translate’ dialog window.<ul style="list-style-type: circle;"><li><p>If you need to select only one file, you can double-click it. If you need to select multiple files (e.g., multiple Word documents) in the same folder, you can hold your SHIFT or CTRL key and select either a range or individual files; then click Open.</p></li><li><p>If you want to add more files from another location, you can repeat the previous steps. Keep in mind that if you select MadCap project type files, you cannot also add other types of files (e.g. Word documents). However, if you have not selected MadCap project files, you can add any other types of files to the same Lingo project.</p></li><li><p>If you want to filter the translated files, you can create a file type filter. Use the Filter drop-down to select an existing filter, or select Create New to create a new one. You can add file type filters to XML, Word, or text files. See Lingo's Help for more information.</p></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Add Folder:</b>Will open the ‘Add Folder’ dialog window.<ul style="list-style-type: circle;"><li>In the dialog that opens, navigate to the folder that contains the files that you want to translate and click Select Folder.</li><li>Note: If you select a folder that contains a MadCap project, such as a Flare or Mimic project, only translatable file types will display in the Translatable File Types dialog. For example, a Flare project may display Capture images (PNG or JPG files) and Flare topic files (HTM files), but not Flare glossary files (FLGLO files).<br /></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Remove:</b>	Will remove the selected file(s) or project.</li>
+            <li><b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li><b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li><b>Finish:</b> 	This button is disabled in this window.</li>
+            <li><b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+            <li>Type extra long input into fields</li>
+            <li>Type characters and symbols into fields</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Select Translation Memories to use for this project...</h4>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProject--Dialog--TM.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Add:</b>Click Add and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Select this option if you want to select a TM that resides on your computer or network. Next to the Select existing Translation Memory field, click Browse. A dialog opens where you can locate the TM. Click Open.</li><li><b>Server:</b>Select this option if you want to use a TM that resides on your SQL Server. This opens a dialog with fields for the name, server, and security information related to the database.</li></ul></li>
+            <li><b>Create:</b> Click Create and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Select this option if you want to use SQLite for a local TM database. This option opens a simple dialog that lets you give the new database a name and choose where to store it. By default, the location for SQLite databases is in Documents\Lingo Translation Memories on your computer. However, you can choose a different location if you like.</li><li><b>Server:</b>Select this option if you want to use SQL Server Express for a TM database to be stored on a server. This opens a dialog with fields for the name, server, and security information related to the database.</li><li>Note: When you are finished, the new database is shown in the grid and the Use check box is automatically selected.</li></ul></li>
+            <li><b>Remove:</b>Allows you to remove a particular TM from the grid. </li>
+            <li><b>Import:</b>Allows you to import a TMX file with  translations into a new TM database. </li>
+            <li><b>Access:</b> Allows you to specify the access rights for each database.<ul style="list-style-type: circle;"><li><p><b>Read &amp; Write:</b>By default all databases are set to Read &amp; Write, which means they can be altered once they are loaded into the Lingo project.</p></li><li><p><b>Read Only:</b>You can change any of the TMs to Read Only access if you want. In order to switch to Read Only access, the Use check box must first be selected for that TM.</p></li></ul></li>
+            <li><b>Select Machine Translation Provider:</b> You can select a machine translation service from the Select Machine Translation Provider drop-down, then enter your authentication credentials in the Settings area. Each provider requires different credentials.<ul style="list-style-type: circle;"><li><p><b>Google:</b> Enter your API Key in the field.</p></li><li><p><b>Microsoft:</b> Enter your Client ID and Client secret in the fields.</p></li><li><p><b>MyMemory:</b> Enter your Key in the field.</p></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Pre-translate options: </b> Automatically apply matching translations from a TM database<ul style="list-style-type: circle;"><li><p><b>No pre-translation:</b> Do not pre-translate the project</p></li><li><b>Pre-translate with TM:</b> Apply matches from the translation memory to segments in the project</li><li><p><b>Pre-translate with TM then MT:</b> Apply matches from the translation memory to segments in the project, then apply machine translation to any segments that are not translated</p></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li><b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li><b>Finish:</b> 	Creates the project and loads the files into Lingo.</li>
+            <li><b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Select Termbases to use for this project...</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProject--Dialog-TB.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Add:</b>Click Add and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Select this option if you want to select a termbase that resides on your computer or network. Next to the Select existing Termbase field, click Browse. A dialog opens where you can locate the termbase. Click Open.</li><li><b>Server:</b> Select this option if you want to use a termbase that resides on your SQL Server. This opens a dialog with fields for the name, server, and security information related to the database.</li></ul></li>
+            <li><b>Create:</b> Click Create and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Select this option if you want to use SQLite for a local termbase. This option opens a simple dialog that lets you give the new database a name and choose where to store it. By default, the location for SQLite databases is in Documents\Lingo Termbases on your computer. However, you can choose a different location if you like.</li><li><b>Server:</b>Select this option if you want to use SQL Server Express for a termbase to be stored on a server. This opens a dialog with fields for the name, server, and security information related to the database.</li><li>Note: When you are finished, the new database is shown in the grid and the Use check box is automatically selected.</li></ul></li>
+            <li><b>Remove:</b>Allows you to remove a particular Termbase from the grid. </li>
+            <li><b>Import:</b>Allows you to import terms from TermBase eXchange (TBX), comma-separated value (CSV), or Microsoft Excel (XLS or XLSX) files.</li>
+            <li><b>Access:</b> Allows you to specify the access rights for each database.<ul style="list-style-type: circle;"><li><p><b>Read &amp; Write:</b>By default all databases are set to Read &amp; Write, which means they can be altered once they are loaded into the Lingo project.</p></li><li><p><b>Read Only:</b>You can change any of the termbases to Read Only access if you want. In order to switch to Read Only access, the Use check box must first be selected for that termbase.</p></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li><b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li><b>Finish:</b> 	Creates the project and loads the files into Lingo.</li>
+            <li><b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Ready to create the translated project.</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProjectReady--Dialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li><b>Next:</b> 	This button is disabled in this window.</li>
+            <li><b>Finish:</b> 	Creates the project and loads the files into Lingo.</li>
+            <li><b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Open Project</h4>
+        <p>&#160;</p>
+        <p><b>Opening the Open Project Dialog:</b>
+        </p>
+        <ol>
+            <li>Click on   in standard toolbar ! File | Open or...</li>
+            <li>Click &lt;CTRL&gt;&lt;O&gt;</li>
+            <li>
+                <p>These will invoke the standard Windows Open Files Dialog with the filter set for *.liprj and *.lialign – options in the drop-down are “Lingo Packages (*.liprjzip; *.lialignzip; *.lidoc)”</p>
+            </li>
+            <li>Double-clicking the *.liprj or *.lialign files in Windows Explorer</li>
+        </ol>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Make sure all the UIs and the texts are correctly written</li>
+            <li>Test opening projects<ul style="list-style-type: square;"><li>Through “Open” UI</li><li>Local</li><li>UNC</li><li>Mapped Network Drive</li><li>Double-clicking<ul style="list-style-type: square;"><li>Local</li><li>UNC</li><li>Mapped Network Drive</li></ul></li></ul></li>
+            <li>Test opening read-only projects<ul style="list-style-type: square;"><li>Through “Open” UI</li><li>Local</li><li>UNC</li><li>Mapped Network Drive</li><li>Double-clicking<ul style="list-style-type: square;"><li>Local</li><li>UNC</li><li>Mapped Network Drive</li></ul></li></ul></li>
+            <li>Test opening a project with characters (`,~, !, @, #, $, %, ^, &amp;, *, (, ), _, -, +, =, €) etc in its path and project name.</li>
+            <li>Test opening a project with International Characters in its path and file name (French, German and Japanese).</li>
+            <li>Try opening the same project in two different instances of Lingo (through the Open Project UI and Double-clicking the liprj file)</li>
+            <li>Open older versions of Lingo Projects</li>
+            <li>Lingo Version x.x</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Note</b>: Let's say you have already created a Lingo project for an earlier version of a particular Flare project. You have already translated it, exported it to a new Flare project, and given it to the author. Sometime after this, the author makes many changes to the Flare  project (in the source language). Now the author needs you to translate those changes into the target language. When this occurs, you can create a "difference" project to translate the new version of the Flare  project. This allows you to easily locate the differences between the old and new versions, rather than looking through each piece of text. If a file or string has been modified since the previous version, an icon displays next to that content (the type of icon depends on the type of change made). In addition, the "Difference" column in an editor's grid provides an indication of the change. You can then compare the two versions in order to determine what was modified and translate the changes as necessary. If the author has deleted content from the new Flare project, that content is automatically deleted from the new Lingo difference project when you create it.</p>
+    </body>
+</html>

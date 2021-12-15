@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2541" MadCap:lastWidth="1042" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SelectContent]" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Table Styles - Applying</h2>
+        <h3>Table Styles - Applying to a specific table</h3>
+        <p>In order to apply a Table Style to a specific table, you will first need to add some Table Styles to your project. Completing this test plan will require that you have at least three unique Table Styles in your project.</p>
+        <h4>Table Styles - Applying with Insert Table dialog</h4>
+        <p>When inserting a table with the <span class="UI">Insert Table</span> dialog (as opposed to using the grid fly-out from the Ribbon), you may choose to apply a table style right then and there. Test that invoking the dialog by each method will let you apply a Table Style.</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Table |&#160;Insert |&#160;Table…</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!Insert |&#160;Table (button)</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Table |&#160;Insert Table (button)</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>For each insert method listed above:</p>
+        <ol>
+            <li>Open the <span class="UI">Insert Table</span> dialog</li>
+            <li>In the General tab, find the Table Style section</li>
+            <li>Select a table style from the drop-down</li>
+            <li>Click OK and confirm that the Table Style has been applied to the table</li>
+        </ol>
+        <h4>Table Styles - Applying and Resetting with Table Properties dialog</h4>
+        <p>For any existing table, you can apply a Table Style using the <span class="UI">Table Properties</span> dialog. Test that invoking the dialog by each method will let you apply or change the table style associated with a table.</p>
+        <ul class="checkbox">
+            <li>Right-click inside an existing table and select <span class="MenuItem">Table Properties…</span></li>
+            <li>Right-click the table block bar and select <span class="MenuItem">Table Properties…</span></li>
+            <li>Right-click the table span bar (appears above col bars) and select <span class="MenuItem">Table Properties…</span></li>
+            <li>Tool Strip interface: Select or place the insertion inside a table and select <span class="MenuItem">!Table |&#160;Table Properties…</span></li>
+            <li>Ribbon interface: Select or place the insertion inside a table and select <span class="RibbonItem">!Table |&#160;Table Properties…</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>For each insert method listed above:</p>
+        <ol>
+            <li>Open the <span class="UI">Table Properties</span> dialog</li>
+            <li>In the General tab, find the Table Style section</li>
+            <li>Select a Table Style from the drop-down or change the table style in the drop-down</li>
+            <li>Click OK and confirm that the Table Style has been applied to the table</li>
+            <li>Open the <span class="UI">Table Properties</span> dialog again</li>
+            <li>In the drop-down, select a different table style</li>
+            <li>Click OK and confirm that the new table style has been applied to the table</li>
+            <li>Open the <span class="UI">Table Properties</span> dialog again</li>
+            <li>In the drop-down, change the table-style to "(default)" to reset the table style</li>
+            <li>Click OK and confirm that the Table Style has been removed from the table</li>
+        </ol>
+        <h4>Table Styles - Applying and Resetting with table context menu</h4>
+        <p>For any existing table, you can apply a Table Style using the table's own context menu. Test that invoking the context menu by each method will let you apply or change the table style associated with a table.</p>
+        <ul class="checkbox">
+            <li>Right-click inside an existing table and select <span class="MenuItem">Table Style | [any project Table Style]</span></li>
+            <li>Right-click the table block bar and select <span class="MenuItem">Table Style | [any project Table Style]</span></li>
+            <li>Right-click the table span bar (appears above col bars) and select <span class="MenuItem">Table Style | [any project Table Style]</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>For each method listed above:</p>
+        <ol>
+            <li>Apply a table style to a clean table using the context menu (<span class="MenuItem">Table Style | [any project Table Style]</span>)</li>
+            <li>Verify the table style is applied correctly</li>
+            <li>Change the table style to another table style using the context menu (<span class="MenuItem">Table Style | [any project Table Style]</span>)</li>
+            <li>Verify the table style is applied correctly</li>
+            <li>Reset the table style using the context menu (<span class="MenuItem">Table Style | Reset Table Style</span>)</li>
+        </ol>
+        <h4>Table Styles - Applying and Resetting with Table menu (Tool Strip interface)</h4>
+        <p>For any existing table, you can apply a Table Style using the Table menu in the Tool Strip interface. Either select the table, make a selection inside the table or place the insertion point inside the table to activate the menu items.</p>
+        <ul class="checkbox">
+            <li>Set the Table Style:&#160;<span class="MenuItem">!Table |&#160;Table Style |&#160;[any project Table Style]</span></li>
+            <li>Change the Table Style:&#160;<span class="MenuItem">!Table |&#160;Table Style |&#160;[any other project Table Style]</span></li>
+            <li>Reset the Table Style:&#160;<span class="MenuItem">!Table |&#160;Table Style |&#160;Reset Table Style</span></li>
+        </ul>
+        <h4>Table Styles - Applying and Resetting with Table ribbon</h4>
+        <p>For any existing table, you can apply a Table Style using the Table ribbon in the Ribbon interface. Either select the table, make a selection inside the table or place the insertion point inside the table to activate the ribbon items.</p>
+        <ul class="checkbox">
+            <li>Set the Table Style:&#160;<span class="RibbonItem">!Table |&#160;Apply Table Style |&#160;[any project Table Style]</span></li>
+            <li>Change the Table Style:&#160;<span class="RibbonItem">!Table |&#160;Apply Table Style |&#160;[any other project Table Style]</span></li>
+            <li>Reset the Table Style:&#160;<span class="RibbonItem">!Table |&#160;Reset Table Style</span></li>
+        </ul>
+        <h3>Table Styles - Applying a "Print"&#160;table style</h3>
+        <p>In Flare V1 through Flare V6, users could not create table style mediums. So, if a user wanted to style a table differently for print output, they would have to use a second table style file and assign two table styles to a table. Although we now encourage users to use Table Style mediums (from V7 forward), we must continue to verify that the old functionality of Print Table Style works.</p>
+        <p>&#160;</p>
+        <p>Print Table Styles can only be applied in the <span class="UI">Insert Table</span> or <span class="UI">Table Properties</span> dialogs. To apply a Print Table Style:</p>
+        <p>&#160;</p>
+        <p>TBW</p>
+        <p class="note">NOTE:&#160;Print Table Styles will NOT&#160;render in the XML Editor, even when it is set to Print Layout Mode or the print medium. Print Table Styles can only be viewed in "Print"&#160;outputs (PDF, XPS, XHTML Book, Word, FrameMaker, EPUB or a "Web"&#160;target that uses the print medium.</p>
+        <h3>Table Styles - Applying to multiple tables</h3>
+        <p>To apply a table style to multiple tables (or all tables)&#160;throughout a Flare project, use the <span class="bold">Apply Style...</span> button in the local toolbar of the <span class="UI">Table Style Editor</span>. This will invoke the <span class="UI">Apply Table Style </span>dialog which allows you to select which topics or files you want to apply that table style to.</p>
+        <h4>Apply Table Style dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Table Styles/UI--ApplyTableStyle.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Select Files: </span>Select the files to apply the table style to<ul class="checkbox"><li>Click expand/collapse nodes will expand or collapse the folders.</li><li>Click inside box to select or deselect topic to apply style to.</li><li>Selecting a folder should select all folders and files under it.</li></ul></li>
+            <li><span class="bold">Overwrite existing table styles: </span>Select this option to overwrite the existing table styles in the files<ul style="list-style-type: square;"><li><span class="bold">Remove Print Table Styles: </span>If you previously created print table styles and want to remove them from tables.</li></ul></li>
+            <li><span class="bold">Remove Local Formatting: </span>Remove all of the inline table formatting from tables in those files. This option should remove the "style" attribute from the table and descendant tags. (See bug number <i>78152</i>. Currently does not work for &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;).</li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold">Test cases</p>
+            <ul class="checkbox">
+                <li>Up and down  arrow keys can navigate folder structure.</li>
+                <li>Enter, left and right arrows will expand and collapse folders.</li>
+            </ul>
+        </div>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Table linked to a Table Style:</p>
+        <p>&lt;table style="width: 100%;mc-table-style: url('Resources/TableStyles/NewStyle.css');" class="TableStyle-Basic" cellspacing="0"&gt;</p>
+        <p>&lt;col class="Column-Column1" /&gt;</p>
+        <p>&lt;col class="Column-Column1" /&gt;</p>
+        <p>&lt;col class="Column-Column1" /&gt;</p>
+        <p>&lt;tbody&gt;</p>
+        <p>&lt;tr class="Body-Body1"&gt;</p>
+        <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td class="BodyD-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr class="Body-Body1"&gt;</p>
+        <p>&lt;td class="BodyB-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td class="BodyB-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td class="BodyA-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/tbody&gt;</p>
+        <p>&lt;/table&gt;</p>
+    </body>
+</html>

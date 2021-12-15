@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5078" MadCap:lastWidth="925" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Not Applicable,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Installing IIS - Windows 2012 Server</h2>
+        <p>This document will provide step-by-step instructions for installing Internet Information Services (IIS) on Windows 2012 Server.</p>
+        <h3>Installing IIS&#160;via the Server Manager dialog</h3>
+        <ol>
+            <li>Open the <span class="UI">Server Manager</span> &gt; Dashboard</li>
+            <li>
+                <p>Click "Add roles and features"</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/ServerManager1.png" />
+                </p>
+            </li>
+            <li>
+                <p>This will open the Add Roles and Features Wizard. Click Next.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard1.png" />
+                </p>
+            </li>
+            <li>Click Next two more times until you get to "Server Roles"<br /></li>
+            <li>
+                <p>At "Server Roles," click the toggle box next to "Web Server (IIS)".</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard4.png" />
+                </p>
+            </li>
+            <li>
+                <p>A separate dialog will open to confirm you want to add IIS. Click "Add Features".</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard5.png" />
+                </p>
+            </li>
+            <li>
+                <p>This will return you to the Add Roles Wizard, but now the toggle box for Web Server (IIS)&#160;will appear checked. Click Next.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard6.png" />
+                </p>
+            </li>
+            <li>
+                <p>At the Features tab, expand ".NET&#160;Framework 4.5 Features" and enable ASP.NET 4.5. Click Next.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard7.png" />
+                </p>
+            </li>
+            <li>At the "Web Server Role (IIS)"&#160;tab, click Next again.</li>
+            <li>
+                <p>If installing IIS for MadCap Feedback, you will also need to enable IIS 6 Metabase Compatibility. In the "Role Services"&#160;tab, expand Management Tools &gt;&#160;IIS 6 Management Compatibility and enable IIS 6 Metabase Compatibility.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard8.png" />
+                </p>
+            </li>
+            <li>
+                <p>At the "Confirm Installation Selections"&#160;dialog, click Install.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard9.png" />
+                </p>
+            </li>
+            <li>The Installation Progress dialog will open during installation &#160;</li>
+            <li>
+                <p>When installation completes, the "Installation Results" dialog will open. Click Close.</p>
+                <p>
+                    <img src="Installing IIS Images/Windows2012Server/AddRolesWizard10.png" />
+                </p>
+            </li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

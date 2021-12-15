@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="TFS"
+    BackgroundColor="Blue"
+    OriginalName="TFS" />
+  <ConditionTag
+    Comment=""
+    Name="SVN"
+    BackgroundColor="Red"
+    OriginalName="SVN" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="VSS"
+    Comment=""
+    OriginalName="VSS" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="multi-user"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="DetailedTesting"
+    Comment=""
+    OriginalName="DetailedTesting" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="BasicTesting"
+    Comment="" />
+</CatapultConditionTagSet>

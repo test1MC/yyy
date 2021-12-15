@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3258" MadCap:lastWidth="1018" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Publishing - UI</h2>
+        <h3>Setup</h3>
+        <p>In order to publish your compiled output, you must first associate one or more Destinations with a target and then compile your output so you have output to publish. </p>
+        <h4>Associating Destinations with a Target</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/TargetEditor--PublishingTab.png" style="width: 622px;height: 134px;" />
+        </p>
+        <p>Baseline tests for UI&#160;will be covered in the Target Editor test plan. For this test plan, just test UI Controls.</p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Edit Destination: </span>Opens the selected Destination file in the <span class="UI">Destination Editor</span>.</li>
+            <li><span class="bold">New Destination… : </span>Opens the <span class="UI">Add Destination…</span> dialog.</li>
+            <li><span class="bold">View Published Help System: </span>Opens the "View URL" of the selected Destination (set in the <span class="UI">Destination Editor</span>) in the default browser.</li>
+            <li>
+                <p class="bold">Destination List</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Destination: </span>Displays the name of each Destination file in the project.</li>
+                    <li><span class="bold">Publish: </span>Lets you associate the Destination with the current target. A checkmark indicates the destination is associated.</li>
+                    <li><span class="bold">Target: </span>Displays the Host Name as set in the <span class="UI">Destination Editor</span>.</li>
+                    <li><span class="bold">View URL: </span>Displays the optional "View URL" as set in the <span class="UI">Destination Editor</span>.</li>
+                    <li><span class="bold">Comment: </span>Displays the Destination's Comment as set in the <span class="UI">Destination Editor</span>.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Catalog Name (not pictured):&#160;</span>Will be covered in WebHelp Plus output test plan.</li>
+        </ul>
+        <h4>Compiling output</h4>
+        <p>Build the Target you want to publish any number of ways.</p>
+        <h3>Publishing</h3>
+        <p class="bold">To publish the output of the Primary Target:</p>
+        <ul style="list-style-type: square;">
+            <li>Click Publish Primary in the Project Toolbar</li>
+            <li>Press CTRL-F6 on the keyboard</li>
+            <li>!Build |&#160;Publish Primary</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">To publish the output of any target:</p>
+        <ul style="list-style-type: square;">
+            <li>Target Editor:&#160;Open the target you want to publish. Click the Publish button in the Target Editor's local toolbar.</li>
+            <li>Right-click the Target in the Project Organizer and select Publish '[TargetName]'</li>
+            <li>Select a Target in the Project Organizer and !Build |&#160;Publish</li>
+        </ul>
+        <h4>Publish Target dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/UI--PublishTarget.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Destination List</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Destination: </span>Displays the name of each Destination file in the project.</li>
+                    <li><span class="bold">Status:&#160;</span>Indicates whether the publishing process has been completed.</li>
+                    <li><span class="bold">Publish: </span>Lets you select or deselect the Destination with the output to be published. A checkmark indicates the destination will be used. The default state of this option for each Destination is based on any associations set in the Publishing tab of the <span class="UI">Target Editor</span> for the generated target.</li>
+                    <li><span class="bold">Upload Changes Only: </span>Select this option if you want Flare to republish only the files that have changed. This can save significant time. The default state of this option should be inherited from the associated Destination file.</li>
+                    <li><span class="bold">Remove Stale Files:&#160;</span>Select this option if you want Flare to identify files that were previously published but are no longer needed. Flare will then remove such files from the destination. The default state of this option should be inherited from the associated Destination file.</li>
+                    <li><span class="bold">Url: </span>Identifies the path where the output files will be published.</li>
+                    <li><span class="bold">Comment: </span>Displays the Destination's Comment as set in the <span class="UI">Destination Editor</span>.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">View Last Log… : </span>Opens the Publishing Log, displaying details about the files that were included in the most recent publishing process.</li>
+            <li><span class="bold">Edit Destination: </span>Opens the selected Destination file in the <span class="UI">Destination Editor</span>.</li>
+            <li><span class="bold">Start Publishing:&#160;</span>Initiates the publishing process.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog without publishing the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Publish Progress dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/UI--PublishProgress.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not publish the output.</li>
+        </ul>
+        <h4>Publishing Log dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/UI--PublishingLog.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Destination List: </span>Lists all Destinations to which content was published. Select a Destination in this column to display the corresponding log. If the output is published to multiple Destinations, verify that this list is sortable by clicking the column heading.</li>
+            <li>
+                <p class="bold">Action List</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Action: </span>Displays the action performed to each published file</li>
+                    <li><span class="bold">File: </span>Displays the filename of each published file</li>
+                    <li><span class="bold">Folder: </span>Displays the path to which each file is published</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Save Log File:&#160;</span>Saves an xml document ("UploadLog")&#160;to the projects Reports folder</li>
+            <li><span class="bold">Log created… :&#160;</span>Verify the created date displays correctly</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

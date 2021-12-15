@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2303" MadCap:lastWidth="1185" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.EditElement or ElementContextMenuItems.EditSubmenu or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SelectContent] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Redacted Text - Editing                                   </h2>
+        <p>Text Redaction is like bold, italic or color in that is applied to an element as a style. Flare uses the style "mc-redacted"&#160;for redacted text.</p>
+        <h4>Applying Text Redaction to text inline</h4>
+        <p>Select some text in the Editor and:</p>
+        <ul>
+            <li>Click the Text Redaction button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---TextRedaction.png" /> in the Format Toolbar or in the Home Ribbon.</li>
+            <li>
+                <p>!Format |&#160;Font to open the <span class="UI">Font Properties</span> dialog and in the Advanced tab select "Redacted"</p>
+                <p><span class="UI">Font Properties</span> dialog:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Redaction/Redaction--FontProperties.png" />
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Applying Text Redaction to an element inline</h4>
+        <p>Select an element in the Editor and:</p>
+        <ul>
+            <li>Click the Text Redaction button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---TextRedaction.png"></img> in the Format Toolbar.</li>
+            <li>
+                <p>!Format |&#160;Font to open the <span class="UI">Font Properties</span> dialog and in the Advanced tab select "Redacted"</p>
+                <p>(Screen shot same as above)</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Applying Text Redaction to an element using the CSS</h4>
+        <p class="bold">Advanced View:</p>
+        <p>In the <span class="UI">Stylesheet Editor</span>, select the style or class you want redacted. Display Properties by Property Groups. Find "mc-redacted" in the Redaction group. Available options should display as "(default),"&#160;"inherit," "none"&#160;and "redacted." Set to "redacted"&#160;to redact the style class.</p>
+        <p>&#160;</p>
+        <p>Advanced View of <span class="UI">Stylesheet Editor</span>:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Redaction/Redaction--StylesheetAdvancedView.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="bold">Simplified View:</p>
+        <p>In the <span class="UI">Stylesheet Editor</span>, double-click the style or class you want redacted. This will open the (Style)&#160;Properties dialog. In the Advanced Tab, find the Redacted Text section, and select "Redacted."</p>
+        <p>&#160;</p>
+        <p><span class="UI">(Style)&#160;Properties</span> dialog opened from Simplified View of the <span class="UI">Stylesheet Editor</span>:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Redaction/Redaction--StyleProperties.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>Redacted Text in the XML&#160;Editor</h4>
+        <p>Redacted Text will display in the <span class="UI">XML Editor</span> with a gray highlight. Redaction applied to an element will simply display the element with a gray background. Redaction applied to a span will also display inline markers (assuming Inline Markers are enabled in the Show menu).</p>
+        <p>&#160;</p>
+        <p><span class="UI">XML&#160;Editor</span> view of Redacted Text:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Redaction/Redaction--XMLEditor.png" style="padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;" />
+        </p>
+        <h4>Code</h4>
+        <p class="bold">Redacted span in content:</p><pre xml:space="preserve">&lt;p&gt;Delete this text and &lt;span style="mc-redacted: redacted;"&gt;replace&lt;/span&gt; it with your own content.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Redacted paragraph in content:</p><pre xml:space="preserve">&lt;p style="mc-redacted: redacted;"&gt;Redacted paragraph.&lt;/p&gt;</pre><pre xml:space="preserve" style="font-weight: bold;">&#160;</pre>
+        <p style="font-weight: bold;">Text Redaction to an element inline:</p><pre xml:space="preserve"><span style="font-weight: normal;">&lt;p&gt;&lt;img src="Resources/Images/palace.bmp" style="width: 151px; height: 99px; mc-redacted: redacted;" /&gt;&lt;/p&gt;</span>
+        </pre>
+        <p>&#160;</p>
+        <p class="bold">Redacted style in CSS:</p><pre>p.redacted</pre><pre>{</pre><pre>mc-redacted: redacted;</pre><pre>}</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

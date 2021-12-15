@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="147" MadCap:lastWidth="850">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Project Name: </span>Lets you enter a name for the project that will be created from the imported documents.</li>
+            <li><span class="bold">Project Folder: </span>Lets you set the location of the project </li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---Browse.png" style="mc-tag-and-class: ;">
+                </img><span class="bold">: </span>Produces the <span class="UI">Browse For Folder</span> dialog which lets you select the Project Folder</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import Project Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the project files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="12" MadCap:lastHeight="6194" MadCap:lastWidth="1352" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Glossary Term Link - Editing</h2>
+        <h3>Glossary Term Link in the XML Editor</h3>
+        <p>A Glossary Term Link will appear as follows in the <span class="UI">XML Editor</span> (if Markers are on):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/GlossaryTermLink---XMLEditor.png" />
+        </p>
+        <p>A broken Glossary Term Link (the term does not exist in any of the project's Glossary files)&#160;will appear as follows in the <span class="UI">XML Editor</span>(if Markers are on):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/GlossaryTermLinkBroken---XMLEditor.png" />
+        </p>
+        <hr />
+        <p>Hovering over a Glossary Term Link in the <span class="UI">XML Editor</span> will display a tooltip with the term's definition:</p>
+        <p class="bold">Text definition:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/GlossaryTermText---Tooltip.png" alt="" title="" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Linked Topic definition:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/GlossaryTermLink---Tooltip.png" alt="" title="" />
+        </p>
+        <h3>Editing a Glossary Term Link</h3>
+        <p>To edit a Glossary Term Link, you need to open the <span class="UI">Glossary Term Link</span> dialog for an existing Glossary Term Link. This is done by invoking the MadCap:glossaryTerm context menu&#160;and selecting <span class="MenuItem">Edit Glossary Term…</span></p>
+        <h4>Glossary Term Link dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/UI--GlossaryTermLink.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Term: </span>Displays the term of the selected Glossary Term Link. This field should not be able to be edited.</li>
+            <li><span class="bold">Definition: </span>Displays the definition of the selected Glossary Term Link. This field should not be able to be edited.</li>
+            <li><span class="bold">Glossary: </span>Displays the name and path of the Glossary file of the selected Glossary Term Link. This field should not be able to be edited.<ul style="list-style-type: square;"><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Edit.png" /> :&#160;Opens the Glossary file in the <span class="UI">Glossary Editor</span></li></ul></li>
+            <li><span class="bold">Select a style class… :&#160;</span>Lets you select a style class for the Glossary Term Link</li>
+            <li><span class="bold">Remove Link:&#160;</span>Unbinds the Glossary Term Link leaving the text but removing the MadCap:glossaryTerm tag</li>
+        </ul>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/GlossaryTerm---Context.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">Glossary term, no class:</p><pre xml:space="preserve">&lt;p&gt;Delete this &lt;MadCap:glossaryTerm&gt;text&lt;/MadCap:glossaryTerm&gt; and replace it.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Glossary term with class, condition and exclude action:</p><pre>&lt;p&gt;Delete this &lt;MadCap:glossaryTerm class="Expanding" MadCap:conditions="Default.ScreenOnly" MadCap:excludeAction="unbind"&gt;text&lt;/MadCap:glossaryTerm&gt; and replace it.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

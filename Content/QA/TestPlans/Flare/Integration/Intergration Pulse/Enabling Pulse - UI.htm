@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="854" MadCap:lastWidth="624" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs]" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Status.Flare V7 Needs Review,Product.Flare" MadCap:ignoredWords="url;http">
+    <head>
+    </head>
+    <body>
+        <h2>Enabling Pulse - UI</h2>
+        <p>Pulse is enabled for a Flare output in a Flare Target file. In order to enable Pulse in a Flare target, you'll need a Pulse Server and valid login credentials for that server. </p>
+        <p class="note">Pulse is supported in HTML5 and WebHelp outputs</p>
+        <h3>Target Editor&#160;|&#160;Community Tab - Default View</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--CommunityTab1.PNG" alt="" title="" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--FeedbackServiceTab.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Community Log In</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--LogIn.png" alt="" title="" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Server:&#160;</span> Un-editable URL to your Pulse web server&#160;(ex: http://ebrown01/pulse/Feedback/Service.FeedbackExplorer/Service.asmx)</li>
+            <li><span class="bold">User name:&#160;</span>Type or use the drop down to select your username</li>
+            <li><span class="bold">Password:&#160;</span>Type your password here, it should show as asterisks.</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and commits the license key into the Pulse Service License Key field in the Target Editor</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not commit a license key to the Target Editor.</li>
+        </ul>
+        <h3>Target Editor&#160;|&#160;Community Tab - Pulse enabled</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--CommunityTab2.PNG" alt="" title="" style="mc-thumbnail: popup;" />
+        </p>
+        <hr class="HRclear" />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Current User: </span>Displays the current logged in user<ul><li><span class="bold">Login:&#160;</span>Launches the login dialog. Button will be grayed out when a user is already logged in.</li><li><span class="bold">Logout:&#160;</span>Clears the existing credentials</li></ul></li>
+            <li><span class="bold">Communities:</span>&#160;Displays&#160;"None"&#160;or the current community selected. Before you can save the Flare target, you must associate a Flare community with the Pulse system<ul><li><span class="bold">Manage: </span>Launches the Manage Communities dialog</li><li><span class="bold">Remap Topics: </span>Launches the Remap Community Topics dialog. &#160;If any changes have been made to the TOC structure or topic paths, you will need to remap.</li></ul></li>
+            <li><span class="bold">Refresh:&#160;</span>updates the Current Pulse Configuration info. You will see basic information about the community, such as the status of the server, and the total number of users.</li>
+        </ul>
+        <h3>Manage Communities Dialog</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--ManageCommunities.PNG" alt="" title="" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr class="HRclear" />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Add:</span>&#160;Launches the Add Community dialog.<ul><li><span class="bold">Enter Name:</span> Type the name of your community</li><li><span class="bold">Enter Published URL:&#160;</span>Type the URL of your published output.&#160;&#160;If you do not include the <span class="italic">http://</span> in the url, you will receive an error "published url must be a valid URL" when you click OK.</li></ul></li>
+            <li><span class="bold">Edit:&#160;</span>Launches the Edit Community dialog. &#160;This has the same options as the Add Community dialog.</li>
+            <ul>
+                <li><span class="bold">Enter Name:</span> Type the name of your community</li>
+                <li><span class="bold">Enter Published URL:&#160;</span>Type the URL of your published output.&#160;&#160;If you do not include the <span class="italic">http://</span> in the url, you will receive an error "published url must be a valid URL" when you click OK.</li>
+            </ul>
+            <li><span class="bold">Delete:&#160;</span>You will get a Yes/No prompt "Deleting this community can not be undone. &#160;Are you sure you want to do this?"</li>
+            <li><span class="bold">OK:&#160;</span>The community currently highlighted will be the selected community for this target.</li>
+            <li><span class="bold">Cancel:&#160;</span>No changes will be made.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Boundary test all community names (Numbers, Text, Various characters and symbols including international).  Test creating communities with various characters and confirm they appear correctly in the Pulse Dashboard&#160;(log in to the Pulse dashboard using an account that is a member of the Administrators or Employees group. Then select Systems&gt;Find Systems from the menu. The community you created should appear in the list.)</li>
+            </ul>
+        </div>
+        <h3>Remap Community Topics dialog</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--RemapCommunityTopics.PNG" alt="" title="" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr class="HRclear" />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">New Topics:</span> Displays the Title and Path of any new topics, moved topics, or renamed topics (new name)</li>
+            <li>
+                <p><span class="bold">Remove Topics: </span>Displays the Title and Path of any deleted topics, moved topics, and renamed topics (former name).</p>
+            </li>
+            <li>
+                <p><span class="bold">Update Topics: </span>Displays the Change, Title and Path of any topics that have had reassigned links or changes in their title, etc. *needs more detailed documentation.</p>
+            </li>
+            <li><span class="bold">Exclude Topics: </span>Displays the Title and Path of any topics that are not affected by the topic remapping.</li>
+            <li><span class="bold">OK:</span>&#160;Dialog will close, changes will be saved and you will get a message "Community has been updated."</li>
+            <li><span class="bold">Cancel:</span>&#160;Dialog will close, changes will not be saved.</li>
+        </ul>
+        <h3>Reassign Community Links dialog</h3>
+        <p>If you rename a topic, it will show up as both&#160;New and Removed.&#160;If you want to link any data from the previous topic to the new topic, right click that topic in the Remap&#160;Community Topics dialog, and click "Reassign Link."&#160;&#160;This will open the Reassign Community Links dialog and you can select a link from the drop down.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Pulse/UI--Target--ReassignCommunityLinks.PNG" style="mc-thumbnail: popup;" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

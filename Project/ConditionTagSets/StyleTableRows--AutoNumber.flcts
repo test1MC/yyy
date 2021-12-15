@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="McAutoNumberPosition"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="McAutoNumberOffset"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="McAutoNumberFormat"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="McAutoNumberClass"
+    Comment="" />
+</CatapultConditionTagSet>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="260" MadCap:lastWidth="1204">
+    <body>
+        <h4>Block Bars, Span Bars, Tooltips and Caret Tag</h4>
+        <p class="bold">Block/Span Bar and Tooltip:</p>
+        <ul class="checkbox">
+            <li>Make sure block bars and span bars are enabled using the <img src="../../Images/TestPlans/Buttons/Button---ShowBlocks.png" /> and <img src="../../Images/TestPlans/Buttons/Button---ShowSpans.png" />buttons in the <span class="UI">XML Editor</span>'s lower toolbar. Block and span bars are used to see and select a tag and to get easy access to the element's context menu.<ul class="checkbox"><li>Hovering over the block/span bar should reveal a tooltip displaying the tag and any attributes set on it</li><li>Clicking the block/span bar will select the element</li><li>Right-clicking the block/span bar will invoke the context menu for the element</li></ul></li>
+        </ul>
+        <p class="bold">Caret Tag Neighborhood (inline elements only):</p>
+        <ul class="checkbox">
+            <li>Make sure "Show Caret Tag Neighborhood"&#160;is enabled (Toolstrip interface:&#160;<span class="MenuItem">!View |&#160;Show</span>; or click the "Show" <img src="../../Images/TestPlans/Buttons/Button---ShowTags.png" /> drop-down menu in the <span class="UI">XML Editor</span>'s local toolbar and enable "Show Caret Tag Neighborhood"). Place the insertion point within the same paragraph level tag as the element to reveal the caret tag neighborhood.<ul class="checkbox"><li>Caret tag neighborhood displays the correct tag</li><li>Clicking the caret tag will select the element</li><li>Right-clicking the caret tag will invoke the context menu for the element</li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="ListStyleType"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="ListStylePosition"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="ListStyleImage"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="ListStyle"
+    Comment="" />
+</CatapultConditionTagSet>

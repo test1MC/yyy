@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="274" MadCap:lastWidth="845">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Available: </span>Displays a list of all available buttons which can be added to the Topic Toolbar.</li>
+            <li><span class="bold">Selected: </span>Displays a list of buttons set to appear in this Topic Toolbar.</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Skins/SkinEditor--AddItemButton.png" />: </span>Adds the selected button(s) in the "Available" list to the "Selected" list</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---MoveUp.png"></img>: </span>Moves the selected button in the "Selected" list up in the sequence</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---MoveDown.png"></img>: </span>Moves the selected button in the "Selected" list down in the sequence</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Topic Toolbar/TopicToolbarProxy---Remove.png" class="bold"></img>: </span>Removes the selected toolbar button</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Topic Toolbar/TopicToolbarProxy---AddSelector.png" style="mc-tag-and-class: ;" />: </span>Adds a selector after the selected button</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Skins/SkinEditor--ResetToDefaultItemsButton.png" />: </span>Reset to default items</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Skins/SkinEditor--AddCustomToolbarItem.png" style="mc-tag-and-class: ;" />: </span>Opens the <span class="UI">New Toolbar Button</span> dialog where you can name the new toolbar button.</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Flare/Skins/SkinEditor--RemoveCustomToolbarItem.png" style="mc-tag-and-class: ;" />: </span>Removes the selected custom toolbar item.</li>
+            <li><span class="bold">Edit: </span>Opens the <span class="UI">Toolbar JavaScript</span> Dialog.</li>
+        </ul>
+    </body>
+</html>

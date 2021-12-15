@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="#d2691e"
+    Name="Clear"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff7f50"
+    Name="Float"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#6495ed"
+    Name="Height"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#fff8dc"
+    Name="Margin"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#dc143c"
+    Name="Padding"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00008b"
+    Name="Width"
+    Comment="" />
+</CatapultConditionTagSet>

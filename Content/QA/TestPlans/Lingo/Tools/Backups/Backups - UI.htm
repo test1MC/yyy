@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2533" MadCap:lastWidth="886" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Backups - UI  </h2>
+        <h3>Opening the Backups Pane</h3>
+        <p>!File | Backups | Backups</p>
+        <p>!View |&#160;Backups</p>
+        <h3>Sending a file to the Backups folder</h3>
+        <p>!File |&#160;Backups |&#160;Send copy of&#160;"[filename]"&#160;to the Backups Folder</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Backups/Backups--Menu.png" style="width: 551px;height: 72px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>This will bring up the following:&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Backups/UI--BackupsSuccessfull--Dialog.png" style="width: 384px;height: 154px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>Clicking "Yes"&#160;should open the <span class="UI">Backups Pane</span>. Clicking "No"&#160;will still send the file to the Backups folder however the <span class="UI">Backups Pane </span>will not open.</p>
+        <p>&#160;</p>
+        <h4>Test Cases</h4>
+        <p>You should only be able to send appropriate files to the Backups Folder. Test placing focus on various items in Flare's UI&#160;and test that the "Send copy of..."&#160;option is active/inactive appropriately. Test:</p>
+        <ul style="list-style-type: circle;">
+            <li>Content Files (should be active)</li>
+            <li>Project Files (should be active)</li>
+            <li>Frame Contents Pane (should be <span class="italic">inactive</span>)</li>
+            <li>Start Page (should be <span class="italic">inactive</span>)</li>
+            <li>Help Topic from Lingo's internal Help system (should be <span class="italic">inactive</span>)</li>
+            <li>As new features are introduced, make a note here if they should impact the activeness of this menu option</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Backups Folder location</h3>
+        <p>The Backups Folder is created in the "Project"&#160;folder of each individual project. To accommodate for multiple users accessing a single project over a network, unique Backups folders are created per User. From the project file, it can be found here:</p>
+        <p class="bold">\Project\Users\[your username]\Backups</p>
+        <h4>Test Cases</h4>
+        <p>Access a project from \\files2\QA or \\dc2 on two unique machines as two completely different users. Have both users send documents to the Backups Folder and confirm that each user has their own folder and that Backup files are created in the user-appropriate folder.</p>
+        <h3>Clearing the Backups Folder</h3>
+        <p class="bold">!File |&#160;Backups |&#160;Clear the "Backups Folder"...</p>
+        <p>Selecting this menu option will prompt for confirmation first, and then delete all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</p>
+        <h4>Test Cases</h4>
+        <p>Access a project from \\files2\QA or \\dc2 on two unique machines as two completely different users. Have both users send documents to the Backups Folder and confirm that clearing the Backups Folder only clears the folder for the appropriate user.</p>
+        <h3>Backups Pane - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in the left pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Backups/UI--Backups--Pane.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Local Toolbar</h4>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Restore... (Restore selected files(s)):&#160;</span>Prompts for confirmation first, and then restores the active copy of the file to the backup copy and removes the files from the Backups Folder.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png"></img> (Refresh):&#160;</span>Refreshes the list of Backup files.</li>
+            <li><span class="bold">Clear the "Backups Folder"... (Delete all files in the Backups Folder):&#160;</span>Prompts for confirmation first, and then deletes all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</li>
+        </ul>
+        <p class="bold">Backup Files grid</p>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Name: </span>Shows the name of the  file in the Backups folder.</li>
+            <li><span class="bold">Original Path:&#160;</span>Shows the location of the original file in the project.</li>
+            <li><span class="bold">Extension:&#160;</span>Shows the extension of the file</li>
+            <li><span class="bold">Backup Date:&#160;</span>Shows the backup date and time</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <h4>Right-Click Menu</h4>
+        <p>Right-clicking anywhere in the Grid area of the Backups pane should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Backups/UI--BackupRightClick--Menu.png">
+            </img>
+        </p>
+        <p class="bold">Menu Items (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Restore... (Restore selected files(s)):&#160;</span>Prompts for confirmation first, and then restores the active copy of the file to the backup copy and removes the files from the Backups Folder.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png"></img> (Refresh):&#160;</span>Refreshes the list of Backup files.</li>
+            <li><span class="bold">Clear the "Backups Folder"... (Delete all files in the Backups Folder):&#160;</span>Prompts for confirmation first, and then deletes all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="861" MadCap:lastWidth="1082" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Localized UI - UI</h2>
+        <p>When Flare is first launched, following the product splash image, you should see the <span class="UI">Select UI Language</span> dialog. If you have already disabled this dialog from showing on launch, you may need to reset the "Show"&#160;option for this dialog. To reset this "Show" option:</p>
+        <ol>
+            <li>In Flare, open the <span class="UI">Options</span> dialog (Tool Strip interface:&#160;<span class="MenuItem">!Tools |&#160;Options</span>; Ribbon interface:&#160;<span class="RibbonItem">!File |&#160;Options</span>)</li>
+            <li>Select the General tab</li>
+            <li>Check the box next to "Show Select UI Language Dialog on Startup" and click OK</li>
+            <li>Close and reopen Flare</li>
+        </ol>
+        <h3>Select Language dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Localized UI/UI--SelectUILanguage.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Select User Interface Language Order:&#160;</span>From top to bottom, sets the order of priority for UI&#160;language. Flare will display all UI&#160;in the language at the top of this list. If, for some reason, a string does not exist for the preferred language, the string will appear in the language which appears next on the list.</li>
+            <li><span class="bold">Select: </span>Moves the selected language to the top of the list.</li>
+            <li><span class="bold">Up:&#160;</span>Moves the selected language up one spot in the list.</li>
+            <li><span class="bold">Down:&#160;</span>Moves the selected language down one spot in the list.</li>
+            <li><span class="bold">Show this dialog on startup:&#160;</span>Disable this option to stop Flare from showing this dialog every time Flare is launched.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify all languages work</li>
+            <li>
+                <p>Verify language priority works. (English will always work since it does not pull from the strings files.)</p>
+                <p>Since most strings will exist in all languages, you may need to alter the strings files to test this. For example, in the MadCap Flare install directory, browse to Flare.app\Resources\Strings and find the B3.StartPageKit.mcstrings file. Find string ID number 6. This is the string "Open an Existing Project"&#160;which appears on the Start Page. In the mcstrings file, delete the French string for ID&#160;number 6. Then launch Flare with French UI. Try using German or Japanese as the second language of priority and verify that the string in the Start Page uses the appropriate backup language and does not always default to English.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

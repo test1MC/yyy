@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="862" MadCap:lastWidth="819" MadCap:conditionTagExpression="include[Default.UITestsDialogs] exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Rules - UI</h2>
+        <h3>Opening the UI</h3>
+        <p><b>Open Insert Rule dialog:</b>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Rule</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert |&#160;Rule</span></li>
+        </ul>
+        <h3>Insert Rule dialog - UI Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Rule/Dialog--InsertRule.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Select a rule class</span>: Select the style class for the ruler you are inserting or modifying. All classes of hr that exist in the stylesheet should appear. </li>
+            <li><span class="bold">Remove ruler:</span> Deletes the selected rule.</li>
+            <li><span class="bold">OK:</span> Accepts the selected style class and inserts the rule.</li>
+            <li><span class="bold">Cancel:</span> Closes the Dialog without accepting any changes and will not insert a rule.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (multimedia, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+            </ul>
+        </div>
+    </body>
+</html>

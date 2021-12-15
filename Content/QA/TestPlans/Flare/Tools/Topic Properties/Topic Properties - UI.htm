@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="4653" MadCap:lastWidth="1033" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Topic Properties - UI</h2>
+        <h3>Opening the UI</h3>
+        <ul class="checkbox">
+            <li><span class="UI">Content Explorer</span>
+                <ul class="checkbox">
+                    <li>Right-click a topic in the <span class="UI">Content Explorer</span> and select <span class="MenuItem">Properties</span></li>
+                    <li>Select a topic in the <span class="UI">Content Explorer</span> and press <span class="KeyboardShortcut">F4</span></li>
+                    <li>Select a topic in the <span class="UI">Content Explorer</span> and click the Properties button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> in the <span class="UI">Content Explorer</span>'s local toolbar</li>
+                </ul>
+            </li>
+            <li><span class="UI">File List</span> <ul class="checkbox"><li>Right-click a topic in the <span class="UI">File List</span> and select <span class="MenuItem">Properties</span></li><li>Select a topic in the <span class="UI">File List</span> and press <span class="KeyboardShortcut">F4</span></li><li>Select a topic in the <span class="UI">File List</span> and click the Properties button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> in the <span class="UI">File List</span>'s local toolbar</li></ul></li>
+            <li><span class="UI">Pending Check-Ins</span>
+                <ul class="checkbox">
+                    <li>                Right-click a topic in the <span class="UI">Pending Check-Ins</span> pane and select <span class="MenuItem">Properties</span> </li>
+                    <li>Select a topic in the <span class="UI">Pending Check-Ins</span> pane and press <span class="KeyboardShortcut">F4</span> </li>
+                    <li>Select a topic in the <span class="UI">Pending Check-Ins</span> pane and click the Properties button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> in the <span class="UI">Pending Check-Ins</span> pane's local toolbar</li>
+                </ul>
+            </li>
+            <li><span class="UI">XML&#160;Editor</span>
+                <ul class="checkbox">
+                    <li>Open a topic in the <span class="UI">MDI</span>,&#160;give it the focus, and press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">P</span></li>
+                    <li>Open a topic in the <span class="UI">MDI</span>, right-click anywhere in an open topic and select <span class="MenuItem">Topic Properties</span></li>
+                </ul>
+            </li>
+            <li>Tools Strip interface:<ul class="checkbox"><li>Open a topic in the <span class="UI">MDI</span>,&#160;give it the focus, and go <span class="MenuItem">!File |&#160;Properties</span></li><li>Select a topic in the <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane and go <span class="MenuItem">!File |&#160;Properties</span></li><li>Select a topic in the <span class="UI">Content Explorer</span>, <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane and click the Properties button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> in the Standard Toolbar</li><li>Select a topic in the <span class="UI">Content Explorer</span>, <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane and go <span class="MenuItem">!Edit |&#160;Properties</span></li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li>Open a topic in the <span class="UI">MDI</span>,&#160;give it the focus, and go <span class="RibbonItem">!File |&#160;Properties</span></li><li>Select a topic in the <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane and go <span class="RibbonItem">!File |&#160;Properties</span></li><li>Select a topic in the <span class="UI">Content Explorer</span>, <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane and go <span class="RibbonItem">!Home | Properties</span></li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Using File view of the <span class="UI">Content Explorer</span>, or using the <span class="UI">File List</span> or <span class="UI">Pending Check-Ins</span> pane, select multiple topics and open the Properties dialog. In doing so, you should be able to set Properties for multiple topics at once. Test that "(as is)"&#160;options exist for all Properties.</p>
+        </div>
+        <h3>(Topic)&#160;Properties - UI&#160;Test Cases</h3>
+        <h4>General tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name:&#160;</span>Displays the name of the topic file. This field is currently (as of V4) read only. In early versions of Flare, you could modify the name in this field, however it would not update links properly, so it was disabled. User bug #26938 may re-enable this field at some point.</li>
+            <li><span class="bold">Location:&#160;</span>Displays the location of the topic file.</li>
+            <li><span class="bold">Open Folder:	</span>Opens the Windows folder holding the topic file.</li>
+            <li><span class="bold">Read Only:	</span>If you do not want the file to be edited, click the check box to add a check mark.</li>
+            <li><span class="bold">Size:	</span>Displays the size of the topic file.</li>
+            <li><span class="bold">Created:	</span>Displays the date and time that the topic file was created.</li>
+            <li><span class="bold">Modified:	</span>Displays the date and time that the topic file was last modified.</li>
+        </ul>
+        <h4>Topic Properties tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--TopicPropertiesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Topic Title:	</span>You can enter a display title for the topic in this field. If no title is entered, Flare will automatically populate the title element with content from the topic's first heading at compile time.</li>
+            <li><span class="bold">Topic Style Class:	</span>You can select a topic style class to associate with the topic. All css classes of the html style should appear in the dropdown.</li>
+            <li><span class="bold">Stylesheet:	</span>If the project or primary target is not using a Master Stylesheet, select the stylesheet for the topic.</li>
+            <li><span class="bold">Description: </span>Lets the user enter a description for the topic. The description is not visible when viewing the topic, but description content is used when determining search results. A description is also used by external search engine results pages. Additionally, HTML5 output displays the topic description in its search results.</li>
+            <li><span class="bold">Searchable:	</span>If this check box displays a check mark, the topic will be included in a search performed by your users in the output. If you remove the check mark, the topic will be excluded from the search, but it will still be included in the generated output. </li>
+        </ul>
+        <h4>File Tags tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--FileTagsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-FileTags.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Conditional Text tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--ConditionalTextTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ConditionalText.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Snippet Conditions tab</h4>
+        <p class="note">The Include/Exclude expressions that you set in this dialog allow the user to include/exclude conditionally tagged content that exists inside of a snippet that is included in the topic.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--SnippetConditionsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Tags: </span>Displays a list of all Condition Tag Sets in the project.</li>
+            <li><span class="bold">Include:&#160;</span>If the "Include"&#160;box for a particular tag is selected, any content associated with that tag will be included even if it is excluded by another conditional tag.</li>
+            <li><span class="bold">Exclude:&#160;</span>If the "Exclude"&#160;box for a particular tag is selected, any content associated with that tag will be excluded.</li>
+            <li><span class="bold">Edit Set:&#160;</span>Open the selected Condition Tag Set in the <span class="UI">Condition Tag Set Editor</span>.</li>
+        </ul>
+        <h4>Language tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Properties/Dialog--TopicProperties--LanguageTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Hide languages with no spell check support: </span>Reduces the list of visible languages to those which have spell check support.</li>
+            <li><span class="bold">(Language list):</span> Lets you set the spell check language for the topic. Selecting "(default)"&#160;will use the project language.</li>
+        </ul>
+    </body>
+</html>

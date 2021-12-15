@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="13098" MadCap:lastWidth="641" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Index - Output</h2>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Support in Web Help Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li>For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>WebHelp Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WebHelpOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See" and "See also" links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li style="font-weight: normal;">For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output. <b>Note:&#160;HTML 5 / WebHelp 2 has a skin separate from traditional webhelp</b></li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>For WebHelp Mobile output, there is also an option in the Skin to display a number next to an Index entry which is associated with multiple topics.</p>
+        <p class="bold">Mobile Skin | Options Tab:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup--IndexSubItems.png" alt="" title="" style="mc-thumbnail: popup;" />
+        </p>
+        <h5>WebHelp Mobile Index</h5>
+        <p class="bold">(Screenshot is from Advanced output)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WHMobileOutput.png" alt="" title="">
+            </img>
+        </p>
+        <p class="bold">Sub-terms open a new Index page:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WHMobileOutput--Subterms.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Air Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li>For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>WebHelp Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WebHelpOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See" and "See also" links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li>For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>WebHelp Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WebHelpOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See" and "See also" links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h4>Support in CHM Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li>For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>HTML&#160;Help Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--HtmlHelpOutput.png" alt="" title="">
+            </img>
+        </p>
+        <p><span class="UI">Topics Found</span> dialog for Index entries used by multiple topics:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--HtmlHelpOutput--TopicsFound.png" alt="" title="" style="mc-thumbnail: popup;">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h4>Support in DotNet Outputs: </h4>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <h5>Skin Setup</h5>
+        <ul>
+            <li>For all Web-based outputs, the Index must be enabled in the Skin in order for an Index to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin | General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin | General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>DotNet Help Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--DotNetHelpOutput.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p><span class="UI">Index Results</span> pane for Index entries used by multiple topics:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--DotNetHelpOutput--IndexResults.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+                <li>Verify that in instances where an index keyword is positioned further down in a topic that the topic, when opened from the Index pane, scrolls to the point where the index keyword was inserted.</li>
+            </ul>
+        </div>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in EPUB Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h4>Support in PDF Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h5>PDF, XPS and XHTML Book Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--PdfXpsHtmlBookOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+            </ul>
+        </div>
+        <h4>Support in Word Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h5>Word Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WordOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+            </ul>
+        </div>
+        <h4>Support in Frame Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h5>FrameMaker Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--FrameMakerOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+            </ul>
+        </div>
+        <h4>Support in XPS Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h5>PDF, XPS and XHTML Book Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--PdfXpsHtmlBookOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+            </ul>
+        </div>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <ul>
+            <li>For all print outputs, an Index Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Create keywords that link to multiple topics</li>
+            <li>Create "compound keywords," that is, use more than one index term in a single &lt;MadCap:keyword&gt;&#160;tag, and verify that all keywords output correctly</li>
+            <li>Create multi-level keywords; use the parent term in some topics and the sub-terms in others</li>
+            <li>Create valid and invalid "See" and "See Also" references with an Index Link Set; verify the valid ones output correctly and the invalid ones produce compile errors</li>
+            <li>Create auto-index phrases and verify they create index terms in all outputs</li>
+            <li>Use condition tags to:<ul style="list-style-type: square;"><li>Condition out keywords and verify those keywords do not appear in the output</li><li>Condition out topics and verify any keywords contained in those topics do not appear int he output</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Place index keywords in successive topics so that the keyword will produce a range of pages in the output. For example, test that a keyword that occurs on page 9, 10, 11 and 12 is output as 9-12 (except for Word).</li>
+            <li>Test Index Heading variables. In the Page Layout file associated with the topic containing the Index Proxy, insert the heading variables FirstIndexTerm, LastIndexTerm, FirstIndexHeading and LastIndexHeading. The factory template page layout file IndexResizable.flpgl already includes the "term" variables.</li>
+        </ul>
+        <h5>PDF, XPS and XHTML Book Index</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--PdfXpsHtmlBookOutput.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify all use cases detailed above generate as pictured<ul style="list-style-type: square;"><li>Index terms with multiple results</li><li>Multi-level index terms</li><li>"See"&#160;and "See also"&#160;links (created from an Index Link Set)</li></ul></li>
+            </ul>
+        </div>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>When generating DITA output, Flare's index source code needs to be converted to DITA's index source code. For this reason, DITA&#160;does not support Index Proxies, </li>
+        </ul>
+        <p>&#160;</p>
+        <p>Here are some examples of how Flare index code should appears in generated DITA&#160;content:</p>
+        <table style="margin-left: 0;margin-right: auto;">
+            <col style="width: 3in;" />
+            <col style="width: 3in;" />
+            <thead>
+                <tr>
+                    <th>Flare Code:</th>
+                    <th>DITA&#160;Code:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>&lt;MadCap:keyword term="header" /&gt;</p>
+                    </td>
+                    <td>
+                        <p>&lt;indexterm&gt;header&lt;/indexterm&gt;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Compiler errors:</h3>
+        <p>Any attempt to use an Index Link where the linked term does not exist should produce:<br />"Linked index term "[Linked Term]" is not in the index, skipping the link "[Term]"…</p>
+    </body>
+</html>

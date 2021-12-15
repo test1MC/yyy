@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="276" MadCap:lastWidth="845">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Pulse/Feedback Server: </span>Enable/disable the Pulse/Feedback Service (must be enabled to edit the rest of the fields below)</li>
+            <li><span class="bold">Server URL:&#160;</span>Lets you select the Feedback Server you want to host the service. Enter "madcap" for the MadCap Software hosted Feedback Service, or enter the name or IP&#160;address of the machine running Feedback Server Admin.</li>
+            <li><span class="bold">License:&#160;</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Feedback Service License Key:&#160;</span>If using MadCap hosted Feedback Service (server is “madcap”), this field can only be populated by clicking the Enter Key button below.  If using your own installation of Feedback Server, you can paste your Feedback Key in this field.</li>
+                    <li><span class="bold">Enter Key… :&#160;</span>Opens the <span class="UI">Feedback Service End User License Agreement</span> dialog which lets you add your Feedback Key for MadCap hosted Feedback Service and requires that you accept terms of the license.</li>
+                    <li><span class="bold">Purchase Key… :&#160;</span>Lets you purchase a Feedback Service Key from the MadCap eComm website.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Current Configuration:&#160;</span>Displays the configuration of your feedback key (Anonymous comments, reviewers, etc)<ul style="list-style-type: square;"><li><span class="bold">Refresh:&#160;</span>Updates the latest configuration set in the Feedback Explorer applications.</li><li><span class="bold">Configure with Feedback Explorer Application:&#160;</span>Opens the configuration file for the Feedback Key in the Feedback Explorer applications.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

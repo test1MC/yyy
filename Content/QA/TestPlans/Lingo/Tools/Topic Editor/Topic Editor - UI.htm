@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5230" MadCap:lastWidth="985" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>Topic Editor - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>1.	Open the File List window pane (View&gt;File List).</p>
+        <p>2.	At the top of the window pane, next to the Filter field, click the down arrow and select Translation Candidates.</p>
+        <p>3.	In the list, locate a row with "Topic," "Snippet," or "Master Page" displayed in the Type column and double-click it.</p>
+        <h3>UI</h3>
+        <h4>Grid Area (Visual and Grid Mode)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--GridModeV4.png" class="properties" style="width: 234px;height: 271px;" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Topic Editor Local Toolbar:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--TopicEditor--ToolbarV4.png" style="width: 405px;height: 20px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/UI--Button--ShowHideInformation.png" style="width: 21px;height: 21px;" /> <![CDATA[ ]]><b>Hide/show info bar:</b> Hides or shows special information pertaining to the editor or window pane</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--Upload SelectedV4.png" /><b>Upload Selected:</b> Uploads the selected segment with a new translation to the translation memory</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--Upload FileV4.png" /><b>Upload File:</b> Uploads all new translated segments within the select file(s) to the translation memory.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--StatusDropDownV4.png" /><b>Status:</b> Drop down menu that allows the user to select the status of the file in use.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/UI--Button--ShowHideParagraphSpaceMarkers.png" style="width: 16px;height: 16px;" /> <![CDATA[ ]]><b>Show Spaces:</b>  Turns paragraph and space markers on and off. When you turn this feature on, you can see markers that show where paragraphs end and</p>
+        <p>where space exists before and after content.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--AddNewTermV4.png" /><b>Add New Term to Termbase:</b> Opens the Add New Term to Termbase dialogue.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--TogglePreviewMode.png" /><b>Translation/Preview Mode:</b> lets you toggle between the translation mode and the preview mode of the editor.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Grid Mode (UI)</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--GridModeV4.png" style="width: 627px;height: 247px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Grid mode allows you to work with the file content in text strings organized in columns, similar to the way other content (e.g., tables of contents, variables, glossaries) is displayed in the respective editors. The grid mode not only lets you translate the text in small segments, and it is also necessary to use this mode for translating hidden text strings (e.g., hyperlink screen tips, alternative image text that is used for Section 508 compliance). These hidden strings can be translated only in grid mode.</p>
+        <p>&#160;</p>
+        <p><b>Background colors:</b> White=Not Translated; Gray=Translated/Accepted; Red=Match Exists From TM (darker the shade, higher the match percentage).</p>
+        <p class="note">Although index keywords and concepts may appear in topics, they are not translated in those same files. For example, to translate all index keywords, open the Index.liindexmap file from the File List window pane.</p>
+        <p>&#160;</p>
+        <p><b>Columns:</b>
+        </p>
+        <ul>
+            <li><b>Segment number:</b>Displays the segment number.</li>
+        </ul>
+        <ul>
+            <li><b>Source:</b> 	Displays the text in the source language.</li>
+            <li><b>Translation:</b> 	Displays a copy of the text, which needs to be translated into the target language. You can click on the row and, in the local toolbar, select Translate&gt;Suggest. In the dialog that opens, you can provide the translation, and when you are finished, that translated text will display in this cell.</li>
+            <li>All columns should be sortable and resizeable.</li>
+        </ul>
+        <p><b>Controls:</b>
+        </p>
+        <ul>
+            <li><b>UP/Down arrows:</b> moves to the previous/next segment</li>
+            <li><b>Enter:</b> moves to the next segment and changes the color to grey(accepted), however the translation is not actually uploaded to the TM if the source is the same as the target.</li>
+            <li><b>Alt+Down/Up arrow:</b> Accepts the current segments translation, uploads it to the TM, and moves to the next UNTRANSLATED segment.</li>
+        </ul>
+        <p>&#160;</p>
+        <li><b>Right Click Menu:</b> Right clicking any row should invoke sub-menu:</li>
+        <li>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--RightClickGridV4.png" />
+        </li>
+        <li><span class="bold">Revert to Source:</span> Reverts the content in the target language column back to the content that is in the source language column.</li>
+        <li><span class="bold">Add Tags From Source:</span> Adds all the tags that are in the content of the source language column to the target language side.</li>
+        <li><span class="bold">Add New Term:</span> Opens the Add to Termbase dialogue window.</li>
+        <p><b>Upload Selected:</b> Uploads the selected segment with a new translation to the translation memory</p>
+        <p><b>Upload File:</b> Uploads all new translated segments within the select file(s) to the translation memory.</p>
+        <h4>Visual Mode (UI)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--VisualModeV4.png" style="width: 624px;height: 310px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>Following are the various kinds of "difference" icons that you might see in a project:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/UI--DifferenceIcons.png" style="width: 171px; height: 263px;" class="left">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The visual mode displays two window panes. The text in the source language is shown in the left pane, and the text in the translated (or soon-to-be translated) language is shown in the right pane. The visual mode displays the file in the same way that the author edits it in Flare or Blaze, with content shown in complete headings, paragraphs, lists, and so on.</p>
+        <p class="note">Note  You might notice light green or dark green rectangles in the topic with text inside. These are index and Concept keywords, which are not translated using the Topic Editor, but rather their own editors. You also might notice places in the topic where you cannot select text. This is likely a snippet or variable, which is inserted into a topic but not edited from there. Like index and Concept keywords, snippets and variables can be translated separately from topics.          <![CDATA[ ]]></p>
+        <p class="note">Note  The bars that you see to the left of content are called "structure bars." They allow you to see the exact tag structure of the file as you work.          <![CDATA[ ]]></p>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Source Topic</b> 	This is the left window pane, which displays the file in the source language.</li>
+            <li><b>Translated Topic</b> 	This is the right window pane, which displays the file in the target language.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Translation Area</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--TranslationAreaV4.png" style="width: 875px;height: 93px;" />
+        </p>
+        <p>&#160;</p>
+        <p>The source(left) side is read only in the translation area.</p>
+        <p>The translation(right) side is the only content that is editable.</p>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <ul>
+            <li><b>Confirm Translation:</b> this button accepts the current segments translation, uploads it to the TM, and moves to the next UNTRANSLATED segment</li>
+            <li><b>Down/Up Arrows:</b> Move to the previous/next segment.</li>
+            <li><b>CTRL + UP/Down arrows:</b> <![CDATA[ ]]>selects content from the previous/next segment without leaving the translation area.</li>
+            <li><b>Enter:</b>accepts the translation and moves to the next untranslated segment and changes the color of the segment in the grid to grey(accepted).</li>
+            <li><b>Alt+Down/Up arrow:</b> Accepts the current segments translation, uploads it to the TM, and moves to the next UNTRANSLATED segment.</li>
+        </ul>
+        <p class="note">As you make changes in the translation area the content in the grid area should update as well.</p>
+        <p><b>Test case:</b> If the tags in the translation area match the source then you should be able to move to the previous or next segment. If they do not match the user should get an message saying the tags do not match.</p>
+        <p>&#160;</p>
+        <p><b>Right Click Menu:</b> Right clicking any row should invoke sub-menu:&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--RightClickTranslation4.png" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li><span class="bold">Cut:</span> Cuts out the selected content and copies it to the clipboard</li>
+            <li><b>Copy:</b> Copies the selected content to the clipboard</li>
+            <li><b>Copy Xml as Text:</b> copies the Xml code behind the content to the clipboard</li>
+            <li><b>Paste:</b> Paste the stored content of the clipboard into editor.</li>
+            <li>
+                <p><span class="bold">Revert to Source:</span> Reverts the content in the target language column back to the content that is in the source language column.</p>
+            </li>
+            <li><span class="bold">Add Tags From Source:</span> Adds all the tags that are in the content of the source language column to the target language side.</li>
+            <li><span class="bold">Add New Term:</span> Opens the Add to Termbase dialogue window.</li>
+            <li><span class="bold">Show Space:</span> Toggle show space on/off. Shows the spaces in the content represented by a dot for each space.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Suggestion Area</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--SuggestionsV4.png" style="width: 956px;height: 106px;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;" />
+        </p>
+        <p>&#160;</p>
+        <p>The suggestion area shows matches based on segments in the translation memory. If it is an exact match it will show up at a %100 match. If it is a 'fuzzy' match such as 92% or 81% it will show up as well. This means that most of the segment matches but some of the words are different.</p>
+        <p>&#160;</p>
+        <p>You can select a match in the suggestion area and the content will appear in the translation area. You can use the shortcuts of Alt+# to quickly select a suggestion overwriting the content in the translation area with the suggestion content. Alt+CTRL+# will add the content of the suggestion to the content that is in the translation area vs overwriting it.</p>
+        <p>&#160;</p>
+        <p>If no translation memory is select it will say No translation memory in the suggestion area.</p>
+        <p>&#160;</p>
+        <li><b>Right Click Menu:</b> Right clicking any row should invoke sub-menu:</li>
+        <li>&#160;</li>
+        <li>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/UI--RightClickGridV4.png">
+            </img>
+        </li>
+        <p>&#160;</p>
+        <li><span class="bold">Revert to Source:</span> Reverts the content in the target language column back to the content that is in the source language column.</li>
+        <li><span class="bold">Add Tags From Source:</span> Adds all the tags that are in the content of the source language column to the target language side.</li>
+        <li><span class="bold">Add New Term:</span> Opens the Add to Termbase dialogue window.</li>
+        <p><b>Upload Selected:</b> Uploads the selected segment with a new translation to the translation memory</p>
+        <p><b>Upload File:</b> Uploads all new translated segments within the select file(s) to the translation memory.</p>
+        <hr />
+        <p>&#160;</p>
+        <h4>Conflict with Translation Memory dialog</h4>
+        <p>This dialog opens if you have already uploaded translated text to a translation memory (TM) database, later modify that text, and then attempt to upload the new translation to TM. Lingo recognizes this conflict and gives you different options for handling it.</p>
+        <p>&#160;</p>
+        <p class="bold">To open:</p>
+        <ul style="list-style-type: square;">
+            <li>Open an editor and modify the translation for text that has already been uploaded to your TM database.</li>
+            <li>Attempt to upload your changes to the TM database</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Topic Editor/TopicEditor---ConflictWithTM.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Source Segment: </span>Displays the text in the source language.</p>
+            </li>
+            <li><b>Your Translation:</b>Displays the translation that you have provided. You can click in this field and modify the translation, if necessary.</li>
+            <li><b>Translation Memory Version:</b>Displays the matching translation that is already uploaded into the TM database.</li>
+            <li><b>Change Nothing:</b>Select this option if you do not want to make any changes to the text you have modified or to the TM database. Your translation changes will be kept, and the old translation will continue to exist in the TM database.</li>
+            <li><b>Use your translation and overwrite translation memory:</b>Select this option if you want to keep your modified translation and upload it to the TM database, replacing the old translation.</li>
+            <li><b>Use translation from TM:</b>Select this option if you prefer to use the old translation that is already contained in the TM database. The text that you modified in the editor will revert back to the translation already contained in the TM database.</li>
+            <li><b>Apply to all conflicts:</b>Select this check box if you want future conflicts such as this to be treated according to the option that you have selected.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1241" MadCap:lastWidth="1076" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Merging - Baseline    <![CDATA[ ]]></h2>
+        <p class="bold">Test Cases</p>
+        <p>Test that each of the following function in the final output for both the Master and Slave projects in all online outputs. Items marked with an (*) can be tested using the Test Projects available here:</p>
+        <p>\\files\QA\Test Projects\Test Plan Projects\Merging\Merging</p>
+        <p>&#160;</p>
+        <p class="bold">TOCs (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Create multiple TOC in the Slave and assign unique TOC to different Targets. Test that the appropriate TOC is generated for a Slave project.</li>
+        </ul>
+        <p class="bold">Browse Sequences</p>
+        <ul style="list-style-type: square;">
+            <li>Browse Sequences need to be turned on in the Slave project to appear in the Master Project’s output.</li>
+            <li>Merging Browse Sequences is not intuitive and tedious. Must link to Slave BS in Master project’s BS. </li>
+        </ul>
+        <p class="bold">Glossary terms (and definitions) (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Glossary terms from all projects are merged correctly.</li>
+            <li>Glossary terms set in the Master project convert terms in slave projects </li>
+        </ul>
+        <p class="bold">Index (Index synching) (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Index Keywords from Master and Slave projects are present in the output.</li>
+            <li>Index Keywords from all projects appear in the correct order.</li>
+        </ul>
+        <p class="bold">Concepts (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Concept links (Help Control A-Link) from Master to Slave project and vice versa work.</li>
+            <li>Concept links (Help Control A-Link) between two Slave projects work.</li>
+        </ul>
+        <p class="bold">Searching (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Searching finds results in both Master and Slave projects.</li>
+        </ul>
+        <p class="bold">Search Filters (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Search Filters from Slave projects do not appear in any output.</li>
+        </ul>
+        <p class="bold">Master Pages (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Master Pages should be treated independently within each product. Test including Master Pages with the same name in a Master and Slave project and confirm the output.</li>
+        </ul>
+        <p class="bold">Variables (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Variables should be treated independently within each product. Test including variables with the same name in a Master and Slave project and confirm the output.</li>
+        </ul>
+        <p class="bold">Snippets (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Snippets should be treated independently within each product. Test including Snippets with the same name in a Master and Slave project and confirm the output.</li>
+        </ul>
+        <p class="bold">Images</p>
+        <ul style="list-style-type: square;">
+            <li>Images should be treated independently within each product. Test including Images with the same name in a Master and Slave project and confirm the output.</li>
+        </ul>
+        <p class="bold">Audio Links (*)</p>
+        <ul style="list-style-type: square;">
+            <li>Confirm Echo Sound files embedded in slave projects get compiled.</li>
+        </ul>
+        <p class="bold">Movie Links</p>
+        <ul style="list-style-type: square;">
+            <li>Confirm Mimic Movie links embedded in slave projects get compiled/copied into the Master project’s output.</li>
+        </ul>
+        <p class="bold">Skins</p>
+        <ul style="list-style-type: square;">
+            <li>Generally uses the Master skin; some exceptions with Styles with certain outputs</li>
+        </ul>
+        <p class="bold">Conditional Text(*)</p>
+        <ul style="list-style-type: square;">
+            <li>Conditional text is excluded/included based on the Target setting in each Master/Slave Project (ie, Conditional Text settings in the Master Project do not affect content in the Slave Projects and vice versa).</li>
+        </ul>
+        <h3>Baseline</h3>
+        <p><span class="bold">2483</span> Favorites shouldn't be the default for the DotNet Viewer when viewing your generated output</p>
+        <p><span class="bold">4681</span> When the master project doesn't have an index, index from slave project won't be generated.</p>
+        <p><span class="bold">4765 </span>Auto Sync TOC not working in merged project output</p>
+        <p><span class="bold">4801</span> Glossary merging does not work.  Different behavior in IE vs. Firefox.  (Test all supported browsers!)</p>
+        <p><span class="bold">4994	</span>When a slave from merged project is deleted (from the master project’s output folder), it's not removed from the TOC (of the Master project).  Still happens for CHMs; bug 8043. (Test all outputs)</p>
+        <p><span class="bold">5111</span> TOC Page still exists in HTML Help if merged chm is not present (still occurs if the link is the last item in the TOC)</p>
+        <p><span class="bold">5322</span> When three consecutive glossary terms are from three different projects (master, slave1,slave2), trying to open the third term opens the definition of the second one.</p>
+        <p><span class="bold">6052</span> Using DotNet Help, if you merge a slave project with a chunked index, you will only see the master project's index in output.</p>
+        <p><span class="bold">6901</span> Windows XP freezes during compilation of two large merged projects when Pre-merge Search Database File is enabled</p>
+        <p><span class="bold">7247</span> Empty book is generated by slave Browse Sequence when slave BS is left disabled.</p>
+        <p><span class="bold">8031</span> When merging projects, the slave project of a slave project does not appear in the TOC with HTML Help.</p>
+        <p><span class="bold">8516</span> K-Links in merged projects don't load initially.</p>
+        <p><span class="bold">12489</span> Auto-Sync TOC should work for sub-projects in a Merged project.  At least make it so that when you link between topic files in a sub-project, the TOC will sync…</p>
+        <p><span class="bold">12945</span> Broken search in linked/merged projects</p>
+        <p><span class="bold">14885</span> Test external topic links in merged CHMs</p>
+        <p><span class="bold">15512</span> Index does not merge on CHM (HTML Help output) for Windows Vista</p>
+        <p><b>15536</b> Do not display splash screen when calling the Help Viewer from the commandline or CSH call.</p>
+        <p><span class="bold">17107</span> Create merged Alias files when creating merged WebHelp</p>
+        <p><span class="bold">29147</span> Merged WebHelp: Clicking on the sub-project's TOC node results in just "Loading". There are no TOC pages shown for the sub-topics.</p>
+        <p><span class="bold">29161</span> Clicking on a topic in this merged help will cause an error</p>
+        <p><span class="bold">31974</span> Search results for Merged help topics produce broken links (topic not found).</p>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Capture Test Plans"
+    Link="/Content/QA/TestPlans/Capture/Capture.htm"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="Install/Uninstall"
+      Link="/Content/QA/TestPlans/Capture/General/Install Uninstall/Install Uninstall.htm" />
+    <TocEntry
+      Title="General">
+      <TocEntry
+        Title="Documentation"
+        Link="/Content/QA/TestPlans/Capture/General/Documentation/Documentation.htm" />
+      <TocEntry
+        Title="Framework/MDI"
+        Link="/Content/QA/TestPlans/Capture/General/Framework MDI/Framework MDI.htm" />
+      <TocEntry
+        Title="Menus"
+        Link="/Content/QA/TestPlans/Capture/General/Menus/Menus.htm" />
+      <TocEntry
+        Title="New/Open Project/MRU"
+        Link="/Content/QA/TestPlans/Capture/General/New Open Project MRU/New Open Project MRU.htm" />
+      <TocEntry
+        Title="Performance"
+        Link="/Content/QA/TestPlans/Capture/General/Performance/Performance.htm" />
+      <TocEntry
+        Title="Start Page"
+        Link="/Content/QA/TestPlans/Capture/General/Start Page/Start Page.htm" />
+      <TocEntry
+        Title="Toolbars"
+        Link="/Content/QA/TestPlans/Capture/General/Toolbars/Toolbars.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Tools">
+      <TocEntry
+        Title="Anchors"
+        Link="/Content/QA/TestPlans/Capture/Tools/Anchors/Anchors.htm" />
+      <TocEntry
+        Title="Batch Image Generation"
+        Link="/Content/QA/TestPlans/Capture/Tools/Batch Image Generation/Batch Image Generation.htm" />
+      <TocEntry
+        Title="Capture Options"
+        Link="/Content/QA/TestPlans/Capture/Tools/Capture Options/Capture Options.htm" />
+      <TocEntry
+        Title="Clipboard"
+        Link="/Content/QA/TestPlans/Capture/Tools/Clipboard/Clipboard.htm" />
+      <TocEntry
+        Title="Conditions"
+        Link="/Content/QA/TestPlans/Capture/Tools/Conditions/Conditions.htm" />
+      <TocEntry
+        Title="Hot Keys"
+        Link="/Content/QA/TestPlans/Capture/Tools/Hot Keys/Hot Keys.htm" />
+      <TocEntry
+        Title="Object Layers"
+        Link="/Content/QA/TestPlans/Capture/Tools/Object Layers/Object Layers.htm" />
+      <TocEntry
+        Title="Palettes"
+        Link="/Content/QA/TestPlans/Capture/Tools/Palettes/Palettes.htm" />
+      <TocEntry
+        Title="Profiles"
+        Link="/Content/QA/TestPlans/Capture/Tools/Profiles/Profiles.htm" />
+      <TocEntry
+        Title="Spellchecking"
+        Link="/Content/QA/TestPlans/Capture/Tools/Spellchecking/Spellchecking.htm" />
+      <TocEntry
+        Title="Systray"
+        Link="/Content/QA/TestPlans/Capture/Tools/Systray/Systray.htm" />
+      <TocEntry
+        Title="Undo/Redo"
+        Link="/Content/QA/TestPlans/Capture/Tools/Undo Redo/Undo Redo.htm" />
+      <TocEntry
+        Title="Variables"
+        Link="/Content/QA/TestPlans/Capture/Tools/Variables/Variables.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Editing">
+      <TocEntry
+        Title="Crop"
+        Link="/Content/QA/TestPlans/Capture/Editing/Crop/Crop.htm" />
+      <TocEntry
+        Title="Image"
+        Link="/Content/QA/TestPlans/Capture/Editing/Image/Image.htm" />
+      <TocEntry
+        Title="Multi-Select Object"
+        Link="/Content/QA/TestPlans/Capture/Editing/Multi-Select Object/Multi-Select Object.htm" />
+      <TocEntry
+        Title="Rotate Object"
+        Link="/Content/QA/TestPlans/Capture/Editing/Rotate Object/Rotate Object.htm" />
+      <TocEntry
+        Title="Objects">
+        <TocEntry
+          Title="Arrow"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Arrow/Arrow.htm" />
+        <TocEntry
+          Title="Bubble"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Bubble/Bubble.htm" />
+        <TocEntry
+          Title="Cursor"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Cursor/Cursor.htm" />
+        <TocEntry
+          Title="Image"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Image/Image.htm" />
+        <TocEntry
+          Title="Loop"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Loop/Loop.htm" />
+        <TocEntry
+          Title="Oval"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Oval/Oval.htm" />
+        <TocEntry
+          Title="Polygon"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Polygon/Polygon.htm" />
+        <TocEntry
+          Title="Polyline"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Polyline/Polyline.htm" />
+        <TocEntry
+          Title="Rectangle"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Rectangle/Rectangle.htm" />
+        <TocEntry
+          Title="Shape Groups"
+          Link="/Content/QA/TestPlans/Capture/Editing/Objects/Shape Groups/Shape Groups.htm" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Capturing">
+      <TocEntry
+        Title="Capturing"
+        Link="/Content/QA/TestPlans/Capture/Capturing/Capturing.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Outputs">
+      <TocEntry
+        Title="Export"
+        Link="/Content/QA/TestPlans/Capture/Outputs/Export/Export.htm" />
+      <TocEntry
+        Title="Integration"
+        Link="/Content/QA/TestPlans/Capture/Outputs/Integration/Integration.htm" />
+      <TocEntry
+        Title="Supported Image Types"
+        Link="/Content/QA/TestPlans/Capture/Outputs/Supported Images/Supported Images.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

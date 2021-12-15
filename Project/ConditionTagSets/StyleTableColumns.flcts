@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags"
+  conditions="">
+  <ConditionTag
+    Comment=""
+    Name="WebHelp"
+    BackgroundColor="#ffe4e1" />
+  <ConditionTag
+    Comment=""
+    Name="XMLEditor"
+    BackgroundColor="#b0c4de" />
+  <ConditionTag
+    BackgroundColor="LightBlue"
+    Name="DotNetHelp"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffffe0"
+    Name="HTMLHelp"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ee82ee"
+    Name="PDF"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#eee8aa"
+    Name="XPS"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#98fb98"
+    Name="Word"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffc0cb"
+    Name="Frame"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#40e0d0"
+    Name="WebHelpMobile"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="EPUB"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="HTML5"
+    Comment="" />
+</CatapultConditionTagSet>

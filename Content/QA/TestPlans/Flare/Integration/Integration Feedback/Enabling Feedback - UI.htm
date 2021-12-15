@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1552" MadCap:lastWidth="773" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Enabling Feedback - UI</h2>
+        <p>Feedback is enabled for a Flare output in a Flare Target file. In order to enable Feedback in a Flare target, you'll need a Feedback Server and a valid license key for that server. </p>
+        <ul style="list-style-type: square;">
+            <li>If you are testing for a new release of Feedback Server, you will most likely be testing with an installation of the latest build of Feedback Server Admin, in which case you will need to use the name or IP&#160;address of the server that is running that latest build.</li>
+            <li>If you are testing Feedback for a new release of Flare (independent from a release of Feedback), you can also use "madcap" as your server if you want to test against the MadCap Software hosted Feedback Service, since the hosted service is always running on the last shipped version of the server.</li>
+        </ul>
+        <h3>Target Editor&#160;| Feedback Service Tab</h3>
+        <p>&#160;</p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--FeedbackServiceTab.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Feedback Service End User License Agreement dialog</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackServiceEULA.png" alt="" title="" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(EULA):&#160;</span>Displays the End User License Agreement. Verify this is the current version.</li>
+            <li><span class="bold">Feedback Service License Key:&#160;</span>Paste your Feedback Service License Key in this field. Verify that only a license key established to work with the MadCap hosted Feedback Service will work in this field.Standard service keys that would be used with an installation of Feedback Server Admin (not the MadCap hosted service)&#160;should not work in this field.</li>
+            <li><span class="bold">Accept:&#160;</span>Closes the dialog and commits the license key into the Feedback Service License Key field in the Target Editor</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not commit a license key to the Target Editor.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

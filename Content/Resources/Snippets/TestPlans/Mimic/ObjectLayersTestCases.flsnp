@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="233" MadCap:lastWidth="1224">
+    <body>
+        <h2>Object Layers - Test Cases</h2>
+        <h3>Baseline</h3>
+        <p>27349 Check boxes have issues</p>
+        <p MadCap:conditions="Mimic.MimicOnly">27740 Crash with object layer window and Shapes group of a profile</p>
+        <p>28181 After Selecting multiple objects in the object layer pane, a single click on ANY object (selected or not) should deselect all other objects</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Known Issues</h3>
+        <p>&#160;</p>
+    </body>
+</html>

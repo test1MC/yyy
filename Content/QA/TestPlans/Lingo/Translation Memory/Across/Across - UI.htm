@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2737" MadCap:lastWidth="889" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <head>
+        </head>
+        <body>
+            <h2>Across - UI  </h2>
+            <h3>Installing Across Client and API</h3>
+            <ol>
+                <li>Get the installer from Craig or Jay, run the setup.exe</li>
+                <li>Choose to install the Client, and the acrossAPI. You can uncheck everything else.</li>
+                <li>During installation, you will be asked for a .CAP file. Grab the one in the link above and copy it locally. Point Across to that file.<ol><li>Password is: simon</li><li>All other defaults are fine for installation.</li><li>Across may patch itself during installation. That’s fine.</li></ol></li>
+            </ol>
+            <h3>Opening the UI</h3>
+            <p>The server is already set up, there is no Installing the TM. The Across server will be the TM and all Lingo needs to do is point to it.</p>
+            <h3>UI</h3>
+            <p>&#160;</p>
+            <p><b>Picking a TM:</b>Opens the Current Translation Memory Provider dialog	(Choose Translation Memory provider)</p>
+            <p>&#160;</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--PickTM.png" style="width: 137px;height: 118px;" class="left">
+                </img>
+            </p>
+            <ul style="list-style-type: square;margin-left: 160px;">
+                <li>Verify that the Current Translation Memory Provider dialog launches after selecting this option</li>
+                <li>	Verify that this option is available with a project closed or opened.</li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <h4>Current Translation Memory Provider Dialog</h4>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--CurrentTMProvider.png" class="properties" style="width: 234px;height: 193px;">
+                </img>
+            </p>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <p>&#160;</p>
+            <p><b>Drop Down:</b> Selecting the drop down will show all recently used Translation Memories. Verify the list is accurate.</p>
+            <p>Selecting None will set Lingo to not use any TM database. (Suggestions will not be available)</p>
+            <p><b>Change…:</b> Selecting Change… will bring up the Select Translation Memory dialog (shown below)</p>
+            <p>&#160;</p>
+            <h4>Select Translation Memory Dialog</h4>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--SelectTM.png" class="properties" style="width: 234px;height: 193px;">
+                </img>
+            </p>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <p><i style="font-weight: bold; font-style: normal;">This dialog will show you three options:</i>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>	Lingo Built-in Translation Memory</li>
+                <li>Across crossAPI</li>
+                <li>	(No Translation Memory)</li>
+            </ul>
+            <p>Selecting None will take you back to the previous screen with “none” shown</p>
+            <p>Selecting Lingo Built-in Translation Memory will bring up the <b>Connect to Lingo Translation Memory dialog</b>(Shown and described in the <a href="../SQL Express/SQL Express - UI.htm">SQL Express</a> test plan)</p>
+            <p>Selecting across crossAPI  will bring up the <b>Across Translation Memory Settings</b> <![CDATA[ ]]>(shown below)&#160;</p>
+            <h4>Lingo Built-in Translation Memory Dialog</h4>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/Across/UI--acrossTranslationMemorySettings--Dialog.png" class="properties" style="width: 234px;height: 193px;">
+                </img>
+            </p>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <p>&#160;</p>
+            <p><b>Controls:</b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li><b>Server:</b> <![CDATA[ ]]>The across servers will be listed in this drop down (The .CAP file specified during across installation determines what is shown here)</li>
+                <li><b>User:</b> The users for the server selected will be shown in this drop down. (The .CAP file specified during across installation determines what is shown here)</li>
+                <li><b>Password:</b>Enter the password here that is associated with the User selected<ul style="list-style-type: square;"><li>After all is selected and a password is entered, hit OK. You should be returned to the Current Translation Memory Provider dialog&#160;</li><li>Hit OK again to return to Lingo. The Across TM will be used for suggestions, dictionaries, and uploads.</li></ul></li>
+            </ul>
+            <p><b>Test Cases:</b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>Verify when closing and reopening Lingo, the selected TM database is still selected</li>
+                <li>Verify when closing and reopening Lingo, the selected TM database still provides suggestions and allows uploads</li>
+                <li>Verify changes made on the Across server (definitions, suggestions, etc…) are reflected in Lingo</li>
+                <li>Verify when using Across as the TM the follow works in lingo:<ul style="list-style-type: square;"><li>	Suggestions from the Across server are given</li><li>Dictionary items are shown (Items from Across as well as installed dictionaries)</li><li>	Uploads work (and can overwrite!)</li></ul></li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </body>
+    </body>
+</html>

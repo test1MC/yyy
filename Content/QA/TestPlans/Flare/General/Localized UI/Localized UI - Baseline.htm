@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="884" MadCap:lastWidth="1466" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Localized UI - Baseline    <![CDATA[ ]]></h2>
+        <p class="bold">Launch Flare in each of the supported Localized UI languages and:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify all menus items are translated and that they do not appear cutoff, particularly any new or changed menu items. </li>
+            <li>Verify all pane titles appear translated, particularly any new or changed panes.</li>
+            <li>Verify the Start Page is translated and that links in all languages are correct.</li>
+            <li>Verify that you can create a new project and add <span class="bold">all</span> file types, particularly any new file types.<ul style="list-style-type: circle;"><li>Create a new project from all sample projects (Getting Started Wizard)</li><li>Create a new project using the New Project Wizard</li><li>Create new files with factory templates (verify they are translated if appropriate)</li><li>Create new files with user templates</li></ul></li>
+            <li>Verify all HTML&#160;pages that are included in Flare appear in the correct language (that files are typically found here:&#160;Flare.app\Resources\French (or German or Japanese)). For example:<ul style="list-style-type: circle;"><li>Use !Tools |&#160;Launch to launch a MadCap application that is not installed; verify the dialog that opens is in the correct language.</li><li>Use !Tools |&#160;Launch to launch a MadCap application that is installed without a valid license (expired trial period); verify the dialog that opens is in the correct language.</li><li>Go through the Getting Started Wizard in each language, verify that all descriptions appear in the correct language.</li><li>View Properties of a TOC&#160;node. In the Basic tab, select the option to "Enter External Help System." Verify the message in the dialog appears in the correct language.</li></ul></li>
+            <li>Carefully test any feature that references a folder external to the Content folder. For example:<ul style="list-style-type: circle;"><li>Test the Review workflow</li><li>Test the Contribution workflow</li><li>Test the Backups workflow</li><li>Test adding a picture from the "My Pictures"&#160;folder</li></ul></li>
+            <li>As much as possible, click on all drop-downs in all UI, particularly new or changed UI, and verify all options are completely visible in the space allotted to the drop-down in all languages.</li>
+            <li>As much as possible, look for consistency in the translation. Especially when viewing new UI, verify that new features are translated consistently throughout the various UI&#160;in which that feature is referred to.</li>
+            <li>Open projects, add topics, add content, and build outputs. Look for any text that appears to be missing punctuation or spaces. Many of the strings have an extra space at the end of them so that they can be inserted into another string. If one of these is translated without the extra space, the result can look like this "WordOutput" as opposed to "Word Output."</li>
+            <li>Verify that references to "MadCap Software" and MadCap products are <span class="bold">not</span> translated. For example, "MadCap Analyzer" should not be "Analyzeur"&#160;in French. Likewise, references to Word and Frame Maker should not be translated.</li>
+            <li>Additional test cases added to the baseline below.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Common problems with sting translations that you should look out for:</p>
+        <ul style="list-style-type: square;">
+            <li>It is often the case that a string translated to another language will be longer than the original English string. That is, it will take up more space. As best as you can, analyze all UI, particularly new UI and look for overlapping or hidden text. Resize dialogs to reveal text that might be hidden.</li>
+            <li>Symbols used in English are often affected by the translation process. For example, the "Next &gt;" button in some of our Wizards uses the greater than character. If you invoke the Build menu, you will find menu items that use quotation marks. Verify these UI&#160;and particularly any new UI, appear correctly in all translated language.</li>
+        </ul>
+        <h3>Baseline</h3>
+        <p><span class="bold">11524 </span>There are "\" and such in the UI of translated strings</p>
+        <p><span class="bold">11718 </span>When running Flare with French language strings, you cannot set the 1ere tete (1st heading) when creating new topics.</p>
+        <p><span class="bold">11768 </span>Compile error not displaying in the errors tab when compiling in German</p>
+        <p><span class="bold">11800 </span>Search for hard-coded access keys in menu item text “&amp;amp;”</p>
+        <p><span class="bold">14829 </span>New Topic typed heading not working when Flare is run in another UI&#160;language.</p>
+        <p><span class="bold">20342 </span>My Templates do not work when Flare is in a foreign language UI</p>
+        <p><span class="bold">23002 </span>Contributions fail when running Flare in another language because we are not looking to the correct folder.</p>
+        <p><span class="bold">23003 </span>Flare crashes on when launching with French language UI if the Contributions pane is open in the default layout.</p>
+        <p><span class="bold">23062 </span>In the Target Editor, in the list of Output Types, "Word" was translated to French, German and Japanese.</p>
+        <p><span class="bold">23144 </span>The blurbs that appear in a Suggestion report when Analyzer is not installed are messed up when Flare is run in French or German UI.</p>
+        <p><span class="bold">27248 </span>New topic templates are not visible in any other language than English</p>
+        <p><span class="bold">32441 </span>Some of our new UI is using old, random translated strings.</p>
+        <p><b>49724 </b>If Flare is run in French, German or Japanese language mode, Flare crashes when you add an HTML5 or Mobile target to a project which does not already have an HTML5 or Mobile skin respectively.  Crash occurs when we try to automatically add the specific skin type.</p>
+    </body>
+</html>

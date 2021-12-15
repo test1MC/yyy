@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3831" MadCap:lastWidth="1113" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or StyleTableColumns.DotNetHelp or StyleTableColumns.HTMLHelp or StyleTableColumns.WebHelp or StyleTableColumns.WebHelpMobile]" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>XML Editor:&#160;Print Layout - Text Formatting</h2>
+        <p>This portion of the test plan covers formatting text to determine how it will appear in the XML Editor in Print Layout mode. Functionality covered in this test plan includes Page Breaks, Column Breaks, Widow/Orphan control, Short/Long Line control and some Hyphenation control.</p>
+        <h3>Formatting an element for Print - Paragraph Properties:</h3>
+        <p>Select the element (p, div, ul, etc)&#160;that you want to format in the XML Editor,right click, then select “Paragraph” to open the <span class="UI">Paragraph Properties</span> dialog.In Tool Strip mode, you can also select !Format |&#160;Paragraph to open the <span class="UI">Paragraph Properties</span> dialog.</p>
+        <h4>Breaks Tab</h4>
+        <p>Formatting options in this tab let you determine if and how your content should be split across page breaks (and column breaks if you have a multi-column page layout file). You can also determine if a particular content element should precede or be followed by a page (or column)&#160;break.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--BreaksTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/Breaks.flsnp" />
+        <h4>Hyphenation Tab</h4>
+        <p>Flare has a built-in (English)&#160;hyphenation dictionary that will automatically hyphenate words in your content where appropriate. Flare will hyphenate any word it can at the end of each line in Print Layout mode. The Hyphenation Tab of the Paragraph Properties dialog essentially lets you create rules which will tell Flare when not to hyphenate. Creating and editing the Hyphenation dictionary is covered in the Hyphenation test plan.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--HyphenationTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Hyphenation: </span>Select whether you always or never want words to be hyphenated at the end of lines for the selected content.</li>
+            <li><span class="bold">Length of shortest word that should be hyphenated: </span>Enter the minimum number of characters that a word must have in order to be hyphenated for the selected content.</li>
+            <li><span class="bold">The maximum number of characters remaining on the initial line: </span>Enter the minimum number of characters that must remain on the initial line when  a word is hyphenated for the selected content.</li>
+            <li><span class="bold">The minimum number of characters carried over to the next line: </span>Enter the minimum number of characters that must be carried over to the second line when a word is hyphenated for the selected content.</li>
+            <li><span class="bold">The maximum number of adjacent lines that can end in a hyphenated word:&#160;</span>Enter the maximum number of lines next to each other that are allowed to end with a hyphenated word for the selected content.</li>
+        </ul>
+        <h4>Short Line Tab</h4>
+        <p>Short Line options allow you </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--ShortLineTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Short Line Elimination: </span>Select whether to enable short line elimination, as well as how it will work.</li>
+            <ul style="list-style-type: circle;">
+                <li><span class="bold">Never: </span>Lines will not be adjusted.</li>
+                <li><span class="bold">Tighten: </span>Flare will try to decrease the kerning (i.e., the white space will become more narrow).</li>
+                <li><span class="bold">Tighten, Loosen: </span>Flare will first try to decrease the kerning (i.e., the white space will become more narrow) to the maximum setting. Then it will try to increase the kerning (i.e., the white space will become wider).</li>
+                <li><span class="bold">Loosen, Tighten: </span>Flare will first try to increase the kerning (i.e., the white space will become wider) to the maximum setting. Then it will try to decrease the kerning (i.e., the white space will become more narrow).</li>
+                <li><span class="bold">Loosen: </span>Flare will try to increase the kerning (i.e., white space becomes wider).</li>
+            </ul>
+            <li><span class="bold">Length of "short line": </span>Specify the length at which a line is considered "short," and therefore the short line settings come into play.</li>
+            <li><span class="bold">Length of "long line": </span>Specify the minimum length at which a line is considered "long enough."</li>
+            <li><span class="bold">Step-Kerning By: </span>Specify the number of pixels of kerning should be used incrementally on the entire paragraph until the desired effect is achieved.</li>
+            <li><span class="bold">Maximum to Tighten: </span>Specify the maximum number of pixels to tighten during short line elimination.</li>
+            <li><span class="bold">Maximum to Loosen:&#160;</span>Specify the maximum number of pixels to loosen during short line elimination.</li>
+        </ul>
+        <h3>Formatting an element for Print - Stylesheet:</h3>
+        <p>All properties described above can also be set in the Stylesheet.</p>
+        <h4>Simplified View</h4>
+        <p>In the Simplified View of the <span class="UI">Stylesheet Editor</span>, double-click the element to which you want to apply these properties to open the <span class="UI">Properties</span> dialog. The tabs in the <span class="UI">Properties</span> dialog that opens from the stylesheet are the same as above:&#160;<span class="bold">Breaks</span>, <span class="bold">Hyphenation</span> and <span class="bold">Short Line</span>.</p>
+        <h4>Advanced View</h4>
+        <p>In the Advanced View of the <span class="UI">Stylesheet Editor</span>, page and column break properties along with Widow/Orphan properties appear in the PrintSupport property group:</p>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/PrintSupportProperties.flsnp" />
+        <p>&#160;</p>
+        <p>Hyphenation and Short Line properties currently appear in the Unclassified group:</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XMLEditor" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Word" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Frame" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.PDF" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XPS" class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Unclassified</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p style="text-align: center;" class="styleTables">XML Editor</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">XPS</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-hyphenate: Select whether you always or never want words to be hyphenated at the end of lines for the selected content.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-hyphenate-maximum-adjacent-line-count:&#160;Enter the maximum number of lines next to each other that are allowed to end with a hyphenated word for the selected content.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-hyphenate-shortest-prefix: Enter the minimum number of characters that must remain on the initial line when  a word is hyphenated for the selected content.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-hyphenate-shortest-suffix: Enter the minimum number of characters that must be carried over to the second line when a word is hyphenated for the selected content.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-hyphenate-shortest-word: Enter the minimum number of characters that a word must have in order to be hyphenated for the selected content.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-short-line: Specify the length at which a line is considered "short," and therefore the short line settings come into play.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-short-line-loosen-end-length: Specify the minimum length at which a line is considered "long enough."</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-short-line-loosen-maximum: Specify the maximum number of pixels to loosen during short line elimination.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-short-line-method: Select whether to enable short line elimination, as well as how it will work.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-short-line-step: Specify the number of pixels of kerning should be used incrementally on the entire paragraph until the desired effect is achieved</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-short-line-tighten-maximum: Specify the maximum number of pixels to tighten during short line elimination.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

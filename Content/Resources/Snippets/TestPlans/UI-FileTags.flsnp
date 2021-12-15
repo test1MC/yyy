@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="467" MadCap:lastWidth="850">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Tag Type: </span>Drop-down which allows you to limit the File Tag Sets which appear below by their Tag Type.</li>
+            <li><span class="bold">File Tag Sets: </span>Displays a list of all File Tag Sets in the project that match the Tag Type selected above.</li>
+            <li>
+                <p class="bold">File Tags:</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File Tags:&#160;</span>Displays a list of all file tags included in the File Tag Set selected on the left. Use the check box to apply these File Tags to the selected item(s).</li>
+                    <li><span class="bold">(Checkbox):&#160;</span>Displays whether or not the file tag is applied to the selected file(s)</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment as it is entered for that file tag in the File Tag Set.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>Open the selected File Tag Set in the <span class="UI">File Tag Set Editor</span>.</li>
+            <li><span class="bold">Unselect All:&#160;</span>Removes the checkmark for all file tags for the selected File Tag Set.</li>
+            <li><span class="bold">Select All:&#160;</span>Applies a checkmark to all file tags for the selected File Tag Set.</li>
+        </ul>
+    </body>
+</html>

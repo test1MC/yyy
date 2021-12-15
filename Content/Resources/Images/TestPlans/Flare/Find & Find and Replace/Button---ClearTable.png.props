@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\mferguson\My Documents\My Profiles\MyProfile.capro" ProfileHash="b0d877845de8532f8ea1d0c4c7518957" ScreenRectangle="2250,883,21,21">
+        <OriginalImage Folder="C:\Documents and Settings\mferguson\Desktop\Bar" Right="0" Bottom="0" BorderWidth="0" FileName="OutputFileName{n}" EnableShadow="false" ExportFormat="png" ComputedWidth="21" ComputedHeight="21" Format="tiff">SUkqAL4DAACAOF3P9/wKCQaCwOEweFQiHQ2IQyJQuKQ+JxaKN92P5/xqOR6OxuQx+RSCTSWUSSVSOWSeVy6WN2RTKOTR/zacTOdTWdzeezmeUGfUKgUN/tt1xykUqk0em0unUypVGqVCrU+sVOr1qsv9sumOV+OKVZsZ/qJYMN/pxVL5/pRRrd/opMK5/n9HqV/nRCJx/mg9JF/l03oh/lMzH5/kguHV/kAqG5/jgmmevWDL2HMWLM51ruiOZ/Q6B/6LS6TTanUavR63T67VbDWa/aNVzv1/7bcKZaMd/qNYMR/p1Vr9/pZSLl/o1OLF/oNJqjnpJTv9WLW1KxaWoznhHv8oGI+P8jFo6P8flM2v8bkw0bnb/Dcbr5fVpuXcff8/h//r+v4/0AwA/h7EqQJ/n4QQzH+c5oGm/79wjCEJwFCT/Gi/kMNwsizLQtS2LcuC5LouxEEuVh/laWxin+cpGj2f5/DuK5/n7GZ/mGWxdn+Nw+kkf8NSA/h2lmVZ/nuSMYSDJb+GecjcSdKEnn/KMqSnKssSvLTcHdIsYjwLEYxudhdFpKzcH0Qz1n6OsaHQYrhSzKTcGacR+H/Os7t43zgOE4jjOQ5TmOc6DpDyRJPn+N5AEuf5VlmYTSmBSJ+DvMJ9DtMJzjYKh/noMwkH+bxmQfPM8TtU871MZZwzvVlXVaf9X1lWNZ1tWtcVhXVaTuv4joILweI6WRZ15Y1b12YpuH0f9lWZDizrSta2reuK5rqu68r2vq/sDZtln+ZRdGAf58i6HsYiiF8YiEEEECYFh/mcY5rW/ZlnXtfJfmwfB/33ft/39fmBYBgeA4Pg2E36f11XYD5/nIQDHGwTJNH+eASAGf54iuHx/mOY5sYJkeAlyaZ7H/k2UZVlOT5bleXZZmWY5cfgkBLGIaAjGoUgNHBcGQf5gGBB5ujg95iAqAB/m0MUw5nmGUFkZx5n/qeq6vq2qa1rGt6zr+va2foUALi4TgQf5qCgIOubbrJqCEGR/lQCGl7BruqlYZJ5Otve+75vXAb9wO/8LwnCGURBGH+bARgUf5gksUPDcHyu+GOP5CcpwW+FMYp3n/z3QdF0PP9L0fTdJ1XU9Z1HXdP2HV9f2XYFAYJ2n/23cd13Pb973ffd54Xg+J4Hjd/5Hh+P5XkE0Xh1n/53oel6Pn+r6frep7Xs+57Hvev8Ht+/8XwEoW50rf8/0/R832fV9v1/j+H5/f+v3fv+X7fz/CAgAGAAAAABAAAAYAAAAAEAAAAIAAgACAAIABAA/gAEAAEAAAAAAAAAAAEDAAEAAAAVAAAAAQEDAAEAAAAVAAAAAgEDAAQAAAC2AwAAAwEDAAEAAAAFAAAABgEDAAEAAAACAAAAEQEEAAEAAAAIAAAAFQEDAAEAAAAEAAAAFgEEAAEAAAAVAAAAFwEEAAEAAACdAwAAGgEFAAEAAACmAwAAGwEFAAEAAACuAwAAHAEDAAEAAAABAAAAKAEDAAEAAAACAAAAPQEDAAEAAAABAAAAUgEDAAEAAAACAAAAAAAAAA==</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="MyProfileCondition" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="how" Comment="">tree</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

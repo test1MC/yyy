@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3760" MadCap:lastWidth="1073" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Topics - UI</h2>
+        <h3>Opening the Topics view</h3>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Topics</li>
+            <li>Press &lt;CTRL&gt;-&lt;Shift&gt;T on the keyboard</li>
+            <li>Click the Topics List button on the Standard Toolbar</li>
+        </ul>
+        <h3>Topics - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--Topics.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar and Columns</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--Topics.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show the Info Bar):&#160;</span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" alt="" title="" /> <span class="bold">(Refresh): </span>Refreshes the data in the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DateFilter.png" alt="" title="" /><span class="bold">(Date filter): </span>Invokes the <span class="UI">Date Filter</span> dialog which lets you limit the visible data to data collected within a particular date range.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Export to csv.png" />Export the data to a csv file: Exports the data to a csv file that can be opened in Microsoft Excel.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Options.png" /><span class="bold">(Select columns to show/chart): </span>Opens the <span class="UI">Options</span> dialog which lets you set which columns are visible and which columns should be included when charting data.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/chart_options.png">
+                </img>Chart Options: Open the Chart Options dialog which allows you customize the row colors of the grid.</li>
+            <li>
+                <p>
+                    <img src="../../../../../Resources/Images/chart_options_dialog.png" style="width: 195px;height: 127px;">
+                    </img>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <p>Add a custom chart color button: <i>tooltip: Add a custom chart color</i>: Opens the color picker dialog.</p>
+                        </li>
+                        <li>
+                            <p>Delete the custom  chart color button: <i>Tooltip: Delete the custom chart color</i>: removes the selected custom chart color.</p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SelectChartType.png" alt="" title="" /> <span class="bold">(Select the chart type):&#160;</span>Lets you select the type of chart which displays for this Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SelectDataToChart.png" alt="" title="" /> <span class="bold">(Select the data for the chart):&#160;</span>Lets you select which rows in the grid view should be considered in the generated chart.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PageSetup.png" alt="" title="" /><span class="bold">(Page Setup): </span>Invokes the <span class="UI">Page Setup</span> dialog which lets you select paper size, orientation and margins.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PrintPreview.png" alt="" title="" /><span class="bold">(Print Preview): </span>Invokes the <span class="UI">Print Preview</span> dialog which displays a preview of the chart which can be printed from the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Print.png" alt="" title="" /> <span class="bold">(Print): </span>Prints the chart from the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---ResetTopicViews.png" /><span class="bold">(Reset topic views):&#160;</span>Resets the view count for the selected topic(s)&#160;to zero.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---ResetRating.png" /><span class="bold">(Reset topic rating):&#160;</span>Resets the rating for the selected topic(s)&#160;to zero</li>
+        </ul>
+        <p class="bold">Topics grid</p>
+        <p class="bold">Columns                     </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Path: </span>Displays the path of the topic file within the project.</li>
+            <li><span class="bold">View Count: </span>Displays the total number of topic views, or "hits" by end users.</li>
+            <li><span class="bold">Comment Count:&#160;</span>Displays the total number of comments added by end users to the topic.</li>
+            <li><span class="bold">Avg Rating:&#160;</span>Displays the mean average all user ratings.</li>
+            <li><span class="bold">Rating Count:&#160;</span>Displays the total number of times the topic has been rated.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Right-Click Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Menu--ReportTabRightClickMenu.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Info Bar:&#160;</span>Displays or hides the Info Bar.</li>
+                <li><span class="bold">Properties:&#160;</span>Invokes the (Comment)&#160;<span class="UI">Properties</span> dialog.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Columns dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--Topics--OptionsDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Move Up:&#160;</span>Moves the selected row(s) up in the sequence which in turn moves the corresponding column to the left in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Move Down: </span>Moves the selected row(s) down in the sequence which in turn moves the corresponding column to the right in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Reset to Factory Settings... :&#160;</span>Removes all custom column settings and restores factory defaults.</li>
+        </ul>
+        <p class="bold">Columns dialog grid</p>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Show: </span>Lets user show/hide the associated column in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Chart: </span>Lets user determine if the column should be included in charting.   Only one column can be selected to chart at any one time.</li>
+            <li><span class="bold">Column: </span>Displays the name of each column that can be displayed in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Width: </span>Lets user set the width in pixels of each column in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Color: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set the font color for each column in the <span class="UI">Topics</span> view.</li>
+            <li><span class="bold">Background: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set a background color for each column in the <span class="UI">Topics</span> view.</li>
+        </ul>
+        <p class="bold">Grid Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="UI">Columns</span> dialog columns should not be sortable</li>
+            <li><span class="UI">Columns</span> dialog columns should not be resizable</li>
+            <li><span class="UI">Columns</span> dialog columns cannot be moved by clicking on a column heading and dragging</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li><span class="UI">Columns</span> dialog rows should not be able to be multi-selected with Shift- or CTRL-click</li>
+        </ul>
+        <h4>Date Filter dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--DateFilter.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enable Filter:&#160;</span>Enables/disables the date filter for the data set.</li>
+            <li><span class="bold">Filter Settings: </span>Lets you select between a user-defined date range or a preset date range.<ul style="list-style-type: circle;"><li><span class="bold">Range:&#160;</span> Select this option to set a specific date and time for the filter. Click on the down arrow in the "From"&#160;and "To"&#160;fields to set the specific month and date. You can also click inside the "From" and "To"&#160;fields and type to specify a particular time.</li><li><span class="bold">Preset:&#160;</span>Lets you set the Date filter to one of a set of factory presets. These include:&#160;Today, Yesterday, Last 7 days, and Last 30 days</li></ul></li>
+        </ul>
+        <h3>Keyboard Navigation</h3>
+        <p><span class="KeyboardShortcut">Up Arrow</span> moves the selection to the row above</p>
+        <p><span class="KeyboardShortcut">Down Arrow</span> moves the selection to the row below</p>
+        <p><span class="KeyboardShortcut">Enter</span> moves the focus to the row below</p>
+        <p><span class="KeyboardShortcut">Page Up</span> will move the selection one page at a time upward</p>
+        <p><span class="KeyboardShortcut">Page Down</span> will move the selection one page at a time downward</p>
+        <p><span class="KeyboardShortcut">Left Arrow</span>&#160;and <span class="KeyboardShortcut">Right Arrow</span> do nothing</p>
+        <p><span class="KeyboardShortcut">Home</span> and <span class="KeyboardShortcut">End</span> do nothing</p>
+        <p><span class="KeyboardShortcut">Insert</span> does nothing</p>
+        <p><span class="KeyboardShortcut">Delete</span> does nothing</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(none)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(none)</p>
+    </body>
+</html>

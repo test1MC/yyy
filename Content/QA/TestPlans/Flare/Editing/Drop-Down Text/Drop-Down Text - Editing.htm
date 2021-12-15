@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5607" MadCap:lastWidth="1736" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Drop-Down Text - Editing                                        </h2>
+        <p>You should not be able to add content to the MadCap:dropDown tag. Essentially, it is just a container tag for MadCap:dropDownHead and MadCap:dropDownBody. However, known issues exist for getting content inserted directly into the dropDown tag. This content will not appear in most outputs.                  </p>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Drop-Down Text/Drop-Down---Context.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <p>&#160;</p>
+        <h4>Code</h4>
+        <p class="bold">No Class:</p><pre xml:space="preserve">&lt;MadCap:dropDown&gt;</pre><pre xml:space="preserve">    &lt;MadCap:dropDownHead&gt;</pre><pre xml:space="preserve">        &lt;MadCap:dropDownHotspot&gt;Delete&lt;/MadCap:dropDownHotspot&gt; this text and replace it with your own content.&lt;/MadCap:dropDownHead&gt;</pre><pre xml:space="preserve">    &lt;MadCap:dropDownBody&gt;</pre><pre xml:space="preserve">        &lt;p&gt;(This is the Drop-down text)&lt;/p&gt;</pre><pre xml:space="preserve">        &lt;p&gt;(This is more Drop-down text)&lt;/p&gt;</pre><pre xml:space="preserve">    &lt;/MadCap:dropDownBody&gt;</pre><pre>&lt;/MadCap:dropDown&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">With Class and Condition:</p><pre>&lt;MadCap:dropDown MadCap:conditions="Default.PrintOnly" class="class1"&gt;</pre><pre xml:space="preserve">    &lt;MadCap:dropDownHead class="class1"&gt;</pre><pre xml:space="preserve">        &lt;MadCap:dropDownHotspot MadCap:conditions="Default.ScreenOnly" MadCap:excludeAction="unbind" class="class2"&gt;Delete&lt;/MadCap:dropDownHotspot&gt; this text and replace it with your own content.&lt;/MadCap:dropDownHead&gt;</pre><pre xml:space="preserve">    &lt;MadCap:dropDownBody class="class1"&gt;</pre><pre xml:space="preserve">        &lt;p&gt;(This is the Drop-down text)&lt;/p&gt;</pre><pre xml:space="preserve">        &lt;p&gt;(This is more Drop-down text)&lt;/p&gt;</pre><pre xml:space="preserve">    &lt;/MadCap:dropDownBody&gt;</pre><pre>&lt;/MadCap:dropDown&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

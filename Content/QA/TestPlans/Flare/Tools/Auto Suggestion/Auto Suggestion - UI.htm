@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1500" MadCap:lastWidth="754" MadCap:conditionTagExpression="exclude[AddFile--UIControls.ContentFiles or Default.UITestsEditors] " MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Auto Suggestions - UI</h2>
+        <h3>Adding a&#160;Auto Suggestion file to the project</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!Project |Advanced&#160;| Add Auto Suggestion List File…</span>
+            </li>
+            <li>In the <span class="UI">Project Organizer</span>, right click the Advanced folder and select Add Auto Suggestion List File…</li>
+            <li>In the <span class="UI">Project Organizer</span>, right click the Project folder and select Add | Advanced | Add Auto Suggestion List File…</li>
+            <li>Right click a word or phrase in a topic or snippet | Create auto suggestion | Prompt for new auto suggestion file if one doesn't exist</li>
+        </ul>
+        <h3>Enabling&#160;Auto Suggestions in Flare</h3>
+        <p><span class="MenuItem">!Tools | Options | Auto Suggestions</span>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Auto Suggestion/Auto Suggestion--Options.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Settings: </span>
+                </p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Enable Auto Suggestion:</span>Enables Auto Suggestions in your project</li>
+                    <li><span class="bold">Enable Snippet Auto Suggestion:</span>&#160;Enables Auto Suggestions from your snippets</li>
+                    <li><b>Max Suggestions:</b> Max number of suggestions to display in the popup (from 1 to 25)</li>
+                    <li><b>Min Character Length:</b> Select  the minimum number of characters that must be typed before the popup opens with suggestions (from 3 to 12)</li>
+                    <li><b>Enable/Disable files:</b> Choose which files you will pull your auto suggestions from (including variable files, auto suggestion list files, and snippets)</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Auto Suggestion Popup in the XML&#160;Editor</h3>
+        <p>Auto Suggestions must be enabled and have phrases in an auto suggestion file list.</p>
+        <p class="Open">Just start typing one of the phrases on one of the enabled auto suggestion lists...</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Auto Suggestion/Auto Suggestion--Popup.png" class="border">
+            </img>
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p>Hitting enter inserts the selection</p>
+            </li>
+            <li>Hitting the x closes the window</li>
+            <li>Hitting the icon at the bottom left opens the options menu</li>
+            <li>Click and holding the gray area at the bottom allows you to resize the popup window+</li>
+            <li>Hitting <span class="KeyboardShortcut">ESC</span> should close the window</li>
+        </ul>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Auto Suggestion popup should popup about 3/4 inch below and a little to the right of the start of the word<ul><li>Make sure it behaves correctly on dual monitor display</li></ul></li>
+                <li>Popup displays both capitalized and lowercase versions if both are present in the auto suggestion file</li>
+                <li>Popup only shows suggestions from selected files in the auto suggestion options</li>
+                <li>Test that it asks you what auto suggestion file to add your word to if there are more than one present</li>
+                <li>Add 2 similar suggestions that start with the same word, verify that you can navigate between them using arrow keys</li>
+            </ul>
+        </div>
+    </body>
+</html>

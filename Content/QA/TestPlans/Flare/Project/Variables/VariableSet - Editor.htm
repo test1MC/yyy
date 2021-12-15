@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="849" MadCap:lastWidth="624" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileStandard or FlareFileTypes.VariableSet] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic] ">
+    <head>
+    </head>
+    <body>
+        <h2>Variable Set - Editor</h2>
+        <h3>Opening a Variable Set File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span>:&#160;In the Variables tab of the <span class="UI">Target Editor</span> any file, select a Variable Tag Set in the pull-down and click the "Edit Set"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Variable Set Editor - UI Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Variables/VariableSetEditor.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Variables/VariableSetEditor---LocalToolbar.png" style="mc-thumbnail: popup;" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Variables/Button--Add DateTime variable.png" />(Add variable):&#160;</span>Adds a new row for a Variable.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Variables/Button--Add DateTime variable.png" />(Add DateTime variable):</span> Adds a new row for a DateTime variable.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Variables/Button--Add variable definition.png" />(Add variable definition):</span> Adds a new variable definition.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" />Cut:</span> Cuts the selected row(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" />Copy:</span> Copies the selected row(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" />(Paste):</span> Pastes the row(s) from the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" style="mc-tag-and-class: ;" /> (Delete):&#160;</span>Deletes the selected row(s).</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Variable Set Editor grid: </span>Displays and lets you create and edit&#160;Variable Tags.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Displays the variable name.</li>
+                    <li><span class="bold">Definition:</span> displays the definition of the variable.</li>
+                    <li><span class="bold">Comment:&#160;</span>Allows you to add a comment about the variable.  Comments should not affect the output.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>For Name, enter single words, multiple words, numbers, words with international characters, symbols, etc.</li>
+            </ul>
+        </div>
+        <h4>Right-click menu</h4>
+        <p class="bold">Right-clicking a row in the Variable Set Editor should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Variables/Right-click menu.png" class="left" style="width: 152px;height: 130px;mc-thumbnail: popup;" />
+        </p>
+        <div style="margin-left: 155px;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Add variable:&#160;</span>Adds a new row for a Variable.</li>
+                <li><span class="bold">Add DateTime variable:</span>Adds a new row for a DateTime variable.</li>
+                <li><b>Add Definition:</b> Adds a new variable definition.</li>
+                <li><b>Cut</b> Cuts the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Copy:</span> Copies the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Paste:</span> Pastes the item(s) from the clipboard.</li>
+                <li><span class="bold">Delete:&#160;</span>Deletes the selected item(s).</li>
+            </ul>
+        </div>
+        <h3>Variable Set - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the variable Tag Set Editor (as of Flare V6)</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p class="bold">Select one or more tags (CTRL-Click)&#160;from any combination of rows and then:</p>
+        <p>Right-click on the filter row | Cut/Copy Paste menu options</p>
+        <p>Cut/Copy Paste Standard Toolbar options</p>
+        <p>Cut/Copy Paste Keyboard keys (CTRL-X, CTRL-C, CTRL-V)</p>
+        <p>Cut/Copy Paste !Edit Menu options</p>
+        <p>&#160;</p>
+        <p>Undo/Redo works and commands display correctly in the Standard Toolbar.</p>
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <ul class="checkbox">
+            <li>Select the entry and press <span class="KeyboardShortcut">Delete</span> on the keyboard</li>
+            <li>Select the entry and click the Delete button on the Standard Toolbar</li>
+            <li>Select the entry and click the Delete button on the Local Toolbar</li>
+            <li>Right-click the entry and select Delete from the context menu</li>
+            <li>Select the entry, !Edit | Delete</li>
+            <li>Select the entry and “Cut”</li>
+        </ul>
+        <h4>Tooltips</h4>
+        <p>If any Tag Name or Comment is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</p>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags cannot be applied to individual variable entries. Conditional Tags can be applied to the actual Variable Tag Set file (*.flsfs) for the purposes of Advanced Global Project importing.</p>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">No Class:</p>
+        <p>&lt;MadCap:variable name="VariableSet.VariableName" /&gt;</p>
+        <p>&#160;</p>
+        <p class="bold">With Class:</p>
+        <p>&lt;MadCap:variable name="VariableSet. VariableName " class="className" /&gt;</p><pre>&#160;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="10074" MadCap:lastWidth="931">
+    <head>
+    </head>
+    <body>
+        <h3>Settings</h3>
+        <h4>Database</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--Database.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Database Server: </span>The name or IP address of the database server.</p>
+            </li>
+            <li><span class="bold">Database Name:&#160;</span>The name of the database.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Nothing in here should be editable.</li>
+                <li>Database Server and Name should match what you see in the Pulse application.</li>
+            </ul>
+        </div>
+        <h4>General</h4>
+        <p>Configure general settings.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--General--UI1.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--General--UI2.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--General--UI3.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li><span class="bold">Site URL:</span>&#160;Enter the site URL. <span style="color: #ff0000;">Changing this doesn't work.</span></li>
+            <li><span class="bold">Restricted Word&#160;List:&#160;</span>click Show or Hide to see the list. &#160;Type restricted words, separate with commas.</li>
+            <li><span class="bold">Customer Group:&#160;</span>Enabled customer access to Pulse.</li>
+            <li><span class="bold">Group&#160;Sync:&#160;</span>Enabled group sync.</li>
+            <li><span class="bold">SMTP&#160;Host:&#160;</span>Enter the name or IP&#160;address of the SMTP&#160;Host.</li>
+            <li><span class="bold">SMTP&#160;Port: </span>Enter the SMTP&#160;port.</li>
+            <li><span class="bold">SMTP&#160;SSL:&#160;</span>Enable SMTP&#160;SSL.</li>
+            <li><span class="bold">SMTP&#160;Username:&#160;</span>Enter the SMTP&#160;username.</li>
+            <li><span class="bold">SMTP&#160;Password:&#160;</span>Enter the SMTP&#160;password.</li>
+            <li><span class="bold">Incoming Mail Server Type:&#160;</span>Select from the dropdown menu:&#160;Pop3, Exchange Web&#160;Services or Poll the Local SMTP&#160;Drop&#160;Folder.</li>
+            <li>
+                <p><span class="bold">Incoming Bad Mail Folder: </span>Enter the path of the local server folder to hold raw incoming messages that have failed processing.</p>
+            </li>
+            <li>
+                <p><span class="bold">POP3 Host: </span>Enter the name or IP address of the POP3 Host.</p>
+            </li>
+            <li>
+                <p><span class="bold">POP3 Username:&#160;</span>Enter the POP3 username.</p>
+            </li>
+            <li>
+                <p><span class="bold">POP3 Password: </span>Enter the POP3 password.</p>
+            </li>
+            <li><span class="bold">POP3&#160;Poll Task Frequency in Minutes:&#160;</span>Enter the POP3 poll task frequency in minutes (0=off, 1=1 minute).</li>
+            <li><span class="bold">POP3 Enable SSL:&#160;</span>Check to enable SSL.</li>
+            <li><span class="bold">Notification Email Type:&#160;</span>Select from the dropdown menu:&#160;Static, Domain or Plussing. Static, for a single email address that doesn't change, and no support for posting to a group via email. Domain, if you have a whole domain you'd like Pulse to control. Plussing, if you have one email address you'd like Pulse to manage but would like to be able to post to groups via email. The last two require support from your email server.</li>
+            <li>
+                <p><span class="bold">Notification Email Address:&#160;</span>Type a single email address from which notifications and registration emails are sent.</p>
+            </li>
+            <li>
+                <p><span class="bold">Notification Email Display Name:&#160;</span>The name that you want to appear as the sender in email notifications sent by Pulse.</p>
+            </li>
+            <li>
+                <p><span class="bold">Activity Purge Task Frequency in Days:&#160;</span>The frequency at which Pulse will run message archive task. When messages reach the age defined in the Message Archive Task Max Message Age in Day field, Pulse archives the messages and they will not display any longer in the user's task pane. 0=off, 1=1 day, 2=2days, etc.</p>
+            </li>
+            <li>
+                <p><span class="bold">Activity Purge Task Max Message Age in Days: </span>The maximum age a message can be until it is archived. After the established days, all messages will be archived and will not display any longer in the user's messages pane.</p>
+            </li>
+            <li>
+                <p><span class="bold">Account Sync Period: </span>The number of minutes the authentication providers will sync with Pulse.</p>
+            </li>
+            <li><span class="bold">Always Use SSL: </span>Place a checkmark in this box to redirect calls for http:// to https://.</li>
+            <li>
+                <p><span class="bold">Windows Auto Login IP Ranges: </span>Define the range of IP addresses that will be permitted to automatically login to Pulse using windows credentials. If a user attempts to login from an IP address outside of the defined range, Pulse will prompt for credentials.</p>
+            </li>
+            <li>
+                <p><span class="bold">Mobile Client Persistent Login: </span>Place a checkmark in this box to enable mobile client persistent login.</p>
+            </li>
+            <li>
+                <p><span class="bold">Video Encoding: </span>Place a checkmark in this box if you have setup an encoding server. When this feature is enabled Pulse can support additional video formats (.mov, .3gp, .wmv, .avi) in addition to MP4. Requires a licensed copy of Microsoft Expression Encoder or Handbrake.</p>
+            </li>
+            <li><span class="bold">Log Retention:&#160;</span>Specify the number of days to retain the error message log on the server.</li>
+            <li>
+                <p><span class="bold">Content Purging: </span>Place a checkmark in this box to enable content purging.</p>
+            </li>
+            <li><span class="bold">Direct Messaging: </span>Select where direct messaging should be enabled in Pulse.</li>
+            <li>
+                <p><span class="bold">Files: </span>Select where files should be enabled in Pulse.</p>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test restricted words by typing them in a comment/discussion/status, etc. &#160;You should get the message "You may not use the word 'xxxx'".</li>
+                <li>Deselect "Customer Groups" and all customers should have Pulse access revoked.</li>
+                <li>Change Log Retention to 1, you should see the logged error messages removed after 1 day.</li>
+                <li>Turn off Direct Messaging and Files, you should not be able to direct message or post a file.<br /></li>
+            </ul>
+        </div>
+        <h4>Groups</h4>
+        <p>Add new groups or modify settings for existing groups. Group Types are Administrators, Customer, Employees.</p>
+        <h5>Manage Groups</h5>
+        <p>In the <span class="UI">Select a group to manage</span> box, type part or all of a group name. Place a checkmark next to the group that you want to manage, then click&#160;<span class="UI">Manage Group</span>.</p>
+        <ul class="checkbox">
+            <li>Basic:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ManageGroups.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Name:&#160;</span>The name of the group.</li><li><span class="bold">Description:&#160;</span>A description to help identify the group.</li><li><span class="bold">Group&#160;Type:&#160;</span>Sets access permission for group member.</li></ul></li>
+            <li>Membership:&#160;Will list all members currently in this group.&#160;<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ManageGroups2.png" alt="" title="" class="propertiesNoFloat" /><ul><li>To remove a user from a group, deselect their name. &#160;</li><li>To add a user to a group, type their name, select it.</li></ul></li>
+            <li>Advanced:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ManageGroups3.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Host Site Url:&#160;</span>type the URL of the site that hosts Pulse. (Our documentation says it is strongly recommended not to change the default setting)</li></ul></li>
+            <li><span class="bold">Save:&#160;</span>Saves changes and  returns to the <span class="UI">Select a group to manage</span> page.</li>
+            <li><span class="bold">Cancel:&#160;</span>Cancels any changes and returns to the <span class="UI">Select a group to manage</span> page.</li>
+        </ul>
+        <h5>Add a Group</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--CreateAGroup.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Name:&#160;</span>The name of the group you would like to create.</li>
+            <li><span class="bold">Description:&#160;</span>A description to help identify the group.</li>
+            <li><span class="bold">Create Group:&#160;</span>Closes the dialog and creates the group.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog without creating a group and returns to the <span class="UI">Select a group to manage</span> page.</li>
+        </ul>
+        <p>You can delete a group that you have made (not Administrators, Customer or Employees)&#160;by selecting the group to manage, and clicking the <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--DeleteGroup.png" alt="" title="" />remove button.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Pulse should only allow one&#160;Administrators group.</li>
+                <li>Only Administrators can create and delete groups.</li>
+                <li>Add a user to multiple groups - the level of system access corresponds to group with the highest permissions. For example, if a user belongs to both the Employees and Customers group, the user will be granted all of the permissions for the Employees group.</li>
+                <li>Remove a user from all groups - the level of system access should be the same as the Customer group</li>
+            </ul>
+        </div>
+        <h4>Suggested Feeds</h4>
+        <p>In the <span class="UI">Select a Suggestions List to Manage</span> box, place a checkmark next to the Suggestions List that you want to manage to enable the <span class="UI">Configure</span> and <span class="UI">Remove</span> buttons.</p>
+        <ul class="checkbox">
+            <li><span class="bold">Configure:&#160;</span>Opens the selected feed to configure.</li>
+            <li><span class="bold">Remove:&#160;</span>Removes the selected feed.</li>
+            <li><span class="bold">Add a Suggestion&#160;List:&#160;</span>Opens a blank configuration page.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Configure Suggested Feeds</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--SuggestedFeeds.png" alt="" title="" class="propertiesNoFloat">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Name:&#160;</span>Type a name for the feed.</li>
+            <li><span class="bold">Automatic Follow:&#160;</span>Select whether users should be automatically subscribed as followers to the new feed. You can select Yes or No.</li>
+            <li><span class="bold">Suggest&#160;To:&#160;</span>Select the audience to whom you are making the suggestion. You can select Administrators or Employees.<br /></li>
+            <li><span class="bold">People: </span>Type part of the person's name you want to search for and then place a check mark to select it.</li>
+            <li><span class="bold">Groups: </span>Type part of the group's name you want to search for and then place a check mark to select it.</li>
+            <li><span class="bold">Tags: </span>Type part of the tag's name you want to search for and then place a check mark to select it.</li>
+            <li><span class="bold">Ok:&#160;</span>Creates the feed, returns to the <span class="UI">Select a Suggestions List to Manage</span> page.</li>
+            <li><span class="bold">Cancel:&#160;</span>Does not create the feed, returns to the <span class="UI">Select a Suggestions List to Manage</span> page.</li>
+        </ul>
+        <h4>Users</h4>
+        <h5>Manage Users</h5>
+        <p>In the Select a user to manage box, type part or all of a user name. Place a checkmark next to the user that you want to manage, then click&#160;<span class="UI">Next</span>.</p>
+        <ul class="checkbox">
+            <li>User Details:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ManageUsers.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">First Name: </span>The first name of the user.</li><li><p><span class="bold">Last Name: </span>The last name of the user.</p></li><li><p><span class="bold">Email Address: </span>A valid email address for the user.</p></li><li><p><span class="bold">Title: </span>A title for the user, such as a professional or job title.</p></li><li><p><span class="bold">Department: </span>A department name for the user, such as Engineering or Sales.</p></li><li><p><span class="bold">Location: </span>A location for the user, such as La Jolla or New York City.</p></li><li><p><span class="bold">Cell: </span>A mobile phone number for the user.</p></li><li><p><span class="bold">Phone: </span>A telephone number for the user.</p></li></ul></li>
+            <li><span class="bold">Save:&#160;</span>Saves changes and returns to <span class="UI">Select a user to manage</span> page.</li>
+            <li><span class="bold">Cancel: </span>Discards changes and returns to <span class="UI">Select a user to manage</span> page.</li>
+            <li><span class="bold">Disable/Enable: </span>Toggle between disabling and enabling the user.</li>
+            <li><span class="bold">Delete: </span>Delete the user so they will be unable to sign into Pulse.</li>
+        </ul>
+        <h5>Invite a User</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--InviteUser.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--InviteUser2.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li><span class="bold">First Name: </span>The first name of the user.</li>
+            <li><span class="bold">Last Name: </span>The last name of the user.</li>
+            <li><span class="bold">Email Address: </span>A valid email address for the user.</li>
+            <li><span class="bold">Title: </span>A title for the user, such as a professional or job title.</li>
+            <li><span class="bold">Department: </span>A department name for the user, such as Engineering or Sales.</li>
+            <li><span class="bold">Location: </span>A location for the user, such as La Jolla or New York City.</li>
+            <li><span class="bold">Cell: </span>A mobile phone number for the user.</li>
+            <li><span class="bold">Phone: </span>A telephone number for the user.</li>
+            <li><span class="bold">Custom&#160;Message:&#160;</span>Type a message here, it will appear in the email invitation above the standard Pulse Invite content.</li>
+            <li><span class="bold">Group:&#160;</span>Select the group(s) for this user to be associated with.</li>
+            <li><span class="bold">Send Invite:&#160;</span>Sends the invitation.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog without saving changes.</li>
+        </ul>
+        <h5>Import Users</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ImportUsers.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Choose File:&#160;</span>Opens the <span class="UI">Open</span> dialog to browse for the user data file.</li>
+            <li><span class="bold">Send invitation email to each user:&#160;</span>Selected by default, each user will receive an invitation email.</li>
+            <li><span class="bold">Invitation email text input box:&#160;</span>Says "Welcome to Pulse" by default, you can edit this text.</li>
+            <li><span class="bold">Import:&#160;</span>Enabled once a user data file has been selected, will import the user.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Should not be able to import non-CSV&#160;data files.</li>
+                <li>Ensure email is sent to the new user- test all links in that email</li>
+            </ul>
+        </div>
+        <h4>Profiles</h4>
+        <h5>Skills List</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileSkillList.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Select a skill to manage:&#160;</span>Select/Deselect a skill to configure or remove it.</li>
+            <li>Configure: <br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileConfigureSkill.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Name:&#160;</span>Enter a name.</li><li><span class="bold">Skill&#160;Category:&#160;</span>Select a skill category.</li><li><span class="bold">Save:&#160;</span>Save changes and return to <span class="UI">Select skills to manage</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not save changes and  return to <span class="UI">Select skills to manage</span> page.</li></ul></li>
+            <li>Remove:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileDeleteSkill.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Delete Skill:&#160;</span>Removes the skill.</li><li><span class="bold">Cancel: </span>Does not remove the skill  and  returns to <span class="UI">Select skills to manage</span> page.</li></ul></li>
+            <li>Add Skills:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileAddSkills.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Skill input text box:&#160;</span>Type the skill names here.</li><li><span class="bold">Skill&#160;Category: </span>Select a skill category from the drop down.</li><li><span class="bold">Add Skills: </span>Adds the skills in the input box.</li><li><span class="bold">Cancel: </span>Does not add any skills.</li></ul></li>
+        </ul>
+        <h5>Skills&#160;Categories</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileSkillCategories.png" alt="" title="" class="propertiesNoFloat">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Select a skill category to manage:&#160;</span>Select/Deselect a skill category to configure or remove it.</li>
+            <li>Configure: <br></br><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileConfigureSkill.png" alt="" title="" class="propertiesNoFloat"></img><ul><li><span class="bold">Name:&#160;</span>Enter a name.</li><li><span class="bold">Save:&#160;</span>Save changes and return to <span class="UI">Select skill category to manage</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not save changes and  return to <span class="UI">Select skill category to manage</span> page.</li></ul></li>
+            <li>Remove:<br></br><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileDeleteSkillCategory.png" alt="" title="" class="propertiesNoFloat"></img><ul><li><span class="bold">Delete Skill Category:&#160;</span>Removes the skill category.</li><li><span class="bold">Cancel: </span>Does not remove the skill category and  returns to <span class="UI">Select skill category to manage</span> page.</li></ul></li>
+            <li>Add Skill Category:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileConfigureSkillCategory.png" alt="" title="" class="propertiesNoFloat" /></li>
+            <ul>
+                <li><span class="bold">Name:&#160;</span>Enter a name.</li>
+                <li><span class="bold">Save:&#160;</span>Save changes and return to <span class="UI">Select skill category to manage</span> page.</li>
+                <li><span class="bold">Cancel:&#160;</span>Does not save changes and  return to <span class="UI">Select skill category to manage</span> page.</li>
+            </ul>
+        </ul>
+        <h5>Skill&#160;Requests</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileSkillRequest.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Requestor Name:&#160;</span>Click to view the requestor's profile.</li>
+            <li><span class="bold">Approve: </span>Opens the <span class="UI">Approve Skill</span> dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileApproveSkill.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Skill&#160;Category:&#160;</span>Select a skill category from the dropdown menu or leave it blank.</li><li><span class="bold">Approve Skill:&#160;</span>Adds the skills and returns to the <span class="UI">Skill&#160;Requests</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not add the skill and returns to the <span class="UI">Skill&#160;Requests</span> page.</li></ul></li>
+            <li><span class="bold">Reject:&#160;</span>Opens the Reject Skill dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileRejectSkill.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Rejection&#160;Reason:&#160;</span>Type a rejection reason or leave it blank.</li><li><span class="bold">Reject Skill:&#160;</span>Rejects the skill and returns to the <span class="UI">Skill Requests</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not reject the skill and returns to the <span class="UI">Skill&#160;Requests</span> page.</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileSkillRequestX.png" alt="" title="" />:&#160;Opens the <span class="UI">Confirm Delete Skill Request</span> dialog.<ul><li><span class="bold">Delete Skill&#160;Request: </span>Deletes the skill request.</li><li><span class="bold">Cancel:&#160;</span>Does not delete the skill request and returns to the <span class="UI">Skill&#160;Requests</span> page.</li></ul></li>
+        </ul>
+        <p>Skills Requests can be sorted by:&#160;All, Pending, Approved,&#160;Rejected.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Skills should only be available to add to a profile if they have been approved my an administrator.</li>
+                <li>Note: Bug 90361:Administrators are not getting notifications when a new skill is requested.</li>
+            </ul>
+        </div>
+        <h5>Profile Properties</h5>
+        <p>Select a profile property to manage<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileProperties.png" alt="" title="" class="propertiesNoFloat" /></p>
+        <ul class="checkbox">
+            <li>Configure:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileConfigureProperties.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Name:&#160;</span>Enter a profile property name.</li><li><span class="bold">Type:&#160;</span>Determines which user attribute this profile property value is based on, if any. Choose 'Custom' if the property value should be entirely determined by user input. Choose 'Section Header' to define a section header allowing for organization of properties into sections on a person's profile.</li><li><span class="bold">Editable: </span>Select to allow users to edit the value of this profile property.</li><li><span class="bold">Searchable:&#160;</span>Select to allow searching for users based on the value of this profile property.</li><li><span class="bold">Predefined Values:&#160;</span>Select to use a list of predefined values allowed for this profile property. In the text box, type a list of predefined values, one per line.</li><li><span class="bold">Save:&#160;</span>Saves the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not save the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li></ul></li>
+            <li><span class="bold">Remove:&#160;</span>Opens the Confirm Delete Profile Property dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileDeleteProperties.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Delete Profile Property:&#160;</span>Removes the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li><li><span class="bold">Cancel: </span>Does not remove the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li></ul></li>
+            <li>Add Property:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileAddProperties.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Name:&#160;</span>Enter a profile property name.</li><li><span class="bold">Type:&#160;</span>Determines which user attribute this profile property value is based on, if any. Choose 'Custom' if the property value should be entirely determined by user input. Choose 'Section Header' to define a section header allowing for organization of properties into sections on a person's profile.</li><li><span class="bold">Save:&#160;</span>Saves the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not save the profile property and returns to the <span class="UI">Select a profile property to manage</span> page.</li></ul></li>
+            <li><span class="bold">Move Up:&#160;</span>Moves the selected item up once in the list.</li>
+            <li><span class="bold">Move Down: </span>Moves the selected item down once in the list.</li>
+        </ul>
+        <h5>Profile Features</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--ProfileFeatures.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Experience:&#160;</span>Select to disable all experience related functionality.</li>
+            <li style="font-weight: normal;"><span class="bold">Education:&#160;</span>Select to disable all education related functionality.</li>
+            <li style="font-weight: normal;"><span class="bold">Certifications:&#160;</span>Select to disable all certifications related functionality.</li>
+            <li style="font-weight: normal;"><span class="bold">Save:&#160;</span>Saves and displays the message "Your changes have been saved successfully."</li>
+        </ul>
+        <h4>Moderation</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--Moderation.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li><span class="bold">Select a rejection reason to manage:&#160;</span>Select a reason to configure or remove it.</li>
+            <li><span class="bold">Configure:&#160;</span>Shows an editable filed to type or change the rejection reason.<ul><li><span class="bold">Save:&#160;</span>Saves changes and returns to the <span class="UI">Select a rejection reason to manage</span> page.</li><li><span class="bold">Cancel:&#160;</span>Does not save changes and returns to the <span class="UI">Select a rejection reason to manage</span> page.</li></ul></li>
+            <li><span class="bold">Remove:&#160;</span>Opens the Confirm&#160;Delete Rejection&#160;Reason Dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--DeleteRejection.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Delete Rejection Reason:&#160;</span>Removes the rejection reason and closes the dialog.</li><li><span class="bold">Cancel:&#160;</span>Does not remove the rejection reason and closes the dialog.</li></ul></li>
+            <li><span class="bold">Add&#160;Rejection Reason: </span>Shows an editable filed to type a new rejection reason.</li>
+            <ul>
+                <li><span class="bold">Save:&#160;</span>Saves changes and returns to the <span class="UI">Select a rejection reason to manage</span> page.</li>
+                <li><span class="bold">Cancel:&#160;</span>Does not save changes and returns to the <span class="UI">Select a rejection reason to manage</span> page.</li>
+            </ul>
+        </ul>
+        <h4>Log</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--Log.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>&#160;</p>
+        <p>Filters:</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Show All: </span>Select this item to reveal all logged events.</p>
+            </li>
+            <li>
+                <p><span class="bold">Critical: </span>Select this item to reveal a list of critical events that have occurred. Critical errors can lead to system disruption/failure, so it is important to take corrective actions.</p>
+            </li>
+            <li>
+                <p><span class="bold">Error: </span>Select this item to reveal a list of events that can potentially lead to system disruption/failures, so it is import to locate errors and determine if preventative or corrective action is needed.</p>
+            </li>
+            <li>
+                <p><span class="bold">Warning: </span>Select this item to view a list of events that are not significant, but may indicate of a future issue.</p>
+            </li>
+            <li>
+                <p><span class="bold">Information: </span>Select this item to show events that completed successfully.</p>
+            </li>
+            <li>
+                <p><span class="bold">Verbose: </span>Select this item to reveal more detailed information about the issue. This is a helpful option to look at should you need to perform troubleshooting.</p>
+            </li>
+            <li><span class="bold">Query:&#160;</span>Type a search term.</li>
+            <li><span class="bold">Search:&#160;</span>Submits the search.</li>
+            <li><span class="bold">Reset:&#160;</span>Resets the search query.</li>
+            <li><span class="bold">Next page:&#160;</span>Loads the next page of log events.</li>
+            <li><span class="bold">Previous page:&#160;</span>Loads the previous page of log events.</li>
+        </ul>
+        <p>Columns Shown in the log:</p>
+        <ul class="checkbox">
+            <li><span class="bold">EventType: </span>The type of event. For example, critical, error, or warning.</li>
+            <li><span class="bold">CreatedUTC: </span>The date and time steps the event occurred.</li>
+            <li><span class="bold">MachineName: </span>They Pulse web server name.</li>
+            <li><span class="bold">Url: </span>Click to open a URL with more information.</li>
+            <li><span class="bold">ProcessName: </span>Shows the name of the process.</li>
+            <li><span class="bold">ExceptionType: </span>Lists events that required special processing.</li>
+        </ul>
+        <h4>Communities</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--Communities.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Key: </span>A key is automatically created for you when you install the SQL Server Database. This field in not editable.</li>
+            <li><span class="bold">Name:&#160;</span>The name that you assigned in Flare will show here.</li>
+            <li><span class="bold">Published Url: </span>The Url you assigned in Flare will show here.</li>
+            <li><span class="bold">New: </span>Creates a new empty row for you to add a new community.</li>
+            <li><span class="bold">Delete: </span>Deletes the community.</li>
+            <li><span class="bold">Save Changes:&#160;</span>Prompts you to save changes.<ul><li><span class="bold">Ok: </span>Saves changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without saving changes.</li></ul></li>
+            <li><span class="bold">Discard Changes: </span>Prompts you to discard changes.<ul><li><span class="bold">Ok:&#160;</span>Discards changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without discarding changes.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Edits made from the dashboard should be verified in the Pulse application</li>
+            </ul>
+        </div>
+        <h4>Synonyms</h4>
+        <h5>Directional</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--SynonymsDirectional.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Word: </span>Type the word that would be used in the search query&#160;(ex:&#160;dog).</li>
+            <li><span class="bold">Synonym: </span>Type the synonym that would be included in the search results of the previous term (ex:&#160;poodle).</li>
+            <li><span class="bold">Stem: </span>Select to include all forms of the search word (ex:&#160;dogs, doggies)<br /></li>
+            <li><span class="bold">New: </span>Creates a new empty row for you to add a new synonym.</li>
+            <li><span class="bold">Delete: </span>Deletes the row.</li>
+            <li><span class="bold">Save Changes:&#160;</span>Prompts you to save changes.<ul><li><span class="bold">Ok: </span>Saves changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without saving changes.</li></ul></li>
+            <li><span class="bold">Discard Changes: </span>Prompts you to discard changes.<ul><li><span class="bold">Ok:&#160;</span>Discards changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without discarding changes.</li></ul></li>
+            <li><span class="bold">Export (.mcsyns):&#160;</span>Downloads a copy of the synonym file in the MCSYNS file format which can be opened in Flare.</li>
+        </ul>
+        <h5>Groups</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Admin--SynonymsDirectional.png" alt="" title="" class="propertiesNoFloat">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Group: </span>Type the words in the synonym group&#160;(ex:&#160;dog=canine,doggy,doggie,hound,pooch,pup,puppy).</li>
+            <li><span class="bold">Stem: </span>Select to include all forms of the search word (ex:&#160;dogs).<br /></li>
+            <li><span class="bold">New: </span>Creates a new empty row for you to add a new synonym group.</li>
+            <li><span class="bold">Delete: </span>Deletes the row.</li>
+            <li><span class="bold">Save Changes:&#160;</span>Prompts you to save changes.<ul><li><span class="bold">Ok: </span>Saves changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without saving changes.</li></ul></li>
+            <li><span class="bold">Discard Changes: </span>Prompts you to discard changes.<ul><li><span class="bold">Ok:&#160;</span>Discards changes.</li><li><span class="bold">Cancel:&#160;</span>Closes dialog without discarding changes.</li></ul></li>
+            <li><span class="bold">Export (.mcsyns):&#160;</span>Downloads a copy of the synonym file in the MCSYNS file format which can be opened in Flare.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Open the exported .mcsyns file in Flare and ensure it is handled correctly.</li>
+                <li>Search the community for synonyms created from Pulse Dashboard and created from&#160;Flare.</li>
+                <li>Use the community drop down filter to create synonyms for specific communities</li>
+            </ul>
+        </div>
+    </body>
+</html>

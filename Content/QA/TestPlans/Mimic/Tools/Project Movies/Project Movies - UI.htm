@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1510" MadCap:lastWidth="1146" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>Project Movies - UI</title>
+    </head>
+    <body>
+        <h2>Project Movies - UI</h2>
+        <p>Opening the Project Movies Pane:</p>
+        <ul>
+            <li class="bold">!View |&#160;Project Movies</li>
+            <li>Clicking Movies icon on the standard toolbar <img src="../../../../../Resources/Images/TestPlans/Mimic/Toolbar Icons/ProjectMovies.png" />.</li>
+            <li>Clicking the Movies icon on the Project Editor toolbar <img src="../../../../../Resources/Images/TestPlans/Mimic/Toolbar Icons/ProjectMovies.png" />.</li>
+        </ul>
+        <h3>UI Test&#160;Cases:</h3>
+        <ul>
+            <li>By default the Project Movies Pane appears on the left side of the application<img src="../../../../../Resources/Images/TestPlans/Mimic/ProjectMoviesPane.png" class="right" /></li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        <h4>Local Toolbar</h4>
+        <ul>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Toolbar Icons/ProjectProperties.png" /> <![CDATA[ ]]><span class="bold">Project Properties Editor: </span> Opens the Project Properties Editor. (See Project Properties test plan for more info)</li>
+            <li><span class="bold">Create Blank Movie....:</span> Will open the New Movie dialog.</li>
+            <li><span class="bold">Import Mimic Movie...: </span> Will open up the Import Movie dialog.(See Below)</li>
+            <li><span class="bold">Import PowerPoint Presentation...: </span>&#160;Will open up the Import PowerPoint dialog.</li>
+        </ul>
+        <h4>Misc.</h4>
+        <ul>
+            <li>All current movies in the project will be displayed in the pane</li>
+            <li>Double-clicking a movie in the pane will open that movie in the main editor </li>
+        </ul>
+        <p><span class="bold">Import Movie</span> dialog:<img src="../../../../../Resources/Images/TestPlans/Mimic/ImportMovieDialog.png" class="right" /></p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        <ul>
+            <li><span class="bold">Source File: </span> Enter in the path to the desired movie here</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" />Pressing the browse button will bring up a standard windows Open dialog. Use that to browse to the desired movie. (*.mimov)</li>
+            <li><span class="bold">File Name: </span> Enter desired file name for the imported movie here<ul><li>By default, the file name will be the name of the movie you are importing.&#160;This will be populated in the field once you select a Source File.</li></ul></li>
+            <li><span class="bold">Right-Clicking </span> a movie in this pane will give you one option, <span class="bold">Delete</span><ul><li>Selecting <span class="bold">Delete </span>will invoke a standard confirmation (yes/no) dialog.<ul><li>Selecting <span class="bold">Yes </span>will remove the movie from the project.</li><li>Selecting <span class="bold">No </span>will cancel the operation and return you to the editor.</li></ul></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

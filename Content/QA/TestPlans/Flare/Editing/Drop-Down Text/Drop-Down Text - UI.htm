@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="925" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Drop-Down Text - UI</h2>
+        <p>!Insert | Drop-Down Text...</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p><span class="UI">Insert Drop-Down</span> dialog invoked when the insertion point is in an empty tag:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Drop-Down Text/Drop-Down---Insert--NoSelection.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p><span class="UI">Insert Drop-Down</span> dialog invoked when a single paragraph is selected or no selection is made&#160;(just an insertion point in a paragraph):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Drop-Down Text/Drop-Down---Insert--OneParagraphSelected.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p><span class="UI">Insert Drop-Down </span>dialog invoked when multiple paragraphs are selected:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Drop-Down Text/Drop-Down---Insert--MultiParagraphsSelected.png" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>Select all possible elements to convert to Drop-Down Text: paragraphs, list items, etc. You should only be able to convert a valid selection to Drop-Down Text. If selection is invalid, the menu option should be grayed out.</li>
+                <li>Insert Drop-Down Text into an empty line (do not pre-select any content)</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Drop-Down Head/Select the Hotspot (Optional):</span> Displays the textual content of the Drop-Down Head. The first paragraph contained in the selection will appear as the Drop-Down Head. If no selection is made when the dialog is invoked, Flare will create the default head content, "(This is the Drop-down Hotspot)"</p>
+                <p>Optionally, you may also make a selection within the head to define the specific Drop-Down Hotspot text.</p>
+            </li>
+            <li><span class="bold">Drop-Down Body: </span>Displays the textual content of the Drop-Down Body. The area should display the second paragraph (and any additional selected paragraphs if more than two paragraphs were selected) when the dialog is invoked. If only one paragraph or no paragraphs were selected when the dialog is invoked, Flare will create a default body, "(This is the Drop-down text)"</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

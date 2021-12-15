@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Help Viewer Test Plans" Link="/Content/QA/TestPlans/Help Viewer/Help Viewer.htm" ComputeToc="false">
+        <TocEntry Title="Help Viewer Test Cases" />
+        <TocEntry Title="Install/Uninstall" Link="/Content/QA/TestPlans/Help Viewer/General/Install Uninstall/Install Uninstall.htm" />
+        <TocEntry Title="General">
+            <TocEntry Title="Documentation" Link="/Content/QA/TestPlans/Help Viewer/General/Documentation/Documentation.htm" />
+            <TocEntry Title="Framework/MDI" Link="/Content/QA/TestPlans/Help Viewer/General/Framework MDI/Framework MDI.htm" />
+            <TocEntry Title="Launching" Link="/Content/QA/TestPlans/Help Viewer/General/Launching/Launching.htm" />
+            <TocEntry Title="Localized UI" Link="/Content/QA/TestPlans/Help Viewer/General/Localized UI/Localized UI.htm" />
+        </TocEntry>
+        <TocEntry Title="Accordians">
+            <TocEntry Title="Browse Sequences" Link="/Content/QA/TestPlans/Help Viewer/Accordians/Browse Sequences/Browse Sequences.htm" />
+            <TocEntry Title="Favorites" Link="/Content/QA/TestPlans/Help Viewer/Accordians/Favorites/Favorites.htm" />
+            <TocEntry Title="Glossary" Link="/Content/QA/TestPlans/Help Viewer/Accordians/Glossary/Glossary.htm" />
+            <TocEntry Title="Index" Link="/Content/QA/TestPlans/Help Viewer/Accordians/Index/Index.htm" />
+            <TocEntry Title="Search" Link="/Content/QA/TestPlans/Help Viewer/Accordians/Search/Search.htm" />
+            <TocEntry Title="TOC" Link="/Content/QA/TestPlans/Help Viewer/Accordians/TOC/TOC.htm" />
+            <TocEntry Title="User Profile" Link="/Content/QA/TestPlans/Help Viewer/Accordians/User Profile/User Profile.htm" />
+        </TocEntry>
+        <TocEntry Title="Help Topic Toolbar Items">
+            <TocEntry Title="Comments" Link="/Content/QA/TestPlans/Help Viewer/Help Topic Toolbar Items/Comments/Comments.htm" />
+            <TocEntry Title="Rating" Link="/Content/QA/TestPlans/Help Viewer/Help Topic Toolbar Items/Rating/Rating.htm" />
+            <TocEntry Title="Standard Navigation" Link="/Content/QA/TestPlans/Help Viewer/Help Topic Toolbar Items/Standard Navigation/Standard Navigation.htm" />
+        </TocEntry>
+        <TocEntry Title="Performance">
+            <TocEntry Title="Performance" Link="/Content/QA/TestPlans/Help Viewer/Performance/Performance/Performance.htm" />
+        </TocEntry>
+        <TocEntry Title="Tools">
+            <TocEntry Title="Menus" Link="/Content/QA/TestPlans/Help Viewer/Tools/Menus/Menus.htm" />
+            <TocEntry Title="Edit Menu" Link="/Content/QA/TestPlans/Help Viewer/Tools/Edit Menu/Edit Menu.htm" />
+            <TocEntry Title="Print Functionality" Link="/Content/QA/TestPlans/Help Viewer/Tools/Print Functionality/Print Functionality.htm" />
+            <TocEntry Title="Recent Help Systems" Link="/Content/QA/TestPlans/Help Viewer/Tools/Recent Help Systems/Recent Help Systems.htm" />
+            <TocEntry Title="Tools - Options" Link="/Content/QA/TestPlans/Help Viewer/Tools/Tools - Options/Tools - Options.htm" />
+            <TocEntry Title="Windows Layouts" Link="/Content/QA/TestPlans/Help Viewer/Tools/Windows Layouts/Windows Layouts.htm" />
+        </TocEntry>
+    </TocEntry>
+</CatapultToc>

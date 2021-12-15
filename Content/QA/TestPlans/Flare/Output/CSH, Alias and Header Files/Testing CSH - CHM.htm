@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="597" MadCap:lastWidth="1273" MadCap:fileTags="AuthorFileTagSet.Jay,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Testing CSH - CHM</h2>
+        <p>This document will allow testing of CSH&#160;calls to a CHM project with minimal CSH&#160;knowledge needed. The only method for testing CSH calls is using the internal CSH&#160;tester API.</p>
+        <h3>Test&#160;Files</h3>
+        <p>Copy down these test files locally for testing. </p>
+        <ul style="list-style-type: square;">
+            <li>CSH_Testing Flare Project :<ul style="list-style-type: square;"><li>\\Dc2\qa\Test Projects\Test Plan Projects\CSH\CHM&#160;CSH&#160;Testing\CSH_Testing\</li></ul></li>
+            <li>CHM&#160;CSH tester application:<ul style="list-style-type: square;"><li>\\Dc2\qa\Test Projects\Test Plan Projects\CSH\CHM&#160;CSH&#160;Testing\WindowsApplication1.exe</li></ul></li>
+        </ul>
+        <h3>Compile and Testing</h3>
+        <ol>
+            <li>Open the project in Flare</li>
+            <li>Generate HTML Help (CHM)</li>
+            <li>!Build |&#160;Test&#160;CSH API&#160;Calls</li>
+            <li>The API&#160;tester should load. Clicking the <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - CSH API Tester.png" /> button will launch the CHM, focused on the Help topic specified in the Topic column of the CSH&#160;API&#160;tester.</li>
+            <li>Click each <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - CSH API Tester.png" /> button and verify the correct topic is shown</li>
+            <li>Change the skin selection for any of the IDs to the HideNav skin. Pressing <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - CSH API Tester.png" /> for that ID will open the correct topic, but with the navigation hidden.</li>
+        </ol>
+        <p>&#160;</p>
+        <h3>Accomplished Test&#160;Cases</h3>
+        <p>Verifying the above links will accomplish the following testing scenarios. (<span class="bold">Note: This is for internal QA&#160;auditing purposes only, you do not need to do this step</span>)</p>
+        <p>&#160;</p>
+        <p>This only fulfills testing local CSH&#160;calls.</p>
+        <h4>CHM&#160;CSH Calls</h4>
+        <ul>
+            <li>ID #</li>
+            <li>ID +&#160;Specify Skin</li>
+        </ul>
+        <ul>
+            <p>&#160;</p>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

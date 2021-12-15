@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="2745" MadCap:lastWidth="787" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:conditionTagExpression="include[Default.UITestsDialogs] ">
+    <head>
+    </head>
+    <body>
+        <h2>Audio - UI  </h2>
+        <h3>Opening the Audio Tab:</h3>
+        <p class="bold">Opening the Audio Tab:</p>
+        <ol>
+            <li style="font-weight: normal;"><span class="bold">!Project|&#160;Project Properties</span> or <span class="bold">!Movie | Movie Properties</span> or <span class="bold">Object Properties</span></li>
+            <li> Click the Audio tab item</li>
+        </ol>
+        <h3>UI - Enabling Audio:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Tab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">Enable Audio:</span>&#160;This will toggle the sound on/off for the selected Movie/Frame/Object</p>
+                    <ul style="list-style-type: square;">
+                        <li>All audio options will be disabled if this is unchecked</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Audio:</span> Will list the currently selected audio<ul style="list-style-type: square;"><li>The file will be preceded by <span class="bold">system </span>if the sound is a system sound</li><li>The file will be preceded by <span class="bold">movie </span>if the sound has been imported from an external source</li></ul></li>
+                <li><span class="bold">Audio Controls:</span>
+                    <ul style="list-style-type: square;">
+                        <li><span class="bold">Play:</span> Will play the selected audio file</li>
+                        <li><span class="bold">Stop:</span> Will stop the sound from playing (Disabled if the sound is not playing)</li>
+                        <li><span class="bold">Edit...:</span> Will launch the audio editing tool (essentially Echo)  <MadCap:xref href="Audio - Editing.htm" target="" title="" alt="">See Audio - Editing</MadCap:xref></li>
+                    </ul>
+                </li>
+                <li><span class="bold">Pick&#160;Built-In Sound...:</span> Opens the <span class="bold">Pick System Sound</span> dialog</li>
+                <li>&#160;<span class="bold">Pick From Movie Sound Library...:</span> Opens the <span class="bold">Manage Movie Sound Library</span> dialog</li>
+                <li><span class="bold">Import Into Sound Library...:</span> Allows the user to browse to external audio files<ul style="list-style-type: square;"><li>Selected files are then imported (copied) into the Mimic movie/project, into the Sounds folder</li><li>If the folder does not exist, we create one automatically</li><li>User can import .mp3 or .wav files only</li></ul></li>
+                <li><span class="bold">Record a New Audio Clip...:</span> Opens the Record dialog. <MadCap:xref href="Audio - Recording.htm" target="" title="" alt="">See Audio - Recording</MadCap:xref></li>
+                <li><span class="bold">Loop Sound:</span> If this is checked the sound file will repeat continuously in a loop for the duration of the movie/frame/object</li>
+                <li><span class="bold">Stop Sound of Previous Frame:&#160;</span>This option is only visible in the Audio tab of Frame properties<ul style="list-style-type: square;"><li>Selecting this will stop all sounds that were initiated on previous frames</li></ul></li>
+                <li>Selecting <span class="bold">OK&#160;</span>will apply the chosen sound</li>
+                <li>Selecting <span class="bold">Cancel </span>will discard changes</li>
+            </ul>
+        </div>
+        <hr />
+        <h4>Pick System Sound</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Pick_System_Sound.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">System Sound Area:</span> Contains a list of audio files included with mimic</p>
+                    <ul style="list-style-type: square;">
+                        <li>These sounds are included in Movie Viewer</li>
+                        <li>These sounds are included in Help Viewer</li>
+                        <li>Selecting a sound and pressing Ok will assign that sound to the movie/frame/object</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Play on Select:</span> If this is checked, when selecting a sound from the list, the sound will play. Uncheck this to disable this function.</li>
+                <li><span class="bold">Play:</span> Press this button to play the currently selected sound</li>
+                <li><span class="bold">Stop:</span> If a sound is playing, this will stop it.<ul style="list-style-type: square;"><li>Disabled if no sound is playing</li></ul></li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p class="bold">Dialog Test Cases:</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Manage Movie Sound Library</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audo_Manage_Library.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">Movie Library Sound:</span> This column will list all the sounds you have imported into the movie</p>
+                    <ul style="list-style-type: square;">
+                        <li>Sounds imported on movie/frame/object will appear here</li>
+                        <li>Sounds no longer "used" will still appear here. They are not removed once you stop using that sound</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Use Count:</span> Will display how many times this sound has been used in the movie</li>
+                <li><span class="bold">Play on Select:</span> If this is checked, when selecting a sound from the list, the sound will play. Uncheck this to disable this function.</li>
+                <li><span class="bold">Play:</span> Press this button to play the currently selected sound</li>
+                <li><span class="bold">Stop:</span> If a sound is playing, this will stop it.<ul style="list-style-type: square;"><li>Disabled if no sound is playing</li></ul></li>
+                <li><span class="bold">Remove:</span> Will remove the selected sound from the movie</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p class="bold">Dialog Test Cases:</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

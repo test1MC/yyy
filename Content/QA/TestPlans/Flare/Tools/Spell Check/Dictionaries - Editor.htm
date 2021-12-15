@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3256" MadCap:lastWidth="1220" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.Dictionary] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Dictionaries - Editor</h2>
+        <h3>Opening a Dictionary File</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Tools| Edit Dictionary</span> |&#160;Select&#160;<span class="bold">Project</span> or <span class="bold">Global </span>Dictionary from dropdown.</li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Tools|&#160;Edit Dictionary</span>|&#160;Select&#160;<span class="bold">Project</span> or <span class="bold">Global </span>Dictionary from dropdown.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Additional ways to open Project Dictionaries:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp">&#160;</MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp">&#160;</MadCap:snippetBlock>
+        <h4>Open Dictionary Dialog</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/OpenDictionary.png" alt="" title="" class="properties" />
+        <div class="SnippetIndent">
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">&#160;</MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Select Language Dictionary (Global or Project): </span>Select from the drop down to view a list of Global or Project dictionaries</li>
+            <li><span class="bold">OK:&#160;</span>Opens selected dictionary in the editor. &#160;If you open a Global dictionary the warning "You are currently editing the global dictionary" will show in the editor.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog without opening a dictionary</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Global dictionary should show all dictionaries saved in the Global dictionary location&#160;(by default it is C:\Users\[username]\AppData\Roaming\MadCap Software\Flare\Spelling Dictionaries, but it can be changed to any location in the Options |&#160;Spelling dialog).</li>
+                <li>Project dictionary should show all dictionaries in the Project Organizer |&#160;Advanced folder, including any nested in folders.</li>
+            </ul>
+        </div>
+        <h3>Dictionary Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/DictionaryEditor.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/DictionaryEditor---LocalToolbar.png" class="border" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">
+            </img>
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" /> (New item):&#160;</span>Creates a new empty row</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" /> (Cut):&#160;</span>Cuts the selected item(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" /> (Copy): </span>Copies the selected item(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" /> (Paste): </span>Pastes the item(s) from the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> (Delete):&#160;</span>Deletes the selected item(s)</li>
+        </ul>
+        <hr />
+        <p><span class="bold">Dictionary Editor grid: </span>Displays a list of words added to the Dictionary.</p>
+        <ul class="checkbox">
+            <li><span class="bold">Word: </span>Displays each word that has been added to the Dictionary.</li>
+            <li><span class="bold">Comment: </span>Lets the user add a comment for the corresponding word. This comment is strictly for use within the Dictionary Editor.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <hr />
+        <p class="bold">Right-click menu (Tooltips in Parentheses):</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/HyphenationRuleEditor---RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li>Menu items are correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Keyboard can navigate and select options</li>
+            <li>Menu is easy to use and understand</li>
+        </ul>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li><span class="bold">New (New item):&#160;</span>Creates a new empty row</li>
+            <li><span class="bold">Cut (Cut):&#160;</span>Cuts the selected item(s) to the clipboard.</li>
+            <li><span class="bold">Copy (Copy): </span>Copies the selected item(s) to the clipboard.</li>
+            <li><span class="bold">Paste (Paste): </span>Pastes the item(s) from the clipboard.</li>
+            <li><span class="bold">Delete (Delete):&#160;</span>Deletes the selected item(s)</li>
+        </ul>
+        <h3>Dictionary - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the Dictionary Editor (as of Flare V5)</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <ul class="checkbox">
+            <li>Select the Dictionary row and press <span class="KeyboardShortcut">Delete</span> on the keyboard</li>
+            <li>Select the Dictionary row and click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> in the local toolbar.</li>
+            <li>Select the Dictionary row and click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> in the Standard toolbar.</li>
+            <li>Select the Dictionary row and select Delete from the Edit menu.</li>
+        </ul>
+        <h4>Tooltips</h4>
+        <p>If any Word is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</p>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags cannot be applied to individual Dictionary terms. Conditional Tags can be applied to the actual Dictionary file (*.mcdic), however, as of Flare V5, this tag can only be used for the purposes of Advanced Global Project importing.</p>
+        <h4>Code</h4>
+        <p class="bold">Dictionary File</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;SpellingDictionary&gt;</pre><pre>&lt;Word</pre><pre>Comment="user comment here..."&gt;MadCap&lt;/Word&gt;</pre><pre>&lt;Word&gt;stylesheet&lt;/Word&gt;</pre><pre>&lt;/SpellingDictionary&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Ignored Words are listed in a topic's html tag in the MadCap:ignoredWords attribute:</p><pre xml:space="preserve" xml:lang="none">&lt;html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:ignoredWords="MadCap;stylesheet"&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

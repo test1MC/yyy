@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3204" MadCap:lastWidth="1079" MadCap:conditionTagExpression="include[Default.UITestsEditors or FlareFileTypes.Skin] exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Skins - Editor (Mobile)</h2>
+        <h3>Opening a Skin File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span>:&#160;In the General tab of the <span class="UI">Target Editor</span>, in the Skin section, select a Skin File and click the "Edit"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Skin Editor (Mobile) - UI Test Cases</h3>
+        <h4>Skin Editor (Mobile):&#160;Toolbar</h4>
+        <ul class="checkbox">
+            <li><span class="bold">Preview:</span> Click the button to preview an example of what the skin will look like in WebHelp Mobile.</li>
+            <li><span class="bold">Add Class:</span>Disabled unless a style is selected in the Style Tab: Click to add a new class to the selected style in the Style Tab.</li>
+        </ul>
+        <h4>Skin Editor (Mobile): General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--Mobile--GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Caption:</span> Insert a caption for your skin or select WebHelp Mobile in the dropdown for WebHelp Mobile caption.</li>
+            <li><span class="bold">Features:</span> Select which features you want to appear in the output. Options include: TOC, Index, Search, Glossary, Browse Sequences.</li>
+            <li><span class="bold">Unreferenced Images: </span>If an image is added to the skin (Styles tab)&#160;and then later replaced with another image, Flare does not automatically remove the initial image from the Skin file.<ul class="checkbox"><li><span class="bold">Keep: </span>(The default behavior) Image that cease to be referenced by any skin style are kept in the skin so they can be references at a later time.
+</li><li><span class="bold">Remove On Save: </span>If this option is selected, unreferenced images are removed from the skin the next time the skin file is modified and saved.
+</li><li><span class="bold">[Unused Images Count]: </span>Displays the number of unreferenced images that are currently included in the skin file.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Verify that images used for any new skin styles do not get deleted when using the "Remove on Save"&#160;option. The mechanism used to delete images only checks specific styles, so if new style are added that reference images, we must account for those.</li>
+                <li>Verify that images associated with custom buttons (Toolbar Items)&#160;do not get deleted when "Remove on Save"&#160;is enabled.</li>
+            </ul>
+        </div>
+        <h4>Skin Editor (Mobile): About Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--Mobile--AboutTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Include About in output:</span> Checked by default. Select this option to include an About image in the output.</li>
+            <li><span class="bold">Browse:</span> browse for an image file to replace the default MadCap image</li>
+            <li><span class="bold">Reset:</span> Resets back to MadCap image.</li>
+        </ul>
+        <h4>Skin Editor (Mobile): Options Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--Mobile--OptionsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Display number of sub-items next to TOC&#160;entries: </span>Select this option if you want the number of sub-item TOC&#160;entries to be displayed in parentheses </li>
+            <li><span class="bold">Display number of sub-items next to Browse Sequence entries: </span>Select this option if you want the number of sub-item Browse Sequence entries to be displayed in parentheses</li>
+            <li><span class="bold">Display number of linked topics next to Index entries: </span>Select this option if you want the number of linked topics to Index entries to be displayed in parentheses</li>
+        </ul>
+        <h4>Skin Editor (Mobile): Topic Toolbar Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--Mobile--TopicToolbarTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/SkinEditor--ToolbarTab--UIControls.flsnp" />
+        <h4>Skin Editor (Mobile): Styles Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--Mobile--StylesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Styles:</span> All available styles for items that appear in the skin</li>
+            <li><span class="bold">Show Property Groups/Alphabetical List:</span> Choose how you want the Properties to be displayed.</li>
+            <li><span class="bold">Preview:</span> The Preview now shows below and the Style item that is selected will be highlighted with a label in the preview.</li>
+            <li><span class="bold">Properties:</span> Displays the list of properties available for each style</li>
+        </ul>
+    </body>
+</html>

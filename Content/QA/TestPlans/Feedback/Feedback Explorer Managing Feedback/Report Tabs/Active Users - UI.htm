@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2093" MadCap:lastWidth="785" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Active Users - UI</h2>
+        <h3>Opening the Active Users view</h3>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Active Users</li>
+            <li>Press &lt;CTRL&gt;-U on the keyboard</li>
+            <li>Click the Active Users button on the Standard Toolbar</li>
+        </ul>
+        <h3>Active Users - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--ActiveUsersPane.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar and Columns</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--ActiveUsers.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show the Info Bar):&#160;</span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Export to csv.png" />Export the data to a csv file: Exports the data to a csv file that can be opened in Microsoft Excel.</li>
+        </ul>
+        <hr />
+        <p class="bold">Active Users grid</p>
+        <p class="bold">Columns (NOTE:&#160;The exact set of columns that appear in this view are dependant on the data that exists in the Feedback Database. This is entirely dependant on which fields the Flare author has determined to be included in the Feedback User Profile dialog. Still, the columns may vary if a particular profile item is set to be "optional." Until at least one user opts to provide information in an optional field, no column will appear in this view.)</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Username: </span>Displays the user's username. (This column will always be present)</li>
+            <li><span class="bold">EmailAddress: </span>Displays the user's e-mail address. (This column will always be present)</li>
+            <li><span class="bold">RegisteredSince:&#160;</span>Displays the date and time the user registered an account on the Feedback Server. (This column will always be present)</li>
+            <li><span class="bold">Status:&#160;</span>Shows the status of the user, "OK"&#160;or "Pending" (This column will always be present)</li>
+            <li><span class="bold">(Other): </span>Any item that is available as a Feedback User Profile item in Flare's Skin Editor may appear in this grid as a column. Examples:&#160;FirstName, LastName, PostalCode, Country, Gender, Custom1, etc.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h4>Right-Click Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Menu--ActiveUsersRightClickMenu.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Info Bar:&#160;</span>Displays or hides the Info Bar.</li>
+            </ul>
+        </div>
+        <h3>Keyboard Navigation</h3>
+        <p>&lt;Up Arrow&gt; moves the selection to the row above</p>
+        <p>&lt;Down Arrow&gt; moves the selection to the row below</p>
+        <p>&lt;Enter&gt; moves the focus to the row below</p>
+        <p>&lt;Page Up&gt; will move the selection one page at a time upward</p>
+        <p>&lt;Page Down&gt; will move the selection one page at a time downward</p>
+        <p>&lt;Left Arrow&gt;&#160;and &lt;Right Arrow&gt; do nothing</p>
+        <p>&lt;Home&gt; and &lt;End&gt; do nothing</p>
+        <p>&lt;Insert&gt; does nothing</p>
+        <p>&lt;Delete&gt; does nothing</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(none)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(none)</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="395" MadCap:lastWidth="913" MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Batch Targets - Baseline</h2>
+        <p>Because Batch Targets depend directly on Windows Task Scheduler to function properly, it is imperative that Batch Targets be tested on all supported operating systems (including Server, 64-bit and International OS)</p>
+        <h3>Baseline</h3>
+        <p><span class="bold">32052</span> Compiler errors not very accessible for Batch Targets.</p>
+        <p><span class="bold">32195</span> Crash if you attempt to build a non-existent target with a Batch Target.</p>
+        <p><span class="bold">32502</span> If a projects output folder is cleaned out (empty) and you have a scheduled batch target task set to publish only, Flare will publish the empty folder over any existing content which existed at the Destination.</p>
+        <p><span class="bold">32504</span> If you attempt to use a Batch Target to publish a target, but do not have your Destinations set up appropriately, the result is simply a message in the log that reads "Published 0 target(s)"</p>
+        <p><span class="bold">32548</span> If you move your project (or rename the project or any folder in its path) you'll break the link from the Task Scheduler to any batch targets in the project.</p>
+        <p><span class="bold">33591</span> If you use a Batch Target to build Mobile output, you don't get the Basic output.</p>
+        <p><span class="bold">33667</span> Getting error when publishing batch target.</p>
+        <p><span class="bold">33942</span> When in Trial - The command line compile is disabled.
+		This affects the the abiltity to use the Task Scheduler for batch builds.  No errors or anything happen.</p>
+        <p><span class="bold">34022</span> Batch Target 'Last built' column doesn’t auto-update after a scheduled build happens unless you close and reopen Flare.</p>
+        <p><span class="bold">34038</span> Crash when attempting to set the schedule of a batch target that is checked into Source Control</p>
+        <p><span class="bold">34395</span> Adding a new Batch target prompts me to set up a task and its not even open yet.</p>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="192" MadCap:lastWidth="676">
+    <body>
+        <p style="font-weight: bold;">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li style="font-weight: normal;"><b>Add Topics:</b> opens a dialogue that lets you add additional topics to the review package</li>
+            <li style="font-weight: normal;"><b>Remove:</b> removes currently selected topic</li>
+            <li style="font-weight: normal;"><span class="bold">Open with variable definitions from target output: </span>Select a target from the dropdown menu or select (default).</li>
+            <li style="font-weight: normal;"><span class="bold">Open with Conditional Expressions: </span>Click the Conditions icon to choose which conditions to include/exclude in the review package</li>
+            <li style="font-weight: normal;"><b>Back:</b> this button should not be active at this screen</li>
+            <li style="font-weight: normal;"><b>Next:</b> go to the next screen (Mail Setup) in the wizard</li>
+            <li style="font-weight: normal;"><b>Save:</b> Opens the Save Review Package dialog to browse for a location</li>
+            <li style="font-weight: normal;"><b>Cancel:</b> closes the wizard</li>
+        </ul>
+    </body>
+</html>

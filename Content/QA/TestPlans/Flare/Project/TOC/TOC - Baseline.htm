@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="1729" MadCap:lastWidth="1077" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>TOC - Baseline</h2>
+        <p>Create a circular reference (link the TOC to itself) and compile – We should display an error in the compiler and not include the node.</p>
+        <p>Test having a primary TOC that links to several other TOC in the projects</p>
+        <h3>Baseline</h3>
+        <p><span class="bold">1465	</span>  In TOC  "Link to a Topic"  Dialog window, moving topics to folder causes program crash</p>
+        <p><span class="bold">3155	</span>The icon used in the TOC Editor for "Mark as new" is vastly different then the one used for a regular TOC</p>
+        <p><span class="bold">3752	</span>  "Bookmark.." in TOC properties dialog doesn't find bookmarks..</p>
+        <p><span class="bold">4593	</span>  UI for linking in TOC linking is strange</p>
+        <p><span class="bold">4599	</span>  "Invoke or BeginInvoke cannot be called on a control until the window handle has been created." when trying to reselect Flare project and target for merging.  View crashlog at \\files\QA\TestFiles\4599</p>
+        <p><span class="bold">4632	</span>  in Link to Flare Project and Target dialog, users can manually type in the bar the project file path.  But during typing, Flare would keep on popping out error messages saying "Failed to load targets from project. Could not find …", "Failed to load targets from project. Unsupported file system." etc</p>
+        <p><span class="bold">5994	</span>Dragging files from Project Organizer to the TOC doesn't create a new topic icon, but they will replace the link of the TOC icon that you drag the files into</p>
+        <p><span class="bold">6076	</span> unable/ difficult to put books below a book in the TOC</p>
+        <p><span class="bold">6700	</span>  when creating a new topic as new TOC entry, should prompt whether want to go edit new topic or stay on TOC.</p>
+        <p><span class="bold">7688	</span> changing from an invalid topic extension to .htm doesn't make the TOC update link prompt appear</p>
+        <p><span class="bold">7867	</span> <![CDATA[ ]]>Dragging files from Content Explorer into TOC or Browse Sequence reverses the order of the files, unless they are being inserted at the very top of the TOC/Browse Sequence.</p>
+        <p><span class="bold">8067	</span>Compiler Internal Error: When trying to generate an output with a Browse Sequence in the TOC.</p>
+        <p><span class="bold">8069	</span>If you Expand/collapse a TOC book to fast, it opens the properties for a different TOC item.</p>
+        <p><span class="bold">9954	</span>  Crash: The directory name C:\...\TOCs is invalid when doing certain sequence. See crash log at:</p>
+        <p>\\files\QA\TestFiles\9954</p>
+        <p><span class="bold">10320	</span>In a TOC, there is a book and a topic inside the book.  If the book is linked to that topic, the &lt;title&gt; tag for the topic will become the name of the book, which causes the breadbrumbs to show up incorrectly.</p>
+        <p><span class="bold">11171	</span>  Changing a TOC entry from a Mimic Movie Link to anything appears to work, but when generating output, the movie is still generated.</p>
+        <p><span class="bold">12170	</span>Object not set to an instance of an object linking a TOC to a new file name</p>
+        <p><span class="bold">12277	</span>When adding an item to the TOC, add it with the text already selected and editable, so the user can begin typing to rename it without having to click on it first.</p>
+        <p><span class="bold">12382	</span>TOC entries which link to Mimic Movies (and merged projects) do not display the "marked as new" status in the TOC Editor. (Test all icons)</p>
+        <p><span class="bold">12555	</span>TOC broken links causes the project to have "Object reference not set to an instance of object" error when building…  Broken links in TOC shouldn't have caused the project to not build…</p>
+        <p><span class="bold">12561	</span>In the Grid View of the TOC, right-clicking a TOC entry does not select it automatically.  Therefore selecting Properties opens properties for the highlighted TOC entry rather than the one you clicked on.</p>
+        <p><span class="bold">12563	</span>Cannot delete a TOC item when the TOC is in Grid View.</p>
+        <p><span class="bold">12570	</span>Multiple selection of items for editing properties, etc.</p>
+        <p><span class="bold">12629	</span>In Tree View in the TOC Editor, you cannot select multiple items with the SHIFT key, only the CTRL key.</p>
+        <p><span class="bold">12742	</span>Renaming a folder in the Content Explorer is problematic with respect to the TOC. (Vista issue)</p>
+        <p><span class="bold">12743	</span>  CTRL-double-click does not open a linked topic from the TOC when the TOC is in Grid View.</p>
+        <p><span class="bold">13086	</span>  Topics appear in the TOC in reverse order</p>
+        <p><span class="bold">13151	</span> Crash: The directory name C:\Documents and Settings\..\ProjectName\Project\TOC is invalid. See crash log at: \\files\QA\TestFiles\13151</p>
+        <p><span class="bold">13496	</span>Grid view TOC does not refresh to display new TOC entry when "Create new topic and link to it" functionality is performed.</p>
+        <p><span class="bold">13816	</span> selecting all (manually) and right clicking it and choose to copy all of the TOC entries does not</p>
+        <p>copy all of the TOC entries</p>
+        <p><b>14067 </b>Creating a new topic via the Link to Topic dialog does not show the file until the window is forced to refresh</p>
+        <p><span class="bold">14931	</span>Report or a way to tell if a topic is in the TOC</p>
+        <p><span class="bold">14334	</span>When ctrl-clicking the 2nd item in a TOC to open the topic, the highlight jumps to the 1st item as well (2nd item still opens)</p>
+        <p><span class="bold">14482	</span>There are Broken links in the TOC but they are not broken and the built CHM is good.</p>
+        <p><span class="bold">14545	</span>Using F2 to rename TOC book or topic entry places the insertion point at the beginning of the entry, rather than highlighting the entire entry</p>
+        <p><span class="bold">14611	</span> TOC Crash: Failed to run command 'Delete'. Exception: Object reference not set to an instance of an object</p>
+        <p><span class="bold">14703	</span>Object reference not set to an instance of an object error when clicking the Move to left arrow on the TOC editor.</p>
+        <p><span class="bold">14954	</span>Locate in TOC function is case sensitive</p>
+        <p><span class="bold">14252	</span>  Convert all links and files to lowercase…</p>
+        <p><span class="bold">15100	</span>Creating a new Book or page in the TOC should creat it in "rename" mode as the Content explorer does. Duplicated from Bug #14545</p>
+        <p><span class="bold">16227	</span>Broken TOC links to *.doc files do not display as broken in the TOC Editor.</p>
+        <p><span class="bold">18639	</span>Opening the TOC Entry properties, making no changes and clicking OK dirties the TOC file.  (We are actually applying a change that the user may not want if their project was initially created in an earlier version of Flare)</p>
+        <p><span class="bold">18946	</span>A new TOC that starts with a "." causes errors when the user attempts to generate.</p>
+        <p><span class="bold">19101	</span>Inline styles are causing TOC labels to fail when I drag the topic into the TOC from the content view.</p>
+        <p><span class="bold">19345	</span>UI - Usability: TOC will only show the properites for the first node selected in a multiple selection.</p>
+        <p><span class="bold">19561	</span>'Title Page' is not available in the TOC properties in page type in flare.</p>
+        <p><span class="bold">20653               <![CDATA[ ]]></span>Shift+Select, Cut and Delete do not work in the TOC Tree View</p>
+        <p><span class="bold">22020 </span>"Replace node with merged TOC" only works for merged projects.  It does not work for linked TOCs or Browse Sequences.</p>
+        <p><span class="bold">22029 </span>Locate in TOC with multiple TOCs always opens ALL TOCs with the last one (aphabetically) opening with focus in the editor</p>
+        <p><span class="bold">22575	</span>TOC Entry Properties dialogs needs "(as is)" options added in various places.</p>
+        <p><span class="bold">23053	</span>New items in the TOC are showing "As Is" state for Start New Section and Start New Chapter, even if they are the only things selected.</p>
+        <p><span class="bold">23547 </span>Page #'s are not appearing correctly in the TOC &amp; Index if auto-numbering is used…</p>
+        <p><span class="bold">24911 </span>Ability to display chapnum-pagenum in generated PDF TOC</p>
+        <p><span class="bold">25623 </span>Add chapter numbers to the page numbers in a table of 
+		contents</p>
+        <p><span class="bold">27074 </span>The option "When merging, replace node with merged TOC"   does not work for internal TOCs</p>
+        <p><span class="bold">28366 </span>TOC page numbers are incorrect for topics included in the TOC more than once.</p>
+        <p><span class="bold">28402               <![CDATA[ ]]></span>"When merging, replace node with merged TOC" doesn't work if merging TOCs inside the project</p>
+        <p><span class="bold">32182               <![CDATA[ ]]></span>Linked TOCs are ignoring Conditions</p>
+        <p><span class="bold">32752               <![CDATA[ ]]></span>If you have a TOC node which links to another Flare project (project merging) and you attempt to Open that link, the linked project opens in the current instance of Flare, closing the current project you are in.  We should open the project in a new instance of Flare.</p>
+        <p><span class="bold">32754               <![CDATA[ ]]></span>When editing a TOC, save it as UTF-8 not as UTF-16</p>
+        <p><span class="bold">33739               <![CDATA[ ]]></span>In the TOC Editor, the Navigate to Previous/Next Warning buttons don't work in Grid View.</p>
+        <p><span class="bold">35260      </span>TOC Linking UI doesn’t 'remember' the last location .  It resets to the root evertime.</p>
+        <p><span class="bold">35356      </span>HTML Help Icons in the TOC showed correctly in V5. In V6 they are all the same default icons.</p>
+        <p><span class="bold">35424      </span>TOC entries in Flare doesn't show the selected HTML Help icon</p>
+        <p><span class="bold">36540      </span>Flare crashes when moving a TOC entry</p>
+        <p><span class="bold">40288</span>We do not allow you to browse for a remote topic from our TOC (RH does and copies the CHM to the Project).</p>
+        <p><span class="bold">40291      </span>We copy the CHM to the Project when selecting a Remote Topic but we do not do that for merging (RH does).</p>
+        <p><span class="bold">40651      </span>A remote link to a topic in a CHM should be shown as a merged ICO in the TOC…</p>
+        <p><span class="bold">40786      </span>Applying a condition tag to a TOC node does not dirty the TOC</p>
+        <p><span class="bold">41126      </span>Double-clicking a TOC item that is linked to a chm should open the .chm file</p>
+        <p><span class="bold">41356      </span>weird duplicated TOC Entries when pasting multiple books from one TOC to another</p>
+        <p><span class="bold">41950      </span>When I view properties of a TOC node which links to a CHM, and then click on the Select HTML Help option, the currently selected CHM file is not already selected.  I have to browse for it again in order to pick a Help topic.</p>
+        <p><span class="bold">42374     </span>Last item selected in TOC editor when selecting a range using shift-select isn't actually selected</p>
+        <p><b>43063</b>Importing a chm file into the TOC fails after building, removing the chm and relinking it.</p>
+        <p><span class="bold">43132     </span>Error the 2nd time  you try to add a new topic and TOC entry in the TOC editor.</p>
+        <p><span class="bold">43139     </span>Error the 2nd time  you try to add a new topic and TOC entry in the TOC editor.</p>
+        <p><span class="bold">43192     </span>Linking to a CHM file in the TOC prompts the user to Replace the file when it already exists in the project.</p>
+        <p><b>46937 </b> TOC Entry links update incorrectly when moving a TOC from the Project/TOCs folder into a sub-folder.</p>
+        <p><b>46948 </b> If you have a Master TOC set for the Project (not just "(default)") and that TOC is in a sub-folder, if you rename the sub-folder it will break the link from the flprj file.</p>
+        <p><b>47055 </b> When changing the Master TOC from a TOC in the root TOCs folder to a TOC in a subfolder via the Project Organizer right-click menu, the "(Master)" label which displays next to the master TOC does not get removed from the root TOC.</p>
+        <p><b>47398</b>TOC links do not work when clicking in icon (webhelp 2)</p>
+        <p><b>48592</b>When moving a TOC file into a sub-folder, the "Updating Links" dialog never goes away. (only with this project so far)</p>
+        <p><b>49217</b> The Add File dialog allows user to add any file type to the TOC or Browse Sequence.</p>
+        <p><b>54409</b> Error: "Failed to load persistent dialog settings: Unable to find the specified file" after moving page layout file to another folder and the linked TOC file is open in the background.</p>
+        <p><b>54675</b> When viewing Properties of multiple TOC items, the Page Layout drop-down does not use the "(as is)" option.  As a result, you lose this information.</p>
+    </body>
+</html>

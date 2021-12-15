@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5620" MadCap:lastWidth="793" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.StyleClass or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Help Controls - Shortcut - Editing</h2>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Shortcuts/ShortcutEdit.png" class="properties" style="width: 224px;height: 107px;" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">No Class:</p><pre xml:space="preserve">&lt;MadCap:shortcut path="C:\Windows\System32\notepad.exe" parameters="" message="" wparam=""</pre><pre xml:space="preserve">lparam=""&gt;My shortcut&lt;/MadCap:shortcut&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">With Class:</p><pre xml:space="preserve">&lt;MadCap:shortcut path="C:\Windows\System32\notepad.exe" parameters="" message="" wparam=""</pre><pre xml:space="preserve">lparam="" class="notepad"&gt;My shortcut&lt;/MadCap:shortcut&gt;</pre>
+        <p>&#160;</p>
+        <h4><b>Editing Shortcut Controls:</b>
+        </h4>
+        <p>You can edit a Shortcut control that you have inserted into a topic in a couple of different ways.</p>
+        <p>Changing the settings in a Shortcut control</p>
+        <p>The first way to edit a Shortcut control is to change the settings (e.g., executable file path, parameters, message ID) associated with the control.</p>
+        <p>&#160;</p>
+        <ol>
+            <li>Open the topic with the shortcut control that you want to edit.</li>
+            <li>In the XML Editor, right-click the Shortcut control icon  (if "markers" are set to be shown).</li>
+            <li>In the context menu, select Edit Shortcut Control.<ol><li>The Insert Shortcut Control dialog opens.</li></ol></li>
+            <li>Adjust the settings in the fields as necessary. You may need to consult with your developer for help on completing these fields.<ol><li><span class="bold">File path to the executable file…</span> Enter the path and name of the program (EXE file) you are calling.</li><li><span class="bold">Parameters to be sent…:</span> Enter any parameters you would like to send the program (e.g., the name of a file to open). Separate the parameters with commas.</li><li><span class="bold">A message ID of a standard Windows message:</span> Select a standard Windows message from the drop-down menu.</li><li><span class="bold">WPARAM:</span> value Enter the WPARAM value.</li><li><span class="bold">LPARAM:</span> value Enter the LPARAM value.</li></ol></li>
+            <li>Click OK. The Insert Shortcut Control dialog closes, and the link is now changed.</li>
+            <li>Press CTRL+S or click  to save your work.</li>
+            <li>Edit the style of a Shortcut control</li>
+        </ol>
+        <p>&#160;</p>
+        <p>The second way to edit a Shortcut control is to edit the style (e.g., font, color) of the link. When you edit the style for a Shortcut control, the style changes for all Shortcut controls in any topics in your project. To do this, follow the steps in the topic Editing Styles, and modify the property settings for the style called &lt;MadCap|shortcut&gt;.</p>
+        <p class="note">Note: If you are working with HTML Help and import a RoboHelp project containing Shortcut links, the linked files are placed in a special subfolder in the Content Explorer (Resources\CHMSupport). For more information, see Importing Tips</p>
+    </body>
+</html>

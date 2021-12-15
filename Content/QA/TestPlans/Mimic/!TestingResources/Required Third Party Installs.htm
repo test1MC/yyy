@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="696" MadCap:lastWidth="1258" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Required Third Party Installs</h1>
+        <p>Mimic 4 contains a completely new Flash compiler based on the FLEX engine. It presented many benefits to Mimic's Flash output, but also introduced some required Third Party utilities.</p>
+        <p>&#160;</p>
+        <h2>Java Runtime Environment (JRE) 6.0.15 or later</h2>
+        <p>This is a mandatory download for all Operating Systems. Flash will not be able to compile without this installed</p>
+        <ul>
+            <li>6.0.15 of the JRE is located at <a href="file://dc2/software/java JRE/" title="JRE" alt="JRE">\\dc2\software\Java&#160;JRE\</a></li>
+            <li>The latest version is available at the Java web site. <a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a></li>
+        </ul>
+        <p>Install by double-clicking the .exe.</p>
+        <p>&#160;</p>
+        <h2>LAME&#160;mp3 Codec</h2>
+        <p>This is an <i>Optional</i> install, only needed if you are running Mimic on Windows Vista or Windows 7. Both of these Operating&#160;Systems do not come with an MP3 codec built in, therefore a third party MP3 codec is needed when working with sound and Flash output. Mimic 4 was tested using the free LAME codec.</p>
+        <ul>
+            <li><a href="file://dc2/Software/Lame 3.98.2 mp3 codec" title="LAME Codec" alt="LAME Codec" target="_blank">\\dc2\Software\Lame 3.98.2 mp3 codec\</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h3>To install Lame Codec on 32 bit Windows</h3>
+        <ol style="list-style-type: decimal;">
+            <li>Close Mimic</li>
+            <li>Unzip the Lame zip file</li>
+            <li>Right-Click theLameACM.inf file</li>
+            <li>Choose Install</li>
+            <li>Open Mimic and compile Flash. WAV files should convert to MP3.</li>
+        </ol>
+        <h3>To Install Lame Codec on 64 bit Windows</h3>
+        <ol style="list-style-type: decimal;">
+            <li>Close Mimic</li>
+            <li>Unzip the Lame zip file  to c drive (ex c:\tempfolder)</li>
+            <li>Open up the RUN command window (Windows key  + R)</li>
+            <li>Type CMD in the window</li>
+            <li>Hit Ctrl+Shift+Enter (to ensure the command window opens in Administrator mode)</li>
+            <li>	 In the command window, type <span class="bold">cd C:\Windows\SysWOW64</span></li>
+            <li>At this path, type rundll32.exe setupapi.dll,InstallHinfSection defaultinstall 0 c:\tempfolder\LameACM.inf<img src="../../../../Resources/Images/TestPlans/Mimic/LAMEInstall.png" alt="" title="" /></li>
+            <li>Codec should install. You may see a quick install dialog pop-up while the files are installed and copied to the directory</li>
+            <li>Open Mimic and compile Flash. WAV files should convert to MP3.</li>
+        </ol>
+    </body>
+</html>

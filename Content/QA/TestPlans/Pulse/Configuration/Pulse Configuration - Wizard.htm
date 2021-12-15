@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5853" MadCap:lastWidth="1314" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:ignoredWords="SQL;ISS;http;https;IP;jpulse;PulseAdmin;scrollbars;multi;CTRL;Smtp;QA;exchange07;username;SSL;PulseInstallLog">
+    <head>
+    </head>
+    <body>
+        <h1>Pulse Configuration - Wizard</h1>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Install with all components on the same machine (Pulse, IIS, SQL)</li>
+                <li>Install with components on two machines (Pulse and IIS vs SQL)</li>
+            </ul>
+        </div>
+        <p class="note">Note:&#160;The user installing the Pulse Application must be have System Administration privileges on the SQL Server and in ISS.</p>
+        <h4>Pulse Configuration Wizard dialog 1:&#160;Welcome</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard1-Welcome.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <h4>Pulse Configuration Wizard dialog 2: Select Web&#160;Site</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard2-SelectWebSite.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Select the Website for the Pulse Services:&#160;</span>Select the website on the IIS Server that will be storing your Pulse data. By default, Pulse will use the "Default Web Site" in IIS.</li>
+            <li>
+                <p><span class="bold">Pulse Server URL: </span>This is the Site URL for the Pulse dashboard. Typically, it will consist of the protocol (http:// or https://), the IP address (or the machine name), and the Pulse directory. ex:&#160;http://jpulse/pulse</p>
+            </li>
+            <li><span class="bold">Back:&#160;</span>Proceeds to the previous page of the wizard</li>
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test Installing Pulse using http and https</li>
+            </ul>
+        </div>
+        <h4>Pulse Configuration Wizard dialog 3: Select SQL&#160;Server</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard3-SelectSQLServer.png" class="properties" />
+        </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard3-SelectSQLServer2.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">SQL Server: </span>Click the dropdown and select (Get list of SQL Servers...). The progress dialog will appear and look for all available SQL&#160;Servers in the Windows domain (must have SQL Server Browser service turned on)<MadCap:footnote style="mc-footnote-position: page;"><p>To turn on SQL Server Browser:</p><ol style="list-style-type: lower-roman;"><li>Start SQL&#160;Server Configuration Manager.</li><li>Select <span class="bold">Start &gt;&#160;Programs</span>. &#160;Then point to your version of SQL&#160;in the menu and select <span class="bold">Configuration Tools&#160;&gt;&#160;SQL&#160;Server Configuration Manager</span>.</li><li>In the left pane, highlight <span class="bold">SQL&#160;Server Services</span>.</li><li>Right-click<span class="bold"> SQL&#160;Server Browser</span> and select <span class="bold">Properties </span>from the context menu.</li><li>On the <span class="bold">Service </span>tab, set the start mode to <span class="bold">Automatic </span>and click <span class="bold">OK</span>.</li><li>Right-click the <span class="bold">SQL&#160;Server Browser</span> again, and select <span class="bold">Start</span>.</li></ol></MadCap:footnote>. &#160;Once the list is generated, the progress dialog will close. &#160;Now when you click the drop down, you will see a list of all available SQL&#160;Servers.</li>
+            <li><span class="bold">Connect:</span> If you do not select a SQL Server from the drop-down, but instead type one in, you must click Connect to get the database location from the SQL&#160;server.</li>
+            <li><span class="bold">Database Location: </span>If you select a server from the drop-down, this field will populate automatically. &#160;You can also manually type a location or browse for it.</li>
+            <li><span class="bold">Browse...: </span>Opens the <span class="UI">Browse For Folder</span> dialog, allows you to browse to a new location for the database to be stored.</li>
+            <li><span class="bold">Manually set SQL&#160;authentication settings: </span>When selected, the fields below will be editable. In most cases, you will only select this if you server is located on a different machine on your network.<ul style="list-style-type: square;"><li><span class="bold">Authentication: </span>Drop-down options are: Windows Authentication and SQL&#160;Server Authentication</li><li><span class="bold">Domain: </span>Type your domain here.&#160;&#160;If you have selected SQL&#160;Server Authentication, this field will be grayed out.</li><li><span class="bold">User name: </span>Type your user name here</li><li><span class="bold">Password: </span>Type your password here (characters will display as asterisks)<br /></li></ul></li>
+            <li><span class="bold">Back:&#160;</span>Proceeds to the previous page of the wizard</li>
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Use existing databases from previous versions of Pulse - ensure they upgrade correctly and that no content is lost</li>
+                <li>Store your database in different locations</li>
+            </ul>
+        </div>
+        <h4>Pulse Configuration Wizard dialog 4: Database Options</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard4-DatabaseOptions.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Create new: </span>This creates a new database instance with Pulse.</li>
+            <li><span class="bold">Use Existing Database:&#160;</span>Select this and <span class="UI">Retrieving List of Databases</span>&#160;progress&#160;dialog will appear. Once the scan has completed, the <span class="UI">Select Database</span> dialog will appear.</li>
+            <li><span class="bold">Backup path for local SQL&#160;database:&#160;</span>This field is only enabled if the database has been using a previous version of pulse. You can click the browse button to chose a location to store a copy of the current database. &#160;Note, this is not enabled if you are connecting to a database on a remove server.</li>
+            <li><span class="bold">PulseAdmin Password:&#160;</span>Type your password here (characters will display as circle bullets). The password strength will be indicated below in red, changing from Blank - Very Weak -&#160;Weak - Medium -&#160;Strong - Very Strong - Excellent. &#160;Increase your password strength by increasing the length of password, or adding numbers or special characters.</li>
+            <li><span class="bold">Back:&#160;</span>Proceeds to the previous page of the wizard</li>
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Should receive error "Admin Password cannot be empty" if you click Next without typing a password</li>
+                <li>Users imported from Feedback database should be imported into correct groups.<ul style="list-style-type: square;"><li>Note:&#160;Bug 90683:Administrators in Feedback database are placed into Employee group when upgraded to Pulse database</li></ul></li>
+            </ul>
+        </div>
+        <h4>Pulse Configuration Wizard dialog 4: Select Database</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard4-SelectDatabase.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Select Pulse Database&#160;ID: </span>Select a database from the dropdown menu.&#160;Once selected, a <span class="UI">Getting&#160;Database Information</span> progress dialog will appear and then close when data has been loaded. &#160;The version number will display for this database.&#160;&#160;If it is the most recent version, it will also say "(up to date)"</li>
+            <li><span class="bold">Connect:&#160;</span>&#160;This doesn't appear to do anything?</li>
+            <li><span class="bold">Communities:&#160;</span>This tab will display the name of all communities associated with this database.</li>
+            <li><span class="bold">Users:&#160;</span>This tab will display the First Name,&#160;Last Name and Email of all users associated with this database.</li>
+            <li><span class="bold">OK:&#160;</span>Applies selection and closes the dialog</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the dialog without saving changes</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>In Communities and Users tab, Columns are sortable (A-Z and Z-A)</li>
+                <li>Horizontal and vertical scrollbars should be working correctly</li>
+            </ul>
+        </div>
+        <h4>Pulse Configuration Wizard dialog 5: Configure SMTP</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard5-ConfigureSMTP.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Smtp Server:&#160;</span>This is the IP address of the SMTP relay that accepts incoming requests which is the host that will send outbound emails for Pulse. QA-&#160;For internal testing, type "exchange07"</li>
+            <li><span class="bold">Smtp Port: </span>This is the port number of the SMTP server handing outbound emails. This is Port 25 (or the port number for your environment).
+            </li>
+            <li><span class="bold">Smtp User Name: </span>This is the username of a valid account on the SMTP relay.</li>
+            <li>
+                <p><span class="bold">Smtp Password: </span>This is the password for the valid account on the SMTP relay.</p>
+            </li>
+            <li><span class="bold">From Address: </span>This is the from address for emails sent by Pulse.</li>
+            <li>
+                <p><span class="bold">From Display Name: </span>This is the name that displays in email client applications for the email address. For example, type: Pulse Registration. &#160;If you leave this blank, emails will not include a name - they will display only the From&#160;Address.</p>
+            </li>
+            <li>
+                <p><span class="bold">Enable SSL: </span>A check mark in this box enables Secure Socket Layers (SSL) encryption.</p>
+            </li>
+            <li><span class="bold">Test...:&#160;</span>You will see an alert&#160;"Test message has been sent" or "Error sending message." &#160;If the test is successful, you should receive the test email (with correct name and email) which has subject line:&#160;MadCap&#160;Pulse SMTP&#160;Test, and message "SMTP&#160;server settings are OK." If there is an error sending the message, you will need to correct the SMTP settings you entered.</li>
+            <li><span class="bold">Back:&#160;</span>Proceeds to the previous page of the wizard</li>
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Should receive error "From address cannot be empty" if you click Next without typing a From Address</li>
+                <li>Should receive error "Invalid email address: "&lt;address you typed&gt;"" if you type an address with an invalid domain</li>
+            </ul>
+        </div>
+        <h4>Pulse Configuration Wizard dialog 6: Verify Configuration</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard6-VerifyConfiguration.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Back:&#160;</span>Proceeds to the previous page of the wizard</li>
+            <li><span class="bold">Next:&#160;</span>Proceeds to the next page of the wizard</li>
+            <li><span class="bold">Cancel:&#160;</span>Exits the Configuration Wizard</li>
+        </ul>
+        <h4>Pulse Configuration Wizard dialog 7: </h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard7-ConfiguringMadCapPulse.png" class="properties" />
+        </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard7-ConfigurationComplete.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">View Log:&#160;</span>Opens the Log File Viewer.</li>
+            <li><span class="bold">Save Log:&#160;</span>Opens the Save As dialog with PulseInstallLog.txt written in the File name field.</li>
+            <li><span class="bold">Finish:&#160;</span>Exits the wizard and opens the Pulse Server Configuration page to the General tab.</li>
+        </ul>
+        <h4>Pulse Configuration Wizard dialog 7: Log File&#160;Viewer</h4>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Pulse/Configuration/PulseConfigurationWizard7-LogFileViewer.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">OK:&#160;</span>Closes the Log File&#160;Viewer</li>
+        </ul>
+    </body>
+</html>

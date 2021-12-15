@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2152" MadCap:lastWidth="1230" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>MS Word- Export</h2>
+        <h3>Opening the UI</h3>
+        <p>Select File&gt;Export (Tooltip should read: Export translated files back to Word)</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>Export Finished Translation dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/ExportFinishedTranslation.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <h4>UI&#160;Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project to Export:</span> Displays the name and path of the current Lingo project.</li>
+            <li><span class="bold">Destination File name:</span> Displays the name you provided for the Lingo project. You can keep the same name or enter a different one for the exported project.</li>
+            <li><span class="bold">Destination Folder:</span> Either accept the folder location entered, or click Browse to find and select a different one. Typically, you want to export the project to a location where the author can retrieve it.</li>
+            <li><span class="bold">Browse:</span> Opens the Browse For Folder dialog, which lets you select a different folder to store the project files.</li>
+            <li><span class="bold">Export:</span> Click this button to export the project.</li>
+            <li><b>Make a zip file after export:</b>If you want to create an additional ZIP file when exporting the project, select Make a zip file after export. If you do not select the check box, the project files are still exported, but a ZIP file is not created. If you do select the check box, the project files are exported and an extra ZIP file is produced.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>'Exporting' dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/ProgressDialog.png" style="width: 428px;height: 263px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Cancel should stop the export.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Successful export dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/SuccessfulWordExportDialog.png" class="properties">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests-Small.flsnp">
+            </MadCap:snippetBlock>
+            <ul style="list-style-type: square;">
+                <li>‘Yes’ closes dialog and should open translated project in Word</li>
+                <li> ‘No’ closes dialog</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p><b>Trial Mode</b>
+        </p>
+        <p>When Lingo is used in Trial Mode, it will prompt you with the following dialog window:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/TrialMode.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Clicking “OK” should still open the translated project in Word.</li>
+            <li>Open the exported Word file in trial mode and make sure its contents are scrambled.</li>
+            <li>Enter a valid key, export and verify that the contents are not longer scrambled.&#160;</li>
+            <li>Test exporting DOCX and RTF documents as well</li>
+            <li>Test exporting PPTX documents as well</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="note">If MS&#160;Word is not installed on the computer, you should get the following message:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/MS Word not Installed.png" style="width: 419px;height: 263px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

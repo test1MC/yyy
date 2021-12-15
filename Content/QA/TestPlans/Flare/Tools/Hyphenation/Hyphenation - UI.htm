@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1987" MadCap:lastWidth="1096" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Hyphenation/Hyphenation Dictionaries - UI</h2>
+        <h3>Opening the Hyphenation pane</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem" style="font-weight: normal;">!Tools |&#160;Hyphenation Window</span>
+            </li>
+        </ul>
+        <h3>Hyphenation pane - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/UI--HyphenationPane.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Word: </span>Displays the word that is currently selected in the editor.</li>
+            <li><span class="bold">Current Rule:&#160;</span>Displays the current hyphenation rule for the currently select word (if one exists). If no rule exists, "(no hyphenation info found)"&#160;should be displayed.</li>
+            <li><span class="bold">Rule Source: </span>Displays the name of the Hyphenation Dictionary file that is supplying the current rule. This field will be empty if the source is Flare's factory English Hyphenation Dictionary.</li>
+            <li><span class="bold">Add Custom Rule…: </span>Opens the <span class="UI">Add Custom Hyphenation Rule</span> dialog which lets you create a custom rule for the current word. The rule is added to a dictionary file based on the language of the element which contains the selected word.</li>
+            <li><span class="bold">Manage Custom Rules…: </span>Opens the <span class="UI">Open Hyphenation Dictionary</span> dialog which lets you open any Hyphenation Dictionary file that you have already created in the project.</li>
+        </ul>
+        <h3>Add Custom Hyphenation Rule - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/UI--AddCustomHyphenationRule.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Word: </span>Displays the word for which you are going to create a new custom hyphenation rule.</li>
+            <li><span class="bold">Rule: </span>Lets the user define the hyphenation rule for the word.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Rules can be entered in two formats. Test that both work:</p>
+            <ul class="checkbox">
+                <li> Hy-phen-a-tion </li>
+                <li>Hy-phenation;Hyphen-ation;Hyphena-tion</li>
+            </ul>
+        </div>
+        <h3>Open Hyphenation Document - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/UI--OpenHyphenationDocument.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Language: </span>Displays a list of Hyphenation Dictionaries that exist in your project (if any). Add two or more Hyphenation Dictionaries and confirm that this list is sortable.</li>
+        </ul>
+    </body>
+</html>

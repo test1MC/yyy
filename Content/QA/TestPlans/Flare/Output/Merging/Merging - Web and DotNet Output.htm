@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="18446" MadCap:lastWidth="1361" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head><title></title>
+    </head>
+    <body>
+        <h2>Merging Compiled WebHelp&#160;and DotNet Output</h2>
+        <p>This section focuses specifically on merging WebHelp and DotNet Help outputs.&#160; Merging the output of CHMs is very similar to merging WebHelp and DotNet Help output, so many of the test cases and processes will seem similar, but they are in fact slightly different.</p>
+        <p>Before your Parent project can be merged with an external Help system, the output folders and files for the external (Child) project need to be copied to a folder called "Subsystems" in the same location where the Parent project is being published.&#160; Flare will do this for you if you know the path to the external Help system.</p>
+        <p>Example:</p>
+        <p>Publish Parent project to: …\PublishDestination\ParentProject\(ParentProject.mcwebhelp or ParentProject.mchelp)</p>
+        <p>Publish Child projects to: …\PublishDestination\ParentProject\Subsystem\ChildProject\(ChildProject.mcwebhelp or ChildProject.mchelp)</p>
+        <h3>Support in Web Outputs:</h3>
+        <h2>Support in Web Help Outputs: </h2>
+        <h3>TOC Editor – Setup</h3>
+        <p>Open your Parent project and open the TOC in the Parent project.&#160; Create a TOC entry which will be used to link to the Child project.&#160; View the properties dialog for that TOC entry.</p>
+        <h4>TOC Entry Properties dialog / Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png">
+            </img>
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the name or path of the External Help System to which you are linking. (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Enter External Help System: </span>Clicking on this option will launch the Link to Help System dialog.</li>
+            <li><span class="bold">Select Link:&#160;</span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to an External Help System is established as indicated in the screenshot, this button will open the Link to Help System dialog.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the selected External Help System file (if the path is provided in the Link field; if the Link field is only populated with the filename of the Help System, this button should be inactive).</li>
+        </ul>
+        <h4>Link to Help System dialog - UI</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToHelpSystem.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enter the name of the help system…: </span>Enter the path or name of the Help system (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Browse: </span>Opens a window which lets you browse for an External Help System (*.chm, *.mcwebhelp, or *.mchelp).</li>
+        </ul>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for an External Help System Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebIcon.png"></img>.&#160; Hovering over the TOC entry should reveal the path to and/or the filename of the External Help System file.</p>
+        <p>Example of a TOC link to an External Help System using the file’s path:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebPath.png" alt="" title="">
+            </img>
+        </p>
+        <p>Example of a TOC link to an External Help System using only the filename:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebName.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create a Parent project with HTML&#160;Help set to be the output. Link to an External Help Systems which is not HTML Help.&#160; Generate the Parent project and test that an error is generated in the compiler.</li>
+            </ul>
+        </div>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Parent project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Parent w/MOTW and Child without</li>
+                <li>Test Child w/MOTW and Parent without</li>
+            </ul>
+        </div>
+        <h4>Output file names/folder</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename. Set the Output file name for each project in the <span class="UI">Target Editor</span> | General tab.</p>
+        <p>&#160;</p>
+        <p>Set the Output Folder for all Child projects to be:</p>
+        <p>…\ParentTargetFolder\ParentProjectName\Subsystems\Child1 (Child2, etc)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFileAndFolder.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Link to an External Help Systems which is not the same output type as the Master Project. Generate the Master Project and test that an error is generated in the compiler.</li>
+                <li>Test linking to two Child projects using the same output filename. Confirm error is given for all outputs.</li>
+            </ul>
+        </div>
+        <h4>Output Publishing</h4>
+        <p>If your Parent Project links knows the path of all External Help Systems (the link set in the TOC node's Properties dialog uses the full path and not just the name), the linked Help Systems will automatically be copied to the Parent project’s output when the Parent Project is generated. If this is the case, there is no setup necessary here.</p>
+        <hr>
+        </hr>
+        <p>If your Parent project links only to the External Help Systems by filename, you will have to manually copy the Child project’s output  into the Parent project’s “Subsystem” folder. Or, you can setup each project to publish accordingly:</p>
+        <ol>
+            <li>
+                <p>Create a Destination in the Parent project. Be aware of the Directory that you set in the Parent project.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebParent.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Create a Destination in each Child Project. Be sure to set the Directory to be the "Subsystem" folder inside the Parent project's Directory.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebChild.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the Target Editor of the Parent project and each Child project, associate each Target with the Destination.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--EnablePublish.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>Build and publish all output.</li>
+        </ol>
+        <h2>Support in Web Help Mobile Outputs: </h2>
+        <h3>TOC Editor – Setup</h3>
+        <p>Open your Parent project and open the TOC in the Parent project.&#160; Create a TOC entry which will be used to link to the Child project.&#160; View the properties dialog for that TOC entry.</p>
+        <h4>TOC Entry Properties dialog / Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png">
+            </img>
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the name or path of the External Help System to which you are linking. (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Enter External Help System: </span>Clicking on this option will launch the Link to Help System dialog.</li>
+            <li><span class="bold">Select Link:&#160;</span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to an External Help System is established as indicated in the screenshot, this button will open the Link to Help System dialog.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the selected External Help System file (if the path is provided in the Link field; if the Link field is only populated with the filename of the Help System, this button should be inactive).</li>
+        </ul>
+        <h4>Link to Help System dialog - UI</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToHelpSystem.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enter the name of the help system…: </span>Enter the path or name of the Help system (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Browse: </span>Opens a window which lets you browse for an External Help System (*.chm, *.mcwebhelp, or *.mchelp).</li>
+        </ul>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for an External Help System Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebIcon.png"></img>.&#160; Hovering over the TOC entry should reveal the path to and/or the filename of the External Help System file.</p>
+        <p>Example of a TOC link to an External Help System using the file’s path:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebPath.png" alt="" title="">
+            </img>
+        </p>
+        <p>Example of a TOC link to an External Help System using only the filename:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebName.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create a Parent project with HTML&#160;Help set to be the output. Link to an External Help Systems which is not HTML Help.&#160; Generate the Parent project and test that an error is generated in the compiler.</li>
+            </ul>
+        </div>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Parent project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Parent w/MOTW and Child without</li>
+                <li>Test Child w/MOTW and Parent without</li>
+            </ul>
+        </div>
+        <h4>Output file names/folder</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename. Set the Output file name for each project in the <span class="UI">Target Editor</span> | General tab.</p>
+        <p>&#160;</p>
+        <p>Set the Output Folder for all Child projects to be:</p>
+        <p>…\ParentTargetFolder\ParentProjectName\Subsystems\Child1 (Child2, etc)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFileAndFolder.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Link to an External Help Systems which is not the same output type as the Master Project. Generate the Master Project and test that an error is generated in the compiler.</li>
+                <li>Test linking to two Child projects using the same output filename. Confirm error is given for all outputs.</li>
+            </ul>
+        </div>
+        <h4>Output Publishing</h4>
+        <p>If your Parent Project links knows the path of all External Help Systems (the link set in the TOC node's Properties dialog uses the full path and not just the name), the linked Help Systems will automatically be copied to the Parent project’s output when the Parent Project is generated. If this is the case, there is no setup necessary here.</p>
+        <hr>
+        </hr>
+        <p>If your Parent project links only to the External Help Systems by filename, you will have to manually copy the Child project’s output  into the Parent project’s “Subsystem” folder. Or, you can setup each project to publish accordingly:</p>
+        <ol>
+            <li>
+                <p>Create a Destination in the Parent project. Be aware of the Directory that you set in the Parent project.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebParent.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Create a Destination in each Child Project. Be sure to set the Directory to be the "Subsystem" folder inside the Parent project's Directory.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebChild.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the Target Editor of the Parent project and each Child project, associate each Target with the Destination.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--EnablePublish.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>Build and publish all output.</li>
+        </ol>
+        <h2>Support in Web Help Air Outputs: </h2>
+        <h3>TOC Editor – Setup</h3>
+        <p>Open your Parent project and open the TOC in the Parent project.&#160; Create a TOC entry which will be used to link to the Child project.&#160; View the properties dialog for that TOC entry.</p>
+        <h4>TOC Entry Properties dialog / Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png">
+            </img>
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the name or path of the External Help System to which you are linking. (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Enter External Help System: </span>Clicking on this option will launch the Link to Help System dialog.</li>
+            <li><span class="bold">Select Link:&#160;</span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to an External Help System is established as indicated in the screenshot, this button will open the Link to Help System dialog.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the selected External Help System file (if the path is provided in the Link field; if the Link field is only populated with the filename of the Help System, this button should be inactive).</li>
+        </ul>
+        <h4>Link to Help System dialog - UI</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToHelpSystem.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enter the name of the help system…: </span>Enter the path or name of the Help system (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Browse: </span>Opens a window which lets you browse for an External Help System (*.chm, *.mcwebhelp, or *.mchelp).</li>
+        </ul>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for an External Help System Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebIcon.png"></img>.&#160; Hovering over the TOC entry should reveal the path to and/or the filename of the External Help System file.</p>
+        <p>Example of a TOC link to an External Help System using the file’s path:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebPath.png" alt="" title="">
+            </img>
+        </p>
+        <p>Example of a TOC link to an External Help System using only the filename:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebName.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create a Parent project with HTML&#160;Help set to be the output. Link to an External Help Systems which is not HTML Help.&#160; Generate the Parent project and test that an error is generated in the compiler.</li>
+            </ul>
+        </div>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Parent project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Parent w/MOTW and Child without</li>
+                <li>Test Child w/MOTW and Parent without</li>
+            </ul>
+        </div>
+        <h4>Output file names/folder</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename. Set the Output file name for each project in the <span class="UI">Target Editor</span> | General tab.</p>
+        <p>&#160;</p>
+        <p>Set the Output Folder for all Child projects to be:</p>
+        <p>…\ParentTargetFolder\ParentProjectName\Subsystems\Child1 (Child2, etc)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFileAndFolder.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Link to an External Help Systems which is not the same output type as the Master Project. Generate the Master Project and test that an error is generated in the compiler.</li>
+                <li>Test linking to two Child projects using the same output filename. Confirm error is given for all outputs.</li>
+            </ul>
+        </div>
+        <h4>Output Publishing</h4>
+        <p>If your Parent Project links knows the path of all External Help Systems (the link set in the TOC node's Properties dialog uses the full path and not just the name), the linked Help Systems will automatically be copied to the Parent project’s output when the Parent Project is generated. If this is the case, there is no setup necessary here.</p>
+        <hr>
+        </hr>
+        <p>If your Parent project links only to the External Help Systems by filename, you will have to manually copy the Child project’s output  into the Parent project’s “Subsystem” folder. Or, you can setup each project to publish accordingly:</p>
+        <ol>
+            <li>
+                <p>Create a Destination in the Parent project. Be aware of the Directory that you set in the Parent project.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebParent.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Create a Destination in each Child Project. Be sure to set the Directory to be the "Subsystem" folder inside the Parent project's Directory.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebChild.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the Target Editor of the Parent project and each Child project, associate each Target with the Destination.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--EnablePublish.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>Build and publish all output.</li>
+        </ol>
+        <h2>Support in Web Help Plus Outputs: </h2>
+        <h3>TOC Editor – Setup</h3>
+        <p>Open your Parent project and open the TOC in the Parent project.&#160; Create a TOC entry which will be used to link to the Child project.&#160; View the properties dialog for that TOC entry.</p>
+        <h4>TOC Entry Properties dialog / Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png">
+            </img>
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the name or path of the External Help System to which you are linking. (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Enter External Help System: </span>Clicking on this option will launch the Link to Help System dialog.</li>
+            <li><span class="bold">Select Link:&#160;</span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to an External Help System is established as indicated in the screenshot, this button will open the Link to Help System dialog.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the selected External Help System file (if the path is provided in the Link field; if the Link field is only populated with the filename of the Help System, this button should be inactive).</li>
+        </ul>
+        <h4>Link to Help System dialog - UI</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToHelpSystem.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enter the name of the help system…: </span>Enter the path or name of the Help system (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Browse: </span>Opens a window which lets you browse for an External Help System (*.chm, *.mcwebhelp, or *.mchelp).</li>
+        </ul>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for an External Help System Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebIcon.png"></img>.&#160; Hovering over the TOC entry should reveal the path to and/or the filename of the External Help System file.</p>
+        <p>Example of a TOC link to an External Help System using the file’s path:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebPath.png" alt="" title="">
+            </img>
+        </p>
+        <p>Example of a TOC link to an External Help System using only the filename:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebName.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create a Parent project with HTML&#160;Help set to be the output. Link to an External Help Systems which is not HTML Help.&#160; Generate the Parent project and test that an error is generated in the compiler.</li>
+            </ul>
+        </div>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Parent project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Parent w/MOTW and Child without</li>
+                <li>Test Child w/MOTW and Parent without</li>
+            </ul>
+        </div>
+        <h4>Output file names/folder</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename. Set the Output file name for each project in the <span class="UI">Target Editor</span> | General tab.</p>
+        <p>&#160;</p>
+        <p>Set the Output Folder for all Child projects to be:</p>
+        <p>…\ParentTargetFolder\ParentProjectName\Subsystems\Child1 (Child2, etc)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFileAndFolder.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Link to an External Help Systems which is not the same output type as the Master Project. Generate the Master Project and test that an error is generated in the compiler.</li>
+                <li>Test linking to two Child projects using the same output filename. Confirm error is given for all outputs.</li>
+            </ul>
+        </div>
+        <h4>Output Publishing</h4>
+        <p>If your Parent Project links knows the path of all External Help Systems (the link set in the TOC node's Properties dialog uses the full path and not just the name), the linked Help Systems will automatically be copied to the Parent project’s output when the Parent Project is generated. If this is the case, there is no setup necessary here.</p>
+        <hr>
+        </hr>
+        <p>If your Parent project links only to the External Help Systems by filename, you will have to manually copy the Child project’s output  into the Parent project’s “Subsystem” folder. Or, you can setup each project to publish accordingly:</p>
+        <ol>
+            <li>
+                <p>Create a Destination in the Parent project. Be aware of the Directory that you set in the Parent project.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebParent.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Create a Destination in each Child Project. Be sure to set the Directory to be the "Subsystem" folder inside the Parent project's Directory.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebChild.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the Target Editor of the Parent project and each Child project, associate each Target with the Destination.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--EnablePublish.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>Build and publish all output.</li>
+        </ol>
+        <h2>Support in DotNet Outputs: </h2>
+        <h3>TOC Editor – Setup</h3>
+        <p>Open your Parent project and open the TOC in the Parent project.&#160; Create a TOC entry which will be used to link to the Child project.&#160; View the properties dialog for that TOC entry.</p>
+        <h4>TOC Entry Properties dialog / Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png">
+            </img>
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the name or path of the External Help System to which you are linking. (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Enter External Help System: </span>Clicking on this option will launch the Link to Help System dialog.</li>
+            <li><span class="bold">Select Link:&#160;</span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to an External Help System is established as indicated in the screenshot, this button will open the Link to Help System dialog.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the selected External Help System file (if the path is provided in the Link field; if the Link field is only populated with the filename of the Help System, this button should be inactive).</li>
+        </ul>
+        <h4>Link to Help System dialog - UI</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToHelpSystem.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enter the name of the help system…: </span>Enter the path or name of the Help system (If you enter the path, Flare will copy the output files of the External Help Systems for you.&#160; If you enter only the filename, you will need to copy the output files into the “Subsystem” folder of the Parent project.&#160; Or, you can set the Publishing Destination of the External Help Systems to publish directly to the “Subsystem” folder.&#160; See Target Editor – Setup section below)</li>
+            <li><span class="bold">Browse: </span>Opens a window which lets you browse for an External Help System (*.chm, *.mcwebhelp, or *.mchelp).</li>
+        </ul>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for an External Help System Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebIcon.png"></img>.&#160; Hovering over the TOC entry should reveal the path to and/or the filename of the External Help System file.</p>
+        <p>Example of a TOC link to an External Help System using the file’s path:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebPath.png" alt="" title="">
+            </img>
+        </p>
+        <p>Example of a TOC link to an External Help System using only the filename:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--WebName.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create a Parent project with HTML&#160;Help set to be the output. Link to an External Help Systems which is not HTML Help.&#160; Generate the Parent project and test that an error is generated in the compiler.</li>
+            </ul>
+        </div>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Parent project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Parent w/MOTW and Child without</li>
+                <li>Test Child w/MOTW and Parent without</li>
+            </ul>
+        </div>
+        <h4>Output file names/folder</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename. Set the Output file name for each project in the <span class="UI">Target Editor</span> | General tab.</p>
+        <p>&#160;</p>
+        <p>Set the Output Folder for all Child projects to be:</p>
+        <p>…\ParentTargetFolder\ParentProjectName\Subsystems\Child1 (Child2, etc)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFileAndFolder.png" alt="" title="">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Link to an External Help Systems which is not the same output type as the Master Project. Generate the Master Project and test that an error is generated in the compiler.</li>
+                <li>Test linking to two Child projects using the same output filename. Confirm error is given for all outputs.</li>
+            </ul>
+        </div>
+        <h4>Output Publishing</h4>
+        <p>If your Parent Project links knows the path of all External Help Systems (the link set in the TOC node's Properties dialog uses the full path and not just the name), the linked Help Systems will automatically be copied to the Parent project’s output when the Parent Project is generated. If this is the case, there is no setup necessary here.</p>
+        <hr>
+        </hr>
+        <p>If your Parent project links only to the External Help Systems by filename, you will have to manually copy the Child project’s output  into the Parent project’s “Subsystem” folder. Or, you can setup each project to publish accordingly:</p>
+        <ol>
+            <li>
+                <p>Create a Destination in the Parent project. Be aware of the Directory that you set in the Parent project.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebParent.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Create a Destination in each Child Project. Be sure to set the Directory to be the "Subsystem" folder inside the Parent project's Directory.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/DestinationEditor--Directory--WebChild.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>In the Target Editor of the Parent project and each Child project, associate each Target with the Destination.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--EnablePublish.png" alt="" title="">
+                    </img>
+                </p>
+            </li>
+            <li>Build and publish all output.</li>
+        </ol>
+    </body>
+</html>

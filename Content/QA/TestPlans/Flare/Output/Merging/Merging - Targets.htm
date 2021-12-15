@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3595" MadCap:lastWidth="659" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head><title></title>
+    </head>
+    <body>
+        <h2>Merging Flare Projects using Targets</h2>
+        <p>Save your Slave project(s).&#160; Open your Master project and open the TOC in the Master project.&#160; Create a TOC entry which will be used to link to the Slave project (one entry per Slave project).&#160; View the properties dialog for that TOC entry.</p>
+        <h3>TOC Editor – Setup</h3>
+        <h4>TOC Entry Properties dialog | Basic tab</h4>
+        <p>If you have access to the Slave project, you can select “Select Flare Project and Target” in the Link Section of the TOC Entry Properties Basic Tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--TOCNodeProperties--LinkToExternalHelpSystem--Web.png" />
+        </p>
+        <p class="bold">Relevant UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Link: </span>Displays the path of the Flare project file to which you are linking.</li>
+            <li><span class="bold">Select Flare Project and Target: </span>Clicking on this option will launch the <span class="UI">Link to Flare Project and Target</span> dialog.</li>
+            <li><span class="bold">Select Link: </span>Opens the dialog appropriate to the current Link selection.&#160; Once a link to a Flare project is established as indicated in the screenshot, this button will become active. Clicking it will open the <span class="UI">Link to Flare Project and Target</span> dialog.</li>
+        </ul>
+        <h4>Link to Flare Project and Target dialog - UI</h4>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p class="bold">"Browse for Project" selected:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToFlareProjectAndTarget--Browse.png" class="properties" />
+            </p>
+            <p>&#160;</p>
+            <p class="bold">"Select Recent Project" selected:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/UI--LinkToFlareProjectAndTarget--Recent.png" class="properties" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>Browse for Project: Lets you use the Project File button to browse for a Flare project file (*.flprj) to be the Slave project.<ul style="list-style-type: square;"><li>Project File: Opens a window which lets you browse for a Flare project file (*.flprj).</li></ul></li>
+            <li>Select Recent Project: Lets you select the Slave project from the list of Recent Projects.<ul style="list-style-type: square;"><li>File (bottom view): Displays all Flare projects currently listed in the Recent Projects list.</li><li>Path (bottom view): Displays the path of all Flare projects currently listed in the Recent Projects list.</li></ul></li>
+            <li>Select Target: Displays the available qualifying targets (DotNet Help, HTML Help or WebHelp) of the selected Flare project.&#160; Lets you designate which Target the Slave project should generate when the Master is generated.&#160;&#160; If “(default)” is selected, Flare will generate the first target of the same type (as the Master’s target) that it finds in the Slave project.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test that all qualifying targets display in the Select Target pull-down for the selected Flare project.&#160; </li>
+                <li>Test that non-qualifying targets do not display in the Select Target pull-down for the selected Flare project.</li>
+            </ul>
+        </div>
+        <h4>Appearance in the TOC Editor</h4>
+        <p>The TOC entry icon for a Flare Project Link is <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--ProjectIcon.png" />.&#160; Hovering over the TOC entry should reveal the path to the Flare project file.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TOCEditor--MergeNode--ProjectFile.png" alt="" title="" />
+        </p>
+        <h3>Target Editor – Setup</h3>
+        <h4>Output MOTW setting</h4>
+        <p>If generating WebHelp, the Master project’s Target Mark of the Web setting must be the same as all Child projects being merged. Set the MOTW setting in the <span class="UI">Target Editor</span> |&#160;Advanced tab:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--Web--MOTW.png" alt="" title="" />
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul>
+                <li>Test that inconsistent MOTW settings generate compiler error.</li>
+                <li>Test Master w/MOTW and Slave without</li>
+                <li>Test Salve w/MOTW and Master without</li>
+            </ul>
+        </div>
+        <h4>Output file names</h4>
+        <p>If the Parent project links to more than one Child project, each Child project’s Target must have a unique Output Filename.&#160; Set the Output file name for each project in the <span class="UI">Target Editor</span>| General tab.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--OutputFile.png" alt="" title="" />
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test linking to two Child projects using the same output filename.&#160; Confirm error is given for all outputs.</li>
+                <li>Test linking to a Child project which has its own Child project. Test that an error is given when generating a CHM when the sub-Child project has the same Output filename as the Parent or Child project.</li>
+            </ul>
+            <p>NOTE: In the sample project provided, the Child project's CHM Target does not use the Master TOC.&#160; Make sure to add the sub-Child to the appropriate TOC.&#160;</p>
+        </div>
+        <h3>More Test Cases</h3>
+        <ul style="list-style-type: square;">
+            <li>Test that compiler generates error if attempting to generate Master as one output and Slave as another.</li>
+            <ul style="list-style-type: square;">
+                <li>Master is WebHelp: Slave is DotNet Help</li>
+                <li>Master is WebHelp: Slave is HTML Help</li>
+                <li>Master is DotNet Help: Slave is WebHelp</li>
+                <li>Master is DotNet Help: Slave is HTML Help</li>
+                <li>Master is HTML Help: Slave is WebHelp</li>
+                <li>Master is HTML Help: Slave is DotNet Help</li>
+            </ul>
+            <li>Set the Master Project’s target to a specific output and create a Slave project which does not contain a target set to that output type.&#160; Generate the Master Project using default and test that an error is generated in the compiler. </li>
+            <li>Test that compiler generates error if attempting to merge any Master/Slave combination involving a print output (Word/Frame)</li>
+        </ul>
+        <h3>Pre-Merging</h3>
+        <p><span>A user may elect to pre-merge the Index and/or Search Database of the Parent and Child project(s) when compiling the output.&#160; This option is only available when merging projects using Targets (linking to the actual *.flprj file</span><span>).</span><span>&#160; The result will be a complete Index and/or</span><span> Search Database file in the Parent project’s output folder.</span>
+        </p>
+        <p>If pre-merge is activated for the Index and/or Search Database file, runtime merging is disabled, which means that you cannot compile and publish a "sub-project" later. You must generate and publish all linked Help systems at the same time.</p>
+        <h4>Target Editor | Performance tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Merging/TargetEditor--PerformanceTab--PreMergeOptions.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Relevant UI Controls:</p>
+            <ul style="list-style-type: square;">
+                <li>Pre-merge Index File: Check mark indicates the Index file for the Master and all Slave projects will be pre-merged when generating the output.</li>
+                <li><span>Pre-merge </span><span>Search Database File</span><span>: </span><span>Check mark indicates the </span><span>Search Database</span><span> file </span><span>for the Master and all Slave projects </span><span>will be pre-merged when generating the output.</span>
+                </li>
+            </ul>
+            <div class="TestCases">
+                <p class="TestCases">Test Cases</p>
+                <ul>
+                    <li>Confirm that pre-merged Index and Search Database files generate properly in Master project output folder</li>
+                    <li>After generating the project, open the Output folder for the Master Project (!Build | Open Output Folder)</li>
+                    <li>Open the Target folder</li>
+                    <li>Open the Data folder</li>
+                    <li>Open Index.xml and Search.xml, and confirm that element from the Slave project appear </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

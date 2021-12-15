@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage EnableCropRectangle="true" CropRectangle="1,6,25,21" ComputedWidth="25" ComputedHeight="21" Format="png">iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAIAAACDyf9SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGhSURBVEhLrZRBSwJBFMffh+kTdO5q+GG2c7duBXrqGMQeu3fpIhgSXiKQkEi0SLRCRUlt3dnVdWZ6s7Nur9R2iPnxGB7Lmx//tytCwyrwaBWoWgVcq8DSKrZ1kVXAqi0y1TlrVCoVx5VYNBCUy+VFFqiSN3npOknVHFmL9bGO3lY6KX88Orvs0tIudVLd1Ska88cSK1snJdf17aJGTLfSwVFpg25OwGjUlcvl0nRJxtWysN+EvRK9myy7rtO5lEtyasRefxW8gi7YPTfVaZcu1bsOnocnF1ipAmCTLiSky6au1Hgdgzo6T/tk2XXdzoFMC3VciHkkvEC0X/v/0dFoQnB0+aH4mInn7iBbFxD0sjQd7RsvSkfnaZ8sywj03WGuaMnZXIx93p/wzlDUW0pH52m/VbctXa1hoPMJOh3mWnDBQj7xxWDCu0Pe6ol6R9w+DDEdnad9ku6XLgyZ77PpjI3GrDcK2oOg+RbU28HdU1C9f8/WzQj6h/p30Xnag+d5+I+CpxWUziLwaRWYWsW2rmhGwQwwsxXNbAUjnaELx74AftkYU7rJUhwAAAAASUVORK5CYII=</OriginalImage>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <Variables />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

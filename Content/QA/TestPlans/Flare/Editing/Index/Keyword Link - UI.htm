@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1695" MadCap:lastWidth="694" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Keyword Link (K-Link) - UI</h2>
+        <h3>Inserting a Keyword Link</h3>
+        <p>!Insert | Help Control |&#160;Keyword Link Control (K-link)...</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <img src="../../../../../Resources/Images/UI--InsertKeywordLinkControl.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>UI&#160;Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Selected Keywords: </span>Displays a list of Keywords associated with the selected Keyword Link.</li>
+            <li><span class="bold">All Keywords:&#160;</span>Displays a list of all Keywords present in the current Flare project. Any keywords which are present in the current topic should appear at the top of this list when the dialog opens.</li>
+            <li><span class="bold">[ &gt;&gt; ] :</span> Associates the selected Keyword (in the All Keywords column) with the Keyword Link.  (The selected keyword should then appear in the Selected Keywords column.)</li>
+            <li><span class="bold">[ &lt;&lt; ] : </span>Disassociates the selected keyword (in the Selected Keywords column) with the Keyword Link.</li>
+            <li><span class="bold">Remove Control:&#160;</span>Removes the Keyword Link from the topic.</li>
+            <li><span class="bold">Options:</span> Will open the options dialog for the help control</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Keyword Link Options</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/UI_Help_Control_Options.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>UI Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Style Class:: </span>Displays a list of style classes for the <span class="StyleName">MadCap:keywordLink</span> style<ul style="list-style-type: square;"><li>Selecting one will apply that style class to the help control, once OK is pressed.</li></ul></li>
+            <li><span class="bold">Label:&#160;</span>Will set an inline label for the help control. <ul style="list-style-type: square;"><li>This field should be populated with the default label, as set on the <span class="StyleName">MadCap:keywordLink</span>, <span class="StyleProperty">mc-label</span> style property</li><li>Typing your own label will only add it as an inline label. This will NOT change the <span class="StyleProperty">mc-label</span> style property on the associated Style.</li></ul></li>
+            <li><span class="bold">Display Topics in:</span> Drop down selection for how topic list should be displayed<ul style="list-style-type: square;"><li><span class="bold">(default):</span> Will use what is set on the <span class="StyleName">MadCap:keywordLink</span> <span class="StyleProperty">mc-help-control-display</span> property</li><li><span class="bold">Popup Menu:</span> This option will display the topics in a popup window, when the help control is clicked.</li><li><span class="bold">List:</span> This option will display the topics in a list format, when the help control is clicked.</li></ul></li>
+            <li><span class="bold">Target&#160;Frame : </span>Drop down selection for where the topic list should show up.<ul style="list-style-type: square;"><li><span class="bold">(default):</span> Just means Parent Frame</li><li><span class="bold">Parent Frame:</span> Will open the selected topic in the same window</li><li><span class="bold">New Window:</span> Will open the selected topic in a new window</li><li><span class="bold">Same Frame:</span> Will open the selected topic in the same frame</li><li><span class="bold">Top Window:</span> Will open the selected topic in the top most window</li><li><span class="bold">Popup Window:</span> Will open the selected topic in a popup window</li></ul></li>
+        </ul>
+    </body>
+</html>

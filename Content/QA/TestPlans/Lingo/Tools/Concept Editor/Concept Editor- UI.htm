@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2277" MadCap:lastWidth="968" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize] " MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Concept Keyword Editor - UI                                                   </h2>
+        <p>Concept Map files are located in the File List.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Concept Editor/ConceptKeywordEditor---FileList.png" />
+        </p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Lingo/FileListItem--RightClickMenu.flsnp" />
+        <hr />
+        <p class="bold">Opening an Concept Map file:</p>
+        <p>Double-click the file in the <span class="UI">File List</span></p>
+        <p>Right-click the file in the <span class="UI">File List</span> and select Open</p>
+        <p>Select the file in the <span class="UI">File List</span> and press [Enter]</p>
+        <p>&#160;</p>
+        <h3>Editing Concept Map files</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Concept Editor/ConceptKeywordEditor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Concept Editor/ConceptKeywordEditor---LocalToolbar.png" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" style="mc-tag-and-class: ;" /><span class="bold">(Hide/show the Info Bar):&#160;</span>Hides or shows special information pertaining to the editor or window pane.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Lingo/Index Editor/IndexKeywordEditor---TranslateButton.png" /> (Translate):</span>Opens a menu that lets you select an option related to translating content.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Lingo/Index Editor/IndexKeywordEditor---UpdateTopicsButton.png" />(Update Keywords and Concepts in Topics):</span> <![CDATA[ ]]>Updates the topics throughout the project, replacing the index and Concept keywords in those topics with the new, translated index and Concept keywords..</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Concept Keyword Editor grid: </span>Displays and lets you translate and edit&#160;Concept Map files.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Source Keyword: </span>Displays the text in the source language.</li>
+                    <li><span class="bold">Translated Keyword: </span>Displays a copy of the text. After you translate the text in the target language, it is displayed in this cell.</li>
+                    <li><span class="bold">Difference:&#160;</span>If you are working in a "difference" project, the "Difference" column displays any changes that have been made to an item since the last version of the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>For Translated Keyword, enter single words, multiple words, numbers, words with international characters, etc.</p>
+        </div>
+        <h4>Right-click menu</h4>
+        <p class="bold">Right-clicking a row in the Concept Keyword Editor should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Index Editor/IndexKeywordEditor---RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155px;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Info Bar:&#160;</span>Hides or shows special information pertaining to the editor or window pane.</li>
+                <li><span class="bold">Properties:</span> Opens the Properties dialog window for the selected file.</li>
+                <li><span class="bold">Translate:</span> <![CDATA[ ]]>Opens a menu that lets you select an option related to translating content.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <hr />
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the Concept Keyword Editor (as of Lingo V3)</p>
+        <h4>Cut/Copy &amp; Paste – You should be able to do so in the 'Translated Keyword' column.</h4>
+        <p>Undo/Redo works and commands display correctly in the Standard Toolbar.</p>
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <p>You should <b>not</b> be able to delete any segments from the Concept Keyword Editor.</p>
+        <h4>Tooltips</h4>
+        <p>If any Source/Translated Keyword is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

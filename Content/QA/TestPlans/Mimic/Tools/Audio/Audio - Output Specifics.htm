@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="686" MadCap:lastWidth="1206" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head>
+    </head>
+    <body>
+        <h1>Audio - Output Specifics</h1>
+        <h3>Silverlight</h3>
+        <p class="bold" style="font-weight: normal;">Supporting WAV sounds in Silverlight output requires Windows Media Encoder (WME) to be installed. We package this with Mimic, and the user will be prompted when compiling a Silverlight movie that contains a WAV file. Below are the conditions that relate to this feature.</p>
+        <ol style="list-style-type: decimal;">
+            <li>	If user compiles non-Silverlight output OR .wav sounds are NOT used, the compilation proceeds normally.</li>
+            <li>If user compiles Silverlight output AND .wav sounds are used:l</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>If users machine already has Windows Media Encoder installed, compilation will proceed as norma</li>
+                <li>If users machine does not have WME installed:</li>
+                <li>If user does not want to install WME, compilation proceeds and .wav sounds are ignored</li>
+                <li>If user wants to install WME:</li>
+                <li>If user is running Vista, both WME and a Vista Hotfix must be installed</li>
+                <li>If Mimic has the installers, user is guided through the installation processes</li>
+                <li>If mimics installers are missing or corrupt, user is given the web addresses to download the installers.</li>
+                <li>If user is not running Vista, only the WME must be installed</li>
+                <li>If Mimic has the installers, user is guided through the installation processes</li>
+                <li>If mimics installers are missing or corrupt, user is given the web address to download the installer.</li>
+            </ol>
+        </ol>
+        <h3>Flash</h3>
+        <p>Our Flash output has a couple of areas the tester should be aware of.</p>
+        <h4>wav to mp3 conversion</h4>
+        <p>If a Movie has a .wav file and outputs to flash, the compiler needs to convert the sound to .mp3. The Flash player in Mimic versions 1 through 3, could not do.mp3 conversions at all on Vista (and subsequently Win7) machines. This is due to Windows Vista/7 no longer containing a built in mp3 converter. Mimic 4 introduced the ability for Mimic to lean on any 3rd party mp3 converters to do this job. <MadCap:xref href="../../!TestingResources/Required Third Party Installs.htm" target="" title="" alt="">See Required Third Party Installs</MadCap:xref> for information on installing a recommended codec. Below are related test cases:</p>
+        <p>&#160;</p>
+        <ul>
+            <li>Test compiling a movie in flash, with a .wav and an .mp3 sound file , on clean Vista / Win 7 machine. (No mp3 codec)<ul><li>Our compiler should prompt accordingly</li></ul></li>
+            <li>Test compiling a movie in flash, with a .wav and an .mp3 sound file, on a Vista / Win 7 machine that has an mp3 codec.</li>
+        </ul>
+        <h4>Frequency</h4>
+        <p>Our flash compiler needs standard frequency rates on the mp3 and wav files it uses. That does not mean it wont work with other frequencyies, we just say Mimic only supports the standard ones.</p>
+        <ul>
+            <li>Test using wav &amp;&#160;mp3 files that 44.100khz</li>
+            <li>Test using wav &amp;&#160;mp3 files that 22.050khz</li>
+            <li>Test using wav &amp;&#160;mp3 files that 11.025Khz</li>
+            <li>Test using wav &amp;&#160;mp3 files that use other frequencies. If we dont convert correctly, we should prompt correctly during the compile.</li>
+        </ul>
+    </body>
+</html>

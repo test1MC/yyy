@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Size and Position Section: </span> Controls the size and positioning of the image<ul><li><span class="bold">X: </span> Where on the X axis the images upper left corner is located</li><li><span class="bold">Y: </span> Where on the Y axis the images upper left corner is located</li><li><span class="bold">Width: </span> Controls the width of the image</li><li><span class="bold">Height: </span> Controls the height of the image</li></ul></li>
+            <li>
+                <span class="bold">Transparency Section: </span> Sets the transparency of the image object<ul><li><span class="bold">Transparency Color: </span> Sets the color of the transparency</li><li><span class="bold">Transparency: </span> Sets the transparency value, in percent<ul><li>Higher the number the more transparent the image</li><li>The number value will adjust to match any setting of the slider below</li></ul></li><li><span class="bold">Transparency Slider: </span> Sets the transparency value<ul><li>The more right the slider, the more transparent the image</li><li>The slider will adjust to match any number value above</li></ul></li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1755" MadCap:lastWidth="1047">
+    <head>
+        <link href="../../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Finished Scripts</h1>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/Rows.css');" class="TableStyle_Rows" cellspacing="0">
+            <col class="Column-Column1" style="width: 85px;" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr>
+                    <th class="TableStyle_Rows_Head_0_0_RowSep_ColSep">Script Name</th>
+                    <th class="TableStyle_Rows_Head_0_0_RowSep_ColEnd">Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Autobake</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">When the path to a baseline file is input to the script the script will download each bug folder from DC2, build it using MadBuild  and record the time it takes to build the project along with the number of files and the file size.  All of the metrics will be output to a date stamped csv file so that they can be analyzed in excel.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">Flare 8 vs Flare 9</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">Will do the same as above but the script will repeat the process with Flare 9.  All of the data will be output to two separate csv files so they can be imported into excel and trends can be established.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Mimic Object tester</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">Will create a user specified number of objects with trajectories per frame (i.e. slide 1 will have 1 object, slide 24 will have 24 objects).  The script will also record memory information after creating a new frame so memory consumption of Mimc can be monitored.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">Mimic Live recording</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">Will create a user specified number of clicks while Mimc is in live recording mode and sample the amount of memory that Mimic uses.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Topic Creation</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">This script will hand write a Flare project with a user specified number of topics and a HTML 5 output.  Each topic has a keyword and a concept term in it</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">WinDiff patch</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">Will install a version of a product, copy the .app folder, remove the product install a release version of the product and the update patch and then compare the old and new .app folders using windiff</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Bad Email parallel</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">This script will perform a few sanity checks on Flare.  It will de-activate flare, get rid of the registry entries and other items, re-register it with a mixed case email address, check to see if it crashes and then do a batch build and a scheduled build</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">Build Log Comparison</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">This script will read the build log off of build2 and then compare the items mentioned in the log to items in the Flare Folder</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Commenting Chrome</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">This script will generate comments on a pulse enabled help system.  It will also up vote / favorite things, add pictures and other actions</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">Dll printout</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">This script will ask the user for a major version, minor version, revision, copyright date and company and then it will go through all of the dll’s in the .app folder and will print out a list of ones that are wrong</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Install testing quick checklist</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">This script will automate ~66% of the Quick checklist for Flare and Lingo</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">JS Version Checker</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">This script will open up the build log, read the build log and look for files with .js extensions to add to a list.  Once its finished reading the file the script will then open up each mentioned .js file and output the version number to a .csv file</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Memstats</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">This program will run in the background over night and collect memory samples at a user defined rate.  It will also output this information to a csv file for later analysis</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Arial;">Uninstall_Install</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-family: Arial;">This program will uninstall the version of flare currently installed on the local machine and it will the install and register the latest version on \\Build2</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Arial;">Dot Net Issue</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-family: Arial;">
+                        <p>This script will simulate a users working on and switching between three separate projects.The program will also log each action and monitor to see if flare crashes during an action.  It will randomly choose from the following actions:</p>
+                        <ul>
+                            <li>Wait</li>
+                            <li>Switch Ribbons</li>
+                            <li>Switch Projects</li>
+                            <li>Minimize Flare</li>
+                            <li>Maximize Flare</li>
+                            <li>Move Flare</li>
+                            <li>Spam Characters</li>
+                            <li>Close and Reopen Flare</li>
+                            <li>Undock and Redock a pane</li>
+                            <li>Add a Table</li>
+                            <li>Switch from print to xml layout</li>
+                            <li>Create a table with ~150 rows and content in some of the cells</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep" style="font-family: Arial;">Smoke Project</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd" style="font-family: Arial;">
+                        <p>This program will</p>
+                        <ul>
+                            <li>Uninstall Flare</li>
+                            <li>Download a new build of Flare</li>
+                            <li>Register Flare</li>
+                            <li>Creates a new project</li>
+                            <li>Adds Each type of file type and makes a slight modification to it</li>
+                            <li>Exercises most of the actions available in the Home, Insert and Table ribbon.  Each item gets its own topic</li>
+                            <li>Reads the raw xml of each topic and compares it to a known good topic</li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>Raw Function List</p>
+                        <ul>
+                            <li>Uninstall_Flare</li>
+                            <li>Installer</li>
+                            <li>Licensing</li>
+                            <li>New_Project</li>
+                            <li>Window_Reset</li>
+                            <li>Add_All</li>
+                            <li>Create_Table</li>
+                            <li>Create_Image</li>
+                            <li>Create_Thumbnail</li>
+                            <li>Create_Image_Position</li>
+                            <li>Create_Background</li>
+                            <li>Create_Table_Style</li>
+                            <li>Create_Paragraph_Properties</li>
+                            <li>Create_Font_Properties</li>
+                            <li>Create_QR_Code</li>
+                            <li>Create_Hyperlink</li>
+                            <li>Create_XRefs</li>
+                            <li>Create_Bookmark</li>
+                            <li>Create_Glossary_Term_Link</li>
+                            <li>Create_Keyword</li>
+                            <li>Create_Named_Destination</li>
+                            <li>Create_Drop_Down_Text</li>
+                            <li>Create_Expanding_Text</li>
+                            <li>Create_Text_Popup</li>
+                            <li>Create_Text_Box</li>
+                            <li>Related_Topics_Control</li>
+                            <li>Keyword_Link</li>
+                            <li>Shortcut_Control</li>
+                            <li>Equation</li>
+                            <li>Script</li>
+                            <li>Snippet</li>
+                            <li>Create_Snippet</li>
+                            <li>Conditions</li>
+                            <li>Language</li>
+                            <li>Expand_Table</li>
+                            <li>Content</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

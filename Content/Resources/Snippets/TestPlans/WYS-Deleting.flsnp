@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="449" MadCap:lastWidth="1204">
+    <body>
+        <h4>Deleting</h4>
+        <ul class="checkbox">
+            <li>Keyboard<ul class="checkbox"><li>Place the insertion point before the element and press <span class="KeyboardShortcut">Delete</span></li><li>Place the insertion point after the element and press <span class="KeyboardShortcut">Backspace</span></li><li>Select the element and press <span class="KeyboardShortcut">Enter</span></li><li>Select the element and press <span class="KeyboardShortcut">Delete</span></li><li>Select the element and press <span class="KeyboardShortcut">Backspace</span></li><li>Select the element and press <span class="KeyboardShortcut">Space Bar</span></li><li>Select the element and type anything; typed content will replace the element</li></ul></li>
+            <li>Toolstrip interface<ul class="checkbox"><li>Place the insertion point before the element and <span class="MenuItem">!Edit | Delete</span></li><li>Place the insertion point before the element and click the <img src="../../Images/TestPlans/Buttons/Button---Delete.png" /> button on the Standard Toolbar</li><li>Select the element and <span class="MenuItem">!Edit | Delete</span></li><li>Select the element and click the <img src="../../Images/TestPlans/Buttons/Button---Delete.png" /> button  on the Standard Toolbar</li></ul></li>
+            <li>Ribbon interface<ul class="checkbox"><li>Place the insertion point before the element and <span class="RibbonItem">!Home | Delete</span></li><li>Select the element and <span class="RibbonItem">!Home | Delete</span></li></ul></li>
+            <li>Select the element and Cut<ul class="checkbox"><li>Use the right click menu (if applicable)</li><li>Use <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">X</span></li><li>Toolstrip interface:&#160;Click <img src="../../Images/TestPlans/Buttons/Button---Cut.png" />in the Standard Toolbar</li><li>Toolstrip interface:&#160;<span class="MenuItem">!Edit | Cut</span></li><li>Ribbon interface:&#160;<span class="RibbonItem">!Home | Cut</span></li></ul></li>
+            <li>Pasting another element or text over a selected element will replace it with that data. – Verify that there is no malformed XML from this</li>
+            <li>Inserting another element or typing over a selected element will replace it with that data. – Verify that there is no malformed XML from this</li>
+        </ul>
+    </body>
+</html>

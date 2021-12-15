@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2655" MadCap:lastWidth="846" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.HyphenationDictionary] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Hyphenation Dictionaries - Editor</h2>
+        <h3>Opening a Hyphenation Dictionary File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <ul class="checkbox">
+            <li>Open the file from the <span class="UI">Open Hyphenation Document</span> dialog (See <MadCap:xref href="Hyphenation - UI.htm" target="" title="" alt="" class="TitleOnly">Hyphenation/Hyphenation Dictionaries - UI</MadCap:xref>)</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Hyphenation Rule Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/UI--HyphenationRuleEditor.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/HyphenationRuleEditor---LocalToolbar.png">
+            </img>
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" /> (New item):&#160;</span>Creates a new empty row</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" /> (Cut):&#160;</span>Cuts the selected item(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" /> (Copy): </span>Copies the selected item(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" /> (Paste): </span>Pastes the item(s) from the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> (Delete):&#160;</span>Deletes the selected item(s)</li>
+        </ul>
+        <hr />
+        <p><span class="bold">Hyphenation Rule Editor grid: </span>Displays a list of words and custom hyphenation rules.</p>
+        <ul class="checkbox">
+            <li><span class="bold">Word: </span>Displays each word that has a custom hyphenation rule.</li>
+            <li><span class="bold">Rule: </span>Displays the custom hyphenation rule for the corresponding word.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <hr />
+        <p class="bold">Right-click menu (Tooltips in Parentheses):</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/HyphenationRuleEditor---RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 2in;">
+            <ul class="checkbox">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <div style="margin-left: 2in;">
+            <ul class="checkbox">
+                <li><span class="bold">New (New item):&#160;</span>Creates a new empty row</li>
+                <li><span class="bold">Cut (Cut):&#160;</span>Cuts the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Copy (Copy): </span>Copies the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Paste (Paste): </span>Pastes the item(s) from the clipboard.</li>
+                <li><span class="bold">Delete (Delete):&#160;</span>Deletes the selected item(s)</li>
+            </ul>
+        </div>
+        <h3>Hyphenation Dictionary - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <ul class="checkbox">
+            <li>There is currently no drag/drop editing functionality within the Hyphenation Rule Editor (as of Flare V5)</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <ul class="checkbox">
+            <li>Select the Hyphenation Rule row and press <span class="KeyboardShortcut">Delete</span> on the keyboard</li>
+            <li>Select the Hyphenation Rule row and click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> in the local toolbar.</li>
+            <li>Select the Hyphenation Rule row and click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> in the Standard toolbar.</li>
+            <li>Select the Hyphenation Rule row and select Delete from the Edit menu.</li>
+        </ul>
+        <h4>Tooltips</h4>
+        <ul class="checkbox">
+            <li>If any Word or Rule is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</li>
+        </ul>
+        <h4>Conditional Tags</h4>
+        <ul class="checkbox">
+            <li>Conditional Tags cannot be applied to individual Hyphenation Rules. Conditional Tags can be applied to the actual Hyphenation Dictionary file (*.mchyph), however, as of Flare V5, this tag can only be used for the purposes of Advanced Global Project importing.</li>
+        </ul>
+        <h4>Code</h4><pre xml:space="preserve" xml:lang="none">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;HyphenationRules&gt;
+    &lt;Hyphenation&gt;
+        &lt;Word&gt;Hyphenation&lt;/Word&gt;
+        &lt;Rule&gt;Hy-phenation;Hyphen-ation;Hyphena-tion&lt;/Rule&gt;
+    &lt;/Hyphenation&gt;
+    &lt;Hyphenation&gt;
+        &lt;Word&gt;editor&lt;/Word&gt;
+        &lt;Rule&gt;ed-itor;edit-or&lt;/Rule&gt;
+    &lt;/Hyphenation&gt;
+&lt;/HyphenationRules&gt;</pre>
+    </body>
+</html>

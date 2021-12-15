@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage EnableCropRectangle="true" CropRectangle="2,4,38,26" ComputedWidth="38" ComputedHeight="26" Format="png">iVBORw0KGgoAAAANSUhEUgAAACkAAAA9CAIAAAC/RdcsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFaSURBVFhH7VdbDoIwEPSSXMSDcA5/1EQFEw1G0XgJTiHwh4kOPkiL7c9uaTVu41cjM+zOls6MbuHWKBz1Tbj9N196/ux5djjNV+vpInH+AyzAVWW1nqebbH88X8ryOsACLMBB0dFr3LNlWpZV0zT1AAuwAAeFmRt9RsED8L4gAQ4K4VYH7yd6nsfjSWGYC9u+G72LyTiKojjvE9v2tf/RZy2PwWqo17b/2Rcad4v/WWxd2/bN55TG3WKFqrurI5DeSh/DzDnrg0vXm0X7eFi4H1/yr7m/0+0O1qKqWmGcL8C2vmW7M9/f2E02GayFc7MGQMAC3OrXPFt08eeeG94/Y57pRW/PDTfoLVmQf13rCJIF31Otne+fyGPEWaD5NdhyUyypbfuOcwk/ljB9KiuWMLmfvaQmQ5reb/0C1R1M78BzTjzT6mM8vXkvINySBRWbKFlweM/8r7nkDo5Kn3PZoA7RAAAAAElFTkSuQmCC</OriginalImage>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <Variables />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

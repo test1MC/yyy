@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1636" MadCap:lastWidth="936" MadCap:conditionTagExpression="include[Default.UITestsEditors or TargetEditor.HTML5 or TargetEditor.WebHelp]" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>SlideShow - UI</h2>
+        <h3>SlideShow - UI</h3>
+        <h4>&#160;Slideshow Editor:&#160;General Tab</h4>
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/SlideShow/SlideShow--GeneralTab.png" style="float: left;mc-thumbnail: popup;" />
+            </p>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li style="font-weight: bold;">
+                <p class="Pclear" style="font-weight: normal;"><span class="bold">Navigation:</span>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li style="font-weight: normal;"><span class="bold">Bullets:</span>&#160;Shows the default bullet which uses rounded border property</li>
+                    <li style="font-weight: normal;"><span class="bold">Thumbnails:&#160;</span>Default thumbnail is a black box - customize the image on each slide below.</li>
+                    <li style="font-weight: normal;"><span class="bold">None:&#160;</span>No navigation will display.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;"><span class="bold">Arrow Overlays: </span>Toggles on/off Previous and next navigation arrows embedded in the slide</li>
+            <li style="font-weight: normal;"><span class="bold">Show Captions: </span>Toggles on/off caption display</li>
+            <li style="font-weight: normal;"><span class="bold">Start on random slide: </span>Toggles on/off the ability to start the SlideShow on a random slide</li>
+            <li style="font-weight: normal;"><span class="bold">Slides displayed:&#160;</span>Click the up/down arrows or type how many slides you want to show at once. The maximum number is the total number of slides.</li>
+            <li style="font-weight: normal;"><span class="bold">Width:</span> Allows control over size of the Slideshow presentation. Default is full page width. Pixels is the only unit option (by design).</li>
+            <li style="font-weight: normal;"><span class="bold">Adaptive Height: </span>Toggles on/off Slideshow's ability to adjust to slides of different heights</li>
+            <li style="font-weight: normal;"><span class="bold">Responsive size: </span>Toggles on/off the Slideshow's ability to adjust to any browser's size</li>
+            <li style="font-weight: normal;"><span class="bold">Slides:</span> Displays all slides contained in the slide show.<ul><li style="font-weight: normal;"><span class="bold">New File (New File&#160;(Ctrl&#160;+&#160;N)): </span>Inserts a new slide</li><li style="font-weight: normal;"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" alt="" title="" /><span class="bold">(Delete (Del)): </span>Deletes selected slide(s)</li><li style="font-weight: normal;"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png" alt="" title="" /><span class="bold"> (Move item up): </span>Moves selected slide(s) up</li><li style="font-weight: normal;"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png" alt="" title="" /><span class="bold">(Move item down): </span>Moves selected slide(s) down</li><li style="font-weight: normal;"><span class="bold">Caption: </span>Allows for selected slide to be captioned - Used in conjunction with "Show captions"</li><li style="font-weight: normal;"><span class="bold">Thumbnail: </span>Allows for an image thumbnail to be set as a navigation point- Used in conjunction with Navigation: Thumbnails<ul><li style="font-weight: normal;"><span class="bold">(Insert Thumbnail&#160;Image):&#160;</span>Opens Insert Image dialog</li></ul></li><li style="font-weight: normal;"><span class="bold">Preview Window:</span> previews the selected slide's content.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>New File - Test all insertion points</li>
+                <li>Delete - Test deletion of both single and multiple selections.</li>
+                <li>Arrows - Test moving both single and multiple selections.</li>
+                <li>Try displaying more slides than exist in the slideshow - should correct to total number of slides.</li>
+            </ul>
+        </div>
+        <h4>Slideshow Editor:&#160;Playback Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SlideShow/SlideShow--PlaybackTab.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Loop: </span>Toggles on/off continuous loop. Default state is checked (on)</li>
+            <li><span class="bold">Start automatically: </span>Toggles on/off auto start of slideshow slides<ul><li><span class="bold">Delay (ms): </span>Sets a timed delay for the start of Slideshow slides. 1000 Milliseconds = 1 second</li></ul></li>
+            <li><span class="bold">Pause on hover: </span>Will cause the Slideshow slides to pause when mouse pointer is placed over a slide. Will start back up again when pointer is removed.</li>
+            <li><span class="bold">Play/Pause button: </span>Enables the Play/Pause buttons. Controls start and stop of Slideshow.</li>
+            <li><span class="bold">Slide Duration (ms): </span>Controls the speed at which the slide moves through the Slideshow. Default is 4,000 milliseconds.</li>
+            <li><span class="bold">Direction: </span>Controls the direction in which the slide(s) move through the Slideshow<ul><li><span class="bold">Next:&#160;</span>Slides will move in the next direction (Slide 1, Slide 2, Slide 3...)</li><li><span class="bold">Previous:&#160;</span>Slides will move in the previous direction&#160;(Slide 1, Slide 3, Slide 2...)</li></ul></li>
+            <li><span class="bold">Transition: </span>Controls how the next slide will be revealed<ul><li><span class="bold">horizontal: </span>Scrolls left to right</li><li><span class="bold">vertical: </span>Scrolls up and down</li><li><span class="bold">fade: </span>Fades out current slide, fades in next/previous slide</li></ul></li>
+            <li><span class="bold">Transition speed (ms): </span>Controls how fast the next slide will be revealed.</li>
+        </ul>
+    </body>
+</html>

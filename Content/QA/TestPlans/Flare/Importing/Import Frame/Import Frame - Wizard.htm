@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7378" MadCap:lastWidth="1297" MadCap:conditionTagExpression="exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Import Frame - Wizard</h2>
+        <h3>Importing Frame Documents into a New Project - UI</h3>
+        <p>To create a new project by importing FrameMaker files, launch the <span class="UI">Import FrameMaker Wizard</span> by:</p>
+        <p>!File | Import Project | Import FrameMaker Documents…</p>
+        <h4>Import FrameMaker Wizard dialog 1: Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard1--ImportOptions.PNG" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Import into a new project:</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Project name</span> This is where you name the Flare project</li>
+                    <li><span class="bold">Project folder</span> Select where you want to store the Flare project</li>
+                    <li><span class="bold">Output Type</span> Select the type of target you want to start the project with</li>
+                </ul>
+            </li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 2: Select FrameMaker documents to import</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard2--Documents.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Selected FrameMaker documents</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">FrameMaker Files: </span>Displays each *.fm, *.mif or *.book file added to the import</li>
+                    <li><span class="bold">Status: </span>???</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---OpenFile.png" alt="" title="" />: </span>Opens the selected file in the default application. Button will gray out with a multi-selection.</li>
+            <li><span class="bold">Link Generate Files To Source Files: </span>This option creates a connection between the original FrameMaker files and the files that are created as a result of the import.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveUp.png" alt="" title="" />: </span>This moves the selected document higher in the list (if you have more than one document to import). The document at the top is used for the name of the content folder holding the imported topics in Flare. Also, the order determines how the imported documents are arranged in the Flare TOC that is created as a result.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveDown.png" alt="" title="" />: </span>This moves the selected document lower in the list (if you have more than one document to import).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Remove.png" />: </span>This removes the selected document(s) from the list.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---AddFiles.png" />: </span>Produces the <span class="UI">Open</span> dialog which lets you browse for *.fm, *.mif or *.book files to add to the import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Produces the <span class="UI">Scanning Source Documents</span> dialog and then proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>. (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Scanning Documents</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard2b--ScanningDocs.png" />
+        </p>
+        <h4>Import FrameMaker Wizard dialog 3: New Topic Styles</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard4--NewTopicStyles.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Used FrameMaker Styles: </span>Lists all styles used in the FrameMaker documents you have added to the import.</li>
+            <li><span class="bold">'New Topic' Styles: </span>Lists all styles which should split the original FrameMaker document(s) into separate topics.</li>
+            <li><span class="bold">[ &gt;&gt; ] : </span>Lets you add the Used FrameMaker Style(s) selected from the left side and add them to the 'New Topic' Styles list.</li>
+            <li><span class="bold">[ &lt;&lt; ] : </span>Lets you select a 'New Topic' Style from the right side and remove it from the 'New Topic' Styles list.</li>
+            <li><span class="bold">Preview: </span>Displays a preview of the style selected in the Used FrameMaker Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files using &lt;Shift&gt;-Click or &lt;CTRL&gt;-Click</li>
+            <li>Double-clicking a style in the left-hand list will move it to the right-hand list</li>
+            <li>Double-clicking a style in the right-hand list will remove it from the right-hand list</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 4: Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard5--Options.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Add "Topic Continued" links when appropriate: </span>Select this option if you want a link called "Topic Continued" to be placed at the bottom of pages when a long topic has been split into multiple topics.<ul style="list-style-type: circle;"><li><span class="bold">Cross-Reference Format: </span>Use this field to specify the format for the "Topic Continued" links.</li><li><span class="bold">Edit: </span>If you want to modify the cross-reference format provided, click this button, which opens the <span class="UI">Cross-Reference Format</span> dialog.</li></ul></li>
+            <li><span class="bold">Add "Topic Continued From…" links when appropriate: </span>Select this option if you want a link called "Topic Continued From" to be placed at the top of continued pages when a long topic has been split into multiple ones.<ul style="list-style-type: circle;"><li><span class="bold">Cross-Reference Format: </span>Use this field to specify the format for the "Topic Continued From" links.</li><li><span class="bold">Edit: </span>If you want to modify the cross-reference format provided, click this button, which opens the <span class="UI">Cross-Reference Format</span> dialog.</li></ul></li>
+            <li><span class="bold">Split Long Topics: </span>Select this option if you have long  source documents and want to make sure that they are converted to multiple topics<ul style="list-style-type: circle;"><li><span class="bold">Threshold: </span>Enter the maximum number of characters to be converted to a topic before a new topic is created.</li></ul></li>
+            <li><span class="bold">Avoid Creating Empty Topics: </span>Select this option if you want to ensure that new topics are not created when large sections are found in the FrameMaker documents without any content.<ul style="list-style-type: circle;"><li><span class="bold">Threshold: </span>Enter the maximum number of empty character spaces allowed in a topic.</li></ul></li>
+            <li><span class="bold">Generate Images for Anchored Frames when needed: </span>Use this option to generate new images during the import process when an anchored frame includes text (such as a callout).</li>
+            <li><span class="bold">Preserve Image Size: </span>If this option is enabled, the &lt;img&gt; tags in the imported files are modified to closely reflect the height and width of the image in the FrameMaker document. If disabled, all images are referenced at 100%.</li>
+            <li><span class="bold">Auto-reimport before 'Generate Output': </span>Also called "Easy Sync," this option will tell Flare to automatically re-import FrameMaker files when you attempt to build output.</li>
+            <li><span class="bold">Approximate Filename Length: </span>Enter the maximum number of characters to use for naming new topic files that are automatically created after splitting a long topic.</li>
+            <li><span class="bold">Convert equations to MathML: </span>Importing from Frame version 11 and earlier, equations created in Frame are written in MathFullForm, a markup unique to FrameMaker. Selected by default, this will convert equations to the web-standard MathML. &#160;Deselected, equations will import as images.</li>
+            <li><span class="bold">Convert Table Styles: </span>If you have tables in your FrameMaker documents that you have formatted in a certain way, select this check box if you want to create matching table styles as a result of the import</li>
+            <li><span class="bold">Enable 'Passthrough' Markers: </span>If you have created passthrough markers in your FrameMaker source documents, enable this check box to be sure that information is imported.<ul style="list-style-type: square;"><li><span class="bold">Passthrough Marker Format: </span>After you enable passthrough markers, click the down arrow in this field and select the type of format that you want to use for the import (text, fragment or xml)</li></ul></li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 5: Stylesheet</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard6--Styles.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Stylesheet...: </span>Produces the <span class="UI">Open</span> dialog which lets you browse for a *.css file.</li>
+            <li><span class="bold">Source Styles:</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Preserve FrameMaker Styles: </span>This retains any styles from your FrameMaker documents so that you can continue to use them in your new project.</li>
+                    <li><span class="bold">Don't Preserve FrameMaker Styles: </span>This does not keep the styles that were used in the FrameMaker documents.</li>
+                    <li><span class="bold">Conversion Styles: </span>Produces the <span class="UI">Import Styles Editor</span>. <MadCap:xref href="Frame Import Styles - UI.htm" target="" title="" alt="">See "Frame Import Styles - UI"</MadCap:xref></li>
+                </ul>
+            </li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 6: Paragraph Style Mapping</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard7--ParagraphStyleMapping.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Left-hand Columns</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">FrameMaker Style: </span>Lists all styles used in the FrameMaker documents you have added to the import.</li>
+                    <li><span class="bold">Flare Style: </span>Displays the style name that the FrameMaker style will adopt after the documents are imported.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Right-hand Column</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Flare Styles: </span>List of Flare styles available to be mapped to.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Map: </span>Lets you map the selected FrameMaker Style(s) on the left to the selected Flare Style from the far right.</li>
+            <li><span class="bold">Unmap: </span>Lets you remove the mapped Flare Style from the selected FrameMaker Style(s).</li>
+            <li><span class="bold">(Left) Preview: </span>Displays a preview of the style selected in the FrameMaker Style list.</li>
+            <li><span class="bold">(Right) Preview: </span>Displays a preview of the style selected in the Flare Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files in the left-hand list using &lt;Shift&gt;-Click or &lt;CTRL&gt;-Click</li>
+            <li>Should not be able to multi-select files in the right-hand list</li>
+            <li>Double-clicking a style in the left-hand list will do nothing</li>
+            <li>Double-clicking a style in the right-hand list will map it to the current selection in the left-hand list</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 7: Character Style Mapping</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard8--CharacterStyleMapping.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Left-hand Columns</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">FrameMaker Style: </span>Lists all styles used in the FrameMaker documents you have added to the import.</li>
+                    <li><span class="bold">Flare Style: </span>Displays the style name that the FrameMaker style will adopt after the documents are imported.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Right-hand Column</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Flare Styles: </span>List of Flare styles available to be mapped to.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Map: </span>Lets you map the selected FrameMaker Style(s) on the left to the selected Flare Style from the far right.</li>
+            <li><span class="bold">Unmap: </span>Lets you remove the mapped Flare Style from the selected FrameMaker Style(s).</li>
+            <li><span class="bold">(Left) Preview: </span>Displays a preview of the style selected in the FrameMaker Style list.</li>
+            <li><span class="bold">(Right) Preview: </span>Displays a preview of the style selected in the Flare Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files in the left-hand list using &lt;Shift&gt;-Click or &lt;CTRL&gt;-Click</li>
+            <li>Should not be able to multi-select files in the right-hand list</li>
+            <li>Double-clicking a style in the left-hand list will do nothing</li>
+            <li>Double-clicking a style in the right-hand list will map it to the current selection in the left-hand list</li>
+        </ul>
+        <h4>Import FrameMaker Wizard dialog 8: X-Ref Style Mapping</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Frame/ImportFrameWizard9--XRefStyleMapping.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Left-hand Columns</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">FrameMaker Styles: </span>Lists all styles used in the FrameMaker documents you have added to the import.</li>
+                    <li><span class="bold">Flare Style: </span>Displays the style name that the FrameMaker style will adopt after the documents are imported.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Right-hand Column</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Flare Styles: </span>List of Flare styles available to be mapped to.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Map: </span>Lets you map the selected FrameMaker Style(s) on the left to the selected Flare Style from the far right.</li>
+            <li><span class="bold">Unmap: </span>Lets you remove the mapped Flare Style from the selected FrameMaker Style(s).</li>
+            <li><span class="bold">(Left) Preview: </span>Displays a preview of the style selected in the FrameMaker Style list.</li>
+            <li><span class="bold">(Right) Preview: </span>Displays a preview of the style selected in the Flare Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import FrameMaker Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import FrameMaker Wizard</span>.  (Should be grayed out at this point)</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import FrameMaker Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the FrameMaker files.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import FrameMaker Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files in the left-hand list using &lt;Shift&gt;-Click or &lt;CTRL&gt;-Click</li>
+            <li>Should not be able to multi-select files in the right-hand list</li>
+            <li>Double-clicking a style in the left-hand list will do nothing</li>
+            <li>Double-clicking a style in the right-hand list will map it to the current selection in the left-hand list</li>
+        </ul>
+        <h4>Import Progress</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Dialog--ImportProgress.png" />
+        </p>
+        <h4>Accept Imported Documents</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Dialog--AcceptImportedDocuments.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Generated documents</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">File: </span>Displays each new Flare file that will be created as a result of the import.</li>
+                    <li><span class="bold">Type: </span>Displays the file extension of each file.</li>
+                    <li><span class="bold">Folder:</span> Displays the location where the file will exist in the Flare project.</li>
+                </ul>
+                <p><span class="bold">Test Cases</span>
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>Columns are sortable (A-Z and Z-A)</li>
+                    <li>Horizontal and vertical scrollbars should be working correctly</li>
+                </ul>
+            </li>
+            <li><span class="bold">(Preview): </span>Displays a preview (if available) of the file selected on the left.</li>
+            <li><span class="bold">Show Source Code: </span>Shows the source code of the selected file in the preview box.</li>
+            <li><span class="bold">Accept: </span>Closes the dialog and closes the <span class="UI">Import FrameMaker Wizard</span>. The resulting Flare project should now be open.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog, does not complete the import and returns to the <span class="UI">Import FrameMaker Wizard</span> <![CDATA[ ]]></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="note">Once the FrameMaker Import is complete a FrameMaker Import file is created in the <span class="UI">Project Organizer</span>. An alternative to importing FrameMaker files to create a new project is to create the FrameMaker Import file in an existing project. See <a href="Import Frame - Add File.htm">Import Frame - Add File</a>.</p>
+    </body>
+</html>

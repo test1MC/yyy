@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="6431" MadCap:lastWidth="1407" MadCap:conditionTagExpression="include[Default.UITestsDialogs] exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Text Boxes</h2>
+        <h3>Opening the UI</h3>
+        <p><b>Open Insert Text Boxes:</b>
+        </p>
+        <ol>
+            <li>!Insert | Text Box...</li>
+            <li>Type into the XML</li>
+        </ol>
+        <p>&#160;</p>
+        <p class="bold">Open Text Box Properties:</p>
+        <ol>
+            <li>Right click on the div block bar associated with the text box.</li>
+            <li>Select Text Box...</li>
+            <li>The Text Box Properties dialog opens.</li>
+        </ol>
+        <p>or...</p>
+        <ol>
+            <li>Select a text box</li>
+            <li>!Format|Text Box (Text Box replaces the paragraph option when a text box is selected)</li>
+            <li>The Text Box Properties dialog opens.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+            <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+            <li>Insert in paragraphs with various elements in them (multimedia, Form elements, Special Characters, Help Controls, etc)</li>
+            <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+            <li>Insert in many types of Elements (Tables, Forms, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+        </ul>
+        <h3>UI</h3>
+        <h4>Insert Text Box Dialog</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--InsertTextBox--Dialog.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Select a Text Box Class:</span> Select the appropriate text box class.</li>
+            <li><span class="bold">Size:</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Width:</span> The width of the text box.</li>
+                    <li><span class="bold">Height:</span> The height of the text box.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Position:</span>
+                <ul style="list-style-type: square;">
+                    <li><b>Float:</b> Use this field to specify where to place the text box on the page.</li>
+                    <ul style="list-style-type: square;">
+                        <li><b>None:</b> Does not place the text box in a specific location.</li>
+                        <li><b>Left:</b> Positions the text box on the left side of the page frame, allowing you to type text to the right of the text box.</li>
+                        <li><b>Right:</b> Positions the text box on the right side of the page frame, allowing you to type text to the left of the text box.</li>
+                    </ul>
+                    <li><span class="bold">Clear:</span> The clear position of the text box</li>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+        <h4>Borders Dialog</h4>
+        <p><span class="bold">Borders  tab:</span> You can use this tab to set borders, margins, or padding for the text box.</p>
+        <p>&#160;</p>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--InsertTextBox--Borders--Dialog.png" class="properties" style="width: 239px;height: 173px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">&#160;</p>
+        <h4>UI&#160;Borders  Controls:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Borders &amp; Margins usage diagram.png" style="width: 348px;height: 254px;" />
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Border:</b> Border is a line drawn around the content.<ul style="list-style-type: square;"><li style="font-weight: bold;"><span style="font-weight: normal;">Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the text box border. If you click the down arrow to the right of all the fields, the settings will be applied to all of border fields. When you click that down arrow or in one of the individual fields, a small popup displays. Use the lower-left area of the popup to enter a number for the thickness of the border. Use the lower-middle area to select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered. Use the upper-right area to select a color for the border. Use the lower-right area to select a line type (e.g., solid, double, dashed) for the border. When you are finished, click OK in the small popup.</span></li></ul></li>
+            <li><b>Padding:</b>Adds extra space between an text box's border and the text box itself.<ul style="list-style-type: square;"><li>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the padding in the text box. In the left side of the field, enter a number for the amount of padding. In the right side of the field, select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered. If you click the down arrow to the right of all the fields, the settings will be applied to all of padding fields. When you click that down arrow, a small popup displays. Use the lower-left area of the popup to enter a number for the amount of padding. Use the lower-right area to select a unit of measurement. When you are finished, click OK in the small popup.</li></ul></li>
+            <li>
+                <p class="bold" style="font-weight: normal;"><span class="bold">Border Radius: </span>Border radius creates a rounded border. &#160;The default value is 0. The greater the number, the more curve that is applied.</p>
+                <ul style="list-style-type: square;">
+                    <li><span style="font-weight: normal;">Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the text box border radius. If you click the down arrow to the right of all the fields, the settings will be applied to all of border fields. When you click that down arrow or in one of the individual fields, a small popup displays. This popup has two halves. you can complete only the left side of the popup if you like. This will create a curve that is equal horizontally and vertically. If you want a border to have more of a curve either horizontally or vertically, you can complete the fields in the right half of the popup as well, so that you have two values (e.g., 10px 15px) instead of one.</span>
+                    </li>
+                </ul>
+            </li>
+            <li><b>Preview:</b>Displays a preview of how a text box will look as you specify settings.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Images/DropDownMenu.png" style="border-left-style: solid;border-left-width: 2px;border-left-color: #000000;border-right-style: solid;border-right-width: 2px;border-right-color: #000000;border-top-style: solid;border-top-width: 2px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #000000;width: 23px;height: 21px;" />: sets the top, bottom, left, right all at the same time with the same number.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test:</b> test using the drop down setting selection as well as setting each area manually one at a time and all together. Some combinations may cause a problem. Don't just use the drop down and think that the rest work.</p>
+        <p class="note">Note: Different browsers may treat margin and padding settings differently. For example, Internet Explorer 8 and Firefox honor padding settings more than they honor margin settings. If you were to set a left margin at, say, 1 inch, Internet Explorer 7 would show it that way. However, in order to get the same results in Internet Explorer 8 or Firefox, you would also need to set the left padding at 1 inch.</p>
+        <h4>Backgrounds</h4>
+        <li><span class="bold">Background tab:</span> You can use this tab to add background settings (e.g., color, for the text box.</li>
+        <li>&#160;</li>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--InsertTextBox--Background--Dialog.png" class="properties" style="width: 257px;height: 191px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>UI&#160;Backgrounds Control</h4>
+        <ul style="list-style-type: square;">
+            <li><b>Color:</b> Sets the color of the background. In the Color field, click the down arrow and select a color from the popup. For advanced color options, select More Colors and use the fields in the Color Picker dialog.</li>
+            <li><b>Multimedia:</b> Choose a multimedia for the background. Next to the multimedia field click the drop down menu to choose a recently added multimedia that is already in the project or click the Browse button to insert a new multimedia.</li>
+            <li><b>Repeat:</b> repeats a background multimedia.</li>
+            <li><b>X:</b> 	Select or enter the position (in pixels) of the background of the text box. This positions the background of the text box horizontally (i.e., on the X axis).</li>
+            <li><b>Y:</b> 	Select or enter the position (in pixels) of the background of the text box. This positions the background text box vertically (i.e., on the Y axis).</li>
+            <li><b>Preview:</b> 	Displays the appearance of the background as you make selections in the tab.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>UI</h3>
+        <h4>Text Box Properties Dialog-Size and Position</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--TextBoxPropertiesSizeandPosition--Dialog.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Controls</h4>
+        <p>&#160;</p>
+        <p><b>Float:</b> Use this field to specify where to place the text box on the page.</p>
+        <ul style="list-style-type: square;">
+            <li><b>None:</b> Does not place the multimedia in a specific location.</li>
+            <li><b>Left:</b> Positions the text box on the left side of the page frame, allowing you to type text to the right of the text box.</li>
+            <li><b>Right:</b> Positions the text box on the right side of the page frame, allowing you to type text to the left of the text box.</li>
+            <li><b>Center:</b> of Column Positions the text box in the center of the column on the page.</li>
+            <li><b>Outside Left Margin:</b> Positions the text box beyond the left margin of the topic text.</li>
+            <li><b>Outside Right Margin:</b> Positions the text box beyond the right margin of the topic text.</li>
+            <li><b>Outside Frame Positions:</b> the text box outside of the page frame.</li>
+            <li><b>Outside Frame, Top Align:</b> Positions the text box outside of the page frame, as well as aligning it with the top of the frame.</li>
+            <li><b>Left of Frame:</b> Positions the text box to the left of the page frame.</li>
+            <li><b>Right of Frame:</b> Positions the text box to the right of the page frame.</li>
+            <li><b>Center of Frame:</b> Positions the text box both vertically and horizontally in the middle of the page frame.</li>
+            <li><b>Clear:</b> Use this field to position a text box so that it is "clear" of an adjacent text box. For example, let's say you have already inserted a text box and applied the float left property to it. If you then insert another text box immediately after the first text box, you want to make sure that the second text box doesn't rest next to the first text box. Instead, you want the second text box to be placed completely below the first text box. Therefore, you can apply a clear property to the second text box.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>None:</b> Does not apply the clear property to the text box.</li>
+            <li><b>Left Side:</b> The text box will be placed below the bottom outer edge of a previous text box that is floating left.</li>
+            <li><b>Right Side:</b> The text box will be placed below the bottom outer edge of a previous text box that is floating right.</li>
+            <li><b>Both Sides:</b> The text box will be placed below the a previous text box, whether it is floating left or right.</li>
+        </ul>
+        <p class="note">Notes: Most the outside margin or frame properties apply only to print output. See Flare Help for more details.</p>
+        <p><b>Vertical Alignment:</b> Use this field to adjust where the item is positioned vertically.</p>
+        <ul style="list-style-type: square;">
+            <li><b>Baseline:</b> The baseline of the box will be aligned with the baseline of the parent box.</li>
+            <li><b>Text Top:</b> The top of the box will be aligned with the top of the parent element's font.</li>
+            <li><b>Text Bottom:</b> The bottom of the box will be aligned with the bottom of the line box.</li>
+            <li><b>Top:</b> The top of the box will be aligned with the top of the line box.</li>
+            <li><b>Middle:</b> The vertical midpoint of the box will be aligned with the baseline of the parent box, plus half the x-height of the parent.</li>
+            <li>
+                <p><b>Bottom:</b> The bottom of the box will be aligned with the bottom of the line box.</p>
+            </li>
+        </ul>
+        <hr>
+        </hr>
+        <h4>Text Box Properties Dialog-Hyphenation</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--TextBoxPropertiesHyphenation--Dialog.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <h4>Controls:</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enable Hyphenation:</span> Select whether you always or never want words to be hyphenated at the end of lines.</li>
+            <li><span class="bold">Length of shortest word…</span> Enter the minimum number of characters that a word must have in order to be hyphenated.</li>
+            <li><span class="bold">The minimum number of characters remaining…</span> Enter the minimum number of characters that must remain on the initial line when a word is hyphenated. For example, if you enter 4 in this field, a word that normally could be hyphenated after two characters would not be broken at that point. Instead, it would not be broken until at least four letters make an appearance on the first line.</li>
+            <li><span class="bold">The minimum number of characters carried over…</span> Enter the minimum number of characters that must be carried over to the second line when a word is hyphenated. For example, if you enter 3 in this field, a hyphenated word must have at least three characters on the second line after it has been broken.</li>
+            <li><span class="bold">The maximum number of adjacent lines…</span> Enter the maximum number of lines next to each other that are allowed to end with a hyphenated word. For example, if you do not mind seeing three consecutive lines ending in a hyphenated word, but you want to avoid seeing a fourth adjacent line with a hyphenated word, you can enter 3 in this field.</li>
+        </ul>
+        <h4>Text Box Borders&amp;Margins Dialog</h4>
+        <p><span class="bold">Borders  tab:</span> You can use this tab to set borders, margins, or padding for the text box.</p>
+        <p>&#160;</p>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--TextBoxPropertiesBorders&amp;Margins--Dialog.png" class="properties" style="width: 239px;height: 173px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">&#160;</p>
+        <h4>UI&#160;Borders  Controls:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Borders &amp; Margins usage diagram.png" style="width: 348px;height: 254px;">
+            </img>
+        </p>
+        <ul style="list-style-type: square;">&#160;<li><b>Margin:</b> Margin is the distance from the edge of the document to the edge of the content. 	<ul style="list-style-type: square;"><li>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the margins around the text box. If you click the down arrow to the right of all the fields, the settings will be applied to all of margin fields. When you click that down arrow, a small popup displays. Use the lower-left area of the popup to enter a number for the amount of margin. Use the lower-right area to select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered. When you are finished, click OK in the small popup.</li></ul></li><li><b>Border:</b> Border is a line drawn around the content.<ul style="list-style-type: square;"><li style="font-weight: bold;"><span style="font-weight: normal;">Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the text box border. If you click the down arrow to the right of all the fields, the settings will be applied to all of border fields. When you click that down arrow or in one of the individual fields, a small popup displays. Use the lower-left area of the popup to enter a number for the thickness of the border. Use the lower-middle area to select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered. Use the upper-right area to select a color for the border. Use the lower-right area to select a line type (e.g., solid, double, dashed) for the border. When you are finished, click OK in the small popup.</span></li></ul></li></ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold" style="font-weight: normal;"><span class="bold">Border Radius: </span>Border radius creates a rounded border. &#160;The default value is 0. The greater the number, the more curve that is applied.</p>
+                <ul style="list-style-type: square;">
+                    <li><span style="font-weight: normal;">Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the text box border radius. If you click the down arrow to the right of all the fields, the settings will be applied to all of border fields. When you click that down arrow or in one of the individual fields, a small popup displays. This popup has two halves. you can complete only the left side of the popup if you like. This will create a curve that is equal horizontally and vertically. If you want a border to have more of a curve either horizontally or vertically, you can complete the fields in the right half of the popup as well, so that you have two values (e.g., 10px 15px) instead of one.</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><b>Padding:</b>Adds extra space between an text box's border and the text box itself.<ul style="list-style-type: square;"><li>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the padding in the text box. In the left side of the field, enter a number for the amount of padding. In the right side of the field, select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered. If you click the down arrow to the right of all the fields, the settings will be applied to all of padding fields. When you click that down arrow, a small popup displays. Use the lower-left area of the popup to enter a number for the amount of padding. Use the lower-right area to select a unit of measurement. When you are finished, click OK in the small popup.</li></ul></li>
+            <li><b>Preview:</b>Displays a preview of how a text box will look as you specify settings.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Images/DropDownMenu.png" style="border-left-style: solid;border-left-width: 2px;border-left-color: #000000;border-right-style: solid;border-right-width: 2px;border-right-color: #000000;border-top-style: solid;border-top-width: 2px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #000000;width: 23px;height: 21px;" />: sets the top, bottom, left, right all at the same time with the same number.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test:</b> test using the drop down setting selection as well as setting each area manually one at a time and all together. Some combinations may cause a problem. Don't just use the drop down and think that the rest work.</p>
+        <p class="note">Note: Different browsers may treat margin and padding settings differently. For example, Internet Explorer 8 and Firefox honor padding settings more than they honor margin settings. If you were to set a left margin at, say, 1 inch, Internet Explorer 7 would show it that way. However, in order to get the same results in Internet Explorer 8 or Firefox, you would also need to set the left padding at 1 inch.</p>
+        <h4>Backgrounds</h4>
+        <li><span class="bold">Background tab:</span> You can use this tab to add background settings (e.g., color, for the text box.</li>
+        <li>&#160;</li>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Text Boxes/UI--TextBoxPropertiesBackground--Dialog.png" class="properties" style="width: 257px;height: 191px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>UI&#160;Backgrounds Control</h4>
+        <ul style="list-style-type: square;">
+            <li><b>Color:</b> Sets the color of the background. In the Color field, click the down arrow and select a color from the popup. For advanced color options, select More Colors and use the fields in the Color Picker dialog.</li>
+            <li><b>Image:</b> Choose an image for the background. Next to the image field click the drop down menu to choose a recently added image that is already in the project or click the Browse button to insert a new image.</li>
+            <li><b>Repeat:</b> repeats a background image.</li>
+            <li><b>X:</b> 	Select or enter the position (in pixels) of the background of the text box. This positions the background of the text box horizontally (i.e., on the X axis).</li>
+            <li><b>Y:</b> 	Select or enter the position (in pixels) of the background of the text box. This positions the background text box vertically (i.e., on the Y axis).</li>
+            <li><b>Preview:</b> 	Displays the appearance of the background as you make selections in the tab.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Text Box Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test to drag and drop text, images, etc. into and out of the text box.</li>
+                <li>Test to drag and drop text box from content explorer to WYSIWYG, make sure all of the links are updated</li>
+                <li>Test to cut/copy/paste text box across folders in content explorer, WYSIWYG, make sure all of the links are updated</li>
+                <li>Verify that text box and text box with Classes are rendered correctly in tables/cells when the table/cell is resized</li>
+                <li>Make sure TextBoxes are maintained if importing from FrameMaker and Word docs.</li>
+                <li>Make sure TextBoxes are exported correctly to all outputs using the options listed.</li>
+            </ul>
+        </div>
+    </body>
+</html>

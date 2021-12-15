@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7695" MadCap:lastWidth="437" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Zip Project/Zip and Email Project/Unzip Project - UI</h2>
+        <h3>Zipping a Project</h3>
+        <p>Zip a project and save it locally:</p>
+        <p><span class="bold">!File |&#160;Zip |&#160;Zip Project…</span> - Invokes the <span class="UI">Create Package</span> dialog for the tool strip </p>
+        <p style="font-weight: normal;"><b>!Project | Save Group | Zip Project</b> Invokesthe <span class="UI">Create Package</span> dialog for the Ribbon</p>
+        <p>&#160;</p>
+        <p>Zip and e-mail a project:</p>
+        <p><span class="bold">!File |&#160;Zip |&#160;Zip and Email Project…</span> - Immediately initiates the packaging process (<span class="UI">Creating Package</span> dialog), followed by opening an outgoing e-mail message with the *.flprjzip file attached and the name of the file in the e-mail's Subject field.</p>
+        <h4>Test Cases</h4>
+        <p>If any files are unsaved, verify that Flare prompt you to save changes before zipping a project.</p>
+        <p>&#160;</p>
+        <p>An attempt to Zip a project on a system without .NET 3 will produce:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/ZipProject--DotNet3Alert.png" />
+        </p>
+        <p>&#160;</p>
+        <p>An attempt to Zip and Email a project on a system without .NET&#160;3 will produce:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/ZipAndEmailProject--DotNet3Alert.png" />
+        </p>
+        <h3>Create Package - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/UI--CreatePackage.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Source Project: </span>Displays the name and path of the current project to be zipped.</li>
+            <li><span class="bold">Package File: </span>Displays and lets you edit the path and filename to which the *.flprjzip file will be save.</li>
+            <li><span class="bold">Browse…:&#160;</span>Allows user to browse for a different location to which the *.flprjzip file will be saved.</li>
+            <li><span class="bold">Create:&#160;</span>Closes the dialog and begins the packaging process. This will be indicated by the <span class="UI">Creating Package</span> dialog.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not package the project.</li>
+        </ul>
+        <h3>Creating Package… - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/UI--CreatingPackage.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Messages (tab): </span>Displays messages throughout the packaging process.</li>
+            <li><span class="bold">Errors (tab): </span>Displays errors during the packaging process (if any).</li>
+            <li><span class="bold">Save Log: </span>If the zipping process produces errors, use the Save Log button to save a log file to the project.</li>
+            <li><span class="bold">Cancel: </span>Lets you cancel the packaging process.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>After the project is successfully packed, nothing will happen unless you selected Zip and Email. In that case, an outgoing e-mail message should appear at this point with the *.flprjzip file already attached and the name of the file in the Subject field.</p>
+        <h3>Unzipping a Project</h3>
+        <p>To unzip a project, simply open a *.flprjzip file either by:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">!File |&#160;Open</span> and then browse for a *.flprjzip file</li>
+            <li>Double-click any *.flprjzip file on disk</li>
+        </ul>
+        <h3>Unpack - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/UI--Unpack.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Package to Unpack: </span>Displays the name and path of the zipped project file.</li>
+            <li><span class="bold">Project Name: </span>Displays and lets you edit the filename of the new Flare project.</li>
+            <li><span class="bold">Unpack to Folder: </span>Displays and lets you edit the folder path to which the new Flare project will be saved.</li>
+            <li><span class="bold">Browse…:&#160;</span>Allows user to browse for a different location to which the new Flare project will be saved.</li>
+            <li><span class="bold">Unpack:&#160;</span>Closes the dialog and begins the unpackaging process. This will be indicated by the <span class="UI">Unpacking</span> dialog.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not unpack the project.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Unpacking… - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/UI--Unpacking.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Messages (tab): </span>Displays messages throughout the packaging process.</li>
+            <li><span class="bold">Errors (tab): </span>Displays errors during the packaging process (if any).</li>
+            <li><span class="bold">Save Log: </span>If the zipping process produces errors, use the Save Log button to save a log file to the project.</li>
+            <li><span class="bold">Cancel: </span>Lets you cancel the unpacking process.</li>
+        </ul>
+        <hr />
+        <p>After the project is successfully unpacked, the following prompt appears:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Zip Project/UI--UnpackSuccessful.png" class="left" />
+        </p>
+        <div style="margin-left: 210pt;">
+            <p class="bold">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Yes:&#160;</span>Opens the unpacked project </li>
+                <li><span class="bold">No:&#160;</span>Verify that clicking No does not open the project</li>
+            </ul>
+        </div>
+    </body>
+</html>

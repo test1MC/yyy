@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5354" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[MenuItems.HelpMenu-VideoTutorials] " MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Matthew,Product.Analyzer">
+    <head>
+    </head>
+    <body>
+        <h2>Menus - UI</h2>
+        <p>For the purposes of this test plan, verify all menu items function as they should and perform the Menu Test Cases for each menu. All menu items will be tested in more detail in the test plans of the modules which they support.</p>
+        <h3>File Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">File</span> menu</li>
+            <li>Press <span class="bold">[ALT] + F</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Analyzer/Menus/Menu--FileMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 200pt;">
+            <p class="bold">File Menu Items (Tooltips in parentheses)</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Open (Open File): </span>Invokes an <span class="UI">Open</span> dialog which lets you browse for appropriate file types to open in the application</li>
+                <li><span class="bold">Reload (Reload the file): </span>Returns an open file to its previous state, discarding any unsaved changes if you instruct it to.</li>
+                <li><span class="bold">StartUp File… (Set/reset the StartUp file) : </span>Invokes the <span class="UI">Startup File</span> dialog which lets you set the file that should open each time the application opens</li>
+                <li><span class="bold">Close (Close File): </span>Closes the current file</li>
+                <li><span class="bold">Close Project (Close project): </span>Closes the current project, but the application itself does not close.</li>
+                <li>Analyzer Summary (Open the Analyzer Summary Window):</li>
+                <li>Project Properties… (Runs the Project Properties dialog):</li>
+                <li><span class="bold">Save (Save File): </span>Saves the current file</li>
+                <li><span class="bold">Save As (Save As): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new filename, and opens the new file in place of the current file.</li>
+                <li><span class="bold">Save To (Save To): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new name but does not open the new file.</li>
+                <li><span class="bold">Save All (Save All): </span>Saves all open documents</li>
+                <li>
+                    <p><span class="bold">Backups: </span>Invokes the Backups sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--BackupsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 280px;">
+                        <li><span class="bold">Send Copy to the "Backups Folder" (Copy the file to the Backups Folder): </span>Creates a temporary copy of the file that is open and active in the interface in the Backups folder.</li>
+                        <li><span class="bold">Clear the "Backups Folder"… (Delete all files in the Backups Folder): </span>Removes all temporary backup files from the Backups folder.</li>
+                        <li><span class="bold">Backups (Open the Backups Folder window): </span>Opens the <span class="UI">Backups</span> pane</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu</li>
+                <li><span class="bold">Send To: </span>Invokes a submenu, which lets you open the active file in another application, attach it to an email, or open the Windows folder where it is stored</li>
+                <li><span class="bold">Print (Print): </span>Prints the current file</li>
+                <li><span class="bold">Recent Projects: </span>Invokes the Recent Projects sub-menu which lets you select a recently opened project to open again or manage the list of projects that are considered "recent"</li>
+                <li><span class="bold">Exit (Exit the application): </span>Exits the application</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Edit Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Edit</span> menu</li>
+            <li>Press <span class="bold">[ALT] + E</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--EditMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 200pt;">
+            <p class="bold">Edit Menu Items (Tooltips in parentheses)</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Undo (Undo): </span>Undoes the most recent action</li>
+                <li><span class="bold">Redo (Redo): </span>Redoes the action that was most recently undone</li>
+                <li><span class="bold">Cut (Cut): </span>Cuts the current selection to the clipboard</li>
+                <li><span class="bold">Copy (Copy): </span>Copies the current selection to the clipboard</li>
+                <li><span class="bold">Paste (Paste): </span>Paste the contents from the clipboard</li>
+                <li><span class="bold">Delete (Delete): </span>Delete the current selection</li>
+                <li><span class="bold">Select All (Select All): </span>Selects all</li>
+                <li>
+                    <p><span class="bold">Find and Replace: </span>Invokes the Find and Replace sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Edit--FindAndReplaceMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 250px;">
+                        <li><span class="bold">Find and Replace: </span>Opens the <span class="UI">Find and Replace</span> window pane</li>
+                        <li><span class="bold">Find in Files: </span>Opens the <span class="UI">Find in Files</span> window pane</li>
+                        <li><span class="bold">Load Find Selection: </span>Copies the selected text in the editor to the "Find what" field in the <span class="UI">Find and Replace</span> window pane or the <span class="UI">Find in Files</span> window pane.</li>
+                        <li><span class="bold">Find Next: </span>Initiates the search for the next instance of the search term.</li>
+                        <li><span class="bold">Find Results 1: </span>Opens the <span class="UI">Find Results 1</span> window pane</li>
+                        <li><span class="bold">Find Results 2: </span>Opens the <span class="UI">Find Results 2</span> window pane</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">IntelliSense: </span>Invokes the IntelliSense sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Edit--IntelliSenseMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 250px;">
+                        <li><span class="bold">List Matches (List the current matches): </span>Select this option to display existing words that match the text in relation to where the cursor is placed in the content.</li>
+                        <li><span class="bold">List Frequent Phrases (List the current frequent phrases): </span>Select this option to display phrases that you have already typed elsewhere in your project and that match the text in relation to where the cursor is placed in the content.</li>
+                        <li><span class="bold">List Variables (List variables): </span>Select this option to display variables that you have already added in your project.</li>
+                        <li><span class="bold">IntelliSense Properties… (Display the IntelliSense Properties dialog): </span>Invokes the <span class="UI">IntelliSense </span>dialog, which is used to modify the settings for IntelliSense</li>
+                        <li><span class="bold">Enable IntelliSense (Enable/disable IntelliSense): </span>Lets you turn IntelliSense on or off.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Properties (Run properties dialog for this item): </span>Invokes the <span class="UI">Properties</span> dialog for the selected item</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>View Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">View</span> menu</li>
+            <li>Press <span class="bold">[ALT] + V</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Analyzer/Menus/Menu--ViewMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">View Menu Items (Tooltips in parentheses)</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Toolbars: </span>Invokes the Toolbars sub-menu</li>
+                <li>Statistics:</li>
+                <li>Reports:</li>
+                <li>Links:&#160;Invokes the Links sub-menu</li>
+                <li>Suggestions:&#160;Invokes the Suggestions sub-menu</li>
+                <li>Undefined Items:&#160;Invokes the Undefined Items sub-menu</li>
+                <li>Used Items:&#160;Invokes the Used Items sub-menu</li>
+                <li>More Windows:&#160;Invokes the More Windows sub-menu</li>
+                <li><span class="bold">Topics for Selected:&#160;</span>Opens the <span class="UI">Topics for Selected</span> pane</li>
+                <li><span class="bold">Backups (Open the Backups Folder Window): </span>Opens the <span class="UI">Backups</span> pane</li>
+                <li><span class="bold">Start Page (Open the Start Page): </span>Opens the <span class="UI">Start Page</span></li>
+                <li><span class="bold">Messages (Open the Messages window): </span>Opens the <span class="UI">Messages</span> pane</li>
+                <li><span class="bold">Pending Check-Ins (Open Pending Check-Ins window): </span>Opens the <span class="UI">Pending Check-Ins</span> Window</li>
+                <li><span class="bold">Instant Messages (Open the Instant Messages window): </span>Opens the <span class="UI">Instant Messages</span> window</li>
+                <li><span class="bold">Status Bar (Hide/show the Status Bar): </span>Hides or shows the <span class="UI">Status Bar</span></li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Tools Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Tools</span> menu</li>
+            <li>Press <span class="bold">[ALT] + T</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Analyzer/Menus/Menu--ToolsMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">Tools Menu Items (Tooltips in parentheses)</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Update Cross-References… (Update Cross-References in the current document): </span>Updates Cross-References in the current document if any require updating</li>
+                <li><span class="bold">Edit Master Stylesheet (Edit the associated master stylesheet document): </span>Opens the Master Stylesheet in the <span class="UI">Stylesheet Editor</span></li>
+                <li><span class="bold">Stylesheet Links (Manage links to stylesheets): </span>Invokes the <span class="UI">Stylesheet Links</span> dialog, unless a Master Stylesheet is used by the project or primary target, in which case a message indicating as much will appear</li>
+                <li>
+                    <p><span class="bold">Index: </span>Invokes the Index submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--IndexMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: circle;margin-left: 310px;">
+                        <li><span class="bold">Index Window (Open the Index Window): </span>Opens the <span class="UI">Index </span>window</li>
+                        <li>Insert "[selection]" as Index Keyword:</li>
+                        <li><span class="bold">Index Entry Mode (Toggle Index Entry Mode): </span>Enables or disables Index Entry Mode</li>
+                        <li><span class="bold">Auto-complete Index Entries (Auto-complete Index and Concept entries in the Index and Concept windows):&#160;</span>Enables or disables auto-complete of index and concept entries in the <span class="UI">Index</span> and <span class="UI">Concepts</span> panes</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Concepts: </span>Invokes the Concepts submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--ConceptsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: circle;margin-left: 260px;">
+                        <li><span class="bold">Concept Window (Open the Concept Window): </span>Opens the <span class="UI">Concepts</span> window</li>
+                        <li><span class="bold">Concept Entry Mode (Toggle Concept Entry Mode): </span>Enables or disables Concept Entry Mode</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Glossary Terms (Open the Glossary Terms Window): </span>Opens the <span class="UI">Glossary Terms</span> pane</li>
+                <li><span class="bold">Page Frame Contents Pane (Open the Page Frame Contents Entry Window): </span>Opens the <span class="UI">Page Frame Contents</span> pane</li>
+                <li><span class="bold">Edit Footnote Pane (Open the Edit Footnote pane): </span>Opens the <span class="UI">Edit Footnote</span> pane</li>
+                <li><span class="bold">Footnotes (Open the Footnotes window): </span>Opens the <span class="UI">Footnotes</span> pane</li>
+                <li><span class="bold">Edit Annotation Pane (Open the Edit Annotation pane): </span>Opens the <span class="UI">Edit Annotation</span> pane</li>
+                <li><span class="bold">Annotations Pane (Open the Annotations Pane): </span>Opens the <span class="UI">Annotations</span> pane</li>
+                <li><span class="bold">Spell Check While Typing (Spell check while typing): </span>Enables or disables spell check while typing</li>
+                <li><span class="bold">Spell Check Window (Open the Spell Check window): </span>Opens the <span class="UI">Spell Check</span> window</li>
+                <li><span class="bold">Ignored Words… (Edit the 'ignored words' associated with the current document): </span>Invokes the <span class="UI">Ignored Words</span> dialog for the current document</li>
+                <li><span class="bold">Options (Change Global Application Options): </span>Invokes the <span class="UI">Options</span> dialog</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h3>Window Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + W</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--WindowMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menus--WindowMenu.flsnp" />
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Help Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Help</span> menu</li>
+            <li>Press <span class="bold">[ALT] + H</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Analyzer/Menus/Menu--HelpMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menus--HelpMenu.flsnp" />
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

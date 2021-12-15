@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2763" MadCap:lastWidth="731" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Templates - Using Templates</h2>
+        <h3>Using Templates to Add Files to a Project</h3>
+        <p>This UI will allow users to browse all file templates in any folder set up to be included as a 'template folder'. Our "Factory templates" folder will be included by default.</p>
+        <ul class="checkbox">
+            <li>Install Path\Flare.app\Resources\English\Templates</li>
+            <li>Test that if the default language for our application is set that the templates are pulled from the correct locations:<ul style="list-style-type: circle;"><li><b>French:</b> Install Path\Flare.app\Resources\French\Templates</li><li><b>German:</b> Install Path\Flare.app\Resources\German\Templates</li><li><b>Japanese:</b>Install Path\Flare.app\Resources\Japanese\Templates</li></ul></li>
+        </ul>
+        <h4>Opening the Add File dialog</h4>
+        <ul style="list-style-type: square;">
+            <li>!Project | Add {File Type}</li>
+            <li>Right-clicking in the Content Explorer or Project Organizer and selecting 'Add {File Type}'</li>
+            <li>!File |&#160;New Project | Select a project template page of the wizard.</li>
+            <li>Getting Started Wizard | New Project | Select a project template page of the wizard.</li>
+            <li>Content Explorer Toolbar | Add Topic... </li>
+        </ul>
+        <h5>UI&#160;Test Cases:</h5>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/Dialog--AddFile--Topic.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--AddFile--UIControls.flsnp" />
+        <p>&#160;</p>
+        <p><b>Every Dialog</b> has a 'Source' area with a 'New from template' and a 'New from existing' option.</p>
+        <p><b>Content File Dialogs:</b> will have 'Folder' and 'File Name' fields (Topics will have additional options).</p>
+        <p><b>Project File Dialogs:</b> will have only a 'File Name' field (Target will have an additional option).</p>
+        <p>&#160;</p>
+        <h5><a name="UI&#160;Contr"></a>Misc Tests</h5>
+        <p>Verify that the Preview/Description area on the right of the UI is toggled appropriately.</p>
+        <table style="caption-side: top;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 109px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 205px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 119px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 189px;" class="TableStyle-Basic-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td style="font-weight: bold;background-color: #d3d3d3;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>!Project</p>
+                    </td>
+                    <td style="font-weight: bold;background-color: #d3d3d3;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Menu Item</p>
+                    </td>
+                    <td style="font-weight: bold;text-align: center;background-color: #d3d3d3;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview or Desc.</p>
+                    </td>
+                    <td style="font-weight: bold;background-color: #d3d3d3;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Additional Fields</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p style="text-align: right;">Content Files &gt;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Topic... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder/File Name/1st Heading/ Stylesheet/Title/Style</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Page Layout...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Master Page...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Snippet..</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Picture...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Multimedia...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Preview</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p style="text-align: right;">Import Files &gt; </p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add MS Word Import File... </p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add FrameMaker Import File...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add DITA&#160;Import File...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Flare Project Import File...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p style="text-align: right;">Stylesheets &gt; </p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Stylesheet..</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Table Style...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Folder &amp; File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p style="text-align: right;">Advanced &gt; </p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Browse sequence...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Search Filter Set...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Synonym File...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Index Link Set...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Auto-index Phrase Set</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Alias File...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Header File..</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Relationship Table...</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Topic Tag Set... </p>
+                    </td>
+                    <td style="background-color: #dcdcdc;text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p style="text-align: right;">Other Project &gt; </p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Target... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name &amp; Output Type</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Batch Target...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Glossary... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Table of Contents... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Skin... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Destination... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>`</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Condition Tag Set... </p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Add Variable Set...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Add Report File...</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>File Name</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>When creating a project from a template we should keep all targets if there are multiple ones.</p>
+        <p>Test adding templates from:</p>
+        <ul class="checkbox">
+            <li>Local systems</li>
+            <li>UNC paths</li>
+            <li>Mapped Network drives</li>
+            <li>Secondary Drives</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Test adding templates with spaces, symbols and non-standard characters  in their names.</p>
+        <p>&#160;</p>
+        <p>Test Adding templates from:</p>
+        <ul class="checkbox">
+            <li> Read-only folders</li>
+            <li>Network folders where you do not have permission to write</li>
+        </ul>
+    </body>
+</html>

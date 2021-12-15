@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="16" MadCap:lastHeight="8385" MadCap:lastWidth="815" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Termbase Editor - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>1.	Select Tools&gt; Manage Termbases…</p>
+        <p>2.	In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" /> .  The Termbase window pane opens. In the local toolbar, click Manage Termbases…</p>
+        <h3>UI</h3>
+        <h4><a name="Manage"></a>Manage Termbase Editor</h4>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--ManageTermbase--Dialogue.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>This dialog lets you work with termbases that you have added. You can perform any of the following tasks:</p>
+        <ul style="list-style-type: square;">
+            <li><b>Add terms:</b> After you add a termbase, you can add translated terms (or phrases) to it.</li>
+            <li><b>Remove termbases:</b> If you no longer need a termbase, you can remove it.</li>
+            <li><b>Rename termbases:</b> At any point, you can rename a termbase.<ul style="list-style-type: square;"><li><b>Test:</b> Selecting two or more termbases should gray this button out. User shouldn’t be able to rename multiple termbases at the time.</li></ul><p>&#160;</p></li>
+            <li><b>Edit terms:</b> You can edit the words in a termbase, which is not possible in a dictionary. Not only that, but you can also add much more detailed information about each term (e.g., source, definition, related term, context sentence, usage). That way, whenever you are using the termbase to perform translation work, you can refer to this extra information if necessary.<ul style="list-style-type: square;"><li><b>Test:</b>: Selecting two or more termbases should gray this button out. User shouldn’t be able to edit multiple termbases at the time.</li></ul><p>&#160;</p></li>
+            <li><b>Import TBX files:</b> If you have created a termbase in Lingo, you can import a TermBase eXchange (TBX) file into it.</li>
+            <li><b>Export TBX files:</b> If you have created a termbase in Lingo, you can export it to a TermBase eXchange (TBX) file.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Adding Termbases</h4>
+        <p>You can add as many termbases as you need. For example, you might use one termbase for Client A, a different termbase for Client B, and yet another for Client C. When you add a new termbase, it can be used in any of your Lingo projects.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--EnterNewTermbaseName--Dialogue.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p><b>How to add a termbase.</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Do one of the following</b>:</p>
+        <p>1. Select View&gt;Termbase. OR</p>
+        <p>2. In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" />  .</p>
+        <ol>
+            <li>The Termbase window pane opens.</li>
+            <li> In the local toolbar, click Manage Termbases.<ol><li>The Manage Termbases dialog opens.</li><li>Click Add.<ol><li> The Enter New Termbase Name dialog opens.</li><li> Type a name for the termbase</li></ol></li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Importing TBX-Basic Files</h4>
+        <p>If you have created a termbase in Lingo, you can import a TermBase eXchange (TBX) file into it. TBX is an open, XML-based standard used for exchanging structured terminological data. It has been approved as an international standard by the Localization Industry Standards Association (LISA) and the International Organization for Standardization (ISO).</p>
+        <p>One difference between a TBX file and a Translation Memory eXchange (TMX) file is that a TBX file handles multiple languages, whereas a TMX file handles only two languages.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--ImportTBX--Dialogue.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>How to import TBX files</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Do one of the following:</b>
+        </p>
+        <ol>
+            <li>Select View&gt;Termbase. OR</li>
+            <li>	In the Standard toolbar click  .<ol><li>The Termbase window pane opens.</li><li>In the local toolbar, click Manage Termbases.<ol><li>The Manage Termbases dialog opens.</li><li>	Select the termbase that you want to import the TBX file into.<ol><li>Click Import TBX-Basic…</li><li>The Import TBX dialog opens.<ol><li>Click the Browse button.</li><li>Navigate to the TBX file that you want to import and double-click it.</li><li>Click Start Import. – The TBX-Basic Progress dialog window appears.</li></ol><p><img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TBXProgress--Dialogue.png" style="width: 264px;height: 142px;" /></p></li><li>Click OK</li></ol></li></ol></li></ol></li>
+        </ol>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TBXCompleted--Dialogue.png" style="width: 565px;height: 81px;" />
+        </p>
+        <p>&#160;</p>
+        <p class="note"> Note: Lingo supports TBX-Basic files (not the "Full" version).</p>
+        <p>&#160;</p>
+        <h4>Exporting TBX-Basic Files</h4>
+        <p>If you have created a termbase in Lingo, you can export it to a TermBase eXchange (TBX) file. TBX is an open, XML-based standard used for exchanging structured terminological data. It has been approved as an international standard by the Localization Industry Standards Association (LISA) and the International Organization for Standardization (ISO). One difference between a TBX file and a Translation Memory eXchange (TMX) file is that a TBX file handles multiple languages, whereas a TMX file handles only two languages.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--ExportTBX--Dialogue.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>How to export TBX files</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Do one of the following:</b>
+        </p>
+        <ol>
+            <li>Select View&gt;Termbase. OR</li>
+            <li>In the Standard toolbar click  .<ol><li>The Termbase window pane opens.</li><li>In the local toolbar, click Manage Termbases.<ol><li>The Manage Termbases dialog opens.</li><li>Select the termbase that you want to export.</li><li>Click Export TBX.<ol><li>The Export to TBX dialog opens.</li><li>Click the Browse button.</li><li>Navigate to the folder where you want to export the file.<ol><li>In the File name field, enter a name for the new TBX file.</li><li>Click Start Export. – The TBX-Basic Progress dialog window appears.</li></ol><p><img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TBXProgress2--Dialogue.png" style="width: 392px;height: 213px;" /></p></li></ol></li></ol></li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TermbaseEditor--Toolbar.png" style="width: 518px;height: 20px;">
+            </img>
+        </p>
+        <p class="bold">Buttons (Tooltips in Parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">New Item: </span>A new row is added to the bottom of the tab and is highlighted.</li>
+            <li><b>Properties:</b> Displays properties of selected item.</li>
+            <li><span class="bold">Filter:              <![CDATA[ ]]></span>Filter for fast search in the TM. Use wild cards as necessary.</li>
+            <li><span class="bold"><a href="#Database">Segment Editor</a>(Opens the segment editor pane):</span>Opens the segment editor pane.</li>
+            <li><span class="bold"><a href="#Import">Import TMX</a>...(Import translation memory from TMX):</span>Opens Import  TMX File dialogue.&#160;*see below for more testing details</li>
+            <li><span class="bold"><a href="#Export">Export to TMX</a>...(Export translation memory to TMX):</span>Opens Export to TMX dialogue.&#160;*see below for more testing details.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Entries Tab (Click edit in the Manage Termbase Dialog)</h4>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemoryEditor--OverviewTab.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <h4>Overview Tab (Shows the number of Translations, Segments, and Languages in the currently selected Translation Memory Database.)</h4>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemoryEditor--OverviewTab.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Test cases</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Make sure the amount of Translations, Segments and Languages matches the ones under the ‘Entries’ tab.</li>
+            <li>Translate a segment and upload it. Close and re-open the Overview tab and make sure the counts were incremented correctly.</li>
+            <li>Import a TXM file containing a different language . Close and re-open the Overview tab and make sure the count increments correctly.</li>
+        </ul>
+        <h4>Adding Terms to Termbases</h4>
+        <p>After you add a termbase, you can add translated terms (or phrases) to it. You can do this through the Termbase window pane (without needing to have any files open for translation at the same time) or through the Suggestions window pane.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--AddTermtoTerbase--Dialogue.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>To add terms via the Termbase window pane, do one of the following:</b>
+        </p>
+        <ol>
+            <li>	Select View&gt;Termbase.  OR</li>
+            <li>In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" />  .<ol><li>The Termbase window pane opens.<ol><li>In the local toolbar, click Manage Termbases.</li><li>The Manage Termbases dialog opens.<ol><li>Select the termbase that you want to work with.</li><li>Click Edit.</li><li>The Termbase Editor opens.<ol><li>	Select the Search tab.</li><li>In the local toolbar, click <img src="../../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" /> .</li><li>The Add Term to Termbase dialog opens.<ol><li>	In the top drop-down list, make sure your source language is selected.</li><li>	In the field below, type the source term or phrase.</li><li>In the next drop-down list, make sure your target language is selected.</li><li>In the field below, type the translated term or phrase.</li><li>(Optional) If you want to add more detailed information about the term (e.g., source, definition, related term, context sentence, usage), click <a href="#Concept">Advanced</a>.</li></ol></li></ol></li></ol></li></ol></li></ol></li>
+        </ol>
+        <p>:<b>Adding terms via the Suggestions pane</b></p>
+        <ol>
+            <li>Open a file.</li>
+            <li>In the editor that opens, select a segment of text.</li>
+            <li>	Do one of the following:<ol><li>Press CTRL+G on your keyboard. OR</li><li>Select View&gt;Suggestions.</li><li>The <a href="../../Suggestions Pane/Suggestions Pane - UI.htm">Suggestions</a> window pane opens.</li></ol></li>
+        </ol>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggestions--Dialogue.png" style="width: 611px;height: 133px;" />
+        </p>
+        <p>&#160;</p>
+        <ol>
+            <li>In the Suggestions window pane, highlight the term you want to add to the termbase. You can highlight the term in the Source section, as well as in the Translation section.</li>
+            <li>In the local toolbar, click Add New Term.</li>
+            <li>The Add Term to Termbase dialog opens. The terms that you highlighted are also highlighted in the corresponding fields in this dialog.(Optional) If you want to add more detailed information about the term (e.g., source, definition, related term, context sentence, usage), click Advanced.</li>
+        </ol>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--AddTermtoTerbase2--Dialogue.png" style="mc-float: frame-center;padding-left: 300px;width: 398px;height: 274px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Multi-Term selection:</b>
+        </p>
+        <p>Holding Control while highlighting words or phrases in a BoxView (particularly the Suggestions Pane in Lingo) create multiword selections, like in Word.  Unlike Word, the subsequent selected areas have different colors, in order to indicate pairing between source and target language phrases.</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ol>
+            <li>Select a word or phrase in the Suggestions pane Source box.  Hold Control and select another word in the same box.  The second area should also become highlighted, but in a different color.  Repeat as often as desired.</li>
+            <li>Translate the segment and highlight the corresponding terms in the target language box, in the same order.</li>
+            <li>Click the “Add New Term…” button.  Notice the highlighting is preserved in the dialog that pops up.</li>
+            <li>Click OK.  Open the Termbase in the Termbase editor and verify that all the terms that were highlighted are in the Termbase, with the appropriate context phrase.</li>
+            <li>It is also possible to do all the highlighting work in the Add Multiple Terms dialog itself, instead of in the Suggestions pane.<ol><li>The colors should become lighter when the Suggestions pane or Lingo loses focus.</li><li>Unbalanced numbers of source or target terms should be ignored silently (e.g., 3 highlights on the source side vs. 6 on the target, only the first three valid pairs will be added).</li></ol></li>
+        </ol>
+        <hr />
+        <p><b>Editing Termbases</b>
+        </p>
+        <p>You can edit the words in a termbase, which is not possible in a dictionary. Not only that, but you can also add much more detailed information about each term (e.g., source, definition, related term, context sentence, usage) click <a href="#Concept">Advanced</a>. That way, whenever you are using the termbase to perform translation work, you can refer to this extra information if necessary.</p>
+        <p>&#160;</p>
+        <p><b>How to edit a termbase.</b>
+        </p>
+        <p>Do one of the following:</p>
+        <ol>
+            <li>Select View&gt;Termbase. OR</li>
+            <li>	In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" />   .<ol><li>The Termbase window pane opens.</li><li>In the local toolbar, click Manage Termbases.<ol><li>The Manage Termbases dialog opens.</li><li>Select the termbase that you want to work with.<ol><li>Click Edit.</li><li>The Termbase Editor opens.<ol><li>Select the Search tab.</li><li>(Optional) You can use the filter field in the local toolbar at the top to quickly find a particular term. Simply type the term you want to find and press Enter. You can also use wildcards (asterisks) in your search.<ol><li>EXAMPLE: If you want to find the term "Delete," you can enter the following:</li><li>All terms that start with "Dele" will be found. Each time you type something in the filter field, it will be saved in the drop-down for future searches.</li><li>	Double-click on the term that you want to edit.<ol><li>The Edit Termbase Term dialog opens.</li><li>Using the fields in this dialog, you can change the text for either the source or target language.</li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <hr />
+        <p><b>Insert Terms from Termbase:</b>
+        </p>
+        <p>&#160;</p>
+        <p>After you create a termbase and add terms to it, you can insert those terms into your translation content. You can do this by highlighting the word you want to replace and then double-clicking the translated term in the Termbase window pane.</p>
+        <p>&#160;</p>
+        <p><b>How to insert terms from a termbase:</b>
+        </p>
+        <ol>
+            <li>Make sure you have created a termbase and added terms to it.</li>
+            <li>Do one of the following:<ol><li>Select View&gt;Termbase. OR</li><li>In the Standard toolbar click   .</li><li>The Termbase window pane opens.<ol><li>Open an editor to translate content. You can be working in visual or grid mode.</li><li>Highlight a word or a segment that you want to translate.<ol><li>If a translation of the word is found in a termbase, it is shown in the Termbase window pane.<ol><li>Note: In addition, if you have the Suggestions window pane open and highlight a word in it, the Termbase window pane displays its translation (if it exists in the termbase).</li></ol></li><li>In the Termbase window pane, double-click the translated term.<ol><li>The translated term replaces the non-translated word.</li></ol></li></ol></li></ol></li></ol></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2316" MadCap:lastWidth="886" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Suggestions Pane - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>Do one of the following:</p>
+        <p>•	Select View&gt; Suggestions, Ctrl + G</p>
+        <p>OR</p>
+        <p>•	In the Standard toolbar, click  <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Button--OpenSuggestionsWindowsPane.png" />.</p>
+        <h3>UI</h3>
+        <h4>Suggestions Window Pane. Default View (Docked at the bottom of the screen)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggestions--Dialogue.png" style="width: 642px;height: 139px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggestions--Dialogue.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggestions--Toolbar.png" />
+        </p>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Insert Translation:</b> 	Click this button to replace the selected content with the suggested translation.</li>
+            <li><b>Tags&gt;Copy:</b>It lets you copy the specified markup tag from the source segment into the editing              window.</li>
+            <li><b>Insert Translation:</b>Opens the 'Add Term to Termbase' dialog window</li>
+            <li>
+                <p><b>Toggle Show Space:</b> <![CDATA[ ]]>Turns paragraph and space markers on and off. When you turn this feature on, you can see markers that show where paragraphs end and where space exists before and after content.</p>
+                <p>&#160;</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggestions--Dialogue.png" style="width: 642px;height: 139px;" />
+                </p>
+            </li>&#160;</ul>
+        <p><b>Columns:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Source:</b> 	The area in the upper-left part of the window pane displays the text in the source language.</li>
+            <li>
+                <p><b>Translation:</b> [Text area] 	The area in the lower-left part of the window pane displays the text in the target language (if you have translated it). You can click in this area and type translated text directly. When you click anywhere out of the Suggestions window pane, a message displays, asking if you want to accept your changes as the translation.</p>
+                <p><b>Suggestions Section:</b>
+                </p>
+                <ul style="list-style-type: square;">
+                    <li><b>%Match:</b> 	Displays a numerical ranking for the match. For example, if "100" is displayed, the content matches 100%; if "85" is displayed; the content matches 85%; and so on.</li>
+                    <li><b>Source:</b>	Displays the word(s) in the source language.</li>
+                    <li><b>Translation:</b> 	Displays the translated word(s) in the target language.</li>
+                </ul>
+            </li>
+        </ul>
+        <p><b>Test:</b> Make sure you can re-arrange the tags around inside the ‘Translation’ area by dragging/dropping them</p>
+        <p>&#160;</p>
+        <p><b>How to use translation suggestions</b>
+        </p>
+        <p>The following steps can be used in grid mode only. If you are translating a content file such as a topic or snippet, make sure you first switch from visual mode to grid mode if necessary (CTRL+M).</p>
+        <ol>
+            <li>Open the file you want to translate.</li>
+            <li>Do one of the following:<ol><li>•	Press ALT+S on your keyboard or...</li><li>•	Select Translate&gt;Suggest.</li><li>The file is scanned against the TM database for matching suggestions.<ol><li>If exact or partial matches are found, a message indicates this. In addition, the Suggestion Info cells are populated with indications of matches. If an exact match is found, the cell has a green background with the phrase "Exact Match." If a partial match is found, the cell has a red background with percent match shown (e.g., "75% Match").</li><li>If no matches are found, a message indicates this as well.</li></ol></li></ol></li>
+            <li>If exact matches are found and you want to use all of those translations, click Yes in the message. The translations replace the source text on the segments that have exact matches. However, for partial matches, you still need to insert the translation manually or provide a new one.</li>
+            <li>	Press CTRL+S or click  to save your work.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><b>Insert Top Matches dialog window:</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--InsertTopMatches--Dialogue.png" style="width: 271px;height: 96px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Yes</b>- Will insert the 100% matches automatically</p>
+        <p><b>No</b>- Closes dialog and ignores suggestions</p>
+        <p>&#160;</p>
+        <p>This is the WYSIWYG screen shot of Partial and 100% matches while in Grid Mode:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Suggest/UI--Suggest--Matches.png" style="width: 389px;height: 307px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1880" MadCap:lastWidth="1361" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Topic Toolbar - Output</h2>
+        <ul>
+            <li>The Topic Toolbar Proxies used throughout your project are converted to Topic Toolbars in the output. If you added a Topic Toolbar Proxy to a Master Page, you will need to make sure that the  Master Page is selected in the <span class="UI">Target Editor</span>. If you have added the Topic Toolbar Proxy to only certain topics in which you want the Toolbar to appear, you will not need to do any setup in the <span class="UI">Target Editor</span>.</li>
+            <li>Additionally, you may want to use the <span class="UI">Skin Editor</span> to create a customized toolbar (a default set of buttons). If you want to create a default customization of the Topic Toolbar for the entire project, you can do this in the <span class="UI">Skin Editor</span>.<ul><li> Keep in mind though, that any customizations made directly to the Toolbar Proxy in a topic or Master Page will override any customizations set up in the skin. This would include any style class applied to a Topics Toolbar Proxy where the customized set of toolbar buttons is set in the <span class="UI">Stylesheet Editor</span> (See <a href="Topic Toolbar - Styles.htm">Topic Toolbar - Styles</a>).</li></ul></li>
+        </ul>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Target Editor set up: </h4>
+        <p class="bold">Target Editor set up is only required if your Topic Toolbar Proxy is used inside a Master Page.</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Toolbar/TopicToolbar--TargetEditorSetup.png" class="properties" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>In the Advanced Tab, set the Master Page to the Master Page in which you've added the Topic Toolbar Proxy.</p>
+        <h4>Skin Editor setup: </h4>
+        <p class="bold">Skin Editor set up is only required if you want to use the Skin to define the set of buttons which appear in the toolbar throughout your project. </p>
+        <p>Alternatively, these buttons can be set using the mc-topic-toolbar-items property in the Stylesheet Editor or locally (in the topic with the Proxy). If mc-topic-toolbar-items is set in either of those locations, that setting will override anything you set here in the Skin.</p>
+        <p>Additionally, all styling of the toolbar is done in the Styles tab of the Skin. That should have been covered in the <a href="Topic Toolbar - Styles.htm">Topic Toolbar - Styles</a> test plan.</p>
+        <h5>Topic Toolbar Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/Templates - SaveAsTemplate.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Support in Web Help Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h4>Support in Web Help Air Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h4>Support in CHM Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h4>Support in DotNet Outputs: </h4>
+        <ul>
+            <li>Make sure topic toolbar shows up in topics and that the correct buttons are shown.</li>
+            <li>Verify custom buttons are shown correctly.</li>
+        </ul>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in PDF Outputs: </h4>
+        <ul>
+            <li>Topic Toolbars not supported in Print outputs.</li>
+        </ul>
+        <h4>Support in Word Outputs: </h4>
+        <ul>
+            <li>Topic Toolbars not supported in Print outputs.</li>
+        </ul>
+        <h4>Support in Frame Outputs: </h4>
+        <ul>
+            <li>Topic Toolbars not supported in Print outputs.</li>
+        </ul>
+        <h4>Support in XPS Outputs: </h4>
+        <ul>
+            <li>Topic Toolbars not supported in Print outputs.</li>
+        </ul>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <ul>
+            <li>Topic Toolbars not supported in Print outputs.</li>
+        </ul>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>Topic Toolbars are not used in DITA output. Verify that a compiler error is given indicating the toolbar will not be present in the output for every instance of a Topic Toolbar Proxy.</li>
+        </ul>
+        <h3>Compiler errors:</h3>
+        <ul>
+            <li>Compiler error for topic toolbar proxy if DITA or a Print output is used.</li>
+        </ul>
+    </body>
+</html>

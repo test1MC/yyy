@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="2003" MadCap:lastWidth="1421">
+    <head>
+    </head>
+    <body>
+        <h4>Track Changes</h4>
+        <p class="bold">Turn on Track Changes while adding and editing the element </p>
+        <p class="bold">Topic:</p>
+        <ul class="checkbox">
+            <li>Verify that adding the element and making any style or other changes is tracked correctly.</li>
+            <li>Verify that accepting the changes shows the elements correctly in output.<MadCap:snippetBlock src="Outputs.flsnp" /></li>
+            <li>Verify that rejecting the changes removes those changes from the <span class="UI">XML Editor</span><ul class="checkbox"><li> Removes any markup associated with that change (MadCap Change Data) </li><li>The elements do not appear in the outputs:<MadCap:snippetBlock src="Outputs.flsnp" /></li></ul></li>
+            <li>Verify that right clicking on the element that was added with track changes on has an option to accept or reject that change.<ul><li>Verify that right clicking the span bar of that elements also has the option of accepting or rejecting that change.</li><li>Verify that the option to accept or reject is present on a misspelled word</li></ul></li>
+            <li>Verify that the element does not appear in output if it was added with track changes on but not accepted or rejected yet.<MadCap:snippetBlock src="Outputs.flsnp" /></li>
+            <li>Make sure that Accepting All/Rejecting All from the review toolbar accepts/deletes the added elements while in track changes mode.</li>
+            <li>Verify Navigate to Next Change/Previous Change selects the element.</li>
+        </ul>
+        <p class="bold">Snippet:</p>
+        <ul class="checkbox">
+            <li>Verify that adding the element and making any style or other changes is tracked correctly.</li>
+            <li>Verify that accepting the changes shows the elements correctly in output.<MadCap:snippetBlock src="Outputs.flsnp" /></li>
+            <li>Verify that rejecting the changes removes those changes from the <span class="UI">XML Editor</span><ul class="checkbox"><li> Removes any markup associated with that change (MadCap Change Data) </li><li>The elements do not appear in the outputs:<MadCap:snippetBlock src="Outputs.flsnp" /></li></ul></li>
+            <li>Verify that right clicking on the element that was added with track changes on has an option to accept or reject that change.<ul><li>Verify that right clicking the span bar of that elements also has the option of accepting or rejecting that change.</li><li>Verify that the option to accept or reject is present on a misspelled word</li></ul></li>
+            <li>Verify that the element does not appear in output if it was added with track changes on but not accepted or rejected yet.<MadCap:snippetBlock src="Outputs.flsnp" /></li>
+            <li>Make sure that Accepting All/Rejecting All from the review toolbar accepts/deletes the added elements while in track changes mode.</li>
+            <li>Verify Navigate to Next Change/Previous Change selects the element.</li>
+        </ul>
+    </body>
+</html>

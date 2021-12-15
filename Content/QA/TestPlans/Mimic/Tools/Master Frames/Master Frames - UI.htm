@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2224" MadCap:lastWidth="745" MadCap:conditionTagExpression="exclude[Mimic.MasterFramesOnly] " MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>Master Frames - UI</title>
+    </head>
+    <body>
+        <h2>Master Frames - UI</h2>
+        <p>Opening the Master Frames pane:</p>
+        <ul>
+            <li class="bold">!View |&#160;Master Frames</li>
+            <li>Click the Master Frames icon on the standard toolbar<img src="../../../../../Resources/Images/TestPlans/Mimic/Master Frames Icon.png" /></li>
+        </ul>
+        <h3>UI&#160;Test Cases:</h3>
+        <ul>
+            <li>Default location of the Master Frames pane is on the left edge of the application.<img src="../../../../../Resources/Images/TestPlans/Mimic/Master Frames Pane.png" class="right" /></li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Local Toolbar</h4>
+        <ul>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Toolbar Icons/Frames Properties.png" /> <![CDATA[ ]]><span class="bold">Frame Properties: </span> Will open the frame properties for the selected master frame (See Editing).</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/New Frame Icon.png" /> <![CDATA[ ]]><span class="bold">Insert Blank Frame: </span>Will insert a new blank frame into the master frames list.&#160;Essentially adding a new master frame to choose from when applying master frames to a movie or individual frames.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/New Frame With Bitmap.png" /> <![CDATA[ ]]><span class="bold">Insert Frame using the same background as the selected frame: </span>Inserts a new frame into the master frames list that uses the same background as the currently selected frame.<ul><li>This frames background is linked to the previous frames background.&#160;If the previous frames background changes, this frames background will change as well.</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Delete Frame.png" /> <![CDATA[ ]]><span class="bold">Remove Frame: </span>Will remove the selected frame from the master frames list.</li>
+        </ul>
+        <h4>Main Editor</h4>
+        <ul>
+            <li>The main editor contains a master frames filter on the bottom toolbar:<img src="../../../../../Resources/Images/TestPlans/Mimic/Master Frames Editor Drop Down.png" class="right" /><ul><li><span class="bold">Show All&#160;Master Frames:</span> When this is selected, all master frames that are applied to this frame will be displayed in the main editor.</li><li><span class="bold">Show Bottom Layer Master Frame:</span> When this is selected, the Master Frame that is set as the frames bottom layer will be displayed only. The frame that is set as the top layer will be hidden.</li><li><span class="bold">Show Top Layer Master Frame:</span> When this is selected, the Master Frame that is set as the frames top layer will be displayed only. The frame that is set as the bottom layer will be hidden.</li><li><span class="bold">Hide Master Frames:</span> When this is selected, the main editor will not display any master frames in the main editor.</li><li>Note: These are for editor display purposes only. The output will always show the master frames that are applied to the frame, regardless of which setting above was set.</li></ul></li>
+            <li>When focusing on a Master Frame (via clicking on one in the Master Frames pane), the main editor background will change color to a light blue. This indicates to the user that they are now looking at a Master Frame and not a frame in the movie.</li>
+        </ul>
+        <h4>Misc.</h4>
+        <ul>
+            <li>The Master Frames pane will display all the Master Frames.<ul><li>By default, a new movie will have one master frame named 'Navigation'.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li>&#160;<span class="bold">Right-Clicking</span> a frame in the Master Frames pane:<img src="../../../../../Resources/Images/TestPlans/Mimic/Right Click Master Frames Pane.png" class="right" /><ul><li><span class="bold">Copy Frame:</span>&#160;Will copy the frame to the clipboard.</li><li><span class="bold">Paste Frame:</span>&#160;Will paste the frame that is on clipboard into the master frames list.</li><li><span class="bold">Remove Frame:</span> Will remove the selected frame from the master frames list.</li><li><span class="bold">Add Frame to Library:</span> Will add the currently selected frame to the current Frames library.</li><li><span class="bold">Copy Frame Background:</span> Will copy the current frame background to the clipboard.</li><li><span class="bold">Paste Frame Background:</span> Will paste the background currently on the clipboard to the selected Master Frame.</li><li><span class="bold">Frame Properties...:</span> Will open up the Frame properties for the selected Master Frame (See editing).</li><li><span class="bold">Insert Frame:</span> Inserts a new frame into the master frames list that uses the same background as the currently selected</li><li><span class="bold">Insert Blank&#160;Frame:</span> Will insert a new blank frame into the master frames list.&#160;Essentially adding a new master frame to choose from when applying master frames to a movie or individual frames.</li><li><span class="bold">Insert PowerPoint Slide:</span> Currently will bring up the Import PowerPoint dialog. </li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li><span class="bold">Right-Clicking</span> on a Frame in the main editor:&#160;</li>
+            <ul style="list-style-type: square;">
+                <li><![CDATA[ ]]><span class="bold">Add Frame to Master Frames: </span> Will add the current frame to the Master Frames list.</li>
+                <li><span class="bold">Pick Master Frames:</span> Will bring up the Pick&#160;Master Frames dialog (See editing).</li>
+                <li><span class="bold">Remove Master Frames:</span> Will remove the master frames from the current frame. Essentially un-apply the master frame selection.</li>
+            </ul>
+            <p>&#160;</p>
+            <li><span class="bold">Right-Clicking</span> on a frame in the Frame Libraries pane:<img src="../../../../../Resources/Images/TestPlans/Mimic/Right Click Frames Master Frames.png" class="right" /><ul><li><span class="bold">Add Frame to Master Frames:</span> Will add the selected frame to the Master Frames list</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/UI - FramePaneMenu.flsnp" />
+    </body>
+</html>

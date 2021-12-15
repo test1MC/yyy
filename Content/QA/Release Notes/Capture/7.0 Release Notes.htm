@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="656" MadCap:lastWidth="845">
+    <head>
+        <link href="../../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>7.0 Release Notes</h1>
+        <h2>Features</h2>
+        <ul>
+            <li><a href="#Auto-siz">Auto-size Rectangle to fit text</a>
+            </li>
+        </ul>
+        <h2><a name="Details"></a>Details</h2>
+        <h3><a name="Auto-siz"></a>Auto-size Rectangle to fit text</h3>
+        <p>For Capture/Mimic, there is now an auto-size check box which will size the rectangle-based shape (rectangle, callouts, etc) to fit the text inside. With this option checked the user will not be able to manually size the shape, but may adjust the shape placement. This is to allow users who do automation coupled with translation, so that upon compilation of their projects in various languages, the dimensions of the shape will adjust to the caption.</p>
+        <p>&#160;</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../Resources/Images/TestPlans/Mimic/Properties/Rectangle/Rectangle Tab2.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Can you resize via mouse drag when this is enabled?</li>
+            <li>Copy/Paste images with this, does it maintain the checked state?</li>
+            <li>Variables:<ul><li>Define a new definition for the variable via Targets.&#160;Does the object resize?</li><li>Define a new definition for the variable via Flare Targets. Does the object resize?</li></ul></li>
+            <li>Orient the object in different directions, does it resize correctly when needed?</li>
+            <li>Place the object in a shape group, does it resize correctly when needed?</li>
+        </ul>
+    </body>
+</html>

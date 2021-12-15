@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="272" MadCap:lastWidth="697">
+    <body>
+        <p class="bold">Right-click menu:</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/File Tag Sets/FileTagSetEditor--RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155px;">
+            <MadCap:snippetBlock src="Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">New:&#160;</span>Adds a new item to the file.</li>
+                <li><span class="bold">Cut:</span> Cuts the selected items to the clipboard.</li>
+                <li><span class="bold">Copy:</span> Copies the selected items to the clipboard.</li>
+                <li><span class="bold">Paste:</span> Pastes the items from the clipboard.</li>
+                <li><span class="bold">Delete:&#160;</span>Deletes the selected items.</li>
+            </ul>
+        </div>
+    </body>
+</html>

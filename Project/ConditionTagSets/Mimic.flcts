@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet Comment="My set of condition tags" conditions="">
+    <ConditionTag Comment="" Name="WithMasterFrames" BackgroundColor="Red" />
+    <ConditionTag BackgroundColor="LightBlue" Name="MasterFramesOnly" Comment="" />
+    <ConditionTag BackgroundColor="#0000ff" Name="MimicOnly" Comment="" />
+    <ConditionTag BackgroundColor="LightCoral" Name="LocalFrameToolbarOnly" Comment="" />
+    <ConditionTag BackgroundColor="LightCyan" Name="StandardFrameToolbarOnly" Comment="" />
+</CatapultConditionTagSet>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Same Left: </span> Will align the selected objects to the same left (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Right: </span>&#160;Will align the selected objects to the same right (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Top: </span>Will align the selected objects to the same top(based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Bottom:</span> Will align the selected objects to the same bottom (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Width: </span> Will set the selected objects to the same width (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Height: </span>  Will set the selected objects to the same height(based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Size: </span>  Will set the selected objects to the same size (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Center: </span>  Will set the selected objects to the same width (based on the first item selected)</li>
+            <li>
+                <span class="bold">Same Middle: </span>  Will set the selected objects to the same middle (based on the first item selected)</li>
+        </ul>
+    </body>
+</html>

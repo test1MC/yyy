@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2955" MadCap:lastWidth="726" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.SynonymsFile or ProjectOrganizer--Items.Synonyms] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet or ProjectOrganizer--Items.BatchTarget or ProjectOrganizer--Items.BrowseSequence or ProjectOrganizer--Items.ConditionTagSet or ProjectOrganizer--Items.Destination or ProjectOrganizer--Items.FileTagSet or ProjectOrganizer--Items.Glossary or ProjectOrganizer--Items.Import or ProjectOrganizer--Items.RelationshipTable or ProjectOrganizer--Items.Report or ProjectOrganizer--Items.SearchFilterSet or ProjectOrganizer--Items.Skin or ProjectOrganizer--Items.Target or ProjectOrganizer--Items.TOC or ProjectOrganizer--Items.Variable] " MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Synonyms - Editor</h2>
+        <h3>Opening a Synonyms Files</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Synonyms Editor - UI Test Cases</h3>
+        <h4>Directional Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Synonyms/SynonymsEditor--DirectionalTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Directional Synonyms grid: </span>Displays and lets you create and edit&#160;directional Synonyms.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Word: </span>Enter a term that users might use instead of the term that actually occurs throughout your content.</li>
+                    <li><span class="bold">Synonym: </span>Enter the term that exists in your content that should be found when the corresponding "Word"&#160;is used as a search term</li>
+                    <li><span class="bold">Stem: </span>Enable this option to if you want Flare to accept other variations of the search term that have the same stem.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Groups Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Synonyms/SynonymsEditor--GroupsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Groups Synonyms grid: </span>Displays and lets you create and edit&#160;Synonym Groups.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Group: </span>Enter a collection of terms (synonyms) that will produce the same search results for all of the words in the group.</li>
+                    <li><span class="bold">Stem: </span>Enable this option to if you want Flare to accept other variations of the search term that have the same stem.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h3>Synonyms - General Editing Test Cases</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Deleting.flsnp" />
+        <p>Select the synonym row and press &lt;Delete&gt; on the keyboard</p>
+        <p>&#160;</p>
+        <p>(Bugs 30247 are entered to add more methods of deletion)</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Tooltips.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--ConditionalTags.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4><pre xml:space="preserve">&lt;?xml version="1.0" encoding="utf-16"?&gt;</pre><pre>&lt;MadCapSynonyms&gt;</pre><pre>&lt;Directional&gt;</pre><pre>&lt;DirectionalSynonym</pre><pre>From="car"</pre><pre>To="ferrari" /&gt;</pre><pre>&lt;DirectionalSynonym</pre><pre>From="hop"</pre><pre>To="jump"</pre><pre>Stem="true" /&gt;</pre><pre>&lt;/Directional&gt;</pre><pre>&lt;Groups&gt;</pre><pre>&lt;SynonymGroup&gt;</pre><pre>&lt;Word&gt;bicycle&lt;/Word&gt;</pre><pre>&lt;Word&gt;tricycle&lt;/Word&gt;</pre><pre>&lt;Word&gt;bike&lt;/Word&gt;</pre><pre>&lt;Word&gt;trike&lt;/Word&gt;</pre><pre>&lt;/SynonymGroup&gt;</pre><pre>&lt;SynonymGroup</pre><pre>Stem="true"&gt;</pre><pre>&lt;Word&gt;walk&lt;/Word&gt;</pre><pre>&lt;Word&gt;stroll&lt;/Word&gt;</pre><pre>&lt;Word&gt;meander&lt;/Word&gt;</pre><pre>&lt;/SynonymGroup&gt;</pre><pre>&lt;/Groups&gt;</pre><pre>&lt;/MadCapSynonyms&gt;</pre>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="813" MadCap:lastWidth="657" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>XML Editor:&#160;Print Layout - UI</h2>
+        <p>Top open the <span class="UI">XML Editor</span> in Print Layout mode, open a topic and select Print Layout from the Layout drop-down menu.</p>
+        <h3>XML&#160;Editor&#160;Test Cases</h3>
+        <h4>Local Toolbar</h4>
+        <p>The local toolbar is the same if the <span class="UI">XML&#160;Editor</span> is in Web&#160;Layout or Print Layout Mode. However, all toolbar functions should be tested in both layouts.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--UpperToolbar.png" />
+        </p>
+        <p class="bold">Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Preview.png" style="mc-tag-and-class: ;" /> (Preview compiled topic): </span>Lets you preview the topic and lets you see how the topic will look with condition tags associated with it.</li>
+            <li><span class="bold">(Select the conditional expression for viewing this topic in the XML&#160;Editor):&#160;</span>Opens the Conditional Text dialog where you can choose to include/exclude conditions from view in this topic.&#160;Does not affect the output and resets when you reopen the topic.</li>
+            <li>
+                <p><span class="bold">Layout drop-down: </span>Clicking this button lets you toggle between the Web Layout mode and the Print Layout mode. If you select the down arrow, a sub-menu lets you choose between the following options:</p>
+                <hr />
+                <p class="bold">Layout drop-down menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--LayoutDropMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 180pt;">
+                    <li><span class="bold">Web Layout: </span>Displays how the topic will look in online outputs.</li>
+                    <li><span class="bold">Print Layout: </span>This lets you see how the pages will look in print outputs with a page layout applied to it.</li>
+                    <li><span class="bold">Edit Page Layout Document: </span>This opens the page layout associated with the topic</li>
+                    <li><span class="bold">Edit Master Stylesheet: </span>This opens the style sheet associated with the topic</li>
+                </ul>
+                <p>&#160;</p>
+                <hr />
+            </li>
+            <li><span class="bold">Medium drop-down: </span>Clicking the down arrow on this button lets you select a medium so that you can view the topic with the styles from a specific medium.</li>
+            <li>
+                <p><span class="bold">Page Layout drop-down: </span>In Print Layout Mode, clicking the down arrow on this button invokes a sub-menu which lets you select from any of the Page Layout files in the project (for <span class="UI">XML&#160;Editor</span> display purposes only; selecting different page layouts here will not affect the output). Page Layout files should appear in alphabetical order by directory with Page Layouts in the root Content folder displaying at the top:</p>
+                <hr />
+                <p class="bold">Layout drop-down menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--PageLayoutDropMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 280pt;">
+                    <li><span class="bold">(All Page Layouts in the project): </span>Displays how the topic will look with the selected Page Layout file.</li>
+                </ul>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertHyperlink.png" /> (Insert a hyperlink): </span>Opens the <span class="UI">Insert Hyperlink</span> dialog, which lets you insert a text hyperlink on the selected text in the topic.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertCrossReference.png" /> (Insert a Cross-Reference): </span>Opens the <span class="UI">Insert Cross-Reference</span> dialog, which lets you insert a cross-reference into the topic at the location of the cursor.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertPicture.png" /> (Insert a picture): </span>Opens the <span class="UI">Insert Picture</span> dialog, which lets you insert an image at the location of the cursor.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertSnippet.png" /> (Insert a snippet): </span>Opens the <span class="UI">Insert Snippet Link</span> dialog, which lets you insert a snippet at the location of the cursor.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertVariable.png" /> (Insert a variable): </span>Opens the <span class="UI">Variables</span> dialog, which lets you insert a variable at the location of the cursor.</li>
+            <li>
+                <p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" /> (Quick character): </span>If you click the -a- portion of the button, opens the <span class="UI">Character</span> dialog which lets you select a special character to insert at the location of the cursor. If you click the down arrow, the Character sub-menu appears:</p>
+                <hr />
+                <p class="bold">Quick-character drop-down menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--CharacterDropMenu.png" class="left" />
+                </p>
+                <ul style="margin-left: 280pt;list-style-type: square;">
+                    <li><span class="bold">Quick Character</span>
+                        <ul style="list-style-type: square;">
+                            <li><span class="bold">Insert Quick Character [the character and associated font] (Insert the 'Quick Character' [the character name and associated font]: </span>Inserts the quick character into the topic at the location of the cursor.</li>
+                            <li><span class="bold">Non-breaking Space (Insert a non-breaking space character): </span>Inserts a non-breaking space into the topic at the location of the cursor.</li>
+                            <li><span class="bold">Non-breaking Hyphen (Insert a non-breaking hyphen character): </span>Inserts a non-breaking hyphen into the topic at the location of the cursor.</li>
+                        </ul>
+                    </li>
+                    <li><span class="bold">Favorites: </span>This section displays up to 16 special characters that the user has defined as a "Favorite"&#160;using the <span class="UI">Character</span> dialog. Hovering over a Favorite character should display a tooltip indicating the character name and the associated font. By default, Flare provides the 16 characters pictured on the left as the out-of-the-box Favorite characters.</li>
+                    <li><span class="bold">Recently Used: </span>This section displays up to 16 special characters that the user has recently&#160;inserted using the <span class="UI">Character</span> dialog. Characters inserted from the Favorites group should not appear as Recently Used (unless that were added to the Favorites from the Recently Used). Hovering over a Recently Used character should display a tooltip indicating the character name and the associated font.</li>
+                    <li><span class="bold">More Characters (Insert character): </span>Opens the <span class="UI">Character</span> dialog which lets you select a special character to insert at the location of the cursor.</li>
+                </ul>
+                <hr />
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ToggleIndexEntryMode.png" /> (Toggle Index Entry Mode): </span>Turns Index Entry Mode on and off.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ToggleConceptEntryMode.png" /> (Toggle Concept Entry Mode): </span>Turns Concept Entry Mode on and off.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowSpace.png" /> (Toggle show space): </span>Turns paragraph and space markers on and off.</li>
+            <li>
+                <p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowTags.png" /> (Show tags): </span>If you click the &lt;t&gt; portion of this button, the XML Editor switches to "Show Tags" mode, showing the XML tags surrounding the content. If you click the down arrow, you can select the following options:</p>
+                <hr />
+                <p class="bold">Show drop-down menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--ShowDropMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 240pt;">
+                    <li><span class="bold">Show Caret Tag Neighborhood: </span>Turns this feature on and off.</li>
+                    <li><span class="bold">Show Markers: </span>Turns markers on or off.</li>
+                    <li><span class="bold">Show Inline Markers: </span>You can show or hide markers for all inline elements in the active topic. This option is only active if the preceding setting, Show Markers, is turned on.</li>
+                    <li><span class="bold">Show invisible tags: </span>Turns invisible tags (e.g., title) on or off in the active topic. This option is enabled only if the XML Editor is in "Show tags" mode.</li>
+                    <li><span class="bold">Show Comments: </span>Turns comment tags on or off in the active topic.</li>
+                    <li><span class="bold">Show All Images As Thumbnails: </span>Lets you show or hide images in your project as thumbnails.</li>
+                    <li><span class="bold">Show tags in mono-color: </span>Lets user choose whether to display tags in a color or in black. This option is enabled only if the XML Editor is in "Show tags" mode.</li>
+                    <li><span class="bold">Show tags in mono-font: </span>Lets user choose whether to display all tags in the same font or in the font actually applied to each area. This option is enabled only if the XML Editor is in "Show tags" mode.</li>
+                    <li><span class="bold">Enable Object Positioning: </span>Turns object positioning on and off.</li>
+                    <li><span class="bold">Enable Orphan/Widow Control: </span>Turns widow and orphan control on or off.</li>
+                    <li><span class="bold">Show Hidden Elements: </span>Shows content that has been designated as "hidden."</li>
+                    <li><span class="bold">Show Conditional Indicators: </span>Toggles between showing and hiding conditional indicators.</li>
+                    <li><span class="bold">Show Variable Names: </span>Toggles between showing and hiding variable names.</li>
+                    <li><span class="bold">Highlight Variables: </span>Toggles between displaying variables highlighted or not.</li>
+                    <li><span class="bold">Show Bookmark Names: </span>Toggles between showing and hiding bookmark names.</li>
+                    <li><span class="bold">Show Named Elements: </span>Lets user choose whether to see the yellow flag icon next to named elements in user’s markers.</li>
+                    <li><span class="bold">Locks (Disabled/Enabled): </span>Locks or unlocks the content designated with the gray background.</li>
+                    <li><span class="bold">Show Locked Elements: </span>Allows you to show or hide the gray background associated with elements that have been locked or selected to be locked.</li>
+                    <li><span class="bold">Show Annotations: </span>Toggles between showing and hiding annotations.</li>
+                    <li><span class="bold">Marker Width: </span>Lets user adjust the width of markers in the active topic to see more or less of the markers when they are visible.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Lower Toolbar - Print Layout</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--PrintLowerToolbar.png" />
+        </p>
+        <ul class="checkbox">
+            <li><b>(Word Count:)</b> Accurately tracks the number of words in the topic.</li>
+        </ul>
+        <p class="bold">Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---GoToFirstPage.png" /> (Go to the first page): </span>Displays the first page of the topic in Print Layout mode..</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---GoToPreviousPage.png" /> (Go to the previous page):&#160;</span>Displays the previous page of the topic in Print Layout mode..</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---GoToNextPage.png" /> (Go to the next page):&#160;</span>Displays the next page of the topic in Print Layout mode..</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---GoToLastPage.png" /> (Go to the last page):&#160;</span>Displays the last page of the topic in Print Layout mode..</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PageIndex.png" /> (Page count):&#160;</span>Displays the current page of the topic, as well as the total number of pages in the topic. You can enter another number in the field or use the arrow buttons to navigate to a different page.</li>
+            <li>
+                <p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PageScale.png" /> :&#160;</span>The Zoom/Scale button (which looks different depending on the current selection) opens a drop-down menu so that you can select from the following options:</p>
+                <hr />
+                <p class="bold">Menu options:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--PrintZoomDropMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: circle;margin-left: 220pt;">
+                    <li><span class="bold">100%:&#160;</span>Displays the page at 100% of its actual size</li>
+                    <li><span class="bold">100% (2 pages): </span>Shows two pages of a topic at a time, displaying each one at 100%.</li>
+                    <li><span class="bold">Fit Width: </span>Resizes the page so that it displays in proportion to the width of the editor window pane.</li>
+                    <li><span class="bold">One Page: </span>Displays only one page at a time.</li>
+                    <li><span class="bold">Two Pages: </span>Displays two pages at a time.</li>
+                    <li><span class="bold">Four Pages: </span>Displays four pages at a time.</li>
+                    <li><span class="bold">Eight Pages: </span>Displays eight pages at a time.</li>
+                </ul>
+                <p>  <![CDATA[ ]]></p>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <hr />
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SmallerFont.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> Zoom out (Ctrl + -):&#160;</span>Zooms out in the increments of 10% (Minimum is 10%)</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---LargerFont.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> Zoom in (Ctrl + +): </span>Zooms in in increments of 10% (Maximum is 300%)</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---FontScale.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> Set scaling:</span>&#160;Lets you select a specific percentage to scale the page.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowConditionalTags.png" /> (Hide/show conditional Indicators):&#160;</span>Lets you show or hide the colored shading of content to which condition tags have been applied.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowBlocks.png" /> (Toggle show blocks):&#160;</span>Lets you show or hide the tag block bars.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowSpans.png" /> (Toggle show spans):&#160;</span>Lets you show or hide the span bars.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowHorizontalRuler.png" /> (Toggle show the horizontal ruler):&#160;</span>Lets you show or hide a measurement ruler horizontally at the top of the editor. Clicking on the ruler in the XML&#160;Editor lets you change the ruler units between pixels, points, centimeters or inches.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowVerticalRuler.png" /> (Toggle show the vertical ruler):&#160;</span>Lets you show or hide a measurement ruler vertically at the left of the editor. Clicking on the ruler in the XML&#160;Editor lets you change the ruler units between pixels, points, centimeters or inches.</li>
+        </ul>
+        <h4>Test Cases</h4>
+        <p>Switching between Web and Print Layout will produce the following informational UI:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/UI--XMLEditor--SwitchLayout.png" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="839" MadCap:lastWidth="624" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Integration: Analyzer - Options</h2>
+        <p>The options that are available for customizing the way Analyzer scans content have no affect on any of the views in the <span class="UI">Project Analysis</span> pane. However, these options will have a great affect on the performance of Flare particularly in large projects. And they will have a direct impact on IntelliSense and some of the Reports (currently, just one:&#160;Index Keyword Suggestions). </p>
+        <h3>Opening the Options dialog</h3>
+        <p>!Tools |&#160;Options</p>
+        <h3>Options dialog | Analyzer tab</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--AnalyzerTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p class="bold">&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Collect Segments:</span> Select this check box if you want Analyzer to collect segments of text while scanning your project. Segment collection allows you to view information about your project such as frequent segments found and index keyword suggestions.</li>
+            <li><span class="bold">Collect Variable prospects:</span> Select this check box if you want Analyzer to look for text that you might want to convert to variables.</li>
+            <li><span class="bold">Collect Snippet prospects:</span> Select this check box if you want Analyzer to look for text that you might want to convert to snippets.</li>
+            <li><span class="bold">Collect Local style prospects:</span> Select this check box if you want Analyzer to look for places where you have applied local formatting and might want to apply styles to those areas instead.</li>
+            <li><span class="bold">Collect Embedded stylesheet prospects:</span> Select this check box if you want Analyzer to look for style information (embedded styles in &lt;style&gt; elements) in your topic files. Disabling this scan limits the results found in the style reports.<ul style="list-style-type: square;"><li><p class="note">Note: You should select this option if you have imported topics that have embedded styles. Otherwise, it is not usually necessary to select this option.</p></li></ul></li>
+            <li><span class="bold">Collect Accessibility prospects:</span> Select this check box if you want Analyzer to look for text where you might want to add Web accessibility features (e.g., captions, alternate text). See About Accessibility.</li>
+            <li><span class="bold">Collect Markup prospects:</span> Select this check box if you want Analyzer to look for a variety of XHTML markup issues in your content (e.g., extra spaces, empty attributes). You can open the affected files and "clean up" the markup in them. You may be able to fix some issues in the XML Editor, but other issues may require you to open the behind-the-scenes code in the Internal Text Editor. See Internal Text Editor.</li>
+            <li><span class="bold">Search Limits:</span> Select a value (All |&#160;5,000 | 1,000 | 500 | 100) from this dropdown to help increase the performance for the following Analyzer  scan options: Undefined Styles, Index Keyword Suggestions, New Style Suggestions, Replace Local Style Suggestions</li>
+        </ul>
+        <p class="note">Note: In order for these options to be effective, you must set the options before opening your project. If you have your project open and a scan is in process, setting these options will not improve your system performance.</p>
+        <h4>Test Cases</h4>
+        <p>&#160;</p>
+    </body>
+</html>

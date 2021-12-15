@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="339" MadCap:lastWidth="1186">
+    <body>
+        <li><span class="bold">Shadow Section: </span>
+            <ul>
+                <li><span class="bold">Enable Shadow: </span> Toggles on and off the shadow effect<ul><li>When Unchecked, the other options in this section should be grayed out</li></ul></li>
+                <li><span class="bold">Left/Right: </span> Controls how offset the shadow will be , horizontally<ul><li>Positive numbers will move the shadow to the right</li><li>Negative numbers will move the shadow to the left</li></ul></li>
+                <li><span class="bold">Up/Down: </span> Controls how offset the shadow will be, vertically<ul><li>Positive numbers will move the shadow down</li><li>Negative numbers will move the shadow up</li></ul></li>
+                <li><span class="bold">Color: </span> Sets the color of the shadow</li>
+                <li><span class="bold">Transparency: </span> Sets how transparent the shadow will be<ul><li>The number field controls the transparency in percent. Updating this field will move the slider to correspond with the value set</li><li>The slider controls the transparency in percent.&#160;Updating this field will change the value displayed in the number field to correspond with the value set</li></ul></li>
+                <li><span class="bold">Preview Section: </span> Will display a preview of the object<ul><li>This area will update on the fly as properties are selected</li></ul></li>
+            </ul>
+        </li>
+    </body>
+</html>

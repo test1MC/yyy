@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1417" MadCap:lastWidth="852" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Togglers - UI</h2>
+        <p>Togglers require that you have Named Elements to toggle. To name an element...</p>
+        <h3>Manage Named Elements dialog - Opening the dialog</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Format | Name</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Home|&#160;Name</span></li>
+        </ul>
+        <h3>Manage Named Elements dialog  - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Togglers/Dialog--ManageNamedElements.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p>TBW</p>
+        <h3>Insert Toggler - Opening the dialog</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Toggler</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert |&#160;Toggler</span></li>
+        </ul>
+        <h3>Insert Toggler dialog - UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Togglers/Dialog--InsertToggler.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+            <ul style="list-style-type: square;">
+                <li>Test all possible elements as Toggler targets: paragraphs, lists, tables, groupings, pictures, etc.</li>
+                <li>If a toggler is inserted without selecting any text, the default hotspot text is “Click Me!”</li>
+                <li>If a toggler is inserted with text selected, the selected text should appear in the hotspot text field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">The hotspot text:</span> Displays the text that serves as the link to the toggled content.</li>
+            <li><span class="bold">Toggler class:</span> Displays the toggler style class.</li>
+            <li><span class="bold">Toggler targets:</span> Displays all Named Elements in the topic.  Allows user to select an element (or elements) to be the target of the toggler hotspot.  All columns should be sortable and resizable (#10134).</li>
+            <li><span class="bold">Checkbox column:</span> A check mark in the check box associates that named element with the hotspot.</li>
+            <li><span class="bold">Name Elements:</span> Displays the name of the element</li>
+            <li><span class="bold">Tag:</span> Displays the tag of the named element</li>
+            <li><span class="bold">Text:</span> Displays the actual text in the named element</li>
+            <li><span class="bold">Go To:</span> Highlights the text in the topic for the toggler element that is selected.</li>
+        </ul>
+    </body>
+</html>

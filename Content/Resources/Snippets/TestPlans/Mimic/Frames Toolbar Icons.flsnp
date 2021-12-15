@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="382" MadCap:lastWidth="1172">
+    <body>
+        <ul>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Frames Properties.png" /> <![CDATA[ ]]><span class="bold">Frame Properties: </span> Opens the properties up for the selected frame.</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Goto First Frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Goto previous Frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Goto next Frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">placeholder: Goto last Frame</li>
+            <li MadCap:conditions="Mimic.LocalFrameToolbarOnly">
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Move Frame Up.png" /> <![CDATA[ ]]><span class="bold">Move selected frame up: </span> Will move the selected frame up one space in the frame sequence.</li>
+            <li MadCap:conditions="Mimic.LocalFrameToolbarOnly">
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Move Frame Down.png" /> <![CDATA[ ]]><span class="bold">Move selected frame down: </span>Will move the selected frame down one spot in the frame sequence.</li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/New Frame Icon.png" /> <![CDATA[ ]]><span class="bold">Insert Blank Frame: </span>Will insert a new blank frame into the frames sequence.&#160;</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Copy selected frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Paste Frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Duplicate frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Copy background of selected frame</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Paste background</li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/New Frame With Bitmap.png" /> <![CDATA[ ]]><span class="bold">Insert Frame using the same background as the selected frame: </span>Inserts a new frame into the frames sequence that uses the same background as the currently selected frame.<ul><li>This frames background is linked to the previous frames background.&#160;If the previous frames background changes, this frames background will change as well.</li></ul></li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Insert PowerPoint.png" /> <![CDATA[ ]]><span class="bold">Insert PowerPoint slide(s): </span> Will invoke the Invoke the Import PowerPoint wizard. </li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Delete Frame.png" /> <![CDATA[ ]]><span class="bold">Remove Frame: </span>Will remove the selected frame from the frames sequence.</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder:&#160;Record new frames</li>
+            <li style="font-style: italic;" MadCap:conditions="Mimic.StandardFrameToolbarOnly">Placeholder: Capture new frame...</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="784" MadCap:lastWidth="1021" MadCap:conditionTagExpression="include[FlareFileTypes.!ContentFile or FlareFileTypes.Snippet] exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Snippets - Editing</h2>
+        <h3>Opening a Snippet File</h3>
+        <p class="bold">Any Snippet file:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ContentExplorer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--FileList.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <p>&#160;</p>
+        <p class="bold">A snippet contained in a Topic, Page Layout file, Master Page file or another Snippet file:</p>
+        <p>Open a file which contains the snippet in the <span class="UI">XML Editor</span> (or open the <span class="UI">Frame Contents</span> pane if the snippet is in a Page Layout frame):</p>
+        <ul class="checkbox">
+            <li><span class="UI">XML Editor</span>:&#160;<ul><li>Right-click the MadCap:snippetText span bar in the <span class="UI">XML Editor</span> and select <span class="MenuItem">Open Link</span></li><li>Right-click the MadCap:snippetBlock block bar in the <span class="UI">XML Editor</span> and select <span class="MenuItem">Open Link</span></li></ul></li>
+        </ul>
+        <ul class="checkbox">
+            <li><span class="UI">Frame Contents</span> pane:&#160;<ul><li>Right-click the MadCap:snippetText span bar in the <span class="UI">Frame Contents</span> pane and select <span class="MenuItem">Open Link</span></li><li>Right-click the MadCap:snippetBlock block bar in the <span class="UI">Frame Contents</span> pane and select <span class="MenuItem">Open Link</span></li></ul></li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <h3>Snippets - Editing</h3>
+        <p>Snippet files open in the <span class="UI">XML Editor</span>. All testing related to the <span class="UI">XML Editor</span> should be covered in the <span class="UI">XML Editor</span> test plans. </p>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Recursive snippets (a snippet that links to itself). Confirm that inserting a snippet link to itself displays and error message: “You selected the snippet file you’re currently editing. &#160;Recursive snippet links are not permitted.”</li>
+            <li>Test moving and renaming snippet files in the <span class="UI">Content Explorer</span> and confirm that you are prompted to update links in any files that link to the Snippet (test with Topics, Master Pages, Page Layouts and other Snippets).</li>
+            <li>Test moving a Topic, Master Page, Page Layout or other Snippet files that link to a snippet and confirm that you are prompted to update links.</li>
+        </ul>
+    </body>
+</html>

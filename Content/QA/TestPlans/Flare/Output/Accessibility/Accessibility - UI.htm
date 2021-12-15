@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2542" MadCap:lastWidth="864" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Accessibility - UI</h2>
+        <h3>Images</h3>
+        <p class="Open">Right-click an image and select Properties | General Tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Accessibility/UI--Images.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li><b>Screen Tip:</b>Set the screen tip of an image</li>
+            <li><b>Alternate Text:</b> Set alternate text for an image</li>
+            <li><b>Apply the alternate text and screen tip to all image references:</b>Apply the alternate text and screen tip of this image to all other instances of this image in the project</li>
+        </ul>
+        <h5>Sample XML</h5>
+        <p>&lt;img src="../../Resources/Images/80s1337ness.jpg" style="width: 193px;height: 190px;" alt="Alternate Text" title="Screen Tip" /&gt;</p>
+        <h3>Tables</h3>
+        <p class="Open">Right-click a table and select Properties | General Tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Accessibility/UI--Tables.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li style="font-weight: normal;"><b>Text:</b>Set the caption text of a table (Note: no matter what the position of the caption is relative to the table, the caption markup should be right after the table tag and before the column tags to be 508 Compliant.)<ul><li style="font-weight: normal;"><b>Side: Above Table:</b>Places the caption at the top of the table</li><li style="font-weight: normal;"><b>Side:&#160;Below Table:</b>Places the caption at the bottom of the table</li><li style="font-weight: normal;"><b>Continuation:</b>Caption text appears at the top of each table for tables that span multiple pages</li></ul></li>
+            <li style="font-weight: normal;"><b>Table Summary:</b>Set the summary of the table. The summary is not a visible attribute, however it is read by a screen reader.</li>
+            <li style="font-weight: normal;"><b>Header Element:</b>You can add a header row in the table properties dialog, or you can make any td into a th using the internal text editor.</li>
+        </ul>
+        <h5>Sample XML</h5>
+        <p>&lt;table style="width: 100%;caption-side: top;" summary="Summary"&gt;</p>
+        <p>&lt;caption&gt;Caption&lt;/caption&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;thead&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;th&gt;Header Row&lt;/th&gt;</p>
+        <p>&lt;th&gt;&amp;#160;&lt;/th&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/thead&gt;</p>
+        <p>&lt;tbody&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;th&gt;Header Element&lt;/th&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/tbody&gt;</p>
+        <p>&lt;/table&gt;</p>
+        <h3>Equations</h3>
+        <p class="Open">Right-click an equation and select Properties | General Tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Accessibility/UI--Equations.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li><b>Screen Tip:</b>Set the screen tip of the equation</li>
+            <li><b>Alternate Text:</b>Set the alternate text of the equation</li>
+        </ul>
+        <h5>Sample XML</h5>
+        <p>&lt;MadCap:equation xmlns:dsi="http://www.w3.org/1998/Math/MathML" alt="Alternate Text" title="Screen Tip"&gt;</p>
+        <h3>QR Codes</h3>
+        <p class="Open">Right-click a QR Code and select Properties | General Tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Accessibility/UI--QR Code.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li><b>Screen Tip:</b>Set the screen tip of the QR Code</li>
+            <li><b>Alternate Text:</b>Set the alternate text of the QR Code</li>
+        </ul>
+        <h3>Image Maps (Area Elements)</h3>
+        <p class="Open">Right-click a Image Map and select Image Map | Select or draw an area element | Right-click the area element in the Image Map Editor and select Properties | Link Properties</p>
+        <p>
+            <img src="../../../../../Resources/Images/Capture7.jpg" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li><b>Screen Tip:</b>Sets the alternate text of the selected area element</li>
+        </ul>
+        <h5>Sample XML</h5>
+        <p>&lt;MadCap:qrCode alt="Alternate text" title="Screen Tip"&gt;QR Code&lt;/MadCap:qrCode&gt;</p>
+        <h3>Forms and Frames</h3>
+        <p>Currently, you cannot set any of the required 508 compliant attributes for these objects in our UI. However, you can set them with the internal text editor.</p>
+        <p>Should look something like this:</p>
+        <h5>Sample XML</h5>
+        <p><b>Iframe and frame with title or name:</b>
+        </p>
+        <p>&#160;</p>
+        <p>&lt;iframe title="iframe"&gt;&lt;/iframe&gt;</p>
+        <p>&#160;</p>
+        <p>&lt;frame name="frame"&gt;&lt;/frame&gt;</p>
+        <p>&#160;</p>
+        <p><b>A few examples of form elements with labels:</b>
+        </p>
+        <p>&#160;</p>
+        <p>&lt;form&gt;</p>
+        <p>&lt;input type="button" value="Button 1" /&gt;</p>
+        <p>&lt;input type="image" src="../../Resources/Images/CustomIcon.jpg" alt="Next page" /&gt;</p>
+        <p>&lt;button&gt;Go &lt;img src="../../Resources/Images/CustomIcon.jpg" alt="Next page" /&gt;&lt;/button&gt;</p>
+        <p>&lt;label&gt;First Name:</p>
+        <p>&lt;input type="text" /&gt;&lt;/label&gt;</p>
+        <p>&lt;label for="LastName"&gt;Last Name:&lt;/label&gt;</p>
+        <p>&lt;input id="LastName" type="text" /&gt;</p>
+        <p>&lt;label&gt;Option a:</p>
+        <p>&lt;input type="radio" name="RadioGroup" value="a" /&gt;&lt;/label&gt;</p>
+        <p>&lt;label for="OptionB"&gt;Last Name:&lt;/label&gt;</p>
+        <p>&lt;input id="OptionB" type="radio" value="b" /&gt;</p>
+        <p>&lt;label&gt;Option c:</p>
+        <p>&lt;input type="checkbox" value="c" /&gt;&lt;/label&gt;</p>
+        <p>&lt;label&gt;Password:</p>
+        <p>&lt;input type="password" /&gt;&lt;/label&gt;</p>
+        <p>&lt;/form&gt;</p>
+    </body>
+</html>

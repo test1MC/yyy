@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\mferguson\My Documents\My Profiles\MyProfile.capro" ProfileHash="b0d877845de8532f8ea1d0c4c7518957" ScreenRectangle="3240,222,16,16">
+        <OriginalImage Folder="C:\Documents and Settings\mferguson\Desktop\Bar" Right="0" Bottom="0" BorderWidth="0" FileName="OutputFileName{n}" EnableShadow="false" ExportFormat="png" ComputedWidth="16" ComputedHeight="16" Format="tiff">SUkqAMgCAACALtmMx/wKCDNdER/wiFQyCwOHwSDRGKROLRCLxKILplMp/x+PjNbEN/mR3HWFyOQSuWS2XS+XxyPDNVECFrEgzeclV1madT+aTYesV8P8eMN7P8dMJ6v8cMB5v8bL54v8ar14P8aLx3v9/SBcMlkwuav8gucpWa0Wq02e22ugv+h0U/uWkn1xvSnVB/npwVU8N6u1uuvx/V9asZjWSbDNRj6F49/ixxD3I5DHZiyoFnOd/oBmOV/n5luR/nxkuK+sdwP88sZvv88MVvP98v1+v9ZsRiP9YMFgv99Px+QtOZYNN8V8bLcPi85/sVrNbhcTq8VgNFo9fuLxms1/vfrb/gq5fr9/vR9vuFocb+33jP3P8fmHejEprZ/iYkK1/hEIhVn+EYilif4UiWXp/vwggci2bazDGdD0vWf7zPQVZeF4f54nyfKSkMdi+qI1xanaf5eGYpsUqaT5btbFkURUf5OFobsZRXGYgwlDkPH/DMNlQXJcn+dx8KKMkQn+LQ+NUJo3mo+j7QW/L9v6/8AwHAsDwTKkGwfCMJyMoshSIUpbP0dZ7nuf4iIIf5EHcj5DGlER4zXDk8Ok6k7zZPp/uy7c/z+7zwTVNkzv0URZlmf50nspM3I+IZlq/OkRGSbRtH+Y5sGwf5mG4bh/mGakomEaZpn+ZFPH+Xxnmef5emcZ0UO/R1IH/RdGk8WBYH+cx6qbSU4Tkf9LyLYVkqbPdl2dQNnHdZVC2BZVe1+TJVFUf5yHovViUpS06n/TNN07T9m1LU9U0A7VXVhWVaVs8Fur1bNtkUTZN0dHxxHmqN/YBf5/4DgmB4LhGD4VgWGX5D9832PxHke0eJ4rimJYxi2M4vjuOY/jeQ41keO28vWTPTb2U5PlWUZdluYZZmWV5pl69ICAAGAAAAABAAAAYAAAAAEAAAAIAAgACAAIABAA/gAEAAEAAAAAAAAAAAEDAAEAAAAQAAAAAQEDAAEAAAAQAAAAAgEDAAQAAADAAgAAAwEDAAEAAAAFAAAABgEDAAEAAAACAAAAEQEEAAEAAAAIAAAAFQEDAAEAAAAEAAAAFgEEAAEAAAAQAAAAFwEEAAEAAACnAgAAGgEFAAEAAACwAgAAGwEFAAEAAAC4AgAAHAEDAAEAAAABAAAAKAEDAAEAAAACAAAAPQEDAAEAAAABAAAAUgEDAAEAAAACAAAAAAAAAA==</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="MyProfileCondition" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="how" Comment="">tree</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

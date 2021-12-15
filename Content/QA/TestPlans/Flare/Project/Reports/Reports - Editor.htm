@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6222" MadCap:lastWidth="1258" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Report or ProjectOrganizer--Items.Report] exclude[Default.UITestsDialogs or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet or ProjectOrganizer--Items.BatchTarget or ProjectOrganizer--Items.BrowseSequence or ProjectOrganizer--Items.ConditionTagSet or ProjectOrganizer--Items.Destination or ProjectOrganizer--Items.FileTagSet or ProjectOrganizer--Items.Glossary or ProjectOrganizer--Items.Import or ProjectOrganizer--Items.RelationshipTable or ProjectOrganizer--Items.SearchFilterSet or ProjectOrganizer--Items.Skin or ProjectOrganizer--Items.Synonyms or ProjectOrganizer--Items.Target or ProjectOrganizer--Items.TOC or ProjectOrganizer--Items.Variable] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Reports - Editor</h2>
+        <h3>Opening a Report File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Report Editor - UI Test Cases</h3>
+        <h4> General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Reports/ReportEditor--GeneralTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Title: </span>Lets you set a title which will appear in the generated Report.</li>
+            <li><span class="bold">Tables: </span>Select from the list of available reports to generate.</li>
+            <li><span class="bold">Select All: </span>Tri-state toggle which selects all, deselects all or returns to previous selections.</li>
+            <li><span class="bold">Skip Empty Reports: </span>Upon generating reports, if this option is enabled, any reports which produce zero results will be skipped.</li>
+            <li>
+                <p><span class="bold">Print report after generation:</span> The report will automatically be printed to your default printer upon completion of a generated report.</p>
+            </li>
+            <li><span class="bold">Report: </span>Displays the generated Report.<ul style="list-style-type: square;"><li>Project: project path location</li><li><p>Generated: displays the date #/##/#### and time 12:12:12 PM</p></li><li><p>By: displays the user name who generated the report.</p></li></ul></li>
+            <li><span class="bold">Add To Archive…: </span>Opens the <span class="UI">Archive Report</span> dialog which lets you copy the generated Report to the project’s Report Archive.  The reports are saved as *.htm files to .../Project/Reports/Archive.</li>
+            <li><span class="bold">Open in Browser: </span>Opens the generated Report in the default browser.</li>
+            <li><span class="bold">Generate: </span>Generates a report for the items selected in the Tables list.</li>
+        </ul>
+        <hr />
+        <p class="bold">Test cases: </p>
+        <ul class="checkbox">
+            <li>Generate each report and test every report item</li>
+            <li>Test to make sure the correct information appears and displayed and formatted in a way that makes sense</li>
+            <li>Test that styles are correctly generated as well</li>
+        </ul>
+        <h4>Archive Report dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Reports/UI--ArchiveReport.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Report Name: </span>Lets you create a new for the report about to be archived.</li>
+            <li><span class="bold">OK:&#160;</span>Adds an Archive folder in Windows Explorer|&#160;Projects |&#160;Reports&#160;|&#160;Archive with the file [filename].htm. &#160;This will not be visible within Flare.</li>
+            <li><span class="bold">Cancel:&#160;</span>Does not create the archived report.</li>
+        </ul>
+        <h4>Styles Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Reports/ReportEditor--StylesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Styles: </span>Displays list of all styles which can be used to customize the appearance of a generated report.</li>
+            <li><span class="bold">Show: </span>Lets you alternate the display of properties by Property Group or Alphabetically</li>
+            <li><span class="bold">Properties: </span>Lists all available properties (alphabetically or by group) for the selected style</li>
+            <li><span class="bold">Preview: </span>Displays a preview of the selected style (if a preview is available; which it never is for any of the Report styles, bug #)</li>
+        </ul>
+        <hr />
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:xref href="Reports - Styles.htm" target="" title="" alt="">See "Reports - Styles                     "</MadCap:xref>
+            </li>
+        </ul>
+        <h4>Archive Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Reports/ReportEditor--ArchiveTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Remove: </span>Send the selected archived report(s) to the Recycle Bin.</li>
+            <li><span class="bold">Open in Browser: </span>Opens the selected report in your default web browser.</li>
+            <li>
+                <p><span class="bold">Report Archive table: </span>Lists all archived reports.</p>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">Report: </span>Displays the name of each generated report in the project’s report archive.</li>
+                    <li><span class="bold">Date: </span>Displays the date and time at which the archived report was generated.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+        <h3>Reports - Generating</h3>
+        <p class="bold">Report item options:</p>
+        <p class="bold">Bookmarks:</p>
+        <ul class="checkbox">
+            <li>Broken Bookmarks</li>
+            <li>Unused Bookmarks</li>
+            <li>Used Bookmarks</li>
+        </ul>
+        <p class="bold">Concepts:</p>
+        <ul class="checkbox">
+            <li>Concept Links</li>
+            <li>Files With Concepts</li>
+            <li>Topics With Concept Links</li>
+            <li>Topics With Concept Links Missing a Concept</li>
+            <li>Topics Without Concepts</li>
+            <li>Used Concepts</li>
+            <li>Used Search Filters</li>
+        </ul>
+        <p class="bold">Condition Tags:</p>
+        <ul class="checkbox">
+            <li>Applied Conditions</li>
+            <li>Files With Condition Tags</li>
+            <li>Topics With Snippet Conditions</li>
+            <li>Undefined Condition Tags</li>
+            <li>Unused Condition Tags</li>
+            <li>Used Condition Tags</li>
+        </ul>
+        <p class="bold">Content Files:</p>
+        <ul class="checkbox">
+            <li>Empty Content Folders</li>
+            <li>File Word&#160;Count</li>
+            <li>Files With Annotations</li>
+            <li>Files With Changes (includes annotations)</li>
+            <li>Files With Concepts</li>
+            <li>Files With Condition Tags</li>
+            <li>Files With Equations</li>
+            <li>Files With File Tags</li>
+            <li>Files With Glossary Term Links</li>
+            <li>Files With Images</li>
+            <li>Files With Keywords</li>
+            <li>Files With Language Tags</li>
+            <li>Files With Multimedia</li>
+            <li>Files With Named Destinations</li>
+            <li>Files With QR Codes</li>
+            <li>Files With Snippets</li>
+            <li>Files With Variables</li>
+            <li>Files Without File&#160;Tags</li>
+            <li>Topics Without Concepts</li>
+            <li>Unused Content Files</li>
+        </ul>
+        <p class="bold">CSH:</p>
+        <ul class="checkbox">
+            <li>Assigned CSH IDs</li>
+            <li>Duplicate Map IDs</li>
+            <li>Topics Linked By Map ID</li>
+            <li>Topics Not Linked By Map ID</li>
+            <li>Unused CSH IDs</li>
+        </ul>
+        <p class="bold">File Tags:</p>
+        <ul class="checkbox">
+            <li>Files With File Tags</li>
+            <li>Files Without File Tags</li>
+            <li>Undefined File Tags</li>
+            <li>Unused File Tags</li>
+            <li>Used File Tags</li>
+        </ul>
+        <p class="bold">Glossary Term Links:</p>
+        <ul class="checkbox">
+            <li>Files With Glossary Term Links</li>
+            <li>Undefined Glossary Term Links</li>
+            <li>Used Glossary Term Links</li>
+        </ul>
+        <p class="bold">Images:</p>
+        <ul class="checkbox">
+            <li>Files With Images</li>
+            <li>Unused Images</li>
+            <li>Used Images</li>
+        </ul>
+        <p class="bold">Index:</p>
+        <ul class="checkbox">
+            <li>Files With Keywords</li>
+            <li>Index Keyword Links</li>
+            <li>Index Keyword Suggestions</li>
+            <li>Topics Not In Index</li>
+            <li>Topics With Index Keyword Links</li>
+            <li>Topics With Keyword Links Missing a Keyword</li>
+            <li>Used Index Keywords</li>
+        </ul>
+        <p class="bold">Language Tags:</p>
+        <ul class="checkbox">
+            <li>Files With Language Tags</li>
+            <li>Used Language Tags</li>
+        </ul>
+        <p class="bold">Links:</p>
+        <ul class="checkbox">
+            <li>Absolute Links</li>
+            <li>Broken Bookmarks</li>
+            <li>Broken Links</li>
+            <li>Broken Snippet Links</li>
+            <li>Concept Links</li>
+            <li>Cross-Reference Suggestions</li>
+            <li>External Links</li>
+            <li>Index Keyword Links</li>
+            <li>Named Destinations</li>
+            <li>Topics Linked By Map ID</li>
+            <li>Topics Not Linked</li>
+            <li>Topics Not Linked By Map ID</li>
+            <li>Topics With Concept Links</li>
+            <li>Topics With Concept Links Missing a Concept</li>
+            <li>Topics With Index Keyword Links</li>
+            <li>Topics With Keyword Links Missing a Keyword</li>
+            <li>Undefined Glossary Term Links</li>
+            <li>Unused Bookmarks</li>
+            <li>Used Bookmarks</li>
+            <li>Used Glossary Term Links</li>
+        </ul>
+        <p class="bold">Multimedia:</p>
+        <ul class="checkbox">
+            <li>Files With Multimedia</li>
+            <li>Unused Multimedia</li>
+            <li>Used Multimedia</li>
+        </ul>
+        <p class="bold">Project:</p>
+        <ul class="checkbox">
+            <li>Database Errors</li>
+            <li>Files With Annotations</li>
+            <li>Statistics</li>
+        </ul>
+        <p class="bold">Snippets:</p>
+        <ul class="checkbox">
+            <li>Broken Snippet Links</li>
+            <li>Files With Snippets</li>
+            <li>Snippet Suggestions</li>
+            <li>Topics With Snippet Conditions</li>
+            <li>Unused Snippets</li>
+            <li>Used Snippets</li>
+        </ul>
+        <p class="bold">Styles:</p>
+        <ul class="checkbox">
+            <li>Duplicate Styles</li>
+            <li>New Style Suggestions</li>
+            <li>Replace Local Style Suggestions</li>
+            <li>Undefined Styles</li>
+            <li>Unused Styles</li>
+            <li>Used Stylesheets</li>
+        </ul>
+        <p class="bold">TOC:</p>
+        <ul class="checkbox">
+            <li>Duplicate TOC Items</li>
+            <li>TOC - Primary Target</li>
+            <li>Topics Not In Any TOC</li>
+        </ul>
+        <p class="bold">Topics:</p>
+        <ul class="checkbox">
+            <li>Accessibility Suggestions</li>
+            <li>Broken Bookmarks</li>
+            <li>BrokenLinks</li>
+            <li>Cross-Reference Suggestions</li>
+            <li>File Word&#160;Count</li>
+            <li>Markup Suggestions</li>
+            <li>Non-XML Topics</li>
+            <li>Topics Linked By Map ID</li>
+            <li>Topics Not In Any TOC</li>
+            <li>Topics Not In Index</li>
+            <li>Topics Not Linked</li>
+            <li>Topics Not Linked By Map ID</li>
+            <li>Topics With Concept Links</li>
+            <li>Topics With Concept Links Missing a Concept</li>
+            <li>Topics With Keyword Links</li>
+            <li>Topics With Keyword Links Missing a Keyword</li>
+            <li>Topics with Meta Tags</li>
+            <li>Topics With Snippet Conditions</li>
+            <li>Writing Suggestions</li>
+        </ul>
+        <p class="bold">Variables:</p>
+        <ul class="checkbox">
+            <li>Files With Variables</li>
+            <li>Undefined Variables</li>
+            <li>Unused Variables</li>
+            <li>Used Variables</li>
+            <li>Variable Suggestions</li>
+        </ul>
+        <p class="note">Note: For items starting with the words "Files With…," the files listed in the report may include topics, snippets, master pages, style sheets, or page layouts. For example, if you run a report for "Files With Variables," the results may show a list of topics, snippets, and page layouts that contain variables.</p>
+        <p class="note">The item "Files With Condition Tags" may include any content or project files, as well as content folders. The item "Files With File Tags" may include any content or project files.</p>
+        <h3>Reports - General Editing Test Cases</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Tooltips.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--ConditionalTags.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Default Report (no tables):</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultReportFile&gt;</pre><pre>&lt;/CatapultReportFile&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">Report with a few tables enabled and Skip Empty Reports enabled:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultReportFile</pre><pre xml:space="preserve">    Tables="broken-bookmarks,broken-links,external-links"</pre><pre xml:space="preserve">    SkipEmptyReports="true"&gt;</pre><pre>&lt;/CatapultReportFile&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">Report with tables and styles:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultReportFile</pre><pre xml:space="preserve">  Tables="broken-bookmarks,broken-links,external-links"&gt;</pre><pre xml:space="preserve">  &lt;Stylesheet&gt;</pre><pre xml:space="preserve">    &lt;Styles&gt;</pre><pre xml:space="preserve">      &lt;Style</pre><pre xml:space="preserve">        Name="ReportText"&gt;</pre><pre xml:space="preserve">        &lt;Classes&gt;</pre><pre xml:space="preserve">          &lt;StyleClass</pre><pre xml:space="preserve">            Name="Level1"&gt;</pre><pre xml:space="preserve">            &lt;Properties&gt;</pre><pre xml:space="preserve">              &lt;Property</pre><pre xml:space="preserve">                Name="Color"&gt;#0000cd&lt;/Property&gt;</pre><pre xml:space="preserve">            &lt;/Properties&gt;</pre><pre xml:space="preserve">          &lt;/StyleClass&gt;</pre><pre xml:space="preserve">        &lt;/Classes&gt;</pre><pre xml:space="preserve">      &lt;/Style&gt;</pre><pre xml:space="preserve">    &lt;/Styles&gt;</pre><pre xml:space="preserve">  &lt;/Stylesheet&gt;</pre><pre>&lt;/CatapultReportFile&gt;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

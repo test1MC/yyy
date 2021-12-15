@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="7207" MadCap:lastWidth="774" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.RelationshipTable or ProjectOrganizer--Items.RelationshipTable] exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet or ProjectOrganizer--Items.BatchTarget or ProjectOrganizer--Items.BrowseSequence or ProjectOrganizer--Items.ConditionTagSet or ProjectOrganizer--Items.Destination or ProjectOrganizer--Items.FileTagSet or ProjectOrganizer--Items.Glossary or ProjectOrganizer--Items.Import or ProjectOrganizer--Items.Report or ProjectOrganizer--Items.SearchFilterSet or ProjectOrganizer--Items.Skin or ProjectOrganizer--Items.Synonyms or ProjectOrganizer--Items.Target or ProjectOrganizer--Items.TOC or ProjectOrganizer--Items.Variable] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Relationship Tables - Editor</h2>
+        <h3>Opening a Relationship Table File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span> (any):&#160;In the Relationship Table tab of the <span class="UI">Target Editor</span>, select a Relationship Table file and click the "Edit Relationship Table"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Relationship Table Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTableEditor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTableEditor---LocalToolbar.png" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowConditionalTags.png" />(Hide/show Conditional Indicators):&#160;</span>Toggle on/off Conditional Tag indicators.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---OpenLinkedFile.png" />(Open linked file):&#160;</span>Opens the linked Topic file in the XML&#160;Editor.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" />(New item):&#160;</span>Opens the <span class="UI">Open File</span> dialog which lets you select a topic to use for a new Relationship Table item.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---GroupItems.png" />(Group selected items)/(Ungroup selected items): </span>Creates a Group out of the selected items. If a Group is selected, lets you ungroup the items.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" />(Run Properties Dialog for this item): </span>Opens the <span class="UI">Properties</span> dialog for the selected item.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---CellProperties.png" />(Run the Cell Properties Dialog for this item): </span>Opens the <span class="UI">Cell Properties</span> dialog for the current cell.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---RowProperties.png" />(Run the Row Properties Dialog for this item): </span>Opens the <span class="UI">Row Properties</span> dialog for the current row.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---ColumnProperties.png" />(Run the Column Properties Dialog for this item):</span>Opens the <span class="UI">Column Properties</span> dialog for the current column.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemLeft.png" />(Move item to the left): </span>Moves the selected item to the left</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemRight.png" />(Move item to the right): </span>Moves the selected item to the right</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png" />(Move item up): </span>Moves the selected item up</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png" />(Move item down): </span>Moves the selected item down</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---NewRow.png" />(Insert a new row): </span>Adds a new row to the Relationship Table</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---DeleteRow.png" />(Delete selected row(s)): </span>Deletes the row from the Relationship Table</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---NewColumn.png" />(Insert a new column): </span>Adds a new column to the Relationship Table</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/Button---DeleteColumn.png" />(Delete selected column(s)): </span>Deletes the column from the Relationship Table</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---CurrentWarning.png" /><span class="bold">(Shows the current warning, if any): </span>Displays any warnings (duplicate nodes, etc).</li>
+        </ul>
+        <hr />
+        <h4>Right-click menu:</h4>
+        <p>Right-clicking in any cell in the Relationship Table Editor should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTableEditor---RightClickMenu.png" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p>Right-click menu items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Cut (Cut):&#160;</span>Cuts the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Copy (Copy): </span>Copies the selected item(s) to the clipboard.</li>
+                <li><span class="bold">Paste (Paste): </span>Pastes the item(s) from the clipboard.</li>
+                <li><span class="bold">Delete (Delete):&#160;</span>Deletes the selected item(s)</li>
+                <li><span class="bold">New (New item):&#160;</span>Opens the <span class="UI">Link to Topic</span> dialog which lets you select a topic to use for a new Relationship Table item</li>
+                <li><span class="bold">Make Group (Group selected items)/Ungroup (Ungroup selected items): </span>Creates a Group out of the selected items. If a Group is selected, lets you ungroup the items.</li>
+                <li><span class="bold">Properties (Run Properties Dialog for this item): </span>Opens the <span class="UI">Properties</span> dialog for the selected item.</li>
+                <li><span class="bold">Cell Properties (Run the Cell Properties Dialog for this item): </span>Opens the <span class="UI">Cell Properties</span> dialog for the current cell.</li>
+                <li><span class="bold">Row Properties (Run the Row Properties Dialog for this item): </span>Opens the <span class="UI">Row Properties</span> dialog for the current row.</li>
+                <li><span class="bold">Column Properties (Run the Column Properties Dialog for this item):</span>Opens the <span class="UI">Column Properties</span> dialog for the current column.</li>
+                <li><span class="bold">New Row (Insert a new row): </span>Adds a new row to the Relationship Table</li>
+                <li><span class="bold">Delete Row (Delete selected row(s)): </span>Deletes the row from the Relationship Table</li>
+                <li><span class="bold">New Column (Insert a new column): </span>Adds a new column to the Relationship Table</li>
+                <li><span class="bold">Delete Column (Delete selected column(s)): </span>Deletes the column from the Relationship Table</li>
+                <li><span class="bold">Move Left (Move item to the left): </span>Moves the selected item to the left</li>
+                <li><span class="bold">Move Right (Move item to the right): </span>Moves the selected item to the right</li>
+                <li><span class="bold">Move Up (Move item up): </span>Moves the selected item up</li>
+                <li><span class="bold">Move Down (Move item down): </span>Moves the selected item down</li>
+            </ul>
+        </div>
+        <h4>Open File dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/UI--OpenFile.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>(Item) Properties dialog:</h4>
+        <h5>Basic Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---ItemProps---General.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Link: </span>Displays (and lets you edit)&#160;the link to the Topic file associated with the selected item. Grayed out if multiple items are selected.</li>
+            <li><span class="bold">Select Link: </span>Opens the <span class="UI">Open File</span> dialog which lets you select a topic to use for the selected Relationship Table item. Grayed out if multiple items are selected.</li>
+            <li><span class="bold">Open Linked File: </span>Opens the linked Topic file in the XML&#160;Editor. Grayed out if multiple items are selected.</li>
+            <li><span class="bold">Collection Type:</span> Lets you apply a collection type property to the item(s)</li>
+            <li><span class="bold">Linking:&#160;</span>Lets you apply a Linking property to the item(s)</li>
+        </ul>
+        <h5>Conditional Text Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---ItemProps---ConditionalText.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ConditionalText.flsnp" />
+        <h4>Cell Properties dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---CellProps---General.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Collection Type:&#160;</span>Lets you apply a collection type property to the cell</li>
+            <li><span class="bold">Linking:&#160;</span>Lets you apply a Linking property to the cell</li>
+        </ul>
+        <h4>Row Properties dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---RowProps---Basic.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Row Type:</span>Lets you set a name for the row.</li>
+        </ul>
+        <h4>Column Properties dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---ColumnProps---General.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Column Type:</span> Lets you set the column type (which corresponds to the class of MadCap|relationshipHeading in the stylesheet)</li>
+            <li><span class="bold">Collection Type:&#160;</span>Lets you apply a collection type property to the column (which all contained cells will inherit)</li>
+            <li><span class="bold">Linking:&#160;</span>Lets you apply a Linking property to the column (which all contained cells will inherit)</li>
+        </ul>
+        <h3>Relationship Tables - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <p>Click on a topic from the Content Explorer and drag it into a cell.</p>
+        <ul style="list-style-type: square;">
+            <li>You should not be able to drag non-Topic files into a Relationship Table.</li>
+            <li>You should not be able to drag Project files into a Relationship Table.</li>
+        </ul>
+        <p>Click on a folder in the Content Explorer and drag it into a cell.</p>
+        <ul style="list-style-type: square;">
+            <li>If you drag a folder which contains sub-folders into a Relationship Table, only files in the top-level folder will be added.</li>
+            <li>You should not be able to drag a folder into a Relationship Table if it contains at least one non-Topic file.</li>
+            <li>You should not be able to drag a folder from the Project Organizer into a Relationship Table.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Undo/Redo works and commands display correctly in the Standard Toolbar.</p>
+        <p>&#160;</p>
+        <p>*There is currently no drag/drop editing functionality within the Relationship Table Editor. Only dragging topics from the Content Explorer is allowed.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Deleting.flsnp" />
+        <p class="bold">Row:</p>
+        <ul class="checkbox">
+            <li>Click in any cell in the row and click the Delete Row button in the Local Toolbar</li>
+            <li>Right-click in any cell in the row and select Delete Row</li>
+        </ul>
+        <p class="bold">Column:</p>
+        <ul class="checkbox">
+            <li>Click in any cell in the column and click the Delete Column button in the Local Toolbar</li>
+            <li>Right-click in any cell in the column and select Delete Column</li>
+        </ul>
+        <h4>Tooltips</h4>
+        <p>There is currently no tooltip functionality within the Relationship Table Editor.</p>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags applied to the Relationship Table file can only be used for the purposes of Global Project Linking (Flare/Blaze project importing). That will be covered in another test plan.</p>
+        <p>&#160;</p>
+        <p>Conditional Tags applied to items in a Relationship Table serve to exclude the relationship in the output. It will not condition the linked topic out of the output.</p>
+        <p>&#160;</p>
+        <p>Condition Tags cannot currently be applied to Relationship Table cells, rows or columns using Flare or Blaze. However, it is possible for a relationship table created from a DITA&#160;import to have condition tags applied to all of these. </p>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Default Relationship Table:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;reltable   xmlns="http://docs.oasis-open.org/dita/v1.1/schema/ditabase.xsd"</pre><pre>xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</pre><pre xml:space="preserve">  &lt;relheader&gt;</pre><pre xml:space="preserve">    &lt;relcolspec type="concept"/&gt;</pre><pre xml:space="preserve">    &lt;relcolspec type="task"/&gt;</pre><pre xml:space="preserve">    &lt;relcolspec type="reference"/&gt;</pre><pre xml:space="preserve">  &lt;/relheader&gt;</pre><pre>&#160;</pre><pre xml:space="preserve">  &lt;relrow&gt;</pre><pre xml:space="preserve">    &lt;relcell&gt;</pre><pre xml:space="preserve">    &lt;/relcell&gt;</pre><pre xml:space="preserve">    &lt;relcell&gt;</pre><pre xml:space="preserve">    &lt;/relcell&gt;</pre><pre xml:space="preserve">    &lt;relcell&gt;</pre><pre xml:space="preserve">    &lt;/relcell&gt;</pre><pre xml:space="preserve">  &lt;/relrow&gt;</pre><pre>&#160;</pre><pre>&lt;/reltable&gt;</pre><pre>&#160;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

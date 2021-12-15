@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1090" MadCap:lastWidth="1349" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h1>WebHelp Mobile</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Output:&#160;WebHelp Mobile</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>A Single Source output designed specifically for mobile devices. </p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li><a href="Output WebHelp Mobile - UI.htm">Output WebHelp Mobile - UI</a>
+            </li>
+            <li><a href="Output WebHelp Mobile - Command Line.htm">Output WebHelp Mobile - Command Line</a>
+            </li>
+            <li><a href="Output WebHelp Mobile - Output Feature Checklist.htm">Output WebHelp Mobile - Output Feature Checklist</a>
+            </li>
+            <li><a href="Output WebHelp Mobile - Output Files.htm">Output WebHelp Mobile - Output Files</a>
+            </li>
+            <li><a href="Output WebHelp Mobile - Baseline.htm">Output WebHelp Mobile - Baseline</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li><a href="../../!TestingResources/Mobile Emulators.htm">Mobile Emulators</a> - How to install and use our Mobile Emulators</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>To show a topic toolbar, you have to have a topic toolbar proxy in each topic or the master page</li>
+            <li>There is a compiler error for glossary popup topic links, but they still work on output (v7)</li>
+        </ul>
+        <p>&#160;</p>
+        <h2>WebHelp Mobile Support Matrix</h2>
+        <table style="caption-side: top;width: 622px;">
+            <col style="width: 140px;" />
+            <col style="width: 222px;" />
+            <col style="width: 249px;" />
+            <tbody>
+                <tr>
+                    <td style="font-weight: bold;background-color: #dcdcdc;">
+                        <p>Phone</p>
+                    </td>
+                    <td style="font-weight: bold;background-color: #dcdcdc;">
+                        <p>Output Type</p>
+                    </td>
+                    <td style="font-weight: bold;background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p>iPhone</p>
+                    </td>
+                    <td>
+                        <p>Advanced</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p>Windows Mobile</p>
+                    </td>
+                    <td>
+                        <p>v6.1 and under = Basic</p>
+                        <p>v6.5 and up = Advanced</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p>Palm</p>
+                    </td>
+                    <td>
+                        <p>Advanced with No Search</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p>Android</p>
+                    </td>
+                    <td>
+                        <p>2.0 only = Advanced</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <p>Blackberry</p>
+                    </td>
+                    <td>
+                        <p>v4.5 and under = Basic</p>
+                        <p>v4.6 and up = Advanced</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3>“Advanced” and “Basic” Functionality</h3>
+        <ul>
+            <li>Topic popups will be converted to hyperlinks since the screen size typically is not large enough to make topic popups useful.</li>
+            <li>Run-time merging works, however all sub projects are pre-merged. This means sub projects cannot be simply updated and dropped into the Subsystems folder of the master project. The master project must be regenerated.</li>
+            <li> Feedback is not supported.</li>
+            <li>It should work in supported desktop browsers.</li>
+            <li>we will not support “local” based help output that can be opened from a disk (file://) or network (\\UNC_Path)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>“Basic” Functionality</h3>
+        <ul>
+            <li>Search is not supported.</li>
+            <li>CSH is not supported.</li>
+            <li>Run-time merging works, however all sub projects are pre-merged. This means sub projects cannot be simply updated and dropped into the Subsystems folder of the master project. The master project must be regenerated.</li>
+            <li>Feedback is not supported.</li>
+            <li>Topic effects (expanding text, drop-down text, etc.) are statically displayed in their expanded states. They cannot be collapsed.</li>
+            <li>Only the selected skin in the target will be generated. This means the “Generate all skins” setting is ignored. It also means that if a skin is specified during a CSH call it will be ignored.</li>
+            <li>Only the following topic-toolbar buttons are supported:<ul style="list-style-type: circle;"><li>PreviousTopic</li><li>NextTopic</li><li>CurrentTopicIndex</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;&#160;</p>
+    </body>
+</html>

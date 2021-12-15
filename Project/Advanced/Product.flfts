@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileTagSet
+  Comment="My set of file tags"
+  Type="Product">
+  <FileTag
+    Name="Flare"
+    Comment="" />
+  <FileTag
+    Name="Contributor"
+    Comment="" />
+  <FileTag
+    Name="Analyzer"
+    Comment="" />
+  <FileTag
+    Name="Feedback"
+    Comment="" />
+  <FileTag
+    Name="Mimic"
+    Comment="" />
+  <FileTag
+    Name="Capture"
+    Comment="" />
+  <FileTag
+    Name="X-Edit"
+    Comment="" />
+  <FileTag
+    Name="Toolbar"
+    Comment="" />
+  <FileTag
+    Name="TeamServer"
+    Comment="" />
+  <FileTag
+    Name="Search Optimizer"
+    Comment="" />
+  <FileTag
+    Name="Lingo"
+    Comment="" />
+  <FileTag
+    Name="Help Viewer"
+    Comment="" />
+  <FileTag
+    Comment=""
+    Name="Press" />
+  <FileTag
+    Name="Echo"
+    Comment="" />
+  <FileTag
+    Name="Blaze"
+    Comment="" />
+</CatapultFileTagSet>

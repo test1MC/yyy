@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="286" MadCap:lastWidth="1172">
+    <body>
+        <ul>
+            <li><span class="bold">Hide: </span> Checking this box, will set the object to a hidden state. The object will not display on the editor, but will be part of the output.</li>
+            <li><span class="bold">Lock: </span> Checking this box, will set the object to a locked state. The object can not be clicked on or edited in any way.</li>
+            <li><span class="bold">Type: </span> Displays the type of object. Loop, rectangle, etc...</li>
+            <li><span class="bold">Text:</span> <![CDATA[ ]]>Displays any text that is on the object.</li>
+            <li><span class="bold">Conditions:</span> Displays the condition name of any condition applied to the object.</li>
+            <li><span class="bold">Anchors: </span> Displays which anchors, if any, are applied to the object.</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Mimic.MimicOnly"><span class="bold">Profile: </span> If the object is a profile shape, the name of the associated profile will be shown here.</MadCap:conditionalText>
+            </li>
+        </ul>
+        <h4>Misc.</h4>
+        <ul>
+            <li>You may select multiple objects in the pane at once using Ctrl+Select and Shift+Select<ul><li>You may apply a setting to all selected objects such as hide, lock, or a setting via the properties button.</li></ul></li>
+            <li>Selecting an object will select the object in the editor.<ul><li>Pressing Delete or Backspace will remove the object.</li><li>You may copy/cut/paste with a selected object.</li></ul></li>
+            <li><span class="bold">Right-Clicking</span> an object will bring up all the same options as if you Right-Clicked on the object in the main editor. (See object properties test plan for details on those options)</li>
+        </ul>
+    </body>
+</html>

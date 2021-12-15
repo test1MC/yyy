@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="15786" MadCap:lastWidth="1128" MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Menus - Tool Strip UI</h2>
+        <p>For the purposes of this test plan, verify all menu items function as they should and perform the Menu Test Cases for each menu. All menu items will be tested in more detail in the test plans of the modules which they support.</p>
+        <h3>Accessing the Tool Strip (If Tool Strip is not enabled)</h3>
+        <ul class="checkbox">
+            <li>Go to !File | Options</li>
+            <li>In the "Interface" tab, select "Tool Strip"</li>
+            <li>Click OK</li>
+        </ul>
+        <h3>File Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">File</span> menu</li>
+            <li>Press <span class="bold">[ALT] + F</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--FileMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 200pt;">
+            <p class="bold">File Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">New Project… (Starts the New Project Wizard): </span>Starts the <span class="UI">New Project Wizard</span></li>
+                <li>
+                    <p><span class="bold">Import Project: </span>Invokes the Import Project sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--ImportMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 280px;">
+                        <li><span class="bold">Import MS Word Documents (Starts the Import MS Word Documents Wizard): </span>Starts the <span class="UI">Import Microsoft Word Wizard</span></li>
+                        <li><span class="bold">Import FrameMaker Documents (Starts the Import Adobe FrameMaker Documents Wizard): </span>Starts the <span class="UI">Import FrameMaker Wizard</span></li>
+                        <li><span class="bold">Import Robohelp Project (Starts the Import Robohelp Wizard): </span>Starts the <span class="UI">Import Robohelp Wizard</span></li>
+                        <li><span class="bold">Import HTML&#160;Help Project (HHP) (Starts the Import HHP Wizard): </span>Starts the <span class="UI">Import HHP Wizard</span></li>
+                        <li><span class="bold">Import HTML&#160;Help File (CHM) (Starts the Import CHM Wizard): </span>Starts the <span class="UI">Import CHM Wizard</span></li>
+                        <li><span class="bold">Import DITA Document Set (Starts the Import DITA&#160;Document Set Wizard): </span>Starts the <span class="UI">Import DITA Wizard</span></li>
+                        <li><span class="bold">Import HTML&#160;File Set (Starts the import HTML File&#160;Set Wizard): </span>Starts the <span class="UI">Import HTML&#160;File&#160;Set Wizard</span></li>
+                        <li><span class="bold">Import From Source Control (Starts the Import Project from Source Control Wizard): </span>Starts the <span class="UI">Import Project from Source Control Wizard</span></li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Zip: </span>Invokes the Zip sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--ZipMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 225px;">
+                        <li><span class="bold">Zip Project… (Zip the project into a single file archive): </span>Invokes the <span class="UI">Create Package</span> dialog</li>
+                        <li><span class="bold">Zip and Email Project… (Zip and email the project): </span>Automatically zips the project, opens your email program, and attaches the zip file to a new message.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Open (Open File): </span>Invokes an <span class="UI">Open</span> dialog which lets you browse for appropriate file types to open in the application</li>
+                <li><span class="bold">Close (Close File): </span>Closes the current file</li>
+                <li><span class="bold">Close Project (Close project): </span>Closes the current project, but the application itself does not close.</li>
+                <li><span class="bold">Save (Save File): </span>Saves the current file</li>
+                <li><span class="bold">Save As (Save As): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new filename, and opens the new file in place of the current file.</li>
+                <li><span class="bold">Save To (Save To): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new name but does not open the new file.</li>
+                <li><span class="bold">Save All (Save All): </span>Saves all open documents</li>
+                <li><span class="bold">Save As Template… (Save As Template): </span>Invokes the <span class="UI">Save as Template</span> dialog which lets you save the current project as a template.</li>
+                <li>
+                    <p><span class="bold">Backups: </span>Invokes the Backups sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--BackupsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left:460px;">
+                        <li><span class="bold">Send Copy to the "Backups Folder" (Copy the file to the Backups Folder): </span>Creates a temporary copy of the file that is open and active in the interface in the Backups folder.</li>
+                        <li><span class="bold">Clear the "Backups Folder"… (Delete all files in the Backups Folder): </span>Removes all temporary backup files from the Backups folder.</li>
+                        <li><span class="bold">Backups (Open the Backups Folder window): </span>Opens the <span class="UI">Backups</span> pane</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Source Control: </span>Invokes the Source Control sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--SourceControl.png" alt="" title="" class="left" />
+                    </p>
+                    <div class="SnippetIndent" style="margin-left: 150pt;">
+                        <ul class="checkbox">
+                            <li><span class="bold">Project: </span>Invokes a submenu, which lets you apply changes at project level (check in all, check out all, get latest version all, undo checkout all)</li>
+                            <li><span class="bold">Add (Add file(s) to Source Control): </span>Add a new file to source control</li>
+                            <li><span class="bold">Check In (Check file(s) into Source Control): </span>Check file into source control after it's been checked out</li>
+                            <li><span class="bold">Check Out (Check file(s) out of Source Control):</span> Check a file out in order to make edits and changes</li>
+                            <li><span class="bold">Get Latest Version (Get the latest version from Source Control):</span> Copies the most current files stored in source control to your local Flare project</li>
+                            <li><span class="bold">Undo Check Out (Undo Check Out):</span> Revert pending changes to checked out files</li>
+                            <li><span class="bold">Show Differences (Show Differences):</span> Open a pane displaying the first version selected on the right side and the second version selected on the left side. The differences between the versions are highlighted.</li>
+                            <li><span class="bold">View History (View History):</span> Opens a dialog that displays the history of changes made to the file</li>
+                            <li><span class="bold">Request Check In (Send request to check in file to user(s)):</span> Opens the Send Request Check-In Message dialog, and provides option to send instant message or email to user</li>
+                            <li><span class="bold">Request View File (Send request to view file to user(s)):</span> Opens the View File Request dialog where user can notify another author to review a file and provide comments</li>
+                            <li><span class="bold">Undelete (Undelete):</span> Undoes what was deleted</li>
+                            <li><span class="bold">Refresh (Refresh source control status):</span> Refresh source control status</li>
+                            <li><span class="bold">Pending Check-Ins (Open Pending Check-Ins window):</span> Opens Pending Check-Ins window to display all the files marked to be checked into source control</li>
+                        </ul>
+                    </div>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">SharePoint: </span>Invokes the SharePoint sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--File--SharePointMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <div class="SnippetIndent" style="margin-left: 150pt;">
+                        <ul class="checkbox">
+                            <li><span class="bold">Check In: </span>Check file(s) into SharePoint </li>
+                            <li><span class="bold">Check Out: </span>Check file(s) out of SharePoint</li>
+                            <li><span class="bold">Undo Check Out: </span>Undo check out</li>
+                            <li><span class="bold">SharePoint Explorer: </span>Opens SharePoint Explorer window</li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </div>
+                    <hr />
+                </li>
+            </ul>
+            <ul class="checkbox">
+                <li><span class="bold">Send To: </span>Invokes a submenu, which lets you open the active file in another application, attach it to an email, or open the Windows folder where it is stored</li>
+                <li><span class="bold">Print (Print): </span>Prints the current file</li>
+                <li><span class="bold">Print Preview (Print preview): </span>Opens the <span class="UI">Print Preview</span> dialog, which lets you see how a document looks before  you send it to a printer.</li>
+                <li><span class="bold">Properties (File Properties): </span>Opens the <span class="UI">Properties</span> dialog for the selected item.</li>
+                <li><span class="bold">Recent Files: </span>Invokes the Recent Files sub-menu which lets you select a recently opened file to open again or manage the list of files that are considered "recent"</li>
+                <li><span class="bold">Recent Projects: </span>Invokes the Recent Projects sub-menu which lets you select a recently opened project to open again or manage the list of projects that are considered "recent"</li>
+                <li><span class="bold">Exit (Exit the application): </span>Exits the application</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Edit Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Edit</span> menu</li>
+            <li>Press <span class="bold">[ALT] + E</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--EditMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 150pt;">
+            <p class="bold">Edit Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Undo (Undo): </span>Undoes the most recent action</li>
+                <li><span class="bold">Redo (Redo): </span>Redoes the action that was most recently undone</li>
+                <li><span class="bold">Cut (Cut): </span>Cuts the current selection to the clipboard</li>
+                <li><span class="bold">Copy (Copy): </span>Copies the current selection to the clipboard</li>
+                <li><span class="bold">Paste (Paste): </span>Paste the contents from the clipboard</li>
+                <li><span class="bold">Delete (Delete): </span>Delete the current selection</li>
+                <li><span class="bold">Select All (Select All): </span>Selects all</li>
+                <li><span class="bold">Find and Replace: </span>Invokes the Find and Replace sub-menu</li>
+                <hr />
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Edit--FindAndReplaceMenu.png" alt="" title="" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 300px;">
+                    <li><span class="bold">Quick&#160;Find:&#160;</span>Opens the Find widget, with the Replace field hidden</li>
+                    <li><span class="bold">Quick&#160;Replace:&#160;</span>Opens the Find and Replace widget, the Replace field selected</li>
+                    <li><span class="bold">Find and Replace in Files (Ctrl&#160;+&#160;Shift&#160;+&#160;F):</span>&#160;Opens the <span class="UI">Find and Replace in&#160;Files</span> window</li>
+                    <li><span class="bold">Find Results 1: </span>Opens the <span class="UI">Find Results 1</span> window pane</li>
+                    <li><span class="bold">Find Results 2: </span>Opens the <span class="UI">Find Results 2</span> window pane</li>
+                </ul>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <hr />
+                <li><span class="bold">Properties (Run properties dialog for this item): </span>Invokes the <span class="UI">Properties</span> dialog for the selected item</li>
+                <p>&#160;</p>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>View Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">View</span> menu</li>
+            <li>Press <span class="bold">[ALT] + V</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--ViewMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 250pt;">
+            <p class="bold">View Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Toolbars: </span>Invokes the Toolbars sub-menu</li>
+                <li><span class="bold">Project Organizer (Open Project Organizer Window): </span>Opens the <span class="UI">Project Organizer</span></li>
+                <li><span class="bold">Content Explorer (Open Content Explorer Window): </span>Opens the <span class="UI">Content Explorer</span></li>
+                <li><span class="bold">File List (Open File List window): </span>Opens the <span class="UI">File List</span></li>
+                <li><span class="bold">Pending Check-Ins (Open Pending Check-Ins window): </span>Opens the <span class="UI">Pending Check-Ins</span> Window</li>
+                <li><span class="bold">External Resources:</span> Opens the <span class="UI">External Resources</span> Pane</li>
+                <li><span class="bold">SharePoint Explorer:</span> Open the <span class="UI">SharePoint</span> Explorer</li>
+                <li><span class="bold">Backups (Open the Backups Folder Window): </span>Opens the <span class="UI">Backups</span> pane</li>
+                <li><span class="bold">Open Master TOC (Open the Master TOC): </span>Opens the Master TOC in the <span class="UI">TOC Editor</span></li>
+                <li><span class="bold">Open Primary Target (Open the Primary Target File): </span>opens the Primary Target in the <span class="UI">Target Editor</span></li>
+                <li><span class="bold">Open Master Page Layout (Open the Master Page Layout): </span>Opens the Master Page Layout file in the <span class="UI">Page Layout Editor</span></li>
+                <li><span class="bold">Open Master Stylesheet (Open the Master Stylesheet): </span>Opens the Master Stylesheet in the <span class="UI">Stylesheet Editor</span></li>
+                <li><span class="bold">Attributes Window (Open the Tag Attributes Window): </span>Opens the <span class="UI">Attributes </span>Window</li>
+                <li><span class="bold">Style Window (Open the Style Window): </span>Open the <span class="UI">Style</span> window</li>
+                <li><span class="bold">Local Formatting Window (Open the Local Formatting Window): </span>Opens the <span class="UI">Local Formatting</span> Window</li>
+                <li><span class="bold">Index Window (Open the Index window): </span>Opens the <span class="UI">Index</span> window</li>
+                <li><span class="bold">Concept Window (Open the Concept window): </span>Opens the <span class="UI">Concepts</span> window</li>
+                <li><span class="bold">Link Viewer (Open the Link Viewer): </span>Opens the <span class="UI">Link Viewer</span></li>
+                <li><span class="bold">Project Analysis (Open the Project Analysis View): </span>Opens the <span class="UI">Project Analysis</span> pane</li>
+                <li><span class="bold">Start Page (Open the Start Page): </span>Opens the <span class="UI">Start Page</span></li>
+                <li><span class="bold">Instant Messages (Open the Instant Messages window): </span>Opens the <span class="UI">Instant Messages</span> window</li>
+                <li><span class="bold">Messages (Open the Messages window): </span>Opens the <span class="UI">Messages</span> pane</li>
+                <li>
+                    <p><span class="bold">Layout Mode: </span>Invokes the Layout submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--View--LayoutMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 250px;">
+                        <li><span class="bold">Web Layout (View document as a web page): </span>Changes the <span class="UI">XML Editor</span> view to Web Layout.</li>
+                        <li><span class="bold">Print Layout (View document as a sequence of printer pages): </span>Changes the <span class="UI">XML Editor</span> view to Print Layout.</li>
+                        <li><span class="bold">Edit Page Layout Document (Edit the associated page layout document): </span>Opens the page layout associated with the current topic in the <span class="UI">Page Layout Editor</span>.</li>
+                        <li><span class="bold">Edit Master Stylesheet (Edit the associated master stylesheet document): </span>Opens the stylesheet associated with the current topic (or the Master Stylesheet)&#160;in the <span class="UI">Stylesheet Editor</span>.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Show: </span>Invokes the Show submenu (See below)</li>
+            </ul>
+            <hr />
+            <ul class="checkbox">
+                <li><span class="bold">Info Bar (Hide/show the Info Bar): </span>Hides or shows the <span class="UI">Info Bar</span></li>
+                <li><span class="bold">Status Bar (Hide/show the Status Bar): </span>Hides or shows the <span class="UI">Status Bar</span></li>
+                <li><span class="bold">Preview:</span> (Ctrl+W) preview the current topic .</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h4>View |&#160;Show Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--View--ShowMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">View |&#160;Show Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Show Caret Tag Neighborhood (Toggle show Caret Tag Neighborhood): </span>Turns the Caret Tag Neighborhood feature on or off.</li>
+                <li><span class="bold">Show Space (Toggle show space): </span>Turns paragraph and space markers on and off in the active topic.</li>
+                <li><span class="bold">Show tags (Toggle show tags): </span>Changes the <span class="UI">XML Editor</span> to "Show Tags" mode</li>
+                <li><span class="bold">Show Markers (Toggle show markers): </span>Turns markers on or off in the active topic or other content file.</li>
+                <li><span class="bold">Show Inline Markers (Show markers for all inline elements): </span>Lets you show or hide markers for all inline elements in the active topic.</li>
+                <li><span class="bold">Show invisible tags (Toggle show invisible tags): </span>Turns invisible tags (e.g., &lt;title&gt;) on or off in the active topic. This option is enabled only if you have selected "Show tags."</li>
+                <li><span class="bold">Show Comments (Toggle show comments): </span>Turns comment tags on or off in the active topic.</li>
+                <li><span class="bold">Show All Images as Thumbnails (Toggle show image thumbnails): </span>Lets you toggle between displaying images as thumbnails or full size in the <span class="UI">XML Editor</span>.</li>
+                <li><span class="bold">Show tags in mono-color (): </span>Lets you choose whether to display tags in a color or in black. This option is enabled only if you have selected "Show tags."</li>
+                <li><span class="bold">Show tags in mono-font (Toggle show tags in mono-font): </span>Lets you choose whether to display all tags in the same font or in the font actually applied to each area. This option is enabled only if you have selected "Show tags."</li>
+                <li><span class="bold">Enable Object Positioning (Enable Object Positioning): </span>Turns object positioning on and off.</li>
+                <li><span class="bold">Enable Orphan/Widow Control (Enable Orphan/Widow Control): </span>Turns widow and orphan control on or off.</li>
+                <li><span class="bold">Show Hidden Elements (Toggle show hidden elements): </span>Shows content that has been designated as "hidden." (the "display" property of the element is set to "none")</li>
+                <li><span class="bold">Show Conditional Indicators (Hide/show conditional indicators): </span>Lets you show or hide conditional indicators in the XML Editor.</li>
+                <li><span class="bold">Show Variable Names (Toggle show variable names): </span>Lets you show or hide variable names in your variable markers.</li>
+                <li><span class="bold">Highlight Variables (Highlight variables): </span>Lets you choose whether to see a gray background behind variable definitions in a topic.</li>
+                <li><span class="bold">Show Bookmark Names (Toggle show bookmark names): </span>Lets you show or hide the names of bookmarks in your markers (if you have inserted bookmarks) in the active topic.</li>
+                <li><span class="bold">Show Named Elements (Toggle show named elements): </span>Lets you show or hide markers for all inline elements in the active topic.</li>
+                <li><span class="bold">Locks (Disabled/Enabled) (Switch to locked/unlocked mode): </span>Locks or unlocks the content designated "locked"</li>
+                <li><span class="bold">Show Locked Elements (Toggle show locked elements): </span>Allows you to show or hide the gray background associated with elements that have been tagged as "locked."</li>
+                <li><span class="bold">Show Changes (Toggle showing changes): </span>Lets you show or hide the Annotations portion of the <span class="UI">XML Editor</span>.</li>
+                <li><span class="bold">Marker Width: </span>Opens the <span class="UI">Set Marker Width</span> dialog.</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Insert Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + I</span> on the keyboard</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--InsertMenu.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">Insert Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Character: Shift+F11</span>Invokes the Character sub-menu. This menu is covered in the character test plan.</li>
+                <li><span class="bold">Image… Ctrl+G (Insert an image): </span>Invokes the <span class="UI">Insert Picture</span> dialog</li>
+                <li>
+                    <p><span class="bold">Multimedia: </span>Invokes the Multimedia sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Insert--MultimediaMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 230px;">
+                        <li><span class="bold">Flash Movie… (Insert a Flash movie): </span>Invokes the <span class="UI">Insert Multimedia</span> dialog with the file filter set to Flash file types.</li>
+                        <li><span class="bold">Windows Media Player… (Insert an embedded Windows Media Player): </span>Invokes the <span class="UI">Insert Multimedia</span> dialog with the file filter set to Windows Media Player file types. </li>
+                        <li><span class="bold">Quicktime Movie… (Insert an embedded Quicktime movie Player): </span>Invokes the <span class="UI">Insert Multimedia</span> dialog with the file filter set to Quicktime file types. </li>
+                        <li><span class="bold">HTML5 Movie...(Insert an embedded Quicktime movie Player): </span>Invokes the <span class="UI">Insert Multimedia</span> dialog with the file filter set to HTML5 movie types.</li>
+                        <li><span class="bold">Mimic Movie Link… (Insert a Mimic Movie link): </span>Invokes the <span class="UI">MadCap Mimic Movie Link</span> dialog.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Screen Capture… (Do a screen capture and insert image): </span>Invokes the <span class="UI">Screen Capture</span> dialog</li>
+                <li><span class="bold">Equation Ctrl+E (Insert an Equation):</span> Opens the <span class="UI">Equation</span> Editor</li>
+                <li><span class="bold">Slideshow... (Insert a Slideshow):</span> Inserts a slideshow in the XML&#160;editor.&#160;If a slideshow is already selected, it will open the <span class="UI">Edit Slideshow</span> dialog.</li>
+                <li><span class="bold">QR Code Ctrl+Q (Insert a QR Code):</span> Opens the <span class="UI">QR Code </span>dialog</li>
+                <li><span class="bold">Rule… (Insert a horizontal ruler): </span>Invokes the <span class="UI">Insert Ruler</span> dialog</li>
+                <li><span class="bold">Hyperlink… (Insert a hyperlink): </span>Invokes the <span class="UI">Insert Hyperlink</span> dialog</li>
+                <li><span class="bold">Bookmark… (Insert a bookmark): </span>Invokes the <span class="UI">Manage Bookmarks</span> dialog</li>
+                <li><span class="bold">Named Destination (Insert a named destination): </span>Invokes the <span class="UI">Named Destination</span> dialog</li>
+                <li><span class="bold">Cross-Reference… (Insert a Cross-Reference): </span>Invokes the <span class="UI">Insert Cross-Reference</span> dialog</li>
+                <li><span class="bold">Topic Popup… (Insert a Topic Popup): </span>Invokes the <span class="UI">Insert Topic Popup</span> dialog</li>
+                <li><span class="bold">Snippet… (Insert a snippet): </span>Invokes the <span class="UI">Insert Snippet Link</span> dialog</li>
+                <li><span class="bold">Variable… (Insert a variable): </span>Invokes the <span class="UI">Variables</span> dialog </li>
+                <li><span class="bold">Glossary Term Link (Mark selected text as glossary term): </span>Invokes the <span class="UI">Create Glossary Term</span> link (must have some text selected for option to be active)</li>
+                <li><span class="bold">Toggler… (Insert a Toggler Control): </span>Invokes the <span class="UI">Insert Toggler</span> dialog</li>
+                <li><span class="bold">Drop-Down Text… (Insert drop-down): </span>Invokes the <span class="UI">Insert Drop-Down</span> dialog</li>
+                <li><span class="bold">Drop-Down Hotspot (Insert drop-down hotspot): </span>Inserts a Drop-Down Hotspot. This option requires that a selection is made inside a Drop-Down Head.</li>
+                <li><span class="bold">Expanding Text… (Insert an Expanding Text): </span>Invokes the <span class="UI">Insert Expanding Text</span> dialog</li>
+                <li><span class="bold">Text Popup… (Insert a Text Popup Control): </span>Invokes the <span class="UI">Insert Text Popup</span> dialog</li>
+                <li><span class="bold">Text Box… (Insert a text box): </span>Invokes the <span class="UI">Insert Text Box</span> dialog</li>
+                <li><span class="bold">Footnote… (Insert a Footnote): </span>Invokes the <span class="UI">Insert Footnote/Endnote</span> dialog</li>
+                <li><span class="bold">Script… (Insert a script): </span>Invokes the <span class="UI">Insert Script</span> dialog</li>
+                <li>
+                    <p><span class="bold">Help Control: </span>Invokes the Help Control sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Insert--HelpControlMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 270px;">
+                        <li><span class="bold">Concept Link (A-Link)… (Insert a Concept Link control):&#160;</span>Invokes the <span class="UI">Insert Concept Link Control</span> dialog</li>
+                        <li><span class="bold">Related Topics Control… (Insert a Related Topics control):&#160;</span>Invokes the <span class="UI">insert Related Topics Control</span> dialog</li>
+                        <li><span class="bold">Keyword Link Control (K-Link)… (Insert a Keyword Link control):&#160;</span>Invokes the <span class="UI">Insert Keyword Link Control</span> dialog</li>
+                        <li><span class="bold">Shortcut Control… (Insert a Shortcut control): </span>Invokes the <span class="UI">Insert Shortcut Control</span> dialog</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Proxy: </span>Invokes the Proxy sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Insert--ProxyMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 250px;">
+                        <li><span class="bold">Insert Body Proxy… (Insert a Body Proxy):&#160;</span>Invokes the <span class="UI">Body Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Breadcrumbs Proxy… (Insert a Breadcrumbs Proxy):&#160;</span>Invokes the <span class="UI">Breadcrumbs Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Topic Toolbar Proxy… (Insert a Topic Toolbar Proxy):&#160;</span>Invokes the <span class="UI">Topic Toolbar Proxy</span> dialog</li>
+                        <li><span class="bold">Insert TOC Proxy… (Insert a TOC Proxy):&#160;</span>Invokes the <span class="UI">TOC Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Mini-TOC Proxy… (Insert a Mini-TOC Proxy):&#160;</span>Invokes the <span class="UI">Mini-TOC Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Index Proxy… (Insert an Index Proxy):&#160;</span>Invokes the <span class="UI">Index Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Glossary Proxy… (Insert a Glossary Proxy):&#160;</span>Invokes the <span class="UI">Glossary Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Endnotes Proxy… (Insert an Endnotes Proxy):&#160;</span>Invokes the <span class="UI">Endnotes Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Concepts Proxy… (Insert a Concepts Proxy):&#160;</span>Invokes the <span class="UI">Concepts Proxy</span> dialog</li>
+                        <li><span class="bold">Insert List-Of Proxy… (Insert a List-Of Proxy):&#160;</span>Invokes the <span class="UI">List-Of Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Relationships Proxy… (Insert a Relationships Proxy):&#160;</span>Invokes the <span class="UI">Relationships Proxy</span> dialog</li>
+                        <li><span class="bold">Insert Page Header… (Insert a Page Header):&#160;</span>Invokes the <span class="UI">Page Header</span> dialog</li>
+                        <li><span class="bold">Insert Page Footer… (Insert a Page Footer):&#160;</span>Invokes the <span class="UI">Page Footer</span> dialog</li>
+                    </ul>
+                    <hr />
+                </li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+        </div>
+        <h3>Format Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + F</span> on the keyboard</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--FormatMenu.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">Format Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Font… (Font Properties): </span>Opens the <span class="UI">Font Properties</span> dialog, which lets you edit the font properties for the selected content.</li>
+                <li><span class="bold">Paragraph…/Picture… (Edit Paragraph Properties/Edit Picture): </span>In most cases, this option invokes the <span class="UI">Paragraph Properties</span> dialog. If an image is selected, the option will change to "Picture…"&#160;and invoke the <span class="UI">Edit Picture</span> dialog.</li>
+                <li><span class="bold">Conditions… (Select Conditional Text Tags): </span>Invokes the <span class="UI">Condition Tags</span> dialog which lets you apply condition tags to the selected content.</li>
+                <li><span class="bold">Language… (Select Language): </span>Opens the <span class="UI">Select Language</span> dialog, which lets you choose a language for the selected content</li>
+                <li><span class="bold">Name… (Name the element): </span>Opens the <span class="UI">Manage Named Elements</span>, which you can use to name the current selection.</li>
+                <li><span class="bold">Create Style Class… (Create a new CSS style class): </span>Opens the <span class="UI">Create Style</span> dialog, which lets you create a new style for the content selected in the topic.</li>
+                <li><span class="bold">Pick Style (Pick style): </span>Opens the floating <span class="UI">Style Picker</span>, which lets you select and apply a style to the selected content.</li>
+                <li><span class="bold">Create Snippet… (Create a new snippet): </span>Invokes the <span class="UI">Create Snippet</span> dialog populated with the current element</li>
+                <li><span class="bold">List: </span>Invokes the List sub-menu (See below)</li>
+                <li><span class="bold">Group… (Group selected items): </span>Invokes the <span class="UI">Create Group</span> dialog</li>
+                <li><span class="bold">Bold (Bold): </span>Applies bold typeface to the content selected in the topic.</li>
+                <li><span class="bold">Italic (Italic): </span>Applies italic typeface to the content selected in the topic.</li>
+                <li><span class="bold">Underline (Underline): </span>Underlines the content selected in the topic.</li>
+                <li><span class="bold">Color: </span>Lets you choose and apply a color to the selected content.</li>
+                <li><span class="bold">Background Color: </span>Lets you choose and apply a color to the background of the selected content.</li>
+                <li>
+                    <p><span class="bold">Locks: </span>Invokes the Locks sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Format--LocksMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 260px;">
+                        <li><span class="bold">Mark Element(s) to be Locked (Mark/unmark selected elements to be locked): </span>Places a gray background behind the selected content in the topic, which means that the content can now be locked. In order to see this gray background, you must select the option below to show locked elements.
+</li>
+                        <li><span class="bold">Locks (Disabled/Enabled) (Switch to locked/unlocked mode): </span>Locks or unlocks the content designated with the gray background. After content has been locked, it cannot be edited, and annotations cannot be added to it.</li>
+                        <li><span class="bold">Show Locked Elements (Show locked elements): </span>Allows you to show or hide the gray background associated with elements that have been locked or selected to be locked.</li>
+                    </ul>
+                    <hr />
+                </li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Format |&#160;List Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Format--ListMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 180pt;">
+            <p class="bold">Format |&#160;List Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li>
+                    <p><span class="bold">List Actions: </span>Invokes the List Actions sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Format--List--ListActionsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 320px;">
+                        <li><span class="bold">Merge With Previous List (Merge list with Previous list):&#160;</span>Combines a list with another list immediately before it. 
+</li>
+                        <li><span class="bold">Merge With Next (Marge list with next list):&#160;</span>List Combines a list with another list immediately following it. 
+</li>
+                        <li><span class="bold">Sort List (Sort list):&#160;</span>Reorders the items in the list alphabetically. </li>
+                        <li><span class="bold">Reverse List (Reverse list):&#160;</span>Reorders the items in the list so that they appear in reverse order (i.e., first item is last, last item is first). 
+</li>
+                        <li><span class="bold">Unbind List (Unbind list - replace it with the items):&#160;</span>Removes the list designation from the content so that it displays as regular text. 
+</li>
+                        <li><span class="bold">Continue Sequence (Don't restart the sequence number, i.e. continue where previous list left off):&#160;</span>Ensures that the next list you create in the topic starts with the next number in the sequence of the list above (even if the two lists are separated by other content).</li>
+                        <li><span class="bold">List Start #: </span>Lets you specify a number to start a numbered list. (After you enter a number in this selection, you need to click the blue "enter" arrow at the end to apply the effect.) 
+</li>
+                        <li><span class="bold">Item #: </span>Lets you specify a number to start a selected item in a numbered list.
+</li>
+                        <li><span class="bold">Move Up (Move list item up one step): </span>Moves the selected item in the list above the item before it. 
+</li>
+                        <li><span class="bold">Move Down (Move list item down one step): </span>Moves the selected item in the list below the item after it.</li>
+                        <li><span class="bold">Make Simple Item(s) (Make Simple Items - remove any embedded paragraph tags): </span>Lets you return a line in a list from a paragraph item to a simple item (an &lt;li&gt; tag without a &lt;p&gt; tag following it). 
+</li>
+                        <li><span class="bold">Make Paragraph Item(s) (Make Paragraph Items - inject paragraph elements inside the list items ): </span>Lets you add a &lt;p&gt; tag after the &lt;li&gt; tag in a numbered or bulleted list.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Bullet List (Bullet List): </span>Applies a bulleted list to the selected content.</li>
+                <li><span class="bold">Circle Bullet List (Circle Bullet List): </span>Applies a bulleted list to the selected content. The bullets are circles.</li>
+                <li><span class="bold">Square Bullet List (Square Bullet List): </span>Applies a bulleted list to the selected content. The bullets are squares.</li>
+                <li><span class="bold">Numbered List (Numbered List): </span>Applies a numbered list to the selected content.</li>
+                <li><span class="bold">Lower-alpha Numbered List (Lower-alpha Numbered List): </span>Applies a numbered list to the selected content where lowercase alpha characters are used (a., b., c., d., etc.).</li>
+                <li><span class="bold">Upper-alpha Numbered List (Upper-alpha Numbered List): </span>Applies a numbered list to the selected content where uppercase alpha characters are used (A., B., C., D., etc.).</li>
+                <li><span class="bold">Lower-roman Numbered List (Lower-roman Numbered List): </span>Applies a numbered list to the selected content where lowercase Roman numerals are used (i., ii., iii., iv., etc.).</li>
+                <li><span class="bold">Upper-roman Numbered List (Upper-roman Numbered List): </span>Applies a numbered list to the selected content where uppercase Roman numerals are used (I., II., III., IV., etc.).</li>
+                <li><span class="bold">Outdent Items (Outdent Items): </span>Lets you shift indented content to the left, thus "outdenting" it.</li>
+                <li><span class="bold">Indent Items (Indent Items): </span>Lets you shift selected content to the right, thus "indenting" it.</li>
+                <li><span class="bold">Custom Format:&#160;</span>
+                    <ul>
+                        <li><span class="bold">Create Custom&#160;Format...: </span>Opens the "Create New&#160;List Format"&#160;dialog</li>
+                        <li><span class="bold">(reset class): </span>Resets the class of selected list</li>
+                        <li><span class="bold">[custom list styles in your project]</span> All list styles will show here, click to apply the class to your selected list</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Project Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + P</span> on the keyboard</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--ProjectMenu.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 170pt;">
+            <p class="bold">Project Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Add Topic… (Create a new Topic file): </span>Invokes the <span class="UI">Add New Topic</span> dialog</li>
+                <li><span class="bold">Add Page Layout… (Create a new Page Layout file): </span>Invokes the <span class="UI">Add New Page Layout</span> dialog</li>
+                <li><span class="bold">Add Master Page… (Create a new Master Page file): </span>Invokes the <span class="UI">Add New Master Page</span> dialog</li>
+                <li><span class="bold">Add Snippet… (Create a new Snippet file): </span>Invokes the <span class="UI">Add New Snippet</span> dialog</li>
+                <li><span class="bold">Add Image… (Add a new Image file): </span>Invokes the <span class="UI">Add New Image</span> dialog</li>
+                <li><span class="bold">Add Multimedia… (Add a new multimedia file): </span>Invokes the <span class="UI">Add New Multimedia</span> dialog</li>
+                <li><span class="bold">Add Screen Capture… (Add a screen capture): </span>Invokes the <span class="UI">Screen Capture</span> dialog</li>
+                <li>
+                    <p><span class="bold">Import File: </span>Invokes the Import File submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Project--ImportMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 270px;list-style-type: square;">
+                        <li><span class="bold">Add MS&#160;Word Import File… (Create a new MS Word Import file): </span>Invokes the <span class="UI">Add MS Word Import File</span> dialog</li>
+                        <li><span class="bold">Add FrameMaker Import File… (Create a new FrameMaker Import file): </span>Invokes the <span class="UI">Add FrameMaker Import File</span> dialog</li>
+                        <li><span class="bold">Add DITA Import File… (Create a new DITA Import file): </span>Invokes the <span class="UI">Add DITA Import File</span> dialog</li>
+                        <li><span class="bold">Add HTML&#160;import file... (Create a new HTML Import file): </span>Invokes the <span class="UI">Add HTML Import File</span> dialog</li>
+                        <li><span class="bold">Add Flare Project Import File… (Create a new Flare Project Import file): </span>Invokes the <span class="UI">Add Flare Project Import File</span> dialog</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Add Stylesheet… (Create a new Stylesheet file): </span>Invokes the <span class="UI">Add New Stylesheet</span> dialog</li>
+                <li><span class="bold">Add Table Style… (Create a new Table Style file): </span>Invokes the <span class="UI">Add New Table Style</span> dialog</li>
+                <li>
+                    <p><span class="bold">Advanced: </span>Invokes the Advanced submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Project--AdvancedMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 270px;list-style-type: square;">
+                        <li><span class="bold">Add Browse Sequence… (Create a new Browse Sequence file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Search Filter Set… (Create a new Search Filter Set file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Synonym File… (Create a new Synonym file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Index Link Set… (Create a new Index Link Set): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Auto-index Phrase Set… (Create a new Auto-index Phrase Set): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Alias File… (Create a new Alias file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Header File… (Create a new Header file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Relationship Table… (Create a new Relationship Table file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add File Tag Set… (Create a new File Tag Set file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                        <li><span class="bold">Add Auto Suggestion List File… (Create a new Auto Suggestion List file): </span>Invokes the <span class="UI">Add File</span> dialog</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Add Target… (Create a new Output Target file): </span>Invokes the <span class="UI">Add Target</span> dialog</li>
+                <li><span class="bold">Add Batch Target… (Create a new Batch Target file): </span>Invokes the <span class="UI">Add Batch Target</span> dialog</li>
+                <li><span class="bold">Add Glossary… (Create a new Glossary file): </span>Invokes the <span class="UI">Add Glossary</span> dialog</li>
+                <li><span class="bold">Add Table of Contents… (Create a new Table of Contents file): </span>Invokes the <span class="UI">Add Table of Contents</span> dialog</li>
+                <li><span class="bold">Add Skin… (Create a new Skin file): </span>Invokes the <span class="UI">Add Skin</span> dialog</li>
+                <li><span class="bold">Add Destination… (Create a new Destination file): </span>Invokes the <span class="UI">Add Destination</span> dialog</li>
+                <li><span class="bold">Add Condition Tag Set… (Create a new Condition Tag Set file): </span>Invokes the <span class="UI">Add Condition Tag Set</span> dialog</li>
+                <li><span class="bold">Add Variable Set… (Create a new Variable Set file): </span>Invokes the <span class="UI">Add Variable Set</span> dialog</li>
+                <li><span class="bold">Add Report File… (Create a new Report file): </span>Invokes the <span class="UI">Add Report</span> dialog</li>
+                <li><span class="bold">Add Export Project File… (Create a new Export Project file): </span>Invokes the <span class="UI">Add File</span> dialog with Export Project File selected</li>
+                <li><span class="bold">Project Properties… (Runs the Project Properties dialog): </span>Invokes the <span class="UI">Project Properties</span> dialog</li>
+                <li><span class="bold">Save Project As Template… (Save this project as a template): </span>Invokes the <span class="UI">Save Project as Template Wizard</span></li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+        </div>
+        <h3>Review Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Review</span> menu</li>
+            <li>Press <span class="bold">[ALT] + R</span> on the keyboard</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--ReviewMenu.jpg" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 200pt;">
+            <p class="bold">Review Menu Items (Tooltips in parentheses) </p>
+            <p class="bold">&#160;</p>
+            <ul class="checkbox">
+                <li style="font-weight: normal;"><span class="bold">Send For Review:</span> opens the send for review dialog.</li>
+                <li style="font-weight: normal;"><span class="bold">Import Review Package...:</span> opens the open file dialog.</li>
+                <li style="font-weight: normal;"><span class="bold">File Reviews:</span> Opens the File Reviews Pane.</li>
+                <li style="font-weight: normal;"><span class="bold">Review Packages:</span> Opens the Review Packages Pane.</li>
+                <li style="font-weight: normal;"><span class="bold">Track Changes (Ctrl+Shift+E):</span> Toggles Tracked changes on and off.</li>
+            </ul>
+            <p class="bold">&#160;</p>
+            <ul class="checkbox">
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges---Button---ShowChanges.png" /><span class="bold">Show Changes (Toggle Show Changes): </span>Toggles showing tracked changes</li>
+                <li><span class="bold">Previous Change (Navigate to the Previous Change): </span>Navigates to the previous tracked change</li>
+                <li><span class="bold">Next Change (Navigate to the Next Change): </span>Navigates to the next tracked change</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges---Button---AcceptChanges.png" /><span class="bold">Accept Change (Accept the Current Change): </span>Accepts the currently selected change</li>
+                <li>
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges---Button---RejectChanges.png" /> <span class="bold">Reject Change (Reject the Current Change): </span>Rejects the currently selected change</p>
+                </li>
+                <li><b>Accept All Changes:</b> Accepts All Changes in the Document</li>
+                <li><b>Reject All Changes:</b> Rejects All Changes in the Document</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges---Button---InsertAnnotation.png" /><span class="bold">Insert Annotation (Insert an Annotation): </span>Inserts an annotation for the selected text</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges---Button---DeleteAnnotation.png" /><span class="bold">Delete Annotation (Delete the Annotation): </span>Deletes the selected annotation</li>
+                <li><b>Deletes All Annotations:</b> Deletes All Annotations in the Document</li>
+                <li class="bold" style="font-weight: normal;"><span class="bold">Review Options:</span> opens the !Tools|Options dialog in the Review Tab.</li>
+            </ul>
+            <p class="bold">&#160;</p>
+            <p class="bold">&#160;</p>
+        </div>
+        <h3>Build Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + B</span> on the keyboard</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--BuildMenu.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 240pt;">
+            <p class="bold">Build Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><b>Build Primary: "[Primary Target]":</b> Build the primary target</li>
+                <li><b>View Primary: "[Primary Target]":</b> View the primary target</li>
+                <li><b>Publish Primary: "[Primary Target]":</b> Publish the primary target</li>
+                <li><b>Test CSH API Calls - Primary:</b> Test CSH API Calls for primary target</li>
+                <li><b>Build:</b> Build this target</li>
+                <li><b>View:</b> View this target</li>
+                <li><b>Publish:</b> Publish this target</li>
+                <li><b>Clean Project:</b>Delete all generated output files</li>
+                <li><b>Open Output Folder:</b>Opens the Output Folder with the Windows Explorer</li>
+                <li><b>Export Header File(s):</b>Export Header Files</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h3>Tools Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Tools</span> menu</li>
+            <li>Press <span class="bold">[ALT] + T</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--ToolsMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 200pt;">
+            <p class="bold">Tools Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li><span class="bold">Update Cross-References… (Update Cross-References in the current document): </span>Updates Cross-References in the current document if any require updating</li>
+                <li><span class="bold">Edit Master Stylesheet (Edit the associated master stylesheet document): </span>Opens the Master Stylesheet in the <span class="UI">Stylesheet Editor</span></li>
+                <li><span class="bold">Stylesheet Links (Manage links to stylesheets): </span>Invokes the <span class="UI">Stylesheet Links</span> dialog, unless a Master Stylesheet is used by the project or primary target, in which case a message indicating as much will appear</li>
+                <li><span class="bold">Edit Page Layout Document (Edit the associated Page Layout document): </span>Opens the Master Page Layout in the <span class="UI">Page Layout Editor</span></li>
+                <li>
+                    <p><span class="bold">Index: </span>Invokes the Index submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--IndexMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 310px;list-style-type: square;">
+                        <li><span class="bold">Index Window (Open the Index Window): </span>Opens the <span class="UI">Index </span>window</li>
+                        <li>Insert "[selection]" as Index Keyword:</li>
+                        <li><span class="bold">Index Entry Mode (Toggle Index Entry Mode): </span>Enables or disables Index Entry Mode</li>
+                        <li><span class="bold">Auto-complete Index Entries (Auto-complete Index and Concept entries in the Index and Concept windows):&#160;</span>Enables or disables auto-complete of index and concept entries in the <span class="UI">Index</span> and <span class="UI">Concepts</span> panes</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Concepts: </span>Invokes the Concepts submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--ConceptsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 260px;list-style-type: square;">
+                        <li><span class="bold">Concept Window (Open the Concept Window): </span>Opens the <span class="UI">Concepts</span> window</li>
+                        <li><span class="bold">Concept Entry Mode (Toggle Concept Entry Mode): </span>Enables or disables Concept Entry Mode</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Glossary Terms (Open the Glossary Terms Window): </span>Opens the <span class="UI">Glossary Terms</span> pane</li>
+                <li><span class="bold">Page Frame Contents Pane (Open the Page Frame Contents Entry Window): </span>Opens the <span class="UI">Page Frame Contents</span> pane</li>
+                <li><span class="bold">Footnotes (Open the Footnotes window): </span>Opens the <span class="UI">Footnotes</span> pane</li>
+                <li><span class="bold">Spell Check While Typing (Spell check while typing): </span>Enables or disables spell check while typing</li>
+                <li><span class="bold">Spell Check Window (Open the Spell Check window): </span>Opens the <span class="UI">Spell Check</span> window</li>
+                <li><span class="bold">Ignored Words… (Edit the 'ignored words' associated with the current document): </span>Invokes the <span class="UI">Ignored Words</span> dialog for the current document</li>
+                <li><span class="bold">Hyphenation Window (Open the Hyphenation Window): </span>Opens the <span class="UI">Hyphenation</span> Window</li>
+                <li><span class="bold">Edit Hyphenation Rules… (Edit Custom Hyphenation Rules): </span>Invokes the <span class="UI">Open Hyphenation Document</span> dialog</li>
+                <li>
+                    <p><span class="bold">Contributions:</span> Invokes the Contributions submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--ContributionsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 290px;list-style-type: square;">
+                        <li><span class="bold">Contributions (Opens Contributions window): </span>Opens Contributions window</li>
+                        <li><span class="bold">Create Contribution Template (Create a Contribution Template using the active topic): </span>Creates a contribution template using the active topic</li>
+                        <li><span class="bold">Import Contribution Document (Import a contribution document): </span>Imports a contribution document</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">MadCap: </span>Invokes the Launch submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Tools--LaunchMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="margin-left: 290px;list-style-type: square;">
+                        <li><span class="bold">Launch MadCap Capture (Launch MadCap Capture): </span>Launches MadCap Capture</li>
+                        <li><span class="bold">Launch MadCap Mimic (Launch MadCap Mimic): </span>Launches MadCap Mimic</li>
+                        <li><span class="bold">Launch MadCap Analyzer (Launch MadCap Analyzer): </span>Launches MadCap Analyzer</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Regenerate Captured Images (Regenerate Captured Images): </span>Regenerates all captures images using the props file (in the event the props file was edited outside of MadCap Capture)</li>
+                <li><span class="bold">Manage Mappings:</span> Opens the manage mappings dialog.</li>
+                <li><span class="bold">Synchronize Mapped Files:</span> Opens the synchronize files dialog.</li>
+                <li><span class="bold">Manage Language Skins (Run the Manage Language Skins dialog): </span>Invokes the <span class="UI">Language Skin</span> dialog</li>
+                <li><span class="bold">Manage Templates (Open the Template Manager): </span>Invokes the <span class="UI">Template Manager</span> dialog</li>
+                <li><span class="bold">Options (Change Global Application Options): </span>Invokes the <span class="UI">Options</span> dialog</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h3>Table Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + A</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--TableMenu.png" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <p class="bold">Table Menu Items (Tooltips in parentheses)</p>
+            <ul class="checkbox">
+                <li>
+                    <p><span class="bold">Insert: </span>Invokes the Insert submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--InsertMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 210px;">
+                        <li><span class="bold">Table (Run the Insert Table dialog): </span>Invokes the <span class="UI">Insert Table</span> dialog.</li>
+                        <li><span class="bold">Columns to the Left (Insert new column to the left of the selected column): </span>Inserts a new column to the left of the selected column</li>
+                        <li><span class="bold">Columns to the Right (Insert new column to the right of the selected column): </span>Inserts a new column to the right of the selected column.</li>
+                        <li><span class="bold">Rows Above (Insert new row above the selected row): </span>Inserts a new row above the selected row.</li>
+                        <li><span class="bold">Rows Below (Insert new row below the selected row): </span>Inserts a new row below the selected row.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Delete: </span>Invokes the Delete sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--DeleteMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 180px;">
+                        <li><span class="bold">Table (Delete table): </span>Deletes the entire table.</li>
+                        <li><span class="bold">Columns (Delete selected column(s)): </span>Deletes the selected columns in a table.</li>
+                        <li><span class="bold">Rows (Delete selected row(s)): </span>Deletes the selected rows in a table.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Select: </span>Invokes the Select sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--SelectMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 180px;">
+                        <li><span class="bold">All&#160;Cells (Select all cells): </span>Selects the entire table.</li>
+                        <li><span class="bold">Table (Select table): </span>Selects the entire table.</li>
+                        <li><span class="bold">Column (Select column): </span>Selects the column where the cursor is placed in a table.</li>
+                        <li><span class="bold">Row (Select row): </span>Selects the row where the cursor is placed in a table.</li>
+                        <li><span class="bold">Cell (Select cell): </span>Selects the cell where the cursor is placed in a table.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <hr />
+                </li>
+                <li><span class="bold">Clear Cells (Clear selected cells): </span>Removes the text from the cells selected in a table.</li>
+                <li><span class="bold">Merge Cells (Merge selected cells): </span>Turns the selected cells in a table into one big cell. You can merge any number of rows and columns in a table, as long as they are adjacent to one another.</li>
+                <li><span class="bold">Split Cells… (Split selected cells): </span>Turns the selected cell in a table into many smaller cells by splitting the cell. When you split a cell, you are essentially inserting a smaller table into that cell.</li>
+                <li><span class="bold">Cell Content Style…(Select style for cell contents): </span>Opens the <span class="UI">Table Cell Content Style</span> dialog, which lets you choose specific table or paragraph styles to use for the selected cells.</li>
+                <li><span class="bold">Reset Local Cell formatting:</span> Resets the local cell formatting.</li>
+                <p class="note">Note: This option resets formatting placed on the entire cell (e.g., a background color added to cells would be removed). However, local formatting on content (e.g., bold text) is not affected. If you would like to remove local formatting for cells as well as cell content, you can use the Remove Inline Formatting button  instead.</p>
+                <li><span class="bold">Convert to Text:</span> Converts the selected table to text.</li>
+                <li>
+                    <p><span class="bold">Sort Rows:</span> Sorts rows in either ascending or descending order.</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--SortRowsMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 180px;">
+                        <li><span class="bold">Ascending (Sort the selected rows in ascending order): </span>Sorts the selected rows in ascending order.</li>
+                        <li><span class="bold">Descending (Sort the selected rows in descending order): </span>Sorts the selected rows in descending order.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Caption: </span>Invokes the Caption submenu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--CaptionMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 180px;">
+                        <li><span class="bold">Default (Display table caption): </span>Adds a placeholder for you to type a caption above the table.</li>
+                        <li><span class="bold">Above Table (Display table caption above the table): </span>Adds a placeholder for you to type a caption above the table.</li>
+                        <li><span class="bold">Below Table (Display table caption below the table): </span>Adds a placeholder for you to type a caption below the table.</li>
+                        <li><span class="bold">None (Remove table caption): </span>Removes a caption from the table.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li>
+                    <p><span class="bold">Table Style: </span>Invokes the Table Style sub-menu</p>
+                    <hr />
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--Table--TableStyleMenu.png" alt="" title="" class="left" />
+                    </p>
+                    <ul style="list-style-type: square;margin-left: 350px;">
+                        <li><span class="bold">Add Table Style... (Create a new Table Style file): </span>Opens the <span class="UI">Add File</span> dialog with Table Style selected. </li>
+                        <li><span class="bold">Edit Style (Edit the Style document): </span>Opens the table style in the <span class="UI">Table Style Editor</span> so that you can edit styles in the style sheet.</li>
+                        <li><span class="bold">Reset Table Style (Reset Table Style): </span>Removes local formatting (e.g., color background shading) from cells in a table.</li>
+                    </ul>
+                    <hr />
+                </li>
+                <li><span class="bold">Table Properties (Run the Table Properties dialog): </span>Invokes the <span class="UI">Table Properties </span>dialog, which lets you edit properties of the table (e.g., table size, caption, auto-fit behavior, style sheet).</li>
+                <li><span class="bold">Hide Gridlines (Toggle show gridlines): </span>Shows and hides the gridlines in the table.</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+        </div>
+        <h3>Window Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press <span class="bold">[ALT] + W</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--WindowMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menus--WindowMenu.flsnp" />
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h3>Help Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click the <span class="bold">Help</span> menu</li>
+            <li>Press <span class="bold">[ALT] + H</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Menus/Menu--HelpMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent" style="margin-left: 220pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menus--HelpMenu.flsnp" />
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4382" MadCap:lastWidth="1086" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Characters - UI</h2>
+        <h3>Opening the UI</h3>
+        <p>To invoke the Character fly-out menu, place the insertion point in the <span class="UI">XML Editor</span> or <span class="UI">Frame Contents</span> pane, then:</p>
+        <ul class="checkbox">
+            <li><span class="UI">XML Editor</span>:&#160;Click the triangle portion of the Character button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li>
+            <li><span class="UI">Frame Contents</span> pane:&#160;Click the triangle portion of the Character button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" /> in the <span class="UI">Frame Contents</span> pane's local toolbar</li>
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Insert | Character | </span>(observe fly-out)</li>
+            <li>Ribbon interface:&#160;Click the lower (label and triangle)&#160;potion of <span class="RibbonItem">!Insert | Character</span></li>
+        </ul>
+        <p>To invoke the <span class="UI">Character</span> dialog, place the insertion point in the <span class="UI">XML Editor</span> or <span class="UI">Frame Contents</span> pane, then:</p>
+        <ul class="checkbox">
+            <li>Keyboard:&#160;<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">F11</span></li>
+            <li><span class="UI">XML Editor</span>:&#160;Click the icon potion of the Character button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li>
+            <li><span class="UI">Frame Contents</span> pane:&#160;Click the icon portion of the Character button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" /> in the <span class="UI">Frame Contents</span> pane's local toolbar</li>
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Insert | Character | More characters…</span></li>
+            <li>Ribbon interface:&#160;Click the upper (icon)&#160;potion of <span class="RibbonItem">!Insert | Character</span></li>
+        </ul>
+        <h3>Character Menu - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--CharacterDropMenu.png" class="properties">
+            </img>
+        </p>
+        <ul class="checkbox" style="margin-left: 280pt;">
+            <li><span class="bold">Quick Character</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Insert Quick Character [the character and associated font] (Insert the 'Quick Character' [the character name and associated font]): </span>Inserts the quick character into the topic at the location of the cursor.</li>
+                    <li><span class="bold">Non-breaking Space (Insert a non-breaking space character): </span>Inserts a non-breaking space into the topic at the location of the cursor.</li>
+                    <li><span class="bold">Non-breaking Hyphen (Insert a non-breaking hyphen character): </span>Inserts a non-breaking hyphen into the topic at the location of the cursor.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Favorites (Insert [the character name and associated font]): </span>This section displays up to 16 special characters that the user has defined as a "Favorite"&#160;using the <span class="UI">Character</span> dialog. Hovering over a Favorite character should display a tooltip indicating the character name and the associated font. By default, Flare provides the 16 characters pictured on the left as the out-of-the-box Favorite characters.</li>
+            <li><span class="bold">Recently Used (Insert [the character name and associated font]): </span>This section displays up to 16 special characters that the user has recently&#160;inserted using the <span class="UI">Character</span> dialog. Characters inserted from the Favorites group should not appear as Recently Used (unless that were added to the Favorites from the Recently Used). Hovering over a Recently Used character should display a tooltip indicating the character name and the associated font.</li>
+            <li><span class="bold">More Characters (Insert character): </span>Opens the <span class="UI">Character</span> dialog which lets you select a special character to insert at the location of the cursor.</li>
+        </ul>
+        <h3>Character dialog - UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Dialog--Character.png" class="properties" style="width: 239px;height: 173px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">"Character" table:</span>&#160;Displays all unicode characters that exist for the current font.<ul style="list-style-type: square;"><li><p><span class="bold">Font:</span> If desired, select a font that you would like to use when inserting the character. If you insert a character with a font association, that character will be inserted wrapped in a span set to use that font. By default, Font is set to "(normal text)"&#160;which means the character will be inserted without any specific font association and will therefore use the font set for the element in which it is inserted. 
+</p><p class="note">NOTE:&#160;"(normal text)"&#160;will display characters in the Character table using the font associated with the current insertion point. That is, if the insertion point is inside a paragraph using the Comic Sans font, and you then insert a character, "(normal text)"&#160;will display characters in the Character table in Comic Sans. </p></li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---CopyToClipboard.png" /> (Copy to clipboard): </span>Copies the selected character to the clipboard (the associated font is not copied).</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeFavorite.png" />(Make favorite):&#160;</span>Adds the selected character to the "Favorites"&#160;list  (this button will actually work for any character selected in the Character table or the "Recently used"&#160;list, or if the insertion point is in the Quick Character field).<ul style="list-style-type: square;"><li>If "(normal text)" is selected, verify that only the character is added to the "Favorites"&#160;list</li><li>If any other specific font is selected, verify that the character is added to the "Favorites"&#160;list with its associated font</li><li>If the "Favorites" list is full (16 characters are allowed), Flare will prompt that you must first remove some.</li></ul></li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeQuickCharacter.png" />(Make quick character):&#160;</span>Makes the selected character the Quick Character (this button will actually work for any character selected in the Character table, the "Favorites"&#160;list or the "Recently used"&#160;list).<ul style="list-style-type: square;"><li>If "(normal text)" is selected, verify that only the character is used for the Quick Character</li><li>If any other specific font is selected, verify that the character and its associated font are used for the Quick Character</li></ul></li><li><span class="bold">Search:&#160;</span>Lets user search for a specific character by name or hexadecimal value. When empty, this field should display <span style="color: #808080;">Enter name or character code</span>.<ul style="list-style-type: square;"><li>Press <span class="KeyboardShortcut">Enter</span> or the <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---Search.png" /> button to refresh the search results in the Character table for the latest query.</li><li>Clearing the search field should automatically refresh the Character table to display all characters.</li><li>A search with no results should display "No results found"&#160;in the character table</li></ul></li></ul></li>
+            <li><span class="bold">Quick Character: </span>Displays the current Quick Character.<ul class="checkbox"><li>If the Quick Character has no associated font, the character displays using the font of the current element.</li><li>If the Quick Character has a font association, the character displays with that font.</li><li>Verify you can make the Quick Character a "favorite"&#160;using <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeFavorite.png" /></li></ul></li>
+            <li><span class="bold">"Favorites"&#160;table:&#160;</span>Displays up to 16 characters designated as "favorites"&#160;by the user.<ul class="checkbox"><li>If the favorite has no associated font, the character displays using the font of the current element.</li><li>If the favorite has a font association, the character displays with that font.</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---RemoveFavorite.png" />(Remove favorite):&#160;</span>Removes the selected character from the "Favorites"&#160;list.</li><li>Verify you can make a character from the "Favorites"&#160;list the Quick Character using <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeQuickCharacter.png" /></li></ul></li>
+            <li><span class="bold">"Recently used"&#160;table:&#160;</span>Displays the 16 most recently inserted character. <ul style="list-style-type: square;"><li>If the recent character has no associated font, the character displays using the font of the current element.</li><li>If the recent character has a font association, the character displays with that font.</li><li>Characters inserted from the "Favorites"&#160;list should not be added to the "Recently used"&#160;list</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---RemoveRecent.png" />(Remove recent):&#160;</span>Removes the selected character from the "Recently used"&#160;list.</li><li>Verify you can make a character from the "Recently used" list a "favorite"&#160;using <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeFavorite.png" /></li><li>Verify you can make a character from the "Recently used"&#160;list the Quick Character using <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Button---MakeQuickCharacter.png" /></li></ul></li>
+            <li><span class="bold">[character name]:&#160;</span>Whenever a character is selected in the  Character table, "Favorites" list, or "Recently used" list, the name of that character will display at the bottom of the <span class="UI">Character</span> dialog. If the selected character has an ALT key code, that will display in front of the name (example:&#160;<i>Alt+0225:&#160;Latin Small Letter A With Acute</i> for á). Otherwise, the hexadecimal value for the character will display in front of the name (example:&#160;<i>0103:&#160;Latin Small Letter A With Breve</i> for ă).</li>
+            <li><span class="bold">Close after inserting a character:&#160;</span>By default, the <span class="UI">Character</span> dialog will remain open after a character is inserted allowing the user to insert multiple characters if they desire. Enable this option it have the <span class="UI">Character</span> dialog close when a character is inserted.</li>
+            <li><span class="bold">Insert:&#160;</span>Inserts the currently selected character from the Character table, "Favorites" list, or "Recently used" list. May or may not close the dialog depending on the state of the previous option.</li>
+            <li><span class="bold">Close:&#160;</span>Closes the dialog and does not insert any additional characters.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Verify that double-clicking a character will insert it:<ul class="checkbox"><li>From the Character table</li><li>From the "Favorites" list</li><li>From the "Recently used"&#160;list</li></ul></li>
+                <li>Verify that you can navigate the Character table using all navigation keys (Arrow Keys, Page Up, Page Down, Home, End)</li>
+                <li>Verify that you can navigate the "Favorites" list using Left and Right Arrow Keys, Home and End</li>
+                <li>Verify that you can navigate the "Recently used" list using Left and Right Arrow Keys, Home and End</li>
+                <li>Verify that you can navigate through the Character table using the keyboard letter and number keys. For example, continuously pressing <span class="KeyboardShortcut">A</span> on the keyboard should navigate through all variances of the letter A that occur in the character table.</li>
+            </ul>
+        </div>
+        <h4>Right-Click Menus</h4>
+        <p>Right-clicking a character in the character table should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Menu--CharacterDialog--CharacterTableRightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Set as quick character:</span> Makes the selected character the Quick Character<ul style="list-style-type: square;"><li>If "(normal text)" is selected, verify that only the character is used for the Quick Character</li><li>If any other specific font is selected, verify that the character and its associated font are used for the Quick Character</li></ul></li>
+                <li><span class="bold">Make favorite:</span> Adds the selected character to the "Favorites"&#160;list. <ul style="list-style-type: square;"><li>If "(normal text)" is selected, verify that only the character is added to the "Favorites"&#160;list</li><li>If any other specific font is selected, verify that the character is added to the "Favorites"&#160;list with its associated font</li><li>If the "Favorites" list is full (16 characters are allowed), Flare will prompt that you must first remove some.</li></ul></li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p>Right-clicking in the Quick Character field should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Menu--CharacterDialog--QuickCharacterRightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Cut:</span> Cuts the selected Quick Character to the clipboard</li>
+                <li><span class="bold">Copy:&#160;</span>Copies the selected Quick Character to the clipboard</li>
+                <li><span class="bold">Paste:&#160;</span>Pastes the clipboard content to the Quick Character field</li>
+                <li><span class="bold">Clear font property: </span>Removes the associated font from the Quick Character so that it will be inserted as "(normal text)"&#160;going forward</li>
+                <li><span class="bold">Favorite:</span> Adds the Quick Character to the "Favorites" list.
+                    <ul style="list-style-type: square;"><li>If Quick Character has no associated font, verify that only the character is added to the "Favorites"&#160;list</li><li>If Quick Character has an associated font, verify that the character is added to the "Favorites"&#160;list with its associated font</li><li>If the "Favorites" list is full (16 characters are allowed), Flare will prompt that you must first remove some.</li></ul></li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p>Right-clicking a character in the Favorites list should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Menu--CharacterDialog--FavoritesRightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Set as quick character:</span> Makes the selected character the Quick Character<ul class="checkbox"><li>If "(normal text)" is selected, verify that only the character is used for the Quick Character</li><li>If any other specific font is selected, verify that the character and its associated font are used for the Quick Character</li></ul></li>
+                <li><span class="bold">Remove favorite:&#160;</span>Removes the selected character from the "Favorites"&#160;list.</li>
+                <li><span class="bold">Clear font property: </span>Removes the associated font from the selected character so that it will be inserted as "(normal text)"&#160;going forward</li>
+            </ul>
+        </div>
+        <hr />
+        <p>Right-clicking a character in the "Recently used"&#160;list should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Menu--CharacterDialog--RecentlyUsedRightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Set as quick character:</span> Makes the selected character the Quick Character<ul class="checkbox"><li>If "(normal text)" is selected, verify that only the character is used for the Quick Character</li><li>If any other specific font is selected, verify that the character and its associated font are used for the Quick Character</li></ul></li>
+                <li><span class="bold">Make favorite:</span> Adds the selected character to the "Favorites"&#160;list.<ul class="checkbox"><li>                    If "(normal text)" is selected, verify that only the character is added to the "Favorites"&#160;list</li><li>If any other specific font is selected, verify that the character is added to the "Favorites"&#160;list with its associated font</li><li>If the "Favorites" list is full (16 characters are allowed), Flare will prompt that you must first remove some.</li></ul></li>
+                <li><span class="bold">Remove recent:&#160;</span>Removes the selected character from the "Recently used"&#160;list.</li>
+                <li><span class="bold">Clear font property: </span>Removes the associated font from the selected character so that it will be inserted as "(normal text)"&#160;going forward</li>
+            </ul>
+        </div>
+        <h3>Code</h3>
+        <p>"Favorite"&#160;and "Recently Used"&#160;characters are saved to a file called CharacterEditorValues.xml which is saved in the Windows user folder (../Users/[username]/AppData/Roaming/MadCap Software/CharacterEditorValues.xml).</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Case</p>
+            <ul class="checkbox">
+                <li>Verify that you can restore the default set of "Favorite"&#160;characters and remove all "Recently Used"&#160;characters by deleting the CharacterEditorValues.xml file</li>
+            </ul>
+        </div>
+        <p>Because this file is located in the root "MadCap Software"&#160;folder, any recently used or favorite characters set in one product should be used by all products (currently Flare, Analyzer and Contributor use the <span class="UI">Character</span> dialog). </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Case</p>
+            <ul class="checkbox">
+                <li>Verify that all products share "Favorite"&#160;and "Recently Used"&#160;characters</li>
+            </ul>
+        </div>
+        <p>CharacterEditorValues.xml will look something like this:</p>
+        <p>&#160;</p><pre xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+-&lt;CharacterMapValues&gt;</pre><pre xml:space="preserve">  -&lt;RecentlyUsedSymbols&gt;</pre><pre xml:space="preserve">    &lt;RecentlyUsedSymbol Font="(normal text)" Value="ụ"/&gt;</pre><pre xml:space="preserve">    &lt;RecentlyUsedSymbol Font="(normal text)" Value="ộ"/&gt;</pre><pre xml:space="preserve">    &lt;RecentlyUsedSymbol Font="(normal text)" Value="Ỉ"/&gt;</pre><pre xml:space="preserve">    &lt;RecentlyUsedSymbol Font="(normal text)" Value="ẽ"/&gt;</pre><pre xml:space="preserve">    &lt;RecentlyUsedSymbol Font="(normal text)" Value="Ắ"/&gt;</pre><pre xml:space="preserve">  &lt;/RecentlyUsedSymbols&gt;-</pre><pre xml:space="preserve">  &lt;FavoriteSymbols&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="Wingdings" Value="("/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="Wingdings 2" Value=")"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="€"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="¢"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="≠"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="≥"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="±"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="—"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="–"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="…"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="‡"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="™"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="®"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="©"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="Ắ"/&gt;</pre><pre xml:space="preserve">    &lt;FavoriteSymbol Font="(normal text)" Value="Ə"/&gt;</pre><pre xml:space="preserve">  &lt;/FavoriteSymbols&gt;</pre><pre xml:space="preserve">  &lt;QuickCharacter Font="(normal text)" Value="8230" IsNormalText="True"/&gt;</pre><pre xml:space="preserve">&lt;/CharacterMapValues&gt;</pre>
+    </body>
+</html>

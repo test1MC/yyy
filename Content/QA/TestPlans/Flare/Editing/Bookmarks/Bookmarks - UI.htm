@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1638" MadCap:lastWidth="852" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[Default.UITestsDialogs] exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>Bookmarks - UI</h2>
+        <h3>Opening the UI</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Bookmark</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert | Bookmark</span></li>
+        </ul>
+        <h3>Manage Bookmarks Dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Bookmarks/Dialog--ManageBookmarks.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls:</p>
+        <ul class="checkbox">
+            <li><span class="bold">New bookmark:</span> Type the name of the bookmark.</li>
+            <li><span class="bold">Rename:</span> Rename a bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">Add:</span> Adds the bookmark to the topic and displays a bookmark icon at the location(as long as your markers are turned on.)</li>
+            <li><span class="bold">Delete:</span> Delete the selected bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">GoTo:</span> GoTo the selected bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">Close:</span> Closes the dialog without adding a bookmark to the topic.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (multimedia, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+                <li>Make sure <b>Add</b>appears and not move when inserting a new bookmark into a topic for the fist time.</li>
+            </ul>
+        </div>
+        <h4>Manage Bookmarks Dialog when a bookmark already exist in a topic.</h4>
+        <p>Place your cursor in a different location and select !Insert|Bookmark to display the Manage Bookmark Dialog.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Bookmarks/Dialog--ManageBookmarks--MoveVariant.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls:</p>
+        <ul class="checkbox">
+            <li><span class="bold">New bookmark:</span> (do not use spaces): Type the name of the bookmark.</li>
+            <li><span class="bold">Rename:</span> Rename a bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">Move:</span> Move the selected bookmark to the new location.</li>
+            <li><span class="bold">Delete:</span> Delete the selected bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">GoTo:</span> GoTo the selected bookmark(grayed out when inserting a new bookmark)</li>
+            <li><span class="bold">Close:</span> Closes the dialog without adding a bookmark to the topic.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (multimedia, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+                <li>Make sure <span class="bold">Move</span> appears and not Add when inserting a bookmark after a bookmark is already in a topic.</li>
+            </ul>
+        </div>
+    </body>
+</html>

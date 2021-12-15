@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="22871" MadCap:lastWidth="1427">
+    <head>
+        <link href="../../../../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>10.0 Release Notes</h1>
+        <h2>Features</h2>
+        <ul>
+            <li><a href="#Page">Page Type selector in XML&#160;editor</a>
+            </li>
+            <li>Smart Quotes</li>
+            <li>OpenType Fonts (OTF)</li>
+            <li><a href="#Find">Find &amp;&#160;Replace</a>
+            </li>
+            <li><a href="#Conditio2">Conditional view in the editor</a>
+            </li>
+            <li>
+                <p><a href="#Custom3">Custom mark of the web and meta tags</a>
+                </p>
+            </li>
+            <li>Edit Snippets in Contributor</li>
+            <li>
+                <p>Send topics for review with target variables</p>
+            </li>
+            <li><a href="#HTML5&#160;Sk">HTML5 Skin Editor</a>
+            </li>
+            <li><a href="#Rotated">Rotated Body&#160;Frames</a>
+            </li>
+            <li><a href="#Frame">Frame Breaks</a>
+            </li>
+            <li><a href="#Perforce">Perforce Integration</a>
+            </li>
+            <li><a href="#Auto-Gen">Auto-Generate&#160; proxy items for new print targets</a>
+            </li>
+            <li><a href="#Dragging">Dragging Condition Tags and Variables from the Project Organizer to WYSIWYG</a>
+            </li>
+            <li><a href="#Slider">Slideshow</a>
+            </li>
+            <li><a href="#Convert">Convert MathFullForm to MathML (FrameMaker Import)</a>
+            </li>
+            <li><a href="#Eclipse">Eclipse Output</a>
+            </li>
+            <li><a href="#Project">Project Export</a>
+            </li>
+            <li><a href="#Custom2">Custom List Formats and CSS&#160;Support</a>
+            </li>
+            <li><a href="#File">File Preview Bar (Various UI)</a>
+            </li>
+            <li><a href="#Hotkeys:">Hotkeys:&#160;ALT+Shift+Up Arrow and ALT+Shift+Down Arrow in XML&#160;Editor</a>
+            </li>
+            <li><a href="#Improved">Improved Tree View (Various UI)</a>
+            </li>
+            <li><a href="#Paragrap">Paragraph and Font Properties added to XML&#160;Editor context menu</a>
+            </li>
+            <li><a href="#Crash">Crash reporting system</a>
+            </li>
+            <li><a href="#Hanging">Hanging Punctuation</a>
+            </li>
+            <li><a href="#Undefine">Undefined conditions in Basic View of Conditional Expressions</a>
+            </li>
+            <li><a href="#CSScomm">CSS Comments</a>
+            </li>
+            <li><a href="#CustomDate">Custom Date/Time Variables</a>
+            </li>
+            <li><a href="#Conditio">Condition Tags for image map areas</a>
+            </li>
+            <li><a href="#QuickHelp">Quick&#160;Help&#160;Change</a>
+            </li>
+            <li><a href="#Custom">Custom Compile errors/warnings</a>
+            </li>
+            <li><a href="#TOCCont">TOC&#160;Context Menu - Locate in Content Explorer and Updated Local Toolbar</a>
+            </li>
+            <li><a href="#Multiple">Multiple Variable Definitions</a>
+            </li>
+            <li><a href="#HTMLImp">HTML Import </a>
+            </li>
+            <li><a href="#Responsi">Responsive Output</a>
+                <ul>
+                    <li>Redesigned mobile output (HTML5)</li>
+                </ul>
+            </li>
+            <li><a href="#PDF">PDF&#160;Option to convert colors to black and white</a>
+            </li>
+            <li><a href="#Rounded">Rounded Corners (CSS 3.0)</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Minor Features</h5>
+        <ul>
+            <li>New Start Page</li>
+            <li>Images allowed in template descriptions</li>
+            <li>Find Previous in F&amp;R</li>
+            <li>Character and Line position in internal Text Editor</li>
+            <li>Option to build automatic after clicking View Target</li>
+            <li>New error codes for madbuild project export</li>
+            <li>Frame 12 Support</li>
+            <li>RH 11 Support</li>
+            <li><a href="#XML">XML&#160;Editor (Print Layout)&#160;page count</a>
+            </li>
+            <li><a href="#Insert">Insert empty ALT text for images option</a>
+            </li>
+            <li><a href="#AutoSiz">Auto-Size all Capture captions to fit text, target option</a>
+            </li>
+            <li>(#6654) - Insert Multiple Rows into a table</li>
+            <li>(#28138)&#160;- Added before/after pseudo class UI to style sheet </li>
+            <li>Add comment when binding a project  to source control</li>
+            <li>Green Arrow next to Primary target/TOC</li>
+            <li><a href="#WebHelp">WebHelp Toolbar and Navigation Pane scrolling styles (Standard Skin)</a>
+            </li>
+            <li><a href="#Multi-pa">Multi-page images in XML&#160;Editor</a>
+            </li>
+            <li>Word count in XML editor</li>
+            <li>TFS 2013</li>
+            <li>SVN&#160;1.8</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Pulled</h5>
+        <p><a href="#Figure">Figure/Figure Captions</a>
+        </p>
+        <h2><a name="Details"></a>Details</h2>
+        <h3><a name="Page"></a>Page Type Selecter in&#160;XML&#160;Editor</h3>
+        <p>You can now select which page type to use while editing in the page layout dropdown of the WYSIWYG toolbar:</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/XML Editor/PageTypeFeature.png" alt="" style="width: 400px;height: 218px;" />
+        </p>
+        <h3><a name="Custom3"></a>Custom MOTW&#160;and Meta tags</h3>
+        <p>Users can now add custom meta tags to their content in web outputs at compile time. By default this option is enabled with the meta tag that tells IE to render with the latest version (&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;).</p>
+        <p>They can also customize the XML comment that is injected when “Insert mark of the web” is enabled.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/Custom_META_MOTW.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Null test</li>
+            <li>Garbage character test</li>
+            <li>Some users have meta tags defined in master pages already. How do these options work with those?</li>
+            <li>Meta tags should be checked by default</li>
+            <li>MOTW should be unchecked by default, unless previously checked<ul><li>Test setting this "on" in V9 and opening up in v10. Should still be "on".</li></ul></li>
+            <li>Test in all web based outputs<ul><li>NET</li><li>WH</li><li>WH&#160;Plus</li><li>HTML 5</li><li>CHM</li><li>Mobile</li><li>Eclipse</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="Conditio2"></a>Conditional View in the Editor</h3>
+        <p>You can now apply a conditional expression to a topic while editing it in the WYSIWYG and content will be excluded based on that expression</p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Test both Print Layout&#160;and Web&#160;Layout</li>
+            <li>Split View</li>
+            <li>Doesn’t affect the output</li>
+            <li>Project with:<ul><li>Many Condition Sets</li><li>Many Condition Tags</li><li>Condition sets in subfolders</li></ul></li>
+            <li>Target list is accurate<ul><li>Targets in subfolders</li></ul></li>
+            <li>Only applies to topic in focus<ul><li>Resets when topic is closed</li></ul></li>
+            <li>Test complex expressions</li>
+            <li>Any performance hit? (check task manager)</li>
+            <li>Available in Snippets or Master Pages?</li>
+        </ul>
+        <h3><a name="Find"></a>Find and Replace</h3>
+        <p>New Find and Replace widget in Flare replaces the old pane view. Should help correct many legacy issues.</p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Place focus in many panes and invoke the new UI<ul><li>XML</li><li>Code View</li><li>Split View</li><li>Content /&#160;Project explorer</li><li>etc...</li></ul></li>
+            <li>Find in whole project:<ul><li>Topics in sub-folders</li><li>All content files&#160;(topics, snippets, variables, etc...)</li><li>Locked topics (source control) provide correct check-out prompt</li><li>Linked topics provide correct "Break link" prompt</li><li>Project on network</li></ul></li>
+            <li>Speed for large searches?</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="HTML5&#160;Sk"></a>HTML5&#160;Skin Editor</h3>
+        <p>New UI&#160;for HTML skin editor. The idea behind the new editor is to simplify the manipulation of our HTML5 skin. On the left will be a list of all the available styles and on the right will be a live interactive preview. If you select a style, the corresponding element in the preview area will be highlighted. Alternatively, you can highlight an element in the preview area and the corresponding style will be selected. </p>
+        <p>The user may see 4 colors:</p>
+        <ul>
+            <li>Orange: margin</li>
+            <li>Yellow: border</li>
+            <li>Green: padding</li>
+            <li>Red:&#160;object</li>
+        </ul>
+        <p>&#160;</p>
+        <p>User will be able to specify if they are applying style changes to We, Mobile, Tablet or all layouts.</p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>How smooth is the highlighting of elements? </li>
+            <li>There a difference between hovering and clicking?<ul><li>Should there be?</li><li>Should there be a context menu?</li></ul></li>
+            <li>Are all elements represented?</li>
+            <li>Are all styles represented?</li>
+        </ul>
+        <h3><a name="Rotated"></a>Roated Body Frames</h3>
+        <p>You can now rotate body frames in the page layout editor just as you previously could decoration frames. This, in conjunction with the new frame break feature, allows you to have layouts like below where content flows from a vertical header frame to a horizontal content frame.</p>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor--RotateBodyFrame.png" alt="" class="properties" />
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Make sure text flows as desired<ul><li>Combine with Frame Breaks</li></ul></li>
+            <li>Multiple rotated body frames on a page (or pages)</li>
+            <li>UI for this property?<ul><li>Frame Properties?</li><li>Context Menu?</li></ul></li>
+            <li>What styles can you add this to? Should you be able to add it more?</li>
+            <li>Can you add this property to style classes?</li>
+            <li>Do all print outputs support this?</li>
+        </ul>
+        <h3><a name="Frame"></a>Frame Breaks</h3>
+        <p>Added support for the CSS properties frame-break-before and frame-break-after (not part of the CSS spec – we just made them up) to give users the ability to jump to the next frame on the current page. Previously they could only jump to the next column or next page. If no more frames are available on the current page, a page break occurs instead.</p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Make sure text flows as desired</li>
+            <li>Multiple frames per page, with various combinations of breaks</li>
+            <li>Different elements beginning and ending in the frames to be breaked on&#160;(images, lists, etc...)</li>
+            <li>Is there UI for this property?<ul><li>Frame Properties</li><li>CSS&#160;UI</li></ul></li>
+            <li>What styles can you add this to? Should you be able to add it more?</li>
+            <li>Can you add this property to style classes?</li>
+            <li>Do all print outputs support this?</li>
+        </ul>
+        <h3><a name="Rounded"></a>Rounded Corners (CSS 3.0)</h3>
+        <p>Flare now supports rounded borders via the “border-radius” properties: </p>
+        <p>http://www.w3schools.com/cssref/css3_pr_border-radius.asp</p>
+        <p>&#160;</p>
+        <p>ex:</p>
+        <p>div</p>
+        <p>{</p>
+        <p>border:2px solid;</p>
+        <p>border-radius:25px;</p>
+        <p>}</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Work on all elements?</li>
+            <li>How does each output treat this?</li>
+            <li>UI&#160;in our stylesheet?</li>
+            <li>XML&#160;Editor render it?<ul><li>Print mode?</li><li>Web Mode?</li></ul></li>
+            <li>Text Editor validates it correctly?</li>
+        </ul>
+        <h3><a name="Perforce"></a>Perforce Integration</h3>
+        <p>We now support Perforce as a source control solution, natively within Flare. You will see it as an option in the Bind Project and Import Project dialog.</p>
+        <p>Perforce server: http://cent64perforce:1666</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Standard Source Control&#160;Matrix</li>
+        </ul>
+        <h3><a name="Auto-Gen"></a>Auto-Generate&#160;proxy items for new print targets</h3>
+        <p>Added options in the advanced tab of print targets to automatically inject a TOC proxy at the beginning of the output (after the title page, if present) and an index proxy at the end of the output if any index terms are present.&#160;A glossary proxy will be injected before the Index Proxy page.</p>
+        <p>&#160;</p>
+        <p>These options default to off so as not to affect existing targets, but any new targets will have them on by default.</p>
+        <p>&#160;</p>
+        <p>If a TOC, index, or glossary proxy is already present in the content, the corresponding option has no effect .</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Existing Targets should not have these checked</li>
+            <li>Checking them will have not affect the output if those proxies already exist in the content</li>
+            <li>New print targets should have this checked by default</li>
+            <li>Default Page Layout work OK with this?</li>
+            <li>Purpose of this feature is to increase the out of the box experience and first impression. Does this achieve that?&#160;Example:<ol><li>Create a new Flare project by importing Frame/Word/RH/etc... </li><li>Generate PDF</li><li>Do you have a TOC,&#160;Index, Glossary?</li></ol></li>
+        </ul>
+        <h3><a name="Dragging"></a>Dragging Condition Tags and Variables from the Project Organizer to WYSIWYG</h3>
+        <p>Condition tags can be dragged onto WYSIWYG selections or elements on the block/span bars. </p>
+        <p>Variables can be dragged and inserted into the WYSIWYG.</p>
+        <p>
+            <table style="width: 100%;">
+                <col style="width: 270px;" />
+                <col />
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--Dragging.png" alt="" class="properties" />
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Conditions Expanded</li>
+                                <li>Variables Expanded</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>If you have a ton of conditions/variables, can you see them all when expanded? Easy to scroll the list?</li>
+            <li>Conditions/variable sets in subfolders?</li>
+            <li>How does Show Files mode work with this? Or File list?</li>
+            <li>Drag these into Print Mode and Web&#160;Mode.</li>
+            <li>Drag them into XML&#160;Editor and Text Editor</li>
+            <li>Can you drag them to another Variable/Condition set?</li>
+            <li> Drag them to various nodes. (P, table, H1, etc...)\</li>
+            <li>Drag conditions to block/span bars, highlighted items, etc...</li>
+            <li>Drag these to non Topic files? (TOC, Snippet, Page Layout items, etc...)</li>
+        </ul>
+        <h3><a name="Slider"></a>Slideshow</h3>
+        <p>Users can now add a slideshow to their HTML5 (WebHelp support TBD) output.  Slideshows are contained in &lt;MadCap:slider&gt; tags which contain slides represented with &lt;MadCap:slide&gt; tags.  Any content within the slide tag will be converted into a slide.  By default, the slider contains a ‘pager’ (dots representing each slide) and navigation controls (prev/next slide).  Users have the ability to customize these controls, along with the slider’s size, transitions, auto play, among others.</p>
+        <p>&#160;</p>
+        <p>To insert a slide, go to Insert-&gt;Slideshow(location in the ribbon may change). -New page in Insert/Edit Slideshow dialog (‘Slides’) allows users to rearrange the order of the slide, insert new blank slides, and remove slides.  This page also includes a preview of the slide’s content.  At the bottom, users can set a caption and/or thumbnail to a slide.  (To enable thumbnails, go to the ‘Advanced’ page and check ‘Thumbnails’.) </p>
+        <p>&#160;</p>
+        <p>XML Editor:  Users can only view one slide at a time.  To view a different slide, users can use the Next/Previous slide controls (also as menu items when right-clicking on the ‘MadCap:slideshow’ block) or chose the slide’s block on the left.  Adding and removing a slide can be done through the slide controls (also as menu items when right-clicking on the ‘MadCap:slideshow’ block).  Slides can also be rearranged using the blocks.</p>
+        <p>&#160;</p>
+        <p>The slideshow source was obtained from here: <a href="http://bxslider.com/">http://bxslider.com/</a></p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Types of files supported? (Gifs, pngs, mp4, mov, etc...)<ul><li>Mix file types in a single slideshow</li></ul></li>
+            <li>Browsers support it?</li>
+            <li>Try all the Advanced options in the target with this.<ul><li>MOTW</li><li>WebSafe images</li><li>Responsive design</li><li>Lowercase</li><li>etc...</li></ul></li>
+            <li>How is performance? If you have 10 images/movies, or 50.</li>
+            <li>UI&#160;usage; usability of XML&#160;editor vs Slideshow dialog<ul><li>XML editor: Moving via blocks</li><li>XML&#160;editor: cut/copy/paste slides?</li></ul></li>
+            <li>Use in Snippets?</li>
+            <li>Snippets in a slideshow</li>
+            <li>Condition slides?&#160;Elements within slides?</li>
+        </ul>
+        <h3><a name="Convert"></a>Convert MathFullForm to MathML (FrameMaker Import)</h3>
+        <p>Added a new option to the Frame Import process, allowing the user to convert MathFullForm equations (Frame specific format) to MathML (web standard, Flare format).</p>
+        <p>It will be enabled by default, when disabled the old functionality will remain (equations are converted to images).</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Import Frame/FrameImportEditor--ConvertEquation.png" alt="" class="properties" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <br />
+        </p>
+        <h3><a name="Figure"></a>Figure/Figure Captions</h3>
+        <p>Development in progress.</p>
+        <h3><a name="WebHelp"></a>WebHelp Toolbar and Navigation Pane scrolling styles (Standard Skin)</h3>
+        <p>Section 508 § 1194.22 (d)&#160;states&#160;"Documents shall be organized so they are readable without requiring an associated style sheet."</p>
+        <p>&#160;</p>
+        <p>What this means is that some users will view our output with all CSS&#160;disabled. In order to be 508 compliant, our output must be usable when CSS&#160;is disabled. This has been problematic in WebHelp because the frame containing the WebHelp toolbar, when stripped of all CSS, may not be not fully visible, and no scrollbar is provided because it was explicitly set not to display.</p>
+        <p>&#160;</p>
+        <p>Now, users requiring WebHelp output to be 508 compliant can set scrolling values for the toolbar and navigation frames when stylesheets are disabled so all content can be accessed.</p>
+        <p>&#160;</p>
+        <p>There are 3 options:</p>
+        <ul>
+            <li>Auto – Scrollbars appear if needed</li>
+            <li>Yes – Scrollbars are always shown</li>
+            <li>No – Scrollbars are never shown</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Note: This is ONLY takes effect when stylesheets are disabled in the web browser.</p>
+        <p>&#160;</p>
+        <p>This can be found under:</p>
+        <ul>
+            <li>Skin |&#160;Styles |&#160;Frame</li>
+            <li>Skin |&#160;Styles |&#160;Frame |&#160;Toolbar</li>
+        </ul>
+        <h3><a name="Eclipse"></a>Eclipse Output</h3>
+        <p>Eclipse Help is an embedded format that is exclusively used within the Eclipse framework, requiring either a local or remote install of the Eclipse Help plug-in in order to host the content. This type of help is particularly useful for creating dynamic, searchable help content for Eclipse Workbench plug-ins.</p>
+        <p>Following are some of the key features of the Eclipse Help format.</p>
+        <ul>
+            <li>WebHelp features: This format lets you take advantage of several of the features and benefits available with the WebHelp output type.</li>
+            <li>Dynamic Help: This format allows content developers to provide context help that updates automatically in the Eclipse Dynamic Help view within the Eclipse IDE.</li>
+            <li>Help Index: This format will publish your glossary terms to the searchable index provided by the Eclipse Help system.</li>
+            <li>Local output: This format is also a good choice if you want users to store and open the output locally, rather than from a remote Infocenter server.</li>
+            <li>Single file: This format gives the content developer the option to archive output to a single file (.JAR).</li>
+        </ul>
+        <p>Eclipse Help is viewed utilizing an embedded Jetty server instance that ships with the Eclipse IDE, making it possible for the help developer to either utilize the local Eclipse install as a viewer, or to set up dedicated local or remote help server.</p>
+        <p>The Eclipse Help output consists of several XML files necessary to support hosting the Eclipse Help content via the Eclipse plug-in loader, using help extension plug-ins for Table of Contents, Glossaries and Context Sensitive Help as necessary. Locally installed content is typically distributed via Eclipse software "sites", which allow the user to download software through the "Install New Software" item in the Eclipse Help menu. The resulting output can either be distributed as-is, or bundled side-by-side with associated software plug-ins.</p>
+        <p>&#160;</p>
+        <p class="bold">Eclipse Target:&#160;General Tab</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/EclipseHelp/TargetEditor--Eclipse--GeneralTab.png" class="properties" style="mc-float: none;" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Eclipse Target:&#160;Eclipse Options Tab</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/EclipseHelp/TargetEditor--Eclipse--EclipseOptionsTab.png" class="properties" style="mc-float: none;" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Major Features NOT&#160;supported by Eclipse Output</p>
+        <ul>
+            <li>Anything related to Search. Eclipse handles it's own search functionality.<ul><li>Search Filters are not supported in Eclipse output. </li><li>Synonym Sets are not supported in Eclipse output.</li><li>"Exclude from Search"&#160;topic property is not supported in Eclipse Help</li><li>Additionally, all search options that exist in the Performance tab of a WebHelp target do not apply to Eclipse output.</li></ul></li>
+            <li>All "Performance"&#160;options (TOC chunking, index chunking, etc) traditionally used for WebHelp and HTML5</li>
+            <li>Index Link Sets</li>
+            <li>Skins</li>
+            <li>Browse Sequences (there is no BS&#160;view in the output, but you could use a TOC&#160;which links to a BS, but in this case, the BS&#160;entries would become part of the TOC)</li>
+            <li>Topic Toolbar Proxy (see bug 78926)</li>
+            <li>Site Maps</li>
+            <li>Feedback/Pulse</li>
+            <li>CSH&#160;is supported (you can associate an Alias file), but the CSH&#160;Tester is currently not supported (see bug 79093)</li>
+        </ul>
+        <p class="note">Testing Ideas</p>
+        <p>This is a new output based on WebHelp output. All features should be tested. Most features will work in Eclipse as they work in WebHelp however there will be some exceptions (major exceptions listed above).</p>
+        <ul>
+            <li>Setup to <i>view</i> output is intuitive (usability). Note that the following are NOT required to <i>build</i> Eclipse Help output.<ul><li>Java is required to view output. Do we prompt appropriately if it is not? Test with 32 and 64 bit Java.</li><li>Eclipse is required to view output locally. Do we prompt appropriately if it not available. Test with different versions of Eclipse including 32 and 64 bit versions.</li></ul></li>
+            <li>All features work as they do in WebHelp<ul><li>If the feature does not work in WebHelp either, Eclipse Help offers a similar compile warning if one exists</li><li>If the feature does work in WebHelp, but is not supported by Eclipse, a compile Warning is provided</li></ul></li>
+            <li>Merging (both methods)&#160;works:&#160;<ul><li>Merging by linking to project file (definitely should work)</li><li>Merging by linking to a compiled Eclipse Help System (TBD). If we determine that this will not be supported, verify that UI&#160;disallows this.</li></ul></li>
+            <li>Topic Preview works (as WebHelp) when Eclipse is Primary Target</li>
+            <li>Eclipse Options as set in the target all work and all necessary options are present<ul><li>All options work when output is archived to JAR</li><li>All options work when output is not archived to JAR</li></ul></li>
+            <li>All non-Eclipse specific options work (Advanced tab in particular)</li>
+            <li>Test all incoming and outgoing dependencies (all links update)</li>
+        </ul>
+        <h3><a name="Project"></a>Project Export</h3>
+        <p>Flare can now create new project files from an existing project using file tags, file tag expressions, conditions, conditional expressions or from a target file.</p>
+        <p>&#160;</p>
+        <p class="bold">Export using Conditions</p>
+        <p>Exporting using conditions/conditional expressions will create a new project with all the files tagged with the selected condition or that are included in the conditional expression. All files referenced by the tagged content will also be copied over. Additionally, conditioned content in topic files will be included or removed based on the selected condition/conditional expression. A default target, toc, stylesheet, and pagelayout file will be added to the exported project if they are not present in the new project.</p>
+        <p>&#160;</p>
+        <p class="bold">Export using File Tags</p>
+        <p>Exporting using file tags/file tag expressions will create a new project with all the files tagged with the selected file tag or that are included in the file tag expression. All files referenced by the tagged content will be copied over. A default target, toc, stylesheet, and pagelayout file will be added to the exported project if they are not present in the new project.</p>
+        <p>&#160;</p>
+        <p class="bold">Export using Target</p>
+        <p>Exporting using a target file will attempt to create a new project that mirrors the output when building the selected target. There are options to convert snippets and variables to text in the referenced topics and toc file.</p>
+        <p>&#160;</p>
+        <p class="bold">Export using Select Files</p>
+        <p>This option will allow users to select which files from the project to export. You will get two dialogs, one for Content explorer and one for Project Explorer.</p>
+        <p>&#160;</p>
+        <p class="bold">Export to project template</p>
+        <p>Will create a Project Template for template use.</p>
+        <p>&#160;</p>
+        <p class="bold">Export from Madbuild</p>
+        <p>The following command option will run the project exporter from madbuild:</p>
+        <p>madbuild -export <i>&lt;export project file&gt;</i></p>
+        <p>&#160;</p>
+        <p>&lt;export project file&gt; - the location of an export project file</p>
+        <p>&#160;</p>
+        <p>The following error codes have been added to Madbuild:</p>
+        <p>3001 – The entered export project file does not exist</p>
+        <p>3002 – There was an error parsing the entered export project file</p>
+        <p>3003 – Export failed</p>
+        <p class="bold">&#160;</p>
+        <p class="bold">Save Export Settings</p>
+        <p>You can save your settings of any export you do.This will create a file in the Project/Export folder.You can re-run these exports by right-clicking them and choosing <span class="bold">Run&#160;Export Project File</span>. You can open this file up and make changes to what the export will accomplish in the main editor.</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Exporting to a folder with other files in it<ul><li>Are those files deleted? Do we prompt?</li></ul></li>
+            <li>Export various sized projects</li>
+            <li>Make sure Source Control information is removed, if present</li>
+            <li>Export to Local drive, network drive, mapped drive</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="Custom2"></a>Custom List Formats and CSS&#160;Support</h3>
+        <h4>Custom List Formats</h4>
+        <p>Users can now add custom list formats through the Flare UI.  List dropdown menus now include an option for a “Custom List Format” which will prompt a dialog where the user can create a custom list format.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/List/Menu--List--CustomFormat.png" />
+        </p>
+        <p>&#160;</p>
+        <p> Select <span class="MenuItem">Create Custom Format</span> to invoke the <span class="UI">Define New List Format</span> dialog to create your own list formats. </p>
+        <p>&#160;</p>
+        <p>Define New List Format dialog</p>
+        <p>Enter a class name for your new custom list format. Use the  list style type drop-down to select the counter type (only one counter allowed per list format). The format will display in the Content field as it does for auto number formats (brackets around n, r, R, a, A). The ‘Add Character’ and ‘Edit Font’ buttons will invoke the previously known ‘Insert Character’ and ‘Edit Font’ dialogs, respectively allowing you to add characters and formatting to the list format. </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/List/Dialog--DefineNewListFormat.png" style="width: 383px;height: 199px;" />
+        </p>
+        <p>Clicking OK&#160;in this dialog creates a new ol or ul style class with the list-style-type set as well as a complex selector for the list items, and adds them to the selected stylesheet. It then applies the class to the newly created list. </p>
+        <p>&#160;</p>
+        <p>Once a Custom List Format is created, it will display in the Custom Format flyout menu underneath the Create Custom Format option, so you can easily reuse your defined custom list formats.</p>
+        <h4>CSS&#160;Support</h4>
+        <p>Flare should now be able to support custom list bullets/formats through the CSS stylesheet.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/List/Lists--CustomListsExample'.png" class="properties" />
+        </p>
+        <p>This image provides examples on how to use this new feature. Follow <a href="http://dev.w3.org/csswg/css-lists#marker-pseudo-element">this link</a> to see CSS documentation that goes into detail on the syntax and usage of this functionality (see Ch. 6 - as of now, the ::marker element is only supported by the li selector).</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3><a name="File"></a>File Preview Bar</h3>
+        <p>A File Preview Bar has been added to many of the panes in Flare that display a list of files.</p>
+        <table style="width: 100%;">
+            <col style="width: 277px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---FilePreviewBar.png" class="properties" />
+                    </td>
+                    <td style="vertical-align: top;">
+                        <p>&#160;</p>
+                        <p>The File Preview Bar has been added to the following UI in Flare:</p>
+                        <ul>
+                            <li>Content Explorer</li>
+                            <li>Project Organizer</li>
+                            <li>File List</li>
+                            <li>Pending Check-Ins</li>
+                            <li>External Resources</li>
+                            <li>SharePoint Explorer (TBD - Initial implementation crashes - See 77420)</li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>The File Preview Bar has been added to the following UI in Analyzer:</p>
+                        <ul>
+                            <li>File List</li>
+                            <li>Pending Check-Ins</li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>The File Preview Bar has been added to the following UI in Contributor:</p>
+                        <ul>
+                            <li>External Resources</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <p>For each test case, be sure to test each pane that offers the File Preview Bar. </p>
+        <ul>
+            <li>Works accurately in all views of each pane (Tree, Show Files, Split)</li>
+            <li>Works accurately for files as well as folders</li>
+            <li>Correct icon displays for all file types. (Note:&#160;If an image is selected, the FPB will show a small preview of the image instead of an icon. Vector images will display as well, but may take several seconds to show up)</li>
+            <li>What does it display for a multi-selection? Is it accurate?</li>
+            <li>Test on different OS&#160;using different themes and region settings</li>
+        </ul>
+        <h3><a name="Multi-pa"></a>Multi-page images in XML&#160;Editor</h3>
+        <p>In order to support PowerPoint Preview from Lingo, we have added the ability to view multi-page image TIF files in the XML&#160;Editor. There is little practical use for this in Flare as none of the outputs will support this type of image (IE&#160;is the only browser that supports TIFs, but it doesn't let you click through the pages). A more likely use case for such an image would be create a hyperlink to it, which would allow users to download it from a topic. But this would rely on the end user having some tool that would let them click through the pages (Windows Photo Viewer can do it).</p>
+        <p>&#160;</p>
+        <p>Here is a sample file you can use for your testing: <a href="../../../../Resources/Images/TestPlans/Flare/Images/MultipageTIFF.pptx.tif">MultipageTIFF.pptx.tif</a></p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Impact on other products?</li>
+        </ul>
+        <h3><a name="Hotkeys:"></a>Hotkeys:&#160;ALT+Shift+Up Arrow and ALT+Shift+Down Arrow in XML&#160;Editor</h3>
+        <p>In the XML&#160;Editor, <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Up Arrow</span> will "Move Up" and <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Down Arrow</span> will "Move Down." In previous versions of Flare this functionality was limited to a single block level element and you could access it in an elements context menu (!Move |&#160;Move Up and Move Down).</p>
+        <p>  Now that same functionality is available with these hotkey.</p>
+        <p>But with the hotkey implementation, we now offer the ability to move multiple block level elements up and down.</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Test all types of block level elements in the XML&#160;Editor (p, div, headings, etc)</li>
+            <li>Test list items</li>
+            <li>Test table rows ("Move"&#160;is new to the tr context menu in V10; should work for single rows and a selection of multiple rows)</li>
+            <li>Test combinations of different types of block level elements</li>
+            <li>Vary the selection and selection methods (the hotkey should move the whole block element even if only a portion of the element is selected)<ul><li>Select multiple elements by dragging up</li><li>Select multiple elements by dragging down (when dragging down, pay close attention to where you release the mouse button to end the selection)</li><li>Select multiple elements using "selection"&#160;hotkeys (Shift-Arrow Keys)</li><li>Does it work if a table is included? A block snippet?</li></ul></li>
+            <li>Test "Move Up"&#160;at the top of a topic and "Move Down"&#160;at the bottom</li>
+            <li>Test moving elements across a page break in Print Layout mode (should not lose selection)</li>
+            <li>Does XML Editor scroll when moving content in long topics?</li>
+            <li>Does XML&#160;Editor redraw efficiently when moving content around elements with object positioning?</li>
+            <li>If you move content up multiple times, does track changes track each move? How does Word handle this?</li>
+        </ul>
+        <h3><a name="Improved"></a>Improved Tree View</h3>
+        <p>Flare’s TreeViews now have an updated theme similar to that of Windows Explorer in Windows Vista/7.  Along with the new UI, dragging a node within Content Explorer is accompanied by a “tool tip” that displays which folder the node would be moved into.  Unfortunately with the new theme, node text can no longer be bold, so the Primary Target and Master TOC are now a different color with a styled icon.</p>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 379px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top;">
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---DefaultView.png" style="width: 352px;height: 280px;" />
+                    </td>
+                    <td style="vertical-align: top;">
+                        <p>This new Tree View is now used in most UI&#160;that offers a Tree View:</p>
+                        <ul>
+                            <li>Content Explorer</li>
+                            <li>Project Organizer</li>
+                            <li>TOC&#160;Editor (Tree View)</li>
+                            <li>Browse Sequence Editor (Tree View)</li>
+                            <li>Alias Editor</li>
+                            <li>External Resources</li>
+                            <li>SharePoint Explorer</li>
+                            <li>Index Window</li>
+                            <li>Concepts Window</li>
+                            <li>Add File dialog</li>
+                            <li>Select Folder dialog</li>
+                            <li>Insert Hyperlink ("File in Project" and "Place in this Document")</li>
+                            <li>Insert Cross-Reference ("File in Project" and "Place in this Document")</li>
+                            <li>Select Bookmark dialog</li>
+                            <li>Insert Related Topics Control</li>
+                            <li>Insert Image</li>
+                            <li>Insert Multimedia</li>
+                            <li>Apply Table Style dialog</li>
+                            <li>Save Topic as Contribution Template Wizard</li>
+                            <li>Save Project as Template Wizard</li>
+                            <li>Synchronize Files dialog</li>
+                            <li>Template Manager</li>
+                            <li>"File Explorer" (Send to Folder, Select Project Path, Select External Path, Open File, etc.)</li>
+                            <li>Review Packages pane (TOC View)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>UI&#160;that should continue to use the old Tree View (or at least continue using the old Expand/Collapse nodes and not the new triangles)</p>
+        <ul>
+            <li>Stylesheet Editor (Advanced View)</li>
+            <li>Skin Editors (Styles tab)</li>
+            <li>Report Editor</li>
+            <li>Internal Text Editor</li>
+        </ul>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>All functionality that existed in old tree view still exists in new tree view</li>
+            <li>All occurrences of the old tree view have been updated to the new tree view (Content Explorer, Project Organizer, Index Window, Alias Editor, Insert Image, etc)</li>
+            <li>All states of an item in tree view items look good (not selected, selected, hover, rename)</li>
+            <li>Works and looks good with other Windows OS&#160;and Themes (Classic, Win7 Basic)</li>
+            <li>Impact on other products? Any panes listed above that occur in Analyzer or Contributor should also use the new tree view.</li>
+        </ul>
+        <h3><a name="Paragrap"></a>Paragraph and Font Properties added to XML&#160;Editor context menu</h3>
+        <p>Most elements now offer context menu items for Paragraph... and Font... (Properties dialogs). All that is new here is adding the access point via the context menu. Users have always been able to select any element and invoke these dialogs using the hotkeys, Tool Strip menus or Ribbon buttons. You will not be able to create any markup that could not be created before. That said, this does introduce one new workflow. You can now access the Font or Paragraph properties for any element (via the block bar)&#160;when the insertion point is in another element. This should be tested.</p>
+        <p>&#160;</p>
+        <p>Also, in a few cases applying properties in this manner have no effect on output, and we should therefore not offer context menu items that suggest to a user that there is valid functionality when in fact there is none (even if they can set these properties using the pre-existing UI).</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--RightClickMenuText.png" alt="" title="" /> </p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Options have been added to all appropriate context menu</li>
+            <li>Options have not been added to context menus for which they would be inappropriate<ul><li>html should have neither</li><li>body should have neither</li><li>bodyProxy should have neither</li><li>snippetBlock should have neither</li><li>hr should not have Font</li><li>topicToolbarProxy should not have Font</li><li>snippetText should not have Font</li><li>variable should not have Font</li><li>keyword should not have Font</li><li>concept should not have Font</li><li>a (bookmark)&#160;should not have Font</li><li>namedDestination should not have Font</li><li>img should not have Font</li><li>qrCode should not have Font</li><li>object should not have Font</li><li>script should not have Font</li></ul></li>
+            <li>Test invoking dialogs for a block level element from its block bar when:<ul><li>Insertion point is in another element</li><li>There is a selection in another element</li><li>Another element is selected</li><li>Test all of the above using OK&#160;and Cancel in the Font/Paragraph dialog (Don has already reported an issue restoring the insertion point when choosing Cancel)</li></ul></li>
+            <li>Menu items should also be present in Analyzer</li>
+        </ul>
+        <h3><a name="Crash"></a>Crash Report System</h3>
+        <p>All of the products will now have the ability to create a crash report when an unhandled exception crashes the application. Users can then send that report to our new product exception web service or can save the file and send it to customer support. When a user encounters a crash, they will see the <span class="UI">Unhandled Exception</span> dialog.</p>
+        <table style="width: 100%;">
+            <col style="width: 397px;" />
+            <col />
+            <tbody>
+                <tr style="height: 1.65in;">
+                    <td>
+                        <p>"Needs to close"&#160;variant:</p>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--UnhandledException.png" alt="" title="" style="width: 354px; height: 203px;" class="properties" />
+                    </td>
+                    <td style="vertical-align: top;">
+                        <p>"Other actions" invokes a drop-down which lets you select the following options:</p>
+                        <ul>
+                            <li>Provide additional information: Invokes the User information dialog which lets users add personal information and a description of what they were doing when the exception occurred.</li>
+                            <li>Report Details:&#160;Invokes the View Exception Log dialog which lets the user see what is being sent.</li>
+                            <li>Save Log: Invokes the Save Exception Log dialog which lets you save the report locally as an XML&#160;file.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>"No force close" variant:</p>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--UnhandledException--Type2.png" class="properties" />
+                    </td>
+                    <td style="vertical-align: top;">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Selecting "Provide additional information"&#160;will open the User Information dialog:</p>
+        <table style="width: 100%;">
+            <col style="width: 277px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--UserInformation.png" alt="" title="" class="properties" />
+                    </td>
+                    <td style="vertical-align: top;">
+                        <ul>
+                            <li>First Name:&#160;Enter your first name</li>
+                            <li>Last Name: Enter your last name</li>
+                            <li>Email: Enter your email address</li>
+                            <li>Description:&#160;Enter up to 1,024 characters to describe what was happening when the exception occurred</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Selecting "Report Details"&#160;opens the View Exception Log dialog so you can see what will be sent to MadCap Software.</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;">
+            <col style="width: 235px;" />
+            <col />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--ViewExceptionLog--ExceptionTab.png" alt="" title="" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--ViewExceptionLog--SystemTab.png" alt="" title="" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--ViewExceptionLog--UserTab.png" alt="" title="" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--ViewExceptionLog--LogTab.png" alt="" title="" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Clicking "Send Report" will send the report and provide a confirmation message and then continue to crash.</p>
+        <p class="note">NOTE:&#160;If you receive the confirmation that the log was successfully submitted to MadCap, all is well. According to Marcus if you are able to figure out a way to create an exception in the SQL&#160;table, you will get an alternate message that says the report failed to submit and a log file will automatically be saved to the users machine. Marcus says "Good luck" trying to make that happen.</p>
+        <p>Clicking "Don't send" will simply dismiss the dialog and continue to crash.</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Find crashes in the BugBase that have not been fixed</li>
+            <li>Test all types of crashes (as of 7/22/2013, this UI&#160;will only appear for crashes that force the application to close; Marcus is looking into the others)<ul><li>Crashes that force Flare to close</li><li>Crashes which traditionally produced a log with a stack trace</li><li>"Failed to run command 'xxx'"&#160;type crashes</li></ul></li>
+            <li>Boundary test User Information dialog<ul><li>Email field requires valid email address</li></ul></li>
+        </ul>
+        <h3><a name="Hanging"></a>Hanging Punctuation</h3>
+        <p>We've added support for "hanging-punctuation"&#160;in our Stylesheet Editor. At this time, it is only available in the Advanced View. Hanging punctuation allows you to have certain punctuation symbols "hang" outside the block element which allows the text to align. </p>
+        <p>&#160;</p>
+        <p>Property values for hanging-punctuation are:</p>
+        <ul>
+            <li>none:&#160;no character hangs</li>
+            <li>first:&#160;An opening bracket or quote at the start of the first formatted line of an element hangs. This applies to all characters in the Unicode categories Ps, Pf, Pi.</li>
+            <li>last: A closing bracket or quote at the end of the last formatted line of an element hangs. This applies to all characters in the Unicode categories Pe, Pf, Pi.</li>
+            <li>force-end: A stop or comma at the end of a line hangs.</li>
+            <li>allow-end: A stop or comma at the end of a line hangs if it does not otherwise fit prior to justification.</li>
+            <li>inherit:&#160;Inherits the parent element's property</li>
+        </ul>
+        <p>&#160;</p>
+        <p>It is significant to note that the "first"&#160;and "last"&#160;property values apply to one specific set of punctuation symbols and "force-end"&#160;and "allow-end"&#160;apply to a separate set. Therefore, combinations of these properties are also allowed (excluding "none" and "inherit"; and "force-end"&#160;and "allow-end"&#160;would not be used in tandem). Valid combinations would be: "first last," "first force-end," "first allow-end," "first force-end last," "first allow-end last," "force-end last,"&#160;and "allow-end last."</p>
+        <p>&#160;</p>
+        <p>For full information and a list of stop and comma characters, see <a href="http://www.w3.org/TR/css3-text#hanging-punctuation">http://www.w3.org/TR/css3-text/#hanging-punctuation</a></p>
+        <p>&#160;</p>
+        <h5>Examples</h5>
+        <p>"first"&#160;and "last"&#160;allow characters such as brackets, parentheses and quotations to hang outside the line box.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/StyleExample--HangingIndent--First.png" alt="" title="" style="width: 649px;height: 248px;" />
+        </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/StyleExample--HangingIndent--Last.png" alt="" title="" style="width: 680px;height: 119px;" />
+        </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/StyleExample--HangingIndent--FirstLast.png" alt="" title="" style="width: 643px;height: 120px;" />
+        </p>
+        <p>&#160;</p>
+        <p>"force-end" and "allow-end" allow characters such as periods and commas to hang outside the line box ("allow-end"&#160;works in conjunction with text that is justified).</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/StyleExample--HangingIndent--ForceEnd.png" alt="" title="" style="width: 697px;height: 124px;" />
+        </p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/StyleExample--HangingIndent--AllowEnd.png" alt="" title="" style="width: 697px;height: 124px;" />
+        </p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Verify all styles work in all appropriate outputs <ul><li>Web:&#160;IE10, Chrome 28, Firefox 22 currently do not support this style</li><li>EPUB:&#160;Support will probably vary by reader if it's supported at all</li><li>Native PDF&#160;and XPS:&#160;Should absolutely support this</li><li>Word:&#160;I&#160;believe not</li><li>Frame:&#160;???</li></ul></li>
+            <li>Verify all styles behave correctly, particularly for PDF&#160;and XPS; this includes combinations ("first last" or "first force-end" etc)</li>
+        </ul>
+        <h3><a name="Undefine"></a>Undefined conditions in Basic View of Conditional Expressions</h3>
+        <p>We’ve added support for undefined tags in the Basic View of the Conditional Expression editor.  This will allow users to see and remove undefined tags from their conditional expressions within the Basic UI (prior to V9, this was only possible in the Text Editor and in V9, it was only possible in the Advanced Expression editor).</p>
+        <p class="note">NOTE:&#160;"Undefined"&#160;condition tags are any condition tag that does not exist in any of the project's Conditional Tag Sets. The easiest way to add undefined condition tags to your Target or Snippet Condition Expression is to create the tag, include or exclude it in the Target or Snippet Condition, and then delete the tag from the Condition Tag Set.</p>
+        <p>Undefined tags will now display highlighted when “(show all tags)” is selected.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Conditions/ConditionalExpressionEditor--ShowAllTags.png" style="width: 538px;height: 147px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Additionally, a listing for “(undefined tags)” will appear in the Condition Tag Sets list.  Selecting this will display just the undefined tags.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Conditions/ConditionalExpressionEditor--UndefinedTags.png" style="width: 541px;height: 148px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Undefined tags will NOT appear when/if their corresponding tag set exists.  In this case, I have a tag set called Default.flcts and an undefined tag of Default.DeleteMe.  Notice it does not display when I select the Default Tag Set</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Conditions/ConditionalExpressionEditor--DefaultTagSet.png" style="width: 545px;height: 149px;" />
+        </p>
+        <p>&#160;</p>
+        <p>All changes to this UI are also present in the Snippet Conditions UI.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Conditions/SnippetConditions--UndefinedTag.png" style="width: 547px;height: 150px;" />
+        </p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Test that undefined tags are found for both Include and Exclude</li>
+            <li>Test undefined condition tags that would have existed in the root Condition Text folder as well as sub-folders</li>
+            <li>Test that you can de-select them, they are removed from the expression without affecting defined conditions, and the editor remains in Basic view.</li>
+            <li>Make sure the Edit Set button is never active for an undefined condition tag</li>
+        </ul>
+        <h3><a name="CSScomm"></a>CSS&#160;comments</h3>
+        <p>Users are now able to view and add comments to classes in .css stylesheets (Stylesheet Editor). </p>
+        <p>&#160;</p>
+        <ol>
+            <li>This can be done in the ‘Simplified View’ of the Stylesheet Editor, where there is now an editable ‘Comment’ column</li>
+            <li>This can be done in the 'Advanced View' of the Stylesheet Editor, where there is now a comment field below the Styles group</li>
+            <li>It can be done manually within the .css document itself in the Text Editor. </li>
+            <li>It can also be done when creating a style from the XML&#160;Editor in the Create Style dialog</li>
+            <li>Ultimately, it should be available anywhere that you are allowed to create a new style class (Bug 76922:&#160;Create New Style dialog in Analyzer; add more as we identify them)</li>
+        </ol>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>2.</td>
+                    <td>3.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/CSS_Comments.png" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/CSS_Comments04.png" alt="" title="" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/CSS_Comments02.png" class="properties" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>5.</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/Dialog--CreateStyle.png" alt="" title="" class="properties" />
+                    </td>
+                    <td>(no image currently available)</td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>When a user adds or edits a comment in the Stylesheet Editor and saves, the comment is generated and displayed within the .css document.  When a user adds or edits a comment in the Text Editor and saves, the comment is parsed and displayed in the Stylesheet Editor.</p>
+        <p>&#160;</p>
+        <p>*A note about mediums: If you add a comment to a style on the default medium, that comment will also display in the Stylesheet Editor for that class in any medium. However, if you create a unique comment for that style on the medium, the unique comment will appear for that medium. If a comment exists only on the medium, it will not display for the default style.</p>
+        <p>&#160;</p>
+        <p>When right-clicking a tag and navigating to choose a class, a tooltip will appear with the class comment.  If the class has no comment, the default “Set Class” tip will appear instead.</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/CSS_Comments03.png" style="width: 257px;height: 278px;" />
+        </p>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Long/Short Comments, comments with symbols, non-English characters, etc.</li>
+            <li>Style Classes and comments</li>
+            <li>Comments in random areas in style sheet&#160;(not next to style name)</li>
+            <li>Imported style sheets with comments</li>
+            <li>Multi-medium comments</li>
+            <li>Comments on generic classes, pseudo classes and complex selectors</li>
+            <li>Impact on other products?</li>
+        </ul>
+        <h3><a name="CustomDate"></a>Customer&#160;Date/Time&#160;Variables</h3>
+        <p>Users can now create their own DateTime variable with any desired format.  Strings that follow the ‘Custom Date and Time Format Strings’ (specified here: <a href="http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx">http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx</a>) are translated to the appropriate value. </p>
+        <p>&#160;</p>
+        <p> To create this variable, open a Variable Set, click on the new button in the local toolbar to Add DateTime Variable. Click in the Definition column for the DateTime Variable and the <span class="UI">Edit Format of [name]</span> dialog will appear where you can edit the format of the variable. DateTime variables can also be given alternate definition like standard variables (for example, you could provide different date formats for American and European audiences). Additionally, DateTime variable formats can be overridden in the target. When overriding a DateTime variable in the target, the target should also invoke the<span class="UI"> Edit Format of [name]</span> dialog. </p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Variables/Dialog--EditFormatOfVariableName.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Test Ideas</p>
+        <ul>
+            <li>All known date formats</li>
+            <li>Crazy formats</li>
+            <li>Random characters and text</li>
+            <li>Entering European format on English OS</li>
+            <li>Entering American format on European OS</li>
+            <li>All outputs honor format chosen</li>
+            <li>Changes added to Capture and Mimic as well? Impact on Analyzer or Contributor?</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="Conditio"></a>Condition Tags for Image Map Areas</h3>
+        <p>Users can now set a condition tag to each area/link within the Image Map Editor.  Can access the Condition Tags dialog through the Edit pull down, the Condition Tags icon on the right side of the toolbar, or by right-clicking the area/link.</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Image Maps/Image_Map_Conditions.png" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Image Maps/Image_Map_Conditions2.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Test Ideas</p>
+        <ul>
+            <li>All supported outputs (currently image maps only output to online outputs, so no print outputs currently)</li>
+            <li>Advanced conditions</li>
+            <li>Multiple variable sets</li>
+            <li>Condition sets in sub folders</li>
+            <li>Capture images honor choices set</li>
+            <li>Overlapping map areas&#160;(Condition Top one out, bottom one should still be clickable)</li>
+            <li>Dependencies:&#160;Rename condition tag, rename condition tag set, verify conditions appear correctly in all reports</li>
+            <li>Analyzer:&#160;Verify conditions appear in appropriate panes (Used Conditions, etc)&#160;and verify topic opens and image is highlighted</li>
+            <li>Other impact on other products?</li>
+        </ul>
+        <h3><a name="QuickHelp"></a>Quick&#160;Help Change</h3>
+        <p>The “(Quick Help)” text has been replaced with an icon.  When the user clicks the icon, the tip will appear and only disappear when the user clicks away from the icon and tip.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Quick_Help.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Test Ideas</p>
+        <ul>
+            <li>Locations:<ul><li>Targets</li><li>Skins</li><li>Import Files</li><li>Change made to all products?</li></ul></li>
+        </ul>
+        <h3><a name="Custom"></a>Custom Compile Errors/Warnings</h3>
+        <p>An option has been added to Flare that will allow authors to specify what compiler errors they want to ignore. Errors can be ignored for all targets or for individual targets.</p>
+        <p>&#160;</p>
+        <p>UI: (Is going to be moved to !File |&#160;Options)</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>(Pic to come)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Build Options Dialog:</p>
+        <p>Save log on build will save the log file when a project is built (This option is shared between Flare and Madbuild)</p>
+        <p>‘View output after build’ will open the output without prompting the user if they want to view the output (This is a Flare only option)</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Tools Options/UI_Build_Options01.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Warnings in the Build Options dialog:</p>
+        <p>The targets dropdown lists all the Flare targets. Changing the selection will show all errors that can be thrown by the selected target. These settings will be applied to any target that does not locally specify their own build warnings settings. Also, these settings will be used by both Flare and Madbuild.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Tools Options/UI_Build_Options02.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Warnings in the Target Editor:</p>
+        <p>Warnings specific to this target are shown in this tab. By default the compiler will use the settings the global settings the user configured for Flare. To use compiler specific settings check the “Use target build warnings” option in this tab.</p>
+        <p>Note: The accessibility tab has been combined into this new warnings tab</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Tools Options/UI_Build_Options03.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Build progress dialog:</p>
+        <p>Log entries from the compiler are now split into three groups: Messages, Warnings, and Errors.</p>
+        <p>‘Messages’ – Compiler messages and warning text</p>
+        <p>‘Warnings’ – Warnings reported by the compiler that contain the ID and other information</p>
+        <p>‘Error’ – Errors that will stop project builds. These errors can’t be ignored in any of the warning UI.</p>
+        <p>In the ‘Warnings’ tab there is a right click option to ignore the warning in future builds.</p>
+        <p>*Note – This functionality has not been added to the batch build dialog, but it may be possible to do so in the future</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Tools Options/UI_Build_Options04.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Batch Build Progress Dialog:</p>
+        <p>Warning and Error count is shown on a completed build.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Tools Options/UI_Build_Options05.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Old accessibility choices pre-V10.&#160;Do they copy over?</li>
+            <li>Does madbuild work with both global and target based choices?</li>
+            <li>Test the right-click Ignore Warning option in Build Progress dialog for both a single target build and a batch target build.</li>
+            <li>When selecting Ignore Warning from right-click menu, is it ignoring in the appropriate place (global or target)?</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="XML"></a>XML Editor (Print Layout) Page Count</h3>
+        <p>When scrolling within the XML Editor (print layout), and there is more than one page, a label appears besides the scrollbar indicating the current page.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--Page Count.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Does it work in all page views (Scale to 100%, Fit Width, etc)?</li>
+            <li>Impact on other products?</li>
+        </ul>
+        <h3><a name="TOCCont"></a>TOC/BS&#160;Context Menu - "Locate in Content Explorer" and Updated Local Toolbars</h3>
+        <p>Within the TOC and Browse Sequence Editors (both Tree View and Grid View), users can now locate a file in the Content Explorer from the context menu.</p>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td class="bold">Tree View right-click menu</td>
+                    <td class="bold">Grid View right-click menu</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--RightClickMenu--TreeView.png" class="properties" />
+                    </td>
+                    <td style="vertical-align: top;">
+                        <img src="../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--RightClickMenu--GridView.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Additionally, "Locate in Content Explorer" and "Send for Review"&#160;(added to menu in V9) buttons have been added to the TOC&#160;and Browse Sequence Editor's local toolbars (between "Move Item Down" and "Open Linked File")</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--LocalToolbar.png" alt="" title="" />
+        </p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Use project attached to bug 46937 to test (contains all link types, valid and broken); project added to TOC&#160;Testing Resources</li>
+            <li>Does it work in both Views?</li>
+            <li>Does it work with Books, pages, linked Flare projects, linked TOCs, etc...?</li>
+            <li>What's it do with broken links?</li>
+            <li>What's it do when Explorer is not open? Hidden? Floating? etc...</li>
+            <li>Whats it do when Explorer is in different views?</li>
+            <li>Impact on other products? (Locate in Explorer and Send for Review options should not be present in Analyzer)</li>
+            <li>V9 shipped with the ability to send topics for review from a BS, however the TOC&#160;View in the Review Packages pane did not support it. For V10, this will need to be fixed. See bug 77421.</li>
+        </ul>
+        <h3><a name="Multiple"></a>Multiple Variable Definitions</h3>
+        <p>Variables may now have multiple definitions.  To add a definition to a variable, the user must click the variable row within the Variable Set Editor and either click the ‘add definition’ button on the tool strip bar or the right-click menu.  When a variable has multiple definitions, the row cells of the non-default definitions will be grayed out (except for the definition cell).  The default definition is determined by the order of creation, with the oldest definition being the default.  Within the Insert Variable dialog, the default definition is displayed in the Definitions column.  In the Variables tab within the Target Editor, users can choose from a list of the previously added definitions or type in another definition value, when determining what value to be displayed for the variable within the target.</p>
+        <table style="width: 100%;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Variables/UI--Variable--Mutli01.png" class="properties" />
+                    </td>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Variables/UI--Variable--Mutli02.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Max amount of definitions?</li>
+            <li>Special Characters?</li>
+            <li>Should work with DateTime Variables now</li>
+            <li>Copy/paste/Undo in the new UI?</li>
+            <li>Accuracy of output?</li>
+            <li>Madbuild/Batch Target?</li>
+            <li>Impact on other products?</li>
+            <li>Analyzer/Reporting implications: Alt definitions should not report as unused, alt definitions should not produce Variable Suggestions.</li>
+        </ul>
+        <h3><a name="HTMLImp"></a>HTML&#160;Import</h3>
+        <p>The HTML Importer under Project &gt; Import &gt; HTML Files has been updated.</p>
+        <p>The first screen now resembles that of the MS Word, Dita, and Framemaker importers.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTML01.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Following the same dialog flow, the second screen allows the user to select which files to import. In addition, users can select a folder to import also instead of only files. When the user selects a folder to import, the importer will grab all .htm, .html, and .xhtml files which are stored within the selected folder. During a re-import, the re-importer will check to see if any of the files in the source folder have changed in addition to if files are deleted or added and will update the source files list accordingly.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTML02.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The importer now creates a “.flimphtml” file under the Imports folder in the Project folder.</p>
+        <p>Opening one of the files will launch the HTML Import Editor.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTML03.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Should be comparable to all our other imports. What options they have, this should have.<ul><li>Get latest on compile</li><li>Linked files on import</li></ul></li>
+            <li>Compare functionality with Global&#160;Project Importing.&#160;What do we gain/lose between these two methods?</li>
+            <li>Source Control</li>
+            <li>Impact on other products? New supported file extensions should always be run through Analyzer.</li>
+        </ul>
+        <h3><a name="Responsi"></a>Responsive Output -&#160;Improved Mobile Output</h3>
+        <p>Responsive Output is essentially "smart" output. You generate one output, but the UI&#160;changes depending on the size of your browser or device you are using. So instead of seeing the entire HTML5 output visable on a tablet or smart phone, you will see a new and improved look. You get the same effect if you shrink your browser to a smaller size.</p>
+        <p>&#160;</p>
+        <p>New option in the Advanced tab of an HTML5 target will turn on/Off Responsive Output. </p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/HTML5/TargetEditor--HTML5--AdvancedTabResponsive.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>This gives us the added benefit of an improved mobile output. All the user needs to do is output HTML5 with this option checked.</p>
+        <p>(To add: Mobile Output picture)</p>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>All browsers</li>
+            <li>IOS and Android devices<ul><li>Phones</li><li>Tablets</li></ul></li>
+            <li>All skin options are still maintained correctly. (Navigation pane on Right, auto-hide navigation pane, etc...)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="Insert"></a>Insert empty ALT text for images option</h3>
+        <p>An option to insert empty alt text (alt=””) at author time has been added.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Images/Image--AltText.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Integration with Capture images</li>
+            <li>Copy / pasted images</li>
+            <li>Effect previously added images?</li>
+            <li>Imported Word/Frame/HTML files with images</li>
+            <li>Impact on other products?</li>
+        </ul>
+        <p>&#160;</p>
+        <h3><a name="AutoSiz"></a>Auto-Size all Capture Callouts to fit text, target option</h3>
+        <p>An option in the Advanced tab of target properties has been added which will allow for captions in inserted Capture images to be auto-sized on the fly. The original image/props file will remain unchanged. Only the output image will reflect this option.</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/HTML5/TargetEditor--HTML5--AdvancedTab2.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>Verify base image and Props is unchanged</li>
+            <li>Does this appropriately overwrite settings in Capture?</li>
+            <li>What outputs is this available for?</li>
+            <li>Roundtrip a Flare project through Lingo back to Flare and verify resizing works.</li>
+            <li>Verify an image with Print Format settings honors this choice</li>
+            <li>Does this work in conjunction with other image options in the target?</li>
+        </ul>
+        <h3><a name="PDF"></a>PDF option to convert colors to black and white</h3>
+        <p>There’s now an option in the PDF tab of the target editor that allows you to convert spot colors (font color, background color, etc. – basically everything except images) to black and white:</p>
+        <table style="width: 100%;">
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/TestPlans/Flare/Target Editor/PDF/TargetEditor--PDF--OptionsTab2.png" class="properties" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Testing Ideas</p>
+        <ul>
+            <li>How does this work with similar colors (like gray, light-white, etc...)?</li>
+            <li>How does this change any Print-Medium choices?</li>
+            <li>Verify switching this target to another target, this option is ignored.</li>
+        </ul>
+    </body>
+</html>

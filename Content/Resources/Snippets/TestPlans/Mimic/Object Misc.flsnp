@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <h5>Misc</h5>
+        <ul>
+            <li>In the Frame Editor, the object will display a warning <img src="../../../Images/TestPlans/Mimic/Warning Icon.png" /> if there is a move action, but no trajectory set. In addition to the warning on the object, the Frame Editor Toolbar will display <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/WarningErrorNotification.png" /> on the far right. Hovering over the object should display a tooltip explaining the warning.&#160;The warning should disappear once a trajectory is applied to the object.</li>
+            <li>If an invalid Action is applied to an object, a Broken Action warning <img src="../../../Images/TestPlans/Mimic/ActionWarning.png" />will appear on the object. Again, the Frame Toolbar will display <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/WarningErrorNotification.png" /> and hovering over the object should display a tooltip explaining the warning. The warning should disappear once a valid action is applied to the object, or the offending action is removed.</li>
+        </ul>
+    </body>
+</html>

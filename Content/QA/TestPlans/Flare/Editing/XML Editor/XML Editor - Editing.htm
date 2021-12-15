@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4554" MadCap:lastWidth="1038" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>XML Editor - Editing</h2>
+        <p>Top open the <span class="UI">XML Editor</span>, open or create a new topic, snippet or Master page.</p>
+        <h3>Editing Test Cases:</h3>
+        <h4>XML&#160;Editor Right-Click Menu:</h4>
+        <div style="text-align: left;width: 230px;float: left;height: 500px;">
+            <p>No selection:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--RightClickMenu.png" style="mc-thumbnail: popup;" />
+            </p>
+            <p>Text selection:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--RightClickMenuText.png" alt="" title="" style="mc-thumbnail: popup;float: left;" />
+            </p>
+        </div>
+        <div style="margin-left: 185pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected content to the clipboard.</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected content to the clipboard.</li>
+                <li>Copy Xml&#160;as Text:&#160;</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the content from the clipboard into the selected folder.</li>
+                <li><span class="bold">Hyperlink… (Insert a hyperlink):</span>&#160;Opens the <span class="UI">Insert Hyperlink</span> dialog which lets you create a hyperlink out of the selected text.</li>
+                <li><span class="bold">Quick Link:</span> Invokes the Quick Link submenu (covered in the Hyperlinks test plan).</li>
+                <li><span class="bold">Cross-Reference… (Insert a cross-reference):</span> Opens the <span class="UI">Insert Cross-Reference</span> dialog which lets you create a Cross-Reference at the current insertion point.</li>
+                <li><span class="bold">Quick Cross-Reference…:</span> Invokes the Quick Cross-Reference submenu (covered in the Cross-References test plan).</li>
+                <li><span class="bold">Create Auto Suggestion: </span>(Requires a text selection) Produces three different behaviors depending on the existence of an Auto Suggestion List file in the project:<ul class="checkbox"><li>If no *.fltbx file exists:&#160;Prompts user that no Auto Suggestion List file exists and asks user to create one. Clicking "Yes"&#160;invokes the <span class="UI">Add File</span> dialog with Auto Suggestion List File preselected as the File Type.</li><li>If one *.fltbx file exists: Displays a confirmation dialog indicating that the Auto Suggestion was written to the project's *.fltbx file.</li><li>If multiple *.fltbx files exits: Invokes the <span class="UI">Create an Auto Suggestion</span> dialog which lets you select the Auto Suggestion List file to which you want to write the new Auto Suggestion. And then displays a confirmation dialog.</li></ul></li>
+                <li><span class="bold">Conditions... (Select Conditional Text Tags): </span>Invokes the <span class="UI">Condition Tags</span> dialog which lets you apply a condition to the tag around the current insertion point.</li>
+                <li><span class="bold">Span Class:&#160;</span>(Requires a text selection) Invokes a sub-menu listing all classes of the span style. Selecting a class from the sub-menu applies a span tag with the selected class to the text selection.</li>
+                <li><span class="bold">Paragraph… (Edit Paragraph Properties): </span>Invokes the <span class="UI">Paragraph Properties</span> dialog.</li>
+                <li><span class="bold">Font… (Font Properties):&#160;</span>Invokes the <span class="UI">Font Properties</span> dialog.</li>
+                <li><span class="bold">Topic Properties…:</span> Opens the <span class="UI">Topic Properties</span> dialog for the current topic.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Shortcuts:</h4>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle_Rows" cellspacing="0">
+            <caption>Editing Shortcuts</caption>
+            <col style="width: 2in;" />
+            <col style="width: 6in;" />
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">S</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Save</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">S</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Save All</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">F5</span>
+                    </p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Refresh</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">A</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Select All</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">C</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Copy</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">X</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Cut</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">V</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Paste</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">DEL</span>
+                    </p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Delete</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">B</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Bold</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">I</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Italic</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">U</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Underline</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Z</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Undo</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Y</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Redo</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">G</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Insert Image</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">K</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Insert Hyperlink</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">R</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Insert Cross-Reference</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">K</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Insert Bookmark</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">R</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Insert Snippet</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">V</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Insert Variable</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Q</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Insert QR code</p>
+                </td>
+            </tr>
+            <tr style="height: 22px;">
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">E</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Insert Equation</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">F10</span>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Insert Keyword</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">F11</span>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Insert Quick Character</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">B</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Font Properties</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">B</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Paragraph Properties</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">H</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Style Picker</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">C</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Conditions</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">G</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Load find selection</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">;</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Paragraph items</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">W</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Preview Topic</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">P</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Topic Properties</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">P</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Print</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">E</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Enable/disable Track Changes</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">DEL</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Cut</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">INSERT</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Copy</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">INSERT</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Paste</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Up Arrow</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Moves the current block level element or selection up</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Down&#160;Arrow</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Moves the current block level element or selection down</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Rows.css');margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle_Rows" cellspacing="0">
+            <caption>Navigation and Selection Shortcuts</caption>
+            <col style="width: 2in;" />
+            <col style="width: 6in;" />
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">Left Arrow</span>
+                    </p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Move Left</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">Right Arrow</span>
+                    </p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Move Right</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Left Arrow</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Skip back a word</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Right Arrow</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Skip to the next word</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Left Arrow</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Select previous character</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Right Arrow</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Select next character</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Left Arrow</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">
+                    <p>Select previous word</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep">
+                    <p><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Right Arrow</span></p>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">
+                    <p>Select next word</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">Up Arrow</span>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Moves insertion point up one line or to horizontal insertion point above current tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">Down Arrow</span>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Moves insertion point down one line or to horizontal insertion point below current tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Up Arrow</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Skip to beginning of current (or previous) tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Down Arrow</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Skip to beginning of next tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Up Arrow</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Makes a selection from the current insertion point up one line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Down Arrow</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Makes a selection from the current insertion point down one line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Up Arrow</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Makes a selection from the current insertion point to the beginning of the current tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">Down Arrow</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Makes a selection from the current insertion point to the end of the current tag</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">INSERT</span>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Switches cursor between Overtype and Insert modes</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">HOME</span>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Moves insertion point to beginning of current line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">END</span>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Moves insertion point to end of current line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">HOME</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Moves insertion point to the top of the topic</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">END</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Moves insertion point to the end of the topic</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">HOME</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Makes a selection from the current insertion point to the beginning of the current line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">END</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Makes a selection from the current insertion point to the end of the current line</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">HOME</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Makes a selection from the current insertion point to the top of the topic</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">END</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Makes a selection from the current insertion point to the end of the topic</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">PAGE UP</span>
+                </td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Scrolls editor up one page (or screen)&#160;at a time</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">PAGE DOWN</span>
+                </td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Scrolls editor down one page (or screen)&#160;at a time</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">PAGE UP</span></td>
+                <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd">Makes a selection from the current insertion point up one page (or screen)</td>
+            </tr>
+            <tr>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep"><span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">PAGE DOWN</span></td>
+                <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd">Makes a selection from the current insertion point down one page (or screen)</td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h4>Drag &amp;&#160;Drop Text</h4>
+        <p class="bold">Select some text and test dragging it to a new location.</p>
+        <ul class="checkbox">
+            <li>Select a complete paragraph and drag it to a new location. Verify no malformed XML.</li>
+            <li>Select some text within a paragraph and drag that to a new location. Verify no malformed XML.</li>
+            <li>Select an inline tag (span, madcap:variable, b, etc)&#160;and drag it to a new location. Verify no malformed XML.</li>
+            <li>Test dropping dragged content into a variety of locations:&#160;Paragraphs, tables, expanding text, drop-downs, etc.</li>
+        </ul>
+        <p class="note">NOTE:&#160;If you make a text selection that includes any inline self-closing element (image, keyword, bookmark, etc) and then click on that inline element to initiate the drag, only the inline element will be moved. This has been reported many times as a bug.</p>
+        <h4>Drag &amp;&#160;Drop Block Elements</h4>
+        <p class="bold">Drag and drop the Block Bars to rearrange content.</p>
+        <p>Hover over a the Block Bar you want to move until you see this cursor:</p>
+        <p class="indent">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--DragDropHoverCursor.png" />
+        </p>
+        <p>Click on the Block Bar and drag it to a new location:</p>
+        <p class="indent">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--DragDropBlockBar.png" />
+        </p>
+        <h4>Paste from Other Sources (Browser, Word, Frame, Notepad):</h4>
+        <p>
+            <img src="../../../../../Resources/Images/XML Editor--PasteOptions.png" style="width: 159px;height: 152px;" />
+        </p>
+        <p>&#160;</p>
+        <p>Pasting content from sources outside of Flare simply paste into the Flare file, based on the default behavior specified (e.g., as paragraphs, as a list). However, a new paste icon displays after the pasted content, and if you click the icon you can choose a different method for bringing the content into Flare.</p>
+        <p>Following are the different options you can select from the paste icon.</p>
+        <ul class="checkbox">
+            <li><span class="bold">Paste Paragraphs:</span> Select this option if you want to paste the text as regular paragraphs. The pasted text will take on the style of the location where its being pasted. New paragraphs will become default paragraphs.</li>
+            <li><span class="bold">Paste Paragraph Block:</span> Select this option if you want to paste the text as paragraph blocks, such as &lt;div&gt;, &lt;blockquote&gt;, or &lt;fieldset&gt;. For more information about these types of styles, see Creating Tag Groups.</li>
+            <li><span class="bold">Paste Inline Text:</span> Select this option if you want to paste the text as inline text, so that it takes on the style of the location where it is being pasted. If you have copied multiple lines of text from the source document and use this option, the text will be pasted in one line, not multiple lines.</li>
+            <li><span class="bold">Paste Table:</span> Select this option if you want to paste the text into a table.</li>
+            <li><span class="bold">Paste List:</span> Select this option if you want to paste the text as a list.</li>
+            <li><span class="bold">Paste HTML:</span> Select this option if you want to paste text from an HTML source, such as a website.</li>
+            <li><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Text to paste:&#160;</span>Displays the text on the clipboard</li>
+            <li><span class="bold">Options</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Paste as paragraphs:&#160;</span>Select this option if you want to paste the text as regular paragraphs.<ul style="list-style-type: square;"><li><span class="bold">Style: </span>Select any of the paragraph &lt;p&gt; styles in your style sheet.</li></ul></li>
+                    <li><span class="bold">Paste as paragraph block: </span>Select this option if you want to paste the text as paragraph blocks, such as &lt;div&gt;, &lt;blockquote&gt;, or &lt;fieldset&gt;.<ul style="list-style-type: square;"><li><span class="bold">Style: </span>Select any of the paragraph block styles in your style sheet.</li></ul></li>
+                    <li><span class="bold">Paste as inline text: </span>Select this option if you want to paste the text as inline text, so that it takes on the style of the location where it is being pasted.</li>
+                    <li><span class="bold">Paste as a table: </span>Select this option if you want to paste the text into a table.<ul style="list-style-type: square;"><li><span class="bold">Style: </span>Select any table style that you might have added to your project so that the new table takes on the look from that style sheet.</li><li><span class="bold">Delimiter: </span>Select the method by which the source text is separated</li></ul></li>
+                    <li><span class="bold">Paste as a list: </span>Select this option if you want to paste the text as a list.<ul style="list-style-type: square;"><li><span class="bold">Type:&#160;</span>Select the kind of list that you want to use (e.g., decimal, bullet square,  bullet disc, lowercase Roman).</li></ul></li>
+                    <li><span class="bold">Paste HTML: </span>Select this option if you want to paste text from an HTML source, such as a website.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Preview:&#160;</span>Displays a preview of how the pasted text will appear in the XML&#160;Editor with the selected option.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4> Split-View </h4>
+        <p class="bold">Insure that all normal editing works when the split-view is active. </p>
+        <ul class="checkbox">
+            <li>Make sure that the separator bar can be docked, moved to different positions, and placed horizontally or vertically.</li>
+            <li>Test that changes made in the&#160;XML&#160;Editor show up in the Text Editor, and vice-versa.</li>
+            <li>Make sure that changes in one editor are reflected live in the other, and that highlighting one element on one editor simultaneously shows the highlight in the other </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases
+</p>
+            <ul class="checkbox">
+                <li>Copy Text, Tables, Images, etc from various sources.
+</li>
+                <li>Paste as paragraphs &lt;p&gt;, and any other P styles you have in your style sheet including &lt;pre&gt;. Be sure to have custom p.&lt;yourstyle&gt; for testing.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalViewInEditor.flsnp" />
+    </body>
+</html>

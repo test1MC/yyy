@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1980" MadCap:lastWidth="886" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Spell Checking - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p><b>Turning On the Spell Check While Typing:</b>
+        </p>
+        <p>! Tools | Spell Check While Typing</p>
+        <p>&#160;</p>
+        <p><b>Opening the Ignored Words Window:</b>
+        </p>
+        <p>!Tools | Ignored Words</p>
+        <p>&#160;</p>
+        <p><b>Opening the dictionary:</b>
+        </p>
+        <p>Click View&gt; Dictionary or Press Ctrl + D</p>
+        <h3>UI Spell Check while typing.</h3>
+        <h3>Lingo&#160;Editor display of misspelled words</h3>
+        <p class="bold">The misspelled words are displayed with a red squiggly underline. </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/XMLEditor--MisspelledWord.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Right-clicking a misspelled word will reveal a menu like this:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/MisspelledWord--RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;margin-left: 250pt;">
+            <li>Menu items are correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Keyboard can navigate and select options</li>
+            <li>Menu is easy to use and understand</li>
+        </ul>
+        <p style="margin-left: 250pt;">&#160;</p>
+        <p class="bold" style="margin-left: 235pt;">Relevant Menu Items:</p>
+        <ul style="list-style-type: square;margin-left: 250pt;">
+            <li><span class="bold">(Alternate Spelling Suggestions): </span>A list of suggested words to replace the current misspelled words. Select one to replace the existing text. Suggestions should also draw from Dictionary files within the project.</li>
+            <li><span class="bold">Ignore All: </span>Adds the word to a list of ignored words 
+list for this topic.</li>
+            <li><span class="bold">Add To Dictionary: </span>Add the current misspelled word to the appropriate language Dictionary</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Language Markers in Lingo&#160;Editor</h3>
+        <p>Lingo will spell check based on the language of your content. Language markers appear in the editor to show what language the project was set to use the source and target areas. </p>
+        <p>In this case, the Lingo project is set to be an English to Spanish project. So an English language marker appears in the source topic and a Spanish language marker appears in the translated topic despite the fact both topics are written in German.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Spellcheck/UI--LanguageMarkers.png" style="width: 392px;height: 193px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <p>Verify that words added to the Dictionary are added to the appropriate dictionary. That is, if the word is contained in a topic with a Swedish language tag, the word should be added to the Swedish language dictionary. </p>
+        <p>&#160;</p>
+        <h3>Ignored Words - UI&#160;Test Cases</h3>
+        <p class="bold">Opening the Ignored Words dialog:</p>
+        <p>Since ignored words are per topic, first open the topic that you want to view the Ignored Words list for. </p>
+        <p class="bold">!Tools |&#160;Ignored Words</p>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Spellcheck/UI--IgnoredWords--Dialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Ignored Words):&#160;</span>To add a word to the list, simply click inside the section and type one word per line. (Words are also added to this list automatically when user clicks Ignore or Ignore All when performing a manual spell check or when right-clicking .)</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

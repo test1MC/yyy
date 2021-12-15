@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="HelpMenu-CheckForUpdates"
+    BackgroundColor="#7cfc00" />
+  <ConditionTag
+    Comment=""
+    Name="HelpMenu-VideoTutorials"
+    BackgroundColor="#00ffff" />
+  <ConditionTag
+    BackgroundColor="#ff69b4"
+    Name="HelpMenu-Guides"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffd700"
+    Name="HelpMenu-HelpCommunity"
+    Comment="" />
+</CatapultConditionTagSet>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="130" MadCap:lastWidth="748">
+    <body>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Alias">Alias File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.AutoSuggestionList">Auto Suggestion List File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.AutoIndexPhraseSet">Auto-index Phrase&#160;Set</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.BatchTarget">Batch Target</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.BrowseSequence">Browse Sequence</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.ConditionTagSet">Condition Tag Set</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Destination">Destination</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Dictionary">Dictionary</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.DitaImportFile">DITA Import File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.FileTagSet">File Tag Set</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.FlareImportFile">Flare Import File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.FrameMakerImportFile">FrameMaker Import File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Glossary">Glossary</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.HeaderFile">Header File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.HTMLImportFile">HTML Import File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.HyphenationDictionary">Hyphenation Dictionary</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Image">Image</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.IndexLinkSet">Index Link Set</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.MasterPage">Master Page</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.MSWordImportFile">MS&#160;Word Import File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.PageLayout">Page Layout</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.RelationshipTable">Relationship Table</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Report">Report</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.SearchFilterSet">Search Filter Set</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Skin">Skin</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Snippet">Snippet</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Stylesheet">Stylesheet</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.SynonymsFile">Synonyms File</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.TableStyle">Table Style</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Target">Target</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Toc">TOC</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="AddFile--UIControls.Multimedia,FlareFileTypes.Multimedia">Multimedia from Web</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.Topic">Topic</MadCap:conditionalText>
+        <MadCap:conditionalText MadCap:conditions="FlareFileTypes.VariableSet">Variable Set</MadCap:conditionalText>
+    </body>
+</html>

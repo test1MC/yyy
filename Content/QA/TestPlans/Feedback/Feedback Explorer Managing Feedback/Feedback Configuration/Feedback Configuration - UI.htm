@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="6282" MadCap:lastWidth="1078" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Feedback Configuration - UI</h2>
+        <h3>Creating a new configuration file</h3>
+        <h4>From Flare</h4>
+        <ol>
+            <li>Open a Target file that has MadCap Feedback enabled</li>
+            <li>In the Feedback Service tab, click the "Configure with MadCap Feedback&#160;Explorer" button</li>
+            <li>Feedback Explorer will launch and a Feedback Configuration file will automatically be created using the Feedback Server URL and Feedback&#160;Service Key set in the Flare Target file</li>
+        </ol>
+        <h4>From Feedback Explorer</h4>
+        <p>!File |&#160;New</p>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/UI--NewLocalTarget.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Feedback Server URL: </span>Enter the URL (the name of the machine) running MadCap Feedback&#160;Server Admin, or enter "madcap" to test the MadCap-hosted feedback service.</li>
+            <li><span class="bold">Feedback Key:&#160;</span>Enter the Feedback Service key. (If connecting to Feedback&#160;Server Admin, the key must begin with a 'W'. If connecting to the "madcap"&#160;hosted service, the key must begin with 'LH'.)</li>
+        </ul>
+        <h3>Opening a configuration file</h3>
+        <p>!File |&#160;Open</p>
+        <p class="note">Only one configuration file can be open at any time. If a different configuration file is opened, the previous configuration file will close.</p>
+        <h3>Editing the configuration file</h3>
+        <h4>Local Toolbar</h4>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Toolbars/Button---ClearData.png" /><span class="bold">:&#160;</span>Clears all data in the Feedback database with the exception of User Profile data. In order to clear all data, one must click OK in two confirmation dialogs.</li>
+        </ul>
+        <h4>General Tab</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackConfiguration--GeneralTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Feedback Server URL:&#160;</span>Displays the URL (the name of the machine) running MadCap Feedback&#160;Server Admin, or displays "madcap" if using the MadCap-hosted feedback service.</li>
+            <li>Feedback Key: Displays the Feedback Service key.</li>
+            <li><span class="bold">Published Output URL: </span>If the deployed Help system using this feedback key is WebHelp or WebHelp Plus, you can enter the published output URL&#160;in this field. Doing so will allow the "Live View"&#160;button in the Topic View to function.</li>
+            <li><span class="bold">Options</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Enable anonymous comments: </span>Enable this option to allow users to add comments to the Help system without needing to create a user profile. This option is disabled by default.</li>
+                    <li><span class="bold">Require new comments to be reviewed: </span>Enable this option to require that all comments be accepted by a reviewer (or accepted in the Feedback Explorer app) prior to being made visible by all users of the Help system. This option is enabled by default.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Expired Comments:</h4>
+        <p>Comments will become hidden after the set number of days</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/ManifestHideComments.png" style="width: 236px;height: 112px;" />
+        </p>
+        <p>Test that after the set number of days comments that have been in the help system that long are not hidden. Their status has been changed to hidden.</p>
+        <h4>Reviewers Tab REMOVED IN V4</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Configuration/UI--FeedbackConfiguration--ReviewersTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Reviewers):&#160;</span>You can enter a list of e-mail&#160;addresses (one address per line)&#160;where notifications will be sent whenever a comment that requires review is submitted to a Help system.</li>
+        </ul>
+        <h4>Administrators Tab</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackConfiguration--AdministratorsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Administrators):&#160;</span>You can enter a list of e-mail&#160;addresses (one address per line)&#160;where notifications will be sent for certain events. The specific events for which Administrators will receive an e-mail notification are set in the Notifications tab.</li>
+        </ul>
+        <h4>Administrators Properties Dialog</h4>
+        <p>Dialog allows you to change the email address of the admin, the subscription status to the server manifest, and all admin email notifications.</p>
+        <p>&#160;</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/AdministratorProperties.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p class="TestCases">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p>Edit email address and test that email notifications go to the new address.</p>
+            </li>
+            <li>
+                <p>Edit email address and test that email notifications do not go to the old address.</p>
+            </li>
+            <li>
+                <p>Toggle the Subscribe to server manifest on. Advance your computer time to 11:49PM and wait until 11:50PM. Make sure you recieve the project manifest.</p>
+            </li>
+            <li>
+                <p>Toggle the Subscribe to server manifes off. Repeat previous test case and verify you no longer get the manifest. You need to delete and re-add a new manifest as manifest will only go out once a day.</p>
+            </li>
+            <li>
+                <p>Toggle Search is performed on. Perform a search in your feedback enabled help system and verify the correct email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle Search is performed off. Perform a search in your feedback enabled help system and verify no email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle Topic is rated notification on. Rate a topic in your feedback enabled help system and verify the correct email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle Topic is rated notification off. Rate a topic in your feedback enabled help system and verify no Topic rated email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle CSH call notification on. Perform a CSH call in your feedback enabled help system and verify the correct email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle CSH call notification off. Perform a CSH call in your feedback enabled help system and verify no CSH email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle the Topic comment submitted by user notification on. Submit a comment as a user that is different that the admin on your feedback enabled help system and verify the correct email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle the Topic comment submitted by user notification off. Submit a comment as a user that is different that the admin on your feedback enabled help system and verify no Topic comment submitted by user email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle the Topic comment status changed notification on. Change the status of a comment and verify the correct email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Make the status change from the comment report local toolbar drop down. Verify Status change email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Make the status change from the right click menu on the comment grid. Verify Status change email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Make the status change from the edit comment dialog. Verify Status change email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Make the status change from the admin notification email. Verify Status change email notification is sent to the admin.</p>
+            </li>
+            <li>
+                <p>Toggle the Topic comment status changed notification off. Change the status of a comment and verify no topic comment status change email notification is sent to the admin.</p>
+            </li>
+        </ul>
+        <h4>Excluded IPs Tab</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Configuration/UI--FeedbackConfiguration--ExcludedIPsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Excluded IPs):&#160;</span>You can enter a list of IP&#160;addresses (one address per line)&#160;that should be excluded from collecting feedback. Test specific IP&#160;addresses as well as addresses that use wildcards (the * character). </li>
+        </ul>
+        <h4>Notifications Tab</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Configuration/UI--FeedbackConfiguration--NotificationsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Search is performed which returns no results:&#160;</span>Select this option to send an e-mail notification to all administrators whenever a search is performed which returns no results.</li>
+            <li><span class="bold">Topic is rated: </span>Select this option to send an e-mail notification to all administrators whenever a topic is rated.</li>
+            <li><span class="bold">CSH&#160;call is made: </span>Select this option to send an e-mail notification to all administrators whenever a CSH call is made.</li>
+            <li><span class="bold">Topic comment submitted by user: </span>Select this option to send an e-mail notification to all administrators whenever a topic comment is submitted.</li>
+            <li><span class="bold">Topic comment status changed by reviewer: </span>Select this option to send an e-mail notification to all administrators whenever a comment's status is changed.</li>
+        </ul>
+        <h4>Manifest Tab Added V4</h4>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackConfiguration--ManifestTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>Manifest are statistical reports that can be sent to administrators.</p>
+        <p>&#160;</p>
+        <p>Frequency:</p>
+        <p>Create a new schedule to run the manifest: Opens the new task dialog</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/ManifestNewTaskDialog.png" style="width: 212px;height: 120px;" />
+        </p>
+        <p class="TestCases">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Add daily, weekly, and monthly manifest schedules and verify that each type of report is sent out.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Modify the scheduled running of the manifest: Opens the New task dialog for editing.</p>
+        <p> </p>
+        <p>Delete the selected schedule: Deletes the selected schedule.</p>
+        <p>Date Filter: Allows you to schedule the date from which the reports should collect data from. </p>
+        <p>Range: From the date specified to now.</p>
+        <p>Period of days: From now back the number of days specified.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/ManifestDateFilterDialog.png" style="width: 132px;height: 90px;" />
+        </p>
+        <p>&#160;</p>
+        <p class="TestCases">Test cases:</p>
+        <p class="TestCases">&#160;</p>
+    </body>
+</html>

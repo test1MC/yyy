@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3658" MadCap:lastWidth="631" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Start Page - UI</h2>
+        <h3>Opening the Start Page</h3>
+        <p>The <span class="UI">Start Page</span> should be open and docked in the MDI using Feedback Explorer's default layout. If the <span class="UI">Start Page</span> is closed or not currently in focus, it can be reopened or given focus by:</p>
+        <p>!View |&#160;Start Page</p>
+        <p>Click the Open Start Page button in the Standard Toolbar</p>
+        <h3>Start Page - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/StartPage/StartPage.png" class="properties" />
+        </p>
+        <p style="margin-left: 200pt;">By default, the <span class="UI">Start Page</span> will appear open in the MDI. It is still, essentially, a pane that can be floated and docked anywhere. Right-click the <span class="UI">Start Page</span> tab and select Floating to dock it somewhere else and test the following:</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h3>Recent Files</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/StartPage/StartPage---RecentFiles.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Recent Files: </span>Lists recently opened Feedback configuration files (*.fbconf). Clicking on any listed file will open that configuration file in the current instance of Feedback Explorer.</p>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Files are listed with the Feedback icon, “FileName” then “Path”</li>
+            <li>Only Feedback Configuration files should appear in this list</li>
+            <li>Tooltips with full paths will display when hovering over the links</li>
+            <li>Clicking the link will open the configuration file and turn the Title bar orange for a few seconds.</li>
+            <li>The most recently used configuration files should be listed on top</li>
+            <li>Configuration files removed from !File | Recent Files | Manage Recent Files will be removed from the list</li>
+            <li>If a configuration file is clicked that no longer exists, Feedback Explorer will present an error.</li>
+        </ul>
+        <h3>Getting Started</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/StartPage/StartPage---GettingStarted.png" />
+        </p>
+        <p><span class="bold">Getting Started: </span>Lists some stuff.&#160;</p>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">View the Getting Started Guide (Open the Getting Started Guide PDF file (in Adobe Acrobat)): </span>Launches the PDF. Verify that it’s the correct one.</li>
+            <li><span class="bold">Browse the Help System (Open the Help System TOC Pane): </span>Opens the Help’s TOC embedded on the left pane. Test that you can click and open help topics.</li>
+            <li><span class="bold">Search Help System (Open the Help System Search Pane): </span>Opens the Help’s Search embedded on the left pane. Test that you can search and open help topics.</li>
+            <li><span class="bold">Visit the Help Community (Point the web browser to the MadCap Help Community): </span>Opens the Feedback Forums in a new browser window.</li>
+        </ul>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Icon is correct</li>
+            <li>Tooltips with full paths will display when hovering over the links</li>
+            <li>Clicking the link will open the project and turn the Title bar orange for a few seconds.</li>
+        </ul>
+        <h3>News and Updates</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/StartPage/StartPage---NewsAndUpdates.png" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Welcome: </span>This should contain a brief blurb and a list of new features. Clicking the text should launch our homepage in a new window.</li>
+            <li><span class="bold">MadCap Events: </span>Should contain a blurb about future events. Clicking the text should launch our ‘Events’ page in a new window.</li>
+            <li><span class="bold">Technical Support: </span>Should have a blurb about our Technical Support and other support options. Clicking the text should launch our ‘Support’ page in a new window. – Verify that it’s the correct product.</li>
+            <li><span class="bold">Feature Requests: </span>Should have  blurb about bugs and feature requests. Clicking the text should launch our ‘Bug Submission’  page in a new window.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>The correct pages open for all sections</li>
+            <li>The correct product and version should be populated in the fields for the bug reporting link (including "Beta"&#160;or "Early Experience").</li>
+            <li>If there is no Internet access, the News and Updates Section should display a message indicating such.</li>
+        </ul>
+        <h3>Keyboard Navigation</h3>
+        <p>(None)</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(None)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(None)</p>
+    </body>
+</html>

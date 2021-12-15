@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="166" MadCap:lastWidth="1098">
+    <head>
+        <link href="../../TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p class="p_3">P - Specifies if you were prompted</p>
+        <p class="p_3">S - Specifies if connection was successful</p>
+        <p class="p_3">&#160;</p>
+        <table style="mc-table-style: url('../../TableStyles/Columns.css');" class="TableStyle-Columns" cellspacing="0">
+            <col class="TableStyle-Columns-Column-Column2" style="width: 362px;" />
+            <col class="TableStyle-Columns-Column-Column1" style="width: 52px;" />
+            <tbody>
+                <tr class="TableStyle-Columns-Body-Body1">
+                    <td class="TableStyle-Columns-BodyE-Column2-Body1">Connect with no log in (no user) on computer within domain</td>
+                    <td class="TableStyle-Columns-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Columns-Body-Body1">
+                    <td class="TableStyle-Columns-BodyE-Column2-Body1">Log in with approved user on computer within domain</td>
+                    <td class="TableStyle-Columns-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Columns-Body-Body1">
+                    <td class="TableStyle-Columns-BodyE-Column2-Body1">Connect with no log in (no user)  on computer in a Workgroup</td>
+                    <td class="TableStyle-Columns-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Columns-Body-Body1">
+                    <td class="TableStyle-Columns-BodyB-Column2-Body1">Log in with approved user on computer in a Workgroup</td>
+                    <td class="TableStyle-Columns-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

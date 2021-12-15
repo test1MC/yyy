@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3331" MadCap:lastWidth="663" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Help Controls: Related Topics - UI</h2>
+        <h3>Inserting a Related Topics Control/Opening the Dialog</h3>
+        <ul class="checkbox">
+            <li><span class="UI">Content Explorer</span>:&#160;In Show Files mode, select and drag two or more topics from the <span class="UI">Content Explorer</span> into a topic in the&#160;<span class="UI">XML Editor</span>, the <span class="UI">Insert Related Topics Control</span> dialog should open with the selected files already displayed in the Related Topics list.</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Help Control | Related Topics Control...</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!Insert |&#160;Related Topics Control</span></li>
+        </ul>
+        <h3>Insert Related Topics Control dialog - UI&#160;Test Cases</h3>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p><span class="UI">Insert Related Topics Control</span> dialog invoked when inserting a new one:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/HelpControls RelatedTopics/Dialog--InsertRelatedTopicsControl.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p><span class="UI">Insert Related Topics Control</span> dialog invoked when editing an existing one:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/HelpControls RelatedTopics/Dialog--InsertRelatedTopicsControl--Populated.png" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">All Topics: </span>Displays a list of all topic files (*.htm, *.html and *.xml)&#160;that exist in the project's Content folder.</p>
+                <p class="bold">Local toolbar:</p>
+                <ul>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowAllFiles.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> (Show/Hide All Files in Project):&#160;</span>Changes the view in the dialog to "Show All Files" view. This view display all topics in the project in one grid.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" style="mc-tag-and-class: ;" /><span class="bold"> (Show/Hide Folders):&#160;</span>Changes the view in the dialog to "Show Folders"&#160;view. This view displays all files in the project in a tree view, similar to the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Files" view to offer a "Split" view.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" style="mc-tag-and-class: ;" /><span class="bold"> (Show/Hide Files):&#160;</span>Changes the view in the dialog to "Show Files"&#160;view. This view displays all files in the project one folder at a time, similar to the "Show Files" view in the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Folders" view to offer a "Split" view.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" style="mc-tag-and-class: ;" /><span class="bold"> (Up):&#160;</span>Moves up one folder in the hierarchy within the project's Content folder. This button becomes enabled if you use the "Show Folders" or "Split" View and browse into a folder.</li>
+                    <li><span class="bold">[Filter]:&#160;</span>Use this filter to limit the view of content files to topics (*.htm or *.html) or enter text in the filter (and press <span class="KeyboardShortcut">Enter</span>) to filter by filename.</li>
+                </ul>
+            </li>
+            <li>
+                <p><span class="bold">Selected Topics grid:</span> Displays a list of all topics set to be linked to as related topics.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">File:&#160;</span>Displays the filename of the topic set to be a related topic.</li>
+                    <li><span class="bold">Bookmark:&#160;</span>Displays the bookmark (if included)&#160;in the topic that the related topic link points to.</li>
+                    <li><span class="bold">Path:&#160;</span>Displays the path of the topic set to be a related topic.</li>
+                </ul>
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveRightWide.png" /> :&#160;</span>Adds the topic selected in the All Topics section to the list of related topics on the right.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveLeftWide.png" /> :&#160;</span>Removes the topics selected in the related topics list from that list.</li>
+            <li>Options:<ul class="checkbox"><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SelectBookmarkWide.png" alt="" title="" />:&#160;Invokes the <span class="UI">Select Bookmark</span> dialog which lets you select a bookmark or heading in the selected topic to which the Related Topics Control will link</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Options---HelpControl.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold">:&#160;</span>Invokes the <span class="UI">Related Topics Link Options</span> dialog which lets the user set additional options for the Related Topics Control</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveUpWide.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold">:&#160;</span>Moves the selected items in the Selected Topics list up in the sequence. Assuming custom ordering is used, the order of the topics in the Selected Topics list will determine the order in which they appear in the output.</li><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveDownWide.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold">:&#160;</span>Moves the selected items in the Selected Topics list down in the sequence.</li><li><span class="bold">Use Custom Ordering:&#160;</span>Lets the user determine if related topics should display in alphabetical order ("No") or the order in which the topics appear in this dialog ("Yes"). Setting this option to default will use whatever is set in the stylesheet (mc-use-custom-sort-order).</li></ul></li>
+            <li><span class="bold">Remove Control:&#160;</span>Deletes the Related Topics Control from the topic. (Only active when opening the dialog from an existing Related Topics Control. This button will not be active on initial insertion.)</li>
+            <li><span class="bold">OK: </span>Closes the dialog and applies the changes.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not apply any changes.</li>
+        </ul>
+        <p class="note">You can add multiple files in the show files mode.</p>
+        <p class="note">Use the up and down arrows to customize the order of topics in the related topic control.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Double-clicking a file in the All Topics list on the left will add it to the Selected Topics list on the right.</li>
+                <li>Double-clicking a file in the Selected Topics list on the right will open the <span class="UI">Select Bookmark</span> dialog for that topic's bookmarks.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/SelectBookmarkDialog--TestCases.flsnp" />
+        <h3>Related&#160;Topics Link Options dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/HelpControls RelatedTopics/Dialog--RelatedTopicsLinkOptions.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Style Class:</span> Displays the headings that can be selected as a bookmark in the current related topic.</li>
+            <li><span class="bold">Label:</span> Displays a list of all bookmarks in the curre</li>
+            <li>Display topics in:</li>
+            <li>Target Frame:&#160;</li>
+            <li>OK:&#160;</li>
+            <li>Cancel:</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="930" MadCap:lastWidth="1355">
+    <body>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases:</p>
+            <p class="TestCases">Verify you can insert element into each and that they appear correctly and work in output:</p>
+            <ul class="checkbox">
+                <li><b>Paragraphs:</b>
+                    <ul class="checkbox">
+                        <li> P</li>
+                    </ul>
+                </li>
+                <li><b>List items:</b>
+                    <ul class="checkbox">
+                        <li>li</li>
+                        <li> li within a list</li>
+                        <li>P within an li</li>
+                        <li>P within a ul</li>
+                    </ul>
+                </li>
+                <li><b>Tables:</b>
+                    <ul class="checkbox">
+                        <li> TD</li>
+                        <li>P withing a table cell</li>
+                        <li>LI in a TD</li>
+                        <li> li within a list</li>
+                        <li>P within an li</li>
+                        <li>P within a ul</li>
+                    </ul>
+                </li>
+                <li><b>Nodes:</b>
+                    <ul class="checkbox">
+                        <li>Expanding text</li>
+                        <li>Dropdown</li>
+                        <li>Toggler</li>
+                    </ul>
+                </li>
+                <li><b>Snippets:</b>
+                    <ul class="checkbox">
+                        <li>
+                            <li>Paragraphs:<ul class="checkbox"><li> P</li></ul></li>
+                        </li>
+                        <li>List items:<ul class="checkbox"><li>li</li><li> li within a list</li><li>P within an li</li><li>P within a ul</li></ul></li>
+                        <li>Tables:<ul class="checkbox"><li>TD</li><li>P within a table cell</li><li>Li in a TD</li><li> li within a list</li><li>P within an li</li><li>P within a ul</li></ul></li>
+                        <li>Nodes:<ul class="checkbox"><li>Expanding text</li><li>Dropdown</li><li>Toggler</li></ul></li>
+                    </ul>
+                </li>
+                <li><b>Footnotes:</b>
+                    <ul class="checkbox">
+                        <li>Footnote itself</li>
+                        <li>P within a Footnote</li>
+                    </ul>
+                </li>
+                <li><b>Page Layouts:</b>
+                    <ul class="checkbox">
+                        <li>Header:<ul class="checkbox"><li>Header itself</li><li>P within a header</li></ul></li>
+                        <li>Footer:<ul class="checkbox"><li>Footer itself</li><li>P within a footer</li></ul></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

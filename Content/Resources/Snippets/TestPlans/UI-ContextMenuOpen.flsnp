@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="209" MadCap:lastWidth="1143">
+    <body>
+        <p class="bold">Invoking the Context Menu:</p>
+        <ul class="checkbox">
+            <li>Right-click the element's block/span bar</li>
+            <li>Right-click the elements caret tag neighborhood bar (if applicable)</li>
+            <li>Select the element and then right-click the selected element in the <span class="UI">XML Editor</span> (For marker elements (keyword, bookmark, etc), simply right-clicking the element will select it and invoke the context menu)</li>
+        </ul>
+        <MadCap:snippetBlock src="Menu-Tests.flsnp" />
+    </body>
+</html>

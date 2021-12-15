@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="126" MadCap:lastWidth="850">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Language list: </span>Lets you select the project language.</li>
+            <li><span class="bold">Hide unsupported languages: </span>Limits the list of displayed languages to those for which Flare offers spell check support.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import Project Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

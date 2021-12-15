@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="WordSpacing"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="WhiteSpace"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="VerticalAlign"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Display"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="HangingPunctuation"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="LetterSpacing"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="TextAlign"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="TextIndent"
+    Comment="" />
+</CatapultConditionTagSet>

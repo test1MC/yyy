@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="728" MadCap:lastWidth="962">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Output&#160;Type: </span>Sets the output type for this Target.</li>
+            <li><span class="bold">Comment:&#160;</span>Lets you enter a comment for the Target.</li>
+            <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp"><span class="bold">Startup Topic:&#160;</span>Lets you set the topic which the end user will see first when they open the Help system.<ul style="list-style-type: circle;"><li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp"><img src="../../../Images/TestPlans/Buttons/Button---BrowseWide.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> :&#160;</span>Opens a window which lets you browse the project for a Startup topic.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.HTMLHelp"><span class="bold">Jump Button Options: </span>Opens the <span class="UI">Jump URL Options</span> dialog, which lets you specify the destination (URL) for the Jump1, Jump2, and Home buttons that can be included in Microsoft HTML Help output.  Settings set in this dialog will overwrite any Jump Button settings made in the Skin.</li>
+            <li MadCap:conditions="TargetEditor.HTMLHelp,TargetEditor.DotNetHelp,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus"><span class="bold">Skin:&#160;</span>Select a skin to be used to display the output for the target.<ul style="list-style-type: circle;"><li MadCap:conditions="TargetEditor.HTMLHelp,TargetEditor.DotNetHelp,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Skin Editor</span>.</li></ul></li>
+            <li><span class="bold">Master TOC:&#160;</span>Select a TOC file to be the Master TOC for this target output.<ul style="list-style-type: square;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected TOC in the <span class="UI">TOC Editor</span>.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.FrameMaker,TargetEditor.PDF,TargetEditor.XPS,TargetEditor.XHTML,TargetEditor.Word,TargetEditor.EPUB"><span class="bold">Master Page Layout:&#160;</span>Select a Page Layout file to be applied to this target output.<ul style="list-style-type: square;"><li MadCap:conditions="TargetEditor.FrameMaker,TargetEditor.PDF,TargetEditor.XPS,TargetEditor.XHTML,TargetEditor.Word"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Page Layout in the <span class="UI">Page Layout Editor</span>.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.HTMLHelp,TargetEditor.DotNetHelp"><span class="bold">Browse Sequence:&#160;</span>Select a Browse Sequence to be used for the target.<ul style="list-style-type: square;"><li MadCap:conditions="TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.HTMLHelp,TargetEditor.DotNetHelp"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Browse Sequence in the <span class="UI">Browse Sequence Editor</span>.</li></ul></li>
+            <li><span class="bold">Master Stylesheet:&#160;</span>Select a Stylesheet to be used for the target.<ul style="list-style-type: square;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Stylesheet in the <span class="UI">Stylesheet Editor</span>.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.EclipseHelp"><span class="bold">Output File:&#160;</span>Lets you set the filename of the output file for this target.</li>
+            <li><span class="bold">Output Folder:&#160;</span>Lets you set the folder of the output file for this target.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---BrowseWide.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> :&#160;</span>Opens a window which lets you browse for a folder to set as the Output Folder.</li></ul></li>
+            <li><span class="bold">Automatically get latest version... :&#160;</span>If user has bound project to a source control program, user can select this check box to automatically get the latest version of all files prior to generating the target. User might use this option if users are working with a team of authors and want to make sure that user include the latest changes from other writers in the output (without having to manually get those files).</li>
+            <li><span class="bold">Disable auto-sync... :&#160;</span>Lets you disable the Auto-sync functionality if your project is setup to re-import every time you compile.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all file names (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:</p>
+            <ul class="checkbox">
+                <li MadCap:conditions="TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.HTML5,TargetEditor.HTMLHelp,TargetEditor.DotNetHelp">Topics (Startup topic)</li>
+                <li MadCap:conditions="TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.HTML5,TargetEditor.HTMLHelp,TargetEditor.DotNetHelp">Skin</li>
+                <li>TOC (Master TOC)</li>
+                <li MadCap:conditions="TargetEditor.FrameMaker,TargetEditor.PDF,TargetEditor.Word,TargetEditor.XHTML,TargetEditor.XPS">Page Layout (Master Page Layout)</li>
+                <li>Stylesheet (Master Stylesheet)</li>
+                <li MadCap:conditions="TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.HTML5,TargetEditor.HTMLHelp,TargetEditor.DotNetHelp">Browse Sequence (be sure to enable it in the skin)</li>
+                <li>Output file</li>
+                <li>Output folder</li>
+            </ul>
+            <p>&#160;</p>
+            <p>In the Output File field, enter file names which include file extensions of other output types (ex. For WebHelp output, enter “Output.chm”).  Confirm that Flare generates the correct output and the output file has the correct file extension.</p>
+        </div>
+    </body>
+</html>

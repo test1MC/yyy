@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="686" MadCap:lastWidth="1099">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---PaneDrag.png" /><span class="bold">:&#160;</span>Lets you move the window or window group from its docked position to another location in the interface. Simply click on this area and drag the window or window group to the new location. To drag the group, click the icon in the upper-left corner of the group. To drag only the window, click the icon in the that window's accordion.</li>
+            <li>
+                <p>
+                    <img src="../../Images/TestPlans/Buttons/Button---PaneMenu.png" style="mc-tag-and-class: ;" /><span class="bold">:&#160;</span>Invokes the Pane Commands menu.</p>
+                <p>
+                    <img src="../../Images/TestPlans/Menu--PaneCommands.png" class="left" style="text-align: left;" />
+                </p>
+                <ul style="list-style-type: circlez;margin-left: 230pt;">
+                    <li><span class="bold">Close: </span>Closes the pane.</li>
+                    <li><span class="bold">Dock: </span>Docks the pane if it is floating.</li>
+                    <li><span class="bold">Auto Hide: </span>"Pins" the pane to the side (or bottom or top) of the interface so that you have more room for your workspace. You can show the pane by hovering over the thin bar on the side/bottom/top of the interface. If you select this option again, the pane returns to its previous state (no longer "pinned" to the side/bottom/top).</li>
+                    <li><span class="bold">Float: </span>If you select the "Float" option, the window is no longer "docked" (or "attached") to the application; instead, it becomes a free-floating element in the interface.</li>
+                    <li><span class="bold">Standard Tabs (Top): </span>Arranges window panes so that traditional tabs are displayed at the top.</li>
+                    <li><span class="bold">Standard Tabs (Bottom): </span>Arranges window panes so that traditional tabs are displayed at the bottom.</li>
+                    <li><span class="bold">Accordion Tabs: </span>Arranges window panes so that they are stacked with accordion tabs.</li>
+                </ul>
+            </li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---PaneAutoHide.png" style="mc-tag-and-class: ;" /><span class="bold">: </span>"Pins" the pane to the side of the interface so that you have more room for your workspace. You can show the pane by hovering over the thin bar on the side/bottom of the interface. If you select this option again, the pane returns to its previous state (no longer "pinned" to the side/bottom).</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---PaneClose.png" style="mc-tag-and-class: ;" /><span class="bold">: </span>Closes the pane.</li>
+            <li>Right-clicking the title bar invokes the Pane Command menu as seen above.</li>
+            <li>Pane Title and local toolbar options are correct.</li>
+            <li>Spelling and Grammar are correct.</li>
+            <li><span class="KeyboardShortcut">F1</span>&#160;functions and the content is correct.</li>
+            <li>Pane is resizable and redraws correctly.</li>
+            <li>Pane remembers setting, sizes and dock location from previous sessions.</li>
+            <li>Vertical and horizontal scroll bars work properly (if applicable).</li>
+            <li>Vertical and horizontal drag handles work properly (if applicable)</li>
+            <li>Pane icon displays correctly in the accordion</li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Tab</span> displays the pane and the icon correctly in the <span class="UI">Active Panes</span> dialog</li>
+        </ul>
+    </body>
+</html>

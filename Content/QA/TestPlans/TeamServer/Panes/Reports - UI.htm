@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5045" MadCap:lastWidth="867" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.TeamServer,Status.Not Applicable">
+    <head>
+    </head>
+    <body>
+        <h2>Reports - UI</h2>
+        <p>Opening the Reports pane:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the button in the Standard Toolbar</li>
+            <li>!View |&#160;Reports</li>
+            <li>&lt;CTRL&gt;&lt;Shift&gt;+R</li>
+        </ul>
+        <h3>Projects pane:</h3>
+        <p class="bold">Default view:</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/ReportsPane--DefaultView.png" class="left" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" style="margin-left: 180pt;" />
+        <p>&#160;</p>
+        <p class="bold">MDI&#160;view:</p>
+        <p class="bold">
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/ReportsPane--MDI.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses)</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Hide/show the info bar):&#160;</span>Lets you hide or show the Info Bar blurb</li>
+            <li><span class="bold">(Refresh): </span>Refreshes the Reports list to display the latest data</li>
+            <li><span class="bold">(Delete):&#160;</span>Deletes the selected Report(s) from the Team Server</li>
+            <li><span class="bold">Add Report... (Add a report to the Team Server): </span>Opens the <span class="UI">Add Report to Server</span> dialog. (See below)</li>
+            <li><span class="bold">Generate Report Now... (Generate the report now): </span>Generates the selected Report and opens it in Team Server as an *.htm file.</li>
+        </ul>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Title: </span>Displays the title of each Report.</li>
+            <li><span class="bold">Project: </span>Displays the name of the Flare or Blaze project to which the Report is attached.</li>
+            <li><span class="bold">Last Generated: </span>Displays the time that Team Server last generated the Report.</li>
+            <li><span class="bold">Generate Frequency: </span>Displays the generation frequency (Daily, Monday, etc.)&#160;for the Report.</li>
+            <li><span class="bold">Generation Time: </span>Displays the generation time for the Report.</li>
+            <li><span class="bold">Destination:&#160;</span>Displays the publishing destinations for the Report</li>
+            <li><span class="bold">Publish:&#160;</span>Displays whether or not the Report is set to auto-publish. (You need to open the Report to toggle this option.)</li>
+            <li><span class="bold">Email:&#160;</span>Displays whether or not the Report is set to auto-email. (You need to open the Report to toggle this option.)</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h5>Add Report to Server dialog</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Reports--AddReportToServer.png" class="right" style="width: 583px;height: 266px;" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Select Project for new Report:&#160;</span> Lets you select with which project the new report should be associated.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Project: </span>Displays the names of all Flare or Blaze projects attached to the Team Server.</li>
+                    <li><span class="bold">Source: </span>Displays the path of the source Flare or Blaze project.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Report Title:&#160;</span>Lets you enter a Title (Name)&#160;for the Report.</li>
+        </ul>
+        <h3>Report viewer:</h3>
+        <h5>Basic tab:</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Report--BasicTab.png" />
+        </p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Title:&#160;</span>Displays the title of the Report.</li>
+            <li><span class="bold">Tables:&#160;</span>Lists all available types of data which can be included in a report. Check the box next to each table you would like to include in your report.</li>
+            <li><span class="bold">Select All:&#160;</span>Selects and deselects all tables.</li>
+            <li><span class="bold">Open in Browser: </span>Opens the generated report in your default browser.</li>
+            <li><span class="bold">Generate: </span>Generates the Report locally (This button does not publish or email the Report)</li>
+            <li><span class="bold">Report:&#160;</span>Displays the generated Report.</li>
+        </ul>
+        <h5>Frequency tab:</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Report--FrequencyTab.png" />
+        </p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Generation Frequency)&#160;Frequency:&#160;</span>Displays the auto-generate frequency (Daily, Monday, etc.)&#160;for the Report.</li>
+            <li><span class="bold">(Generation Frequency)&#160;Time of Day:&#160;</span>Displays the auto-generate time for the Report.</li>
+            <li><span class="bold">(Generation Frequency)&#160;Min Count:&#160;</span>Lets you set a minimum number of results for any individual table which must be matched for the Report to be e-mailed and/or published. (If <i>any</i> selected table produces more results than the Min&#160;Count value or that value, the report will be e-mailed and/or published.)</li>
+            <li><span class="bold">(Generation Frequency)&#160;Max&#160;Count:&#160;</span>Lets you set a maximum number of results for any individual table which must not be exceeded for the report to be e-mailed and/or published. (If <i>any</i> selected table produces fewer results than the Max&#160;Count value or that value, the report will be e-mailed and/or published.)</li>
+            <li>
+                <p><span class="bold">(Recipients)&#160;Recipients:&#160;</span>Lets you select which Team Server Users and/or Groups will receive the report when it is emailed.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li class="bold" style="font-weight: normal;"><span class="bold">Type:&#160;</span>Displays the type of Recipient (User or Group).</li>
+                    <li class="bold" style="font-weight: normal;"><span class="bold">User:&#160;</span>Displays the User or Group name</li>
+                    <li class="bold" style="font-weight: normal;"><span class="bold">Email:&#160;</span>Displays the User's email address (empty if Group)</li>
+                    <li class="bold" style="font-weight: normal;"><span class="bold">First:&#160;</span>Displays the User's first name (empty if Group)</li>
+                    <li class="bold" style="font-weight: normal;"><span class="bold">Last:&#160;</span>Displays the User's last name (empty if Group)</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">(Recipients)&#160;Send Current Report... :&#160;</span>Sends the Report which is currently generated in the Basic tab to the selected Recipients.</li>
+            <li><span class="bold">(Publish) Publish Report:&#160;</span>Lets you enable/disable auto-publish functionality.</li>
+            <li><span class="bold">(Publish)&#160;Publish generated report to selected destination:&#160;</span>Publishes the Report which is currently generated in the Basic tab.</li>
+            <li><span class="bold">(Publish)&#160;Select...: </span>Opens the <span class="UI">Select Destination</span> dialog.</li>
+        </ul>
+        <h5>Select Destination dialog</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Reports--SelectDestination.png" class="right" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Select a Destination for this Report:&#160;</span> Lets you select a publishing destination for the report. (Currently only uses Destinations which exits in the Flare/Blaze project.)</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Displays the name of the Destination file.</li>
+                    <li><span class="bold">Target Location: </span>Displays the Destination directory.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

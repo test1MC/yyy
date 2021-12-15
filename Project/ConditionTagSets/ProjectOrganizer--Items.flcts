@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Destination"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="ConditionTagSet"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Glossary"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Import"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Report"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Skin"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Target"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="TOC"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Variable"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="FileTagSet"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="BatchTarget"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="BrowseSequence"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Synonyms"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="RelationshipTable"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="SearchFilterSet"
+    Comment="" />
+</CatapultConditionTagSet>

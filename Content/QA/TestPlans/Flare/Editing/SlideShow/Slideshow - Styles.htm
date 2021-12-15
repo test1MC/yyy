@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2787" MadCap:lastWidth="779" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review" MadCap:ignoredWords="Slideshow">
+    <head>
+    </head>
+    <body>
+        <h2>Slideshow - Styles</h2>
+        <h3>Applying or changing a style class</h3>
+        <ul class="checkbox">
+            <li>Right click on the element, select <span class="MenuItem">Style Class | Create Style Class</span> – Launches Create Style Dialog – Then open the <span class="UI">CSS Editor</span></li>
+            <li>Right click on the element, select <span class="MenuItem">Style Class | Edit Style Class</span> – Opens the <span class="UI">CSS Editor</span> with the style/class selected</li>
+            <li>Right click on the element, select <span class="MenuItem">Style Class | Reset Style Class</span> – Removes the class applied to the element</li>
+            <li>Right click on the element, select <span class="MenuItem">Style Class |&#160;</span>(select a style from the Style Class list)</li>
+            <li>Selecting the element and applying (reset class) from the Style Drop-down on the formatting toolbar</li>
+            <li>Selecting the element and applying a style from the Style Drop-down on the formatting toolbar</li>
+            <li>Verify that Classes applied to the element render correctly in the <span class="UI">XML Editor</span> and all outputs:<ul class="checkbox"><li>HTML5 / WebHelp 2 </li><li>WebHelp</li><li>WebHelp Plus</li><li>WebHelp Air</li><li>WebHelp Mobile</li><li>DotNet</li><li>CHM</li></ul></li>
+        </ul>
+        <h4>Create Style Dialog – Launched from a Slideshow object.</h4>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Stylesheet and Styles:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SlideShow/SlideShow-class.jpg" style="width: 75px;height: 28px;">
+            </img>
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test:</p>
+            <ul class="checkbox">
+                <li>Create a new class for:<ul><li>MadCap|slide</li><li>MadCap|slideshow</li><li>MadCap|slideshowBullet</li><li>MadCap|slideshowCaption</li><li>MadCap|slideshowThumbnail</li></ul></li>
+                <li>Copying and pasting the slideshow node and the ‘NewClass’ node</li>
+                <li>Deleting the slideshow and Class nodes of slideshow</li>
+            </ul>
+        </div>
+        <h4>Assorted Relevant Properties:</h4>
+        <p class="bold" style="font-size: 16pt;">Slideshow- </p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <p class="bold">&#160;</p>
+        <ul>
+            <li style="font-weight: normal;"><b>MadCap|slideshow- Style properties for Slideshow main body</b>
+                <ul class="checkbox">
+                    <li style="font-weight: normal;">Font </li>
+                    <li style="font-weight: normal;">Background </li>
+                    <li style="font-weight: normal;">Border</li>
+                    <li style="font-weight: normal;">Box</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-weight: normal;"><b>MadCap|slide- Style properties for individual slides</b>
+                <ul class="checkbox">
+                    <li style="font-weight: normal;">Font </li>
+                    <li style="font-weight: normal;">Background </li>
+                    <li style="font-weight: normal;">Border</li>
+                    <li style="font-weight: normal;">Box</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-weight: normal;"><b>MadCap|slideshowBullet- Style properties for navigation Bullets</b>
+                <ul class="checkbox">
+                    <li>Background</li>
+                    <li>Border</li>
+                    <li>Box</li>
+                    <li style="font-weight: normal;">Active- Background properties for active bullet<ul><li style="font-weight: normal;">(Pseudo classes)- No settings for this<ul><li style="font-weight: normal;">hover- Background properties for "Active" Bullet's hover state</li></ul></li><li>(Pseudo Classes)- No setting for this<ul><li>hover- Background properties for Bullet's hover state</li></ul></li></ul></li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-weight: bold;">MadCap|slideshowCaption- Style properties for the slide captions<ul class="checkbox"><li style="font-weight: normal;">Font </li><li style="font-weight: normal;">Background </li><li style="font-weight: normal;">Border</li><li style="font-weight: normal;">Box</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-weight: normal;"><b>MadCap|slideshowThumbnail- Style properties for navigation Thumbnails</b>
+                <ul class="checkbox">
+                    <li>Background</li>
+                    <li>Border</li>
+                    <li>Box</li>
+                    <li style="font-weight: normal;">Active- Background properties for active thumbnail<ul><li style="font-weight: normal;">(Pseudo classes)- No settings for this<ul><li style="font-weight: normal;">hover- Background properties for "Active" thumbnail's hover state</li></ul></li><li>(Pseudo Classes)- No setting for this<ul><li>hover- Background properties for thumbnail's hover state</li></ul></li></ul><p>&#160;</p></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Verify style set in MadCap|slide overrides styles set in MadCap|slideshow (change font color in both and verify that the correct color displayed is from the color set in MadCap|slide)</li>
+                <li>Create two classes in Madcap|slideshow. Insert two slideshows into the same topic. Apply different style class to each and verify that they are correct in output.</li>
+                <li>Create two classes in MadCap|slide, apply them to two different slides in the same slideshow and verify that the individual slides display the properties of their assigned class.</li>
+                <li>Apply border styles to both MadCap|slideshow and MadCap|slide and verify that both are displayed correctly in the output.</li>
+                <li>Insert different size thumbnail images into a Slideshow, then set the height property in <b>MadCap|slideThumbnail-&gt;Box</b>. View the output and verify that all thumbnails display at the same size</li>
+            </ul>
+        </div>
+        <p class="note">Note:&#160;In Flare 11, the default styles applied to MadCap|Slideshow were changed, allowing for transparent background of slides</p>
+        <table style="width: 567px;">
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th style="text-align: center;">MadCap|Slideshow in Flare 10</th>
+                    <th style="text-align: center;">MadCap|Slideshow in&#160;Flare 11</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">background-color:&#160;ffffff (white)</td>
+                    <td style="text-align: center;">(removed)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">box-shadow:&#160;0 0 5px #ccc</td>
+                    <td style="text-align: center;">unchanged</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">left:&#160;-5px</td>
+                    <td style="text-align: center;">unchanged</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">margin-bottom:&#160;20px</td>
+                    <td style="text-align: center;">unchanged</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">text-align:&#160;center</td>
+                    <td style="text-align: center;">unchanged</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&#160;</td>
+                    <td style="text-align: center;">border-color:&#160;transparent</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&#160;</td>
+                    <td style="text-align: center;">border-style:&#160;solid</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&#160;</td>
+                    <td style="text-align: center;">border-width:&#160;5px</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

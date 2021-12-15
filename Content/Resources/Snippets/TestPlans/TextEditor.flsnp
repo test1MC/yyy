@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1664" MadCap:lastWidth="1133">
+    <body>
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/InternalTextEditor/InternalTextEditor--LocalToolbar.png" />
+        </p>
+        <p class="bold">Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowLineNumbers.png" style="mc-tag-and-class: ;" /><span class="bold">(Show line numbers): </span>Shows or hides numbered lines in the <span class="UI">Text Editor</span>.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowOutline.png" style="mc-tag-and-class: ;" /><span class="bold">(Show outline): </span>Shows or hides small minus and plus buttons next to lines with tags. These let you collapse or expand those portions of the code.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowSyntaxColor.png" style="mc-tag-and-class: ;" /><span class="bold">(Show syntax colors):&#160;</span>Shows or hides syntax coloring in the <span class="UI">Text Editor</span>.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---WordWrap.png" style="mc-tag-and-class: ;" /><span class="bold">(Word wrap): </span>Turns on wrapping in the editor to eliminate the need for horizontal scrolling.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ToggleAutoComplete.png" style="mc-tag-and-class: ;" /><span class="bold">(Toggle Auto Complete):&#160;</span>Enables or disables the auto complete functionality in the <span class="UI">Text Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/InternalTextEditor/InternalTextEditor--Editor.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Click on any outline indicator to collapse that node:</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/InternalTextEditor/InternalTextEditor--CollapsedNode.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>Auto Complete</h4>
+        <p>Enable Auto Complete in the Text Editor's local toolbar. Then type in the Text Editor:</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/InternalTextEditor/InternalTextEditor--AutoComplete.png" />
+        </p>
+        <p>&#160;</p>
+        <p>Test Cases:</p>
+        <ul class="checkbox">
+            <li>Entering &lt; invokes an auto complete box allowing you to select any tag</li>
+            <li>Entering &lt; followed by text filters the items in the auto complete box to those that match the text you continue to type</li>
+            <li>Using auto complete to enter the following tags will automatically add the corresponding closing tag and place the insertion point between them so you can continue typing within that tag: p, h1, h2, h3, h4, h5, h6, div, etc.</li>
+            <li>Using auto complete to enter the following tags will create a self-closing tag and place the insertion point in an appropriate attribute upon auto completing:&#160;img (src), MadCap:concept (term), etc</li>
+            <li>Using auto complete to create certain tag structures like a MadCap:dropDown text should only allow you to insert dropDown tags in the appropriate structure</li>
+            <li>Similarly, using auto complete to create a table should only allow you to create tag structure to create a valid table</li>
+            <li>Inserting a space in front of the &gt; of an opening tag will allow you to select various appropriate attributes (class, style, etc)</li>
+            <li>
+                <p>If at any point while typing directly in the Text Editor, you create invalid markup, a Warning will appear in the toolbar:</p>
+                <p>
+                    <img src="../../Images/TestPlans/Flare/InternalTextEditor/InternalTextEditor--Warning.png" />
+                </p>
+            </li>
+            <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> keys can be used to navigate up and down through the auto compete list</li>
+            <li><span class="KeyboardShortcut">Tab</span> or <span class="KeyboardShortcut">Enter</span> can be used to select item from the auto complete list</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

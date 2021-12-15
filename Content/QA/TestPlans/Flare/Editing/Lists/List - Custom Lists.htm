@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3635" MadCap:lastWidth="1259" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>List - Custom Lists</h2>
+        <h3>Opening the Custom List Dialog</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Format|&#160;List |&#160;Custom&#160;Format |&#160;Create Custom Format...</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Home |Bullet List Drop down |&#160;Custom Format |&#160;Create Custom Format...</span></li>
+            <li>
+                <p><span class="UI">XML Editor</span>:&#160;From an existing list, !R-click the &lt;ol&gt; or &lt;ul&gt; block |&#160;Type | Custom Format |&#160;Create Custom Format...</p>
+            </li>
+            <li><span class="UI">XML Editor</span>:&#160;From an existing custom list, !R-click the &lt;ol&gt; or &lt;ul&gt; block |Type | Custom Format | Edit Custom Format...</li>
+            <li>From the stylesheet - Advanced View, !(Custom Lists) | R-click [your list] |&#160;Edit Custom Format...</li>
+        </ul>
+        <h3>Custom List Dialog - UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/List/Dialog--CreateNewListFormatSupport.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Deselecting "Show this dialog" should prevent it from showing again for this user.</li>
+                <li>!File |&#160;Options |&#160;General tab “Reset ‘show once’ dialogs...” correctly resets this dialog</li>
+            </ul>
+        </div>
+        <h4>Create New List Format</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/List/Dialog--CreateNewListFormat.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">General</span>
+                <ul>
+                    <li><span class="bold">Name:</span> Name of the class (cannot be left empty)</li>
+                    <li><span class="bold">Comment:&#160;</span>Lets you add a comment to the style class.</li>
+                    <li><span class="bold">Stylesheet:</span> Allows for the selection of the stylesheet to which the new class/style will be added, if the topic is associated with multiple stylesheets. &#160;Otherwise this will be grayed out.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Formatting</span>
+                <ul>
+                    <li><span class="bold">Level: </span>Lets you choose which list level to modify, up to Level 10</li>
+                    <li><span class="bold">Content: </span>Content field is blank by default for the bullet list.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---List.png" /><span class="bold">(List Styles List):&#160;</span> shows a drop down menu<ul><li><span class="bold">(bullet list):&#160;</span>Nothing is added to the content field.</li><li><span class="bold">(numbered list):&#160;</span>{n}. is added to the content field.</li><li><span class="bold">(lower-alpha numbered list):&#160;</span>{a}. is added to the content field.</li><li><span class="bold">(upper-alpha numbered list):&#160;</span>{A}. is added to the content field.</li><li><span class="bold">(lower-Roman numbered list):</span>&#160;{r}. is added to the content field.</li><li><span class="bold">(upper-Roman numbered list):&#160;</span>{R}. is added to the content field.</li><li><span class="bold">(select a custom bullet image):&#160;</span>The path to the image file is added to the content field.</li></ul></li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertQuickCharacter.png" alt="" title="" /><span class="bold">(Character): </span>Lets you insert a special character or symbol. Clicking the Character icon opens the <span class="UI">Character</span> dialog.&#160;&#160;Clicking the drop down shows the Character fly-out menu</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---FontProperties.png" /><span class="bold">(Font Properties): </span>Opens the <span class="UI">Font</span> Properties dialog. This lets you change the look of the list marker, such as the font size or type, color, and effects.</li>
+                </ul>
+            </li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and creates or modifies the list style</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not create or modify the list style</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+                <li>Type extra long input into fields</li>
+                <li>Type characters and symbols into fields</li>
+                <li>Attempt to create a duplicate style class</li>
+                <li>Be sure that any error dialogs that are displayed from this dialog are in written plain English</li>
+                <li>Verify that all properties get written to the correct style/class in the correct stylesheet.</li>
+                <li>Test with multiple stylesheets</li>
+                <li>Ensure the content field is grayed out when an image file path is shown</li>
+                <li>Edit the content field in different orders, ex:&#160;first format the font color, then pick a list style -- the font color should still be applied.</li>
+                <li>Test with leaving the first level unchanged (plain bullet list)</li>
+                <li>Ensure the correct image and name appears in the Ribbon</li>
+                <li>Test applying custom list styles to existing nested lists</li>
+            </ul>
+        </div>
+        <h4>Insert Image</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--InsertImage.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p>Next to the multimedia field click the drop down menu to choose a recently added multimedia that is already in the project or click the Browse button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" alt="" title="" /> to insert a new multimedia.</p>
+            </li>
+        </ul>
+        <h4>Character</h4>
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--CharacterDropMenu.png" class="properties">
+                </img>
+            </p>
+            <ul class="checkbox" style="margin-left: 280pt;">
+                <li><span class="bold">Quick Character</span>
+                    <ul style="list-style-type: square;">
+                        <li><span class="bold">Insert Quick Character [the character and associated font] (Insert the 'Quick Character' [the character name and associated font]): </span>Inserts the quick character into the topic at the location of the cursor.</li>
+                        <li><span class="bold">Non-breaking Space (Insert a non-breaking space character): </span>Inserts a non-breaking space into the topic at the location of the cursor.</li>
+                        <li><span class="bold">Non-breaking Hyphen (Insert a non-breaking hyphen character): </span>Inserts a non-breaking hyphen into the topic at the location of the cursor.</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Favorites (Insert [the character name and associated font]): </span>This section displays up to 16 special characters that the user has defined as a "Favorite"&#160;using the <span class="UI">Character</span> dialog. Hovering over a Favorite character should display a tooltip indicating the character name and the associated font. By default, Flare provides the 16 characters pictured on the left as the out-of-the-box Favorite characters.</li>
+                <li><span class="bold">Recently Used (Insert [the character name and associated font]): </span>This section displays up to 16 special characters that the user has recently&#160;inserted using the <span class="UI">Character</span> dialog. Characters inserted from the Favorites group should not appear as Recently Used (unless that were added to the Favorites from the Recently Used). Hovering over a Recently Used character should display a tooltip indicating the character name and the associated font.</li>
+                <li><span class="bold">More Characters (Insert character): </span>Opens the <span class="UI">Character</span> dialog which lets you select a special character to insert at the location of the cursor.</li>
+            </ul>
+        </p>
+        <hr />
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Characters/Dialog--Character.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--CharacterFontChange.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>&#160;</p>
+            <ul class="checkbox">
+                <li>Inserting a character will apply that font to the list's Content field.&#160;&#160;Adding a second character from a different font will prompt you to choose which font<ul><li><span class="bold">Yes:&#160;</span>Character will be inserted and font will change in the Content field</li><li><span class="bold">No:&#160;</span>Character will not be inserted</li></ul></li>
+            </ul>
+        </div>
+        <h4>Font</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--font.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Editing in the Stylesheet</h4>
+        <p>Custom lists created through this UI are located in the (Custom&#160;Lists) group in the stylesheet, in Advanced View only. Expanding this list, the first level has the list-style-type set, you will see ul.[listName]. &#160;This level is identical to ul.[listName] under the ul style. Expanding this, you will see (level 1) - (level 10) which will again show the list-style-type. &#160;Expanding this, you will see (marker) which is where all other properties are set (ex: color, content, etc.). &#160;This level is identical to (Complex Selectors)&#160;|&#160;ul.[ListName] &gt;&#160;li::marker.</p>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--CustomListStylesheet.png" class="properties" />
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li><span class="bold">Rename: </span>will launch <span class="UI">Rename Class</span> dialog (note:&#160;Bug 51962:No way to rename a style and have it update topics using the style.)</li>
+                <li><span class="bold">Edit Custom Format...: </span>will launch the <span class="UI">Create New List Format</span> dialog</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" alt="" title="" /><span class="bold">Cut: </span>Cuts the selected style to the clipboard.</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" alt="" title="" /><span class="bold">Copy: </span>Copies the selected style to the clipboard.</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" alt="" title="" /><span class="bold">Delete: </span>Removes the selected style.</li>
+            </ul>
+        </div>
+    </body>
+</html>

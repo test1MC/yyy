@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="744" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <p>These are the ways you can get the widget <img src="../../Images/TestPlans/Flare/XML Editor/OperationOptionsWidget.bmp" /> to show up in the XML editor:</p>
+        <p>&#160;</p>
+        <ol>
+            <li>Cut a table cell selection that spans all rows in the table:<ol style="list-style-type: lower-alpha;"><li>Cut Columns</li><li>Cut Cell Contents</li></ol></li>
+            <li>Cut a table cell selection that spans all columns in the table:<ol style="list-style-type: lower-alpha;"><li>Cut Rows</li><li>Cut Cell Contents</li></ol></li>
+            <li>Paste table cells below an existing table (into a &lt;p&gt; directly after it):<ol style="list-style-type: lower-alpha;"><li>Paste Table</li><li>Paste (Below)</li></ol></li>
+            <li>Paste table cells above an existing table (into a &lt;p&gt; directly before it):<ol style="list-style-type: lower-alpha;"><li>Paste Table</li><li>Paste (Above)</li></ol></li>
+            <li>Paste table cells between two existing tables (into a &lt;p&gt; between two tables):<ol style="list-style-type: lower-alpha;"><li>Paste Table</li><li>Paste (Below)</li><li>Paste (Above)</li></ol></li>
+            <li>Paste table cells into a selection within a table cell (e.g. copy a few table cells, place the cursor into one of those cells, paste):<ol style="list-style-type: lower-alpha;"><li>Paste Cells</li><li>Paste Table</li><li>Paste (Above)</li><li>Paste (Below)</li><li>Paste (Left)</li><li>Paste (Right)</li></ol></li>
+            <li>Paste text from an external source (previously handled by a modal dialog):<ol style="list-style-type: lower-alpha;"><li>Paste Paragraphs</li><li>Paste Paragraph Block</li><li>Paste Inline Text</li><li>Paste Table</li><li>Paste List</li><li>Paste HTML [only appears when you're pasting valid HTML]</li></ol></li>
+            <li>Delete a block that's between two tables:<ol style="list-style-type: lower-alpha;"><li>Merge Table Up</li><li>Merge Table Down</li><li>Don't Merge Tables</li></ol></li>
+            <li>Convert table to text (Table-&gt;Convert to Text):<ol style="list-style-type: lower-alpha;"><li>Convert to Paragraphs</li><li>Separate with Commas</li><li>Separate with Text</li></ol></li>
+        </ol>
+    </body>
+</html>

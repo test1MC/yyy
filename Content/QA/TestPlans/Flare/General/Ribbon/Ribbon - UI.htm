@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="10422" MadCap:lastWidth="1631" MadCap:conditionTagExpression="exclude[MenuItems.HelpMenu-BrowseSequences]" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <link href="../../../../../Resources/TableStyles/No_borders_Top_Aligned.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Ribbon - Ribbon UI</h2>
+        <p>For the purposes of this test plan, verify all menu items function as they should and perform the Menu Test Cases for each menu. All menu items will be tested in more detail in the test plans of the modules which they support.</p>
+        <h3>Accessing the Ribbon (If Ribbon is not enabled)</h3>
+        <ol>
+            <li>Go to <span class="MenuItem">!Tools | Options</span></li>
+            <li>In the "Interface" tab, select "Ribbon"</li>
+            <li>Click OK</li>
+        </ol>
+        <h3>File Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">File</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">F</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/No_borders_Top_Aligned.css');" class="TableStyle-No_borders_Top_Aligned" cellspacing="0">
+            <col class="Column-Column1" style="width: 270px;" />
+            <col class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--FileMenu.png" class="properties" />
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p class="bold">File Menu Items (Tooltips in parentheses):</p>
+                        <ul class="checkbox">
+                            <li><span class="bold">New Project (Starts the New Project Wizard): </span>Invokes the    <span class="UI">New Project Wizard</span></li>
+                        </ul>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--File--NewProjectMenu.png" class="properties" />
+                                    </td>
+                                    <td>
+                                        <ul class="checkbox">
+                                            <li><span class="bold">New Project (Starts the New Project Wizard): </span>Invokes the    <span class="UI">New Project Wizard</span></li>
+                                            <li><span class="bold">MS Word Documents (Starts the Import MS Word Documents Wizard): </span>Invokes the    <span class="UI">Import Microsoft Word Wizard</span></li>
+                                            <li><span class="bold">FrameMaker Documents (Starts the Import Adobe FrameMaker Documents Wizard): </span>Invokes the    <span class="UI">Import FrameMaker Wizard</span></li>
+                                            <li><span class="bold">RoboHelp Project (Import a RoboHelp project with the Import Project Wizard): </span>Invokes the    <span class="UI">Import Project Wizard</span></li>
+                                            <li><span class="bold">HTML Help Project (HHP) (Import an HTML Help Project with the Import Project Wizard): </span>Invokes the    <span class="UI">Import Project Wizard</span></li>
+                                            <li><span class="bold">HTML Help File (CHM) (Import an HTML Help File with the Import Project Wizard): </span>Invokes the    <span class="UI">Import Project Wizard</span></li>
+                                            <li><span class="bold">DITA&#160;Document Set (Starts the Import DITA&#160;Document Set Wizard): </span>Invokes the    <span class="UI">Import DITA Wizard</span></li>
+                                            <li><span class="bold">HTML&#160;File Set (Starts the Import HTML&#160;Files Wizard): </span>Invokes the <span class="UI">Import HTML&#160;Files Wizard</span></li>
+                                            <li><span class="bold">Import Project (Starts the Import Project from Source Control Wizard): </span>Invokes the    <span class="UI">Import Project From Source Control Wizard</span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <ul class="checkbox">
+                            <li><span class="bold">New (Create a new file):</span>Invokes the <span class="UI">Add File</span> Menu</li>
+                            <li><b>Open (Open file):</b>Invokes an <span class="UI">Open</span> dialog which lets you browse for appropriate file types to open in the application</li>
+                            <li><b>Save (Save the active file):</b> Saves the current file</li>
+                        </ul>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--File--SaveMenu.png" class="properties" />
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <ul class="checkbox">
+                                            <li><b>Save (Save the active file):</b> Saves the current file</li>
+                                            <li><b>Save All (Save all files):</b> Saves all files</li>
+                                            <li><b>Save As (Save a copy of the active file to a different name, location, and/or file type):</b> Invokes the <span class="UI">Save As</span> dialog</li>
+                                            <li><b>Save To (Save a copy of the active file to a different name, location, and/or file type on disk):</b> Invokes the <span class="UI">Save As</span> dialog</li>
+                                            <li><b>Save As Template (Save a copy of the active file as a template):</b> Invokes the <span class="UI">Save As Template</span> dialog</li>
+                                            <li><b>Save As Contribution Template (Create a Contribution Template using the active topic):</b> Invokes the <span class="UI">Create Contribution Template</span> dialog</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <ul class="checkbox">
+                            <li><b>Print (Print the active file or selection):</b>Prints the current file</li>
+                        </ul>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--File--PrintMenu.png" class="properties" />
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                        <ul class="checkbox">
+                                            <li><b>Print (Print the active file or selection):</b>Prints the current file</li>
+                                            <li><span class="bold">Print Preview (Preview and make changes before printing): </span>Opens the <span class="UI">Print Preview</span> dialog, which lets you see how a document looks before  you send it to a printer.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <ul class="checkbox">
+                            <li><b>Send to Backups (Copy the file to the Backups Folder):</b>Creates a temporary copy of the file that is open and active in the interface in the Backups folder.</li>
+                        </ul>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--File--SendToBackupsMenu.png" class="properties" />
+                                    </td>
+                                    <td>
+                                        <ul class="checkbox">
+                                            <li><b>Send to Backups (Copy the file to the Backups Folder):</b>Creates a temporary copy of the file that is open and active in the interface in the Backups folder.</li>
+                                            <li><span class="bold">Clear the "Backups Folder"… (Delete all files in the Backups Folder): </span>Removes all temporary backup files from the Backups folder</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <ul class="checkbox">
+                            <li><span class="bold">Properties (File Properties): </span>Opens the <span class="UI">Properties</span> dialog for the selected item</li>
+                            <li><span class="bold">Source Control (Source Control): </span>Invokes the Source Control fly-out menu</li>
+                        </ul>
+                        <table style="width: 100%;">
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--File--SourceControlMenu.png" class="properties" />
+                                    </td>
+                                    <td>
+                                        <ul class="checkbox">
+                                            <li><span class="bold">Import Project (Starts the Import Project From Source Control Wizard): </span>Invokes the    <span class="UI">Import Project From Source Control Wizard</span></li>
+                                            <li><span class="bold">Add (Add file(s) to source control): </span>Add a new file to source control</li>
+                                            <li><span class="bold">Check In (Check file(s) into source control): </span>Check file into source control after it's been checked out</li>
+                                            <li><span class="bold">Check Out (Check file(s) out of source control): </span>Check a file out in order to make edits and changes</li>
+                                            <li><span class="bold">Undo Check Out (Revert pending changes to checked out file(s)): </span>Revert pending changes to checked out files</li>
+                                            <li><span class="bold">Show Differences (Compare local file(s) to version in source control):</span> Open a pane displaying the first version selected on the right side and the second version selected on the left side. The differences between the versions are highlighted.</li>
+                                            <li><span class="bold">View History (View history of file(s) in source control):</span> Opens a dialog that displays the history of changes made to the file</li>
+                                            <li><span class="bold">Undelete (Undo the deletion of file(s) in source control):</span> Undoes what was deleted</li>
+                                            <li><span class="bold">Refresh (Refresh source control status):</span> Refresh source control status</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <ul class="checkbox">
+                            <li><b>SharePoint (SharePoint): </b> Invokes the Share Point fly-out menu</li>
+                            <li><span class="bold">Close (Close File): </span>Closes the current file</li>
+                            <li><b>Recent Projects:</b> Displays recent projects opened. </li>
+                            <li><b>Recent Files:</b> Displays recent files opened</li>
+                            <li><b>Manage Recent Projects (Manage list of recent projects):</b> Invokes the <span class="UI">Manage Recent Projects</span> dialog</li>
+                            <li><b>Manage Recent Files (Manage list of recent files):</b> Invokes the <span class="UI">Manage Recent Files</span> Dialog</li>
+                            <li><b>Options (Change Global Application Options):</b> Invokes the <span class="UI">Options </span>Dialog</li>
+                            <li><b>Exit (Exit the application):</b> Exits the program</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3>Home Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">Home</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">H</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Home.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Clipboard:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Paste:</span> Pastes the selection from the clipboard to the place where the cursor is inserted.</li>
+            <li><span class="bold">Cut:</span> Cuts the selection and sends it to the clipboard.</li>
+            <li><span class="bold">Copy:</span> Copies the selection and sends it to the clipboard.</li>
+            <li><span class="bold">Delete:</span> Deletes the selection.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Font:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Font:</span> Lets you select a font type (e.g., Arial, Times New Roman), applying it to the content selected in the topic.</li>
+            <li><span class="bold">Font Size:</span> Lets you select a font size, applying it to the content selected in the topic.</li>
+            <li><span class="bold">Bold:</span> Applies bold typeface to the content selected in the topic.</li>
+            <li><span class="bold">Italic:</span> Applies italic typeface to the content selected in the topic.</li>
+            <li><span class="bold">Underline:</span> Underlines the content selected in the topic.</li>
+            <li><span class="bold">Superscript:</span> Raises the selected content in the topic above the normal line of text.</li>
+            <li><span class="bold">Subscript:</span> Lowers the selected content in the topic below the normal line of text.</li>
+            <li><span class="bold">Unformat:</span> Removes local formatting in a selection or even an entire topic.</li>
+            <li><span class="bold">Font Color:</span>Lets you choose and apply a color to the selected content.</li>
+            <li><span class="bold">Background Color:</span> Lets you choose and apply a color to the background of the selected content.</li>
+            <li><span class="bold">Redact:</span> Selecting this will cause selected content to be permanently eliminated from a printed or electronic document.</li>
+            <li><span class="bold">Font Properties:</span> Opens the <span class="UI">Font Properties</span> dialog, which lets you edit the font properties for topic content directly.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Paragraph:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Bullet List:</span> Lets you select one of several kinds of bullet or numbered lists, applying it to the selected content.</li>
+            <li><span class="bold">Outdent Items:</span> Removes the group tag from a paragraph.</li>
+            <li><span class="bold">Indent Items:</span> Lets you use a group tag such as &lt;div&gt; to indent content.</li>
+            <li><span class="bold">List Actions:</span> Lets you apply miscellaneous actions to selected content in a list.</li>
+            <li><span class="bold">Group:</span> Opens the <span class="UI">Create Group</span> dialog, which lets you create a group from selected content and apply one of the following tags to it: &lt;blockquote&gt;, &lt;div&gt;, &lt;fieldset&gt;, &lt;form&gt;.</li>
+            <li><span class="bold">Left:</span> Aligns the selected content to the left.</li>
+            <li><span class="bold">Center:</span> Aligns the selected content in the center.</li>
+            <li><span class="bold">Right:</span> Aligns the selected content to the right.</li>
+            <li><span class="bold">Justify:</span> Spaces the selected content so that both the left and right sides are aligned.</li>
+            <li><span class="bold">Default:</span> Resets the alignment of the selected text to the default (inherited) setting.</li>
+            <li><span class="bold">Paragraph Properties:</span> Opens the <span class="UI">Paragraph Properties</span> dialog, which lets you edit the paragraph properties for topic content directly.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Styles:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Style Window:</span> Opens the <span class="UI">Styles</span> window, which displays styles contained in the stylesheets that are associated with the current topic.</li>
+            <li><span class="bold">Formatting Window:</span> Opens the <span class="UI">Formatting</span> window, which displays style properties for the selected content in a topic.</li>
+            <li><span class="bold">Create Style Class:</span> Opens the <span class="UI">Create Style</span> dialog, which lets you create a new style for the content selected in the topic.</li>
+            <li><span class="bold">Stylesheet Links:</span> Opens the <span class="UI">Stylesheet Links</span> dialog, which lets you apply one or more stylesheets to the active topic.</li>
+            <li><span class="bold">Style:</span> Lets you select a style from a style sheet, applying that style to the content selected in the topic.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Snippet:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Create Snippet:</span> Opens the <span class="UI">Create Snippet</span> dialog, which lets you create a new snippet from the content selected in the topic.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Attributes:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Attributes Window:</span> Opens the <span class="UI">Attributes</span> window, which is used to set attributes for a tag.</li>
+            <li><span class="bold">Conditions:</span> Opens the <span class="UI">Condition Tags</span> dialog, which lets you apply condition tags to content in the topic.</li>
+            <li><span class="bold">Language:</span> Opens the <span class="UI">Select Language</span> dialog, which lets you choose a language for the selected content. This affects things such as the spell check feature.</li>
+            <li><span class="bold">Name:</span> Opens the <span class="UI">Manage Named Elements</span> dialog, which you can use to name content when creating togglers.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Editing:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Quick&#160;Find:&#160;</span>Opens the Find widget, with the Replace field hidden</li>
+            <li><span class="bold">Quick&#160;Replace:&#160;</span>Opens the Find and Replace widget, the Replace field selected</li>
+            <li><span class="bold">Find and Replace in Files:</span> Opens a sub-menu, which lets you choose one of several "Find and Replace" options.<ul><li><span class="bold">Find and Replace in Files (Ctrl&#160;+&#160;Shift&#160;+&#160;F):</span>&#160;Opens the <span class="UI">Find and Replace in&#160;Files</span> window</li><li><span class="bold">Find Results 1:&#160;</span>Opens the Find Results 1 window</li><li><span class="bold">Find Results 2:&#160;</span>Opens the Find Results 2 window</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Properties:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected item in the <span class="UI">Content Explorer</span> or <span class="UI">Project Organizer</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Insert Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">Insert</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">I</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Insert.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Multimedia:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Image:</span> Opens the <span class="UI">Insert Image</span> dialog, which lets you insert an image at the location of the cursor in the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Multimedia:</span> Opens a sub-menu, which lets you select options for inserting multimedia (audio and video): Flash Movie, Windows Media Player, Quicktime Movie, Mimic Movie</li>
+            <li><span class="bold">Screen Capture:</span> Opens the <span class="UI">Screen Capture</span> dialog, which lets you insert a screen capture image into the <span class="UI">XML Editor</span>. </li>
+            <li><span class="bold">QR Code:</span> Opens the <span class="UI">Insert QR Code</span> dialog, which lets you create and insert a QR&#160;code into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Slideshow:&#160;</span>Inserts a Slideshow template into the <span class="UI">XML&#160;Editor</span>. Clicking this while the Slideshow is selected in the&#160;<span class="UI">XML Editor</span> will open the <span class="UI">Edit Slideshow</span> dialog.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Table:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Table:</span> Clicking the button opens the <span class="UI">Insert Table</span> dialog which lets you insert a table into the <span class="UI">XML Editor</span>. Clicking the fly-out invokes a grid, which lets you insert a table with a selected number of rows and columns (up to 10 columns by 8 rows) into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Links:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Hyperlink:</span> Clicking the button opens the <span class="UI">Insert Hyperlink</span> dialog, which lets you insert a text hyperlink into the <span class="UI">XML Editor</span>. Clicking the fly-out gives you the options to insert a hyperlink which opens the <span class="UI">Insert Hyperlink</span> dialog or insert a Topic Popup which opens the Insert <span class="UI">Topic Popup</span> dialog.</li>
+            <li><span class="bold">Cross Reference:</span> Opens the <span class="UI">Insert Cross-Reference</span> dialog, which lets you insert a cross-reference into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Bookmark:</span> Opens the <span class="UI">Manage Bookmarks</span> dialog, which lets you insert a bookmark into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Named Destination:</span> Opens the <span class="UI">Named Destination</span> dialog, where you can name and insert a named destination for use in Adobe PDF&#160;output. This allows you to point to a specific place in a PDF&#160;from the selected location.</li>
+            <li><span class="bold">Glossary Term Link:</span> Opens the <span class="UI">Create Glossary Term</span> dialog, which lets you create a glossary term and definition, and insert a link to the definition into the <span class="UI">XML Editor</span>. In order for this option to be enabled, you first need to select text in the topic that you want to use as the glossary term link.</li>
+            <li><span class="bold">Keyword:</span> Creates and inserts an index keyword at the location in your topic where text is selected. To enable this option, you must first select the text in the topic that you want to use as the index keyword.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Single Source:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Snippet:</span> Opens the <span class="UI">Insert Snippet Link</span> dialog, which lets you insert a snippet into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Variable:</span> Opens the <span class="UI">Variables</span> dialog, which lets you insert a variable into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Text:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Toggler:</span> Opens the <span class="UI">Insert Toggler</span> dialog, which lets you insert a toggler into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Drop-Down Text:</span> Clicking the button opens the <span class="UI">Insert Drop-Down</span> dialog, which lets you insert a Drop-Down text into the <span class="UI">XML Editor</span>. Clicking the fly-out  gives you the options to insert a Drop-Down Text which opens the <span class="UI">Insert Drop-Down</span> dialog, or a Drop-Down Hotspot (to insert a Hotspot, you must select text inside a Drop-Down Head).</li>
+            <li><span class="bold">Expanding Text:</span> Opens the <span class="UI">Insert Expanding Text</span> dialog, which lets you insert expanding text into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Text Popup:</span> Opens the <span class="UI">Insert Text Popup</span> dialog, which lets you insert a text popup into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Text Box:</span> Opens the <span class="UI">Insert Text Box</span> dialog, which lets you insert a box into the <span class="UI">XML Editor</span>. A text box can be positioned in a variety of places on a page.</li>
+            <li><span class="bold">Footnote:</span> Opens the <span class="UI">Insert Footnote/Endnote</span> dialog, which lets you insert a footnote or endnote. A footnote is typically added at the end of a page, but you can also insert an endnote at the end of a document, chapter, section, or book.</li>
+            <li><span class="bold">Rule:</span> Opens the <span class="UI">Insert Rule</span> dialog, which lets you insert a rule (horizontal line) into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Help Control:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Related Topics Control:</span> Opens the <span class="UI">Insert Related Topics Control</span> dialog, which lets you insert a related topic link into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Concept Link (A-link):</span> Opens the <span class="UI">Insert Concept Link Control</span> dialog, which lets you insert a concept (See Also) link into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Keyword Link Control (K-link):</span> Opens the <span class="UI">Insert Keyword Link Control</span> dialog, which lets you insert a keyword link into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Shortcut Control:</span> Opens the <span class="UI">Insert Shortcut Control</span> dialog, which lets you insert a shortcut control into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Symbols:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Equation:</span> Opens the <span class="UI">Equation Editor</span>, which lets you insert a mathematical equation into the <span class="UI">XML Editor</span>.</li>
+            <li><span class="bold">Character:</span> Clicking the button opens the <span class="UI">Character</span> dialog which lets you insert special characters or symbols into the <span class="UI">XML Editor</span>. Clicking the fly-out invokes a sub-menu that gives you more direct access to "Favorite"&#160;and "Recently Used"&#160;special characters and symbols to insert into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Script:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Script:</span> Opens the <span class="UI">Insert Script</span> dialog, which lets you insert a script into the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Proxy:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Proxy:</span> Opens a sub-menu, which lets you select a proxy to insert into the <span class="UI">XML Editor</span>. A proxy is a placeholder for a certain type of content.</li>
+            <li><span class="bold">Page Header:</span> Opens the <span class="UI">Page Header</span> dialog, which lets you insert a page header proxy into a Masterpage.</li>
+            <li><span class="bold">Page Footer:</span> Opens the <span class="UI">Page Footer</span> dialog, which lets you insert a page footer proxy into a Masterpage.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>View Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">View</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">V</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--View.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Explorer:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Content Explorer:</span> Opens the <span class="UI">Content Explorer</span>, which is used to hold all of the content-related items in your project.</li>
+            <li><span class="bold">Project Organizer:</span> Opens the <span class="UI">Project Organizer</span>, which is  used to hold all of the project-related items in your project.</li>
+            <li><span class="bold">File List:</span> Opens the <span class="UI">File List</span>, which lets you view all of the content files in your project in a grid view.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Common:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Start Page:</span> Opens the <span class="UI">Start Page</span>, which provides links to high-level tasks and information.</li>
+            <li><span class="bold">Messages:</span> Opens the <span class="UI">Messages</span> window, which displays important information as you work. For example, if a necessary file is missing, this window pane lets you know.</li>
+            <li><span class="bold">Backups:</span> Opens the <span class="UI">Backups</span> window so that you can see the files for which you have created backups and restore (roll back) any of those files if necessary.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Reference:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Glossary Terms:</span> Opens the <span class="UI">Glossary Terms</span> window, which you can use to see all of the glossary terms and definitions that you have added to the project.</li>
+            <li><span class="bold">Index Window:</span> Opens the <span class="UI">Index</span> window, which is used to create index keywords and insert them into topics.</li>
+            <li><span class="bold">Concept Window:</span> Opens the <span class="UI">Concepts</span> window, which is used to create concepts and insert them into topics.</li>
+            <li><span class="bold">Link Viewer:</span> Opens the <span class="UI">Link Viewer</span> window, which is used to view other files linked to and from the active file.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Print Layout:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Footnotes:</span> Opens the <span class="UI">Footnotes</span> window, which lets you see all of the footnotes that have been added in the active topic.</li>
+            <li><span class="bold">Page Frame Contents Pane:</span> Opens the <span class="UI">Frame Contents</span> pane, which lets you add content to the selected frame in a page layout.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Resources:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">External Resources:</span> Opens the <span class="UI">External Resources</span> window, which lets you work with external resource files that you want to bring into your projects.</li>
+            <li><span class="bold">SharePoint Explorer:</span> Opens the <span class="UI">SharePoint Explorer</span>, which lets you connect to a SharePoint server and work with files that you want to bring into your projects.</li>
+            <li><span class="bold">Contributions:</span> Opens the <span class="UI">Contributions</span> window, which lets you see documents received from contributors that are pending acceptance. It also lets you see a list of contribution templates that you have created and send them to others.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Analysis:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Project Analysis:</span> Opens a sub-menu, which lets you select various options to analyze your project. Each option opens the <span class="UI">Project Analysis</span> window, which then displays the appropriate data.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Info:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Info Bar:</span> Hides or shows special information pertaining to the editor or window pane.</li>
+            <li><span class="bold">Status Bar:</span> Opens or closes the status bar at the bottom of the program window.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Project Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">Project</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">P</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Project.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Content:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">New:</span> Clicking the button will open the <span class="UI">Add File</span> dialog with Topic pre-selected as the File Type. You can also click the fly-out and choose one of the other items. Each option will open the <span class="UI">Add File</span> dialog with that file type pre-select in the File Type field.</li>
+            <li><span class="bold">Import:</span> Opens a sub-menu with options for importing documents, as well as files from another project (MS Word Documents, FrameMaker Documents, DITA Documents, Flare Project, HTML Files)</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Build:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Build Primary:</span> If you click on the button, output is generated for the target that is designated as the "primary" target. If you click the fly-out, you can select a specific target (not necessarily the primary target)&#160;to generate.</li>
+            <li><span class="bold">View Primary:</span> Lets you view the output for the target that is designated as the "primary" target. If the target has not yet been generated, or if changes have been made to the project since it was last generated, you will be asked if you want to build the output. If you click the fly-out, you can select a specific target (not necessarily the primary target) to view.</li>
+            <li><span class="bold">Publish Primary:</span> Opens the <span class="UI">Publish Target</span> dialog, which lets you publish the output for the "primary" target to its destinations. If the target has not yet been generated, or if changes have been made to the project since it was last generated, you will be asked if you want to build the output. If you click the fly-out, you can select a specific target (not necessarily the primary target) to publish.</li>
+            <li><span class="bold">Clean Project:</span> Deletes the Output folder for the project and all output files inside. The next time you build a target, the Output folder will be created again to hold the new output files.</li>
+            <li><span class="bold">Open Output Folder:</span> Opens the project Output folder in Windows so that you can see the output subfolders and files.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Primary Files:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Primary Target:</span> Opens the primary target in the <span class="UI">Target Editor</span>.</li>
+            <li><span class="bold">Master TOC:</span> Opens the master TOC&#160;in the <span class="UI">TOC&#160;Editor</span>.</li>
+            <li><span class="bold">Master Stylesheet:</span> Opens the <span class="UI">Stylesheet Editor</span> and displays the master stylesheet specified in your primary target. If you have not specified a master stylesheet in that target, it opens the master stylesheet specified for the project. If you have not specified a master stylesheet for either of those, this option is disabled.</li>
+            <li><span class="bold">Master Page Layout:</span> Opens the <span class="UI">Page Layout Editor</span> and displays the master page layout specified in your primary target. If you have not specified a master page layout in that target, it opens the master page layout specified for the project. If you have not specified a master page layout for either of those, it opens the first page layout listed in your project.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Save:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Export Project:&#160;</span>Clicking the button opens the <span class="UI">Export Project Wizard</span>, which lets you export the entire project, or parts of the project based on targets/conditions/file tags/selected files to an output project file, project template, or zip file.</li>
+            <li><span class="bold">Zip Project:</span> Clicking the button opens the <span class="UI">Create Package</span> dialog which lets you "pack" a copy of your project to a single zip file, which makes it easier to move it and send it to other individuals who have Flare installed. Clicking the fly-out invokes a sub-menu, which lets you simply zip your project or Zip and Email your project. The Zip and Email option will also open the <span class="UI">Create Package</span> dialog, but will then follow the zipping process by launching Outlook and attaching the zipped project to an outgoing email message.</li>
+            <li><span class="bold">Save Project As Template:</span> Opens the <span class="UI">Save Project as Template Wizard</span>, which lets you save the project and its files in another location as a template. When you create a new project in the future, you can select the template project as a starting place for the new project.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">External Resources:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Synchronize Files:</span> Opens the <span class="UI">Synchronize Files</span> dialog, which lets you synchronize files in your project that are linked to source files elsewhere.</li>
+            <li><span class="bold">External Resources:</span> Opens the <span class="UI">External Resources</span> window, which lets you work with external resource files that you want to bring into your projects.</li>
+            <li><span class="bold">SharePoint Explorer:</span> Opens the <span class="UI">SharePoint Explorer</span>, which lets you connect to a SharePoint server and work with files that you want to bring into your projects.</li>
+            <li><span class="bold">Manage Mappings:</span> Opens the <span class="UI">Map Files and Folders</span> dialog, which lets you create and edit mappings for files in your project that are linked to source files elsewhere.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Locate:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Locate in TOC:</span> Opens the <span class="UI">TOC Editor</span> and highlights the location of the active topic in the TOC. If the topic is contained within multiple TOCs, a dialog will appear letting you select which TOC&#160;to open.</li>
+            <li><span class="bold">Locate in Explorer:</span> Opens the <span class="UI">Content Explorer</span> and highlights the location of the active content file.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Properties:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Project Properties:</span> Opens the <span class="UI">Project Properties</span> dialog</li>
+        </ul>
+        <h3>Review Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">Review</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">R</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Review.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Packages:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Send For Review:</span> Opens the <span class="UI">Send Topic for Review Wizard</span>, which lets you specify settings and send topics to others so that they can review it.</li>
+            <li><span class="bold">Topic Reviews:</span> Opens the <span class="UI">Topic Reviews</span> window pane, which lets you see topic files that have been reviewed from others and are pending acceptance. It also lets you see a list of topics that you have sent out for review.</li>
+            <li><span class="bold">Import Review Package:</span> Opens an <span class="UI">Open File</span> dialog, which lets you import reviewed topics (*.fltrev)&#160;into your project. After that, you can view and/or accept the topic. Only packages created from the current project can be imported into the current project.</li>
+            <li><span class="bold">Review Packages:</span> Opens the <span class="UI">Review Packages</span> window, which displays all of the topic files contained in a review package received from another Flare author. From this window pane you can open the topics to review and edit them.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Changes:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Track Changes:</span> Enables or disables the track changes feature.</li>
+            <li><span class="bold">Accept Change:</span> Accepts tracked changes or annotations in the active document, making them part of that document. You can click the down arrow to accept a single change or all of them.</li>
+            <li><span class="bold">Reject Change:</span> Rejects tracked changes or annotations in the active document, removing them from that document. You can click the down arrow to reject a single change or all of them.</li>
+            <li><span class="bold">Show Changes:</span> Opens a sidebar and displays any tracked changes or annotations (notes) that have been attached to any content in the topic.</li>
+            <li><span class="bold">Previous Change:</span> Navigates to the previous change or annotation.</li>
+            <li><span class="bold">Next Change:</span> Navigates to the next change or annotation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Annotations:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Insert Annotation:</span> Adds an annotation rectangle, extended to a sidebar to the right, with a line pointing to the selected content. This rectangle will hold annotation text after you type it. Also, the selected content is shaded, indicating that the annotation refers to that text. However, the shading will not be displayed in the output; it is for internal use only.</li>
+            <li><span class="bold">Delete Annotation:</span> Removes annotations from the document. You can click the down arrow to delete a single annotation or all of them.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Locks:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Lock:</span> Opens a sub-menu, which lets you select options for locking content in topics so that it cannot be edited.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Options:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Review Options:</span> Opens the Review tab in the <span class="UI">Options</span> dialog, which lets you set various options for viewing tracked changes and annotations.</li>
+        </ul>
+        <h3>Tools Menu</h3>
+        <p>To access:</p>
+        <ul class="checkbox">
+            <li>Click <span class="RibbonItem">Tools</span></li>
+            <li>Press <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">T</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Tools.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Spell Check:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Spell Check Window:</span> Opens the <span class="UI">Spell Check</span> window, which lets you perform spell checking manually.</li>
+            <li><span class="bold">Spell Check While Typing:</span> Activates a feature that lets you check your spelling as you type in your topics. Questionable words are underlined with a jagged red line. You can take action with the word by right-clicking on it.</li>
+            <li><span class="bold">Ignored Words:</span> Opens the <span class="UI">Ignored Words</span> dialog, which lets you create a list of words to be ignored when using the spell checking feature in the application.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Hyphenation:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Hyphenation Window:</span> Opens the <span class="UI">Hyphenation</span> window, which lets you add custom hyphenation rules for words so that they are hyphenated at the end of lines after specific letters.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Templates:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Manage Language Skins:</span> Opens the <span class="UI">Language Skins</span> dialog, which lets you localize (associate a language with) skins for some outputs (e.g. WebHelp outputs and in some cases, HTML Help)</li>
+            <li><span class="bold">Manage Templates:</span> Opens the <span class="UI">Template Manager</span>, where you can perform a variety of tasks to manage your template files.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Context Sensitive Help:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Test CSH&#160;API Calls:</span> Opens the <span class="UI">Context-Sensitive Help API Tester</span> dialog, which lets you test the context-sensitive Help links that you've created in the Alias Editor.</li>
+            <li><span class="bold">Export Header File(s):</span> Opens the <span class="UI">Export Header Files</span> dialog, which lets you export existing header files in your project to another location. You can export header files to the following formats: C/C++ (.h), Visual Basic (.bas), Java (.properties), Delphi Pascal (.inc).</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Update:</span>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Update Cross-References:</span> Opens the <span class="UI">Update Cross-References</span> dialog, which lets you update the cross-references that you have added to topics. By updating the cross-references, you can ensure that they reflect any changes in your project that might affect them.</li>
+            <li><span class="bold">Regenerate Captured Images:</span> Regenerates (updates) all of the images in your project. The primary reasons for using this option are to remove watermarks and to modify PROPS files.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Launch:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">MadCap:</span> Opens a submenu, which lets you open various integrated MadCap Software products: MadCap Capture, MadCap Mimic, MadCap Feedback Explorer, MadCap Analyzer.</li>
+        </ul>
+        <h3>Source Control Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Source Control</span> menu</li>
+            <li>Press<span class="bold">[ALT] + S</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--SourceControl.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Changes:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Pending Check-Ins:</span> Opens the Pending Check-Ins window pane, which displays files in the project that are pending check in. In other words, you can use this window pane to see which files you have checked out, which files have been created but not yet added to source control, which files other users have checked out, and which files are out of date.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">File:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Add:</span> Opens the Check In dialog, which lets you add the selected files to the integrated source control application.</li>
+            <li><span class="bold">Check In:</span> Opens the Check In dialog, which lets you check files into source control.</li>
+            <li><span class="bold">Check Out:</span> Opens the Check Out dialog, which lets you check out files from source control.</li>
+            <li><span class="bold">Get Latest Version:</span> Opens the Get Latest Version dialog, which lets you "get" files from source control. After you bind a Flare project to a source control application, you can get the latest version of any of the source control files. When you do this, you are copying the most current files stored in the source control application to your local Flare project without necessarily checking out the files.</li>
+            <li><span class="bold">Undo Check Out:</span> Opens the Undo Check Out dialog, which lets you reverse the check-out of the files. If you have files checked out from source control but do not want them checked out anymore, you can use the "Undo Check Out" option instead of checking in the files.</li>
+            <li><span class="bold">Show Differences:</span> Opens a window pane that lets you view the content and code differences for files. If you select a single file and choose this option, the differences between the local version of the file and the source control version of the file are shown. If you select two files and choose this option, the differences between the two files are shown.</li>
+            <li><span class="bold">View History:</span> Opens the History dialog, which lets you view the history of a particular source control file, including all of the occasions when the file has been checked in. You can then use the dialog to view the differences between older versions of the file or roll back to a particular version.</li>
+            <li><span class="bold">Undelete:</span> Undeletes a file, allowing you to add it to source control.</li>
+            <li><span class="bold">Refresh:</span> Refreshes the window pane so that the latest information is shown.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Project:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Check In All:</span> Opens the Check Out dialog, which lets you check out all files in the project from source control.</li>
+            <li><span class="bold">Check Out All:</span> Opens the Check Out dialog, which lets you check out all files in the project from source control.</li>
+            <li><span class="bold">Get Latest Version All:</span> Opens the Get Latest Version dialog, which lets you "get" all files in the project from source control.</li>
+            <li><span class="bold">Undo Check Out All:</span> Opens the Undo Check Out dialog, which lets you reverse the check-out of all files in the project.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Instant Messaging:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Instant Messages:</span> Opens the Instant Messages window pane, which displays instant messages from other users and lets you send and configure instant messages.</li>
+            <li><span class="bold">Request Check In:</span> Opens the Send Request Check-In Message Dialog, which lets you ask another user to check in the selected files so that you can edit them.</li>
+            <li><span class="bold">Request View File:</span> Opens the View File Request dialog, which lets you ask another user to view the selected file.</li>
+        </ul>
+        <h3>Table Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Table</span> menu</li>
+            <li>Press<span class="bold">[ALT] + B</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Table.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Table:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Insert Table:</span> If you click on the face of the button, the Insert Table dialog opens, which lets you insert a table and specify various settings for it. If you click the down arrow, you can use a grid to select the number of rows and columns for a simple table and insert it.</li>
+            <li><span class="bold">Select Table:</span> Opens a submenu, which lets you choose options for selecting a table, column, row or cell.</li>
+            <li><span class="bold">Show Gridlines:</span> Shows and hides the gridlines in the table.</li>
+            <li><span class="bold">Table Properties:</span> Opens the Table Properties dialog, which lets you edit properties of the table (e.g. table size, caption, auto-fit behavior, stylesheet).</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Rows &amp; Columns:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Delete Table:</span> Opens a submenu, which lets you select options for deleting a table, columns or rows.</li>
+            <li><span class="bold">Rows Above:</span> Inserts a new row in a table. The new row is inserted above the area where the cursor is inserted.</li>
+            <li><span class="bold">Rows Below:</span> Inserts a new row in a table. The new row is inserted below the area where the cursor is inserted.</li>
+            <li><span class="bold">Columns to the Left:</span> Inserts a new column in a table. The new column is inserted to the left of the area where the cursor is inserted.</li>
+            <li><span class="bold">Columns to the Right:</span> Inserts a new column in a table. The new column is inserted to the right of the area where the cursor is inserted.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Cells:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Merge Cells:</span> Turns the selected cells in a table into one big cell. You can merge any number of rows and columns in a table, as long as they are adjacent to one another.</li>
+            <li><span class="bold">Split Cells:</span> Turns the selected cell in a table into many smaller cells by splitting the cell. When you split a cell, you are essentially inserting a smaller table into that cell.</li>
+            <li><span class="bold">Clear Cells:</span> Removes the text from the cells selected in a table.</li>
+            <li><span class="bold">Cell Content Style:</span> Opens the Table Cell Content Style dialog, which lets you choose specific table or paragraph styles to user for the selected cells.</li>
+            <li><span class="bold">Reset Local Cell Formatting:</span> Removes local cell formatting in a table. The local formatting is removed from the entire table or from selected cells.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Style:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Apply Table Style:</span> Opens a drop-down menu where you can select an existing table style to apply to selected content.</li>
+            <li><span class="bold">New Table Style:</span> Opens the Add File dialog, where the Table Style file type is already selected. After completing the dialog, the TableStyle Editor opens.</li>
+            <li><span class="bold">Edit Table Style:</span> Opens the table style in the Table Style Editor so that you can edit styles in the stylesheet.</li>
+            <li><span class="bold">Reset Table Style:</span> Applies the table style to the table again.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Data:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Sort Rows:</span> Opens a submenu, which lets you select options for sorting table rows (Ascending, Descending).</li>
+            <li><span class="bold">Convert to Text:</span> Converts a table to text. This option is enabled only if you have placed the cursor within an existing table.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Caption:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Caption:</span> Opens a submenu, which lets you select options for inserting or removing a table caption (Default, Above Table, Below Table, None).</li>
+        </ul>
+        <h3>Window Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Window</span> menu</li>
+            <li>Press<span class="bold">[ALT] + H</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Window.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Open Windows:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Window:</span> Opens the Manage Windows dialog, which lists the files that are currently open in your project and lets you activate (i.e. switch to), save, or close a particular file.</li>
+            <li><span class="bold">Close All Documents:</span> Closes open files. You can click the down arrow and select one of the following (Close All Documents, Close All Documents Except This One).</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Active Pane:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Dock:</span> If you select the Dock option when a window pane is active, the Drag Pane area is shown or hidden in the window pane accordingly. The Drag Pane area lets you move the window pane and dock it elsewhere in the program window.</li>
+            <li><span class="bold">Auto Hide:</span> "Pins" the active window pane or editor to the side of the interface so that you have more room for your workspace. You can show the window pane by hovering over the thin bar on the side of the interface. If you select the pin button at the top-right of the window pane, the window pane returns to its previous state.</li>
+            <li><span class="bold">Float:</span> Converts the active window pane or editor to a floating window, which means it is no longer attached to the interface.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Window Layout:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Layout:</span> Opens a submenu that lists the layouts in your project. Select a layout to display it in the interface.</li>
+            <li><span class="bold">Save Layout:</span> Saves the window layout. You can click the down arrow and select one of the following: Save Window Layout, Save Window Layout As.</li>
+            <li><span class="bold">Reload Layout:</span> If you are working in a particular layout and have opened different interface elements or moved interface elements around, you can select this option to return to the saved configuration of the layout.</li>
+            <li><span class="bold">Reset Layout:</span> Returns the current configuration of the interface to the factory layout settings (the original layout when you first installed and launched Flare).</li>
+            <li><span class="bold">Auto-save Layout:</span> Automatically saves the layout of the workspace when you exit Flare. The next time you launch Flare, that same layout will be displayed.</li>
+        </ul>
+        <h3>Help Menu</h3>
+        <p>To access:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the <span class="bold">Help</span> menu</li>
+            <li>Press<span class="bold">[ALT] + H</span> on the keyboard</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Help.png" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Topics:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Dynamic Help:</span> Opens the Dynamic Help window pane, which automatically displays the Help topic related to the active element in the interface.</li>
+            <li><span class="bold">Help Topic:</span> Opens Help topics. You can click the down arrow and select one of the following: Help Topic, New Help Topic Window.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Contents:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Contents:</span> Opens the Help TOC&#160;window pane, which lets you locate and access topics in Flare's online help.</li>
+            <li><span class="bold">Locate in TOC:</span> Lets you manually synchronize the current Help topic with the Help TOC. In other words, the TOC&#160;book containing that topic also opens to show you where the topic resides in the TOC&#160;hierarchy.</li>
+            <li><span class="bold">Auto-Sync TOC:</span> Automatically synchronizes the current Help topic with the Help TOC. In other words, when a particular Help topic is displayed, the TOC&#160;book containing that topic also opens to show you where the topic resides in the TOC&#160;hierarchy.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Panes:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Index:</span> Opens the index. You can click the down arrow and select one of the following: Index, Index Results.</li>
+            <li><span class="bold">Search:</span> Opens the Help Search window pane, which lets you search for information in Flare's online help.</li>
+            <li><span class="bold">Favorites:</span> Opens the Help Favorites window pane, which lets you quickly access your favorite Flare Help topics.</li>
+            <li><span class="bold">Glossary:</span> Opens the Help Glossary window pane, which lets you view glossary terms and definitions in Flare's online Help.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Tutorials:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">PDF&#160;Guides:</span> Opens a submenu, which lets you access one of the printed guides related to Flare.</li>
+            <li><span class="bold">Video Tutorials:</span> Opens a topic that provides access to video tutorials in the online Help.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Community:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Help Community:</span> Opens the MadCap Forums website, where you can obtain additional information about Flare and communicate with other Flare users.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Product:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Activate Product:</span> Opens the Activate Product Wizard, allowing you to activate the product.</li>
+            <li><span class="bold">Deactivate Product:</span> Deactivates the currently used license for the machine running Flare.</li>
+            <li><span class="bold">Register Product:</span> Lets you register your version of Flare if you have not done so already.</li>
+            <li><span class="bold">Check for Updates:</span> Opens the New Updates Available dialog, which lets you download Flare updates from MadCap.</li>
+            <li><span class="bold">About:</span> Displays a popup that shows information about the current version of Flare. Click the popup to make it disappear.</li>
+            <li><span class="bold">Report a bug:</span> Opens your default internet browser to the MadCap Software bug submission web page, where you can report the bug.</li>
+        </ul>
+    </body>
+</html>

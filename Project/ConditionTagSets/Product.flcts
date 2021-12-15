@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Blaze"
+    BackgroundColor="#ff6347" />
+  <ConditionTag
+    Comment=""
+    Name="Flare"
+    BackgroundColor="#00ff00" />
+  <ConditionTag
+    BackgroundColor="#e9967a"
+    Name="Analyzer"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#40e0d0"
+    Name="Mimic"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightCyan"
+    Name="Capture"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Lingo"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffd700"
+    Name="Feedback Server"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#daa520"
+    Name="Feedback Explorer"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ba55d3"
+    Name="Echo"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff69b4"
+    Name="X-Edit"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ffff"
+    Name="Help Viewer"
+    Comment="" />
+</CatapultConditionTagSet>

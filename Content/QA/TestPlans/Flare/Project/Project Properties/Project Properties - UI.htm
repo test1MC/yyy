@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2582" MadCap:lastWidth="1063" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Project Properties - UI</h2>
+        <h3>Opening the dialog</h3>
+        <ul class="checkbox">
+            <li>In the <span class="UI">Project Organizer</span>, right-click the Project folder and select <span class="MenuItem">Project Properties…</span></li>
+            <li>Toolstrip interface: <span class="MenuItem">!Project |&#160;Project Properties…</span></li>
+            <li>Toolstrip interface:&#160;Click the Project Properties… button in the Project Toolbar</li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Project | Project Properties</span></li>
+        </ul>
+        <p class="note">Any changes made in the Project Properties dialog should automatically get saved to the project file when you click OK&#160;to close the dialog. You should never have to save any changes you make in this dialog.</p>
+        <h3>Project Properties dialog - UI&#160;Test Cases</h3>
+        <h4>General tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Properties/ProjectProperties--GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Displays the name of the project. This field should not be able to be edited.</li>
+            <li><span class="bold">Location:&#160;</span>Displays the location of the project. &#160;This filed should not be able to be edited.</li>
+            <li><span class="bold">Open Folder: </span>Opens the Windows folder holding the project.</li>
+            <li><span class="bold">Read Only: </span>If you do not want the project file (the actual *.flprj)&#160;to be edited, click the check box to add a check mark.</li>
+            <li><span class="bold">Size: </span>Displays the size of the project file.</li>
+            <li><span class="bold">Created:&#160;</span>Displays the date and time that the project file was created.</li>
+            <li><span class="bold">Modified: </span>Displays the date and time that the project file was last modified.</li>
+        </ul>
+        <h4>Defaults tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Properties/ProjectProperties--DefaultsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Master TOC: </span>Displays the Master TOC&#160;for the project. If you do not select a TOC, Flare will use the first one (alphabetically) in the project (if there is more than one).</li>
+            <li><span class="bold">Master Page Layout:</span> Displays the Master Page Layout for the project. If you do not select a page layout file, Flare will use the first one (alphabetically) in the project (if there is more than one).</li>
+            <li><span class="bold">Master Stylesheet:&#160;</span>Displays the path of the Master Stylesheet for the project. If you do not select a stylesheet, Flare will use the first one (alphabetically) in the project (if there is more than one).</li>
+            <li><span class="bold">Edit:&#160;</span>For each item above, the corresponding Edit button opens the selected file in the appropriate editor.</li>
+        </ul>
+        <h4>Language tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Properties/ProjectProperties--LanguageTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Hide languages with no spell check support: </span>Reduces the list of visible languages to those which have spell check support.</li>
+            <li>
+                <p><span class="bold">(Language list):</span> Lets you set the spell check language for the project. This language also determines which, if any, language skin should be used when generating web outputs.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Language: </span>Lists all available languages. Spell check supported languages display in bold.</li>
+                    <li><span class="bold">Localized Skin:&#160;</span>Indicates whether or not a localized skin exists for the corresponding language.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Source Control tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Properties/ProjectProperties--SourceControlTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p class="bold">Source Control Provider:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Provider Name: </span>Displays the name of the source control provider (should be tested in the Source Control Test plan).</li>
+            <li><span class="bold">Database: </span>Displays the name of the database file (should be tested in the Source Control Test plan).</li>
+            <li><span class="bold">Database Folder: </span>Displays the name of the folder holding the database file (should be tested in the Source Control Test plan).</li>
+            <li><span class="bold">Advanced: </span>Open an Advanced options dialog for certain source control providers (should be tested in the Source Control Test plan).</li>
+            <li><span class="bold">Bind Project: </span>Opens the Bind Project dialog which lets you select a source control provider (should be tested in the Source Control Test plan).</li>
+            <li><span class="bold">Unbind Project:&#160;</span>Unbinds a project that is bound to source control (should be tested in the Source Control Test plan).</li>
+        </ul>
+        <p class="bold">Project File:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Source Control:&#160;</span>A drop-down menu which lets you perform source control actions (check in, check out, etc)&#160;on the actual *.flprj file.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

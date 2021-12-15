@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="276" MadCap:lastWidth="1173">
+    <body>
+        <ul>
+            <li><span class="bold">Variables: </span> Opens the insert variable dialog (see variables test plan)</li>
+        </ul>
+        <MadCap:snippetBlock src="Font Tab.flsnp" />
+        <ul>
+            <li><span class="bold">Text area: </span> The desired text for the object go here<ul><li>Verify different type of formatting (multiple colors, fonts, sizes, etc...)</li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="859" MadCap:lastWidth="624" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review" MadCap:conditionTagExpression="include[Product.Flare] " MadCap:ignoredWords="internet">
+    <head>
+    </head>
+    <body>
+        <h2>Licensing - Testing Checklist</h2>
+        <ul class="checkbox">
+            <li>Test across all supported OS's,  32 and 64 bit versions, and Foreign versions of the OS's. (Win&#160;XP, Vista, Win 7)</li>
+            <li>Make sure 66-character keys from previous application versions don't work</li>
+            <li>Test using both single-app and MadPak keys, and make sure MadPak keys don't work for applications they weren't generated for</li>
+            <li>Uninstalling the application should free up an activation</li>
+            <li>Make sure we preserve the license key when reactivating after a deactivation. Note, this is different from activating after uninstalling/reinstalling (license key should not be preserved here)</li>
+            <li>Test that we give you a warning message when trying to deactivate while offline</li>
+            <li style="color: #000000;">Verify that adding time to a subscription works properly, both before and after the subscription has expired</li>
+            <li>If there are 30 days or less remaining on a subscription, the user should get a warning message once per day which counts down properly</li>
+            <li>Make sure all dialogs are accurate both pre-expire and post-expire, and the buy now links are to the proper SKU</li>
+            <li>Make sure you are able to activate a license key behind a proxy</li>
+            <li>Make sure activations work properly in a Citrix-based environment</li>
+            <li style="color: #ff0000;">Make sure old but still valid flare keys work even if the current date is past the expiration date of the original security certificate</li>
+        </ul>
+        <p style="color: #ff0000;">&#160;</p>
+        <p style="color: #ff0000;">ADD&#160;COMMAND&#160;LINE&#160;BUILD&#160;W/&#160;FLOATING&#160;KEY&#160;USE&#160;CASE!!</p>
+        <p style="color: #ff0000;">ADD&#160;ENTERPRISE&#160;USE&#160;CASE!!</p>
+        <h3>Perpetual License Key</h3>
+        <h4>Single-User Key</h4>
+        <p class="bold">With Non-Expiring Key</p>
+        <ul class="checkbox">
+            <li>Can't activate key on more than two machines at a time (one machine per domain or up to two machines off domain)</li>
+            <li style="background-color: #ffffff;">Deactivating the key should free up an activation, which can be used on a new machine</li>
+            <li style="background-color: #ffffff;">Once a key has been freed up and activated on a new machine, should not be able to activate using that key on the original machine</li>
+            <li>Able to activate key on a machine it was previously activated on but never deactivated from even if you are at your activation limit (i.e. if you are running a new parallel image or replaced your hard drive)</li>
+        </ul>
+        <hr />
+        <p class="bold">With Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate key on more than two machines at a time (one machine per domain or up to two machines off domain)</li>
+            <li>Deactivating the key should free up an activation, which can be used on a new machine</li>
+            <li>Once a key has been freed up and activated on a new machine, should not be able to activate using that key on the original machine</li>
+            <li>Key counts down properly and expires at the end of the subscription date</li>
+            <li>Able to activate key on a machine it was previously activated on but never deactivated from even if you are at your activation limit (i.e. if you are running a new parallel image or replaced your hard drive)</li>
+        </ul>
+        <hr />
+        <p class="bold">With Expired Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate using an expired subscription key</li>
+            <li>The application should close after attempting to activate with an expired subscription key </li>
+            <li>Once a subscription key is expired, you cannot uninstall/reinstall or turn back the clock to renew the key</li>
+            <li>If the machine is offline when the subscription expires, and the machine's clock indicates it is past the subscription expiration date,  the application should display a warning message and then close </li>
+            <li>If the machine is offline when the subscription expires and the machine's clock does not indicate it is past the subscription expiration date, the application should try to ping the server every 24 hours.  The next time the machine is online  and successfully pings the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <h4>Multi-User Key</h4>
+        <p style="font-weight: bold;">With Non-Expiring Key</p>
+        <ul class="checkbox">
+            <li>Can't activate key on more machines than the user limit (n machines per domain or up to 2n machines off domain)</li>
+            <li>Deactivating the key should free up an activation, which can be used on a new machine</li>
+            <li>Once a key has been freed up and activated on a new machine, should not be able to activate using that key on the original machine</li>
+            <li>Able to activate key on a machine it was previously activated on but never deactivated from even if you are at your activation limit (i.e. if you are running a new parallel image or replaced your hard drive)</li>
+        </ul>
+        <hr />
+        <p style="font-weight: bold;">With Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate key on more machines than the user limit (n machines per domain or up to 2n machines off domain)</li>
+            <li>Deactivating the key should free up an activation, which can be used on a new machine</li>
+            <li>Once a key has been freed up and activated on a new machine, should not be able to activate using that key on the original machine</li>
+            <li>Key counts down properly and expires at the end of the subscription date</li>
+            <li>Able to activate key on a machine it was previously activated on but never deactivated from even if you are at your activation limit (i.e. if you are running a new parallel image or replaced your hard drive)</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate using an expired subscription key</li>
+            <li>The application should close after attempting to activate with an expired subscription key </li>
+            <li>Once a subscription key is expired, you cannot uninstall/reinstall or turn back the clock to renew the key</li>
+            <li>If the machine is offline when the subscription expires, and the machine's clock indicates it is past the subscription expiration date,  the application should display a warning message and then close </li>
+            <li>If the machine is offline when the subscription expires and the machine's clock does not indicate it is past the subscription expiration date, the application should try to ping the server every 24 hours.  The next time the machine is online  and successfully pings the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <h3>Floating License Key</h3>
+        <h4 style="font-weight: bold;">Single-User Key</h4>
+        <p style="font-weight: bold;">With Non-Expiring Key</p>
+        <ul class="checkbox">
+            <li>Can't have more than two concurrent users with the same key (one session per domain or up to two sessions off domain)</li>
+            <li style="background-color: #ffffff;">Able to activate key on an unlimited number of machines</li>
+            <li style="background-color: #ffffff;">Can't run application without an active internet connection</li>
+            <li style="background-color: #ffffff;">After starting an active session, the application should try to ping the flare server every 10 minutes. If it is unable to reach the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't have more than two active sessions using the same key (one session per domain or up to two sessions off domain)</li>
+            <li>Key counts down properly and expires at the end of the subscription date</li>
+            <li>Able to activate key on an unlimited number of machines</li>
+            <li>Can't run application without an active internet connection</li>
+            <li>After starting an active session, the application should try to ping the flare server every 10 minutes. If it is unable to reach the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate using an expired subscription key</li>
+            <li>The application should close after attempting to activate with an expired subscription key</li>
+            <li>
+                <p>When trying to run an instance of the application with an expired key, the application should display a warning message and then close </p>
+            </li>
+            <li>Once a subscription key is expired, you cannot uninstall/reinstall, deactivate/reactivate or turn back the clock to renew the key</li>
+        </ul>
+        <h4 style="font-weight: bold;">Multi-User Key</h4>
+        <p style="font-weight: bold;">With Non-Expiring Key</p>
+        <ul class="checkbox">
+            <li>Can't have more active sessions using the same key than the user limit (n sessions per domain or up to 2n sessions off domain)</li>
+            <li>Able to activate key on an unlimited number of machines</li>
+            <li>Can't run application without an active internet connection</li>
+            <li>After starting an active session, the application should try to ping the flare server every 10 minutes. If it is unable to reach the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't have more active sessions using the same key than the user limit (n sessions per domain or up to 2n sessions off domain)</li>
+            <li>Key counts down properly and expires at the end of the subscription date</li>
+            <li>Able to activate key on an unlimited number of machines</li>
+            <li>Can't run application without an active internet connection</li>
+            <li>After starting an active session, the application should try to ping the flare server every 10 minutes. If it is unable to reach the server, the application should display a warning message, save all your work and then close </li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Subscription Key</p>
+        <ul class="checkbox">
+            <li>Can't activate using an expired subscription key</li>
+            <li>The application should close after attempting to activate with an expired subscription key</li>
+            <li>When trying to run an instance of the application with an expired key, the application should display a warning message and then close </li>
+            <li>Once a subscription key is expired, you cannot uninstall/reinstall, deactivate/reactivate or turn back the clock to renew the key</li>
+        </ul>
+        <h3>Evaluation Key</h3>
+        <ul class="checkbox" style="color: #000000;">
+            <li style="color: #000000;">Key counts down properly and expires at the end of the evaluation period</li>
+            <li style="color: #000000;">Deactivate/Register options from !help should be greyed out while using an evaluation key</li>
+        </ul>
+        <h3>Trial Extension Key</h3>
+        <ul class="checkbox">
+            <li>Key properly resets the trial period to the appropriate length, depending on the product. For example, Flare has a 45 day trial period while Analyzer, Capture, and Contributor have 40 day trial periods</li>
+            <li>Proper trial behavior (such as scrambled content) continues</li>
+            <li>Key works after the original trial period has expired</li>
+            <li>Key works while the original trial period is still ongoing</li>
+            <li>Key has no expiration date and can be used anytime to reset the trial period</li>
+            <li>Key can be used to extend the trial for any MadCap product, but once used cannot be used to extend the trial for any other MadCap products</li>
+            <li>Can't use the same key to extend the trial multiple times</li>
+            <li>Extended trial properly expires at the end of new trial period</li>
+        </ul>
+        <h3>Blacklisted Key</h3>
+        <ul class="checkbox">
+            <li>Can't activate with a key that has been deactivated. Check for all types of both Perpetual and Floating license keys</li>
+            <li>When trying to run an instance of the application with a deactivated key, the application should display a warning message and then close </li>
+            <li>Make sure you can un-blacklist a blacklisted key, and that it functions as normal afterwards</li>
+        </ul>
+        <h3>Proxy Server Activation </h3>
+        <ul class="checkbox">
+            <li>Note: Check with IT&#160;to confirm the proxy address, port, username and password</li>
+            <li>&#160;</li>
+            <li>If already activated, deactivate the product to be tested<br /></li>
+            <li>Properly Set up the use of a proxy server by going into IE&gt;Internet Options&gt;Connections&gt;Lan Settings and select the check box under proxy server and then enter 'linuxbox' as the address and 3128 as the port</li>
+            <li>Apply those settings and try navigating to a web page. The server shall ask for credentials and use 'madcap ' as the username and 'R3m3mb3r!' as the password. </li>
+            <li>Re launch the product to be tested, enter a valid license key. At the activation method screen select Internet Activation and click on the 'Use Proxy Server' check box and then press on the next button.</li>
+            <li>Enter the proxy server address ('linuxbox') the port number ('3128')&#160;</li>
+            <li>Click on Enable Authentication to enable the text boxes for Username and Password</li>
+            <li>Enter 'madcap' for the username and 'R3m3mb3r!' for the password and then hit the next button.</li>
+            <li>The product shall use the proxy server to communicate with MadCap's activation server and successfully receive the proper credentials to continue.</li>
+            <li>Clear the activation and repeat the previous steps this time using an incorrect password to use to proxy server. The lack of proper credentials shall not allow license activation.</li>
+        </ul>
+    </body>
+</html>

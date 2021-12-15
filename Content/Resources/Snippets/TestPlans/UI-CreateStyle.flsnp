@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="895" MadCap:lastWidth="806">
+    <head>
+    </head>
+    <body>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Styles &amp; Stylesheets/Dialog--CreateStyle.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name:</span> Name of the class (If left blank, changes will be made to the element's main style)</li>
+            <li><span class="bold">Comment:&#160;</span>Lets you add a comment to the style class.</li>
+            <li>
+                <p><span class="bold">Properties for the New Class:</span> All columns should be sortable and not resizable.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                <li><span class="bold">Include: </span>Allows for the selection of specific properties to include or exclude from the new style or style update</li>
+                <li><span class="bold">Property: </span>Displays the CSS property of the class to be updated</li>
+                <li><span class="bold">Value: </span>Displays the value of the property to be updated</li>
+            </ul>
+				</li>
+            <li><span class="bold">Select Stylesheet to modify:</span> Allows for the selection of the stylesheet to which the new class/style will be added.  If the topic is associated with multiple stylesheets, this column should be sortable.</li>
+            <li><span class="bold">Create style and update the source element:</span> Creates the style/class and applies it to the selected element</li>
+            <li><span class="bold">Create style without updating the source element:</span> Creates the style/class but doesn’t apply it to the selected element</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+            <li>Type extra long input into fields</li>
+            <li>Type characters and symbols into fields</li>
+            <li>Attempt to create a duplicate style class</li>
+            <li>Be sure that any error dialogs that are displayed from this dialog are in written plain English</li>
+            <li>Verify that all properties get written to the correct style/class in the correct stylesheet.</li>
+            <li>Test with multiple stylesheets</li>
+        </ul>
+    </body>
+</html>

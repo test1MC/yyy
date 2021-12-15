@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3425.333" MadCap:lastWidth="1008" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[SourceControl.SVN] exclude[SourceControl.DetailedTesting or SourceControl.TFS or SourceControl.VSS] ">
+    <head>
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Subversion - svn+ssh:// Protocol - Testing Matrix </h1>
+        <h2>Authentication Testing</h2>
+        <p class="note">Clear any login cache currently stored by deleting the information stored at the following location <br /><b>Subversion:</b> Use Tortoise -&gt; Settings -&gt; Saved Data -&gt; Clear (Authentication Data)</p>
+        <p class="note">HTTP protocol uses domain authentication. </p>
+        <h3>ssh+svn protocol</h3>
+        <ul>
+            <li>svn+ssh://jay@172.16.0.140(205?)/home/svn/myproject</li>
+        </ul>
+        <h3>Overview</h3>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Generate public/private key pair</li>
+            <li>Add public key to .ssh\authorized_hosts file</li>
+            <li>Configure subversion to use SharpPlink-Win32.svnExe</li>
+        </ol>
+        <h3>Detailed Steps</h3>
+        <ol>
+            <li>Copy \\dc2\software\PuTTY folder to C:\Program Files (x86)\PuTTY</li>
+            <li>Run puttygen.exe<ol style="list-style-type: lower-alpha;"><li>Click Generate to generate a public/private key pair (move mouse around a bunch)</li><li>Save private key to C:\ssh-key.ppk</li><li>Copy public key to clipboard</li></ol></li>
+            <li>Run putty.exe<ol style="list-style-type: lower-alpha;"><li>Enter IP for linux box (172.16.0.140)</li><li>Click Open, enter credentials (jay/password)</li><li>Enter “cd .ssh”</li><li>Enter “vi authorized_keys” (this runs Vim, a text editor)</li><li>Hit “i" to enter insert mode</li><li>Hit “enter” to add a new line, then up arrow</li><li>Right click to paste the new line</li><li>Type “esc” to leave insert mode</li><li>Type “:” to enter command mode</li><li>Enter “wq” and hit enter to write and quit</li></ol></li>
+            <li>Open C:\Users\&lt;username&gt;\AppData\Roaming\Subversion\config in a text editor<ol style="list-style-type: lower-alpha;"><li>Search for [tunnels] and look for a line beginning with #ssh</li><li>Replace line with: ssh=”C:/&lt;Flare App Path&gt;/SharpPlink-Win32.svnExe” –i  C:/ssh-key.ppk</li></ol></li>
+            <li>Run Flare and connect with: svn+ssh://&lt;username&gt;@&lt;hostname&gt;/path/to/repository</li>
+        </ol>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/Authentication.flsnp" />
+        <h2>Functionality Testing</h2>
+        <p class="note">Before proceeding with the following tests, install Tortoise SVN (http://tortoisesvn.net/) so that status of files in the repository can be checked with SVN Repo Browser</p>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/SourceControl.flsnp" />
+    </body>
+</html>

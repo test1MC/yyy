@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4699" MadCap:lastWidth="1154" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Source Control - UI</h2>
+        <h3>How to Bind a Project to Source Control</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File | New Project and select bind to source control</span>
+            </li>
+            <li><span class="MenuItem">!Project | Project Properties | Source Control tab and click Bind Project</span>
+            </li>
+        </ul>
+        <h3>How to Import a Project from Source Control</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File | Import Project | From Source Control</span>
+            </li>
+        </ul>
+        <h3>How to Invoke Source Control Options for a File/Folder in a Project Bound to Source Control</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File |&#160;Source Control</span>
+            </li>
+            <li>Right-Click a file/folder in the <span class="UI">Content Explorer</span> and select the Source Control Menu</li>
+            <li>Click the Source Control button on the standard toolbar</li>
+        </ul>
+        <h3>Source Control Dialog- UI&#160;Test Cases</h3>
+        <div class="FloatLeft">
+            <p class="bold">TFS</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--BindTFS.png" class="propertiesNoFloat">
+                </img>
+            </p>
+            <p class="bold">VSS</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--BindVSS.png" class="propertiesNoFloat" />
+            </p>
+            <p><b>Subversion</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--BindSubversion.png" class="propertiesNoFloat" />
+            </p>
+            <p><b>Perforce</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--BindPerforce.png" class="propertiesNoFloat" />
+            </p>
+            <p><b>Third Party</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--BindThirdParty.png" class="propertiesNoFloat" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <h3>Project Properties Dialog - UI&#160;Test Cases</h3>
+        <p><b>Opening this Dialog:</b>
+        </p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!Project | Project Properties | Source Control Tab</span>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--Properties.png" class="properties">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Advanced: </span>Opens the advanced options. You might be able to click the Advanced button to enter more options. This depends on whether the provider has enabled advanced options; if not, the button is disabled. The advanced options available to you are different for each provider.</li>
+            <li><span class="bold">Bind Project: </span>Bind the current project to a Source Control.</li>
+            <li><span class="bold">Unbind Project: </span>Unbind a bound project from its current Source Control provider.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--ProjectButton.png" /><span class="bold">Project File: </span>Use this button to perform Source Control tasks on the project file<ul style="list-style-type: square;"><li><b>Check In...:</b>Check's in the selected project file into Source Control (only active when you have the project file checked out).</li><li><b>Check Out...:</b>Check's out the project file into Source Control.</li><li><b>Get Latest Version...:</b>Get's the latest version of the project file from Source Control.</li><li><b>Undo Check Out...:</b>Undo's your checkout of the project file (only active if you have it checked out already). This undoes any changes you have made of the local copy that have not been checked in.</li><li><b>Show Differences:</b>Shows the differences between your local copy and the newest Source Control copy.</li><li><b>View History:</b>You can view the history (change sets) of the project file.</li><li><b>Request Check In...:</b>If you discover that another user already has that file checked out, you can automatically send a request to that user to check in the project file.</li></ul></li>
+        </ul>
+        <h3>TFS&#160;Collections Dialog - UI&#160;Test Cases</h3>
+        <p><b>Opening this Dialog:</b>
+        </p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File | New Project | Bind to Source Control | Select TFS | Click Browse next to the Server Field</span>
+            </li>
+            <li>!Project | Project Properties | Source Control tab and click Bind Project | Select TFS | Click Browse next to the Server Field</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--TFSCollections.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--TFSPlus.png" />: Add a Team Foundation Server. For available test TFS server, click <a href="Source Control - Servers.htm">here</a>. </li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--TFSDelete.png" />: Deletes the selected TFS Server<ul><li>Deleting an existing server should bring up a prompting dialog. Clicking Cancel shouldn't remove the server, clicking Ok should remove the server and it's collections.<img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--RemoveTFS.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 160px;vertical-align: text-top;" /></li></ul></li>
+        </ul>
+        <h3>Add TFS&#160;Server Dialog - UI&#160;Test Cases</h3>
+        <p><b>Opening this Dialog:</b>
+        </p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File | New Project | Bind to Source Control | Select TFS | Click Browse next to the Server Field | Click </span>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--TFSPlus.png" style="mc-tag-and-class: span;" />
+            </li>
+            <li>!Project | Project Properties | Source Control tab and click Bind Project | Select TFS | Click Browse next to the Server Field</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--AddTFS.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Right-Click Menus</h4>
+        <p class="bold">Source Control Context Menu:</p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!File|&#160;Source Control</span>
+            </li>
+            <li>Right-Click a file/folder in the <span class="UI">Content Explorer</span> and select the Source Control Menu</li>
+            <li>Click the Source Control button on the standard toolbar</li>
+        </ul>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--RightClick.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Project:</span>Invokes the Project submenu.</li>
+                <li><span class="bold">Add...:</span> Add's the selected file/folder to source control (only active for new files/folders that have never been checked in).</li>
+                <li><b>Check In...:</b>Check's in the selected file/folder into Source Control (only active when you have the file/folder checked out).</li>
+                <li><b>Check Out...:</b>Check's out the selected file/folder into Source Control.</li>
+                <li><b>Get Latest Version...:</b>Get's the latest version of the selected file/folder from Source Control.</li>
+                <li><b>Undo Check Out...:</b>Undo's your checkout of the selected file/folder (only active if you have it checked out already). This undoes any changes you have made of the local copy that have not been checked in.</li>
+                <li><b>Show Differences:</b>Shows the differences between your local copy and the newest Source Control copy.</li>
+                <li><b>View History:</b>You can view the history (change sets) of a particular source control file.</li>
+                <li><b>Request Check In...:</b>If you discover that another user already has that file checked out, you can automatically send a request to that user to check in the file.</li>
+                <li><b>Request View File:</b>If you want another author to review a file and provide comments, this can be done by performing a request to view files.</li>
+                <li><span class="bold">Undelete:</span> Undeletes the selected file/folder (This is for TFS&#160;only. See Jay to test this)</li>
+                <li><span class="bold">Refresh:</span> Refreshes the selected file/folder.</li>
+                <li><b>Pending Check-Ins:</b>Opens the <span class="UI">Pending Check-Ins</span> Pane.</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Project Submenu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--RightClickProject.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Submenu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Check In All...:</span>Checks in all files/folders you have checked out from Source Control.</li>
+                <li><span class="bold">Check Out All...:</span> Checks out all files/folders from Source Control.</li>
+                <li><span class="bold">Get Latest Version All...:</span>Gets the latest copy of all files/folders from Source Control.</li>
+                <li><b>Undo Check Out All...:</b>Undo's the check out of all files/folders that you have checked out from Source Control.</li>
+            </ul>
+        </div>
+        <h3>Locking Files and Background Worker</h3>
+        <h4>Check Out Window</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--CheckOut.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Lock Files: </span>Will lock the file so that other users cannot check in that file (only in SVN and TFS).</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>Verify the file shows as locked in the<span class="UI"> Pending Check-Ins Pane</span> and in the repository.</li>
+                <li>Verify the file cannot be checked out, edited, and checked back in by another user.</li>
+            </ul>
+        </div>
+        <h4>Source Control tab in the Flare Options (Pertains to Locking Files and Background Worker)</h4>
+        <p class="note">This tab will only be present if you are working in a project that is bound to Source Control.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--SourceControlTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Automatically check file out from source control when saving file changes:	</span>When you save changes to a file that is not checked out, we will check that file out for you.<ul style="list-style-type: square;"><li><span class="bold">Lock files when automatically checking out(files cannot ve checked in by other users):	</span>When a file is automatically checked out of source control such as by editing and saving a topic, we will automatically lock the file (only available in TFS and SVN).</li></ul></li>
+        </ul>
+        <ul class="checkbox">
+            <li><span class="bold">Show prompt to add auto-created files to source control:	</span>Select this check box to make sure you are prompted when files are automatically created in Flare and may be added to source control.</li>
+            <li><span class="bold">Enable background status checks:	</span>Enable the automatic background checks that Flare performs at the specified interval to determine the status of files bound to a source control application (cannot set this value to 0min and 0secs and disabled by default)(Also known as the "background worker" or "pinger".)</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

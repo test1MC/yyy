@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="503" MadCap:lastWidth="1044" MadCap:conditionTagExpression="exclude[AddFile--UIControls.Multimedia]">
+    <head>
+    </head>
+    <body>
+        <h1>Output Eclipse Help- Additional testing notes</h1>
+        <p>Due to the fact that Eclipse Help output  interfaces with Eclipse, there will be some unique testing scenarios that we will have to deal with. </p>
+        <p>&#160;</p>
+        <h3>Eclipse Help - Java Run time Environment (JRE)</h3>
+        <p>&#160;</p>
+        <p>Eclipse help examines the registry and verifies that there are matching "bit" versions of both the JRE and Eclipse installed, I.E. 64-bit Eclipse with the latest 64-bit JRE or 32-bit Eclipse with latest 32-bit JRE. Because a system can have multiple types and versions of JRE, this could cause some issues attempting to view Eclipse Help Output. The following Baseline bugs need to be regressed. </p>
+        <ul>
+            <li style="font-size: 14pt;">80014</li>
+            <li style="font-size: 14pt;">81547</li>
+        </ul>
+        <p style="font-size: 14pt;">&#160;</p>
+        <h3>Eclipse Help - Plug-in Options: Provider Name, Plug-in Name, Plug-in ID, Plug-in Version</h3>
+        <p>&#160;</p>
+        <p>To verify that these options are working correctly, you will need to view the output from the Eclipse workbench. The default view is from the Eclipse Help viewer which does not have the means to view plug-in details, so you will need to respond "No" when asked if you want to view the output after you have built it. Select "Eclipse Workbench" from the "View Output" dropdown menu in the "Build progress" window. Once the workbench has been opened, Click on the "Help" tab in the main ribbon and select the "About Eclipse", then click on the "Installation Details" button at the bottom of the "About Eclipse" window. Finally, click on the "Plug-ins" tab. Here is where you will see the following configured fields:</p>
+        <ul>
+            <li>Provider Name</li>
+            <li>Plug-in Name</li>
+            <li>Plug-in ID</li>
+            <li>Plug-in Version</li>
+        </ul>
+    </body>
+</html>

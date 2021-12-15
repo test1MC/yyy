@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4867" MadCap:lastWidth="886" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>SQL Express - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>Translate&gt;Install Lingo TM: Opens the New Database Dialog.(Tooltip: Install Lingo Translation Memory Database)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Menus/UI--Menu--Translate.png" />
+        </p>
+        <h3>UI</h3>
+        <h4>New Database</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--NewDatabaseDialogue.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Name of new database:</b> 	Type a name for the TM database.</li>
+            <li><b>Database server:</b> 	Click Browse next to this field. The Connect to SQL Server dialog opens, displaying a list of usable servers after Lingo scans your network. Lingo supports SQL Server 2005 Standard and SQL Server 2005 Express. You can download SQL Server 2005 Express free from msdn.microsoft.com.</li>
+            <li><b>Location:</b> 	If you want to select a different folder to store the database, click the Browse button next to this field and choose a location. The default location is C:\Databases.</li>
+            <li><b>Connection timeout:</b> 	You can adjust the number of seconds to allow a connection to the server to be successful.</li>
+            <li><b>Authentication:</b> 	In this section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary).</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Note: If you elect to use Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided.</p>
+        <p>&#160;</p>
+        <p><b>Installing a Translation Memory Database</b>
+        </p>
+        <p>&#160;</p>
+        <p>Before you can take advantage of translation memory, you need to install a database—either the one provided by Lingo or a third-party system. Following are steps for installing the built-in Lingo TM database. For details on installing a third-party TM database (e.g., across) on your server, refer to the provider for instructions.</p>
+        <p>&#160;</p>
+        <p><b>How to install the built-in Lingo <a name="TM_database"></a>TM database:</b>
+        </p>
+        <p>&#160;</p>
+        <ol>
+            <li>Select Translate&gt;Install Lingo TM. The New Lingo Translation Memory Database dialog opens.</li>
+            <li>In the Name of new database field, type a name for the TM database.</li>
+            <li>Next to the Database server field, click Browse.</li>
+            <li>The Connect to SQL Server dialog opens(see next image), displaying a list of usable servers after Lingo scans your network.</li>
+            <li>Select the server and click OK.</li>
+            <li>(Optional) In the New Lingo Translation Memory Database dialog, you can click the Browse button next to the Location field and select a different folder to store the database (the default is C:\Databases).</li>
+            <li>(Optional) In the Connection timeout field, you can adjust the number of seconds to allow a connection to the server to be successful.</li>
+            <li>In the Authentication section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary).</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Note: If you elect to use Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided.</p>
+        <p>Click OK.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--ConnectToSQLServer--Dialogue.png" style="width: 138px;height: 162px;" class="left" /> &#160;</p>
+        <ul style="list-style-type: square;margin-left: 165px;">
+            <li>When you click browse next to the Database Server line above, you should get the dialog shown to the left.</li>
+            <li>	Verify the SQL Express server you installed is shown here</li>
+            <li>	Verify all SQL Express servers on your network are shown here</li>
+            <li>	Verify Selecting an SQL server and pressing OK, will populate the Database Server Line (in the previous screen)</li>
+            <li>	Verify Pressing F1/ clicking &lt;?&gt; will bring up the help.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Picking a TM:</b>Opens the Current Translation Memory Provider dialog	(Choose Translation Memory provider)</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--PickTM.png" style="width: 137px;height: 118px;" class="left" />
+        </p>
+        <ul style="list-style-type: square;margin-left: 160px;">
+            <li>Verify that the Current Translation Memory Provider dialog launches after selecting this option</li>
+            <li>	Verify that this option is available with a project closed or opened.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Current Translation Memory Provider Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--CurrentTMProvider.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Drop Down:</b> Selecting the drop down will show all recently used Translation Memories. Verify the list is accurate.</p>
+        <p>Selecting None will set Lingo to not use any TM database. (Suggestions will not be available)</p>
+        <p><b>Change…:</b> Selecting Change… will bring up the Select Translation Memory dialog (shown below)</p>
+        <p>&#160;</p>
+        <h4>Select Translation Memory Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--SelectTM.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p><i style="font-weight: bold; font-style: normal;">This dialog will show you three options:</i>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>	Lingo Built-in Translation Memory</li>
+            <li>Across crossAPI</li>
+            <li>	(No Translation Memory)</li>
+        </ul>
+        <p>Selecting None will take you back to the previous screen with “none” shown</p>
+        <p>Selecting Lingo Built-in Translation Memory will bring up the <b>Connect to Lingo Translation Memory dialog</b> (shown below)</p>
+        <p>Selecting across crossAPI  will bring up the <b>Across Translation Memory Settings</b> (shown and described in the <a href="../Across/Across - UI.htm">Across test plan</a>)</p>
+        <p>&#160;</p>
+        <h4><a name="Connect to Lingo Translation Memory"></a>Connect to Lingo Translation Memory Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--ConnectToLingoTM--Dialogue.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Server:</b> 	Click Browse next to this field. The Select Database dialog opens; displaying a list of usable servers and databases after Lingo scans your network. Lingo supports SQL Server 2005 Express, which you can download free from msdn.microsoft.com.</li>
+            <li><b>Database:</b> 	Displays the name of the TM database that you select.</li>
+            <li><b>Authentication:</b> 	In this section, you can use Windows Integrated Security (the default), or you can enter a specific user name and password for the server (if necessary).<ul style="list-style-type: square;"><li>Note: If you elect to use Windows Integrated Security, leave the user name and password fields blank. Otherwise, if your server requires specific credentials, enter them in the fields provided.</li></ul></li>
+            <li><b>Install New Lingo Database:</b> 	Opens the New Database dialog, which lets you create a new Lingo TM database.</li>
+            <li><b>Browse:</b>Selecting Browse will bring up the Select Database dialog (shown below)</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Select Database dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/SQL/UI--SQL--SelectDB.png" class="properties" style="width: 234px;height: 193px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Server:</b> 	Your local server and all servers on the local network should be shown here</li>
+            <li><b>Database:</b>All the TM databases will be shown here for the selected server</li>
+            <li><b>Progress area:</b> <![CDATA[ ]]>The blank bar at the bottom, will show connection information when attempting to connect to a Server<ul style="list-style-type: square;"><li>Click OK after selecting a Database, will populate the Server and Database field of the Connect to Lingo Translation Memory dialog</li><li>Clicking  OK again at the Connect to Lingo Translation Memory dialog, will populate the server information in the Current Translation Memory Provider</li><li>Clicking OK again, will return you to Lingo. The selected TM database will now be used for uploading and suggestions with lingo</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>	Verify when closing and reopening Lingo, the selected TM database is still selected&#160;</li>
+            <li>	Verify when closing and reopening Lingo, the selected TM database still provides suggestions and allows uploads</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

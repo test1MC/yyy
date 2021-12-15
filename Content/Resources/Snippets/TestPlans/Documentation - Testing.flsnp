@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3477" MadCap:lastWidth="882">
+    <head>
+        <link href="../../TableStyles/Rows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h3>Help UI</h3>
+        <p>How the help opens within our applications</p>
+        <p class="bold">Test all aspects of the help </p>
+        <ul>
+            <li>TOC</li>
+            <li>Searches</li>
+            <li>Search result links</li>
+            <li>Search Filter</li>
+            <li>Glossary</li>
+            <li>Browse Sequences</li>
+            <li>Index and Index Results pane</li>
+            <li>Favorites (Topic and Search)</li>
+            <li>Feedback Comments</li>
+            <li>Topic Ratings</li>
+            <li>Auto-Sync TOC</li>
+            <li>Video Tutorials (if available)<br /></li>
+        </ul>
+        <p>&#160;</p>
+        <h4>UI&#160;Test Cases:</h4>
+        <p>
+            <img src="../../Images/TestPlans/Lingo/Menus/Help Menu.png" style="float: left;">
+            </img>
+        </p>
+        <ul style="margin-left: 200pt;">
+            <li>In the Factory default settings the Dynamic Help window is opened and docked to the right.</li>
+            <li>Verify all Key combinations open the correct Help windows</li>
+            <li><span class="bold">	Contents</span> - Opens the TOC; verify new features are available in the TOC.  Add a few topics to favorites.</li>
+            <li><span class="bold">	Browse Sequences</span> - Open Browse Sequences and verify new content is available. Add a few topics to your favorites.</li>
+            <li><span class="bold">	Index</span> - Verify any new file types are included in the index. Search index for new MadCap products and verify “see MadCap [product name]” is returned.</li>
+            <li><span class="bold">	Search</span> - Open and run searches for a variety of terms (a-z). Search on new feature items and use the filter. Save a few searches as favorites.</li>
+            <li><span class="bold">	Favorites</span> - Verify previously saved topics and searches are in the favorites.  Verify favorites can be deleted.</li>
+            <li><span class="bold">	Glossary</span> - Terms from new features should be included.</li>
+            <li><span class="bold">	Help Topic</span> - Opens the Help topic related to the active element in the Lingo interface.</li>
+            <li><span class="bold">New Help Topic Window</span> - Opens a new instance of a Help topic in another window.</li>
+            <li><span class="bold">	Dynamic Help</span> - Opens the Dynamic Help window, which automatically displays the Help topic related to the active element in the interface.</li>
+            <li><span class="bold">Edit User Profile</span> - Opens a dialog that lets you edit your Feedback user profile information.</li>
+            <li><span class="bold">	Locate in TOC</span> - If you have navigated through topics and you need to know where in the tree the current topic is located. This button will highlight the topic name in the TOC window. It will expand nodes as needed.</li>
+            <li><span class="bold">	Auto-sync TOC</span> - As you click through links in topics as new topics are opened they will also be highlighted in the TOC</li>
+            <li><span class="bold">	Index Results</span> - If more than one topic is linked to an Index entry the additional topics will appear in the Index Results window by default it opens in the bottom of the frame. Check new index entries and verify topics that appear in results window are appropriate.</li>
+            <li><span class="bold">	Help Community</span> - Opens the MadCap Forums Web site, where user can obtain additional information about Lingo and communicate with other Lingo users.</li>
+            <li><span class="bold">	Guides</span> - Make sure the correct version of the PDF is included.</li>
+            <li><span class="bold">Register Product...</span> - Lets you register your version of Lingo if you have not done so already. This option is enabled only if you are using a trial version of the software.</li>
+        </ul>
+        <ul style="margin-left: 200pt;">
+            <li><span class="bold">	Check for Updates</span> - Opens the New Updates Available dialog, which lets user download Lingo updates from -MadCap.</li>
+            <li><span class="bold">	About</span> - Displays a popup that shows information about the current version of Lingo. Click the popup to make it disappear.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Dynamic Help Local toolbar:</h4>
+        <p>
+            <img src="../../Images/TestPlans/Lingo/Dynamic Help toolbar.png" style="float: left;">
+            </img>
+        </p>
+        <ul style="margin-left: 250pt;">
+            <li> The Dynamic Help window has a local toolbar; verify the controls function as designed. </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table style="width: 100%; mc-table-style: url('../../TableStyles/Rows.css'); caption-side: top;" class="TableStyle_Rows" cellspacing="0">
+            <col style="width: 79px;">
+            </col>
+            <col style="width: 50%;">
+            </col>
+            <col style="width: 50%;">
+            </col>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-weight: bold;">Buttons</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">&#160;</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-weight: bold;">Tooltip</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---LockView.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep"><span style="font-size: 11pt; font-family: Calibri;">Keeps the current Help topic frozen in place while you move around in the Flare interface. This allows you to follow steps or other information contained in the Help topic without the window pane changing to a different topic when you click elsewhere.</span>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Lock the Dynamic Help pane</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Back.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the last Help topic displayed.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Back</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Forward.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the next Help topic displayed.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Forward</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---AddTopicToFavorites.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Add the topic to the Help Favorites window.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Add topic to Favorites</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---LocateInHelpTOC.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Highlights the location of the active Help topic in the TOC.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Locate in TOC</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Expand All.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Expands all drop-downs in the active Help topic, displaying the content within them.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Expand All</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Collapse All.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Collapses all drop-downs that are expanded in the active Help topic.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Collapse All</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---OpenTheTOCPane.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the Help TOC window.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Open the TOC&#160;pane</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---OpenTheIndexPane.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the Help Index Pane window.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Open the Index pane</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---OpenTheSearchPane.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the Help Search Pane window.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Open the Search pane</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---OpenTheFavoritesPane.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the Help Favorites window.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd" style="font-size: 11pt;font-family: Calibri;">Open the Favorites pane</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h4>Help Topic Local toolbar:</h4>
+        <p>
+            <img src="../../Images/TestPlans/Buttons/Button---HelpTopicToolbar.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <table style="width: 100%; mc-table-style: url('../../TableStyles/Rows.css'); caption-side: top;" class="TableStyle_Rows" cellspacing="0">
+            <col style="width: 79px;">
+            </col>
+            <col style="width: 50%;">
+            </col>
+            <col style="width: 50%;">
+            </col>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-weight: bold;">Buttons</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep">&#160;</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-weight: bold;">Tooltip</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Back.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the last Help topic displayed.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Back</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Forward.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Opens the next Help topic displayed.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Forward</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Home.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Go to the Home Help topic.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Home</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Stop.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Stop the topic.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Stop</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Refresh.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Refresh the topic.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Refresh</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---AddTopicToFavorites.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Add the topic to the Help Favorites window.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Add topic to Favorites</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---LocateInHelpTOC.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Highlights the location of the active Help topic in the TOC.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Locate in TOC</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Auto-Sync TOC.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Auto-Sync the TOC</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Auto-Sync TOC</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Expand All.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Expands all drop-downs in the active Help topic, displaying the content within them.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Expand All</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Collapse All.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Collapses all drop-downs that are expanded in the active Help topic.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Collapse All</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---Quick Search.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Quick search</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">N/A</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---RemoveSearchHighlighting.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColSep" style="font-family: Calibri;font-size: 11pt;">Remove all search highlighting.</td>
+                    <td class="TableStyle_Rows_Body_0_0_RowSep_ColEnd" style="font-size: 11pt;font-family: Calibri;">Remove all search highlighting.</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep" style="text-align: center;">
+                        <img src="../../Images/TestPlans/Buttons/Button---RateThisTopic.png">
+                        </img>
+                    </td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColSep" style="font-family: Calibri;font-size: 11pt;">Lets you rate the current topic and also it lets you leave Feedback for the author about the topic.</td>
+                    <td class="TableStyle_Rows_Body_1_0_RowEnd_ColEnd" style="font-size: 11pt;font-family: Calibri;">Rate this topic</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3>EULA</h3>
+        <p>The correct EULA should be displayed during Install</p>
+        <p>&#160;</p>
+        <p>The correct Flare EULA should be installed to: </p>
+        <p>..\MadCap Software\<MadCap:conditionalText MadCap:conditions="Product.Flare">MadCap Flare V6\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">MadCap Blaze V3\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">MadCap Mimic V4\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">MadCap Lingo V3\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">MadCap Capture V5\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">MadCap Analyzer V3\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">MadCap Echo V2\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">MadCap Feedback Server V3\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">MadCap Feedback Explorer V2\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">MadCap X-Edit V2\</MadCap:conditionalText>InstallerResources</p>
+        <p MadCap:conditions="Product.Flare">&#160;</p>
+        <p MadCap:conditions="Product.Flare">The correct Feedback Service EULA&#160;should be installed to:</p>
+        <p MadCap:conditions="Product.Flare">..\MadCap Software\MadCap Flare V6\Flare.app\Resources\English\Eula</p>
+        <p>&#160;</p>
+        <h3>Online Help</h3>
+        <p>The Online Help is accessible through the <a href="http://www.madcapsoftware.com/support/">MadCap&#160;Software Support</a> page. Under "Online Help," select the product you are testing and click "Go"&#160;to view a WebHelp version of the Help.</p>
+        <p>&#160;</p>
+        <p class="bold">Test all aspects of the help</p>
+        <ul>
+            <li>TOC</li>
+            <li>Searches</li>
+            <li>Search result links</li>
+            <li>Search Filter</li>
+            <li>Glossary</li>
+            <li>Browse Sequences</li>
+            <li>Index </li>
+            <li>Favorites (Topic and Search)</li>
+            <li>Feedback Comments</li>
+            <li>Topic Ratings</li>
+            <li>Auto-Sync TOC</li>
+            <li>Video Tutorials (if available)</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Test all of the links in the footer of several topics (Email, PDFs, etc)</p>
+        <p>&#160;</p>
+        <h3>PDFs</h3>
+        <ul>
+            <li>The product name and version which appear on all PDFs should be correct</li>
+            <li>All links to PDFs should work in the !Help | Guides submenu</li>
+            <li>PDFs should be installed to: ..\MadCap Software\<MadCap:conditionalText MadCap:conditions="Product.Flare">MadCap Flare V6\Flare.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">MadCap Blaze V3\Blaze.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">MadCap Mimic V4\Mimic.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">MadCap Lingo V3\Lingo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">MadCap Capture V5\Capture.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">MadCap Analyzer V3\Analyzer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">MadCap Echo V2\Echo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">MadCap Feedback Server V3\FeedbackServer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">MadCap Feedback Explorer V2\FeedbackExplorer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">MadCap X-Edit V2\XEdit.app\</MadCap:conditionalText>Resources\Guides</li>
+            <li>Test the PDF links in the footer of each Help topic in:<ul><li> The Application</li><li>The Online Help</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h3>ReadMe.txt and Redist.txt</h3>
+        <p>..\MadCap Software\<MadCap:conditionalText MadCap:conditions="Product.Flare">MadCap Flare V6\Flare.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">MadCap Blaze V3\Blaze.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">MadCap Mimic V4\Mimic.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">MadCap Lingo V3\Lingo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">MadCap Capture V5\Capture.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">MadCap Analyzer V3\Analyzer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">MadCap Echo V2\Echo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">MadCap Feedback Server V3\FeedbackServer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">MadCap Feedback Explorer V2\FeedbackExplorer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">MadCap X-Edit V2\XEdit.app\</MadCap:conditionalText>Resources\ReadMe</p>
+        <p>&#160;</p>
+    </body>
+</html>

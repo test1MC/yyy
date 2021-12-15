@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7325" MadCap:lastWidth="1022" MadCap:conditionTagExpression="include[InsertHyperlinkUI.Hyperlink] exclude[Default.UITestsEditors or InsertHyperlinkUI.CrossReference or InsertHyperlinkUI.ImageMapArea or InsertHyperlinkUI.TopicPopup] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Hyperlinks - UI</h2>
+        <h3>Inserting a Hyperlink without the dialog</h3>
+        <p class="bold">Drag and drop method:</p>
+        <ul class="checkbox">
+            <li><span class="UI">Content Explorer</span>:&#160;Drag and drop a topic from the <span class="UI">Content Explorer</span> into another topic that is open in the <span class="UI">XML Editor</span>. If dragging a topic into an insertion point, the <span class="UI">XML&#160;Editor</span> must be in Web&#160;Layout Mode.<ul class="checkbox"><li>Drop topic at a an insertion point. The file name will be used as the default link text.</li><li>Drop topic onto selected text. The selected text should convert to a hyperlink.</li><li>Test using topics of varying depth within the Content folder and verify paths are written correctly.</li></ul></li>
+            <li><span class="UI">File List</span>:&#160;Drag and drop a topic from the <span class="UI">File List</span> into another topic that is open in the <span class="UI">XML Editor</span>. The <span class="UI">XML&#160;Editor</span> must be in Web&#160;Layout Mode.<ul class="checkbox"><li>Drop topic at a an insertion point. The file name will be used as the default link text.
+</li><li>Drop topic onto selected text. The selected text should convert to a hyperlink.</li><li>Test using topics of varying depth within the Content folder and verify paths are written correctly</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p><span class="bold">Test making a wide variety of selections:</span>
+            </p>
+            <ul class="checkbox">
+                <li>Text</li>
+                <li>Span</li>
+                <li>Text with span</li>
+                <li> Whole paragraphs</li>
+                <li>List items</li>
+                <li> Etc.</li>
+            </ul>
+            <p>You should only be able to insert a hyperlink using the "Drag and drop" method with a valid selection. If selection is invalid (multiple paragraphs, a table, a whole list, etc), dropping a topic on the selection should not create a hyperlink.</p>
+        </div>
+        <p class="bold">Quick Links method:</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="UI">XML Editor</span>:&#160;Right-click in the <span class="UI">XML Editor</span> at an insertion point or with a text selection  and select <span class="MenuItem">Quick Link |&#160;(test all sub-menu options)</span>:</p>
+                <ul class="checkbox">
+                    <li><span class="bold">Bookmarks:&#160;</span>Invokes a sub-menu that displays all bookmarks in the current topic. Select a bookmark to insert a hyperlink to that bookmark. </li>
+                    <li><span class="bold">Same Folder:&#160;</span>Invokes a sub-menu that displays all topic files that exist in the same folder as the current topic. Select a topic to insert a hyperlink to that topic.</li>
+                    <li><span class="bold">Open Documents:&#160;</span>Invokes a sub-menu that displays all topic files that are currently open. Select a topic to insert a hyperlink to that topic.</li>
+                    <li><span class="bold">New Topic…:&#160;</span>Invokes the <span class="UI">Add File</span> dialog which lets you add a new topic to the project and automatically inserts a hyperlink to that topic.
+						<ul class="checkbox"><li>Verify that when the <span class="UI">Add File</span> dialog is opened in this manner that you cannot change the File Type from Topic.</li></ul></li>
+                    <li><span class="bold">Topic...:&#160;</span>Invokes the <span class="UI">Link to Topic</span> dialog which lets you select any topic in the project. Select a topic to insert a hyperlink to that topic.</li>
+                </ul>
+                <p class="bold">Test Cases</p>
+                <ul>
+                    <li>Test all Quick Link types at an insertion point</li>
+                    <li>Test all Quick Link types using a text selection</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p><span class="bold">Test making a wide variety of selections:</span>
+            </p>
+            <ul class="checkbox">
+                <li>Text</li>
+                <li>Span</li>
+                <li>Text with span</li>
+                <li> Whole paragraphs</li>
+                <li>List items</li>
+                <li> Etc.</li>
+            </ul>
+            <p>You should only be able to insert a hyperlink using the "Quick Link"&#160;method with a valid selection. If selection is invalid (multiple paragraphs, a table, a whole list, etc), the Quick Link menu options should not appear.</p>
+        </div>
+        <h3>Inserting a Hyperlink with the dialog</h3>
+        <p>In all cases listed below, you can optionally select the link text in the <span class="UI">XML&#160;Editor</span> prior to inserting the hyperlink.</p>
+        <p><span class="bold">Insert a hyperlink with the Insert Hyperlink dialog:</span>
+        </p>
+        <ul class="checkbox">
+            <li>Keyboard:&#160;Press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">K</span></li>
+            <li><span class="UI">XML Editor</span>:&#160;Click the Insert Hyperlink button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertHyperlink.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li>
+            <li><span class="UI">XML Editor</span>:&#160;Right-click in the <span class="UI">XML Editor</span> and select <span class="MenuItem">Hyperlink</span> from the context menu</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Hyperlink</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert |&#160;Hyperlink</span></li>
+        </ul>
+        <p>Test Cases<ul class="checkbox"><li>Test all Insert Hyperlink methods at an insertion point</li><li>Test all Insert Hyperlink methods using a text selection</li></ul></p>
+        <div class="TestCases">
+            <p><span class="bold">Test making a wide variety of selections:</span>
+            </p>
+            <ul class="checkbox">
+                <li>Text</li>
+                <li>Span</li>
+                <li>Text with span</li>
+                <li> Whole paragraphs</li>
+                <li>List items</li>
+                <li> Etc.</li>
+            </ul>
+            <p>You should only be able to insert a hyperlink with a valid selection. If selection is invalid (multiple paragraphs, a table, a whole list, etc), the menu option and button should be grayed out and the hotkey <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">K</span> should do nothing.</p>
+            <ul class="checkbox">
+                <li>Verify that the selected text populates the "Link Text"&#160;field of the <span class="UI">Insert Hyperlink</span> dialog</li>
+            </ul>
+        </div>
+        <h3>Insert Hyperlink dialog&#160;- UI&#160;Test Cases</h3>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p><span class="UI">Insert Hyperlink</span> dialog, default&#160;view:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink.png" class="properties">
+                </img>
+            </p>
+        </div>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/InsertHyperLinkDialog--VariousViews--TestCases.flsnp" />
+        <h3>Select Class -&#160;UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--SelectClass.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Class: </span>Displays the selected class from the "Defined Classes" list, but also lets you manually enter a class name.</li>
+            <li><span class="bold">Defined Classes: </span>Displays a list of all defined classes of the a style that exist in the project stylesheets.<ul class="checkbox"><li>Add a custom class in the stylesheet and verify that it shows up in this dialog.</li></ul></li>
+        </ul>
+    </body>
+</html>

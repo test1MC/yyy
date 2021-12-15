@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="850" MadCap:lastWidth="624" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Spell Check/Dictionaries - Baseline</h2>
+        <p>Verify that you can add words to multiple language dictionaries by creating projects of various languages, creating topics of various languages, and inserting language tagged elements inside of topics (including spans). Verify that in each case, the term is added to the correct language dictionary. </p>
+        <ul style="list-style-type: square;">
+            <li>Be sure to include "(never spell check)"&#160;in your testing.</li>
+            <li>Test local language settings as well as setting the mc-language property in the stylesheet on various elements.</li>
+            <li><b style="background-color: #ff0000; color: #ffff00;">MAKE&#160;SURE&#160;TO&#160;TEST&#160;SOME&#160;BUGS&#160;WITH&#160;THE&#160;NEW&#160;RIGHT TO&#160;LEFT&#160;LANGUAGES AND/OR DICTIONARIES</b>
+            </li>
+        </ul>
+        <h3>Baseline</h3>
+        <p><span class="bold">3164 </span>Spell Check while typing doesn't stay "on" when a new topic is opened</p>
+        <p><span class="bold">5377 </span>mis-spell indicator (the red wavy underline) doesn't disappear after unchecking the "spell check while typing"</p>
+        <p><span class="bold">5378 </span>turning on Spell Checking dirties the topic</p>
+        <p><span class="bold">5381 </span>"Change in All Files" button stops being active in Spell Check window when there are only two topics left for spell checking.</p>
+        <p><span class="bold">5729 </span>Changing a misspelled word removes formatting such as a bold</p>
+        <p><span class="bold">6812 </span>If you use an ellipsis (three dots in a row) in topics and then run spell check, Flare stops at each dot, thinking it’s a mistake.</p>
+        <p><span class="bold">8639 </span>Correcting the spelling of a word with the Spell Check window ends the spell check after one spelling correction.</p>
+        <p><span class="bold">8778 </span>When running spell check on a topic, if you have two instances of a "mispelled" word and you use "Add to Dictionary" for the first instance, the second instance is still reported by spell check.</p>
+        <p><span class="bold">11496	</span> Spell check identifiers (red underline) removed from words in paragraph after return key is used. The markings are not refreshed until another misspelled word is typed.</p>
+        <p><span class="bold">11933	</span> Words in double quotes - the 2nd " is getting picked up as a duplicate word by the spell checker</p>
+        <p><span class="bold">12590	</span>Spell checking in long topics will highlight the misspelled word, but not scroll to it if it is off the screen.</p>
+        <p><span class="bold">17152	</span>Spell check is flagging words that are in the dictionary</p>
+        <p><span class="bold">17607	</span>Error on compile for a project which is set to 'Never Spell Check'.</p>
+        <p><span class="bold">19100	</span>Spell check on long topics causing XML Editor  to jump to top of the topic</p>
+        <p><span class="bold">19783	</span>If a topic is open in Page Layout mode, Spell Check will not find any misspellings beyond page 1.</p>
+        <p><span class="bold">21480	</span>Spell Check does not find misspellings inside of footnotes when checking the whole project.</p>
+        <p><span class="bold">22249	</span>Contractions are identified as misspellings in V4</p>
+        <p><span class="bold">22384	</span>Words with opening or closing parentheses and other "paired punctuation" are flagged as misspelled.</p>
+        <p><span class="bold">22460	</span>Spell Check gets knotted up when it finds misspellings inside of footnotes (when spell checking the whole project).</p>
+        <p><span class="bold">22865	</span>Spell checking stops on the second page (in print layout mode) if you change a word.</p>
+        <p><span class="bold">23208	</span>Flare crashes when adding new content too quickly to this topic when in Print Layout mode. This content contains lots of parentheses and brackets, etc. (Spell Check issue)</p>
+        <p><span class="bold">23953 </span>The "s" in "co-applicant’s" is marked as misspelled</p>
+        <p><span class="bold">24513 </span>Spell check (Hyphenation) does not work at all on Vista x64</p>
+        <p><span class="bold">25677 </span>Word suggestions do not include users words added to the dictionary.</p>
+        <p><span class="bold">34997 </span>Unhandled exception error: "An item with the same key</p>
+        <p>has already been added." When ignoring word in all files.</p>
+        <p><span class="bold">38957 </span>Deleting all of a topics ignored words leaves an empty MadCap:ignoredWords attribute in the html tag.  Analyzer finds this.</p>
+        <p><span class="bold">41182 </span>If you have a single misspelled word in a span (or b, u, etc), when applying a spelling correction to that word, we add a non-breaking space.</p>
+        <p><span class="bold">41749</span>Changing a misspelled word removes formatting such as a bold, if the word is at the beginning of the &lt;p&gt;.</p>
+        <p><b>46970</b> Spellcheck using the project dictionary breaks if you move your dictionary file into a sub-folder.</p>
+        <p><b>47363</b>If the user has a dictionary in a subfolder, the next word that a user adds will create a new dictionary in the "Advanced Folder"</p>
+    </body>
+</html>

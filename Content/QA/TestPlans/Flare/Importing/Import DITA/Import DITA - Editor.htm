@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2688" MadCap:lastWidth="1310" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileImport or FlareFileTypes.DitaImportFile] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Import DITA - Editor</h2>
+        <h3>Opening a DITA&#160;Import File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <h3>DITA Import Editor - UI Test Cases</h3>
+        <h4>DITA Import Editor: Local Toolbar</h4>
+        <p class="bold">Controls:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Import/Reimport...: </span>Imports or re-imports the set of *.dita and *.ditamap files added to the DITA Import file.</li>
+        </ul>
+        <h4>DITA Import Editor: Source Files tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import DITA/DITAImportEditor--SourceFilesTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">DITA Files grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">DITA Files: </span>Displays each *.dita or *.ditamap file added to the import</li>
+                    <li><span class="bold">Status: </span>???</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Open File: </span>Opens the selected file in the default application. Button will gray out with a multi-selection.</li>
+            <li><span class="bold">Link Generate Files To Source Files: </span>This option creates a connection between the original DITA files and the files that are created as a result of the import.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveUp.png" alt="" title="" />: </span>This moves the selected document higher in the list (if you have more than one document to import). The document at the top is used for the name of the content folder holding the imported topics in Flare. Also, the order determines how the imported documents are arranged in the Flare TOC that is created as a result.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveDown.png" alt="" title="" />: </span>This moves the selected document lower in the list (if you have more than one document to import).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Remove.png" />: </span>This removes the selected document(s) from the list.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---AddFiles.png" />: </span>Produces the <span class="UI">Open</span> dialog which lets you browse for *.dita or *.ditamap files to add to the import.</li>
+        </ul>
+        <h4>DITA Import Editor: Options tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import DITA/DITAImportEditor--OptionsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Import all Content files to one folder: </span>Select this option if you want all of the imported DITA file content to be placed in just one folder in the Content Explorer.</li>
+            <li><span class="bold">Auto-reimport before 'Generate Output': </span>Also called "Easy Sync," this option will tell Flare to automatically re-import DITA files when you attempt to build output.</li>
+            <li><span class="bold">Preserve ID attributes for elements: </span>Every element in a DITA file can have an ID attribute. Since Flare does not use these, select this option to make sure the ID is preserved.</li>
+        </ul>
+        <h4>DITA Import Editor: Stylesheet tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import DITA/DITAImportEditor--StylesheetTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Conversion Styles...: </span>Produces the <span class="UI">DITA Import Styles Editor</span>. <MadCap:xref href="DITA Import Styles - UI.htm" target="" title="" alt="">See "DITA Import Styles - UI" on page 1</MadCap:xref></li>
+            <li><span class="bold">Stylesheet...: </span>Produces the <span class="UI">Open</span> dialog which lets you browse for a *.css file.</li>
+        </ul>
+        <h4>DITA Import Editor: Imported Files tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import DITA/DITAImportEditor--ImportedFilesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Imported Files grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Imported File: </span>Displays each project file created from the DITA import.</li>
+                    <li><span class="bold">Folder: </span>Displays the location of the imported file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Open: </span>Opens the selected file(s)</li>
+        </ul>
+    </body>
+</html>

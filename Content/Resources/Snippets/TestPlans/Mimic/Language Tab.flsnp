@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Hide Languages with no spell check support: </span> Hides / shows languages in the <span class="bold">Language section</span> that have no spell check support</li>
+            <li>
+                <span class="bold">Language Section: </span> Displays a list of languages for the purposes of spell checking<ul><li>Selecting a language will only set the object to use that language</li><li>Bold languages have spell check support</li></ul></li>
+        </ul>
+    </body>
+</html>

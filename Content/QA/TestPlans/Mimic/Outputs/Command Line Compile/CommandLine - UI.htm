@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>CommandLine - UI</title>
+    </head>
+    <body>
+        <h2>Command Line - UI</h2>
+        <p>There is no UI&#160;for Command Line Compile within the mimic application. This Test Plan will focus on the process of Command Line Compile from windows.</p>
+        <h4>Initial Setup</h4>
+        <p>Initial Setup is a 2 step process:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/General/Run Window.png" class="right" />
+        </p>
+        <ol>
+            <li>Open the command window</li>
+            <li>Change directory to the mimic.app folder</li>
+        </ol>
+        <p>&#160;</p>
+        <p>To access the command prompt:</p>
+        <ol>
+            <li><span class="bold">Windows Key +&#160;R</span> or <span class="bold">!Start | Programs | Accessories | Command Prompt</span></li>
+            <li>Type <span class="bold">CMD</span>in the open field</li>
+        </ol>
+        <p><i>Note: Typing <span class="bold">Command </span>instead will open the 16-bit command prompt.&#160;You don't want that, unless you like pain.</i>
+        </p>
+        <p>&#160;</p>
+        <p>To navigate to the mimic.app folder:</p>
+        <ol>
+            <li>Type: <span class="bold">cd “c:\program files\madcap software\madcap mimic V4\mimic.app”</span></li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Syntax</h4>
+        <p><b>Console.mimiccompiler.exe -file </b> &lt;project or movie&gt; <b>-output-type </b> &lt;mcmovie, flash, silverlight, xps, pdf&gt; <b>-variables </b> &lt;variable file&gt;</p>
+        <ul>
+            <li><span class="bold">-file:</span> This flag is required. Following this flag, should be the path to the mimic movie or project to compile</li>
+            <li><span class="bold">-output-type:</span> This flag is optional. If the flag is not used, the output type that is set in the mimic movie or project will be used. Any output type mimic supports can be specified here.</li>
+            <li><span class="bold">-variables:</span> This flag is optional.&#160;IF the flag is not used, the variables used in the mimic movie or project will be used. If this flag is used, the variables in the mimic movie or project will be overwritten. To use this flag, the path of the variable file you wish to use needs to be specified.</li>
+            <li><span class="bold">-target:</span> This flag is used to specify a specific mimic target for compiling</li>
+            <li><span class="bold">-recompile</span>This flag is used to force a recompile of a movie that has not changed since its last compile.<i>Note: When this flag is not specified, Mimic will NOT&#160;recompile a movie it thinks has not changed since its last compile.</i></li>
+            <li><span class="bold">-lazy [true/false]</span>This flag was the original<span class="bold">-recompile</span>.&#160;We do not advertise this exists and we don not put in the help. True or False needs to be supplied. By default,<span class="bold">-lazy true</span>is the behavior a command line compile. This will keep movies from recompiling if there has not been a change. Supplying<span class="bold">-lazy false</span>, will force a recompile. This option only exists for legacy support for any user that may have used it, which is unlikely.</li>
+        </ul>
+        <h3>Examples</h3>
+        <h4>-File</h4>
+        <table style="width: 100%;">
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p>Compiling a movie named Test Movie:</p>
+                        <p>Type:<span class="bold"> Console.mimiccompiler.exe –file “c:\documents and settings\jwulkowicz\my documents\my mimic movies\testmovie.mimovf\testmovie.mimov”</span></p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Mimic/Cmd Window.png" />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hit enter, and the movie will compile</p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Mimic/Cmd Window2.png" />
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td style="font-size: 11pt;font-family: Calibri;"><span style="font-size: 11pt;">Verify the movie compiled by locating the </span><span class="bold"><span style="font-size: 11pt;">output </span></span><span style="font-size: 11pt;">folder in the Movie or project folder.</span>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Mimic/Windows Explorer.png" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>-Output-type</h4>
+        <p style="font-style: italic;">Adding to the above step</p>
+        <p style="font-style: normal;">Using the <span class="bold">-output-type</span> flag to compile TestMovie in silverlight format:</p>
+        <p style="font-style: normal;">Type: <span class="bold">Console.mimiccompiler.exe –file “c:\documents and settings\jwulkowicz\my documents\my mimic movies\testmovie.mimovf\testmovie.mimov” –output-type silveright</span></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Windows Explorer2.png" />
+        </p>
+        <p>Output Types:</p>
+        <ul>
+            <li>Silverlight</li>
+            <li>mcmovie</li>
+            <li>Flash</li>
+            <li>PDF</li>
+            <li>XPS</li>
+        </ul>
+        <h4>-variables</h4>
+        <p>The variable flag is used to specify an external variable file</p>
+        <table style="width: 100%;">
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p><b style="text-decoration: underline;">Step one(a): Create an .mcvar file for a project</b>
+                        </p>
+                        <ul>
+                            <li>Open notepad</li>
+                            <li>Add the following:</li>
+                        </ul>
+                        <p>&lt;?xml version="1.0" encoding="utf-8"?&gt;</p>
+                        <p>&lt;VariableSet&gt;</p>
+                        <p>&lt;Variable Name="Project<b>.Bob</b>"&gt;<b>Cat</b>&lt;/Variable&gt;</p>
+                        <p>&lt;/VariableSet&gt;</p>
+                        <p>&#160;</p>
+                        <ul>
+                            <li><b>Bob</b> is the variable name. <b>Cat</b> is the definition. Change to whatever variable you are using in your mimic project</li>
+                            <li>Save as an .mcvar file</li>
+                        </ul>
+                    </td>
+                    <td style="font-weight: normal;">&#160;<b style="text-decoration: underline; font-size: 11pt; font-family: Calibri;">Step one(b): Create an .mcvar file for a movie</b><ul><li>Open notepad</li><li>Add the following:</li></ul><p>&lt;?xml version="1.0" encoding="utf-8"?&gt;</p><p>&lt;VariableSet&gt;</p><p>&lt;Variable Name="movie<b>.Bob</b>"&gt;<b>Cat</b>&lt;/Variable&gt;</p><p>&lt;/VariableSet&gt;</p><p>&#160;</p><ul><li><b>Bob</b> is the variable name. <b>Cat</b> is the definition. Change to whatever variable you are using in your mimic movie</li><li>Save as an .mcvar file</li></ul></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span style="font-family: Calibri; font-size: 11pt; text-decoration: underline; font-weight: bold;">Step two: Run the command line compiler</span>
+                        <p>Type: <b>Console.mimiccompiler.exe –file “c:\documents and settings\jwulkowicz\my documents\my mimic movies\testmovie.mimovf\testmovie.mimov” –variables “c:\mimictest.mcvar”</b></p>
+                        <ul>
+                            <li>Check the output to verify the variable file was used</li>
+                        </ul>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Mimic/Windows Explorer3.png" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>-target</h4>
+        <p>The target flag is used to specify a movie or projects particular target to be compiled.</p>
+        <p>Assuming you have a target named "<span class="bold">TargetFlash</span>":</p>
+        <p>Type: <b>Console.mimiccompiler.exe –file “c:\documents and settings\jwulkowicz\my documents\my mimic movies\testmovie.mimovf\testmovie.mimov” –target TargetFlash</b></p>
+        <p>Multiple targets can be compiled at once</p>
+        <p>&#160;</p>
+        <h4>Misc.</h4>
+        <ul>
+            <li>Verify Command line works in trial mode</li>
+            <li>Verify command line no longer works if trial mode has expired</li>
+            <li>Verify you can compile a movie and a project</li>
+        </ul>
+    </body>
+</html>

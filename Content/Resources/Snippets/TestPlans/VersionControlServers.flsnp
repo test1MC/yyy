@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3574" MadCap:lastWidth="1352">
+    <head>
+    </head>
+    <body>
+        <h3>Version Control Server Locations - Version 19</h3>
+        <h4>Microsoft Visual&#160;SourceSafe</h4>
+        <li>&#160;</li>
+        <ul>
+            <li>\\winesap\VSS_QA\<ul><li><i>Single User check out</i></li></ul></li>
+            <li>\\winesap\VSS_QA_Multi\<ul><li><i>Multi-User check out</i></li></ul></li>
+        </ul>
+        <h4>Microsoft Team Foundation Server</h4>
+        <ul>
+            <li>user name : madcap\test1</li>
+            <li>password: "R3m3mb3r!"<p><i>Use your domain credentials to test two users test cases.</i></p></li>
+            <li>http://win2k3tfs08:8080/<ul><li><i>This is a TFS&#160;2008 server</i></li></ul></li>
+            <li>http://support:8080/tfs/DefaultCollection<ul><li><i>This is a TFS&#160;2010 server</i></li></ul></li>
+            <li>http://tfs10b:8080/tfs<ul><li><i>This is a TFS 2010 server (Use User1/2/4 for permission testing)</i></li></ul></li>
+            <li>http://win2k8tfs12:8080/tfs/DefaultCollection<ul><li><i>This is a TFS&#160;2012 server</i></li></ul></li>
+            <li>http://win2k8tfs13:8080/tfs/<ul><li><i>This is a TFS 2013 server</i></li></ul></li>
+            <li>https://madcap.visualstudio.com/DefaultCollection<ul><li><i>This is a TFS online server (Cloud)</i></li></ul></li>
+        </ul>
+        <h4>Subversion</h4>
+        <ul>
+            <li>User Name :&#160;Test1</li>
+            <li>Password :&#160;"Test1"</li>
+            <li>svn://support:3690/</li>
+            <li>http://support:81/svn/SvnRepos</li>
+            <li>https://appserver01:8443/svn/SvnTest/</li>
+            <li>https://appserver01:8443/svn/repo18<ul><li>appserver01 is a 1.8 server</li><li>test1, R3m3mb3r!</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Subversion Cloud</h4>
+        <ul>
+            <li>User Name: madcapsoftware\MadCap</li>
+            <li>Password: R3m3mb3r!</li>
+            <li>https://madcapsoftware.svn.cloudforge.com/flaretest</li>
+        </ul>
+        <h4>Perforce</h4>
+        <ul>
+            <li>
+                <p>username: test1, test2</p>
+            </li>
+            <li>password: R3m3mb3r! </li>
+            <li>http://cent64perforce:1666</li>
+        </ul>
+        <h4>GIT</h4>
+        <ul>
+            <li>
+                <p>http://gitlabomnibus/</p>
+            </li>
+            <li>
+                <p>UN: root</p>
+            </li>
+            <li>
+                <p>PW: R3m3mb3r!</p>
+            </li>
+        </ul>
+        <h3>Sharepoint Server location</h3>
+        <ul>
+            <li>Use your domain credentials access server below with read/write privilege.</li>
+            <li>username: madcap\test2 password: R3m3mb3r! -- <i>This is read-only account.</i> <![CDATA[ ]]></li>
+            <li>username: madcap\qatest password: R3m3mb3r! -- <i>This account doesn't have access rights any of the servers.</i></li>
+            <li>http://win2k8share07/<ul><li><i>(formarly http://appserver01:8080)</i></li></ul></li>
+            <li>http://win2k8share10/</li>
+            <li>http://win2k8share13/ <ul><li>(This is a 2013 server)</li></ul></li>
+        </ul>
+        <h4>Claims based Sharepoint server</h4>
+        <p>Regular NTLM&#160;Sharepoint</p>
+        <ul>
+            <li>http://msclaims</li>
+        </ul>
+        <p>Claims based authentication</p>
+        <ul>
+            <li>http://msclaims:8081</li>
+        </ul>
+        <p>Sharepoint Central Administration</p>
+        <ul>
+            <li>http://msclaims:48533</li>
+        </ul>
+        <p>Users:</p>
+        <ul>
+            <li>claims1; claims2; claims3</li>
+            <li>PW: R3m3mb3r!</li>
+        </ul>
+        <p>SQL&#160;User</p>
+        <ul>
+            <li>SA</li>
+            <li>R3m3m3b3r!</li>
+        </ul>
+        <h3>Linux Box</h3>
+        <p>To uplaod:</p>
+        <ul>
+            <li>\\linuxbox\www\<ul><li>User: madcap</li><li>PW: R3m3mb3r!</li></ul></li>
+        </ul>
+        <p>To view</p>
+        <ul>
+            <li>http://linuxbox/&lt;name&gt;/</li>
+        </ul>
+        <h4>Linux box Proxy info</h4>
+        <ul>
+            <li>linuxbox</li>
+            <li>Port: 3128</li>
+            <li>User: madcap</li>
+            <li>PW: R3m3mb3r!</li>
+        </ul>
+        <p>(In IE, go to !Tools |&#160;Options |&#160;Connections |&#160;LAN&#160;Settings)</p>
+        <p>&#160;</p>
+        <h3>HTTP/HTTPS Box</h3>
+        <p>Place content here</p>
+        <ul>
+            <li>\\webtest2k3\webroot\&lt;your name&gt;\</li>
+        </ul>
+        <p>View content here</p>
+        <ul>
+            <li>http://webtest2k3/</li>
+            <li>https://webtest2k3/<br /></li>
+        </ul>
+        <h3>Version Control Connection How-To</h3>
+        <h4>Microsoft Visual&#160;SourceSafe</h4>
+        <ol>
+            <li>Install VSS from \\dc2\software\Microsoft\Visual Source Safe 2005\</li>
+            <li>In Flare, browse to \\winesap\VSS_QA\ or \\winesap\\VSS_QA_Multi\ and select the srcsafe.ini</li>
+            <li>If you have authentication errors ask Jay or Rob to add you to each server. (Done via the VSS admin tool. No PW needed)</li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Microsoft Team Foundation Server</h4>
+        <ol>
+            <li>No local installation needed. Optional: Team Explorer if you wish to view mappings and workspaces.</li>
+            <li>In Flare, browse to http://support:8080/tfs/DefaultCollection</li>
+            <li>Login is your Madcap user/pw</li>
+        </ol>
+        <p>&#160;</p>
+        <h5>For permission testing on <span class="bold">http:\\tfs10b:8080\tfs</span></h5>
+        <ul>
+            <li>tfs10b\User1:<ul><li>Use Full web access Features –  Allow:checked, Deny:unchecked</li><li>View instance-level information – Allow:checked, Deny:unchecked</li><li>View instance-level permissions from application level</li><li>No edit-instance level permissions</li></ul></li>
+            <li>tfs10b\User2 :<ul><li>Everything unchecked - no permissions</li></ul></li>
+            <li>tfs10b\User4 :<ul><li>No edit-instance level permissions</li><li>Use Full web access Features –  Allow:checked, Deny:unchecked</li><li>View instance-level information – Allow:checked, Deny:unchecked</li><li>No edit-instance level permissions</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>To test permissions</b>
+            <MadCap:expanding>
+                <MadCap:expandingHead style="font-weight: bold; color: #000000;">bug 52461</MadCap:expandingHead>
+                <MadCap:expandingBody>fixed  error message that occurred for Flare 9.1.1 and earlier-"needs the following permission(s) to perform this action: Edit instance-level information"</MadCap:expandingBody>
+            </MadCap:expanding> <![CDATA[ ]]></p>
+        <ol>
+            <li>Go to !Project | Project Properties | Source Control tab and select "<b>Microsoft Team Foundation Server</b>"</li>
+            <li>Click "<b>Browse</b>" next to the Server dropdown</li>
+            <li>
+                <p>Click the green "<span style="color: #32cd32; font-weight: normal; font-size: 20pt;">+</span>" sign to add a server and enter "<i>tfs10b</i>". Click <b>OK</b>.</p>
+                <p>
+                    <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions1.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;" />
+                </p>
+            </li>
+            <li>
+                <p>When prompted for credentials enter either user 4 or user 2.</p>
+                <p>
+                    <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions2.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;">
+                    </img>
+                </p>
+                <ul>
+                    <li>
+                        <p><b>tfs10b\user4 has view collection-level permissions</b> - and there should be no error and the "<i>DefaultCollection</i>" should be displayed under available Team Project Collections.  User 4 does not have edit instance-level information.</p>
+                        <p>
+                            <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions3.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;">
+                            </img>
+                        </p>
+                    </li>
+                    <li>
+                        <p><b>tfs10b\user2 has no view collection-level permissions</b> - and should provide message that "View collection-level information" is needed</p>
+                        <p>
+                            <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions4.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;">
+                            </img>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p class="note">Note: The regular Windows login for the support:8080 server has edit instance-level permissions which should no longer be required to view the collections within Flare.</p>
+        <h4>Subversion</h4>
+        <p class="note">Note: This applies only to Flare 7 and later, due to our own built in integration</p>
+        <p>For HTTP  connection, no local install needed.</p>
+        <ol>
+            <li>In&#160;Flare, browse to http://support:81/svn/SvnRepos</li>
+            <li>Login is your Madcap user/pw</li>
+        </ol>
+        <p>&#160;</p>
+        <p>For HTTPS connection, no local install needed.</p>
+        <ol>
+            <li>In Flare, browse to https://appserver:8443/svn/SvnTest/</li>
+            <li>Login has to be setup on the machine. Ask Jay for access. (test 1 / test1 is a generic user, feel free to use)</li>
+        </ol>
+        <p>&#160;</p>
+        <p>For SVN&#160;protocol, no local install needed</p>
+        <ol>
+            <li>In Flare, browse to svn://support:3690/</li>
+            <li>Login has to be setup on the machine. Ask Jay or Rick for access. (test1 / test1 is a generic user, feel free to use)</li>
+        </ol>
+        <p>&#160;</p>
+        <p>For 6.1 and earlier, you need the PUSHOK plug-in. Steps for that to come later.</p>
+        <p>&#160;</p>
+        <h4>Perforce</h4>
+        <p class="note">Note: Perforce integration was added to Flare 10</p>
+        <p>No Local install needed. In Flare:</p>
+        <ol>
+            <li>Type the server <i>cent64perforce:1666</i></li>
+            <li>Browse and select user test1 or test2</li>
+            <li>Click New for Steam to create new steam for your project - A login dialog should appear with the Username already populated</li>
+            <li>Enter R3m3mb3r! as the password and press OK</li>
+            <li>Browse and select any depot available where your stream will be created</li>
+        </ol>
+        <p>&#160;</p>
+        <p>To test SSL&#160;enabled Perforce (added in Flare 10.2 for bug <a href="https://s3.madcapsoftware.com:4343/tfs/SourceCollection/SOURCE/QA Team/_workItems#_a=edit&amp;id=90427">90427</a>), you will have to install p4vinst64 Client (P4V+P4D).exe from <a href="file://fs1/Software/Perforce">\\fs1\Software\Perforce</a> <![CDATA[ ]]></p>
+        <ol>
+            <li>
+                <p>Open p4admin.exe</p>
+            </li>
+            <li>
+                <p>In the toolbar, click Connections &gt; !Open Connections</p>
+            </li>
+            <li>
+                <p>server: <i>ssl:cent64perforce:1667</i> user: you can use test1/R3m3mb3r! &gt; ok</p>
+            </li>
+            <li>
+                <p>You'll see the message below, Select "Trust this fingerprint" &gt; !Connect</p>
+                <p>
+                    <img src="../../Images/TestPlans/Flare/Source Control/Source Control--SSLPerforceEstablishConnection.png" />
+                    <br />
+                </p>
+            </li>
+            <li>
+                <p>Enter your password &gt; Ok&#160;&gt;&#160;Now you can follow the steps above using the SSL&#160;server</p>
+            </li>
+        </ol>
+        <p class="note">Note: Since we use the trial version of Perforce at MadCap, we are limited in the number of workspaces and projects on the server. As you test, you'll need to clear these out using P4V and P4Admin which are available from <a href="file://fs1/Software/Perforce">\\fs1\Software\Perforce</a></p>
+        <p>To delete workspaces:</p>
+        <ol>
+            <li>Open P4V and login as an administrator (ex:&#160;rbutros/R3m3mb3r!)</li>
+            <li>!View |&#160;Workspaces</li>
+            <li>If there is a filter applied, remove it &gt;&#160;You should now see a list of all workspaces created.</li>
+            <li>R-click a workspace &gt; Delete workspace '[name]' &gt;&#160;Yes</li>
+        </ol>
+        <p>&#160;</p>
+        <p>To delete projects</p>
+        <ol>
+            <li>Open P4Admin and login as an administrator (ex:&#160;rbutros/R3m3mb3r!)</li>
+            <li>!View |&#160;Depots</li>
+            <li>Under the stream "reob" R-click the project you want to delete&#160;&gt;&#160;!Obliterate....</li>
+            <li>In the dialog,Obliterate all versions should be selected by default, click Obliterate</li>
+            <li>You will be warned that this deletes your project from the server, Select "Proceed with obliterating files"&#160;&gt; Ok &gt;&#160;Ok</li>
+        </ol>
+    </body>
+</html>

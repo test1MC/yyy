@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7652" MadCap:lastWidth="752" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileImport or FlareFileTypes.FlareImportFile] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Import Flare - Editor</h2>
+        <h3>Opening a Flare Project Import File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Project&#160;Import Editor - UI&#160;Test Cases Part I</h3>
+        <h4>Project Import Editor:&#160;Local Toolbar</h4>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Import/Reimport... :&#160;</span>Imports or re-imports the  files designated in the Flare Project Import file.</li>
+        </ul>
+        <h4>Project&#160;Import Editor:&#160;Source Project tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ProjectImportEditor--SourceProjectTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Source Project: </span>Lets you set the path of the Flare project from which you want to import files.</li>
+            <li><span class="bold">Auto-reimport before "Generate Output":&#160;</span>Also called "Easy Sync," this option will tell Flare to automatically re-import Flare project files associated with this import file when you attempt to build output.</li>
+            <li><span class="bold">Delete Stale Files:&#160;</span>This feature will delete stale files when you re-import either manually or automatically when you generate output (if you have selected Auto-reimport before generate output in the Project Import Editor).<br /></li>
+            <li><span class="bold">Browse… :&#160;</span>Invokes an Open dialog which lets you browse for a Flare (*.flprj)&#160;or Blaze (*.blprj) project file.</li>
+            <li><span class="bold">Open:&#160;</span>Opens the Flare or Blaze project set in the Source Project field in a new instance of Flare.</li>
+            <li><span class="bold">Include Files: </span>A semi-colon delimited filter which allows you to limit the imported files to a particular set of files based on filename or extension. Use the asterisk for Wildcards. Example:&#160;If you enter "<span class="italic">*TestCases*;*.htm;*.html;</span>" in this field, the Flare Project Import file will only import Topic Files that contain "TestCases" in their filename. You can enter the filter rule directly by typing in this field or click Edit… to use the <span class="UI">Import File Filter</span> dialog.</li>
+            <li><span class="bold">Auto-include linked files: </span>Select this option to automatically import all files to which the imported files link, even if they are not specifically included in the Include Files field. These might include any linked resource files (images, snippets, etc) or linked topics that may have been filtered out by the Include Files field or by Conditions (see below).</li>
+            <li><span class="bold">Edit… :&#160;</span>Invokes the <span class="UI">Import File Filter</span> dialog which assists in defining the Include Files filter set..</li>
+            <li><span class="bold">Exclude Files: </span>A semi-colon delimited filter which allows you to exclude certain files from being imported based on filename or extension. Use the asterisk for Wildcards. Example:&#160;If you entered "*.htm; *.html;" in the Include Files filter, and then enter "<span class="italic">*TestCases*;</span>" in this field, the Flare Project Import file will only import Topic Files but exclude those that contain "TestCases" in their filename. You can enter the filter rule directly by typing in this field or click Edit… to use the <span class="UI">Import File Filter</span> dialog..</li>
+            <li><span class="bold">Edit… :&#160;</span>Invokes the <span class="UI">Import File Filter</span> dialog which assists in defining the Exclude Files filter set...</li>
+            <li><span class="bold">Import Conditions:&#160;</span>This filter lets you use the Condition Tags applied to the Flare Project files to determine which files should be imported. The condition logic used here is essentially the same as the logic used when building output.</li>
+            <li><span class="bold">Auto-Exclude Non-Tagged Files: </span>Use this option to exclude from import any files that do not contain any condition tags.</li>
+            <li><span class="bold">Edit… : </span>Invokes the <span class="UI">Import Conditions</span> dialog which displays all condition tags in the linked project and lets you select which tags should be included or excluded in the import.</li>
+        </ul>
+        <h5>Import File Filter - UI Test Cases</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/UI--ImportFileFilter.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Select patterns grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File Type:&#160;</span>Displays the file types to be included in the filter.</li>
+                    <li><span class="bold">Pattern: </span>Displays the actual string (the "pattern") that is used by the filter to determine if a file should be included in the filter. In most cases, this will be a file extension, however it could also be any string that might be used in a filename.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Add:&#160;</span>Invokes the <span class="UI">Import File Filter Designer</span> dialog which lets you add a pattern to the file filter</li>
+            <li><span class="bold">Remove:&#160;</span>Removes the selected pattern from the file filter.</li>
+        </ul>
+        <h5>Import File Filter Designer - UI Test Cases</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/UI--ImportFileFilterDesigner.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Select patterns grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File Type:&#160;</span>Displays all Flare project file types that can be included in the filter. Verify all Flare project file types are listed here, particularly any new ones.</li>
+                    <li><span class="bold">Pattern: </span>Displays the actual string (the "pattern") that is used by the filter to determine if a file should be included in the filter. </li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Pattern:&#160;</span>Displays the pattern that you want to add to the file filter. Selecting any row in the grid will populate this field with the pattern. You may also type directly into this field, particularly if you want to use a text filter for filenames.</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog, returns you to the <span class="UI">Import File Filter</span> dialog and adds the selected file to the filter.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog, returns you to the <span class="UI">Import File Filter</span> dialog and does not add the selected file to the filter.</li>
+        </ul>
+        <h5>Import Conditions - UI Test Cases</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/UI--ImportConditions.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Import Conditions grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Tags:&#160;</span>Displays all condition tags that exist in the linked Flare project.</li>
+                    <li><span class="bold">Include: </span>Select the checkbox for the condition tags you want to include in the import. By default, all tagged content is included in the import. However, you can also use this Include option to include files that are also tagged with an excluded tag.</li>
+                    <li><span class="bold">Exclude:&#160;</span>Select the checkbox for the condition tags you want to exclude from the import.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>Opens the selected Condition Tag Set from the linked project in the MDI&#160;of the current project. (There is a bug, 28652, to have this button removed in this context)</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog, and applies your selected Include/Exclude expressions to the Flare Project Import file.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog, and does not apply changes made to the Include/Exclude expressions to the Flare Project Import file.</li>
+        </ul>
+        <h3>Importing the Files</h3>
+        <p>Once the Project link, file filters and import conditions are established, click <span class="bold">Import… </span>in the local toolbar to import the files from the other Flare project. Before files are actually copied to the project, you will be presented a list of all files that will be imported and have an opportunity to deselect them using the <span class="UI">Accept Imported Documents</span> dialog.</p>
+        <h4>Accept Imported Documents - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/UI--AcceptImportedDocuments.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Imported Documents grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Import:&#160;</span>A check mark in this column indicates that the file will be imported. Deselect any items that you do not want to import. In the event that a local copy of that file already exists with the same filename, by default this box should not be checked. Select any unchecked items if you want to go ahead and import, overwriting the local copy.</li>
+                    <li><span class="bold">File:&#160;</span>Displays the file that is to be copied to the project.</li>
+                    <li><span class="bold">Folder: </span>Displays the folder in the current project where the imported files will be copied.</li>
+                    <li><span class="bold">Status: </span>May display a message indicating why the file might not need to be imported. For example, you might see "File exists"&#160;or "Local is newer"&#160;in this field. Im most cases, this filed will be empty.</li>
+                    <li><span class="bold">Type: </span>Displays the actual string (the "pattern") that is used by the filter to determine if a file should be included in the filter. </li>
+                    <li><span class="bold">Source Folder: </span>Displays the folder in the linked project where the imported files originate.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Preview:&#160;</span>Displays a preview of the selected file (if available). Some file types may not preview. Import all file types and verify that those that should preview do preview correctly.</li>
+            <li><span class="bold">Select All:&#160;</span>Selects all files (places a checkmark in the Import box for all files).</li>
+            <li><span class="bold">Clear All:&#160;</span>Deselects all files (removes the checkmark for all files).</li>
+            <li><span class="bold">Accept:&#160;</span>Proceeds to import the selected files into the existing project.</li>
+            <li><span class="bold">Cancel:&#160;</span>Cancels out of the import wizard.</li>
+        </ul>
+        <h3>Editing Imported Documents</h3>
+        <p>Once you click <span class="bold">Accept</span>, the files are copied in to the Flare project. Files imported into the Flare project through the Flare Project Import file are linked to the original file. This is indicated in the <span class="UI">Content Explorer</span> and <span class="UI">Project Organizer</span> with a small link icon:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ContentExplorer--LinkedDocument.png" alt="" title="" />
+        </p>
+        <p>&#160;</p>
+        <p>In general, when files are imported via a Flare Project Import file, the idea is that the document will only be edited in the original project and changes will be regularly imported. For that reason, if you attempt to edit a linked file (any file that displays "linked" icon), you should see the <span class="UI">Linked Document</span> dialog</p>
+        <h4>Linked Document - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/UI--LinkedDocument.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Link: </span>Displays the path of the original document in the original Flare project</li>
+            <li><span class="bold">Continue with operation: </span>Proceeds to apply the change locally but does not remove the link to the original document. This option may result in changes being overwritten the next time a Re-Import occurs.</li>
+            <li><span class="bold">Remove the link and continue the operation: </span>Proceeds to apply the change locally and removes the link to the original document. Selecting this option will also add this file to the <span class="bold">Removed Links</span> list in the <span class="UI">Project Import Editor</span>.</li>
+            <li><span class="bold">Remove the link and cancel the operation: </span>Does not apply any changes but removes the link to the original document. Selecting this option will also add this file to the <span class="bold">Removed Links</span> list in the <span class="UI">Project Import Editor</span>.</li>
+        </ul>
+        <h3>Project&#160;Import Editor - UI&#160;Test Cases Part II</h3>
+        <p>Once files are imported and you've edited one or more to remove their links, you can proceed to testing the remaining tabs in the <span class="UI">Project Import Editor</span>.</p>
+        <h4>Project&#160;Import Editor:&#160;Imported Files tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ProjectImportEditor--ImportedFilesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Imported&#160;Files grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Imported File:&#160;</span>Displays each project file created from the Flare&#160;Project Import.</li>
+                    <li><span class="bold">Folder: </span>Displays the location of the imported file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Open:&#160;</span>Opens the selected files</li>
+        </ul>
+        <h4>Project&#160;Import Editor:&#160;Removed Links tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ProjectImportEditor--RemovedLinksTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Imported&#160;Files grid:</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File:&#160;</span>Displays any project file created from the Flare&#160;Project Import that have had their link removed.</li>
+                    <li><span class="bold">Folder: </span>Displays the location of the file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Restore Link:&#160;</span>Restores the link between the file in the project and the Flare Project Import file.</li>
+            <li><span class="bold">Open:&#160;</span>Opens the selected files</li>
+        </ul>
+    </body>
+</html>

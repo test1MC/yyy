@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2606" MadCap:lastWidth="1037" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h1>Attributes Window - UI</h1>
+        <h2>Opening the UI</h2>
+        <ul class="checkbox">
+            <li>Press <span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">F12</span> on your keyboard</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View | Attributes Window</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Home |&#160;Attributes Window</span></li>
+        </ul>
+        <h3>Attributes Window - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/AttributesPane.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <h4>Attributes Pane Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/AttributesPane--LocalToolbar.png" />
+        </p>
+        <p class="bold">Toolbar Items (Tooltips in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold">[Tag]</span>:  Displays the tag (e.g., h1, p, td) that is applied to the content where the cursor is currently placed.  The changes that you make in the Attributes window will be applied to that tagged content in that topic.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Button---ShowAllAttributes.png" alt="" title="" /> (Show all attributes): </span>Displays all of the attributes in the window.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Button---ShowSchemaDefinedAttributes.png" alt="" title="" /> (Show schema-defined attributes):</span> Displays only the attributes provided by Flare. Your custom attributes are not displayed. </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Button---ShowCustomAttributes.png" alt="" title="" /> (Show custom attributes):&#160;</span>Displays only the custom attributes that you create. Attributes provided by Flare are not displayed.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Button---AddNewCustomAttribute.png" alt="" title="" /> (Add a new custom attribute): </span>Opens the <span class="UI">Enter Custom Attribute</span> dialog, which lets you create a new attribute and provide a value for it.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Button---SelectParentNode.png" alt="" title="" /> (Select parent node):</span> Selects the content of the parent tag each time you click this button.</li>
+        </ul>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Attribute:</span> The left column in the window displays the attributes applicable to the tag where your cursor is placed.</li>
+            <li><span class="bold">Value:</span> Use the right column in the window to set the value for the attribute in the left column.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul>
+                <li>Click in different tags and make sure the [Tag] section updates correctly.</li>
+                <li>Verify all attributes can be set.<ul><li>Make sure all attributes are written to the code by vieweing the topic that you set attributes on the internal text editor.</li><li>Verify the attributes are correct in every output (See Google for what these attributes do).</li></ul></li>
+                <li>Verify custom attributes are supported and appear in output.<ul><li>Make sure all attributes are written to the code by vieweing the topic that you set attributes on the internal text editor.</li></ul></li>
+            </ul>
+        </div>
+        <h3>Enter Custom Attribute Dialog</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Attributes/Dialog--EnterCustomAttribute.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Enter a name for the custom attribute.</li>
+            <li><span class="bold">Value: </span>Enter the value for the attribute.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>Add a custom attribute (any values are fine). Make sure topic dirties and the attribute is written to the code. (this is currently broken bug # 45191)</li>
+                <li>Verify alternate characters like !@#$^&amp;%*(&amp;( all work and some German and Japanese characters.</li>
+            </ul>
+        </div>
+        <p class="bold">Controls:</p>
+        <p><span class="bold">Name:</span> Tag name ie. bob</p>
+        <p><span class="bold">Value:</span> Assigned value ie. foo</p>
+        <div style="margin-left: 30px;">
+            <p>View source on topic and the custom attribute is added to the appropriate tag.</p>
+            <p>&lt;h1 bob="foo"&gt;Topic Title&lt;/h1&gt;</p>
+            <p>&lt;p bob="foo"&gt;Delete this text and replace it with your own content.&lt;/p&gt;</p>
+            <p>Attribute and value should be displayed when "Show All Attributes" and "Show Custom attributes" buttons are selected.</p>
+        </div>
+        <ul>
+            <li>
+                <p class="bold">Test Cases</p>
+                <p>Verify imported or converted files retain attributes</p>
+                <p>Verify all attributes can be set and all outputs reflect settings</p>
+                <p>Verify custom attributes are supported and appear in output.</p>
+            </li>
+        </ul>
+        <hr />
+        <p><span class="bold">Common attributes:</span> can be used in most HTML tags. They comprise of Core attributes, I18n (internationalization) attributes and Event attributes.</p>
+        <p class="bold" style="font-weight: normal;"><span class="bold">References:</span> HTML &amp; XHTML Pocket Reference- O’Reilly. Patrick Griffiths- http://www.htmldog.com/reference/htmltags/commonattributes/</p>
+        <p class="bold">Core Attributes:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">class:</span>	Used to reference elements with CSS. Any number of elements can have the same value (unlike id)</li>
+            <li><span class="bold">id:</span>	Identifies a unique element. The value of id can be used by CSS to reference that element. It can also be used by scripting languages to reference the element. Links can be made directly to an element with a specific id. The value of the id attribute must be unique.</li>
+            <li><span class="bold">style:</span>	Applies style to an element. The value should be CSS code: style="background-color: blue; color: yellow;"</li>
+            <li>Note: The style attribute is deprecated in the latest version of HTML and embedded or external CSS should be used instead.</li>
+            <li><span class="bold">title:</span>	Adds a title to an element. Many browsers will display the value of this attribute when the element is hovered-over or is in focus.</li>
+        </ul>
+        <p class="bold">Internationalization (I18n):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">dir:</span>	Specifies the direction of content. Values can be ltr (left to right) or rtl (right to left).</li>
+            <li><span class="bold">lang:</span>	Specifies the language of an element. Values can be abbreviations such as en (English), fr (French) or de (German).</li>
+        </ul>
+        <p class="bold">Events:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">onclick:</span>	The JavaScript of the value is executed when a pointing-device is used to 'click' on the element.</li>
+            <li><span class="bold">ondblclick:</span>	The JavaScript of the value is executed when a pointing-device is used to 'double-click' on the element.</li>
+            <li><span class="bold">onmousedown:</span> The JavaScript of the value is executed when the button on a pointing-device is pressed down while the cursor is over the element.</li>
+            <li><span class="bold">onmouseup:</span> The JavaScript of the value is executed when the button on a pointing-device is released while the cursor is over the element.</li>
+            <li><span class="bold">onmouseover:</span>	The JavaScript of the value is executed when the cursor is moved onto an element.</li>
+            <li><span class="bold">onmousemove:</span>	The JavaScript of the value is executed when the cursor is moved over an element.</li>
+            <li><span class="bold">onmouseout:</span>	The JavaScript of the value is executed when the cursor is moved off an element.</li>
+            <li><span class="bold">onkeypress:</span>	The JavaScript of the value is executed when an element is in focus and a key on the keyboard is pressed down and released.</li>
+            <li><span class="bold">onkeydown:</span>	The JavaScript of the value is executed when an element is in focus and a key on the keyboard is pressed down.</li>
+            <li><span class="bold">onkeyup:</span>	The JavaScript of the value is executed when an element is in focus and a key on the keyboard is released.</li>
+        </ul>
+        <p class="note">Note: these are not the only event attributes; there are other event attributes more specific to certain tags that are not classed as 'common attributes'.</p>
+        <h3>Additional Tags and Attributes</h3>
+        <p>Randomly insert some tags into a topic that have more than just the common attributes and verify that the attributes are there and available.</p>
+        <p><a href="Attributes Window- Additional Attributes.htm">Attributes Window- Additional Attributes.htm</a>
+        </p>
+        <p>&#160;</p>
+        <hr class="HRColor" />
+    </body>
+</html>

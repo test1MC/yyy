@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1976" MadCap:lastWidth="833" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Index and Concept Entry Mode - UI</h2>
+        <h3>Enabling Index or Concept Entry Mode</h3>
+        <p class="bold">To enable Index Entry Mode:</p>
+        <ul class="checkbox">
+            <li>Click the Index Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---IndexEntryMode.png" /> in the <span class="UI">XML&#160;Editor</span>'s local toolbar</li>
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Tools | Index |&#160;Index Entry Mode</span></li>
+        </ul>
+        <p>In Index Entry Mode, the cursor will display as <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Cursor--IndexEntryMode.png" /></p>
+        <p>&#160;</p>
+        <p class="bold">To enable Concept Entry Mode:</p>
+        <ul class="checkbox">
+            <li>Click the Concept Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ConceptEntryMode.png" /> in the <span class="UI">XML&#160;Editor</span>'s local toolbar</li>
+            <li>Toolstrip interface: <span class="MenuItem">!Tools |&#160;Concepts |&#160;Concept Entry Mode</span></li>
+        </ul>
+        <p>In Concept Entry Mode, the cursor will display as <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/Cursor--ConceptEntryMode.png" /></p>
+        <h3>Disabling Index and Concept Entry Mode</h3>
+        <p class="bold">To disable Index Entry Mode:</p>
+        <ul class="checkbox">
+            <li>Right-click anywhere in the <span class="UI">XML Editor</span> to reveal a shortcut to toggle Index Entry Mode off:&#160;<img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexEntryMode--Toggle.png" /></li>
+            <li>Click the Index Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---IndexEntryMode.png" /> again in the <span class="UI">XML&#160;Editor</span>'s local toolbar</li>
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Tools | Index |&#160;Index Entry Mode</span> to toggle it off</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">To disable Concept Entry Mode:</p>
+        <ul class="checkbox">
+            <li>Right-click anywhere in the <span class="UI">XML Editor</span> to reveal a shortcut to toggle Concept Entry Mode off:&#160;<img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/ConceptEntryMode--Toggle.png" /></li>
+            <li>Click the Concept Entry Mode button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ConceptEntryMode.png" /> again in the <span class="UI">XML&#160;Editor</span>'s local toolbar</li>
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Tools | Concepts |&#160;Concept Entry Mode</span> to toggle it off</li>
+        </ul>
+        <h3>Mode Warning dialog</h3>
+        <h4>Opening the dialog</h4>
+        <p>Close Flare when Flare is in Index  or Concept Entry Mode. When you re-open Flare, the <span class="UI">Mode Warning</span> dialog should display. If it does not, go to <span class="RibbonItem">!File |&#160;Options</span> (<span class="MenuItem">!Tools |&#160;Option</span> in Toolstrip interface) and reset the <span class="UI">Mode Warning</span> dialog option in the Index &amp;&#160;Concepts tab. See <MadCap:xref href="#Restorin" class="TitleOnly">Restoring the dialog</MadCap:xref> below.</p>
+        <h4>Mode Warning dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/UI--ModeWarning.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Action) Continue in mode:&#160;</span>Upon clicking OK, Flare will continue to be in Index or Concept Entry Mode.</li>
+            <li><span class="bold">(Action) Switch to normal selection mode: </span>Upon clicking OK, Flare will switch from Index or Concept Entry Mode to a normal selection mode.</li>
+            <li><span class="bold">(Options) Check mode and display this dialog when first topic opened: </span>If this option is selected, whenever Flare is opened with the editor in Index Keyword or Concept Entry Mode, the <span class="UI">Mode Warning</span> dialog will appear.</li>
+            <li><span class="bold">(Options)&#160;Auto-switch to normal selection mode on launch: </span>If this option is selected, and Flare is opened with the editor in Index Keyword or Concept Entry Mode, Flare will automatically switch to normal selection mode. The <span class="UI">Mode Warning</span> dialog will not open.</li>
+            <li><span class="bold">(Options) Continue in mode:&#160;</span>If this option is selected, and Flare is opened with the editor in Index Keyword or Concept Entry Mode, Flare will do nothing. The <span class="UI">Mode Warning</span> dialog will not open and Flare will continue to be in the entry mode it was last in.</li>
+        </ul>
+        <h4><a name="Restorin"></a>Restoring the dialog</h4>
+        <p>If you have selected either the "Auto-switch to normal selection…"&#160;or&#160;"Continue in mode"&#160;options, you will have created a situation where Flare will never produce the <span class="UI">Mode Warning</span> dialog because you have set a permanent action. This option can be reset in the <span class="UI">Options</span> dialog available by going <span class="RibbonItem">!File |&#160;Options</span> (<span class="MenuItem">!Tools |&#160;Options</span> in the Toolstrip interface).</p>
+        <p>In the Index &amp;&#160;Concepts tab, you will find UI&#160;similar to the <span class="UI">Mode Warning</span> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--Index&amp;ConceptsTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p class="bold">Relevant Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Check mode and display this dialog when first topic opened: </span>If this option is selected, whenever Flare is opened with the editor in Index Keyword or Concept Entry Mode, the <span class="UI">Mode Warning</span> dialog will appear.</li>
+            <li><span class="bold">Auto-switch to normal selection mode on launch: </span>If this option is selected, and Flare is opened with the editor in Index Keyword or Concept Entry Mode, Flare will automatically switch to normal selection mode. The <span class="UI">Mode Warning</span> dialog will not open.</li>
+            <li><span class="bold">Continue in mode:&#160;</span>If this option is selected, and Flare is opened with the editor in Index Keyword or Concept Entry Mode, Flare will do nothing. The <span class="UI">Mode Warning</span> dialog will not open and Flare will continue to be in the entry mode it was last in.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Test Cases</h3>
+        <p>Verify all Actions and Options work for both Concept Entry Mode and Index Entry Mode.</p>
+    </body>
+</html>

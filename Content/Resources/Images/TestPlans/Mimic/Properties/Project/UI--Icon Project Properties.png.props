@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage EnableCropRectangle="true" CropRectangle="3,2,22,23" ComputedWidth="22" ComputedHeight="23" Format="png">iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAIAAAACtmMCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIpSURBVEhLY/hALviIAzCQa+AHnCb+oTZgoLaBfxh+UxvQ3UTL9c8Dd71R7NsPRDI1q4nxD8Mv3MBi3bOgTbft552Qiq0HIrn4JinPFDzqIVL4THTc/Eq5cgnQLIhSYYcoMZsQ2ZZNGhMPKs24gMto7CYCzdJZdEtzylHTGYfcVl+N2HZv0dWH628/Pf/qJZA89vTJ1rsPxTInYDWU4ScGAHrWde3N1Tde3Hr/6fCTd0AGENUcvpu1+07c1utRW25AkEhmH6ZeoAh2EyXyZ+hPP+K++hocAd0FRF0n78JFgBFFgol6U4+JZ022WXgegmwXXdj7+NmN98+BLlXp2wcJSoHQUuwm/sAAQF8DHQg0UWfyUa2JR4BugSCgWUCDgMGatuN68o4rfOGVmHqBIgxYTZTv3inTsFaydAHQXJNZpxyWXnJdedVr3Y3wTTeStl3P3nU9ZzeJJir373Jbdc1oxkmLeWchxvmuA8VGAti4iv3XQCZG1mJ343cMAPS1TPtGoCnIxgFdBzcObiKmXqAIwzcMADHRaflluOvQjAOamLH7MtCNmHqBIjhNxDSuaO/V2G2X9WcdkiifJRTfKFK3AbuJXzEAxI1WC85Dwg5iimTlAqHkFqC7hMuXi3Ud0lpwA1MjRIQBq4RoCyiugeZCTBHKmw00RXX2ZWBRhMsguDjDFxzAdPVj2cmngaYA8zjQIFzKMMUZPlMb0MDET9QGDLiqXbLFqW8iAJ69VfwLYuRYAAAAAElFTkSuQmCC</OriginalImage>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <Variables />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

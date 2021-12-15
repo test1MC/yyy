@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[InsertHyperlinkUI.ImageMapArea] exclude[Default.UITestsEditors or InsertHyperlinkUI.CrossReference or InsertHyperlinkUI.Hyperlink or InsertHyperlinkUI.TopicPopup] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve" MadCap:lastBlockDepth="10" MadCap:lastHeight="8071" MadCap:lastWidth="942">
+    <head />
+    <body>
+        <h2>Image Maps - Editing</h2>
+        <h3>Opening the dialog</h3>
+        <p>The <span class="UI">Image Map Editor</span> can only be opened from the &lt;img&gt;&#160;context menu. You will need to first open a Flare topic which contains an image.</p>
+        <ul class="checkbox">
+            <li>Right-click an image and select <span class="MenuItem">Image Map...</span> from the context menu</li>
+            <li>Right-click an img block or span bar and select <span class="MenuItem">Image Map...</span> from the context menu</li>
+        </ul>
+        <h3>Image Map Editor - UI Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Dialog--ImageMapEditor.png" class="properties" />
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapEditor--StandardToolbar.png" alt="" title="" />
+        </p>
+        <p class="bold">Toolbar items (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--FadeOutImage.png" alt="" title="" /> <span class="bold">(Fade Out Image): </span>Turn on to fade out the background image in the <span class="UI">Image Map Editor</span>. Off by default.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--ShowShapes.png" alt="" title="" /> <span class="bold">(Show shapes):&#160;</span>Turn on/off to display/hide objects added to the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--FillShapes.png" alt="" title="" /> <span class="bold">(Fill shapes):&#160;</span>Turn on/off to fill in objects added to the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" alt="" title="" /><span class="bold">(Run properties dialog for this item):&#160;</span>Invokes the <span class="UI">Area Properties</span> dialog for the selected object.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--DeletePoint.png" alt="" title="" /> <span class="bold">(Delete point):&#160;</span>Deletes the selected point from a polygon object.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--SelectMode.png" alt="" title="" /> <span class="bold">(Select Mode): </span>The default mode; allows you to select an object in the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--NewPolygonMode.png" alt="" title="" /> <span class="bold">(New Polygon Mode):&#160;</span>Allows you to draw a polygon object on the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--NewRectangleMode.png" alt="" title="" /> <span class="bold">(New Rectangle Mode):&#160;</span>Allows you to draw a rectangle object on the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--NewCircleMode.png" alt="" title="" /> <span class="bold">(New Circle Mode):&#160;</span>Allows you to draw a circle object on the image map.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--Float.png" alt="" title="" /> <span class="bold">(Float):&#160;</span>Floats the selected objects up one level.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--FloatToTop.png" alt="" title="" /> <span class="bold">(FloatToTop): </span>Floats the selected objects to the top level.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--Sink.png" alt="" title="" /> <span class="bold">(Sink):&#160;</span>Sinks the selected objects down one level.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--SinkToBottom.png" alt="" title="" /> <span class="bold">(SinkToBottom): </span>Sinks the selected objects to the bottom level.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Button--ConditionsButton.png" /><b>(Set conditional text tags):</b> Allows for conditions to be set on an image map.</li>
+        </ul>
+        <h4>Link Properties</h4>
+        <ul class="checkbox">
+            <li><span class="bold">Link: </span>Displays the hyperlink set in the <span class="UI">Area Properties</span> dialog for the object.</li>
+            <p>Note:&#160;"Href" requires entering "http://"&#160;at the beginning if linking to an external website. Typing or double clicking this field will open the <span class="UI">Area Properties</span> dialog.</p>
+            <li><span class="bold">Screen Tip: </span>Displays the Screen Tip set in the <span class="UI">Area Properties</span> dialog for the object. Typing or double clicking this field will open the <span class="UI">Area Properties</span> dialog.</li>
+            <li><span class="bold">Tab Index: </span>Displays the Tab Index set in the <span class="UI">Area Properties</span> dialog for the object.Typing or double clicking this field will open the <span class="UI">Area Properties</span> dialog.</li>
+            <li><span class="bold">OK:&#160;</span>Applies changes and closes the dialog</li>
+            <li><span class="bold">Cancel:&#160;</span>Does not apply changes and closes the dialog.</li>
+        </ul>
+        <h4>Menus</h4>
+        <h5>Edit Menu</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapEditor--EditMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <p class="bold">&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr class="HRclear" />
+        <p class="bold">Menu items (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">Undo (Undo): </span>Undoes the most recent action</li>
+            <li><span class="bold">Redo (Redo): </span>Redoes the action that was most recently undone</li>
+            <li><span class="bold">Cut (Cut): </span>Cuts the current selection to the clipboard</li>
+            <li><span class="bold">Copy (Copy): </span>Copies the current selection to the clipboard</li>
+            <li><span class="bold">Paste (Paste): </span>Paste the contents from the clipboard</li>
+            <li><span class="bold">Delete (Delete): </span>Delete the current selection</li>
+            <li><span class="bold">Select All (Select All): </span>Selects all (never active in this dialog; see bug 12417)</li>
+            <li><span class="bold">Properties (Run properties dialog for this item):&#160;</span>Invokes the <span class="UI">Area Properties</span> dialog for the selected object.</li>
+            <li><b>Conditions... (Set conditional text tags):</b> Allows for conditions to be set on an image map.</li>
+        </ul>
+        <p class="bold">&#160;</p>
+        <h5>Right-click Menu</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapEditor--RightClickMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <p class="bold">&#160;</p>
+        <p class="bold">Menu items (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">Cut (Cut): </span>Cuts the current selection to the clipboard</li>
+            <li><span class="bold">Copy (Copy): </span>Copies the current selection to the clipboard</li>
+            <li><span class="bold">Paste (Paste): </span>Paste the contents from the clipboard</li>
+            <li><span class="bold">Properties (Run properties dialog for this item):&#160;</span>Invokes the <span class="UI">Area Properties</span> dialog for the selected object.</li>
+            <li><b>Conditions... (Set conditional text tags):</b> Allows for conditions to be set on an image map.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Clicking on an object selects it</li>
+                <li><span class="KeyboardShortcut">CTRL</span>+Click allows selecting/deselecting multiple objects</li>
+                <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">A</span> selects all objects (if 12417 ever gets fixed; see "Select All" above)</li>
+                <li>Objects can be moved by clicking on them and dragging</li>
+                <li>Objects can be resized by clicking on any of the object's points and dragging</li>
+                <li><span class="KeyboardShortcut">Arrow</span> keys move the selected objects in the appropriate direction on the image map</li>
+                <li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Arrow</span> keys changes the size of Rectangle and Circle objects.</li>
+                <li>Verify that all operations work with one or multiple objects selected.</li>
+            </ul>
+        </div>
+        <h3>Area Properties dialog</h3>
+        <p>To open the dialog:</p>
+        <ul class="checkbox">
+            <li>Select an object and press <span class="KeyboardShortcut">F4</span></li>
+            <li>Select an object and click <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" alt="" title="" /> in the Image Map Editor's Standard Toolbar</li>
+            <li>Right-click an object and select <span class="MenuItem">Properties</span> from the menu</li>
+            <li>Select an object and then <span class="MenuItem">!Edit |&#160;Properties</span></li>
+            <li>Double-click an object</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Dialog--AreaProperties.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/InsertHyperLinkDialog--VariousViews--TestCases.flsnp" />
+        <h3>Image Map Indicator</h3>
+        <p>If an image has an image map applied to it, the Image Map Indicator <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapIndicator.png" alt="" title="" />should appear in the upper-left corner of the image when viewed in the <span class="UI">XML Editor</span>.</p>
+        <p>Example:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapIndicator--XMLEditorExample.png" alt="" title="" />
+        </p>
+        <h3>Image Context Menu test cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Image---Context2.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent" style="margin-left: 170pt;">
+            <p class="bold">Relevant Menu Items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Copy:&#160;</span>Copies the image to the clipboard. (Map reference is copied however it will only work if pasted in the same topic. See bug 34488)</li>
+                <li><span class="bold">Delete:&#160;</span>Removes the image from the topic (Image map code from deleted image is not deleted; see bug #7720)</li>
+                <li><b>Open Link:</b> Open s the image file in a new tab in the XML editor.</li>
+                <li><span class="bold">Open Linked File With: </span>Opens the image file in another application. Any changes made to an image with an image map should not affect the image map.</li>
+                <li><span class="bold">Rest Size:&#160;</span>Resets the image to its original size. Currently, the image map does not resize when an image is resized. See bug 7713.</li>
+                <li><span class="bold">Edit Image:&#160;</span>Invokes the <span class="UI">Insert Picture</span> dialog which allows you to replace the current image file. Doing so should not remove the existing image map. Rather, the existing image map should be placed on the new image.</li>
+                <li><span class="bold">Edit With MadCap Capture:&#160;</span>Opens the image file for editing in MadCap Capture. Any changes made to an image with an image map in Capture should not affect the image map.</li>
+                <li>
+                    <p><span class="bold">Hyperlink Picture:&#160;</span>Launches the <span class="UI">Insert Hyperlink</span> dialog which sets the image to be a hyperlink. However, if an image map is applied to an image, you should get the following message:</p>
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/Alert--ImageHasAnImageMap.png" alt="" title="" class="propertiesNoFloat" />
+                    </p>
+                </li>
+                <li><span class="bold">Image Map… :&#160;</span>Invokes the <span class="UI">Image Map Editor</span></li>
+                <li><span class="bold">Remove Image Map… :&#160;</span>Removes the image map (only active if an image map is applied). The image map icon<img src="../../../../../Resources/Images/TestPlans/Flare/Image Maps/ImageMapIndicator.png" alt="" title="" /> should disappear from the image in the <span class="UI">XML Editor</span> and the map markup should be removed between the head and body tags.</li>
+                <li><b>Conditions:</b> Applies a condition tag to the image inside of the topic (Displayed in the upper right hand corner of the image).</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/XML Editor/XML Editor--NamedElementIcon.png" /><b>Name:</b> Allows for a named to be assigned to the img element</li>
+                <li><b>Paragraph:</b> Invokes the Paragraph properties dialog window.</li>
+                <li><b>Style Class:</b> Invokes the Style Class drop down menu</li>
+            </ul>
+        </div>
+        <h3>Code</h3>
+        <p class="bold">Map code appears at top of topic between the head and the body tags:</p><pre>&lt;map id="map1"&gt;</pre><pre xml:space="preserve">     &lt;area shape="rectangle" coords="64,128,140,191" /&gt;</pre><pre>&lt;/map&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Map reference appears in the &lt;img&gt; tag:</p><pre xml:space="preserve">&lt;img src="../Resources/Images/Image.png" usemap="#map1"&gt;</pre>
+    </body>
+</html>

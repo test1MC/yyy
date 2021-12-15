@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\jwulkowicz\My Documents\My Profiles\MyProfile.capro" ProfileHash="8d88eba1588be24a17668dbed0c622b2" ScreenRectangle="3019,184,17,17">
+        <OriginalImage FileName="MyProfile {n}" medium_print_EnableFormat="false" BorderWidth="0" ImageScaleFactor="1.0" Border="solid" PaddingLeft="0" PaddingBottom="0" PaddingRight="0" PaddingTop="0" EnableGrayScaleFormat="False" BackgroundType="Solid" EnableCropRectangle="false" EffectEdges="left,right,top,bottom" BackgroundColor="#008000" Right="0" Bottom="0" Folder="" MinWidth="0" MinHeight="0" EnableShadow="false" ImageBlurFactor="10" ComputedWidth="17" ComputedHeight="17" Format="tiff">SUkqAGIBAACAN12P5/wKCQaCwOEweFQiHQ2IQyJQuKQ+CNt1xeMv+MQR/oAgP+PyGRSWTSCRSiRymSSqXS2Qx2ORtsumCTWPSpjquRTuTP8EgEGT9/z6izyjz2kUamUueTh/td0TmSU2lT+g0Os0SrUmvV2jShqud+yyr1+kSWt2uhVynWewUiUNNy2WV2iz2q22ytW2f3G4XKQtG62a8V69X3FUC936TYCvShnuS7Tq34iRXzGYvNX/L2GQs1xPzDZDE5vUZrO4/LyhluHSXfTZnG5za6nb56zMVuPrS5+07TbcOicXdStfth8b/A1jc6et8fIShctN7czD6fj9DHSXpyFZM559iu8by8LUdLWyFWMl5eTL6zm5jcUP1WZTMV3v/8/vZOA+bzvqtz8P0f5QGCdsDwTBcFLul7DQgu7jOMlEEQVC5/oCYAAAAAEAAABgAAAAAQAAAAgACAAIAAgAEAD+AAQAAQAAAAAAAAAAAQMAAQAAABEAAAABAQMAAQAAABEAAAACAQMABAAAAFoBAAADAQMAAQAAAAUAAAAGAQMAAQAAAAIAAAARAQQAAQAAAAgAAAAVAQMAAQAAAAQAAAAWAQQAAQAAABEAAAAXAQQAAQAAAEIBAAAaAQUAAQAAAEoBAAAbAQUAAQAAAFIBAAAcAQMAAQAAAAEAAAAoAQMAAQAAAAIAAAA9AQMAAQAAAAEAAABSAQMAAQAAAAIAAAAAAAAA</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="55" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="dd" Comment="">qqq</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="8525" MadCap:lastWidth="359" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Keyword Link - Output</h2>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Support in Web Help Outputs: </h4>
+        <p class="bold">Default view of clicked Keyword Link Controls in WebHelp and HTML Help output:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb.png">
+            </img>
+        </p>
+        <p>HTML&#160;5 / Web Help 2 Output </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/Index--WebHelp2 HTML5 Output.png" alt="" title="" />
+        </p>
+        <hr>
+        </hr>
+        <p class="bold">In WebHelp and HTML Help outputs, if the list of linked topics is very long, a scroll bar should appear. </p>
+        <p>(The easiest way to replicate this is to decrease the size of the Help system.)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb2.png">
+            </img>
+        </p>
+        <p>HTML 5 does not have scroll bars in the Keyword Link List </p>
+        <p>&#160;</p>
+        <p class="bold">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify Keyword Links work for all web output types as well as topic previews (no java script errors).</li>
+            <ul style="list-style-type: circle;">
+                <li>Test with "Condense JavaScript Files" disabled in the Performance tab of the target</li>
+                <li>Test with "Condense JavaScript Files" enabled in the Performance tab of the target</li>
+                <li>Test with "Use lowercase filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Replace reserved characters with underscores in filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Use custom file extensions for topics" enabled</li>
+                <li>Test creating Keyword Links to various directories: Topic in same directory, topics in child folder, topics in parent folder, topics several folders up an down the tree, etc.</li>
+            </ul>
+            <li>Verify that the entire &lt;MadCap:keywordLink&gt; tag and all of its properties are removed when conditionalized out.</li>
+            <li>Verify that applied styles are in outputs. Test MadCap:keywordLink.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>In Web and HTML Help outputs, verify the X in the linked topics list closes the popup.</li>
+        </ul>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <p class="bold">Default view of Keyword Link Controls in WebHelp Mobile output:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWHMobile.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li>For WebHelp Mobile output, since popups are not supported, the Keyword Link Control should be converted to a list of hyperlinks.</li>
+        </ul>
+        <p>(See Bug #35987: In Mobile output, the order of linked topics generated for K-Link and A-Link controls is different than other outputs.)</p>
+        <p class="bold">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify Keyword Links work for all web output types as well as topic previews (no java script errors).</li>
+            <ul style="list-style-type: circle;">
+                <li>Test with "Condense JavaScript Files" disabled in the Performance tab of the target</li>
+                <li>Test with "Condense JavaScript Files" enabled in the Performance tab of the target</li>
+                <li>Test with "Use lowercase filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Replace reserved characters with underscores in filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Use custom file extensions for topics" enabled</li>
+                <li>Test creating Keyword Links to various directories: Topic in same directory, topics in child folder, topics in parent folder, topics several folders up an down the tree, etc.</li>
+            </ul>
+            <li>Verify that the entire &lt;MadCap:keywordLink&gt; tag and all of its properties are removed when conditionalized out.</li>
+            <li>Verify that applied styles are in outputs. Test MadCap:keywordLink.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>In Web and HTML Help outputs, verify the X in the linked topics list closes the popup.</li>
+        </ul>
+        <h4>Support in Web Help Air Outputs:</h4>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h4> </h4>
+        <p class="bold">Default view of clicked Keyword Link Controls in WebHelp and HTML Help output:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb.png">
+            </img>
+        </p>
+        <hr>
+        </hr>
+        <p class="bold">In WebHelp and HTML Help outputs, if the list of linked topics is very long, a scroll bar should appear. </p>
+        <p>(The easiest way to replicate this is to decrease the size of the Help system.)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb2.png">
+            </img>
+        </p>
+        <p class="bold">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify Keyword Links work for all web output types as well as topic previews (no java script errors).</li>
+            <ul style="list-style-type: circle;">
+                <li>Test with "Condense JavaScript Files" disabled in the Performance tab of the target</li>
+                <li>Test with "Condense JavaScript Files" enabled in the Performance tab of the target</li>
+                <li>Test with "Use lowercase filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Replace reserved characters with underscores in filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Use custom file extensions for topics" enabled</li>
+                <li>Test creating Keyword Links to various directories: Topic in same directory, topics in child folder, topics in parent folder, topics several folders up an down the tree, etc.</li>
+            </ul>
+            <li>Verify that the entire &lt;MadCap:keywordLink&gt; tag and all of its properties are removed when conditionalized out.</li>
+            <li>Verify that applied styles are in outputs. Test MadCap:keywordLink.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>In Web and HTML Help outputs, verify the X in the linked topics list closes the popup.</li>
+        </ul>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <p class="bold">Default view of clicked Keyword Link Controls in WebHelp and HTML Help output:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb.png">
+            </img>
+        </p>
+        <hr>
+        </hr>
+        <p class="bold">In WebHelp and HTML Help outputs, if the list of linked topics is very long, a scroll bar should appear. </p>
+        <p>(The easiest way to replicate this is to decrease the size of the Help system.)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb2.png">
+            </img>
+        </p>
+        <p class="bold">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify Keyword Links work for all web output types as well as topic previews (no java script errors).</li>
+            <ul style="list-style-type: circle;">
+                <li>Test with "Condense JavaScript Files" disabled in the Performance tab of the target</li>
+                <li>Test with "Condense JavaScript Files" enabled in the Performance tab of the target</li>
+                <li>Test with "Use lowercase filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Replace reserved characters with underscores in filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Use custom file extensions for topics" enabled</li>
+                <li>Test creating Keyword Links to various directories: Topic in same directory, topics in child folder, topics in parent folder, topics several folders up an down the tree, etc.</li>
+            </ul>
+            <li>Verify that the entire &lt;MadCap:keywordLink&gt; tag and all of its properties are removed when conditionalized out.</li>
+            <li>Verify that applied styles are in outputs. Test MadCap:keywordLink.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>In Web and HTML Help outputs, verify the X in the linked topics list closes the popup.</li>
+        </ul>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h4>Support in CHM Outputs: </h4>
+        <p class="bold">Default view of clicked Keyword Link Controls in WebHelp and HTML Help output:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb.png">
+            </img>
+        </p>
+        <hr>
+        </hr>
+        <p class="bold">In WebHelp and HTML Help outputs, if the list of linked topics is very long, a scroll bar should appear. </p>
+        <p>(The easiest way to replicate this is to decrease the size of the Help system.)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputWeb2.png">
+            </img>
+        </p>
+        <p class="bold">Test cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify Keyword Links work for all web output types as well as topic previews (no java script errors).</li>
+            <ul style="list-style-type: circle;">
+                <li>Test with "Condense JavaScript Files" disabled in the Performance tab of the target</li>
+                <li>Test with "Condense JavaScript Files" enabled in the Performance tab of the target</li>
+                <li>Test with "Use lowercase filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Replace reserved characters with underscores in filenames" enabled (where a Keyword Link links to an affected topic)</li>
+                <li>Test with "Use custom file extensions for topics" enabled</li>
+                <li>Test creating Keyword Links to various directories: Topic in same directory, topics in child folder, topics in parent folder, topics several folders up an down the tree, etc.</li>
+            </ul>
+            <li>Verify that the entire &lt;MadCap:keywordLink&gt; tag and all of its properties are removed when conditionalized out.</li>
+            <li>Verify that applied styles are in outputs. Test MadCap:keywordLink.</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>In Web and HTML Help outputs, verify the X in the linked topics list closes the popup.</li>
+        </ul>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h4>Support in DotNet Outputs: </h4>
+        <p class="bold">Default view of clicked Keyword Link Controls in DotNet output:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--OutputDotNet.png">
+            </img>
+        </p>
+        <ul>
+            <li>Clicking on the <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> should bring up a list of topics in alphabetical order by their Topic Title. In a generated output, every topic has a Topic Title whether or not one is set in the Flare project.<ul><li>If a Topic Title is set in the Topic Properties dialog for a topic, that will be the topic's title in the output and the Keyword Link should use that title.</li><li>If there is no Topic Title set for a topic, the topic's first heading automatically becomes the Topic Title in the output. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li><li>If there is no Topic Title or Topic Heading in a topic, the topics File Name is used as the output Topic Title. The <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink--Output1.png" style="max-height: 12pt;" /> list should still appear in alphabetical order by the output Topic Title.</li></ul></li>
+        </ul>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in EPUB Book Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.</li>
+        </ul>
+        <h4>Support in PDF Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.</li>
+        </ul>
+        <h4>Support in Word Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.</li>
+        </ul>
+        <h4>Support in Frame Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.</li>
+        </ul>
+        <h4>Support in XPS Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.</li>
+        </ul>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <ul>
+            <li>Keyword Link Controls are not used in any print outputs. Verify that a compiler error is given indicating the Keyword Link Control will not be present in the output for every instance of a Keyword Link Control for each print output.<br /></li>
+        </ul>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>Keyword Link Controls are not included in DITA output. Verify that a compiler error is given indicating each Keyword Link Control will not be present in the output for every instance of a Keyword Link Control in the project.</li>
+        </ul>
+        <h3>Compiler errors:</h3>
+        <ul>
+            <li>Attempting to include a Keyword Link Control in any print or DITA output:<br />Keyword Link found in file: "Content/Topic.htm". It will be removed from the output.</li>
+        </ul>
+    </body>
+</html>

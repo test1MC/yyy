@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7030" MadCap:lastWidth="893" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Integration: Analyzer - UI</h2>
+        <h3>Opening the Project Analysis pane</h3>
+        <p>!View |&#160;Project Analysis</p>
+        <h3>Project Analysis pane - UI&#160;Test Cases</h3>
+        <h4>Status view (default view)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(View Drop-down): </span>Use this drop-down to change the view of the <span class="UI">Project Analysis</span> pane.</li>
+            <li><span class="bold">Last Scan Date: </span>Displays the date and time of the last complete scan of the project.</li>
+            <li><span class="bold">Status: </span>Displays the status of the Analyzer scan (Examples:&#160;"Checking…", "Performing Advanced Scan…", "Up-to-date" etc.)</li>
+            <li><span class="bold">Launch MadCap Analyzer:&#160;</span>Launches the MadCap Analyzer application and opens the current project simultaneously in Analyzer.</li>
+        </ul>
+        <h4>Broken Links view</h4>
+        <p><span class="UI">Project Analysis</span> displaying all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--BrokenLinks.png" style="width: 620px;height: 221px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png">
+                </img><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Broken Links grid: </span>Displays a list of all "broken" (as defined by Analyzer) links that exist in throughout the project. As of Analyzer V3, a broken link is any link that cannot be resolved within the project. Therefore, for the time being, external links will also display in this list.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file containing the broken link</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                    <li><span class="bold">Link: </span>Display the link that cannot be resolved within the project.</li>
+                    <li><span class="bold">Type: </span>Displays the type of "broken"&#160;link. This might display "Missing File" or "Missing Bookmark" etc.</li>
+                    <li><span class="bold">Link Text: </span>Displays the link text of the broken link.</li>
+                    <li><span class="bold">Link Tag: </span>Displays the tag of the broken link.</li>
+                    <li><span class="bold">Extension: </span>If the broken link is a link to a file, this column will display the file extension.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Broken Bookmarks view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/UI--ProjectAnalysis--Brokenbookmarks.png" style="width: 620px;height: 221px;mc-thumbnail: hover;">
+            </img>
+        </p>
+        <hr>
+        </hr>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Broken Bookmarks grid: </span>Displays a list of all "broken" (as defined by Analyzer) links that exist in throughout the project. As of Analyzer V3, a broken link is any link that cannot be resolved within the project. Therefore, for the time being, external links will also display in this list.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file containing the broken link</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                    <li><span class="bold">Link: </span>Display the link that cannot be resolved within the project.</li>
+                    <li><span class="bold">Type: </span>Displays the type of "broken"&#160;link. This might display "Missing File" or "Missing Bookmark" etc.</li>
+                    <li><span class="bold">Link Text: </span>Displays the link text of the broken link.</li>
+                    <li><span class="bold">Link Tag: </span>Displays the tag of the broken link.</li>
+                    <li><span class="bold">Extension: </span>If the broken link is a link to a file, this column will display the file extension.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Topics not in Selected TOC view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--TopicsNotInSelectedToc.png" style="width: 623px;height: 221px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png">
+                </img><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Button--TOCFilter.png" /><span class="bold">:&#160;</span>Lets you select a specific TOC&#160;or "Any TOC"&#160;to use as the basis for the analysis. </li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Topics not in Selected TOC grid: </span>Displays a list of all topics in the project that are not linked to from any TOC&#160;or a specified TOC.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file.</li>
+                    <li><span class="bold">Title: </span>Shows the Topic Title as set in the Topic Properties dialog.</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Topics not in Index view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--TopicsNotInIndex.png" style="width: 621px;height: 221px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png">
+                </img><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Topics not in Index: </span>Displays a list of all topics in the project that do not have a single index keyword element in them.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file.</li>
+                    <li><span class="bold">Title: </span>Shows the Topic Title as set in the Topic Properties dialog.</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Incoming Links view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--IncomingLinks.png" style="width: 624px;height: 135px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png">
+                </img><span class="bold"> (Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold"> (Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Back.png" /> <span class="bold">(Show links for previous file): </span>Changes the "current file" to the previous file and updates the list of files that appear in the list.</li>
+            <li><span class="bold">Browse Links (Open the Incoming Links window for the selected file): </span>Makes the currently selected file the "current file"&#160;in the Incoming Links view, thereby displaying incoming links for the selected file.</li>
+            <li><span class="bold">[The current file] (Displays the 'current file'):&#160;</span>Displays the name of the file for which the Incoming Links view is currently displaying links.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Incoming Links grid: </span>Displays .</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Files: </span>Displays the path and filename of the topic file that received the comment.</li>
+                    <li><span class="bold">Link Text: </span>Displays the username of the user who added the comment.</li>
+                    <li><span class="bold">Link Tag: </span>Displays the subject of the comment.</li>
+                    <li><span class="bold">Bookmark:&#160;</span>Displ</li>
+                    <li><span class="bold">Extension:&#160;</span>Sho</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Project Annotations view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--ProjectAnnotations.png" style="width: 618px;height: 164px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Project Annotations grid: </span>Displays a list of all annotations that exist throughout the project.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file.</li>
+                    <li><span class="bold">Title: </span>Shows the Topic Title as set in the Topic Properties dialog.</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                    <li><span class="bold">Text: </span>Displays the textual content of the annotation.</li>
+                    <li><span class="bold">Initials: </span>Displays the initials of the user who created the annotation.</li>
+                    <li><span class="bold">Creator: </span>Displays the name of the user who created the annotation.</li>
+                    <li><span class="bold">Editor: </span>Displays the name of the user who last edited the annotation.</li>
+                    <li><span class="bold">Create Date: </span>Displays the date and time the annotation was created.</li>
+                    <li><span class="bold">Edit Date: </span>Displays the date and time the annotation was last edited.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Database Errors view</h4>
+        <p><span class="UI">Project Analysis</span> pane docked in <span class="UI">MDI&#160;</span>in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/UI--ProjectAnalysis--DatabaseErrors.png" style="width: 703px;height: 212px;">
+            </img>
+        </p>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png">
+                </img><span class="bold">(Hide/Show Info Bar): </span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png">
+                </img><span class="bold">(Refresh):&#160;</span>Refreshes the list of data that appears in the grid.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Project Analysis |&#160;Database Errors grid: </span>Displays a list of any files that cannot be analyzed due to some kind of error. A couple of the most common reasons for a database errors are invalid XML or too many characters for a particular field in the database.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays the filename of the file.</li>
+                    <li><span class="bold">Folder:&#160;</span>Displays the path of the topic file within the project.</li>
+                    <li><span class="bold">Description: </span>Provides a short description of the cause of the database error.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Analyzer/Menu--ProjectAnalysisRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Refresh: </span>Refreshes the list of data that appears in the grid.</li>
+                    <li><span class="bold">Open With: </span>Gives options to open the file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                    <li><span class="bold">Source Control: </span>Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

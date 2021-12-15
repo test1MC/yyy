@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7433" MadCap:lastWidth="765" MadCap:conditionTagExpression="include[Default.UITestsEditors or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.Alias] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Jay,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Alias - Editor</h2>
+        <h3>Opening an Alias File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span>:&#160;In the Advanced tab of the <span class="UI">Target Editor</span>, in the Alias File section, select an Alias File and click the "Edit"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Alias Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/AliasEditor.png" class="properties" title="Alias Editor" alt="Alias Editor">
+            </img>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/AliasEditor---LocalToolbar.png">
+            </img>
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI---IdentifierDropDown.png" /><span class="bold">(Header files):&#160;</span>Displays all header files in the project. By default this is set to <span class="bold">(all identifiers)</span>.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---HideAssignedIdentifiers.png" style="mc-tag-and-class: ;" /><span class="bold">(Hide the assigned identifiers):&#160;</span> Toggle for hiding / showing all identifiers that have topics assigned to them.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---NewIdentifier.png" /><span class="bold">(Create a new identifier):</span> Will create a new identifier. Value and name will be dependant on which <span class="UI">Identifier Options</span> are set. See below.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---DeleteIdentifiers.png" /><span class="bold">(Delete the selected identifiers):</span> Deletes the selected identifiers.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---GenerateIdentifiers.png" /><span class="bold">(Generate identifiers for this project):</span> Launches the <span class="UI">Generate Identifiers</span> dialog. See below.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---IdentifierOptions.png" /><span class="bold">(Change the identifier options):&#160;</span>Launches the <span class="UI">Identifier Options</span> dialog. See below.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - ShowCurrentWarnings.png" /><span class="bold">(Shows the current warning, if any):</span> Displays the current warning and current warning count. Clicking this will open up a dialog listing all the current warnings. Currently this only shows unassigned identifiers.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---PreviousWarning.png" alt="" title="" /><span class="bold">(Navigate to the previous warning):</span> Will select the previous identifier, based on the current selection, that has a warning.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---NextWarning.png" alt="" title="" /><span class="bold">(Navigate to the next warning): </span>Will select the next identifier, based on the current selection, that has a warning.</li>
+        </ul>
+        <h4>UI&#160;Controls - Topics section</h4>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Topics Toolbar (Tooltips in parentheses):&#160;</p>
+                <p class="bold">
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/AliasEditor---Topics---LocalToolbar.png" alt="" title="" />
+                </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowAllFiles.png" alt="" title="" /><span class="bold">(Show/Hide All Files in Project): </span>Changes the view in the dialog to "Show All Files" view. This view display all topics in the project in one grid. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" alt="" title="" /><span class="bold">(Show/Hide Folders):&#160;</span>Changes the view in the dialog to "Show Folders"&#160;view. This view displays all topics in the project in a tree view, similar to the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Files" view to offer a "Split" view. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" alt="" title="" /><span class="bold">(Show/Hide Files): </span>Changes the view in the dialog to "Show Files"&#160;view. This view displays all topics in the project one folder at a time, similar to the "Show Files" view in the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Folders" view to offer a "Split" view. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" alt="" title="" /><span class="bold">(Up):</span> Moves up one folder in the hierarchy within the project's Content folder. This button becomes enabled if you use the "Show Folders" or "Split" View and browse into a folder.</li>
+                </ul>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---AssignTopic.png" /><span class="bold">(Assign&#160;topic to the selected identifier):&#160;</span>Assigns the selected topic to the currently selected Identifiers.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---AssignTopicToNew.png" /><span class="bold">(Assign the selected topic to a new identifier):</span>  Assigns the selected topic to a new identifier. Value and name will be dependant on which<span class="UI">Identifier options</span> are set. See below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" /><span class="bold">(Open the selected topic):</span> Opens the selected topic in the <span class="UI">XML&#160;Editor</span>.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---LocateTopicInHeaderFiles.png" /><span class="bold">(Locate topic in header files): </span>Will open the <span class="UI">Locate Topic </span>dialog. This dialog lists each instance the topic is used in all header files.<ul style="list-style-type: square;"><li>The dialog will contain the Header file, the Identifier name and the identifier value</li><li>If the topic is not assigned, this dialog does not open.&#160;A warning dialog appears instead.</li></ul></li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Topics in Project ("Show Folders"&#160;view)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - Show Folders.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">"Show Folders"&#160;view Test Cases:</p>
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">[+]/[-] :&#160;</span>Expands/collapses the corresponding folder</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFolderKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFolderKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span> opens/closes the selected folder to display/hide their contents – sets the selected files&#160;as the link and closes the dialog</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node.</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> select and open\close folders will go as far as selecting the first non-folder node in a folder.</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Folder" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+        </ul>
+        <h5>Topics In Project ("Show Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - Show Files.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Displays the name of the file or folder.</li>
+                    <li><span class="bold">Size:&#160;</span>Displays the size of the file (empty for folders).</li>
+                    <li><span class="bold">Date Modified:&#160;</span>Displays the date and time the file or folder was last modified.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFilesKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span>  sets the selected files&#160;as the link and closes the dialog. In this view, <span class="KeyboardShortcut">Enter</span>&#160;does nothing when a folder is selected.</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection up or down one line in the grid</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> do nothing in this context</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first item or the very last displayed item.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+        </ul>
+        <h5>Topics In Project (default "Split"&#160;view)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - Split View.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <p>(Repeat all tests for "Show Folders"&#160;and "Show Files" views in this "Split"&#160;view)</p>
+        <h5>Topics In Project (default "Show All Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/UI - Show All Files.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show All Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays a list of all Topics in the project (that match the file filter)</li>
+                    <li><span class="bold">Type:&#160;</span>Displays the file extension of the file.</li>
+                    <li><span class="bold">Path:&#160;</span>Displays the location of the file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowAllFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowAllFilesKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span> moves the selection down one line</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection up or down one line in the grid</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> move the focus to the adjacent cell left or right. Only relevant if a horizontal scroll is present.</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first item or the very last displayed item.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---AssignTopic.png" /><span class="bold">(Assign&#160;topic):&#160;</span>Assigns the selected topic to the currently selected Identifiers.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---AssignTopicToNew.png" /><span class="bold">(Assign the selected topic to a new identifier):</span>  Assigns the selected topic to a new identifier. Value and name will be dependant on which<span class="UI">Identifier options</span> are set. See below.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" /><span class="bold">(Open the selected topic):</span> Opens the selected topic in the <span class="UI">XML&#160;Editor</span>.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---LocateTopicInHeaderFiles.png" /><span class="bold">(Locate topic in header files): </span>Will open the <span class="UI">Locate Topic</span> dialog. This dialog lists each instance the topic is used in all header files.<ul style="list-style-type: square;"><li>The dialog will contain the Header file, the Identifier name and the identifier value</li><li>If the topic is not assigned, this dialog does not open.&#160;A warning dialog appears instead.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Double-Clicking a topic will assign that topic to the selected identifier.</li>
+                <li>If that identifier is already assigned a topic, a prompt will be provided confirming the overwrite.</li>
+            </ul>
+        </div>
+        <h4>UI Controls - Identifiers</h4>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Identifiers Toolbar (Tooltips in parentheses):&#160;</p>
+                <p class="bold">
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/AliasEditor---Identifiers---LocalToolbar.png" alt="" title="" />
+                </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Button---UnassignTopic.png" /><span class="bold">(Unassign&#160;topic):&#160;</span>Unassigns the topic from the currently selected identifiers.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SelectBookmark.png" /><span class="bold">(Select a bookmark from the selected topic):</span>  Opens the topic currently assigned to the selected identifier in the main <span class="UI">XML&#160;Editor</span>. A <span class="UI">Select Place</span> dialog appears listing all of the headings and bookmarks in that topic.<ul style="list-style-type: square;"><li>Selecting a bookmark and hitting OK will return you to the <span class="UI">Alias Editor</span> and assign the selected bookmark to the selected identifier</li><li>Clicking Cancel at any point will close the topic and return you to the <span class="UI">Alias Editor</span> with no changes made.</li></ul></li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/DropDown---SelectSkin.png" /><span class="bold">Assign Skin:</span> Will assign the selected skin to the selected identifiers.<ul style="list-style-type: square;"><li>Clicking the drop-down arrow, will display all the skins in the project</li><li>Selecting a skin from the drop down, will set that Skin on the button. Subsequent clicks will now assign that skin to the selected identifiers.</li></ul></li>
+                </ul>
+            </li>
+            <li>
+                <p><span class="bold">Identifiers grid: </span>Displays and lets you edit&#160;identifiers.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Assigned: </span>Will show a green or red icon. This field is not editable.<ul style="list-style-type: square;"><li>Green denotes the identifier has a topic assigned to it.</li><li>Red denotes the identifier does not have a topic assigned to it.</li></ul></li>
+                    <li><span class="bold">Identifier:&#160;</span>Displays the name of the Identifier. This field is editable.</li>
+                    <li><span class="bold">Topic:&#160;</span>Displays what Topic, if any, is assigned to the identifier. This field is not editable.</li>
+                    <li><span class="bold">Path:</span> Displays the path of the topic file, if one is assigned to the identifier. This field is not editable.</li>
+                    <li><span class="bold">Skin:</span> Displays the skin, if any, that is assigned to the identifier. This field is not editable.</li>
+                    <li><span class="bold">Value:</span> Displays the Value of the identifier.&#160;This field is editable.</li>
+                    <li><span class="bold">Header File:</span> Displays the header file the identifier is associated with. Only displays when  (all identifiers)&#160;is set in the header file filter.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>For Identifier Name, enter single words, multiple words, numbers, words with international characters, symbols, etc.</li>
+                <li>For Identifier Values, enter in negative numbers, decimals and spaces.   </li>
+                <li>Selecting a row (or rows)&#160;and pressing <span class="KeyboardShortcut">Delete</span> will remove those identifiers.</li>
+            </ul>
+        </div>
+        <h4>Identifier Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Dialog--IdentifierOptions.png" class="properties" title="" alt="">
+            </img>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Starting Value:</span> The value of new identifiers created in the <span class="UI">Alias Editor</span> will be based off of this number. <ul><li>Subsequent added identifiers will increment up by one, based on what values have been used already.</li></ul></li>
+            <li><span class="bold">Use Prefix:</span> The text entered here will be prefixed to newly created identifier names.</li>
+            <li><span class="bold">Include topic name :</span> Inserts the topic name as the identifier</li>
+            <li><span class="bold">Capitalize identifier names:</span> Checking this will force all new identifiers to have capitalized names.</li>
+            <li><span class="bold">Default skin: </span>Sets the  skin that is assigned to new identifiers. </li>
+            <li><span class="bold">Primary Header: </span>Sets the header file that new identifiers are created in, when (all identifiers)&#160;is selected in the local toolbar of the <span class="UI">Alias Editor</span>.</li>
+            <li><span class="bold">Value Format:&#160;</span>Let you set the format for the identifier values to Decimal or Hexadecimal.</li>
+        </ul>
+        <h4>Generate Identifiers</h4>
+        <p>This tool will create identifiers (based on your settings) for your entire project.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Dialog--GenerateIdentifiers.png" class="properties" title="" alt="">
+            </img>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls:&#160;Header File area</p>
+        <ul class="checkbox">
+            <li> <span class="bold">New From Template:</span> Selects a header file based on the selected template file. <ul><li><span class="bold">File Name: </span>Sets the name of the new header file.</li><li><span class="bold">(Manage Templates):</span> Launches the Manage Templates dialog.</li></ul></li>
+            <li><span class="bold">Choose Existing:</span> Selects an existing header file.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI Controls:&#160;Identifier Options area</p>
+        <ul class="checkbox">
+            <li><span class="bold">Starting value:</span> Sets the starting value for the identifiers.</li>
+            <li><span class="bold">Prefix: </span>Sets the Prefix for the identifier names.</li>
+            <li><span class="bold">Include topic name in identifier name: </span>If this is checked, the new identifiers will apply the topic name as the Identifier name.<ul><li>If a prefix is used, the topic name will follow the prefix</li></ul></li>
+            <li><span class="bold">Capitalize identifier names:</span> All identifiers created, will have the identifier name capitalized.</li>
+            <li><span class="bold">Skins:</span> Sets which skin (if any) will be assigned to the identifiers.</li>
+            <li><span class="bold">Generate Identifiers for:</span> This drop down offers two options<ul><li><span class="bold">Unassigned topics only:</span> Will create identifiers for topics that are currently unassigned to any identifier.</li><li><span class="bold">All topics:</span> Will create a new identifier for every topic in the project, regardless if it has already been assigned to an identifier.</li></ul></li>
+            <li><span class="bold">Existing Identifiers:</span> This drop down is disabled if New From template is selected or Unassigned topics is selected in the above dialog.<ul><li><span class="bold">Keep: </span>If this option is set, no identifiers will be removed.</li><li><span class="bold">Delete: </span>This option will remove all identifiers in the designated header file before the new identifiers are generated.</li></ul></li>
+            <li><span class="bold">Value Format:&#160;</span>Let you set the format for the identifier values to Decimal or Hexadecimal.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify the combination of choices selected, is accurately represented in the generated identifiers.</li>
+            </ul>
+        </div>
+        <h4>Locate Topic</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Dialog--LocateTopic.png" class="properties" title="" alt="">
+            </img>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Topic:</span> Displays the file name of the topic for which header file associations are dispalyed. </li>
+            <li><span class="bold">Header File Grid:&#160;</span>Displays all header files which are associated with the selected topic file and also displays the Identifier and Value associated with that topic on that header file.</li>
+            <li><span class="bold">OK:</span> Closes the dialog, opens the selected header file in the Alias Editor, and highlights the identifier associated with the selected topic.</li>
+            <li><span class="bold">Cancel:</span> Closes the dialog and does not open a header file</li>
+        </ul>
+    </body>
+</html>

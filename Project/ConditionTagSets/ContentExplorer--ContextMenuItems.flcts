@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Image"
+    BackgroundColor="Blue"
+    OriginalName="Image" />
+  <ConditionTag
+    Comment=""
+    Name="Topic"
+    BackgroundColor="Red"
+    OriginalName="Topic" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Multimedia"
+    Comment=""
+    OriginalName="Multimedia" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="Page Layout"
+    Comment=""
+    OriginalName="Page Layout" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Master Page"
+    Comment=""
+    OriginalName="Master Page" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Snippet"
+    Comment=""
+    OriginalName="Snippet" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Stylesheet"
+    Comment=""
+    OriginalName="Stylesheet" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Table Style"
+    Comment=""
+    OriginalName="Table Style" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Other"
+    Comment="To use for PDF, CHM, etc" />
+</CatapultConditionTagSet>

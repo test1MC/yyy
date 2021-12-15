@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="579" MadCap:lastWidth="1028">
+    <body>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">File Type:</span> Drop-Down UI that lets you select the file type that you want to add to the project.</li>
+            <li><span class="bold">Source:</span>  The area used to hold the controls that determine where the new file will be copied from.<ul style="list-style-type: circle;"><li><span class="bold">New from template:</span> Displays the Factory template folder plus any others that may have been set up using the <span class="UI">Template Manager</span>. The UI will only show files of the type selected to add.</li><li><img src="../../Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" alt="" title="" /> <span class="bold">:&#160;</span>Invokes the <span class="UI">Template Manager</span>.</li><li><span class="bold">New from existing:</span> Will allow the user to browse to any folder anywhere to select a file. <ul style="list-style-type: circle;"><li><img src="../../Images/TestPlans/Buttons/Button---Browse.png" alt="" title="" /><span class="bold"> :&#160;</span>Invokes an <span class="UI">Open</span> dialog which lets you browse for the selected file type. The filter will be set to the file type selected to add. Test all drive types:<ul style="list-style-type: circle;"><li>Local</li><li>UNC (Online and Offline)</li><li>Mapped Drive (Online and Offline)</li></ul></li></ul></li></ul></li>
+            <li MadCap:conditions="AddFile--UIControls.Preview"><span class="bold">Preview: </span>Displays a preview of the template selected in the Source section</li>
+            <li MadCap:conditions="AddFile--UIControls.Description"><span class="bold">Description: </span>Provides a description of the template selected in the Source section</li>
+            <li><span class="bold"><MadCap:snippetText src="Flare--FileTypes.flsnp" />:</span>
+            </li>
+            <ul style="list-style-type: circle;">
+                <li><span class="bold">Folder:</span> Allows users to select which folder they want to copy the selected file into.</li>
+                <li>
+                    <img src="../../Images/TestPlans/Buttons/Button---Browse.png" alt="" title="" /><span class="bold"> :&#160;</span>Invokes a <span class="UI">Select Folder</span> dialog which lets you select the folder for the new file.<MadCap:conditionalText MadCap:conditions="AddFile--UIControls.ContentFiles"> Content files should be able to be saved anywhere under the "Content" folder.</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="AddFile--UIControls.ProjectFiles"> Project files can only be saved in the corresponding folder for the file type or a sub-folder of that folder.</MadCap:conditionalText></li>
+                <li><span class="bold">File Name:</span>  Allows for the naming of the new file.                                    </li>
+            </ul>
+            <li MadCap:conditions="AddFile--UIControls.TopicFiles"><span class="bold">Advanced:</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">1st Heading:</span>  This text will be added as the first heading in the new topic</li>
+                    <li><span class="bold">Title:</span>  Allows the user to set the &lt;Title&gt; in the HTML&#160;Code.</li>
+                    <li><span class="bold">Stylesheet:</span> Allows the user to select what stylesheet they want linked to this topic. This will be disabled if a Master stylesheet is set at the project or target level.</li>
+                    <li><span class="bold">Style:</span> Lets you set the style of the first heading in the new topic. The pulldown should display every class of every heading style h1-h6 that exists in the project's stylesheet.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Add:&#160;</span>Closes the dialog and invokes the <span class="UI">Copy to Project</span> dialog where you confirm adding the new file to the project. This button is not enabled until you select a template above, or until you select a source file from a different location.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog without adding the new file to the project.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

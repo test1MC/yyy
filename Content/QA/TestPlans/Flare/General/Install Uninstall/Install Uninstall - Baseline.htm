@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="575" MadCap:lastWidth="1083" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Install/Uninstall - Baseline      </h2>
+        <h3>Baseline</h3>
+        <p><span class="bold">6683	</span>Side-by-side (1.x --&gt; 2.0) installs prompt for activation key every time the 'other' version is launched.  The UI is populated with the "last registered" key.</p>
+        <p><span class="bold">8632	</span>Registration fails if user email address includes capital letters.</p>
+        <p><span class="bold">9584	</span>When we uninstall we keep:C:\Program Files\MadCap Software\MadCap Flare V2\Flare.app\Resources\English\Preview\Preview.flprj\Output\Temp\DepSets</p>
+        <p><span class="bold">10483	</span>In Add/Remove programes Flare 2.0.3 is showing as 2.0.2 (Check the “Click here for support information” version number)</p>
+        <p><span class="bold">10578	</span>Install on VISTA</p>
+        <p><span class="bold">10579	</span>Version 2.5 uninstalls version 2.0.3 from the computer before it installs. Ths needs to be addressed before Beta tomorrow.</p>
+        <p><b>15888</b> Command Line Compile works with an expired evaluation key.</p>
+        <p><span class="bold">10717	</span>On uninstall we leave the Program File folder with some content that should be removed.C:\Program Files\MadCap Software\MadCap Flare V2.5\Flare.app\Resources\English\Preview\Preview.flprj\Output\Temp\DepSets</p>
+        <p><span class="bold">11947	</span>When no information is given in Registration dialog, the first warning that appear is "E-Mail Address cannot be empty"</p>
+        <p><span class="bold">11994	</span>Registration text is written in different language when UI language is changed</p>
+        <p><span class="bold">15523	</span>User is unable to start Flare when disconnected from the Internet.  System still thinks there is a connection via VPN Client. Verify Sneak Peek trial reset if necessary.</p>
+        <p><span class="bold">24956	</span> Another use case to the SQL compact issue (24949) Having English SQL SP 0 will confuse Flare v5 even you have a SP1 of another language&#160;</p>
+        <p><span class="bold">25383	</span> Ugly Stack trace dump in the messages pane when upgrading from Flare 4 (SQL Compact 3.5) to Flare 4.1 (SQL Compact 3.5 sp1)</p>
+        <p><span class="bold">28313	</span> Old crash bug back when editing a user profile when non exist</p>
+        <p><span class="bold">31418	</span> When we use Flare's help search and do a search for the very first time, a CachedHelpSystems folder is created in our Application Data folder.</p>
+        <p><span class="bold">32841	</span> Remove the option to "Disable Instant Messaging" from the !Project Properties to the Install.</p>
+        <p><span class="bold">33835	</span> We write the IM install settings to the shared area in the registry. HKEY_CURRENT_USER\Software\MadCap Software\Shared\IM This allows other installs to change the IM availability</p>
+        <p><span class="bold">36290	</span>Update all .JS files to the current Version:</p>
+        <p><span class="bold">39693</span> Getting exception in Messages pane when creating a new project on a Japanse OS.</p>
+        <p><b>49644</b> Copyright column is showing the wrong year (2011) for the following files:</p>
+        <p><b>49743</b> Compliance with FIPS</p>
+        <p><b>49825</b> If the Getting Started screen is up, it will cause an exception error if you try</p>
+        <p><b>50927</b> Microsoft says: "On 64-bit computers, a SQL Server Compact (“Compact”) based application may fail." We need to detect 64-bit OS and install both 32-bit and 64-bit versions of SQL Compact</p>
+        <p><b>52214</b> After an evaluation key expires and the user attempts to activate Flare with a standard license key, the First Name, Last Name and Email fields are all populated with "evaluationuser"</p>
+        <p><b>52289</b> Our "You need SQL Compact" prompt does not go away if you only have .net4 on your machine</p>
+    </body>
+</html>

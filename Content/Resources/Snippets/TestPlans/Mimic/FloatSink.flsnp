@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="104" MadCap:lastWidth="1198">
+    <body>
+        <ul>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Sink.png" /> <![CDATA[ ]]><span class="bold">Sink: </span> Will sink the object one layer lower, in relation to the other objects</li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Float.png" /> <![CDATA[ ]]><span class="bold">Float: </span> Will float the object one layer higher, in relation to the other objects.</li>
+            <li>
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/Sinktobottom.png" /> <![CDATA[ ]]><span class="bold">Sink to Bottom: </span>Will sink the object to the bottom layer.&#160;All other objects will be above this object.</li>
+            <li class="bold" style="font-weight: normal;">
+                <img src="../../../Images/TestPlans/Mimic/Toolbar Icons/FloattoTop.png" /> <![CDATA[ ]]><span class="bold">Float to Top: </span> Will float the object to the top most layer. All other objects will be below this object.</li>
+        </ul>
+    </body>
+</html>

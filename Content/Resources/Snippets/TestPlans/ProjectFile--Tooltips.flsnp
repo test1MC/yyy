@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="188" MadCap:lastWidth="1143">
+    <body>
+        <h4>Tooltips</h4>
+        <p class="bold" MadCap:conditions="ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.TOC">Tree View:</p>
+        <p MadCap:conditions="ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.TOC">Select any node in the <MadCap:conditionalText MadCap:conditions="ProjectOrganizer--Items.BrowseSequence">Browse Sequence</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="ProjectOrganizer--Items.TOC">TOC</MadCap:conditionalText> Editor, and test the following:</p>
+        <ul class="checkbox">
+            <li MadCap:conditions="ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.TOC">Hover over any node, and verify that it displays a tooltip displaying the link</li>
+        </ul>
+        <p MadCap:conditions="ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.TOC">&#160;</p>
+        <p class="bold" MadCap:conditions="ProjectOrganizer--Items.BatchTarget,ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.ConditionTagSet,ProjectOrganizer--Items.Destination,ProjectOrganizer--Items.FileTagSet,ProjectOrganizer--Items.Glossary,ProjectOrganizer--Items.Import,ProjectOrganizer--Items.RelationshipTable,ProjectOrganizer--Items.SearchFilterSet,ProjectOrganizer--Items.Skin,ProjectOrganizer--Items.Synonyms,ProjectOrganizer--Items.Target,ProjectOrganizer--Items.TOC,ProjectOrganizer--Items.Variable">Grid View:</p>
+        <p MadCap:conditions="ProjectOrganizer--Items.Variable,ProjectOrganizer--Items.TOC,ProjectOrganizer--Items.Target,ProjectOrganizer--Items.Synonyms,ProjectOrganizer--Items.Skin,ProjectOrganizer--Items.SearchFilterSet,ProjectOrganizer--Items.RelationshipTable,ProjectOrganizer--Items.Glossary,ProjectOrganizer--Items.FileTagSet,ProjectOrganizer--Items.Import,ProjectOrganizer--Items.Destination,ProjectOrganizer--Items.ConditionTagSet,ProjectOrganizer--Items.BrowseSequence,ProjectOrganizer--Items.BatchTarget">Select an item in any cell that is so long that it does not fit within the column, and test the following: </p>
+        <p MadCap:conditions="ProjectOrganizer--Items.Report">In the Archive tab, select any report or date that is so long that it does not fit within the column, and test the following:</p>
+        <ul class="checkbox">
+            <li>Hover over the cell, and verify that cell will display a tooltip which will display the entire contents of that cell</li>
+        </ul>
+    </body>
+</html>

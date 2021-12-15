@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1261" MadCap:lastWidth="765" MadCap:conditionTagExpression="include[Default.UITestsDialogs or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.HeaderFile] exclude[Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Jay,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Header File - Editor &amp; Exporting</h2>
+        <h3>Opening a Header File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Header Files in the Text Editor</h3>
+        <p>Header files should be edited via the <span class="UI">Alias Editor</span>. However, if you do open a header file using any of the above methods, it will open in the <span class="UI">Internal Text Editor</span>.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Verify that edits made to a header file in the <span class="UI">Internal Text Editor</span> can be saved and changes are reflected in the <span class="UI">Alias Editor</span>.</li>
+            </ul>
+        </div>
+        <h3>Header File Export</h3>
+        <p>The Export Header file dialog can be opened by:</p>
+        <ul class="checkbox">
+            <li><span class="UI">Project Organizer</span>:&#160;Right-click a header file and select <span class="MenuItem">Export Header File(s)…</span></li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Build |&#160;Export Header File(s)…</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Tools |&#160;Export Header File(s)</span></li>
+        </ul>
+        <h4>Export Header File - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/CSH/Dialog--ExportHeaderFiles.png" class="properties" title="" alt="">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">C/C++ (.h): </span>If this option is selected, a copy of the header file will be created with an .h file extension.</li>
+            <li><span class="bold">Visual Basic (.bas): </span>If this option is selected, a copy of the header file will be created with a .bas file extension.</li>
+            <li><span class="bold">Java (.properties): </span> If this option is selected, a copy of the header file will be created with a .properties file extension.</li>
+            <li><span class="bold">Delphi Pascal (.inc):&#160;</span>If this option is selected, a copy of the header file will be created with an .inc file extension.</li>
+            <li><span class="bold">Header File Grid:&#160;</span>Check the box next to the header files you want to include in the export.</li>
+            <li><span class="bold">Export Files To:&#160;</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Drop-down:&#160;</span>The drop-down will provide paths to which you have previously exported header files</li>
+                    <li><span class="bold">Browse… :&#160;</span>Invokes the <span class="UI">Browse For Folder</span> dialog which lets you select a folder to which the header files will export</li>
+                </ul>
+            </li>
+            <li><span class="bold">Export:&#160;</span>Closes the dialog and exports the selected header files</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not export the selected header files</li>
+        </ul>
+    </body>
+</html>

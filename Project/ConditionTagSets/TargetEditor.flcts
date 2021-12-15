@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="WebHelpMobile"
+    BackgroundColor="#00ffff" />
+  <ConditionTag
+    Comment=""
+    Name="FrameMaker"
+    BackgroundColor="#7cfc00" />
+  <ConditionTag
+    BackgroundColor="#f4a460"
+    Name="HTMLHelp"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#dda0dd"
+    Name="WebHelpPlus"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#f0e68c"
+    Name="WebHelp"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#48d1cc"
+    Name="Word"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#db7093"
+    Name="XPS"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightBlue"
+    Name="DITA"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightCoral"
+    Name="XHTML"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightCyan"
+    Name="DotNetHelp"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightGreen"
+    Name="PDF"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightPink"
+    Name="WebHelpAIR"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Print"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Web"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="AllOutputTypes"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#4b0082"
+    Name="EPUB"
+    Comment=""
+    OriginalName="EPUB" />
+  <ConditionTag
+    BackgroundColor="#800000"
+    Name="HTML5"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="EclipseHelp"
+    Comment="" />
+</CatapultConditionTagSet>

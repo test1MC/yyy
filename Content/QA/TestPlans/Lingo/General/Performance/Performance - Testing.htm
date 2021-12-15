@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo" MadCap:lastBlockDepth="5" MadCap:lastHeight="1166" MadCap:lastWidth="1388">
+    <head />
+    <body>
+        <h2>Performance - Testing</h2>
+        <p>&#160;</p>
+        <p style="font-weight: bold;text-decoration: underline;">While testing Performance you must have the Task manager open to keep an eye on CPU and MEM usage.</p>
+        <p>Lingo, like any application, will have an upper limit of what it can do while keeping solid performance. This is mostly dependant on the end users machine, but Lingo should always be able to handle projects even if it has to slow down. This test plan will establish some thresholds while also stress testing the app with some very large projects.</p>
+        <p>&#160;</p>
+        <p>Task Manager</p>
+        <ul>
+            <li>1) Right click the taskbar</li>
+            <li>2) Choose Task Manager</li>
+            <li>3) The performance tab shows CPU usage</li>
+            <li>4) The Processes tab shows MEM usage</li>
+        </ul>
+        <div class="TestCases">
+            <p>The Performance tab &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The Processes tab</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/Performance/Task Manager Performance.png" style="width: 255px;height: 310px;" />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="../../../../../Resources/Images/TestPlans/Lingo/Performance/Task Manager Processes.png" style="width: 267px;height: 302px;" />&#160;</p>
+            <p>&#160;</p>
+            <p>You may see the CPU spike to 100% during some functions. This is normal and OK.</p>
+            <ul>
+                <li>The problem you want to look for is EXTENDED 100% CPU usage</li>
+                <li>Look for CPU usage when Lingo is apparently not doing anything. CPU activity should be accounted for. (i.e. If you’re importing a project, CPU should spike. If you’re just looking at a topic, CPU usage should be clear.)</li>
+                <li>MEM usage will fluctuate as well, but not nearly as much as the CPU. Any large spikes in MEM usage should be noted, and any large spikes in MEM usage that does NOT get freed up should be bugged. (i.e. MEM jumps up to 150k from 80k, but stays there and doesn’t drop back down to 80k)</li>
+                <li>As MEM usage goes up, the more severe the performance hit in theory. If Lingo’s performance is not impacted, note that in the bug</li>
+                <li>And of course if at any time Lingo becomes unresponsive, freezes, or crashes it’s a bad thing</li>
+                <li>Verify minimizing Lingo drops the MEM usage significantly</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p class="note">General Test Areas</p>
+        <p>Testers should always be keeping an eye on performance and stability. Below are some areas that are known for causing some issues with either sluggishness, or instability. Verify each of the following when working with the projects below:</p>
+        <ul>
+            <li>Moving window panes around constantly</li>
+            <li>Massive amount of topics opened at once</li>
+            <li>Updating links in a massive project</li>
+            <li>Large content in a topic (like a very large table or picture)</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="note">General Test Cases</p>
+        <p>Projects-<b>\\dc2\QA\Test Projects\Test Plan Projects\31,500 Topics\31500 Topics</b></p>
+        <p>The link above is a link to use a large Flare project for Lingo</p>
+        <ul>
+            <li>Import this project into Lingo and monitor performance (how long it takes to import, memory usage, CPU usage and so on)</li>
+            <li>Open a few random topics, making sure a couple are very large or have a lot of content and translate them. Verify working within this project does not hit performance.</li>
+            <li>Keep an eye on Performance and Stability while doing all other Test Plans.</li>
+            <li>Use Lingo in a few different languages and verify performance</li>
+        </ul>
+        <p>&#160;</p>
+        <p><i>Feel free to set your own thresholds. The above suggestions are arbitrary depending on the machine the tester is using. Find a large project where you actually DO break Lingo. Your machine may only need 50 topics or as many as 5000. At some point you will get Lingo to behave poorly and will have to decide if the cause is something to be concerned about.</i>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

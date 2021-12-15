@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5201" MadCap:lastWidth="1520" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FontProperties or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.StyleClass or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Text Snippet - Editing</h2>
+        <p>This section deals with editing a Snippet, specifically a Text Snippet, in the context of other content, for example within a paragraph in a Topic. You should not be able to edit or even place the insertion point within the text of a Snippet in the context of a Topic (or Page Layout, etc). You should only be able to edit (cut, copy , move, etc)&#160;the entire text snippet tag.</p>
+        <h3>Text Snippet - General Editing Test Cases</h3>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/SnippetText---Context.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">Text Snippet:</p><pre>&lt;p&gt;Delete this text and &lt;MadCap:snippetText src="Resources/Snippets/NewSnippet.flsnp" /&gt;it with your own content.&lt;/p&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">Block Snippet in a sub-folder with Name and Condition (in a topic that is in a sub-folder):</p><pre>&lt;p&gt;Delete this text and &lt;MadCap:snippetText src="Resources/Snippets/SubFolder/NewSnippet.flsnp" MadCap:targetName="name" MadCap:conditions="Default.PrintOnly" /&gt;it with your own content.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+    </body>
+</html>

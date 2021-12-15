@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>All Synonym files included in the project will be used when compiling output. Beyond creating and editing the Synonym files, no additional setup is required (as of V6). There is currently no means of excluding a Synonyms file from the output.</li>
+            <li>If the Flare project uses MadCap Feedback, you may also add "live" synonyms using Feedback Explorer. This will be tested in Feedback Explorer and Feedback Integration.</li>
+            <li>Generate a Help system from Flare that uses both Directional and Group synonyms and verify that both types work in all supported outputs.</li>
+            <li>If you are testing Feedback Synonyms, you should also test all output types with both Directional and Group synonyms. Additionally, you should verify that the number of search results is reported in Feedback Explorer accurately when a synonym is used.</li>
+        </ul>
+    </body>
+</html>

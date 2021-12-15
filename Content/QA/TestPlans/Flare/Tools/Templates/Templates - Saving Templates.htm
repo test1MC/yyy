@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="3609" MadCap:lastWidth="1023" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Templates - Saving as a Template</h2>
+        <h3>Saving a Flare Project as a Template</h3>
+        <p>!Project | Save Project As Template...</p>
+        <ul class="checkbox">
+            <li>Disabled when there is no project open.</li>
+            <li>Launches a Wizard to save the opened project as a template.</li>
+            <li>After saving the template you should get a dialog confirming the save.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Project Templates are stored under the Template Folder | Projects | "Project Template Name" folder. The flprj file will match the folder name.</p>
+        <p>&#160;</p>
+        <p>Test Creating templates to:</p>
+        <ul class="checkbox">
+            <li>Local systems</li>
+            <li>UNC paths</li>
+            <li>Mapped Network drives</li>
+            <li>Secondary Drives</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Test creating templates with spaces, symbols and non-standard characters  in their names.</p>
+        <p>&#160;</p>
+        <p>Test template files in:</p>
+        <ul class="checkbox">
+            <li> Read-only folders</li>
+            <li>Network folders where you do not have permission to write</li>
+        </ul>
+        <h5>UI&#160;Test Cases:</h5>
+        <table style="width: 607px;">
+            <col style="width: 235px;" />
+            <col style="width: 372px;" />
+            <tbody>
+                <tr>
+                    <td class="top">
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Wizard--SaveProjectAsTemplate1.png" class="properties" style="mc-float: none;clear: none;" />
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Wizard--SaveProjectAsTemplate2.png" class="properties" style="mc-float: none;clear: none;" />
+                        </p>
+                        <p>
+                        </p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Wizard--SaveProjectAsTemplate3.png" class="properties" style="mc-float: none;clear: none;" />
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>&#160;</p>
+                        <p>Test the "Wizardness" of the UI. </p>
+                        <ul class="checkbox">
+                            <li>Go forward and back to make sure buttons do not get activated etc.</li>
+                            <li>Make selections go forward then back, make sure the selections are still there.</li>
+                        </ul>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p style="font-weight: bold;">Wizard Page #1: Select template location...</p>
+        <ul class="checkbox">
+            <li>&#160;<span class="bold">Template Folder:</span> Allows you to select a Template folder to add your project to.<ul style="list-style-type: circle;"><li><span class="bold">Manage Templates...</span> Launches the Manage templates dialog.</li></ul></li>
+            <li><span class="bold">Template Description:</span> Allows you to type a description for the template project.</li>
+            <li><span class="bold">Template Name:</span> Allows you to Name the template:<ul style="list-style-type: circle;"><li>Names the folder that the template project will be stored under.</li><li>Names the FLPRJ/BLPRJ to the typed name.</li></ul></li>
+            <li><span class="bold">&lt; Back:</span> Inactive.</li>
+            <li><span class="bold">Next &gt;:</span> Active. Proceeds to the next wizard page.         </li>
+            <li><span class="bold">Finish:</span> Inactive.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Wizard Page #2: Select content files...</p>
+        <ul class="checkbox">
+            <li>Displays the Contents folder in the project and allows you to choose what topics and folders to save in the template.<ul style="list-style-type: square;"><li>Try different selections. You should not be able to make selections that do not make sense like Files selected but the containing folder is not selected.</li></ul></li>
+            <li><span class="bold">&lt; Back:</span> Active. Allows you to go back to the first page and make changes. Selections on Page #2 should be retained.</li>
+            <li><span class="bold">Next &gt;:</span> Proceeds to the next wizard page.         </li>
+            <li><span class="bold">Finish:</span> Inactive.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Wizard Page #3: Select project files...</p>
+        <ul class="checkbox">
+            <li>Displays the Project folder in the project and allows you to choose what topics and folders to save in the template.<ul style="list-style-type: square;"><li>Try different selections. You should not be able to make selections that do not make sense like Files selected but the containing folder is not selected.</li></ul></li>
+            <li><span class="bold">&lt; Back:</span> Active. Allows you to go back to the first page and make changes. Selections on Page #2 should be retained.</li>
+            <li><span class="bold">Next &gt;:</span> Inactive.         </li>
+            <li><span class="bold">Finish:</span> Active. Finishes the operation copying the files and applying all of the settings in the wizard to the selected folder/files.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>After saving the template you should get a dialog confirming the save.</p>
+        <h3>Saving Flare Project Files as Templates</h3>
+        <p>You can save any file type to a template folder or you can save an entire project.</p>
+        <h4>Files as Templates</h4>
+        <p>!File | Save As Template....</p>
+        <ul class="checkbox">
+            <li>This is only active when the Topic/File is open, not when it is selected in the Content Explorer or Project Organizer</li>
+            <li>After saving the template you should get a dialog confirming the save.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Test Creating templates to:</p>
+        <ul class="checkbox">
+            <li>Local systems</li>
+            <li>UNC paths</li>
+            <li>Mapped Network drives</li>
+            <li>Secondary Drives</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Test creating templates with spaces, symbols and non-standard characters  in their names.</p>
+        <p>&#160;</p>
+        <p>Test template files in:</p>
+        <ul class="checkbox">
+            <li> Read-only folders</li>
+            <li>Network folders where you do not have permission to write</li>
+        </ul>
+        <h5>UI&#160;Test Cases:</h5>
+        <p>
+            <img src="../../../../../Resources/Images/Templates - SaveAsTemplate.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p style="font-weight: bold;">Save As Template</p>
+        <ul class="checkbox">
+            <li>&#160;<span class="bold">Template Folder:</span> Allows you to select a Template folder to add your project to.<ul style="list-style-type: circle;"><li><span class="bold">Manage Templates...</span> Launches the Manage templates dialog.</li></ul></li>
+            <li><span class="bold">Template Description:</span> Allows you to type a description for the template project (Disabled or enabled based on file type)</li>
+            <li><span class="bold">Template Name:</span> Allows you to Name the template:<ul style="list-style-type: circle;"><li>Names the file and appends the correct suffix to it.</li><li>Copies it to the correct folder in the template folder directory</li></ul></li>
+        </ul>
+        <p>After saving the template you should get a dialog confirming the save.</p>
+        <h5>Misc Test Cases</h5>
+        <p>Creating a template from a file will copy the file to the correct folder and allow for the addition of a description for the template </p>
+        <p>(most files):</p>
+        <table style="caption-side: top;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 122px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 205px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 91px;" class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 189px;" class="TableStyle-Basic-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td style="background-color: #a9a9a9;font-weight: bold;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Folder</p>
+                    </td>
+                    <td style="background-color: #a9a9a9;font-weight: bold;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>File Type</p>
+                    </td>
+                    <td style="background-color: #a9a9a9;font-weight: bold;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Extension</p>
+                    </td>
+                    <td style="background-color: #a9a9a9;font-weight: bold;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Description</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Advanced</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Alias File</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flali</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Header File</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.h</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Auto Index Set</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flaix</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Browse Sequence</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flbrs</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Index Links</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flixl</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Relationship Table</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flrtb</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p style="text-align: right;"> <![CDATA[ ]]></p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Search Filter Set</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flsfs</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Synonyms</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.mcsyns</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p><span style="color: #ff0000;">Topic Tag Set</span>
+                        </p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p> .flfts</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>ConditionTagSets</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Condition Tag Sets</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flcts</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Content</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Topics</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.htm, .html</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Disabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Destinations</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Destinations</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.fldes</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>FrameSnippets</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Page Layout header/Footer</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flsnp</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Glossaries                        </p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Glossaries</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flglo</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Images</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Supported Image Files</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Various  ext.</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Imports</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Import Word</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flimp</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Import DITA</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flimpdita</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Import Flare/Blaze</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flimpfl</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Import Frame</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flimpfm</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>MasterPages</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Master Pages</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flmsp</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Disabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>PageLayouts</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>PageLayouts</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flpgl</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Reports</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Reports                        </p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flrep</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Log File                        </p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.mclog</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Not a supported template file</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Skins</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Skin</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flskn</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Mobile Skin</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flskn</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Snippets</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Add Table of Contents... </p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flsnp</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Stylesheets</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Style Sheet</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.css</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Disabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>TableStyles</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>Table Style Sheet</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.css</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Targets</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Target</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.fltar</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Batch Target</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flbat</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>TOCs</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="">
+                        <p>TOCs</p>
+                    </td>
+                    <td style="" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>.flTOC</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>VariableSets</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Variable File</p>
+                    </td>
+                    <td style="background-color: #dcdcdc;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>.flvar</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1" style="background-color: #dcdcdc;">
+                        <p>Enabled</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> <![CDATA[ ]]></p>
+    </body>
+</html>

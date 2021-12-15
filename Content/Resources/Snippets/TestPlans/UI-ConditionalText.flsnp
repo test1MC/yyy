@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="418" MadCap:lastWidth="991">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Condition Tag Sets: </span>Displays a list of all Condition Tag Sets in the project.</li>
+            <li>
+                <p><span class="bold">Condition Tags:&#160;</span> <![CDATA[ ]]></p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Condition Tags:&#160;</span>Displays a list of all condition tags included in the Condition Tag Set selected on the left. Use the check box to apply these conditions to the selected item(s).</li>
+                    <li><span class="bold">(Checkbox):&#160;</span>Displays whether or not the condition tag is applied to the selected item(s)</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment as it is entered for that condition tag in the Condition Tag Set.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>Open the selected Condition Tag Set in the <span class="UI">Condition Tag Set Editor</span>.</li>
+            <li><span class="bold">Unselect All:&#160;</span>Removes the checkmark for all condition tags for the selected Condition Tag Set.</li>
+            <li><span class="bold">Select All:&#160;</span>Applies a checkmark to all condition tags for the selected Condition Tag Set.</li>
+            <li><span class="bold">OK:&#160;</span>Accepts the changes made and closes the dialog.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog with no changes applied.</li>
+        </ul>
+    </body>
+</html>

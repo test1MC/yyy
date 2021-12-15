@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="85" MadCap:lastWidth="1433">
+    <body>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="checkbox">
+                            <li>IE7</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="checkbox">
+                            <li>FF</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="checkbox">
+                            <li>IE8</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="checkbox">
+                            <li>Chrome</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="checkbox">
+                            <li>IE9</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="checkbox">
+                            <li>Safari</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

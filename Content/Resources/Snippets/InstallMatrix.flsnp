@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="378" MadCap:lastWidth="928">
+    <head>
+        <link href="../TableStyles/Matrix.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h3>Install Matrix</h3>
+        <p>This needs to be completed before we ship any product.</p>
+        <p>&#160;</p>
+        <table style="width: 800px;mc-table-style: url('../TableStyles/Matrix.css');" class="TableStyle-Matrix" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column2" />
+            <col class="Column-Column3" />
+            <col class="Column-Column2" />
+            <col class="Column-Column3" />
+            <col class="Column-Column2" />
+            <col class="Column-Column3" />
+            <col class="Column-Column2" />
+            <col class="Column-Column3" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">&#160;</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">US</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">German</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">Japanese</th>
+                    <th class="HeadD-Column2-Header1" colspan="2">Swedish</th>
+                </tr>
+                <tr class="Head-Header2">
+                    <th class="HeadE-Column1-Header2">&#160;</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadD-Column3-Header2">x64</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Windows 8</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Windows 7</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Windows Vista</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Windows XP</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Win Server 2013</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Win Server 2008 R2</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Win Server 2008</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">Win Server 2003</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyA-Column3-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

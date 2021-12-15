@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\mferguson\My Documents\My Profiles\MyProfile.capro" ProfileHash="b0d877845de8532f8ea1d0c4c7518957" ScreenRectangle="2744,304,21,21">
+        <OriginalImage Folder="C:\Documents and Settings\mferguson\Desktop\Bar" Right="0" Bottom="0" BorderWidth="0" FileName="OutputFileName{n}" EnableShadow="false" ExportFormat="png" ComputedWidth="21" ComputedHeight="21" Format="tiff">SUkqAIQCAACAN92P5/wKCQaCwOEweFQiHQ2IQyJQuKQ+JxaKN2FRqCRx/x6QRuRR2Rx+SyGSSmTSqUSt/tt1wSYTKYy+azObTSdTmeTifTegTuf0Kgv9sumCUek0ijUylU2l1GoVOn1WnVepVas1h/td0QSvWCv12x2GyWK0Wd/v8AAC1221Wa5WW6Wm52lqud+v+83u+3y9YC/YG/4XA2y3Yh/hy4YbB4/BZHHZFpuW95XL5Z/5jN5rOZ/PZrFYrGW7QZnUZ3U6fVP9o5rX3vY67YbXZbbaXvR3DS7nfbPgbjg7e9s9ycXjv/jcjmcrk8vnc3d27e9Drc/sc3r81muJ+P/u9/w+DveTxeXFeP1eXe7319/0+X3+b6eNluHv/f8/h//r+v4/z/MVAMAQK/b4LhAkDv/BcFH+YpuH1B8IwnCUIQtCkLwrDcNOnDkMxBDERQ/EcNF+bB8H/E8UxXFUURdFkXxbGcXw83saRjHMYR3HEdlyaZ7H/H8gyHIUgSNIkjyKxUiyK9q4SXKElSnJMqyRK5ZGceZ/yzLcuy5LUwS9MLFS/M0wzPMc1Let00zFN83FYZJ5H/OU6TtOs5zzO89TxP0+0BPlBT3Qk/0HQ1CFMYp3n/RVGUdRtF0jR9JUhS1K0xSlNUnTlL03T1OFAYJ2n/UVSVNUtR1TU9VVRV1W1hVlZVXWlX1nW1aE0Xh1n/XVeV9Xtd2DX9hWBY1i2RYllWHZlj2XZ1mEoW50n/aVqWtatp2za9tWxb1u3BblxW3clv3Hc1yEaWRzH/dV2Xddt13jd95Xhe163xel9Xnfl733f1+ICABgAAAAAQAAAGAAAAABAAAACAAIAAgACAAQAP4ABAABAAAAAAAAAAABAwABAAAAFQAAAAEBAwABAAAAFQAAAAIBAwAEAAAAfAIAAAMBAwABAAAABQAAAAYBAwABAAAAAgAAABEBBAABAAAACAAAABUBAwABAAAABAAAABYBBAABAAAAFQAAABcBBAABAAAAYwIAABoBBQABAAAAbAIAABsBBQABAAAAdAIAABwBAwABAAAAAQAAACgBAwABAAAAAgAAAD0BAwABAAAAAQAAAFIBAwABAAAAAgAAAAAAAAA=</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="MyProfileCondition" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="how" Comment="">tree</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

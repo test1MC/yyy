@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="720" MadCap:lastWidth="859">
+    <body>
+        <p>
+            <img src="../../../Images/TestPlans/Mimic/Conditions/Conditions_Tab_Movie_Project.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>
+                    <p>The <span class="bold">Condition&#160;Tag Set</span> section displays all the Condition tag sets available to select</p>
+                    <ul style="list-style-type: square;">
+                        <li>If the project is linked to a Flare Project (<MadCap:xref href="../../../../QA/TestPlans/Mimic/Outputs/Integration/Integration.htm" target="" title="" alt="">See "Integration"</MadCap:xref>), all the Flare projects condition tag sets will be shown here</li>
+                        <li>The tag set of the Mimic project will be listed as "Project" (If the movie is in a project)</li>
+                        <li>The tag set of the Mimic Movie will be listed as "Movie" (Only if it is a Stand Alone movie)</li>
+                        <li>Selecting a tag set, will display all available condition tags in the <span class="bold">Condition Tag</span> section</li>
+                    </ul>
+                </li>
+                <li>The <span class="bold">Condition Tag</span> section will list all the available condition tags associated with the selected <span class="bold">Condition Tag Set</span> on the left</li>
+                <li>The correct color, name and comment should be shown for each condition tag</li>
+                <li>To apply a condition, check the checkbox next to the desired condition<ul style="list-style-type: square;"><li>Once OK is pressed the selected condition tags are now applied</li></ul></li>
+                <li>To un-apply a condition, simply uncheck the condition</li>
+                <li><span class="bold">Unselect All</span> button will unselect all selected condition tags<ul style="list-style-type: square;"><li>Disabled if none are selected</li></ul></li>
+                <li><span class="bold">Select All </span>button will select all condition tags (in the current condition tag set)<ul style="list-style-type: square;"><li>Disabled if all are selected</li></ul></li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+        </div>
+    </body>
+</html>

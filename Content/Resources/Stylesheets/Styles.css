@@ -1,0 +1,579 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+}
+
+h1
+{
+	font-weight: bold;
+	border-bottom-color: #000000;
+	font-size: 18.0pt;
+	font-family: Cambria;
+}
+
+h2
+{
+	font-weight: bold;
+	font-size: 16.0pt;
+	border-bottom-style: solid;
+	border-top-color: #000000;
+	border-top-style: solid;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	font-family: Cambria;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 14.0pt;
+	background-color: #a9a9a9;
+	color: #000000;
+	font-family: Cambria;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+	background-color: #dcdcdc;
+	font-family: Cambria;
+}
+
+h5
+{
+	font-weight: bold;
+	color: #696969;
+	background-color: #dcdcdc;
+	font-family: Cambria;
+	font-size: 11pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+	font-family: Cambria;
+	color: #c0c0c0;
+}
+
+p
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Calibri;
+	font-size: 11pt;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 10pt;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #ffd700;
+}
+
+MadCap|expandingBody
+{
+	color: #c0c0c0;
+	font-style: italic;
+}
+
+MadCap|dropDownHead
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #ffd700;
+}
+
+MadCap|dropDownBody
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #c0c0c0;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+img.right
+{
+	float: right;
+}
+
+MadCap|toggler.tog1
+{
+	
+}
+
+MadCap|toggler.tog2
+{
+	
+}
+
+pre
+{
+	font-size: 10pt;
+	margin: 0pt;
+}
+
+MadCap|topicToolbarProxy.FloatRight
+{
+	float: right;
+}
+
+div.right
+{
+	float: right;
+}
+
+span.UI
+{
+	font-weight: bold;
+	color: #006400;
+}
+
+img.left
+{
+	float: left;
+}
+
+li
+{
+	font-family: Calibri;
+	font-size: 11pt;
+}
+
+ul
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	list-style-type: disc;
+	margin-top: 2px;
+}
+
+ol
+{
+	font-family: Calibri;
+	font-size: 11pt;
+}
+
+img.properties
+{
+	float: left;
+	mc-thumbnail: popup;
+	clear: both;
+}
+
+@media print
+{
+	img.properties
+	{
+		max-width: 2.5in;
+	}
+
+	p.styleTables
+	{
+		font-size: 8pt;
+	}
+
+	img.propertiesNoFloat
+	{
+		max-width: 2.5in;
+	}
+}
+
+p.note
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	border-top-color: #006400;
+	border-top-width: 1px;
+	border-top-style: solid;
+	line-height: 15pt;
+	margin-left: 10pt;
+	margin-right: 10pt;
+	background-color: #ddedfe;
+	border-bottom: solid 1px #4682b4;
+	border-top: solid 1px #4682b4;
+	margin-bottom: 8pt;
+	margin-top: 8pt;
+}
+
+div.SnippetIndent
+{
+	margin-left: 230pt;
+}
+
+p.styleTables
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Calibri;
+	font-size: 11pt;
+}
+
+p.indent
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-left: 0.5in;
+}
+
+MadCap|xref
+{
+	mc-format: 'See {paratext}';
+}
+
+img
+{
+	mc-thumbnail-max-height: auto;
+	mc-thumbnail-max-width: 230px;
+	border: none;
+}
+
+td.top
+{
+	vertical-align: top;
+}
+
+div.TestCases
+{
+	margin-left: 20px;
+	padding-top: 4pt;
+	padding-bottom: 4pt;
+	border-bottom: double 3px #006400;
+	border-top: double 3px #006400;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p.TestCases
+{
+	font-family: Calibri;
+	font-weight: bold;
+	margin-top: 4pt;
+	margin-bottom: 2pt;
+	color: #000000;
+	font-size: 12pt;
+}
+
+MadCap|xref.TitleOnly
+{
+	mc-format: '{paratext}';
+}
+
+td.black
+{
+	background-color: #000000;
+	border: solid 1px #000000;
+}
+
+h1.productName
+{
+	font-weight: bold;
+	border-bottom-color: #000000;
+	font-family: 'Gill Sans MT';
+	font-size: 28pt;
+}
+
+MadCap|toggler
+{
+	mc-image-position: right;
+}
+
+span.italic
+{
+	font-style: italic;
+}
+
+span.StyleName
+{
+	color: #b22222;
+}
+
+span.StyleProperty
+{
+	color: #cd5c5c;
+}
+
+span.KeyboardShortcut
+{
+	color: #8a2be2;
+}
+
+span.MenuItem
+{
+	color: #b22222;
+}
+
+span.KeyboardShortcut:before
+{
+	content: '[';
+}
+
+span.KeyboardShortcut:after
+{
+	content: ']';
+}
+
+table.table_1
+{
+	margin-left: 5pt;
+	border-collapse: collapse;
+}
+
+tr
+{
+	height: 15pt;
+}
+
+td
+{
+	font-family: Calibri;
+	font-size: 11pt;
+}
+
+ul.checkbox
+{
+	list-style-image: url('../Images/List---Checkbox.png');
+	margin-left: 50px;
+}
+
+p.Open
+{
+	font-size: 12pt;
+	font-weight: bold;
+	color: #b8860b;
+}
+
+p.Open:before
+{
+	content: '*';
+}
+
+p.Open:after
+{
+	content: '*';
+}
+
+img.border
+{
+	border: solid 4px #0000ff;
+}
+
+h1.Deletethisatsomepoint
+{
+	
+}
+
+span.RibbonItem
+{
+	color: #00008b;
+}
+
+@media non-print
+{
+	div.SnippetIndent
+	{
+		margin-left: 180pt;
+	}
+
+	div
+	{
+		margin-left: 180px;
+	}
+}
+
+img.leftclear
+{
+	float: left;
+	clear: both;
+}
+
+hr
+{
+	clear: both;
+}
+
+h4.h4clearleft
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+	background-color: #dcdcdc;
+	font-family: Cambria;
+	clear: left;
+}
+
+div.clearleft
+{
+	clear: left;
+}
+
+hr.HRclear
+{
+	clear: left;
+}
+
+p.Pclear
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	clear: left;
+}
+
+caption
+{
+	font-weight: bold;
+	font-style: normal;
+	font-family: Cambria;
+}
+
+span.toolbar
+{
+	color: #ffa500;
+}
+
+h4.QALevel0
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	background-color: #ff0000;
+	mc-auto-number-format: 'HAS NOT BEEN TESTED';
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h4.QALevel1
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	mc-auto-number-format: 'TESTED ONCE';
+	background-color: #ffa500;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+h4.QALevel2
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	mc-auto-number-format: 'TESTED TWICE';
+	margin-bottom: 1em;
+	margin-top: 1em;
+	background-color: #ffff00;
+}
+
+h4.QALevelShelved
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	background-color: #008000;
+	mc-auto-number-format: 'TESTED AND SHELVED';
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+h4.QALevel3
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	mc-auto-number-format: 'TESTING FINISHED - NOT SHELVED DUE TO OUTSTANDING BUGS';
+	background-color: #ee82ee;
+}
+
+h4.QALevelX
+{
+	font-family: Calibri;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	mc-auto-number-format: 'NOT READY FOR TESTING';
+	background-color: #000000;
+	color: #ffffff;
+}
+
+div.example
+{
+	background-color: #ddedfe;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #4682b4;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #4682b4;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #4682b4;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #4682b4;
+}
+
+img.propertiesNoFloat
+{
+	mc-thumbnail: popup;
+	clear: both;
+}
+
+div.FloatLeft
+{
+	clear: left;
+	float: left;
+}
+
+hr.HRColor
+{
+	border: 1px 0 #48d1cc;
+}
+
+tr.performance_matrix_header
+{
+	height: 95pt;
+}
+

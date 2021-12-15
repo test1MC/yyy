@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="473" MadCap:lastWidth="819">
+    <body>
+        <li>
+            <p><span class="bold">Language&#160;table</span>
+            </p>
+            <p class="bold">Columns:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Language:&#160;</span>Select a language to use in the skin.</li>
+                <li><span class="bold">Localized Skins:&#160;</span>Indicates whether a particular language has a skin available for use.</li>
+            </ul>
+            <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+        </li>
+        <p MadCap:conditions="TargetEditor.EPUB,TargetEditor.HTML5,TargetEditor.HTMLHelp,TargetEditor.PDF,TargetEditor.Print,TargetEditor.Web,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.Word,TargetEditor.XHTML,TargetEditor.XPS,TargetEditor.EclipseHelp"><span class="bold">Right-to-Left:&#160;</span>This group box will only become active if a RTL&#160;language is selected above (Arabic, Hebrew, Persian, Urdu, Yiddish). These options were created to accommodate projects which may have been translated from a LTR&#160;language to a RTL&#160;language.</p>
+        <ul class="checkbox" MadCap:conditions="TargetEditor.EPUB,TargetEditor.HTML5,TargetEditor.HTMLHelp,TargetEditor.PDF,TargetEditor.Print,TargetEditor.Web,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.Word,TargetEditor.XHTML,TargetEditor.XPS,TargetEditor.EclipseHelp">
+            <li><span class="bold">Invert left/right local styles: </span>During compile, inverts all inline styles from "right" to "left"&#160;and vice versa.</li>
+            <li><span class="bold">Invert left/right stylesheet rules: </span>During compile, inverts all CSS&#160;styles from "right" to "left"&#160;and vice versa.</li>
+            <li><span class="bold">Invert Capture captions: </span>During compile, inverts alignment of content inside Capture callouts</li>
+            <li MadCap:conditions="TargetEditor.Word,TargetEditor.PDF,TargetEditor.XPS,TargetEditor.XHTML"><span class="bold">Invert Page Layouts: </span>During compile, inverts page layouts from "right"&#160;to "left"&#160;and vice versa. It is important to note that this option will not simply swap out a Left page for a Right page, or a First Left for a First Right. If a chapter is set to begin on a First Right page and this option is enabled, Flare will still use the First Right page, but it will create a mirrored version of it and shift it to the right.</li>
+        </ul>
+    </body>
+</html>

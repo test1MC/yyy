@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="4994" MadCap:lastWidth="1388" MadCap:conditionTagExpression="include[ElementContextMenuItems.EditElement] exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Description or AddFile--UIControls.Preview or AddFile--UIControls.ProjectFiles or Default.UITestsDialogs or Default.UITestsEditors or ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FontProperties or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands or &quot;FileExplorer.Select External Path/Open&quot; or &quot;FileExplorer.Select Folder&quot;] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>QR - Editing</h2>
+        <h3>QR Code menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/QR Code/QR Code--context.png" style="width: 226px; height: 251px;" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp">
+        </MadCap:snippetBlock>
+        <h3>General Editing</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Pasting another QR Code over the existing one should replace the selected QR Code – Verify that it renders and display in the block bar correctly.</li>
+                <li>Pasting another element or text over a selected QR Code will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Inserting another element or typing over a selected QR Code will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Test lots of different characters including foreign characters and make sure they all render correctly</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p><b>No Class:</b>
+        </p>
+        <p>&lt;MadCap:qrCode&gt;QR Code Here&lt;/MadCap:qrCode&gt;</p>
+        <p>&#160;</p>
+        <p><b>With Class:</b>
+        </p>
+        <p>&lt;MadCap:qrCode class="class"&gt;QR Code Here&lt;/MadCap:qrCode&gt;</p>
+    </body>
+</html>

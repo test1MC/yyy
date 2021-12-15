@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="499" MadCap:lastWidth="887">
+    <body>
+        <ul class="checkbox">
+            <li><span class="UI">Link Viewer</span>:&#160;Open any file that can be linked to or linked from a <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file. Then open the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file from the <span class="UI">Link Viewer</span>'s "Linked From:" or "Linked To:"&#160;columns. <ul><li>Double-click the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file&#160;listed in the <span class="UI">Link Viewer</span></li><li>Right-click the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file&#160;in the <span class="UI">Link Viewer</span> and select <span class="MenuItem">Open</span></li><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file&#160;in the <span class="UI">Link Viewer</span> and press <span class="KeyboardShortcut">Enter</span></li></ul></li>
+            <li MadCap:conditions="FlareFileTypes.Target"><span class="UI">Link Viewer</span>:&#160;Targets can also be opened from the "Associated Targets:" section of the <span class="UI">Link Viewer</span>. Open any file in the project and all Targets which will use that file to create output will appear in the "Associated Targets:" section
+                <ul><li>Double-click the Target file&#160;listed in the <span class="UI">Link Viewer</span></li><li>Right-click the Target file&#160;in the <span class="UI">Link Viewer</span> and select <span class="MenuItem">Open</span></li><li>Select the Target file&#160;in the <span class="UI">Link Viewer</span> and press <span class="KeyboardShortcut">Enter</span></li></ul></li>
+        </ul>
+    </body>
+</html>

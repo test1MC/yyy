@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="796" MadCap:lastWidth="1247" MadCap:fileTags="Status.Not Applicable,AuthorFileTagSet.Frank">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Setup Test PCs</h1>
+        <p>Steps in <span style="color: #ff0000;">Red </span>require advanced hardware &amp; software knowledge. It will only have to be done once on the new Machines. If you do not feel comfortable doing these, ask for help.</p>
+        <p>&#160;</p>
+        <ol>
+            <li style="color: #ff0000;">Install 2nd SATA drive</li>
+            <li style="color: #ff0000;">User Name:  Simon</li>
+            <li style="color: #ff0000;">PW:  R3m3mb3r!</li>
+            <li>PC name “name-test” (Jay-Test)</li>
+            <li>Optional: Add Image to Madcap domain<ol style="list-style-type: lower-alpha;"><li>Log in as Simon when you reboot after the above step</li></ol></li>
+            <li>Turn on Remote Desktop (Check the Allow connections from any versions)</li>
+            <li>Add 2 users to admin group:<ol style="list-style-type: lower-alpha;"><li>Add your domain\username</li><li>Add the group "rnd"</li></ol></li>
+            <li style="color: #ff0000;">Reboot, hitting F2 at Dell prompt (to enter BIOS)<ol style="list-style-type: lower-alpha;"><li style="color: #ff0000;">Go to drives, and check SATA 2</li><li style="color: #ff0000;">b.	Exit, saving changes</li><li style="color: #ff0000;">c.	Make sure on reboot, the drives show Non-Raid</li></ol></li>
+            <li style="color: #ff0000;">Back in windows, Launch Disk Management</li>
+            <li style="color: #ff0000;">DISK 1 is the new Hard Drive, right-click it and select format</li>
+            <li style="color: #ff0000;">Choose NTFS</li>
+            <li style="color: #ff0000;">Uncheck Quick Format</li>
+            <li style="color: #ff0000;">Name the drive SECOND</li>
+            <li>Set you folders to Details view<ol style="list-style-type: lower-alpha;"><li>Turn on Product Version information</li></ol></li>
+            <li>Launch Word (or any office application) and register your copy of Office (Frank has your key)</li>
+            <li>Reboot a final time (This verifies all devices/changes are fully registered)</li>
+            <li>Image using ACRONIS<ol style="list-style-type: lower-alpha;"><li>Insert ACRONIS disk</li><li>Turn on PC</li><li>Hit F12 to initiate boot menu</li><li>Select CD-ROM drive</li><li>ACRONIS will launch</li></ol></li>
+            <li>When doing your image, select all THREE Disk1 partitions drives (Backup, C:\, FAT16)</li>
+            <li>Archive location should be on Disk 2 (SECOND)</li>
+            <li>Path  and name should make sense (ie E:\Acronis\Win7 64 Bit\Win7Clean.tib)</li>
+            <li>Be very THOUGHROUGH in your comments.<ol style="list-style-type: lower-alpha;"><li>OS</li><li>Admin User/PW info</li><li>Updates</li><li>.Net version</li><li>IE version</li><li>Other Software</li><li>Date of Image</li><li>Email Frank with your new Image and details of that image</li></ol></li>
+            <li>Update the <a href="QA Test PCs.htm">QA Test PCs</a> document in the QA Project</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="198" MadCap:lastWidth="845">
+    <body>
+        <ul class="checkbox">
+            <li><span class="UI">TOC&#160;Editor</span>:&#160;A <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file can be linked to from a TOC, you can open a from the <span class="UI">TOC&#160;Editor</span> in a couple of ways:<ul><li>From the <span class="UI">TOC&#160;Editor</span>, select the node that links to the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file and use the Open Link function (context menu, local toolbar)
+</li><li>From the <span class="UI">Properties</span> dialog for that TOC&#160;node, in the General tab, click the Open Linked File button.</li></ul></li>
+        </ul>
+    </body>
+</html>

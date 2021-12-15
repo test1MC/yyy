@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="543" MadCap:lastWidth="1063" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <MadCap:changeData>
+            <MadCap:RemoveChange MadCap:userName="hkmain" MadCap:initials="HKHK" MadCap:id="1" MadCap:timestamp="2012-04-04T09:51:42.0570407-07:00" />
+            <MadCap:AddChange MadCap:userName="hkmain" MadCap:initials="HKHK" MadCap:id="2" MadCap:timestamp="2012-04-04T09:51:43.5951945-07:00" />
+        </MadCap:changeData>
+    </head>
+    <body>
+        <h1>Help Controls - Shortcut - UI</h1>
+        <p>Inserting Shortcut Controls into Topics</p>
+        <p>This feature is supported in HTML Help output.</p>
+        <p>A shortcut control launches a program or window in an application by passing Windows-based messages and parameters. For example, if a topic discusses a procedure that involves a specific dialog window, you can provide a link that a user can click in the topic to open the dialog in the program. Shortcut controls can make tasks easier for new users, and they can speed up complex procedures for experienced users.</p>
+        <p>The following are limitations of shortcut controls:</p>
+        <p>■A Shortcut control can be used only with HTML Help.</p>
+        <p>■The CHM file must be located on a local or network drive. The file cannot be accessed through HTTP.</p>
+        <p>■The CHM file must be displayed in the Help Viewer. A Shortcut control does not work in a file that is displayed in an Internet browser window.</p>
+        <p>How to insert a shortcut control into a topic</p>
+        <p>1.Open the topic.</p>
+        <p>2.In the XML Editor, click in the topic where you want to insert the shortcut control.</p>
+        <p>3.Select Insert&gt;Help Control&gt;Shortcut Cont<MadCap:change MadCap:changes="2">rol (in the toolstrip view) or Insert&gt;Shortcut Control (in the ribbon view)</MadCap:change><MadCap:change MadCap:changes="1">rol.</MadCap:change></p>
+        <p>The Insert Shortcut Control dialog opens.</p>
+        <p>4.Enter the appropriate information in each of the fields. You may need to consult with your developer for help on completing these fields.</p>
+        <p>■File path to the executable file… Enter the path and name of the program that (EXE file) you are calling.</p>
+        <p>■Parameters to be sent… Enter any parameters you would like to send the program (e.g., the name of a file to open). Separate the parameters with commas.</p>
+        <p>■A message ID of a standard Windows message Select a standard Windows message from the drop-down menu.</p>
+        <p>■WPARAM value Enter the WPARAM value.</p>
+        <p>■LPARAM value Enter the LPARAM value.</p>
+        <p>5.Click OK.</p>
+        <p>The Shortcut control is added to the topic.</p>
+        <p>6.Press CTRL+S or click  to save your work.</p>
+        <p>Note: If you are working with HTML Help and import a RoboHelp project containing Shortcut links, the linked files are placed in a special subfolder in the Content Explorer (Resources\CHMSupport). For more information, see Importing Tips.</p>
+        <p>WHAT'S NEXT?</p>
+        <p>If you want to change the way the Shortcut control looks, you can modify the style of the Shortcut control. See Editing Shortcut Controls.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

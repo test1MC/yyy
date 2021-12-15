@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="889" MadCap:lastWidth="1051">
+    <body>
+        <p class="bold">Basic expressions:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Conditional Tag Sets: </span>Displays a list of all Condition Tag Sets in the project. Select any condition tag set listed to display its tags in the Tags list, or select "(show all tags)" to see all tags from all Condition Tag Sets in the project.</li>
+            <li>
+                <p><span class="bold">Tags:&#160;</span>Displays a list of all Conditional Tags from the selected Condition Tag Set (or displays all tags if "(show all tags)"&#160;is selected).  Column opens in alphabetical order and order can be reversed by clicking on the column heading twice.</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Tags:&#160;</span>Displays a list of Conditional Tags for the selected set(s).</li>
+                    <li><span class="bold">(Conditional Indicator Color):&#160;</span>Displays the color associated with the conditional tag.</li>
+                    <li><span class="bold">Include:&#160;</span>Select to include content with the condition tag in the output. This works one of two ways:<ol><li>Include content excluded by another tag: By default, all tags will be included in the target unless you specify otherwise.  In this, the standard use case, this checkbox is used to include content which may be excluded by another condition tag.</li><li>Include only the selected tags/auto-exclude other tags:&#160;If no tags are set to be excluded, you can use the include tag to specify that only certain tagged content should be included in the output. In this use case, you cannot elect to exclude any tags as any tags that are not set to be included will automatically be excluded.</li></ol></li>
+                    <li><span class="bold">Exclude:&#160;</span>Select to exclude content with the condition tag from the output.</li>
+                </ul>
+                <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>(Not active when "(show all tags)"&#160;is selected) Opens the currently selected condition tag set in the <span class="UI">ConditionTagSet Editor</span>.</li>
+            <li><span class="bold">(Expression field):&#160;</span>Displays conditional expressions for this Target based on "Include" and "Exclude"&#160;boxes selected above. For a Basic expression, this field should not allow editing.</li>
+        </ul>
+        <p class="bold">Advanced expressions: </p>
+        <ul class="checkbox">
+            <li>
+                <p>When switching to an Advanced expression , the expression field allows you to manually enter Conditional Expressions. You can define expressions to also use the "and" operator in addition to our standard "or" operator (which the "Basic" section uses).</p>
+                <p class="bold">Test Cases:</p>
+                <ul>
+                    <li>Verify <span class="KeyboardShortcut">Arrow</span> keys, <span class="KeyboardShortcut">Delete</span> and <span class="KeyboardShortcut">Backspace</span> and typing text work as expected</li>
+                    <li>When switching to an Advanced expression, the "Include" and "Exclude" columns in the Tags table are hidden</li>
+                    <li>With "(show all tags)"&#160;selected, double-clicking a tag correctly adds that tag to the expression</li>
+                    <li>With a specific tag set selected, double-clicking a tag correctly adds that tag to the expression</li>
+                    <li>Invalid syntax in the Advanced expression text field displays a warning below the text field</li>
+                    <li>Unrecognized tags in the Advanced expression display a warning below the text field</li>
+                    <li>Clicking the warning below the text field highlights the error in the Advanced expression</li>
+                    <li>Verify a vertical scroll bar appears with a long Advanced expression</li>
+                </ul>
+            </li>
+            <li><span class="bold">Copy from Basic:&#160;</span>(Requires that a Basic expression exist to be active) Transfers the current Basic&#160;expression to the Advanced expression text field so that the user has an expression with which to start.</li>
+        </ul>
+        <p class="bold" MadCap:conditions="TargetEditor.FrameMaker">Options:</p>
+        <ul MadCap:conditions="TargetEditor.FrameMaker" class="checkbox">
+            <li><span class="bold">Preserve Condition Tags when Generating FrameMaker Documents:&#160;</span>Enable this option to preserve all condition tags to FrameMaker output.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:
+</p>
+            <ul class="checkbox">
+                <li>Condition Tag Set</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1046" MadCap:lastWidth="1466" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Not Applicable">
+    <head>
+    </head>
+    <body>
+        <h2>Blaze - Baseline  <![CDATA[ ]]></h2>
+        <p>When testing Blaze, keep in mind that Blaze is limited to print outputs. Any features added to Flare need to be considered in the context of Blaze to ensure they make sense for a print-exclusive application:</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Confirm whether or not a new Flare feature belongs in Blaze</p>
+                <p>If the feature <b>DOES NOT</b> belong in Blaze:</p>
+                <ul style="list-style-type: circle;">
+                    <li>Verify the UI&#160;is not accessible via menu, toolbar or hotkey</li>
+                    <li>Verify that references to the new feature in other UI&#160;are removed (EXAMPLE:&#160;The Target Editor in Blaze should not reference Master Pages)</li>
+                    <li>Verify the feature is not included in the documentation (TOC, Index, Search, Glossary)</li>
+                </ul>
+                <p>If the feature <b>IS</b> going to be included in Blaze:</p>
+                <ul style="list-style-type: circle;">
+                    <li>Verify the full set of functionality is Blaze-appropriate ("Web"-only options are excluded). </li>
+                    <li>Verify the documentation is Blaze-appropriate (ie, does not use "Web"&#160;examples)</li>
+                    <li>Verify any template files created to support the feature are Blaze-appropriate (EXAMPLE:&#160;The default condition tag set in Blaze is different from Flare's since Flare's references Web output with its "ScreenOnly"&#160;tag.)</li>
+                </ul>
+            </li>
+            <li>
+                <p class="bold">Test all new features fully in Blaze as well as Flare</p>
+                <ul style="list-style-type: circle;">
+                    <li>Test Blaze on a machine that does not have Flare installed to confirm any new filetypes register correctly</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Baseline</h3>
+        <p><span class="bold">16621	</span>In the Project Organizer, right-clicking the Advanced folder lets me add files which do not belong in Blaze (Synonyms sets, Header files etc.)</p>
+        <p><span class="bold">16378	</span>Cannot run Blaze as a "Standard User"</p>
+        <p><span class="bold">16379	</span>Cannot generate a PDF/XPS on a Vista PC with Standard User Permissions - Cannot load a DLL</p>
+        <p><span class="bold">16435	</span>table borders not imported to Blaze</p>
+        <p><span class="bold">16613	</span>Error when trying to open a .blprjzip file on Blaze</p>
+        <p><span class="bold">16644	</span>In Blaze's Target Editor, you can set a Glossary Master page, but you can't create a Master Page in Blaze.</p>
+        <p><span class="bold">16701 </span>Insert Menu in Blaze contains several elements that apply to online outputs only.</p>
+        <p><span class="bold">16703	</span>"Remove images from paragraphs with heading levels" option in the Target Editor does not appear in Blaze.</p>
+        <p><span class="bold">16787	</span>Blurb in Index Proxy dialog needs to be rewritten for Blaze.</p>
+        <p><span class="bold">16793	</span>Blaze crashes when you open a topic when Blaze is in</p>
+        <p><span class="bold">16884	</span>There is no default master stylesheet when MS Word doc is imported to Blaze</p>
+        <p><span class="bold">16973	</span>imported text is imported to Blaze without its formatting</p>
+        <p><span class="bold">17158	</span>the target XHTML is written as "MyHTMLOutput" in the "book" template</p>
+        <p><span class="bold">17267	</span>Bolded words in MS Word are imported non-bold in Blaze</p>
+        <p><span class="bold">17269	</span>lower alpha-numbered list of word doc imported to be numbered list in Blaze</p>
+        <p><span class="bold">17291	</span>Heading style in word doc is imported as ordinary text in Blaze</p>
+        <p><span class="bold">17292	</span>changing Layouts from Web to Print (or the other way around) of imported word doc will display error message in Messages Pane</p>
+        <p><span class="bold">17293	</span>text indentation of Ms Word not imported correctly to Blaze</p>
+        <p><span class="bold">17294	</span>underlined characters of Ms Word not imported underlined to Blaze</p>
+        <p><span class="bold">17321	</span>formatted texts are not imported correctly to Blaze</p>
+        <p><span class="bold">17324	</span>Lists of frame doc not imported to Blaze</p>
+        <p><span class="bold">17325	</span>Garamond font of Frame doc is imported as New Times Roman font in Blaze</p>
+        <p><span class="bold">17524	</span>Blaze crashes when viewing a topic in print layout which includes hyphenation</p>
+        <p><span class="bold">17584	</span>Blaze crashes every time I opened Blaze</p>
+        <p><span class="bold">17640	</span>The default stylesheet used for every new Blaze project contains styles not used in Blaze (a.Popup, expandingHead, expandingBody and dropDownHotSpot styles in it)</p>
+        <p><span class="bold">17949	</span>Cannot open the Annotations Pane or the Edit Annotation Pane from the Tools menu in Blaze.</p>
+        <p><span class="bold">18108	</span>We don’t get the "Select UI Language' dialog window when opening Blaze for the first time.</p>
+        <p><span class="bold">18483	</span>The default page layout file for new Blaze projects is two columns.  This can give a bad first impression after importing a Word or Frame document.</p>
+        <p><span class="bold">18923	</span>You cannot insert a Mini-TOC Proxy in Blaze</p>
+        <p><span class="bold">19115	</span>Sending a Blaze topic for review generates a fltrev file instead of a bltrev file.</p>
+        <p><span class="bold">19382	</span>Opening our Stylesheet in Blaze opens using the "Default" Medium.  Shouldn’t it open to the "Print" medium?</p>
+        <p><span class="bold">19827	</span>Opening our Stylesheet in Blaze in Simpliifed View opens using the "Default" Medium.  Shouldn’t it open to the "Print" medium? (This bug is for Simplified View)</p>
+        <p><span class="bold">20090	</span>Styles are not updating WYS without refreshing page</p>
+        <p><span class="bold">22306	</span>Blaze doesn’t give the same nag as flare if you don’t have a PDF viewer installed.</p>
+        <p><span class="bold">22541	</span>Default Medium not "black" in the stylesheet editor but it is in the topic.</p>
+        <p><span class="bold">22620       <![CDATA[ ]]></span>Flare exclusive files appear in the Import File Filter Designer list of file types when importing a Blaze project into a Blaze project.</p>
+        <p><span class="bold">22721	</span>Table borders do not display in PDF output</p>
+        <p><span class="bold">23198 </span>In Blaze, if you switch to "default" medium and then go from Web Layout to Print Layout mode, we change the medium to "print" medium.</p>
+        <p><span class="bold">26454 </span>Blaze lets you browse for Flare project files.</p>
+        <p><span class="bold">28324 </span>There is no "Options" button in the Blaze Target Editor, so I can't set the new PDF options in Blaze.</p>
+        <p><span class="bold">28988 </span>Importing DITA into Blaze will produce Masterpages which we decided not to support in Blaze.</p>
+        <p><span class="bold">29248 </span>Getting error when previewing topic in WebHelp from a Blaze import.</p>
+        <p><span class="bold">33705       <![CDATA[ ]]></span>Via the Template Manager, I can open Flare-exclusive files (skin, synonym sets, etc) in Blaze.  These files open in the XML Editor and look ugly.  We should only display files appropriate to Blaze.</p>
+    </body>
+</html>

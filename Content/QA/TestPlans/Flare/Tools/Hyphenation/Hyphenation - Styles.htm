@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1924" MadCap:lastWidth="880" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Hyphenation - Styles</h2>
+        <ul class="checkbox">
+            <li>By default, Hyphenation is enabled for all elements. You can customize the hyphenation settings for any element locally in the <span class="UI">Paragraph Properties </span>dialog or globally in the <span class="UI">Stylesheet Editor</span>.</li>
+        </ul>
+        <h3>Paragraph Properties | Hyphenation Tab</h3>
+        <ul class="checkbox">
+            <li>If you want to set custom Hyphenation properties for a particular paragraph (or heading or list item, etc) you can select the tag in the <span class="UI">XML&#160;Editor</span> and select <span class="MenuItem">!Format |&#160;Paragraph Properties</span>. Then, select the Hyphenation tab.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/ParagraphProperties---HyphenationTab.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls (Default settings in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Hyphenation (Always): </span>Select whether you always or never want words to be hyphenated at the end of lines.</li>
+            <li><span class="bold">Length of shortest word that should be hyphenated (5):&#160;</span>Lets you define the minimum number of characters that have to be in a word in order for hyphenation to take affect.</li>
+            <li><span class="bold">The minimum number of characters remaining on the initial line (3): </span>Lets you define the minimum number of characters that should remain on the initial line of a hyphenated word.</li>
+            <li><span class="bold">The minimum number of characters carried over to the next line (3): </span>Lets you define the minimum number of characters that can be carried over to a new line in a hyphenated word.</li>
+            <li><span class="bold">The maximum number of adjacent lines that can end in a hyphenated word (2): </span>Lets you define the maximum number of consecutive lines in which a hyphenated word can appear.</li>
+        </ul>
+        <h3>Stylesheet Editor | Hyphenation Styles</h3>
+        <h4>Stylesheet Editor in Simplified view</h4>
+        <p class="bold">To access:</p>
+        <ul class="checkbox">
+            <li>Open the <span class="UI">Stylesheet Editor</span> in Simplified View. Select the style you want to edit and run Properties (by any means; <span class="KeyboardShortcut">F4</span>, double-click the style, etc)</li>
+        </ul>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyphenation/UI--StylesheetEditor--SimplifiedProperties--HyphenationTab.png" alt="" title="" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Hyphenation Styles (Default settings in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Hyphenation (default): </span>Select whether you always or never want words to be hyphenated at the end of lines.</li>
+            <li><span class="bold">Length of shortest word that should be hyphenated (not set):&#160;</span>Lets you define the minimum number of characters that have to be in a word in order for hyphenation to take affect.</li>
+            <li><span class="bold">The minimum number of characters remaining on the initial line (not set): </span>Lets you define the minimum number of characters that should remain on the initial line of a hyphenated word.</li>
+            <li><span class="bold">The minimum number of characters carried over to the next line (not set): </span>Lets you define the minimum number of characters that can be carried over to a new line in a hyphenated word.</li>
+            <li><span class="bold">The maximum number of adjacent lines that can end in a hyphenated word (not set): </span>Lets you define the maximum number of consecutive lines in which a hyphenated word can appear.</li>
+        </ul>
+        <h4>Stylesheet Editor in Advanced view</h4>
+        <p class="bold">To access:</p>
+        <ul class="checkbox">
+            <li>Open the <span class="UI">Stylesheet Editor</span> in Advanced View. Select the style you want to edit under Styles (on the left). On the right, use the pull-down to display properties by Property Groups or Alphabetical List. If you choose Property Groups, the hyphenation styles will appear in the "Unclassified" group.</li>
+        </ul>
+        <hr />
+        <p class="bold">Hyphenation Styles (Default settings in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">mc-hyphenate (default):&#160;</span>Select whether you always or never want words to be hyphenated at the end of lines.</li>
+            <li><span class="bold">mc-hyphenate-maximum-adjacent-line-count (not set):&#160;</span>Lets you define the maximum number of consecutive lines in which a hyphenated word can appear.</li>
+            <li><span class="bold">mc-hyphenate-shortest-prefix (not set):&#160;</span>Lets you define the minimum number of characters that should remain on the initial line of a hyphenated word</li>
+            <li><span class="bold">mc-hyphenate-shortest-suffix (not set):&#160;</span>Lets you define the minimum number of characters that can be carried over to a new line in a hyphenated word</li>
+            <li><span class="bold">mc-hyphenate-shortest-word (not set):&#160;</span>Lets you define the minimum number of characters that have to be in a word in order for hyphenation to take affect.</li>
+        </ul>
+    </body>
+</html>

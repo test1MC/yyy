@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2462" MadCap:lastWidth="906" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Tools/Options - UI</h2>
+        <p class="bold">Opening the dialog:</p>
+        <p>!Tools |&#160;Options</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>General tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--GeneralTab.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p class="bold">&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Minimize to System Tray:&#160;</span>By default, when you minimize Flare, a shortcut button on the main part of the taskbar lets you reopen the application. However, you can select this check box if you want to minimize Flare to the system tray instead.</li>
+            <li><span class="bold">Auto-Reload Documents:&#160;</span>Select this check box if you want Flare to reload documents automatically. In other words, if you have topics or editor pages open and then close the project, this option ensures that those same documents are reopened the next time you open the project.</li>
+            <li><span class="bold">Auto-Save Documents:	</span>Select this check box if you want Flare to periodically auto-save any open files. <ul style="list-style-type: circle;"><li><span class="bold">"#" minutes:&#160;</span>You can specify the number of minutes that should elapse between each auto-save.</li></ul></li>
+            <li><span class="bold">Open files with these extensions in the Document Dock pane:	</span>If you want certain types of files to open automatically in the Document Dock pane, enter those file extensions in this field, separating each one with a semi-colon (e.g., xml;text;asp).</li>
+            <li><span class="bold">Close others when opening new document:	</span>An option which tells Flare to close other documents as more documents are opened based on the behavior set here:<ul style="list-style-type: circle;"><li><span class="bold">No action: </span>The default option. Opening new files will have no affect on files already open. All files will remain open.</li><li><span class="bold">Close others:</span>&#160;This option automatically closes all other open documents. You should be prompted to save changes to any unsaved files that will be closed.</li><li><span class="bold">Close others with no changes: </span>This option automatically closes all other open documents that do not have unsaved changes. If you have files open where changes have been made but not saved, those files will remain open until you save and close them.</li><li><span class="bold">Close others with same extension: </span>This option automatically closes all other open documents that share the same file extension. For example, let's say you have a topic, a style sheet, and a target open. If you open another topic, the topic file that is currently open will be closed, but the style sheet and target will remain open. You should be prompted to save changes to any unsaved files that will be closed.</li><li><span class="bold">Close others with same extension and no changes: </span>This option is the same as the previous option, except that files with unsaved changes will not automatically be closed. Those files remain open until you save and close them.</li></ul></li>
+            <li><span class="bold">Show Select UI Language Dialog on Startup:	</span>Select this box to show the Select UI Language dialog the next time you launch Flare.</li>
+            <li><span class="bold">Reset "Show Once" Dialogs…:	</span>There are some dialogs in Flare that open just once to give you a message or warning when something changes or you switch modes. An example of this is the dialog that opens when you first switch between layout modes in the XML Editor. These dialogs have a check box labeled "Show this dialog." If you deselect that checkbox, you will not see the dialog again. However, you can use this reset feature to display that dialog (and all other "Show Once" dialogs) again the next time.</li>
+        </ul>
+        <h4>Suggestions Tab UI</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/ToolsOptions/UI--ToolsOptionsSuggestions--Dialogue.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold"><span style="font-weight: normal;">Use this tab to specify settings matching behavior for translation suggestions. This includes minimum matches and fuzzy matches. You can also use this tab to instantly apply translated strings to any duplicates within the current file. After entering the first translation of a term, the other instances of that same term will also be translated.</span>
+        </p>
+        <p class="bold">&#160;</p>
+        <p><b>Button/Section Description:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Retrieve suggestions with a minimum match of:</b>
+                <ul style="list-style-type: square;">
+                    <li>Enter a percentage in the field. Only translations with a rank greater than or equal to the specified percentage will be displayed as suggestions in the interface.</li>
+                    <li>Example:<ul style="list-style-type: square;"><li>Let's say that you set this percentage to 50%. When using translation suggestions, you might have one translation in your database that matches the current string exactly (100%), another translation that matches it 75%, and a third translation that matches it only 30%. In this case, only the first two translations will be available for you to select in the interface.</li></ul><p>&#160;</p></li>
+                </ul>
+            </li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>:<b>Fill-in fuzzy matches of at least</b><ul style="list-style-type: square;"><li>Enter the percentage at which you can insert matching translations automatically. By default, this percentage is set at 100%, meaning you can use automatic inserts only when text strings match existing translations exactly. However, you can reduce this percentage if you wish. Any matching translation that falls below that specified percentage is considered "fuzzy," because it does not match the string closely enough to warrant an automatic insert.</li><li>Example:<ul style="list-style-type: square;"><li>Let's say that you open a topic to translate the text in it. You press ALT+S to open the Suggestions window pane. In that pane, a few matching translations from your translation memory database are shown. Perhaps two of the translations match segments exactly (100%) and there are other partial matches that are below 100%. Perhaps one of those is a 98% match. All of the partial matches, including the one at 98%, are considered "fuzzy."</li><li>When you first opened the Suggestions window pane, a message displayed. It might say something like this: "Two segments had matches of at least 100% and there were three other partial matches. Do you want to use the top matches automatically?" If you select Yes, the two translations that match text 100% will replace the corresponding strings in the topic automatically. If you want to use any of the partial matches, you must do so manually.</li><li>Now suppose you want to be able to automatically use matching translations if they match 97% of the string text. Therefore, you set the fuzzy matching option to 97%. If you then return to the same topic and press ALT+S, this time the message will say the following: "3 segments had matches of at least 97% and there were 2 other partial matches. Do you want to use the top matches automatically?" If you select Yes, both of the 100% matches are automatically used, as is the 98% match (because it is no longer considered a "fuzzy match").</li></ul><p>&#160;</p></li></ul></li>
+            <li><b>Automatically apply translations to the rest of the file:</b>
+                <ul style="list-style-type: square;">
+                    <li>Click the check box if you want to instantly apply translated strings to any duplicates within the current file. After entering the first translation of a term, the other instances of that same term will also be translated.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

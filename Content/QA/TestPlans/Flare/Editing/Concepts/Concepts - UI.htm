@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2749" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Concepts - UI</h2>
+        <h3>Opening the Concepts pane</h3>
+        <p>!Tools |&#160;Concepts |&#160;Concepts Window</p>
+        <p>!View |&#160;Concepts Window</p>
+        <p>Press &lt;Shift&gt;-F9 on the keyboard</p>
+        <p>In Concept Entry Mode (!Tools | Concepts |&#160;Concept Entry Mode), place the insertion point in the XML&#160;Editor and begin typing. The Concepts Window will open when you start typing, and whatever you type will be in the Concepts Window.</p>
+        <h3>Concept Entry - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/UI--Concepts.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Concept "Entry" (top half of Concepts window)</h4>
+        <p>The top portion of the <span class="UI">Concepts Window</span> is used for displaying, entering and editing a specific instance of a concept object. A specific instance of a concept object may include multiple concepts (one per line).</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Add Some concepts via the concepts pane and some via the XML editor and verify that they are alphabetized in the list correctly</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p class="bold">UI Controls</p>
+        <p><span class="bold">Terms:&#160;</span>Lists and lets you edit, add or remove concepts.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Concept "Explorer" (bottom half of Concepts window)</h4>
+        <p>The bottom portion of the Concepts Window is used to view all Concepts that exist throughout the project. Additionally, the "explorer"&#160;view will also display any conditional tags applied to a concept or its parent elements (p, h1, html, etc).</p>
+        <h5>Local Toolbar</h5>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/ConceptsPane--ExplorerLocalToolbar.png" alt="" title="" />
+        </p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Expand All.png" style="mc-tag-and-class: ;"></img> (Expand all):&#160;</span>Expands all of the nodes so that you can see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" style="mc-tag-and-class: ;"></img> (Collapse all):&#160;</span>Collapses all of the nodes so that you can no longer see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png"></img> (Open linked file):&#160;</span>Opens the selected topic file in the XML&#160;Editor. Only active when a topic is selected.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test cases</p>
+            <p>Apply condition tags to each of the following and confirm the condition tag is reflected in the <span class="UI">Concepts Explorer</span>:</p>
+            <ul style="list-style-type: circle;">
+                <li>The concept itself</li>
+                <li>The paragraph or any other parent element which contains the concept</li>
+                <li>The topic containing the concept</li>
+                <li>The folder containing the topic which contains the concept (Known issue: 30533)</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h5>Right-click menus</h5>
+        <p class="bold">Root node right-click menu:&#160;</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/ConceptsPane--ExplorerRootRightClickMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Add Concept (Add a new concept):&#160;</span>Adds a new top-level concept.  Until it is added to a topic, this concept exists only in a temp file in the project's Output/user/Temporary folder.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Concept right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/ConceptsPane--ExplorerConceptRightClickMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Rename Concept (Rename Concept):&#160;</span>Let's you globally rename the concept for all instances of the concept throughout the project.</li>
+                <li><span class="bold">Remove Concept (Remove Concept):&#160;</span>Let's you globally remove the concept for all instances of the concept throughout the project.</li>
+                <li><span class="bold">Assign Topic (Assign this concept to an existing topic):&#160;</span>Invokes the <span class="UI">Open File</span> dialog which lets you select a topic to which the selected concept will be assigned. Using the "Show Files"&#160;view, you should also be able to selected multiple topics which will allow you to assign the selected concept to multiple topics at once.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Topic right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Concepts/ConceptsPane--ExplorerTopicRightClickMenu.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Unassign Topic (Remove all "[concept]" concepts from topic):&#160;</span>Deletes all instances of the selected concept from the selected topic.</li>
+                <li><span class="bold">Open:&#160;</span>Opens the selected topic in the <span class="UI">XML Editor</span>.</li>
+                <li><span class="bold">Open with:&#160;</span>Gives options to open the selected topic in the Internal Text Editor, Internal Browser or another application .</li>
+            </ul>
+        </div>
+        <p class="bold">&#160;</p>
+        <h4>Drag and Drop from the Concept "Explorer"</h4>
+        <p>Should be able to select any Concept from the lower portion of the <span class="UI">Concepts Window</span> and drag it into a topic in the <span class="UI">XML Editor</span>.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: circle;">
+                <li>Try to drag and drop a concept  into various elements (Snippets, Drop-downs, Expanding text, etc)</li>
+                <li>Try to drag the concept to any pane other than the XML&#160;Editor (Content Explorer, Project Organizer, Frame Contents Pane, Footnotes Pane, etc.). You should not be able to do this.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Keyboard Navigation</h4>
+        <p>Upper portion of the <span class="UI">Concepts Window</span>:</p>
+        <ul>
+            <li>&lt;F2&gt;&#160;will allow you to rename a selected concept</li>
+            <li>&lt;Delete&gt; will delete only the concept in the selected row if the row is selected by clicking on the area to the left of each concept, otherwise &lt;Delete&gt; will do nothing</li>
+            <li>&lt;Page Up&gt; will navigate through the list of concepts one "page"&#160;at a time up (requires enough concepts to necessitate a vertical scroll)</li>
+            <li>&lt;Page Down&gt; will navigate through the list of concepts one "page"&#160;at a time down  (requires enough concepts to necessitate a vertical scroll)</li>
+            <li>&lt;Home&gt; and &lt;End&gt; do nothing</li>
+            <li>&lt;Up Arrow&gt; and &lt;Down Arrow&gt; navigate up and down through the concept list</li>
+            <li>&lt;Left Arrow&gt; and &lt;Right Arrow&gt; do nothing unless you are editing a concept in which case they are used to assist in editing the concept text</li>
+            <li>&lt;Enter&gt;&#160;and &lt;Tab&gt;&#160;move the selection to the next concept in the list</li>
+            <li>&lt;Insert&gt; does nothing</li>
+            <li>&lt;Backspace&gt; does nothing</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Lower portion of the <span class="UI">Concepts Window</span>:</p>
+        <ul>
+            <li>&lt;F2&gt;&#160;will allow you to rename a selected concept</li>
+            <li>&lt;Delete&gt; will delete the concept or unassign the topic depending on which type of item is selected</li>
+            <li>&lt;Page Up&gt; will navigate through the list of concepts one "page"&#160;at a time up</li>
+            <li>&lt;Page Down&gt; will navigate through the list of concepts one "page"&#160;at a time down</li>
+            <li>&lt;Home&gt; will move the selection to the very first node</li>
+            <li>&lt;End&gt;&#160;will move the selection to the very last node</li>
+            <li>&lt;Enter&gt; does nothing unless a topic file is selected in which case &lt;Enter&gt;&#160;will open that topic</li>
+            <li>&lt;Up Arrow&gt; and &lt;Down Arrow&gt; navigate up and down through the concept list</li>
+            <li>&lt;Left Arrow&gt; collapses an expanded node</li>
+            <li>&lt;Right Arrow&gt; expands a collapsed node</li>
+            <li>&lt;Insert&gt; does nothing</li>
+            <li>&lt;Backspace&gt;&#160;moves the selection to the parent node</li>
+        </ul>
+    </body>
+</html>

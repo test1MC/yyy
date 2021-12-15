@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="85" MadCap:lastWidth="1188">
+    <body>
+        <p class="TestCases">Test Cases</p>
+        <ul class="checkbox">
+            <li>Boundary test each of the popup dialogs from the style editor</li>
+            <li>Symbols, Negative #s, long strings, various units of measure, Alt+ characters, large numbers, text</li>
+            <li>Verify that Media types work when applied and generated</li>
+        </ul>
+    </body>
+</html>

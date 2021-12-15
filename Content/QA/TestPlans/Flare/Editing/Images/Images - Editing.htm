@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="862" MadCap:lastWidth="624" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review" MadCap:conditionTagExpression="include[ElementContextMenuItems.ImageProperties] exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditElement or ElementContextMenuItems.FontProperties or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands or MenuItems.HelpMenu-VideoTutorials] ">
+    <head>
+    </head>
+    <body>
+        <h2>Images - Editing</h2>
+        <h3>Image menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Image---Context2.png" style="width: 226px; height: 251px;" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p class="note">You can also select the image and then go to !Format| Image to open the Image Properties Dialog.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <h3>General Editing</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p class="note">As of V7. Users now are able to copy/paste images from the internet (png format). Test copying and pasting images from the internet.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <p class="bold">Additional Tests:</p>
+        <ul style="list-style-type: circle;">
+            <li>Hovering the mouse over an image will display a tooltip with the name and file path.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test copying and cutting an image from one topic and pasting it into another topic in a different folder. Verify the link updates.</li>
+                <li>Pasting another image over the existing one should replace the selected image – Verify that it renders and display in the block bar correctly.</li>
+                <li>Pasting another element or text over a selected image will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Inserting another element or typing over a selected image will replace it with that data. – Verify that there is no malformed XML from this</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p><b>No Class:</b>
+        </p>
+        <p>&lt;img src="Resources/Images/Picture.jpg" /&gt;</p>
+        <p>&#160;</p>
+        <p><b>With Class:</b>
+        </p>
+        <p>&lt;img src="Resources/Images/Picture.jpg" class="NewClass" /&gt;</p>
+    </body>
+</html>

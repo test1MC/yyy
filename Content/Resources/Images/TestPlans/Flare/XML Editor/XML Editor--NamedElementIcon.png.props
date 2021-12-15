@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage ComputedWidth="18" ComputedHeight="21" Format="png">iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAIAAADEqSm4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFhSURBVDhPY/hPFhg+2l7sDby13gnKAQMC2t4djQWi39fr/t5qOrPAGCqKR9ubQ5FA9PNK2fdLJS/2R9ze6P7hWMzF5XZX1rhdXOmKRdvrg2FA9O1Cwa+rlW+OxN/d7H1puc25RSYXlpg93+3z82z8wdk2KNpeHwwHos9nMv/dbv15ufThdv+rq+zPLTY7v9j06krre5tc/lxI2jXVEqgSoe3mjrST84yPzzU+Mtv44EzjvdOM3x+NAlpyebnlnQ1OT3d6/7uUurnfDKIYX5DsnGz89WT04+2en49H/b+ctr7HBCpBMCS3TjC+udEXqGdtFyIYgYCAtsvzs54urV/fg6IHCPBpA+r5dHzKjiZfKB8J4NR2aX7Ou4N9O1sCoHxUgF3biZnZL3a2bW+PgPIxABZtO7piHm9uWNcYDOVjA+jalhQ73l9btbDADsrHAbDYNiNZH8rCDXAGCX5Alrb//wH9xwq7JopgcQAAAABJRU5ErkJggg==</OriginalImage>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <Variables />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="143" MadCap:lastWidth="850">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Convert all topics at once: </span>Check this to automatically convert your topics to XML on import (Checked by default)</li>
+            <li><span class="bold">Convert inline formatting to CSS styles: </span>Checking this will make Flare create new styles based on any “local” formatting that exists in the individual topics within the file.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import Project Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1378" MadCap:lastWidth="730" MadCap:fileTags="Status.Not Applicable,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h1>Connecting a Feedback Server to a remote SQL machine</h1>
+        <p>By Jay Wulkowicz (Last updated: 3/25/10 by MF)</p>
+        <p>&#160;</p>
+        <p><span class="bold">IIS&#160;Machine:&#160;</span>The machine running IIS. This is also the machine that is running Feedback Server Admin.</p>
+        <p><span class="bold">SQL Machine:&#160;</span>The machine hosting the SQL&#160;database. As of Feedback Server Admin V2.0, the SQL&#160;Machine could be the same machine as the IIS&#160;machine or any machine running SQL or SQL&#160;Express (not SQL Compact).</p>
+        <p>&#160;</p>
+        <ol>
+            <li>Both the IIS machine and SQL machine need to be on the same Domain<br />To Verify: Right Click My Computer | Properties | Computer Name Tab</li>
+            <li>Log onto the IIS machine using a valid Domain User Name. <br />This user name must also:<ol style="list-style-type: lower-alpha;"><li>Have admin rights to the IIS machine</li><li>Have sysadmin permission on the SQL Server itself (by default, administrators of the machine will usually have the correct permissions on the SQL Server)</li></ol></li>
+            <li>Install and Launch the Feedback Server Admin application on the IIS machine</li>
+            <li>Select Install Feedback Server if the Feedback server setup is not present</li>
+            <li>From the SQL Server drop down, find your designated SQL machine and select it</li>
+            <li>In the Authentication area, enter in the Domain (if it’s not populated already in the field) and a valid domain user and password. Note: This does not need to be the same user from step 2. This should be the designated “common user” for the Feedback Server communication to the SQL machine.</li>
+            <li>Verify the Credentials by pressing the associated button</li>
+            <li>Press Ok to finish the installation of the Feedback Server. <br />This will:<ol style="list-style-type: lower-alpha;"><li>Install a Feedback Service process on the IIS machine</li><li>Install the Feedback Service Database on the SQL Machine</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h2>FAQ</h2>
+        <p>Q) I cannot see my SQL machine in the drop down list when installing Feedback Server (Step 5)</p>
+        <p>A) Three common issues:</p>
+        <ol>
+            <li>Sometimes the SQL Server Browser Service has not been started. This is needed for your SQL machine to broadcast to the network.  <br />To Verify: Right Click My Computer | Manage| Services | SQL Server Browser. Select the service and click the Play button on the toolbar.</li>
+            <li>Windows Firewall by default will block SQL ports to the outside world. The easiest solution is to turn the firewall off, but that is the more unsecure method. The other method would be to set an exception for SQL and the SQL Server Browser in the Firewall configuration.<br /><ul><li>Default SQL port: TCP/IP 1433</li><li>Default SQL Server Browser port: UDP 1434</li></ul></li>
+            <li>Named Pipes or TCP/IP (or both) have been disabled in the SQL Configuration.  Open the SQL Server Configuration Manager. Under SQL Server network configuration, select Protocols for SQLEXPRESS (MSSQLServer will be shown if you have the standard edition or if a custom instance name was used during SQL installation, that will be shown here) Verify Named Pipes or TCP/IP is set to enabled. Some users have reported success if they set both to enabled.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Q) What is the “Common User” really needed for? (Step 6)</p>
+        <p>A) When the SQL database is on the same machine as the IIS and Feedback server, a default anonymous login is used by Microsoft to communicate between the service and the database. When using SQL on a separate machine then the IIS machine, this anonymous user (which is defined on the IIS machine) would be denied access on the SQL machine. Therefore, a “common user” such as a domain user is needed for this back end communication. This “Common User” can be any current domain username or a specific username setup for this purpose. No permissions are needed, all that will be handled by Feedback Server.</p>
+        <p>&#160;</p>
+        <p>Q) Can you Clarify Step 2b?</p>
+        <p>A) The user that has administrator privileges on the IIS machine will also need to be able to access the SQL Server on the SQL machine.  More specifically, it will need the sysadmin privileges on the SQL Server. This does not mean it needs administrative privileges to the SQL Machine. We just wanted to note that if the username you are using is also the administrator of the SQL Machine, then usually it will have all the appropriate permissions to the SQL Server.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="images/Feedback2RemoteSQL.png" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

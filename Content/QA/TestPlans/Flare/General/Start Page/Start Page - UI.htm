@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3569" MadCap:lastWidth="1427" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Start Page - UI</h2>
+        <h3>Opening the Start Page</h3>
+        <p>The <span class="UI">Start Page</span> should be open and docked in the <span class="UI">MDI</span> using Flare's default layout. If the <span class="UI">Start Page</span> is closed or not currently in focus, it can be reopened or given focus by:</p>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Start Page</li>
+            <li>Click the Open Start Page button in the Standard Toolbar</li>
+        </ul>
+        <h3>Start Page - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage.png" class="properties" />
+        </p>
+        <p style="margin-left: 200pt;">By default, the <span class="UI">Start Page</span> will appear open in the MDI. It is still, essentially, a pane that can be floated and docked anywhere. Right-click the <span class="UI">Start Page</span> tab and select Floating to dock it somewhere else and test the following:</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h3>Trial&#160;Mode</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---TrialVersion.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>If you launch a product in trial mode, this will be indicated on the start page with Trial banner displaying “You are currently using a Trial Version, contact MadCap Sales for this month’s promotions. -Sales@MadCapSoftware.com |&#160;+1 888.623.2271”</p>
+        <ul class="checkbox">
+            <li>The color of the Trial banner should match the UI&#160;theme<ul><li>Black Theme: Green (Flare), Orange (Analyzer), Green (Contributor)</li><li>Classic Theme:&#160;Blue (All)</li><li>Silver Theme:&#160;Green (Flare), Orange (Analyzer), Green (Contributor)</li></ul></li>
+            <li>Clicking the Trial banner will open your browser to this page:&#160;<a href="http://www.madcapsoftware.com/products/flare/">http://www.madcapsoftware.com/products/flare/</a></li>
+        </ul>
+        <h3>Getting Started</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---GettingStarted.png" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Open (Open File):&#160;</span>Opens the <span class="UI">Open</span> dialog.</li>
+            <li><span class="bold">New Project (Starts the New Project Wizard):&#160;</span>Opens the <span class="UI">Start New Project Wizard</span>.</li>
+        </ul>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does not resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>This area can be resized by dragging the middle vertical bar</li>
+        </ul>
+        <h3>Recent Projects</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---ExistingProject.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" class="propertiesNoFloat" />
+        </p>
+        <p><span class="bold">Recent Projects: </span>Lists recently opened Flare projects. Clicking on any listed project will open that project in the current instance of Flare</p>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does not resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>This area can be resized by dragging the middle vertical bar</li>
+            <li>Files are listed with the Flare or Blaze icon, “FileName” then “Path”</li>
+            <li>Only Flare or Blaze project files should appear in this list</li>
+            <li>Tooltips with full paths will display when hovering over the links</li>
+            <li>Clicking the link will open the project and turn the Title bar orange for a few seconds.</li>
+            <li>The most recently used project should be listed on top</li>
+            <li>Projects removed from !File | Recent Project | Manage Recent Projects will be removed from the list</li>
+            <li>If a project is clicked that no longer exists, Flare will present an error.<p class="note">Note: Bug 86536:We should be more informative in our Start page's "Recent projects/Files" when mousing over a project/file that has been deleted</p></li>
+        </ul>
+        <h3>Templates</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---Templates.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>This tab lets you browse project templates and click to start a new project based on any of them. Clicking the template image or words will launch the <span class="UI">Start New Project Wizard</span> with your template selected on the Select a project template page. Clicking <span class="UI">View All</span> will open your browser to this page:&#160;<a href="http://www.madcapsoftware.com/downloads/templates/">http://www.madcapsoftware.com/downloads/templates/</a></p>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>This area can be resized by dragging the middle vertical bar</li>
+            <li>Slideshow controls work correctly</li>
+            <li>Icons are correct</li>
+        </ul>
+        <h3>Tutorials</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---Tutorials.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>This tab lets you browse and open several video tutorials. Clicking <span class="UI">View All</span> will open your browser to this page: <a href="http://www.madcapsoftware.com/videos/">http://www.madcapsoftware.com/videos/</a></p>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>This area can be resized by dragging the middle vertical bar</li>
+            <li>Slideshow controls work correctly</li>
+        </ul>
+        <h3>Help Resources</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---HelpResources.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <p>This tab contains links to additional resources, such as the Help system, webinars, the online community, and the MadCap blog.</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li><span class="bold">Browse the Help System: </span>Opens the Help’s TOC embedded on the left pane. Test that you can click and open help topics.</li>
+            <li><span class="bold">Browse PDF&#160;Guides:&#160;</span>Opens the PDF&#160;Guides topic in the MDI</li>
+            <li><span class="bold">Live and Recorded&#160;Webinars:&#160;</span>Opens the browser to this page:&#160;<a href="http://www.madcapsoftware.com/resources/livewebinars.aspx">http://www.madcapsoftware.com/resources/livewebinars.aspx</a></li>
+            <li><span class="bold">Search Help System: </span>Opens the Help’s Search embedded on the left pane. Test that you can search and open help topics.</li>
+            <li><span class="bold">Visit the Help Community: </span>Opens the browser to this page: <a href="http://forums.madcapsoftware.com/">http://forums.madcapsoftware.com/</a></li>
+            <li><span class="bold">Visit MadBlog:&#160;</span>Opens the browser to this page: <a href="http://www.madcapsoftware.com/blog/">http://www.madcapsoftware.com/blog/</a></li>
+        </ul>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Slideshow controls work correctly</li>
+            <li>Icons are correct</li>
+        </ul>
+        <h3>News and Updates</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---NewsAndUpdates.png" class="propertiesNoFloat" />
+        </p>
+        <p>This contains images and links to events and other information. Clicking the refresh icon will reload the contents. &#160;Clicking <span class="UI">Learn&#160;More</span> will open a relevant webpage link</p>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>The correct pages open for all sections</li>
+            <li>If there is no Internet access, the News and Updates Section should display a message indicating such.</li>
+        </ul>
+        <h3>Keyboard Navigation</h3>
+        <p>(None)</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(None)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(None)</p>
+    </body>
+</html>

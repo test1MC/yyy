@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="248" MadCap:lastWidth="1017">
+    <body>
+        <h4>Selecting</h4>
+        <ul class="checkbox">
+            <li>Click on the block/span bar of the element</li>
+            <li>Click the element's caret tag neighborhood bar (if applicable)</li>
+            <li>Invoke the Context Menu from using each and select <span class="MenuItem">Select</span><ul class="checkbox"><li>Invoked from the block/span bar</li><li>Invoked from the caret tag neighborhood bar (if applicable)</li></ul></li>
+            <li>Select by dragging (if applicable)<ul class="checkbox"><li>Left to right</li><li>Right to left</li></ul></li>
+            <li>Selecting content with keyboard (if applicable)<ul class="checkbox"><li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Right Arrow</span></li><li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Left Arrow</span></li></ul></li>
+            <li>Multi-click the content inside the element (if applicable; number of clicks will vary based on the element)</li>
+        </ul>
+    </body>
+</html>

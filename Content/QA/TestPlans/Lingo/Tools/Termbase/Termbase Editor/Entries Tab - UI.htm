@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="5763" MadCap:lastWidth="821" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Entries Tab - UI  </h2>
+        <ul>
+            <li><a href="#New_Item">New Item</a> (Add Term to Termbase)</li>
+            <li><a href="#Properties">Properties dialog</a>
+            </li>
+            <li><a href="#Search">Search Filter</a>
+            </li>
+            <li><a href="#Concept">Termbase Concept</a> dialog window</li>
+            <li><a href="#Language">Language Se</a>t dialog window</li>
+        </ul>
+        <h3>Opening the UI</h3>
+        <p>1.	Select Tools&gt; Manage Termbases…</p>
+        <p>2.	In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" /> .  The Termbase window pane opens. In the local toolbar, click Manage Termbases…</p>
+        <p>3. Click Edit</p>
+        <p>4. Opens up the Termbase Editor with Entries tab showing.</p>
+        <h3>UI</h3>
+        <h4>Entries Tab</h4>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemoryEditor--EntriesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Language 1: </span>Shows the source language spelled out (i.e. English=English)</li>
+                    <li><span class="bold">Term 1: </span>Source text</li>
+                    <li><span class="bold">Language 2: </span>Shows the target language represented spelled out( Spanish=Spanish)</li>
+                    <li><span class="bold">Term 2:</span>Target text(translated text)</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="bold">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li>Source and Target Columns are sortable alphabetically both ascending and descending.</li>
+            <li>Double-clicking a row opens the selected Target file in the <span class="UI">Termbase Editor Dialog</span>).</li>
+            <li>
+                <p>TEST: Right clicking any row should invoke sub-menu:</p>
+                <p>
+                    <img src="../../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemoryEditor--SubMenu.png" style="width: 126px;height: 89px;">
+                    </img>
+                </p>
+            </li>
+            <li>New: Will create a new row</li>
+            <li>Cut : Should be disabled</li>
+            <li>Delete: Deletes the selected row(s) (Make sure that when deleting the row it gets crossed out in red. Clicking the “Save” button should get rid of the row)</li>
+            <li><b><a name="Properties"></a>Properties</b>: Opens the ‘Termbase Editor Dialog'</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Termbase Editor Dialog </h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--EditTermbaseTerm--Dialogue.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>To edit terms via the Edit Termbase Terms Dialog, do  the following:</b>
+        </p>
+        <p>&#160;</p>
+        <ol>
+            <li>Double-click a segment or </li>
+            <li>Right-click a segment and select properties.<ol><li>The Edit Termbase term dialog opens. The terms that you highlighted are also highlighted in the corresponding fields in this dialog.(Optional) If you want to add more detailed information about the term (e.g., source, definition, related term, context sentence, usage), click Advanced.</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <p><b>Multi-Term selection:</b>&#160;</p>
+        <p>Holding Control while highlighting words or phrases in a BoxView (particularly the Suggestions Pane in Lingo) create multi-word selections, like in Word.  Unlike Word, the subsequent selected areas have different colors, in order to indicate pairing between source and target language phrases.</p>
+        <p>&#160;</p>
+        <p><b>Editing Termbases</b>
+        </p>
+        <p>You can edit the words in a termbase, which is not possible in a dictionary. Not only that, but you can also add much more detailed information about each term (e.g., source, definition, related term, context sentence, usage). That way, whenever you are using the termbase to perform translation work, you can refer to this extra information if necessary.</p>
+        <p>How to edit a termbase</p>
+        <ol>
+            <li>Do one of the following:<ol><li>Select View&gt;Termbase. OR</li><li>In the Standard toolbar click   .<ol><li>The Termbase window pane opens.</li><li>	In the local toolbar, click Manage Termbases.</li><li>The Manage Termbases dialog opens.<ol><li>Select the termbase that you want to work with.</li><li>Click Edit.</li><li>The Termbase Editor opens.<ol><li>Select the <b><a name="Search"></a>Search</b> tab.</li><li>(Optional) You can use the filter field in the local toolbar at the top to quickly find a particular term. Simply type the term you want to find and press Enter. You can also use wildcards (asterisks) in your search.</li><li>EXAMPLE: If you want to find the term "Delete," you can enter the following: All terms that start with "Dele" will be found. Each time you type something in the filter field, it will be saved in the drop-down for future searches.</li><li>Double-click on the term that you want to edit.</li><li>The Edit Termbase Term dialog opens.<ol><li>Using the fields in this dialog, you can change the text for either the source or target language.</li></ol></li></ol></li></ol></li></ol></li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Adding Terms to Termbases</h4>
+        <p>After you add a termbase, you can add translated terms (or phrases) to it. You can do this through the Termbase window pane (without needing to have any files open for translation at the same time) or through the Suggestions window pane.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--AddTermtoTerbase--Dialogue.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>To add terms via the <a name="New_Item"></a>New Item Button <img src="../../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" />, do one of the following:</b>
+        </p>
+        <ol>
+            <li>In the local toolbar, click <img src="../../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" /> . Or </li>
+            <li>Right Click a Segment and Select New <img src="../../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" />.</li>
+            <li>The Add Term to Termbase dialog opens.<ol><li>	In the top drop-down list, make sure your source language is selected.</li><li>	In the field below, type the source term or phrase.</li><li>In the next drop-down list, make sure your target language is selected.</li><li>In the field below, type the translated term or phrase.</li><li>(Optional) If you want to add more detailed information about the term (e.g., source, definition, related term, context sentence, usage), click <a href="#Concept">Advanced</a>.</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Termbase <a name="Concept"></a>Concept </h4>
+        <p>The Concept Dialog allows you to enter detailed information about each term (e.g., source, definition, related term, context sentence, usage). That way, whenever you are using the termbase to perform translation work, you can refer to this extra information if necessary.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TermbaseConcept--Dialog.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Subject</b> 	Enter the subject of the concept (term).<ul style="list-style-type: square;"><li>EXAMPLE: If the term is "motorcycle," the subject might be something like "Vehicles," or something else related to motorcycles.</li></ul></li>
+            <li><b>Source</b> 	Enter the source of the term.<ul style="list-style-type: square;"><li>EXAMPLE: The source could be a dictionary, Wikipedia, a project name, a manual, or something else.</li></ul></li>
+            <li><b>Definition</b> 	Enter the definition of the term.<ul style="list-style-type: square;"><li>EXAMPLE: If the term is "motorcycle," you might enter "A motor vehicle similar to a bicycle but usually larger and heavier, chiefly for one rider but sometimes having two saddles or an attached sidecar for passengers."</li></ul></li>
+            <li><b>Add</b> 	Opens the Language Set dialog, which lets you add the same term in another language. You can add terms in as many different languages as you need. You can then use the Language Set dialog to enter even more information about the term (e.g., customer, project, geographical usage). See the next step for more information.<ul style="list-style-type: square;"><li>EXAMPLE: If your source term is "motorcycle," you might decide to use the Add button to add the same term in Spanish, Italian, German, and Japanese.<ul style="list-style-type: square;"><li>Spanish: motocicleta</li><li>Italian: moto</li><li>German: motorrad</li><li>Japanese: オートバイ</li></ul></li></ul></li>
+            <li><b>Remove</b> 	Removes the term that is selected above in the list. The term is shown in each language.</li>
+            <li><b>Edit</b>t 	Opens the Language Set dialog for the selected term. This dialog lets you enter even more information about the term (e.g., customer, project, geographical usage). See the next step for more information.</li>
+            <li><b>External Reference</b> 	Opens the Enter External Reference dialog, which lets you find and select an external file with more information about the term (e.g., a website containing an online termbase). In the first field, you can enter the display text (e.g., you might enter "click here," which is used to display the online termbase). In the second field, you can enter the path to the external file (e.g., http://www.mycompanywebsite.com/myonlinetermbase.htm).</li>
+            <li><b>Image</b> 	Opens the Enter Image Reference dialog, which lets you find and select an image file related to the term. In the first field, you can enter the display text (e.g., you might enter "click here," which is used to display the image). You can click the Browse button to select the path to the image file (e.g., http://www.mycompanywebsite.com/motorcycle.jpeg).</li>
+            <li><b>Related Term or Concept</b> 	You can select any term in your termbase that is related to the current term.<ul style="list-style-type: square;"><li>EXAMPLE: If the term is "motorcycle," you might select "engine", "motor," "transportation," and so on.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h4><a name="Language"></a>Language Set Dialog</h4>
+        <p>If you want to enter even more information about the term (e.g., customer, project, geographical usage), select the term in either the source or target language and click Add or Edit (From the ‘Termbase Concept’ dialog window). In the Language Set dialog, complete any of the fields.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--LanguageSet--Dialog.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Language</b> 	If you selected "Add," click in the field and choose the language for the term you are adding. If you selected "Edit," this field displays the language of the existing term you chose in the previous dialog.</li>
+            <li><b>Localized Definition</b> 	You can enter the translation of the definition of the whole concept, which is on the previous dialog (Termbase Concept dialog). It must be the same language listed in the previous field.</li>
+            <li><b>Context Sentence</b> 	You can enter an example sentence of the term.<ul style="list-style-type: square;"><li>EXAMPLE: If the term is "motorcycle," you might enter "My motorcycle is very fast."</li></ul></li>
+            <li><b>Customer</b> 	If this term is used by specific customer, you can add the name of that customer.<ul style="list-style-type: square;"><li>EXAMPLE: You might enter "Harley Davidson."</li></ul></li>
+            <li><b>Project</b> 	If you are working on multiple projects for a client, you can enter the appropriate one in this field. Each project might have many unique terms associated with it.</li>
+            <li><b>Term Source</b> 	You can enter the source of the term.<ul style="list-style-type: square;"><li>EXAMPLE: Let's say you are working for a client and one of the employees is named Bob Smith. If Bob told you to use this particular term, you might enter his name in this field.</li></ul></li>
+            <li><b>Geographical Usage</b> 	You can enter the geographical area where the term is used.<ul style="list-style-type: square;"><li>EXAMPLE: You might enter "North America" or "Africa."</li></ul></li>
+            <li><b>Phrase</b> 	You can click in this field and enter a different phrase on each row.<ul style="list-style-type: square;"><li>EXAMPLE: You might enter "red" in the first row. Then in the subsequent rows, you might enter "pink," "purple," and so on.</li></ul></li>
+            <li><b>Gender</b> 	You can click in this drop-down and select the appropriate gender for the term in each row.<ul style="list-style-type: square;"><li>EXAMPLE: Feminine, masculine, neuter.</li></ul></li>
+            <li><b>Part of Speech</b> 	You can click in this drop-down and select the part of speech for the term in each row.<ul style="list-style-type: square;"><li>EXAMPLE: Adjective, verb, noun, and so on.</li></ul></li>
+            <li><b>Location</b> 	You can click in this drop-down and select a user interface location where someone would see the term.<ul style="list-style-type: square;"><li>EXAMPLE: Check box, menu item, tab, and so on.</li></ul></li>
+            <li><b>Type</b> 	You can click in this drop-down and select an option to describe what type of term it is.<ul style="list-style-type: square;"><li>EXAMPLE: Abbreviation, phrase, variant, and so on.</li></ul></li>
+            <li><b>Usage</b> 	You can click in this drop-down and select an option that lets you recommend the use of the term or prevent its incorrect use.<ul style="list-style-type: square;"><li>EXAMPLE: Not recommended, preferred, obsolete, and so on.</li></ul></li>
+            <li><b>Add</b> 	Adds another row so that you can enter another phrase in the list. You can click in the "Phrase" field and enter text for the new term. Then you can complete the rest of the fields in the row by clicking in the drop-downs and selecting the appropriate options.</li>
+            <li><b>Remove</b> 	Removes the selected phrase row from the list.</li>
+        </ul>
+    </body>
+</html>

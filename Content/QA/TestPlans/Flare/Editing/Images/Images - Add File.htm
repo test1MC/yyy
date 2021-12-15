@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V9 Verified" MadCap:conditionTagExpression="include[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.Image] exclude[AddFile--UIControls.Description or AddFile--UIControls.FromTemplate or AddFile--UIControls.ProjectFiles or AddFile--UIControls.TopicFiles or Default.UITestsEditors or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:lastBlockDepth="12" MadCap:lastHeight="10453" MadCap:lastWidth="1054">
+    <head>
+    </head>
+    <body>
+        <h2>Images - Add File</h2>
+        <h3>Adding an Image File to the Project</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/AddFile.flsnp" />
+        <h3>Add File dialog:&#160;Image&#160;- UI Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Dialog--AddFile--Image.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--AddFile--UIControls.flsnp" />
+        <p>—</p>
+        <p>&#160;</p>
+        <p>** Supported image file types:&#160;*.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swd *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; <span class="bold">*.svg; *.ps; *.eps; *.pdf</span>&#160;(bold file types added in V7 and pdf file type was added in V11)</p>
+        <h4>Copy to Project Dialog</h4>
+        <p>If an image that is being inserted into a topic resides outside the project, clicking "OK" in the "Insert Image" dialog will generate the "Copy to Project" Dialog.</p>
+        <p>&#160;</p>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Images/CopyToProject--Dialog.png" class="properties" style="width: 239px;height: 173px;">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p style="font-weight: bold;">Columns:</p>
+        <ul class="checkbox">
+            <li style="font-weight: normal;"><b>Action:</b> Displays the action being performed such as copy.</li>
+            <li style="font-weight: normal;"><b>File:</b> Displays the name of the file. If the file is renamed projects containing those files may show a missing file so the user will have to re-add the file.</li>
+            <li style="font-weight: normal;"><b>Type:</b> Displays the file type.</li>
+            <li style="font-weight: normal;"><b>Path:</b> Displays the path where the file is stored. If the file is moved this path should update automatically.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Button/Section Description:</b>
+        </p>
+        <ul class="checkbox">
+            <li><b>The following files will be copied to the project:</b>Displays the files to be copied. If the file being added is dependent on other files to operate correctly (e.g., if it is linked to another topic file), those necessary files are also listed in the dialog (and therefore copied as well).</li>
+            <li><b>Keep file(s) synchronized (create mapping):</b>Select this check box if you want to create a mapping between the project's copy of the image and the original source image</li>
+            <li><span class="bold">Add Files to source control: </span> If project is bound to source control flare offers to add the file to the repository</li>
+            <li><b>Cancel:</b> Closes the dialog without adding the new image file.</li>
+            <li><b>OK:</b> Adds the new image file to the project and opens the image in the <span class="UI">Image Viewer</span>.</li>
+        </ul>
+        <p class="note">Note that all added images will by default be located in Content\Resources\Images (Images folder will be automatically created in Resources folder)</p>
+        <p class="note">Note that captured images using MadCap Capture will be stored in Content\Resources\Images, each image captured will be accompanied with a .props file that stores layer information for the corresponding image. The .props will have the same file name as the captured image</p>
+        <h4>Image Viewer</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/ImageViewer.png" style="width: 170px;height: 168px;" />
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">MadCap Capture Icon (Edit this file with in MadCap Capture): </span>Opens the image in MadCap Capture if you have it installed else it will prompt the user that they need MadCap Capture installed. This option should be greyed out if the image is a web image.</li>
+            <li><b>Regenerate Captured Images:</b>&#160;Regenerates the image with the most current version of the source file</li>
+        </ul>
+        <h3>Misc Test Cases</h3>
+        <p class="TestCases">Test Cases</p>
+        <ul class="checkbox">
+            <li>Add all supported image file types to your project. Supported image file types:&#160;*.bmp; *.gif; *.jpg; *.jpeg; *.png; *.tif; *.tiff; *.swf; *.hdp; *.wdp; *.emf; *.wmf; *.xaml; *.xps; *.exps; <span class="bold">*.svg; *.ps; *.eps; *.pdf</span>&#160;(bold file types added in V7, pdf added in V11)</li>
+            <li>
+                <p>*.svg files require Java to be installed to view them in the <span class="UI">Image Viewer</span>. Attempting to open this image type without Java installed should prompt:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--VectorGraphic--SVGJavaPrompt.png" />
+                </p>
+            </li>
+            <li>
+                <p>*.ps, *.eps and *.pdf require Ghostscript to be installed to view them in the <span class="UI">Image Viewer</span>. Attempting to open either of these image types without Ghostscript installed should prompt:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--VectorGraphic--GhostscriptPrompt.png" />
+                </p>
+            </li>
+        </ul>
+        <h3>Opening the UI (Insert/Edit Image)</h3>
+        <p class="bold">Insert Image dialog</p>
+        <ul class="checkbox">
+            <li>From the Tool Strip, !Insert | Image</li>
+            <li>From the Ribbon, !Insert|Image</li>
+            <li>Click the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertPicture.png" /> button in the local toolbar of the <span class="UI">XML&#160;Editor</span></li>
+        </ul>
+        <p class="bold">Edit Image dialog</p>
+        <ul class="checkbox">
+            <li>Right-click an image that is already in a topic and select Edit Image</li>
+            <li>Select an inserted image and press F4</li>
+            <li>Select an inserted image and !Home |&#160;Properties</li>
+        </ul>
+        <p>  <![CDATA[ ]]></p>
+        <p>* Images can also be inserted by dragging them from the <span class="UI">Content Explorer</span> into a topic (or snippet, or master page or page layout). As of V6, doing so will not invoke the Insert Picture dialog but simply insert the picture. Whether or not the dialog appears may become a global option in a future release. Images can also be inserted by dragging them into Flare from outside the project.</p>
+        <p class="note">Web images will not be affected by "Generate web-sage images" option in WebHelp targets and thumbnail options also will not affect web images. Also, Vector images that are resized do not resize in output in IE 9 when externally linked to</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (Images, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Text boxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+                <li>Drag and drop images from the Content Explorer</li>
+                <li>Drag and drop images from an external location (your Desktop or your "My Images" folder)</li>
+            </ul>
+        </div>
+        <h3>Insert/Edit Picture dialog:&#160;UI Test Cases</h3>
+        <h4>General Tab</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Dialog--AddFile--Image.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><b>Select File:</b> Select the image file. In v7.1 we offered the ability to type in web addresses here to link to images on the web.</li>
+            <li><b>Options:</b>
+                <ul>
+                    <li><b>Style Class:</b> Select a style class for the image</li>
+                    <li><b>Screen Tip:</b> Apply a screen tip to the image</li>
+                    <li><b>Alternate Text:</b> Apply an alternate text to the image</li>
+                    <li><b>Tab Index: </b> Set tab order (508 compliance)</li>
+                    <li><b>Apply alternate text and screen tip to all image references:</b>Apply alternate text and screen tip to all image references (not available when using a web image)</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Size Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/InsertPicture--Dialog--SizeTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Size: </span>Set a precise width and height. To preserve the aspect ration of an image, set the width or height to the value you want and set the other to "Automatic."</li>
+            <li><span class="bold">Minimum: </span>Set a minimum width and/or height. Use these options to enlarge a small image and preserve its aspect ratio.</li>
+            <li><span class="bold">Maximum: </span>Set a maximum width and/or height. Use these options to reduce the size of a large image while preserving its aspect ratio.</li>
+        </ul>
+        <p class="note">Note: If you are using percentage for the size of an image, the percentage refers to the block containing that image, not to the image itself. For example, if you set the width to 60%, this does not mean that the image will be reduced to 60% of its size. Instead, it means that the image will be resized so that its width is 60% of the "container" where it is inserted.</p>
+        <h4>Print Size Tab</h4>
+        <p>Same as above however properties set in the Print Size tab are written locally to the print medium. </p>
+        <ul class="checkbox">
+            <li>Verify properties set in the Print Size tab are written locally to the print medium</li>
+            <li>Verify you can set unique properties in each medium and that all images generate correctly in Web and Print output types.</li>
+        </ul>
+        <h4>Position Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/InsertPicture--Dialog--PositionTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Float: </span>Use this field to specify where to place the picture on the page.</li>
+            <li>
+                <p class="note">For floats that include frames, you have to be in print layout mode</p>
+            </li>
+            <ul>
+                <li><span class="bold">None: </span>Does not place the picture in a specific location.</li>
+                <li><span class="bold">Left: </span>Positions the picture on the left side of the page frame, allowing you to type text to the right of the picture.</li>
+                <li><span class="bold">Right: </span>Positions the picture on the right side of the page frame, allowing you to type text to the left of the picture.</li>
+                <li><span class="bold">Center of Column: </span>Positions the picture in the center of the column on the page.</li>
+                <li><span class="bold">Outside Left Margin: </span>Positions the picture beyond the left margin of the topic text.</li>
+                <li><span class="bold">Outside Right Margin: </span>Positions the picture beyond the right margin of the topic text.</li>
+                <li><span class="bold">Outside Frame Positions: </span>The picture outside of the page frame.</li>
+                <li><span class="bold">Outside Frame, Top Align: </span>Positions the picture outside of the page frame, as well as aligning it with the top of the frame.</li>
+                <li><span class="bold">Left of Frame: </span>Positions the picture to the left of the page frame.</li>
+                <li><span class="bold">Right of Frame: </span>Positions the picture to the right of the page frame.</li>
+                <li><span class="bold">Center of Frame: </span>Positions the picture both vertically and horizontally in the middle of the page frame.</li>
+            </ul>
+            <li><span class="bold">Clear: </span>Use this field to position a picture so that it is "clear" of an adjacent picture.</li>
+            <ul>
+                <li><span class="bold">None: </span>Does not apply the clear property to the picture.</li>
+                <li><span class="bold">Left Side: </span>The picture will be placed below the bottom outer edge of a previous picture that is floating left.</li>
+                <li><span class="bold">Right Side: </span>The picture will be placed below the bottom outer edge of a previous picture that is floating right.</li>
+                <li><span class="bold">Both Sides: </span>The picture will be placed below the a previous picture, whether it is floating left or right.</li>
+            </ul>
+            <li><span class="bold">Vertical Alignment: </span>Use this field to adjust where the item is positioned vertically.</li>
+            <ul>
+                <li><span class="bold">Baseline: </span>The baseline of the box will be aligned with the baseline of the parent box.</li>
+                <li><span class="bold">Text Top: </span>The top of the box will be aligned with the top of the parent element's font.</li>
+                <li><span class="bold">Text Bottom: </span>The bottom of the box will be aligned with the bottom of the line box.</li>
+                <li><span class="bold">Top: </span>The top of the box will be aligned with the top of the line box.</li>
+                <li><span class="bold">Middle: </span>The vertical midpoint of the box will be aligned with the baseline of the parent box, plus half the x-height of the parent.</li>
+                <li><span class="bold">Bottom: </span>The bottom of the box will be aligned with the bottom of the line box.</li>
+            </ul>
+        </ul>
+        <p class="note">Note: If you want to adjust the space between the object and the text that flows next to it, you can modify the margins on the object (using the Borders &amp; Margins tab in the dialog).</p>
+        <h4>Thumbnails Tab</h4>
+        <p>A feature for Web outputs which lets you display an image as a thumbnail. Upon hovering over or clicking on the thumbnail image, the full-size image appears. See the Thumbnails test plan for more details. <a href="../Images Thumbnails/Images Thumbnails.htm">Images Thumbnails.htm</a></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/InsertPicture--Dialog--ThumbnailTab.png" style="mc-thumbnail: popup;" />
+        </p>
+        <h4>Borders &amp; Margins Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/InsertPicture--Dialog--Borders&amp;MarginsTab.png" class="properties" style="width: 257px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Margin: </span>Margin is the distance from the edge of the document to the edge of the content. 	</p>
+                <p>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the margins around the image. Click the down arrow to the right of all the fields to apply setting to all of the margin fields.</p>
+            </li>
+            <li>
+                <p><span class="bold">Border: </span>Border is a line drawn around the content.</p>
+                <p>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the image border. Click the down arrow to the right of all the fields to apply settings to all of the border fields.</p>
+            </li>
+            <li>
+                <p><span class="bold">Padding: </span>Adds extra space between an image's border and the image itself.</p>
+                <p>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the padding in the image.  If you click the down arrow to the right of all the fields, the settings will be applied to all of padding fields.</p>
+            </li>
+            <li><span class="bold">Preview: </span>Displays a preview of how a image will look as you specify settings.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Images/DropDownMenu.png" style="border-left-style: solid;border-left-width: 2px;border-left-color: #000000;border-right-style: solid;border-right-width: 2px;border-right-color: #000000;border-top-style: solid;border-top-width: 2px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #000000;width: 23px;height: 21px;">
+                </img>: sets the top, bottom, left and right setting all at the same time with the same values.</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Click on this thumbnail to see how you should expect Margin, Border and Padding get applied to an image:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/Borders &amp; Margins usage diagram.png" style="width: 333px;height: 244px;mc-thumbnail: popup;">
+            </img>
+        </p>
+        <hr>
+        </hr>
+        <p><b>Test:</b> test using the drop down setting selection as well as setting each area manually one at a time and all together. Some combinations may cause a problem. Don't just use the drop down and think that the rest work.</p>
+        <p class="note">Note: Different browsers may treat margin and padding settings differently. For example, Internet Explorer 8 and Firefox honor padding settings more than they honor margin settings. For example, if you were to set a left margin at 1 inch, Internet Explorer 7 would show it that way. However, in order to get the same results in Internet Explorer 8 or Firefox, you would also need to set the left padding at 1 inch.</p>
+        <h4>Background Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/InsertPicture--Dialog--BackgroundTab.png" class="properties" style="width: 257px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Control</p>
+        <ul class="checkbox">
+            <li><span class="bold">Color: </span>Sets the color of the background. In the Color field, click the down arrow and select a color from the popup.</li>
+            <li><span class="bold">Image: </span>Choose an image for the background.</li>
+            <li><span class="bold">Repeat: </span>Set the repeat pattern for the background image.</li>
+            <li><span class="bold">X: 	</span>Select or enter the position (in pixels) of the image in the background. This positions the background image horizontally (i.e., on the X axis).</li>
+            <li><span class="bold">Y: 	</span>Select or enter the position (in pixels) of the image in the background. This positions the background image vertically (i.e., on the Y axis).</li>
+            <li><span class="bold">Preview: </span>	Displays the appearance of the background as you make selections in the tab.</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls (General tab)</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Images in Project</p>
+                <p class="bold">Toolbar (Tooltips in parentheses):&#160;</p>
+                <p class="bold">
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--InsertPicture--ImagesInProject--LocalToolbar.png" alt="" title="" />
+                </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowAllFiles.png" alt="" title="">
+                        </img><span class="bold">(Show/Hide All Files in Project): </span>Changes the view in the dialog to "Show All Files" view. This view display all topics in the project in one grid. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" alt="" title="" /><span class="bold">(Show/Hide Folders):&#160;</span>Changes the view in the dialog to "Show Folders"&#160;view. This view displays all files in the project in a tree view, similar to the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Files" view to offer a "Split" view. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" alt="" title="" /><span class="bold">(Show/Hide Files): </span>Changes the view in the dialog to "Show Files"&#160;view. This view displays all files in the project one folder at a time, similar to the "Show Files" view in the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Folders" view to offer a "Split" view. Detailed testing below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" alt="" title="">
+                        </img><span class="bold">(Up):</span> Moves up one folder in the hierarchy within the project's Content folder. This button becomes enabled if you use the "Show Folders" or "Split" View and browse into a folder.</li>
+                    <li><span class="bold">[File filter]: </span>Use this filter to limit the view of files to all images in the project (all supported file types) or just web-safe file types (*.png, *.jpg, *.jpeg, *.gif, *.swf). Test that you can also enter text in the filter (and press &lt;Enter&gt;) to filter by filename.</li>
+                </ul>
+            </li>
+            <li><span class="bold">[Image Path]:&#160;</span>Displays the path to the linked image. Verify that you can use the pulldown to link to recently used image files.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /><span class="bold">:&#160;</span>You can click  to find and select an image file outside of the project.</li>
+            <li><span class="bold">Preview: </span>Displays a preview of the image</li>
+            <li><span class="bold">Style Class: </span>If you want to apply a specific style class to the image, you can select it from the Style Class field.</li>
+            <li><span class="bold">Screen Tip:&#160;</span>Enter a phrase that will appear when the end user hovers over the picture.</li>
+            <li><span class="bold">Alternate Text: </span>Enter alternate text to display when the image is not available, such as when a disabled individual is using a screen reader.</li>
+        </ul>
+        <p class="note">Note: If you the browse button to select an image outside the project, that file is then copied and placed inside the project. The image file is stored in the Resources\Images folder of the Content Explorer.</p>
+        <p class="note">Note: If you import Microsoft Word documents containing embedded pictures into a project, Flare places copies of those image files in subfolders within the Resources\Images folder. This is done in order to avoid naming conflicts with embedded images from other Word documents that you might import. The subfolders are named after the Word documents being imported.</p>
+        <h5>Images in Project ("Show Folders"&#160;view)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--InsertPicture--ImagesInProject--ShowFolders.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">"Show Folders"&#160;view Test Cases:</p>
+            <ul style="list-style-type: square;">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">[+]/[-] :&#160;</span>Expands/collapses the corresponding folder</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFolderKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFolderKeyNav">
+                    <li>&lt;Enter&gt; opens/closes the selected folder to display/hide their contents – sets the selected files&#160;as the link and closes the dialog</li>
+                    <li>Up and down arrows move the selection to the next displayed node.</li>
+                    <li>Left and Right Arrows select and open\close folders will go as far as selecting the first non-folder node in a folder.</li>
+                    <li>&lt;Page Up&gt; and &lt;Page Down&gt; will move the selection within the "Show Folder" view a page at a time up or down.</li>
+                    <li>&lt;Home&gt; or &lt;End&gt; will move the selection to the very first node or the very last displayed node.</li>
+                    <li>&lt;Insert&gt; does nothing in this context.</li>
+                    <li>&lt;Delete&gt; should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h5>Images In Project ("Show Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--InsertPicture--ImagesInProject--ShowFiles.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">Name: </span>Displays the name of the file or folder.</li>
+                    <li><span class="bold">Size:&#160;</span>Displays the size of the file (empty for folders).</li>
+                    <li><span class="bold">Date Modified:&#160;</span>Displays the date and time the file or folder was last modified.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Bookmark:&#160;</span>Invokes the <span class="UI">Select Place</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFilesKeyNav">
+                    <li>&lt;Enter&gt;  sets the selected files&#160;as the link and closes the dialog. In this view, &lt;Enter&gt;&#160;does nothing when a folder is selected.</li>
+                    <li>Up and down arrows move the selection up or down one line in the grid</li>
+                    <li>Left and Right Arrows do nothing in this context</li>
+                    <li>&lt;Page Up&gt; and &lt;Page Down&gt; will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li>&lt;Home&gt; or &lt;End&gt; will move the selection to the very first item or the very last displayed item.</li>
+                    <li>&lt;Insert&gt; does nothing in this context.</li>
+                    <li>&lt;Delete&gt; should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h5>Images In Project (default "Split"&#160;view)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--InsertPicture--ImagesInProject--SplitView.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <p>(Repeat all tests for "Show Folders"&#160;and "Show Files" views in this "Split"&#160;view)</p>
+        <h5>Images In Project (default "Show All Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--InsertPicture--ImagesInProject--ShowAllFiles.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, &lt;F1&gt; functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show All Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays a list of all Content files in the project (that match the file filter)</li>
+                    <li><span class="bold">Type:&#160;</span>Displays the file extension of the file.</li>
+                    <li><span class="bold">Path:&#160;</span>Displays the location of the file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Bookmark:&#160;</span>Invokes the <span class="UI">Select Place</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowAllFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowAllFilesKeyNav">
+                    <li>&lt;Enter&gt; moves the selection down one line</li>
+                    <li>Up and down arrows move the selection up or down one line in the grid</li>
+                    <li>Left and Right Arrows move the focus to the adjacent cell left or right. Only relevant if a horizontal scroll is present.</li>
+                    <li>&lt;Page Up&gt; and &lt;Page Down&gt; will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li>&lt;Home&gt; or &lt;End&gt; will move the selection to the very first item or the very last displayed item.</li>
+                    <li>&lt;Insert&gt; does nothing in this context.</li>
+                    <li>&lt;Delete&gt; should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h3>Misc Test Cases</h3>
+        <p class="TestCases">Test Cases</p>
+        <ul class="checkbox">
+            <li>Test to drag and drop images from a folder to another folder within <span class="UI">Content Explorer</span>, make sure all of the links are updated</li>
+            <li>Test to drag and drop images from <span class="UI">Content Explorer</span> to WYSIWYG, make sure all of the links are updated</li>
+            <li>Test to cut/copy/paste images across folders in content explorer, WYSIWYG, make sure all of the links are updated</li>
+            <li>Verify that images and images with Classes are rendered correctly in the editor when the editor is resized</li>
+            <li>Verify that images and images with Classes are rendered correctly in tables/cells when the table/cell is resized</li>
+            <li>Verify images inserted in Text Boxes are rendered correctly with various Float properties applied.</li>
+            <li>You can apply or change a style to the image, edit the image, and delete the image.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

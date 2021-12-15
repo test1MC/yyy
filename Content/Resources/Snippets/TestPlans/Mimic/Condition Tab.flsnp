@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="164" MadCap:lastWidth="1252">
+    <body>
+        <p style="font-style: italic;">Conditions are covered more in depth in the  conditions test plan</p>
+        <ul>
+            <li><span class="bold">Condition Tag Set Section: </span>&#160;Displays all of the available Condition tag sets<ul><li>Possible Sets include Project, Movie and Flare Project (if movie is linked to a flare project)</li></ul></li>
+            <li><span class="bold">Condition Tag Section: </span> Will list the conditions that exist in the selected <span class="bold">Condition Tag Set</span><ul><li>Selecting condition tags here will apply those selected to the current object</li></ul></li>
+            <li><span class="bold">Unselect All: </span> Will unselect all selected condition tags<ul><li>Disabled if none are selected</li></ul></li>
+            <li><span class="bold">Select All: </span> Will select all condition tags (in the current condition tag set)<ul><li>Disabled if all are selected</li></ul></li>
+        </ul>
+    </body>
+</html>

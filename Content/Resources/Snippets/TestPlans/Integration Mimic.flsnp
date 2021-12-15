@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p style="font-weight: bold;">This will cover using conditions and variables across both Flare and Mimic</p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: normal;">Steps to have your Flare variables and conditions accessible in Mimic:</p>
+        <ol>
+            <li style="font-weight: normal;">Create any Variable Sets or Condition Sets that you need for your Flare project that you want to be available to you in Mimic.</li>
+            <li style="font-weight: normal;">In Mimic, link your Mimic movie or project (steps below on how to do this).</li>
+            <li style="font-weight: normal;">In Mimic, insert an object and insert variable or apply a condition to something.</li>
+            <li style="font-weight: normal;">Observe in the selection for which conditions or variable to use, all of the ones in your Flare project are listed under their appropriate File Set name.</li>
+        </ol>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create some condition tag sets and variable sets in Flare and make sure they appear in Mimic</li>
+                <li>Put a Mimic movie into Flare and change some of the variables in a target and output. Verify that the variable definitions in the movie is updated to the target ones.</li>
+            </ul>
+        </div>
+    </body>
+</html>

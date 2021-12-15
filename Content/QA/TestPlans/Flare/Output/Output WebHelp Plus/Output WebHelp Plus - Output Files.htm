@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3311" MadCap:lastWidth="1276" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Output WebHelp Plus - Output Files</h2>
+        <p>The following is an outline of all files and directories that should be generated when building a WebHelp Plus output.</p>
+        <h3>Root-Level Files</h3>
+        <ul class="checkbox">
+            <li>[Output Filename].htm:&#160;This is the landing page for webhelp plus output.</li>
+            <li>[Output Filename].js:</li>
+            <li>[Output Filename].mcwebhelp:</li>
+            <li>[Output Filename]_CSH.htm:</li>
+            <li>[Output Filename]_[Nav position set in skin].htm: This filename will change depending where the pane position is set in the skin editor. By default, the pane position is set left.</li>
+        </ul>
+        <h3>AutoMerge Folder</h3>
+        <p>No content should ever be generated in this folder. Additional WebHelp systems are placed here for runtime merging.</p>
+        <h3>AutoSearch Folder</h3>
+        <p>No content should ever be generated in this folder. Non-XHTML&#160;files placed in this folder will show up in the search for the output.</p>
+        <h3>Content Folder</h3>
+        <p>This Content folder should contain all of the topic files, stylesheets, and images in the Content folder of your project. Masterpage files, snippet files and page layout files should not appear in this output folder. Other non-Flare file types (*.doc, *.pdf, etc.) included in your Flare project's Content Explorer should appear in this output Content folder as well. The folder structure in this Content folder should mirror the folder structure of your files in the Content Explorer. </p>
+        <h5>Additional Files</h5>
+        <ul class="checkbox">
+            <li>Glossary.htm</li>
+            <li>Glossary.js</li>
+            <li>Glossary.xml</li>
+        </ul>
+        <h4>Resources Folder</h4>
+        <p>All files and folders in the project's Resources folder should appear here. By default, the project's Page&#160;Layout folder is created in this folder, but should not appear in the output unless non-.flpgl files are also present. Flpgl files should never appear in the output</p>
+        <h4>Skin Support Folder</h4>
+        <p>If the option to "Condense JavaScript Files"&#160;is enabled in the Performance tab of the target (which it is by default), this folder will contain the following files:</p>
+        <ul class="checkbox">
+            <li>body_longdesc.htm</li>
+            <li>jquery.min.js (added in Flare 10)</li>
+            <li>MadCap.css</li>
+            <li>MadCapAll.js (*)</li>
+            <li>MadCapBodyEnd.js</li>
+            <li>MadCapTopicAll.js (added in Flare 10)</li>
+            <li>mctoolbar_longdesc.htm</li>
+            <li>navigation_longdesc.htm</li>
+            <li>Slideshow.css (added in Flare 10)</li>
+        </ul>
+        <p>&#160;</p>
+        <p>* If the option to "Condense JavaScript Files"&#160;is disabled in the Performance tab of the target, MadCapAll.js will be replaced with:</p>
+        <ul class="checkbox">
+            <li>jquery.min.js (added in Flare 10)</li>
+            <li>MadCapAliasFile.js</li>
+            <li>MadCapBody.js</li>
+            <li>MadCapDefault.js</li>
+            <li>MadCapEffects.js</li>
+            <li>MadCapEffectsMenu.js</li>
+            <li>MadCapFavorites.js</li>
+            <li>MadCapGlobal.js (added in Flare 10)</li>
+            <li>MadCapGlossary.js</li>
+            <li>MadCapHighlighter.js</li>
+            <li>MadCapIndex.js</li>
+            <li>MadCapLiveHelpUtilities.js</li>
+            <li>MadCapMerging.js</li>
+            <li>MadCapNavigation.js</li>
+            <li>MadCapParser.js</li>
+            <li>MadCapSearch.js</li>
+            <li>MadCapSlideshow.js (added in Flare 10)</li>
+            <li>MadCapStemmer.js</li>
+            <li>MadCapToc.js</li>
+            <li>MadCapToolbar.js</li>
+            <li>MadCapTopicComments.js</li>
+            <li>MadCapUtilities.js</li>
+        </ul>
+        <h4>Images Folder (added in Flare 10)</h4>
+        <p>New to Flare 10, you will see the following image files:</p>
+        <ul class="checkbox">
+            <li>MCSlider_control.png</li>
+            <li>MCSlider_loader.gif</li>
+        </ul>
+        <h3>Data Folder</h3>
+        <p>Root files in this folder will always have the same filename. For example, even if you rename your browse sequence file, the related .js and .xml files will still be named BrowseSequences. Root files:</p>
+        <ul class="checkbox">
+            <li>Alias.js</li>
+            <li>Alias.xml</li>
+            <li>BrowseSequences.js:&#160; (only present if Browse Sequence is enabled in the skin and a Browse Sequence exists in the project.)</li>
+            <li>BrowseSequences.xml :  (only present if Browse Sequence is enabled in the skin and a Browse Sequence exists in the project.)</li>
+            <li>Concepts.js</li>
+            <li>Concepts.xml</li>
+            <li>Filters.js</li>
+            <li>Filters.xml</li>
+            <li>HelpSystem.js</li>
+            <li>Helpsystem.xml</li>
+            <li>Index.js</li>
+            <li>Index.xml</li>
+            <li>Search.js</li>
+            <li>Search.xml</li>
+            <li>Search_Chunk1.js</li>
+            <li>Search_Chunk1.xml</li>
+            <li>Synonyms.js</li>
+            <li>Synonyms.xml</li>
+            <li>Toc.js</li>
+            <li>Toc.xml</li>
+        </ul>
+        <h4>Skin[Skin Name] Folder(s)</h4>
+        <p>There should be a folder named Skin[Skin Name] created for each appropriate skin in your project.</p>
+        <h3>Service Folder</h3>
+        <ul class="checkbox">
+            <li>Service.asmx</li>
+            <li>Web.config</li>
+        </ul>
+        <h4>App_Data Folder</h4>
+        <p>this folder contains the no-glossary page for english/french/german/japanese? help viewer redundancy?&#160;</p>
+        <h4>bin Folder</h4>
+        <ul class="checkbox">
+            <li>AxInterop.WMPLib.dll</li>
+            <li>B3.AppKit.dll</li>
+            <li>B3.CommonInterfacesKit.dll</li>
+            <li>B3.CompressionKit.dll</li>
+            <li>B3.ControlsKit.dll</li>
+            <li>B3.CoreKit.dll</li>
+            <li>B3.CssKit.dll</li>
+            <li>B3.HelpViewerKit.dll</li>
+            <li>B3.HtmlKit.dll</li>
+            <li>B3.ImageConverterKit.dll</li>
+            <li>B3.ImageFiltersKit.dll</li>
+            <li>B3.ImageViewerKit.dl</li>
+            <li>B3.IndexingKit.dll</li>
+            <li>B3.IndexingQueryKit.dll</li>
+            <li>B3.IndexingSqlKit.dll</li>
+            <li>B3.LiveHelpCommonKit.dll</li>
+            <li>B3.MoviePlayerKit.dll</li>
+            <li>B3.MovieViewerKit.dll</li>
+            <li>B3.PluginAPIKit.dll</li>
+            <li><span style="text-decoration: line-through;">B3.RibbonKit.dll</span> (removed in Flare 10)</li>
+            <li>B3.SqlKit.dll</li>
+            <li>B3.SqlServerCompactKit.dll</li>
+            <li>B3.SwfKit.dll</li>
+            <li>B3.WebServiceKit.dll</li>
+            <li><span style="text-decoration: line-through;">B3.WindowsApiCodePackKit.dll</span> (removed in Flare 10)</li>
+            <li>B3.XmlConditionsKit.dll</li>
+            <li>B3.XmlKit.dll</li>
+            <li>B3.XmlStylesKit.dll</li>
+            <li>Client.Service.FeedbackExplorer.dll</li>
+            <li>Client.Service.FeedbackExplorer.XmlSerializers.dll</li>
+            <li>hrn.dll</li>
+            <li>htn.dll</li>
+            <li>Interop.CIODMLib.dll</li>
+            <li>Interop.Cisso.dll</li>
+            <li>Interop.WMPLib.dll</li>
+            <li>MadCap.HelpViewerEmbeddedClient.dll</li>
+            <li><span style="text-decoration: line-through;">Microsoft.Windows.Shell.dll</span> (removed in Flare 10)</li>
+            <li>Service.WebHelpPlus.dll</li>
+            <li><span style="text-decoration: line-through;">ShockwaveFlashObjects.dll</span> (removed in Flare 10)</li>
+            <li>tern.dll</li>
+        </ul>
+        <h4>Console.ConfigureSearch Folder</h4>
+        <ul class="checkbox">
+            <li>B3.CoreKit.dll</li>
+            <li>ConfigureSearch.exe:&#160;Running this executable will add the output folder as an indexed location to Windows Indexing Service (Windows XP&#160;and Windows Server) or Windows Search Indexer (Vista and later). You can verify the output folder was added correctly from Control Panel&gt;Indexing Options (Vista and later).</li>
+            <li>Interop.CIODMLib.dll</li>
+            <li>Microsoft.Search.Interop.dll</li>
+        </ul>
+        <h3>Skin Folder</h3>
+        <ul class="checkbox">
+            <li>Blank.htm</li>
+            <li>BrowseSequences.htm</li>
+            <li>Favorites.htm</li>
+            <li>Index.htm</li>
+            <li>Navigation.htm</li>
+            <li>Search.htm</li>
+            <li>Toc.htm</li>
+            <li>Toolbar.htm</li>
+            <li>TopicComments.htm</li>
+        </ul>
+        <h4>Images Folder</h4>
+        <p>This folder contains various image files used in the navigation pane and the local toolbar. Custom images set for toolbar and navigation items will also be found in this folder.</p>
+        <h5>Files</h5>
+        <ul class="checkbox">
+            <li>ArrowDown.gif</li>
+            <li>ArrowUp.gif</li>
+            <li>CloseButton.gif</li>
+            <li>FavoritesBlank.gif</li>
+            <li>FavoritesSearch.gif</li>
+            <li>FavoritesTopic.gif</li>
+            <li>Loading.gif</li>
+            <li>LoadingAnimated.gif</li>
+            <li>Logo.gif</li>
+            <li>LogoHtmlHelp.gif</li>
+            <li>LogoPlus.gif</li>
+            <li>NavigationBottomGradient.jpg</li>
+            <li>NavigationBottomGradient_selected.jpg</li>
+            <li>NewItemIndicator.bmp</li>
+            <li>SearchGradient.jpg</li>
+            <li>SearchGradient_over.jpg</li>
+            <li>SearchGradient_selected.jpg</li>
+            <li>Separator.gif</li>
+        </ul>
+        <h3>Subsystems Folder (optional)</h3>
+        <p>This folder will contain the output folders of any merged WebHelp projects. This folder will only be present if you have linked to another Flare project or compiled WebHelp output in the parent project's fltoc file.</p>
+    </body>
+</html>

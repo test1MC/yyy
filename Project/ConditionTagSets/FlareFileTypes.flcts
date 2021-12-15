@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Topic"
+    BackgroundColor="Blue"
+    OriginalName="Topic" />
+  <ConditionTag
+    Comment=""
+    Name="Toc"
+    BackgroundColor="Red"
+    OriginalName="Toc" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="PageLayout"
+    Comment=""
+    OriginalName="PageLayout" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="MasterPage"
+    Comment=""
+    OriginalName="MasterPage" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Alias"
+    Comment=""
+    OriginalName="Alias" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="IndexLinkSet"
+    Comment=""
+    OriginalName="IndexLinkSet" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="AutoIndexPhraseSet"
+    Comment=""
+    OriginalName="AutoIndexPhraseSet" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="AutoSuggestionList"
+    Comment=""
+    OriginalName="AutoSuggestionList" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="Glossary"
+    Comment=""
+    OriginalName="Glossary" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="Destination"
+    Comment=""
+    OriginalName="Destination" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="ConditionTagSet"
+    Comment=""
+    OriginalName="ConditionTagSet" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="FileTagSet"
+    Comment=""
+    OriginalName="FileTagSet" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Skin"
+    Comment=""
+    OriginalName="Skin" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="MSWordImportFile"
+    Comment=""
+    OriginalName="MSWordImportFile" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="FrameMakerImportFile"
+    Comment=""
+    OriginalName="FrameMakerImportFile" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="DitaImportFile"
+    Comment=""
+    OriginalName="DitaImportFile" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="FlareImportFile"
+    Comment=""
+    OriginalName="FlareImportFile" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Report"
+    Comment=""
+    OriginalName="Report" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Target"
+    Comment=""
+    OriginalName="Target" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="Multimedia"
+    Comment=""
+    OriginalName="Multimedia" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="TableStyle"
+    Comment=""
+    OriginalName="TableStyle" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="Stylesheet"
+    Comment=""
+    OriginalName="Stylesheet" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="Image"
+    Comment=""
+    OriginalName="Image" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="Snippet"
+    Comment=""
+    OriginalName="Snippet" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="VariableSet"
+    Comment=""
+    OriginalName="VariableSet" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="HeaderFile"
+    Comment=""
+    OriginalName="HeaderFile" />
+  <ConditionTag
+    Name="SynonymsFile"
+    Comment=""
+    BackgroundColor="#008000"
+    OriginalName="SynonymsFile" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="BrowseSequence"
+    Comment=""
+    OriginalName="BrowseSequence" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="BatchTarget"
+    Comment=""
+    OriginalName="BatchTarget" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="RelationshipTable"
+    Comment=""
+    OriginalName="RelationshipTable" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="SearchFilterSet"
+    Comment=""
+    OriginalName="SearchFilterSet" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="!ContentFile"
+    Comment=""
+    OriginalName="!ContentFile" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="!ProjectFileStandard"
+    Comment=""
+    OriginalName="!ProjectFileStandard" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="!ProjectFileAdvanced"
+    Comment=""
+    OriginalName="!ProjectFileAdvanced" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="!ProjectFileImport"
+    Comment=""
+    OriginalName="!AdvancedImportFile" />
+  <ConditionTag
+    BackgroundColor="#fa8072"
+    Name="HTMLImportFile"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="Dictionary"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="HyphenationDictionary"
+    Comment="" />
+</CatapultConditionTagSet>

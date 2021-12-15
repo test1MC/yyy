@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Flare Test Plans"
+    Link="/Content/QA/TestPlans/Flare/Flare.htm">
+    <TocEntry
+      Title="Install/Uninstall"
+      Link="/Content/QA/TestPlans/Flare/General/Install Uninstall/Install Uninstall.htm" />
+    <TocEntry
+      Title="General">
+      <TocEntry
+        Title="Blaze"
+        Link="/Content/QA/TestPlans/Flare/General/Blaze/Blaze.htm" />
+      <TocEntry
+        Title="Crash Reports"
+        Link="/Content/QA/TestPlans/Flare/General/Crash Reports/Crash Reports.htm" />
+      <TocEntry
+        Title="Documentation"
+        Link="/Content/QA/TestPlans/Flare/General/Documentation/Documentation.htm" />
+      <TocEntry
+        Title="Framework/MDI"
+        Link="/Content/QA/TestPlans/Flare/General/Framework MDI/Framework MDI.htm" />
+      <TocEntry
+        Title="Getting Started Wizard"
+        Link="/Content/QA/TestPlans/Flare/General/Getting Started Wizard/Getting Started Wizard.htm" />
+      <TocEntry
+        Title="Localized UI"
+        Link="/Content/QA/TestPlans/Flare/General/Localized UI/Localized UI.htm" />
+      <TocEntry
+        Title="Menus"
+        Link="/Content/QA/TestPlans/Flare/General/Menus/Menus.htm" />
+      <TocEntry
+        Title="New/Open Project/MRU"
+        Link="/Content/QA/TestPlans/Flare/General/New Open Project MRU/New Open Project MRU.htm" />
+      <TocEntry
+        Title="Performance"
+        Link="/Content/QA/TestPlans/Flare/General/Performance/Performance.htm" />
+      <TocEntry
+        Title="Ribbon"
+        Link="/Content/QA/TestPlans/Flare/General/Ribbon/Ribbon.htm" />
+      <TocEntry
+        Title="Start Page"
+        Link="/Content/QA/TestPlans/Flare/General/Start Page/Start Page.htm" />
+      <TocEntry
+        Title="Toolbars"
+        Link="/Content/QA/TestPlans/Flare/General/Toolbars/Toolbars.htm" />
+      <TocEntry
+        Title="X-Edit"
+        Link="/Content/QA/TestPlans/Flare/General/X-Edit/X-Edit.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Importing">
+      <TocEntry
+        Title="Import CHM"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import CHM/Import CHM.htm" />
+      <TocEntry
+        Title="Import DITA"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import DITA/Import DITA.htm" />
+      <TocEntry
+        Title="Import Flare/Blaze"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import Flare/Import Flare.htm" />
+      <TocEntry
+        Title="Import Frame"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import Frame/Import Frame.htm" />
+      <TocEntry
+        Title="Import HHP"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import HHP/Import HHP.htm" />
+      <TocEntry
+        Title="Import HTML"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import HTML/Import HTML.htm" />
+      <TocEntry
+        Title="Import RoboHelp"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import RoboHelp/Import RoboHelp.htm" />
+      <TocEntry
+        Title="Import Word"
+        Link="/Content/QA/TestPlans/Flare/Importing/Import Word/Import Word.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Project">
+      <TocEntry
+        Title="Batch Targets"
+        Link="/Content/QA/TestPlans/Flare/Project/Batch Targets/Batch Targets.htm" />
+      <TocEntry
+        Title="Browse Sequences"
+        Link="/Content/QA/TestPlans/Flare/Project/Browse Sequences/Browse Sequences.htm" />
+      <TocEntry
+        Title="Conditions"
+        Link="/Content/QA/TestPlans/Flare/Project/Conditions/Conditions.htm" />
+      <TocEntry
+        Title="File Tag Sets"
+        Link="/Content/QA/TestPlans/Flare/Project/File Tag Sets/File Tag Sets.htm" />
+      <TocEntry
+        Title="Glossary"
+        Link="/Content/QA/TestPlans/Flare/Project/Glossary/Glossary.htm" />
+      <TocEntry
+        Title="Project Properties"
+        Link="/Content/QA/TestPlans/Flare/Project/Project Properties/Project Properties.htm" />
+      <TocEntry
+        Title="Relationship Tables and Relationship Proxies"
+        Link="/Content/QA/TestPlans/Flare/Project/Relationship Tables/Relationship Tables.htm" />
+      <TocEntry
+        Title="Reports"
+        Link="/Content/QA/TestPlans/Flare/Project/Reports/Reports.htm" />
+      <TocEntry
+        Title="Search Filters"
+        Link="/Content/QA/TestPlans/Flare/Project/Search Filters/Search Filters.htm" />
+      <TocEntry
+        Title="Skins"
+        Link="/Content/QA/TestPlans/Flare/Project/Skins/Skins.htm" />
+      <TocEntry
+        Title="Synonyms"
+        Link="/Content/QA/TestPlans/Flare/Project/Synonyms/Synonyms.htm" />
+      <TocEntry
+        Title="Targets"
+        Link="/Content/QA/TestPlans/Flare/Project/Targets/Targets.htm" />
+      <TocEntry
+        Title="TOC"
+        Link="/Content/QA/TestPlans/Flare/Project/TOC/TOC.htm" />
+      <TocEntry
+        Title="Topic Toolbar"
+        Link="/Content/QA/TestPlans/Flare/Project/Topic Toolbar/Topic Toolbar.htm" />
+      <TocEntry
+        Title="Variables"
+        Link="/Content/QA/TestPlans/Flare/Project/Variables/Variables.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Tools">
+      <TocEntry
+        Title="Annotations/Reviewing"
+        Link="/Content/QA/TestPlans/Flare/Tools/Annotations &amp; Reviewing/Annotations &amp; Reviewing.htm" />
+      <TocEntry
+        Title="Auto Suggestion"
+        Link="/Content/QA/TestPlans/Flare/Tools/Auto Suggestion/Auto Suggestion.htm" />
+      <TocEntry
+        Title="Backups/Diffs"
+        Link="/Content/QA/TestPlans/Flare/Tools/Backups Diff/Backups Diff.htm" />
+      <TocEntry
+        Title="Colors"
+        Link="/Content/QA/TestPlans/Flare/Tools/Colors/Colors.htm" />
+      <TocEntry
+        Title="Content Explorer"
+        Link="/Content/QA/TestPlans/Flare/Tools/Content Explorer/Content Explorer.htm" />
+      <TocEntry
+        Title="Contributions"
+        Link="/Content/QA/TestPlans/Flare/Tools/Contributions/Contributions.htm" />
+      <TocEntry
+        Title="External Resources"
+        Link="/Content/QA/TestPlans/Flare/Tools/External Resources/External Resources.htm" />
+      <TocEntry
+        Title="File Explorer"
+        Link="/Content/QA/TestPlans/Flare/Tools/File Explorer/File Explorer.htm" />
+      <TocEntry
+        Title="File List"
+        Link="/Content/QA/TestPlans/Flare/Tools/File List/File List.htm" />
+      <TocEntry
+        Title="Find &amp; Find and Replace"
+        Link="/Content/QA/TestPlans/Flare/Tools/Find &amp; Find and Replace/Find &amp; Find and Replace.htm" />
+      <TocEntry
+        Title="Font Families"
+        Link="/Content/QA/TestPlans/Flare/Tools/Font Families/Font Families.htm" />
+      <TocEntry
+        Title="Hyphenation/Hyphenation Dictionaries"
+        Link="/Content/QA/TestPlans/Flare/Tools/Hyphenation/Hyphenation.htm" />
+      <TocEntry
+        Title="Link Viewer"
+        Link="/Content/QA/TestPlans/Flare/Tools/Link Viewer/Link Viewer.htm" />
+      <TocEntry
+        Title="Messages Pane"
+        Link="/Content/QA/TestPlans/Flare/Tools/Messages Pane/Messages Pane.htm" />
+      <TocEntry
+        Title="Open With"
+        Link="/Content/QA/TestPlans/Flare/Tools/Open With/Open With.htm" />
+      <TocEntry
+        Title="Project Organizer"
+        Link="/Content/QA/TestPlans/Flare/Tools/Project Organizer/Project Organizer.htm" />
+      <TocEntry
+        Title="Ruler" />
+      <TocEntry
+        Title="Save/Save as/Save to"
+        Link="/Content/QA/TestPlans/Flare/Tools/Save - Save As - Save To/Save - Save As - Save To.htm" />
+      <TocEntry
+        Title="Sharepoint"
+        Link="/Content/QA/TestPlans/Flare/Tools/SharePoint/Sharepoint.htm" />
+      <TocEntry
+        Title="Source Control"
+        Link="/Content/QA/TestPlans/Flare/Tools/Source Control/Source Control.htm" />
+      <TocEntry
+        Title="Spell Check/Dictionaries"
+        Link="/Content/QA/TestPlans/Flare/Tools/Spell Check/Spell Check.htm" />
+      <TocEntry
+        Title="Templates"
+        Link="/Content/QA/TestPlans/Flare/Tools/Templates/Templates.htm" />
+      <TocEntry
+        Title="Tools/Options"
+        Link="/Content/QA/TestPlans/Flare/Tools/Tools Options/Tools Options.htm" />
+      <TocEntry
+        Title="Topic Properties"
+        Link="/Content/QA/TestPlans/Flare/Tools/Topic Properties/Topic Properties.htm" />
+      <TocEntry
+        Title="Track Changes"
+        Link="/Content/QA/TestPlans/Flare/Tools/Track Changes/Track Changes.htm" />
+      <TocEntry
+        Title="Undo/Redo Buffer"
+        Link="/Content/QA/TestPlans/Flare/Tools/Undo - Redo/Undo - Redo.htm" />
+      <TocEntry
+        Title="Windows &amp; Window Layouts"
+        Link="/Content/QA/TestPlans/Flare/Tools/Windows/Windows.htm" />
+      <TocEntry
+        Title="Zip Project/Zip and Email Project/Unzip Project"
+        Link="/Content/QA/TestPlans/Flare/Tools/Zip Project/Zip Project.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Integration">
+      <TocEntry
+        Title="Integration Analyzer"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Analyzer/Integration Analyzer.htm" />
+      <TocEntry
+        Title="Integration Capture"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Capture/Integration Capture.htm" />
+      <TocEntry
+        Title="Integration Echo"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Echo/Integration Echo.htm" />
+      <TocEntry
+        Title="Integration Feedback"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Feedback/Integration Feedback.htm" />
+      <TocEntry
+        Title="Integration Mimic"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Mimic/Integration Mimic.htm" />
+      <TocEntry
+        Title="Integration Team Server"
+        Link="/Content/QA/TestPlans/Flare/Integration/Integration Team Server/Integration Team Server.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Editing">
+      <TocEntry
+        Title="Attributes Window"
+        Link="/Content/QA/TestPlans/Flare/Editing/Attributes Window/Attributes Window.htm" />
+      <TocEntry
+        Title="AutoNumbering"
+        Link="/Content/QA/TestPlans/Flare/Editing/Autonumbering/Autonumbering.htm" />
+      <TocEntry
+        Title="Characters"
+        Link="/Content/QA/TestPlans/Flare/Editing/Characters/Characters.htm" />
+      <TocEntry
+        Title="Concepts/Concept Proxies/Alinks"
+        Link="/Content/QA/TestPlans/Flare/Editing/Concepts/Concepts.htm" />
+      <TocEntry
+        Title="Equations"
+        Link="/Content/QA/TestPlans/Flare/Editing/Equations/Equations.htm" />
+      <TocEntry
+        Title="Footnotes &amp; Endnotes"
+        Link="/Content/QA/TestPlans/Flare/Editing/Footnotes &amp; Endnotes/Footnotes &amp; Endnotes.htm" />
+      <TocEntry
+        Title="Formatting"
+        Link="/Content/QA/TestPlans/Flare/Editing/Formatting/Formatting.htm" />
+      <TocEntry
+        Title="Grouping"
+        Link="/Content/QA/TestPlans/Flare/Editing/Grouping/Grouping.htm" />
+      <TocEntry
+        Title="Help Controls - Related Topics"
+        Link="/Content/QA/TestPlans/Flare/Editing/Help Controls - Related Topics/Help Controls - Related Topics.htm" />
+      <TocEntry
+        Title="Help Controls - Shortcut"
+        Link="/Content/QA/TestPlans/Flare/Editing/Help Controls - Shortcut/Help Controls - Shortcut.htm" />
+      <TocEntry
+        Title="Images"
+        Link="/Content/QA/TestPlans/Flare/Editing/Images/Images.htm" />
+      <TocEntry
+        Title="Images - ImageMaps"
+        Link="/Content/QA/TestPlans/Flare/Editing/Images - Image Maps/Images - Image Maps.htm" />
+      <TocEntry
+        Title="Images - Thumbnails"
+        Link="/Content/QA/TestPlans/Flare/Editing/Images Thumbnails/Images Thumbnails.htm" />
+      <TocEntry
+        Title="Index/Index Proxies/Klinks"
+        Link="/Content/QA/TestPlans/Flare/Editing/Index/Index.htm" />
+      <TocEntry
+        Title="Internal Text Editor"
+        Link="/Content/QA/TestPlans/Flare/Editing/Internal Text Editor/Internal Text Editor.htm" />
+      <TocEntry
+        Title="Links">
+        <TocEntry
+          Title="Bookmarks"
+          Link="/Content/QA/TestPlans/Flare/Editing/Bookmarks/Bookmarks.htm" />
+        <TocEntry
+          Title="Drop-Down Text"
+          Link="/Content/QA/TestPlans/Flare/Editing/Drop-Down Text/Drop-Down Text.htm" />
+        <TocEntry
+          Title="Expanding Text"
+          Link="/Content/QA/TestPlans/Flare/Editing/Expanding Text/Expanding Text.htm" />
+        <TocEntry
+          Title="Hyperlinks &amp; Popups"
+          Link="/Content/QA/TestPlans/Flare/Editing/Hyperlinks &amp; Popups/Hyperlinks &amp; Popups.htm" />
+        <TocEntry
+          Title="Text Popup"
+          Link="/Content/QA/TestPlans/Flare/Editing/Text Popup/Text Popup.htm" />
+        <TocEntry
+          Title="Togglers"
+          Link="/Content/QA/TestPlans/Flare/Editing/Togglers/Togglers.htm" />
+        <TocEntry
+          Title="X-Refs (Cross-References)"
+          Link="/Content/QA/TestPlans/Flare/Editing/X-Refs/X-Refs.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="List of/List of Proxies"
+        Link="/Content/QA/TestPlans/Flare/Editing/List-Of Proxies/List-Of Proxy.htm" />
+      <TocEntry
+        Title="Lists"
+        Link="/Content/QA/TestPlans/Flare/Editing/Lists/Lists.htm" />
+      <TocEntry
+        Title="Locked Elements"
+        Link="/Content/QA/TestPlans/Flare/Editing/Locked Elements/Locked Elements.htm" />
+      <TocEntry
+        Title="Master Pages"
+        Link="/Content/QA/TestPlans/Flare/Editing/Master Pages/Master Pages.htm" />
+      <TocEntry
+        Title="Mini-TOC"
+        Link="/Content/QA/TestPlans/Flare/Editing/Mini TOC/Mini TOC.htm" />
+      <TocEntry
+        Title="Multimedia"
+        Link="/Content/QA/TestPlans/Flare/Editing/Multimedia/Multimedia.htm" />
+      <TocEntry
+        Title="Named Destinations"
+        Link="/Content/QA/TestPlans/Flare/Editing/Named Destinations/Named Destinations.htm" />
+      <TocEntry
+        Title="Page Layouts"
+        Link="/Content/QA/TestPlans/Flare/Editing/Page Layouts/Page Layouts.htm" />
+      <TocEntry
+        Title="QR Code"
+        Link="/Content/QA/TestPlans/Flare/Editing/QR Code/QR Code.htm" />
+      <TocEntry
+        Title="Redacted Text"
+        Link="/Content/QA/TestPlans/Flare/Editing/Redacted Text/Redacted Text.htm" />
+      <TocEntry
+        Title="Rulers (HR)"
+        Link="/Content/QA/TestPlans/Flare/Editing/Rules/Rules.htm" />
+      <TocEntry
+        Title="Scripts"
+        Link="/Content/QA/TestPlans/Flare/Editing/Scripts/Scripts.htm" />
+      <TocEntry
+        Title="SlideShow"
+        Link="/Content/QA/TestPlans/Flare/Editing/SlideShow/SlideShow.htm" />
+      <TocEntry
+        Title="Snippets"
+        Link="/Content/QA/TestPlans/Flare/Editing/Snippets/Snippets.htm" />
+      <TocEntry
+        Title="Styles Window"
+        Link="/Content/QA/TestPlans/Flare/Editing/Styles Window/Styles Window.htm" />
+      <TocEntry
+        Title="Styles &amp; Stylesheets"
+        Link="/Content/QA/TestPlans/Flare/Editing/Styles &amp; Stylesheets/Styles &amp; Stylesheets.htm" />
+      <TocEntry
+        Title="Table Styles"
+        Link="/Content/QA/TestPlans/Flare/Editing/Table Styles/Table Styles.htm" />
+      <TocEntry
+        Title="Tables"
+        Link="/Content/QA/TestPlans/Flare/Editing/Tables/Tables.htm" />
+      <TocEntry
+        Title="Text Boxes"
+        Link="/Content/QA/TestPlans/Flare/Editing/Text Boxes/Text Boxes.htm" />
+      <TocEntry
+        Title="XML Editor"
+        Link="/Content/QA/TestPlans/Flare/Editing/XML Editor/XML Editor.htm" />
+      <TocEntry
+        Title="XML Editor: Print Layout"
+        Link="/Content/QA/TestPlans/Flare/Editing/XML Editor Print Layout/XML Editor Print Layout.htm" />
+      <TocEntry
+        Title="XML/XHTML Code"
+        Link="/Content/QA/TestPlans/Flare/Editing/XML XHTML Code/XML XHTML Code.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Output">
+      <TocEntry
+        Title="508 Compliancy"
+        Link="/Content/QA/TestPlans/Flare/Output/Accessibility/Accessibility.htm" />
+      <TocEntry
+        Title="Batch Builds"
+        Link="/Content/QA/TestPlans/Flare/Output/Batch Building/Batch Building.htm" />
+      <TocEntry
+        Title="Command Line Compile"
+        Link="/Content/QA/TestPlans/Flare/Output/Command Line Compile/Command Line Compile.htm" />
+      <TocEntry
+        Title="CSH, Alias and Header Files"
+        Link="/Content/QA/TestPlans/Flare/Output/CSH, Alias and Header Files/CSH, Alias and Header Files.htm" />
+      <TocEntry
+        Title="Internationalization"
+        Link="/Content/QA/TestPlans/Flare/Output/Internationalization/Internationalization.htm" />
+      <TocEntry
+        Title="Language Skins"
+        Link="/Content/QA/TestPlans/Flare/Output/Language Skins/Language Skins.htm" />
+      <TocEntry
+        Title="Merging"
+        Link="/Content/QA/TestPlans/Flare/Output/Merging/Merging.htm" />
+      <TocEntry
+        Title="Output DITA"
+        Link="/Content/QA/TestPlans/Flare/Output/Output DITA/Output DITA.htm" />
+      <TocEntry
+        Title="Output DotNet Help"
+        Link="/Content/QA/TestPlans/Flare/Output/Output DotNet Help/Output DotNet Help.htm" />
+      <TocEntry
+        Title="Output Eclipse Help"
+        Link="/Content/QA/TestPlans/Flare/Output/Output Eclipse/Output Eclipse Help.htm" />
+      <TocEntry
+        Title="Output EPUB"
+        Link="/Content/QA/TestPlans/Flare/Output/Output EPUB/Output EPub.htm" />
+      <TocEntry
+        Title="Output Frame"
+        Link="/Content/QA/TestPlans/Flare/Output/Output Frame/Output Frame.htm" />
+      <TocEntry
+        Title="Output HTML Help"
+        Link="/Content/QA/TestPlans/Flare/Output/Output HTML Help/Output HTML Help.htm" />
+      <TocEntry
+        Title="Output HTML5 (WebHelp 2.0)"
+        Link="/Content/QA/TestPlans/Flare/Output/Output HTML5/Output HTML5.htm" />
+      <TocEntry
+        Title="Output PDF"
+        Link="/Content/QA/TestPlans/Flare/Output/Output PDF/Output PDF.htm" />
+      <TocEntry
+        Title="Output Topic Preview"
+        Link="/Content/QA/TestPlans/Flare/Output/Output Topic Preview/Output Topic Preview.htm" />
+      <TocEntry
+        Title="Output WebHelp"
+        Link="/Content/QA/TestPlans/Flare/Output/Output WebHelp/Output WebHelp.htm" />
+      <TocEntry
+        Title="Output WebHelp AIR"
+        Link="/Content/QA/TestPlans/Flare/Output/Output WebHelp AIR/Output WebHelp AIR.htm" />
+      <TocEntry
+        Title="Output WebHelp Mobile"
+        Link="/Content/QA/TestPlans/Flare/Output/Output WebHelp Mobile/Output WebHelp Mobile.htm" />
+      <TocEntry
+        Title="Output WebHelp Plus"
+        Link="/Content/QA/TestPlans/Flare/Output/Output WebHelp Plus/Output WebHelp Plus.htm" />
+      <TocEntry
+        Title="Output Window &amp; Reports"
+        Link="/Content/QA/TestPlans/Flare/Output/Output Window &amp; Reports/Output Window &amp; Reports.htm" />
+      <TocEntry
+        Title="Output Word"
+        Link="/Content/QA/TestPlans/Flare/Output/Output Word/Output Word.htm" />
+      <TocEntry
+        Title="Output XHTML Book"
+        Link="/Content/QA/TestPlans/Flare/Output/Output XHTML Book/Output XHTML Book.htm" />
+      <TocEntry
+        Title="Output XPS"
+        Link="/Content/QA/TestPlans/Flare/Output/Output XPS/Output XPS.htm" />
+      <TocEntry
+        Title="Publishing/Destinations"
+        Link="/Content/QA/TestPlans/Flare/Output/Publishing and Destinations/Publishing and Destinations.htm" />
+      <TocEntry
+        Title="Search"
+        Link="/Content/QA/TestPlans/Flare/Output/Search/Search.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

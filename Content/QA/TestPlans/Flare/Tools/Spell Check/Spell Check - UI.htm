@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5157" MadCap:lastWidth="1072" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Spell Check - UI</h2>
+        <h3>Opening the Spell Check pane</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!Tools |&#160;Spell Check Window</span>
+            </li>
+            <li>Press <span class="KeyboardShortcut">F7</span> on the keyboard</li>
+        </ul>
+        <h3>Spell Check pane - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/SpellCheckPane.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p class="bold">Misspelled Word</p>
+        <ul class="checkbox">
+            <li><span class="bold">(misspelled word box): </span>Displays the word that Flare considers misspelled. The word is also highlighted in the topic.</li>
+            <li><span class="bold">Find Next: </span>Click this button to initiate the spell check search. This button is replaced by the <span class="bold">Skip</span> button after user clicks it.</li>
+            <li><span class="bold">Skip: </span>Temporarily ignores the spelling of the word (this occurrence only) and moves on to the next misspelled word. If other occurrences of the word are found in the topic, they will be flagged as questionable spellings.</li>
+            <li><span class="bold">Add To Dictionary: </span>Adds the word to the project dictionary so that it is not flagged as a questionable spelling in the future. Flare then moves on to the next misspelled word.</li>
+            <li><span class="bold">Ignore: </span>Ignores the spelling of the word and moves on to the next misspelled word. Flare also adds the spelling of this word to the Ignored Words dialog (for this topic only). This means that if other occurrences of the word are found in the topic, they will not be flagged as questionable spellings.</li>
+            <li><span class="bold">Ignore in All Files: </span>Ignores the spelling of the word and moves on to the next misspelled word. Flare also adds the spelling of this word to the Ignored Words dialog (for all topics included in the search). This means that if other occurrences of the word are found in any other topics included in the search, they will not be flagged as questionable spellings.</li>
+            <li><span class="bold">Start Spell Check: </span>Click the down arrow and select one of the following:<ul style="list-style-type: circle;"><li><span class="bold">(current document): </span>Flare checks the spelling in the active topic only.</li><li><span class="bold">(whole project): </span>Flare checks the spelling in every topic in the project.</li><li><span class="bold">(all open documents): </span>Flare checks the spelling in all topics currently open in the interface.</li><li><span class="bold">(documents in same folder): </span>Flare checks the spelling in all topics located in the same folder as the current one in the Content Explorer.</li></ul></li>
+            <li><span class="bold">[ &gt;&gt; ] : </span>Skips searching in the current topic and moves on to the next file.</li>
+        </ul>
+        <p class="bold">Suggestions:</p>
+        <ul class="checkbox">
+            <li><span class="bold">(suggestion box):&#160;</span>Displays a suggested word to replace the misspelled word. Additional suggestions are listed below. You can use the suggested term, type user’s own corrected word in this field, or select a word from the list (which is then automatically added to the Suggestions field).</li>
+            <li><span class="bold">Change: </span>Changes only that occurrence of the misspelled word to the word in the suggestion box.</li>
+            <li><span class="bold">Change in All Files: </span>Changes that occurrence of the misspelled word, as well as any other occurrences of it in the rest of the project.</li>
+            <li><span class="bold">(further suggestions box):&#160;</span>Lists additional suggestions. Clicking any suggestion in this lower box will put that suggestion in the upper suggestion box where it can be used to replace the misspelled word.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>XML&#160;Editor display of misspelled words</h3>
+        <p class="bold">The XML Editor should display misspelled words with a red squiggly underline. </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/XMLEditor--MisspelledWord.png" class="border">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Right-clicking a misspelled word in the XML&#160;Editor will reveal a menu like this:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/MisspelledWord--RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+            <p style="margin-left: 250pt;">&#160;</p>
+            <p class="bold" style="margin-left: 235pt;">Relevant Menu Items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">(Alternate Spelling Suggestions): </span>A list of suggested words to replace the current misspelled words. Select one to replace the existing text. Suggestions should also draw from Dictionary files within the project.</li>
+                <li><span class="bold">Ignore All: </span>Adds the word to a list of ignored words 
+list for this topic.</li>
+                <li><span class="bold">Add To Dictionary: </span>Add the current misspelled word to the appropriate language Dictionary</li>
+            </ul>
+        </div>
+        <h3>Setting the Language</h3>
+        <h4>Setting the language of your project</h4>
+        <p>Set the project language in the <span class="UI">Start New Project Wizard</span> when you create the project, or change it by viewing <span class="UI">Project Properties</span> (Language tab). Flare will use this language when spell checking your project. Test that Spell Check works correctly with different project languages set.</p>
+        <h4>Setting the language of a topic</h4>
+        <p>If you want a topic to use a different language for Spell Checking than the rest of the project, you can set a different language at the topic level. This can be set in the <span class="UI">Topic Properties</span> dialog (Language tab). It can also be set by right-clicking the html tag in the <span class="UI">XML Editor</span> and selecting Language from the context menu. Setting the topic language via the html tag will open the <span class="UI">Select Language</span> dialog.</p>
+        <p>Flare will use the project language for most of the project, but use the language you set in the <span class="UI">Topic Properties</span> dialog when spell checking such a topic. Test that spell check works correctly for a topic which uses a different language than the project language.</p>
+        <h4>Setting the language of your content</h4>
+        <p>If you have a particular paragraph or phrase in a topic that should be spell checked using a different language dictionary, you can tag any element (including a span) with a language tag. The language for a particular element is set in the <span class="UI">Select Language</span> dialog.</p>
+        <h3>Select Language Dialog - UI Test Cases</h3>
+        <p class="bold">To open the dialog:</p>
+        <ul class="checkbox">
+            <li>Right-click an elements block bar and select Language from the context menu</li>
+            <li>Select an element and go <span class="MenuItem">!Format |&#160;Language</span></li>
+            <li>Select the specific text within an element and go <span class="MenuItem">!Format |&#160;Language</span> (this will result in a span tag around the selected text)</li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/UI---SelectLanguage.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">(Language list):&#160;</span>Displays a list of all languages that can be used to tag content.</li>
+            <li><span class="bold">Hide unsupported languages:&#160;</span>Reduces the list of visible languages to those which have spell check support.</li>
+        </ul>
+        <h3>Language Markers in the XML&#160;Editor</h3>
+        <p>Flare will spell check based on the language of your content. Language markers appear in the XML Editor to show that an element is tagged with a language tag. </p>
+        <p>In this case, the topic (the html tag)&#160;is set to French, and the topic contains paragraphs set to Swedish and (never spell check).</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/LanguagesInTheXMLEditor.png" class="border">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify that words added to the Dictionary are added to the appropriate dictionary. That is, if the word is contained in a paragraph with a Swedish language tag, the word should be added to the Swedish language dictionary. </li>
+        </ul>
+        <h3>Ignored Words - UI&#160;Test Cases</h3>
+        <p class="bold">Opening the Ignored Words dialog:</p>
+        <p>Since ignored words are per topic, first open the topic that you want to view the Ignored Words list for. </p>
+        <p><span style="font-weight: normal;"><span class="MenuItem">!Tools |&#160;Ignored Words</span></span>
+        </p>
+        <p><b>UI&#160;Test Cases</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SpellCheck/UI---IgnoredWords.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Ignored Words):&#160;</span>To add a word to the list, simply click inside the section and type one word per line. (Words are also added to this list automatically when user clicks Ignore or Ignore All when performing a manual spell check or when right-clicking .)</li>
+        </ul>
+    </body>
+</html>

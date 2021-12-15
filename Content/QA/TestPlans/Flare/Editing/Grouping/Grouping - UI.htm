@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1346" MadCap:lastWidth="813" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>Grouping - UI</h2>
+        <h3>Opening the UI</h3>
+        <p>&#160;</p>
+        <ol>
+            <li>Select one or more blocks of content (such as paragraphs).</li>
+            <li>Select Format&gt;Group or press the Tab key on your keyboard.<ol><li>The Create Group dialog opens.</li></ol></li>
+            <li>Select a tag from the list:<ol><li><span class="bold">blockquote:</span> This tag is typically used to format text used as a quotation. Usually the &lt;blockquote&gt; tag has margin indentations to set it apart from the rest of the content in the topic.</li><li><span class="bold">div A &lt;div&gt; tag</span> is used to define logical divisions in your topics or to hold objects that can be "floated" (such as text boxes). It is similar to a paragraph tag, but it divides the page into larger sections. You can use &lt;div&gt; tags to name those larger sections of a topic and then affect them with style sheets or Dynamic HTML.</li><li><span class="bold">fieldset:</span> This tag is used to combine multiple tags into a group, drawing a box around all of the content.</li><li><span class="bold">form:</span> This tag is used to create a form for user input. After you create the group with the &lt;form&gt; tag, you can open the topic in the Internal Text Editor to supply the necessary code for the form fields.</li></ol></li>
+            <li>Click OK.</li>
+        </ol>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (Images, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+            </ul>
+        </div>
+        <h3>UI</h3>
+        <h4>Create Group Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Group/UI--CreateGroup--Dialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <h3>UI Controls</h3>
+        <h4>Group Tags: (default tags, user can add as many groups as they want)</h4>
+        <ol>
+            <li><span class="bold">blockquote:</span> This tag is typically used to format text used as a quotation. Usually the &lt;blockquote&gt; tag has margin indentations to set it apart from the rest of the content in the topic.</li>
+            <li><span class="bold">div A &lt;div&gt; tag</span> is used to define logical divisions in your topics or to hold objects that can be "floated" (such as text boxes). It is similar to a paragraph tag, but it divides the page into larger sections. You can use &lt;div&gt; tags to name those larger sections of a topic and then affect them with style sheets or Dynamic HTML.</li>
+            <li><span class="bold">fieldset:</span> This tag is used to combine multiple tags into a group, drawing a box around all of the content.</li>
+            <li><span class="bold">form:</span> This tag is used to create a form for user input. After you create the group with the &lt;form&gt; tag, you can open the topic in the Internal Text Editor to supply the necessary code for the form fields.</li>
+        </ol>
+        <p class="note">Users can create customer subclasses of any of these tags and they will display in the Create Group Dialog.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases:</p>
+            <ul style="list-style-type: square;">
+                <li>Create subclasses of the 4 group tags and verify they appear in the Create Group Dialog.</li>
+                <li>Verify you can create a group by selecting 2 p's or a p and a list.</li>
+                <li>Verify you can not create a group by selecting part of a list.</li>
+            </ul>
+        </div>
+    </body>
+</html>

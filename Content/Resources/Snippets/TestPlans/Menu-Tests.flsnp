@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="155" MadCap:lastWidth="1169">
+    <head><title></title>
+    </head>
+    <body>
+        <p class="bold">Menu Test Cases</p>
+        <ul class="checkbox">
+            <li>Menu items are correct</li>
+            <li>Tooltips are correct</li>
+            <li>Spelling and grammar for items and tooltips are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Keyboard can navigate and select options</li>
+            <li>Menu is  easy to use and understand</li>
+        </ul>
+    </body>
+</html>

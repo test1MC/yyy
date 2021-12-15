@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Status.Lingo V4,AuthorFileTagSet.Cristian,Product.Lingo" MadCap:lastBlockDepth="9" MadCap:lastHeight="2013" MadCap:lastWidth="985">
+    <head>
+    </head>
+    <body>
+        <h2>Diff Project - UI </h2>
+        <h3>Opening the UI</h3>
+        <p>! File &gt; Update Project</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Diff/UI--UpdateProject.png" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li>It opens up the File folders on the computer</li>
+            <li>Locate and select the updated project.</li>
+            <li><b>Newer Version</b>	Make sure the Files of type field displays .flprj (if translating Flare) or .blprj (if translating Blaze). Then navigate to the Flare or Blaze project that you want to translate, and double-click the .flprj or .blprj file.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test Cases</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Type invalid text, numbers, character, etc into fields that will take user input.</li>
+            <li>Type extra long input into fields.</li>
+            <li>Type characters and symbols into fields.</li>
+            <li>Make sure when selecting multiple files you shouldn’t be able to create a Diff project.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Diff Icons:</b>
+        </p>
+        <p>&#160;</p>
+        <p>If you are working in a "difference" project, special icons display next to the areas in the left window pane (in visual mode) or next to the rows (in grid mode) where changes have been made since the last version of the project. The type of icon shown depends on the type of change that has been made. In grids, a "Difference" column also provides an indication of what was changed in the content.</p>
+        <p>Following are the various kinds of "difference" icons that you might see in a project:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Diff/DiffTags-Diagram.png" style="width: 187px;height: 294px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p><b><a name="Creating"></a>Creating Difference Projects:</b>
+        </p>
+        <p>&#160;</p>
+        <p>Let's say you have already created a Lingo project for an earlier version of a particular Flare project, Blaze project, Mimic project, Mimic movie, MadCap document, DITA file, Microsoft Word document, or Capture image. You have already translated it, exported it to a new project or file, and given it to the author.Sometime after this, the author makes many changes to the project or file (in the source language). Now the author needs you to translate those changes into the target language.When this occurs, you can "Update" the project to translate the new version of the project or file. This allows you to easily locate the differences between the old and new versions, rather than looking through each piece of text. If a file or string has been modified since the previous version, an icon displays next to that content (the type of icon depends on the type of change made). In addition, the "Difference" column in an editor's grid provides an indication of the change. You can then compare the two versions in order to determine what was modified and translate the changes as necessary. If the author has deleted content from the new project or file, that content is automatically deleted from the new Lingo difference project when you create it.</p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">How to create a difference project:</p>
+        <ol>
+            <li>Open the Lingo project that you already translated and exported. See <a href="../Import-New-Open Project/New and Open Project - UI.htm">Opening Projects</a>.</li>
+            <li>Select File&gt;Update Project. </li>
+            <ul>
+                <li>It opens up the File folders on the computer</li>
+            </ul>
+            <li>In the dialog that opens, navigate to the updated project or file that you want to translate, and double-click the appropriate file. The main extensions for the various types of files that you can translate are: .flprj (Flare projects), .blprj (Blaze projects), .miprj (Mimic projects), .mimov (Mimic movies), .mdcoct or .mcdoc (MadCap documents), .txt (text files), .dita (DITA files), .doc (Microsoft Word files), various image file types (Capture files). Files with other extensions are also supported (e.g., .flprjzip, .ditacon, .docx, .htm, .xml).<ol><li>Note: You will need to select the appropriate file type from the file type list to view files of that type in the explorer.</li></ol></li>
+            <li>Click Open.</li>
+            <li>The project will stat to update.</li>
+        </ol>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul>
+            <li> Cancel the project</li>
+            <li>Cancel the project when it starts to update the files. The cancel option should be grayed out momentarily.</li>
+        </ul>
+        <p>Upon completion the "Update Project Results Dialogue" will appear displaying what files were updated.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Diff/UI--UpdateProjectResults--Dialog.png" style="width: 243px;height: 172px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul>
+            <li>Check to make sure all the file status updated correctly.</li>
+            <li>View files in Visual mode and make sure differences are marked.</li>
+            <li>Try to create a bundle after updating a project</li>
+            <li>Export the project to make sure it exports correctly and all the files are there.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

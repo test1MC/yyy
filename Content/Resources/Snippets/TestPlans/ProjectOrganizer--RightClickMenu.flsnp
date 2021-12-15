@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="753" MadCap:lastWidth="1006">
+    <body>
+        <p class="bold">
+            <MadCap:snippetText src="Flare--FileTypes.flsnp" /> right-click menu:</p>
+        <p MadCap:conditions="FlareFileTypes.Alias,FlareFileTypes.AutoIndexPhraseSet,FlareFileTypes.AutoSuggestionList,FlareFileTypes.BrowseSequence,FlareFileTypes.Destination,FlareFileTypes.DitaImportFile,FlareFileTypes.FileTagSet,FlareFileTypes.FlareImportFile,FlareFileTypes.VariableSet,FlareFileTypes.Toc,FlareFileTypes.Target,FlareFileTypes.SynonymsFile,FlareFileTypes.Skin,FlareFileTypes.SearchFilterSet,FlareFileTypes.Report,FlareFileTypes.RelationshipTable,FlareFileTypes.MSWordImportFile,FlareFileTypes.IndexLinkSet,FlareFileTypes.HTMLImportFile,FlareFileTypes.Glossary,FlareFileTypes.FrameMakerImportFile,FlareFileTypes.Dictionary,FlareFileTypes.HyphenationDictionary">
+            <img src="../../Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenuFile.png" class="left" />
+        </p>
+        <p MadCap:conditions="FlareFileTypes.HeaderFile">
+            <img src="../../Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--HeaderFile.png" alt="" title="" class="left" />
+        </p>
+        <p MadCap:conditions="FlareFileTypes.ConditionTagSet">
+            <img src="../../Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ConditionSet.png" alt="" title="" class="left" />
+        </p>
+        <p MadCap:conditions="FlareFileTypes.BatchTarget">
+            <img src="../../Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--BatchTarget.png" alt="" title="" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="Menu-Tests.flsnp" />
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open (Open):</span> Opens the selected Project file in the <span class="UI">MDI</span>.</li>
+                <li><span class="bold">Open with:</span> Gives options to open the Project file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected Project file to the clipboard.</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected Project file to the clipboard.</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the Project file from the clipboard.</li>
+                <li><span class="bold">Delete (Delete):</span> Removes the selected Project file from the project.</li>
+                <li><span class="bold">Rename (Rename):</span> Allows you to rename the Project file.</li>
+                <li><span class="bold">View Links (Open this file in the Link Viewer):</span> Opens the <span class="UI">Link Viewer</span> pane.</li>
+                <li><span class="bold">Send to Folder... (Send to Folder): </span>Allows you to send the selected file to any folder on your machine</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected file.</li>
+                <li MadCap:conditions="FlareFileTypes.HeaderFile"><span class="bold">Export Header File(s)…:&#160;</span>Invokes the <span class="UI">Export Header Files</span> dialog which lets you save the header files to various formats to a location outside the project. (This menu item only appears when right-clicking a header file.)</li>
+                <li MadCap:conditions="FlareFileTypes.ConditionTagSet"><span class="bold">Export expression to new project </span>Invokes the <span class="UI">Conditional Text</span> dialog which lets you choose advanced condition settings. After clicking OK, you invoke the <span class="UI">Create Package</span> dialog.</li>
+                <li MadCap:conditions="FlareFileTypes.ConditionTagSet"><span class="bold">Export to new project </span>Invokes the Condition tag sub-menu. After clicking the condition tag to export, you invoke the <span class="UI">Create Package</span> dialog.</li>
+                <li MadCap:conditions="FlareFileTypes.BatchTarget"><span class="bold">Build and Publish ‘Batch Target’:</span> Builds and Publishes the batch target</li>
+                <li MadCap:conditions="FlareFileTypes.BatchTarget"><span class="bold">Build Only ‘Batch Target’:</span> Builds the batch target</li>
+                <li MadCap:conditions="FlareFileTypes.BatchTarget"><span class="bold">Publish&#160;Only ‘Batch Target’:</span> Publishes the batch target</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Time Span: </span> Toggles on / off the time span property of the object<ul><li><span class="bold">Unchecked: </span> The object will appear on the frame for the duration of the Frame</li><li><span class="bold">Checked: </span> The object will appear on the frame for the specified amount of time (Below)<ul><li><span class="bold">Start Time: </span> Sets how many seconds into the frame the object will first appear</li><li><span class="bold">Length: </span> Will set the duration the object remains on the frame after it first appears</li></ul></li></ul></li>
+            <li>Making changes here will be reflected accordingly in the Timeline pane</li>
+            <li>Making changes in the Timeline pane will be reflected on this screen accordingly</li>
+        </ul>
+    </body>
+</html>

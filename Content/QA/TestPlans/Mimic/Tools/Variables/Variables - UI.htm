@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1867" MadCap:lastWidth="732" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>Variables - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>!Movie | Movie Properties | Variables</p>
+        <p>!Project | Project Properties | Variables</p>
+        <h3>XXX - UI Test Cases</h3>
+        <h4>Variables tab</h4>
+        <p>
+            <img class="properties" src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Movie/UI--Variables Movie Properties.png">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Variables:&#160;</span>Displays a list of all Variables</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name:&#160;</span>Displays the name of all Variables</li>
+                    <li><span class="bold">Definition:&#160;</span>By default, displays the definition of the variable.  Double-clicking the Definition here lets you edit the variable definition specifically for this target.</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comments</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+        <h3>Integration Mimic - Cross Product Testing</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Integration Mimic.flsnp" />
+        <h3>How to link your Mimic Movie or Project to a Flare Project:</h3>
+        <h4>Stand Alone Movie</h4>
+        <p>In Mimic:</p>
+        <ul style="list-style-type: square;">
+            <li>Open the movie</li>
+            <li>!Movie | Movie Properties.</li>
+            <li>The Movie Properties dialog opens.</li>
+            <li>Select the Project tab.</li>
+            <li>Click the Browse button.</li>
+            <li>In the dialog that opens, select and double-click the Flare project to which you want to link.</li>
+        </ul>
+        <h4>Project</h4>
+        <p>In Mimic:</p>
+        <ul style="list-style-type: square;">
+            <li>Open the project.</li>
+            <li>The Project Editor opens.</li>
+            <li>Select the Project Link tab.</li>
+            <li>Click the Browse button.</li>
+            <li>In the dialog that opens, select and double-click the Flare project to which you want to link.</li>
+        </ul>
+        <p class="note">Using Shared Variable and Conditions only works one way. They must all be created within Flare to use them in Mimic. Variables and Condition Tags created in Mimic are not shared with your Flare Project, however they will output correctly.</p>
+    </body>
+</html>

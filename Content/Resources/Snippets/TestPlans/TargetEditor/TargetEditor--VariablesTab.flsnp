@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="709" MadCap:lastWidth="819">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Variable Sets: </span>Displays a list of all Variable Sets in the project.  Selecting a Variable Set will display all variables in that set on the right.</li>
+            <li>
+                <p><span class="bold">Variables:&#160;</span>Displays a list of all Variables in the selected Variable Set.</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">[icon]:&#160;</span>The first column will display an icon if the corresponding variable is a Date/Time Variable or if the variable has alternate definitions defined for it in the variable set.</li>
+                    <li><span class="bold">Name:&#160;</span>Displays the name of all Variables in the selected Variable Set.</li>
+                    <li><span class="bold">Definition:&#160;</span>By default, displays the primary definition of the variable from the variable set.  Double-clicking the Definition here lets you edit the variable definition specifically for this target.<ul style="list-style-type: square;"><li>If a variable has alternate definitions defined for it in the <span class="UI">Variable Set Editor</span>, verify that double-clicking the definition also produces a drop-down that displays all of the alternate definitions defined in the variable set.</li><li>Verify that even when a variable has alternate definitions, you can still manually enter a definition.</li></ul></li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment set in the <span class="UI">Variable Set Editor</span> for the variable.<ul style="list-style-type: square;"><li>Verify that comments for alternate definitions set in the <span class="UI">Variable Set Editor</span> display.</li><li>Verify that redefined variables (manual overrides and alternate definition overrides)&#160;display the primary definition's comment if no comment is provided for the alternate definition.</li></ul></li>
+                </ul>
+                <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>Opens the currently selected Variable Set in the <span class="UI">Variable Set Editor</span>.</li>
+            <li><span class="bold">Restore Defaults… :&#160;</span>Restores all Definitions to the definitions set in the Variable Set.  (This button should be grayed out unless you have altered one of the definitions for this target).</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:</p>
+            <ul class="checkbox">
+                <li>Variable Set</li>
+            </ul>
+        </div>
+    </body>
+</html>

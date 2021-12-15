@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4323" MadCap:lastWidth="1015" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Template Management - UI</h2>
+        <p>To fully test templates, you will need to create a few template folders. It is important that all template functionality is tested with template folders at a variety of locations. Use the <span class="UI">Template Manager</span> dialog (outlined below)&#160;to create a template folder at a:</p>
+        <ul class="checkbox">
+            <li>Local path</li>
+            <li>UNC&#160;path</li>
+            <li>Mapped network drive</li>
+            <li>Secondary drive</li>
+        </ul>
+        <h3>Opening the dialog</h3>
+        <ul class="checkbox">
+            <li><span class="UI">Start New Project Wizard</span>:&#160;In the "Select a project template" screen of the wizard, click the Manage Templates… button <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" /></li>
+            <li><span class="UI">Add File</span> dialog:&#160;Open the dialog by any means, click the Manage Templates… button <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" /> in the&#160;dialog</li>
+            <li>Tool Strip interface:<ul class="checkbox"><li><span class="MenuItem">!Tools | Manage Templates…</span></li><li><span class="MenuItem">!File | Save as Template</span>, click the Manage Templates…  button <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" /> in the&#160;dialog</li><li><span class="MenuItem">!Project | Save Project as Template</span>, click the Manage Templates…  button in the&#160;dialog</li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li><span class="RibbonItem">!Tools | Manage Templates</span></li><li><span class="RibbonItem">!File | Save |&#160;Save as Template</span>, click the Manage Templates…  button <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" /> in the&#160;dialog</li><li><span class="RibbonItem">!Project | Save Project as Template</span>, click the Manage Templates…  button in the&#160;dialog</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>You should not be able to manage the 'Factory' template folder.&#160;Verify it does not display in the <span class="UI">Template Manager</span>.</li>
+                <li>!Tools | Manage Templates... will be DISABLED if no project is open in Flare.<ul class="checkbox"><li>Ribbon interface</li><li>Toolstrip interface</li></ul></li>
+                <li>Managing templates from the New Project Wizard should be disabled if no project is opened.</li>
+            </ul>
+        </div>
+        <h3>Template Manager - UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Dialog--TemplateManager.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Templates:</span> Allows you to browse/select all of a template or just files within a template.<ul style="list-style-type: circle;"><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" /> (Show/Hide Folders): </span>Toggles between showing or hiding the Tree View in the <span class="UI">Template Manager</span>.</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" /> (Show/Hide Files): </span> Toggles between showing and hiding the Files View in the <span class="UI">Template Manager</span>.<ul style="list-style-type: circle;"><li>If both options above are enabled, the <span class="UI">Template Manager</span> displays is what is commonly referred to as "Split View." The left half displays folders only. The right half shows folders and files in the currently selected folder with additional details for the files. As you navigate through folders on the right side, the containing folder should highlight in the left half of the <span class="UI">Template Manager</span>.</li><li>Verify that you can never disable both views. If only one view is enabled (you are not in "Split View"), attempting to disable the current view will disable that view and enable the other view.</li></ul></li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" /> (Up):&#160;</span>Moves up one folder in the hierarchy in the <span class="UI">Template Manager</span>. This button becomes enabled if you use the Show Folders or Split View and browse into a folder.</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> (Delete):</span> <ul style="list-style-type: square;"><li><u>Template Folder selected</u>: Will remove the selected template folder from from being a template folder, so it no longer shows up in Flare's template UI. The folder WILL&#160;NOT&#160;be deleted from disk.</li><li><u>Template File selected</u>: Will send the selected file to the recycle bin. Verify that this option prompts for confirmation.</li></ul></li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--AddTemplateFile.png" /> (Add Template File):</span> Invokes a Windows <span class="UI">Open</span> dialog which allows you to browse for a template file. Upon selecting a file, the <span class="UI">Save as Template</span> dialog opens to let you select to which template folder the file should be saved and optionally provide a description.<ul style="list-style-type: circle;"><li>In the <span class="UI">Open</span> dialog, verify that all supported file types appear in the Template files filter.</li><li>Verify that any new file types that have been introduced to the latest version of Flare appear in the Template Files filter.</li></ul></li><li><p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewFolder.png" /> (New Template Folder):</span> Invokes the <span class="UI">Select Folder</span> dialog which lets you browse for and select a folder to designate as a Template Folder. </p><p class="note">NOTE:&#160;Template folder locations are written to the registry and shared by all MadCap products: HKEY_CURRENT_USER|Software|MadCap Software|Shared|TemplateFolders. When a folder is "removed"&#160;from being a template, the path is not immediately removed from the registry. But the registry count ("Length")&#160;is changed to reflect the change. When another template folder is added, the new folder path will replace the removed path in the registry.</p></li><li><span class="bold">Filter:&#160;</span>Lets you filter the visible files in the <span class="UI">Template Manager</span> to a particular file set.<ul style="list-style-type: circle;"><li>All Template Files:&#160;All supported file types display</li><li>Project Data Templates:&#160;Only "Project"&#160;files (files that occur in the <span class="UI">Project Organizer</span> within a project)&#160;display.</li><li>Project Content Templates:&#160;Only "Content"&#160;files (files that occur in the <span class="UI">Content Explorer</span> within a project)&#160;display.</li><li>Project Templates:&#160;Only Flare project files&#160;(*.flprj)&#160;display</li></ul></li></ul></li>
+            <li><span class="bold">Preview/Description:</span> Displays the preview or description for the selected template file.<ul style="list-style-type: circle;"><li>This area should be disabled when a folder node is selected</li><li>This area should preview items that can be previewed (Topics, Snippets, Masterpages, Images and Multimedia)&#160;and show descriptions for items that cannot be previewed. (all other supported file types)</li><li>If there is no description the UI will display: "[No description found in template file]"</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> (Refresh Preview):&#160;</span>Refreshes the preview or description.</li><li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--EditTemplateDescription.png" /> (Edit Template Description):</span> Invokes the <span class="UI">Edit Template Description</span> dialog which allows you to edit the description of the selected template file, when applicable. This option will be disabled when a folder node or a file that cannot contain a description is selected.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Test managing templates on:</p>
+            <ul class="checkbox">
+                <li>Local systems</li>
+                <li>UNC paths</li>
+                <li>Mapped Network drives</li>
+                <li>Secondary Drives</li>
+            </ul>
+            <p>Test managing template files and folders with the following in their name:</p>
+            <ul class="checkbox">
+                <li> Spaces</li>
+                <li>Symbols</li>
+                <li>Non-English letters</li>
+            </ul>
+            <p>Test managing template files and folders within folders that are:</p>
+            <ul class="checkbox">
+                <li> Read-only folders</li>
+                <li>Network folders where you do not have permission to write</li>
+            </ul>
+            <p>Test  deleting template files and template projects that are:</p>
+            <ul class="checkbox">
+                <li> Read-only </li>
+                <li>From network folders where you do not have permission to write</li>
+            </ul>
+            <p>Test deleting files and removing folder in all views</p>
+            <ul class="checkbox">
+                <li>Show Files View</li>
+                <li>Show Folders View</li>
+                <li>Split View</li>
+            </ul>
+        </div>
+        <h4>Template Manager - Right-click Menus</h4>
+        <p class="bold">Right-clicking the root folder in the <span class="UI">Template Manager</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Menu--TemplateManager--RightClickRootFolder.png" alt="" title="" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">New Template Folder (New Template Folder):</span> As detailed above, invokes the <span class="UI">Select Folder</span> dialog which lets you browse for and select a folder to designate as a Template Folder.</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a template folder in the <span class="UI">Template Manager</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Menu--TemplateManager--RightClickTemplateFolder.png" alt="" title="" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows (Open a Windows Explorer):</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the files from the clipboard into the selected folder.</li>
+                <li><span class="bold">Delete (Delete):</span> As detailed above, removes the selected folder from being a template folder, but does not delete anything from disk.</li>
+                <li><span class="bold">Add Template File (Add Template File):</span>&#160;As detailed above, invokes a Windows <span class="UI">Open</span> dialog which allows you to browse for a template file.</li>
+                <li><span class="bold">New Template Folder (New Template Folder):</span> As detailed above, invokes the <span class="UI">Select Folder</span> dialog which lets you browse for and select a folder to designate as a Template Folder.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking a file in the <span class="UI">Template Manager</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Menu--TemplateManager--RightClickFile.png" alt="" title="" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open (Open):</span> Opens the selected template file in the Flare interface for editing.</li>
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected template files to the clipboard.</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected  template files to the clipboard.</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the files from the clipboard into the current template folder.</li>
+                <li><span class="bold">Delete (Delete):</span> Sends the selected template file to the recycle bin. Verify a confirmation prompt is given.</li>
+                <li><span class="bold">Rename (Rename):</span> Allows you to rename the template file.</li>
+            </ul>
+        </div>
+        <h3>Save as Template dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Dialog--SaveAsTemplate.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Template Folder:&#160;</span>Select the template folder to which you want to save a copy of the selected template file. Verify all designated template folders appear in this list.</li>
+            <li><span class="bold">Template Description:&#160;</span>If adding a file that supports template descriptions (any supported file besides Topics, Snippets, Masterpages, images and multimedia), this field will let you add a description for the template file. If adding a Topic, Snippet, Masterpage, image or multimedia files, this section will be disabled.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Button--ManageTemplates.png" style="mc-tag-and-class: ;" />:&#160;</span>In this context, when the <span class="UI">Save as Template</span> dialog is invoked from the <span class="UI">Template Manager</span>, this button should be disabled.</li>
+            <li><span class="bold">Template Name:&#160;</span>Allows you to rename the file that is being copied to your template folder. By default, this field should display the original name of the file you selected, but you may change the name that will used for the template file here.</li>
+            <li><span class="bold">OK:&#160;</span>Dismisses the dialog and copies the selected file to the selected template folder using the file name and description set in the <span class="UI">Save as Template</span> dialog.</li>
+            <li><span class="bold">Cancel: </span>Dismisses the dialog and does not copy the template file.</li>
+        </ul>
+        <h3>Edit Template Description dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Templates/Dialog--EditTemplateDescription.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">[description field]:&#160;</span>Allows user to enter a text description for the selected template file.</li>
+            <li><span class="bold">OK:&#160;</span>Dismisses the dialog and applies changes to the template file.</li>
+            <li><span class="bold">Cancel: </span>Dismisses the dialog and does not apply changes to the template file.</li>
+        </ul>
+        <h3>Editing Template Files</h3>
+        <p>Template files can be opened for editing inside of Flare but ONLY&#160;if there is a project currently open.</p>
+        <p>To open a template for editing:</p>
+        <ul class="checkbox">
+            <li>Open the <span class="UI">Template Manager</span> and double-click a template file (or right-click and select <span class="MenuItem">Open</span>):<ul style="list-style-type: circle;"><li><span class="bold">Template Projects:&#160;</span>Will open in another instance of Flare</li><li><span class="bold">Template files: </span>Will close all dialogs and open the template in the MDI in the correct editor. There will be a shaded 'info' bar at the top of the file containing a blurb indicating the file is a template file and not a file in the current project.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Link Viewer will not function when editing template files and should have a meaningful message in the UI.</li>
+            </ul>
+        </div>
+    </body>
+</html>

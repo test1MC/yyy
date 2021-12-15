@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title></title>
+    </head>
+    <body>
+        <h2>Palettes Pane - UI</h2>
+        <p class="bold">Opening the Palette Pane:</p>
+        <ol>
+            <li style="font-weight: normal;"><span class="bold">!View |&#160;Palettes</span> or</li>
+            <li> Click the Palette button located on the standard toolbar <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Icon.jpg" /></li>
+        </ol>
+        <h3>UI Test Cases:</h3>
+        <p>Default&#160;location of the palette pane is on the left edge of the application.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Pane.jpg" class="right" />
+        </p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        <h4>Local Toolbar</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Pane Name.png" />Palette: </span> Displays the name of the currently shown Palette.&#160;Clicking the down arrow will display a list of all local Palette files (.capal files). Selecting a Palette from this list will display that Palette in the Palette Pane.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Pane New.png" /><span class="bold">Create New&#160;Palette: </span>Will bring up the <span class="bold">New&#160;Palette</span> dialog.<p><img src="../../../../../Resources/Images/TestPlans/Mimic/New Palette Dialog.png" class="right" /></p><ul style="list-style-type: square;"><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" /></ul><ul style="list-style-type: square;"><ul style="list-style-type: square;"><li>Entering a name into the Field and pressing <span class="bold">OK</span>will create a new Palette</li><li>The new Palette will have focus in the main Palette Pane</li><li>Entering a duplicate Palette name or a blank name will result in an error</li></ul></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Pane Delete.png" /><span class="bold">Delete Palette:</span> Will delete the currently displayed palette. This will invoke a simple Yes/No confirmation dialog, which lists the name of the palette you wish to delete.</li>
+        </ul>
+        <h4>Misc.</h4>
+        <p><span class="bold">Right-Clicking </span>on an object from within the Palette pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Right Click.png" class="right" />
+        </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Cut</span>: Cuts the object</li>
+            <li><span class="bold">Copy</span>:&#160;Copies the object</li>
+            <li><span class="bold">Paste</span>: If an object exists on the clipboard, this will be active and will paste the object into the Palette. Otherwise the option is disabled.</li>
+            <li><span class="bold">Delete</span>:&#160;Will delete the object from the Palette</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><span class="bold">Right-Clicking</span> on an object in the main editor: </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Palette Right Click Editor.png" class="right" />
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Selecting <span class="bold">Add To Palette</span> will add the currently selected object to the currently active Palette</li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Dragging </span>an object from the Palette to the main editor will place a copy of the object on the frame</p>
+        <p><span class="bold">Double-Clicking</span> an object on the Palette will place a copy of the object on the frame</p>
+        <p>&#160;</p>
+    </body>
+</html>

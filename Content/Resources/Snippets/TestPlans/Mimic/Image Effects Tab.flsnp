@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Enable Blur Effect: </span> Toggles on / off the blur effect<ul><li>The blur will effect the area outside the object.</li></ul></li>
+            <li>
+                <span class="bold">Enable Blur-Inside Effect: </span> Toggles on / off the blur inside effect<ul><li>The&#160;blur will effect the area inside the object</li></ul></li>
+            <li>
+                <span class="bold">Blur Factor: </span> This value controls the intensity of the blur-inside effect</li>
+            <li>
+                <span class="bold">Enable Shade Effect: </span> Toggles on / off the shade effect<ul><li>The shade will effect the area outside the object</li><li>The shade color will be based off the frames background color</li></ul></li>
+            <li>
+                <span class="bold">Enable Gray Scale Effect: </span> Toggles on / off the gray scale effect<ul><li>The gray scale will effect the area outside the object</li></ul></li>
+        </ul>
+    </body>
+</html>

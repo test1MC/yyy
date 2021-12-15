@@ -1,0 +1,1467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="2152" MadCap:lastWidth="1335" MadCap:fileTags="Status.Feedback V3,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+        <link href="../../../../Resources/TableStyles/FeedbackMatrix.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Feedback Server Install Matrix</h1>
+        <p>Use this matrix to make sure you test all configurations of a Feedback Server installation. SQL&#160;can be installed using all default settings or it can be installed using a Named Instance or Specified Authentication ("custom"&#160;install). </p>
+        <p>&#160;</p>
+        <p>Print this matrix and mark off the box for each configuration that is tested.</p>
+        <p>Indicate testing was completed using a default SQL&#160;install with a single *</p>
+        <p>Indicate testing was completed with a custom SQL&#160;install with two **</p>
+        <p><span class="bold">RECOMMENDED:&#160;</span>For each install configuration that is tested, generate at least one output from Flare using that Feedback Server. Use the <a href="Testing Matrix.htm">Feedback Testing Matrix</a> to test that all data is properly tracked with that server/database configuration. This will provide you with a head start in completing that matrix and save you time setting up unique configurations later.</p>
+        <p>&#160;</p>
+        <p style="font-size: 12pt;"><span class="bold">Test Case 1: </span>IIS and SQL Database on same machine; clean install</p>
+        <table style="width: 100%;mc-table-style: url('../../../../Resources/TableStyles/FeedbackMatrix.css');" class="TableStyle_FeedbackMatrix" cellspacing="0">
+            <col style="width: 30px;" />
+            <col style="width: 170px;" />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_0_RowSep_ColSep">&#160;</th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep" colspan="6">
+                        <p>SQL Version</p>
+                    </th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep_ColEnd">&#160;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_0_RowSep_ColSep" rowspan="14">
+                        <img src="images/iismachine.png" />
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2005 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2005 Standard</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2008 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2008 Standard</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL&#160;2012 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>SQL 2012 Standard</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2 x64</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd_ColEnd">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Tested Default</p>
+        <p>** Tested Custom</p>
+        <p>&#160;</p>
+        <p style="font-size: 12pt;"><span class="bold">Test Case 2: </span>Importing earlier version SQL Database; IIS and SQL on same machine. In this use case, install the latest version of Feedback Server Admin over a previous installation of Feedback Server Admin using a local SQL&#160;database. Import the earlier version SQL&#160;Database to the new version.</p>
+        <table style="width: 100%;mc-table-style: url('../../../../Resources/TableStyles/FeedbackMatrix.css');" class="TableStyle_FeedbackMatrix" cellspacing="0">
+            <col style="width: 30px;" />
+            <col style="width: 170px;" />
+            <col />
+            <col />
+            <col style="width: 179px;" />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_0_RowSep_ColSep">&#160;</th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep" colspan="6">
+                        <p>SQL Version</p>
+                    </th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep_ColEnd">&#160;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_0_RowSep_ColSep" rowspan="14">
+                        <img src="images/iismachine.png" />
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2005 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2005 Standard</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2008 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2008 Standard</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>SQL 2012 Express</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>SQL 2012 Standard</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2 x64</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd_ColEnd">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Tested Default</p>
+        <p>** Tested Custom</p>
+        <p>&#160;</p>
+        <p style="font-size: 12pt;"><span class="bold">Test Case 3:&#160;</span>Remote SQL; clean install. In this test case, install Feedback Server Admin on one machine (the "IIS&#160;Machine")&#160;and install the SQL&#160;Database on a remote machine. Indicate in the grid which version of SQL&#160;you used to complete testing and again mark with a single asterisk for a default SQL&#160;installation or two asterisks for a custom installation.</p>
+        <table style="width: 100%;caption-side: top;mc-table-style: url('../../../../Resources/TableStyles/FeedbackMatrix.css');" class="TableStyle_FeedbackMatrix" cellspacing="0">
+            <col style="width: 30px;" />
+            <col style="width: 170px;" />
+            <col />
+            <col />
+            <col />
+            <col style="width: 89px;" />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_0_RowSep_ColSep">&#160;</th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep" colspan="13">
+                        <p>SQL&#160;Machine</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_0_RowSep_ColSep" rowspan="13">
+                        <img src="images/iismachine.png" />
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server R2</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server R2 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>7 x64</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">Win 2008 Server R2 x64</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">&#160;</td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>Win 7 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Tested Default</p>
+        <p>** Tested Custom</p>
+        <p>&#160;</p>
+        <p style="font-size: 12pt;"><span class="bold">Test Case 4:&#160;</span>Remote SQL&#160;with database import. In this test case, install the latest version of Feedback Server Admin over a previous installation of Feedback Server Admin using a remote SQL&#160;database. Import the earlier version SQL&#160;Database to the new version. Indicate in the grid which version of SQL&#160;you used to complete testing and again mark with a single asterisk for a default SQL&#160;installation or two asterisks for a custom installation.</p>
+        <table style="width: 100%;caption-side: top;mc-table-style: url('../../../../Resources/TableStyles/FeedbackMatrix.css');" class="TableStyle_FeedbackMatrix" cellspacing="0">
+            <col style="width: 30px;" />
+            <col style="width: 170px;" />
+            <col />
+            <col />
+            <col />
+            <col style="width: 89px;" />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_0_RowSep_ColSep">&#160;</th>
+                    <th class="TableStyle_FeedbackMatrix_Head_0_1_RowSep" colspan="13">
+                        <p>SQL&#160;Machine</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_0_RowSep_ColSep" rowspan="12">
+                        <img src="images/iismachine.png" />
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server R2</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>2008 Server R2 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>7 x64</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2003 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 2008 Server x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>XP x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Vista x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>Win 7 x64</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowSep_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">&#160;</td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="TableStyle_FeedbackMatrix_Body_0_1_RowEnd_ColEnd">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Tested Default</p>
+        <p>** Tested Custom</p>
+        <p>&#160;</p>
+        <p style="font-size: 12pt;"><span class="bold">Follow Up Testing for Test Cases 2 and 4:&#160;</span>Active Help Systems. Test that a published Help system that is using a "previous version"&#160;Feedback Server continues to run smoothly following an upgrade to the new version.</p>
+        <p style="font-size: 12pt;">&#160;</p>
+        <p><b>Manifest:</b> This needs to done anytime the server is installed.</p>
+        <p>The following additional steps need to be performed after the server is installed to make sure Manifest reports are sent out.</p>
+        <ol>
+            <li>Click on the start menu and search for ‘services’ or go to control panel | Administrative tools | Services</li>
+            <li>Find the MadCap Service that will be running after you install Feedback Server</li>
+            <li>Right-click on the service<ol style="list-style-type: lower-alpha;"><li>Go to properties</li><li>Log in tab</li><li>Make sure the log in information matches the log in information for the user / machine that Feedback Server is installed on.</li></ol></li>
+            <li>Restart MadCap Service.</li>
+        </ol>
+    </body>
+</html>

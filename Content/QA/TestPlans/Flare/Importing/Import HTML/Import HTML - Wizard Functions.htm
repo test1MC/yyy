@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1783" MadCap:lastWidth="1355">
+    <head>
+    </head>
+    <body>
+        <h1>Import HTML - Wizard Functionality</h1>
+        <p class="note">Note: If the HTML file(s) already exists within the Flare project and the user right-clicks on the file(s) and selects “Convert to XML”, the same “Convert Files to XML Wizard” which existed previously should come up and going through this conversion process should not create an import file.  When converting files in this manner, the option that existed previously to create a backup of the original file should be maintained.  The rest of this document relates to scenarios where HTML files are brought in from an external source and an import file is created</p>
+        <h2>Initial Import</h2>
+        <p>Different ways the import occurs where a NEW project is created from import - Creates an import file in Project/Imports</p>
+        <ol>
+            <li>File | New Project | HTML File Set – Starts the “Import HTML Files Wizard”</li>
+            <li>File | New Project - Starts the “Start New Project Wizard”<ol style="list-style-type: lower-alpha;"><li>Name the project and click ‘Next’</li><li>Select “New from import” and click ‘Next’</li><li>Select “Create a project from HTML files” and click ‘Next’</li></ol></li>
+            <li>Project | Import | HTML Files | Import into a new project – Starts the “Import HTML Files Wizard”</li>
+        </ol>
+        <p>Different ways to import HTML files into an existing project – Creates an import file in Project/Imports</p>
+        <ol>
+            <li>Project | Import | HTML Files | Import into this project – Starts the “Import HTML Files Wizard”</li>
+            <li>Project | New | Import File | HTML Import File – creates an HTML Import file. The options are then selected directly from the import file and user does not see the import wizard</li>
+            <li>File | New | File Type: HTML Import File – creates an HTML Import file. The options are then selected directly from the import file and user does not see the import wizard</li>
+        </ol>
+        <h2>HTML File conversion options</h2>
+        <ol>
+            <li>User selects files with extension .htm, .html, or .xhtml or a folder with these file extensions to import</li>
+            <li>If the user selects a folder to import, we always maintain the structure of files/sub-folders  so that the integrity of the links between files will be maintained..</li>
+            <li>If the user selects files or folders to import, there is an option available for user to select “Import linked HTML files”. If this option is selected, linked files which exists within the selected folder (including nested folders) or outside of folder are imported. (Currently we do have issues with absolute links)</li>
+            <li>User selects whether or not to “import resources”.</li>
+            <li>Other options available to user<ol style="list-style-type: lower-alpha;"><li>Folder for the imported HTM files (not available for initial import into a new project – since project is not yet created)</li><li>Folder for the imported resource files (not available for initial import into a new project – since project is not yet created)</li><li>Whether to keep existing structure of resource files or import resources to Project Resources folder</li><li>Option to “Link Generated Files to Source Files”</li><li>Option to “Auto-reimport before ‘Generate Output'"</li></ol></li>
+            <li>After the options are selected and the importer proceeds with the conversion, a “Save Log” option is available if there are any errors with the import. Clicking this will generate a new report file which is the log file saved to the Project/Reports folder. It should not replace any existing file in the Reports folder, just add a new file into the Reports folder</li>
+        </ol>
+        <h2>Things to check after import is completed</h2>
+        <ol>
+            <li>Source Files tab<ul><li>List of all HTML files that were selected for import along with their source path</li><li>List of Folders that were selected for import along with its path. The files within the mapped folder(s) are only listed in the Imported Files section.</li><li>“Link Generated Files to Source Files option” should match what the user selected during conversion wizard</li></ul></li>
+            <li>Options tab<ul><li>All options selected should match what the user selected during conversion wizard</li></ul></li>
+            <li>Imported Files tab<ul><li>List of all files that were imported including linked files and resources along with their correct path in the local project</li></ul></li>
+            <li>Source Files are not modified and should remain as they were before the import</li>
+            <li>Imported files are located at the specified location(s) within the Flare project</li>
+            <li>Imported HTML/HTM files are now valid XHTML</li>
+            <li>List of HTM/HTML files created/converted during the import should be placed into the TOC generated during import. The list should be the same order as the htm files listed in the “Source Files” tab. The name of the TOC file should match the name of the import file that was created.</li>
+            <li>Links which were not broken in the source files should not be broken due to the import into Flare</li>
+            <li>If “Link Generated Files to Source Files option” was selected during import, open the imported HTM files and make sure there is a link icon on the tab<ul><li>Make a change to the file and make sure prompt shows up allowing user to break the link.</li><li>Link icon should go away if user selects to break the link (close and re-open the file to check)</li></ul></li>
+            <li>If “Link Generated Files to Source Files option” was not selected during import, open the imported HTM files and make sure there is no link icon on the tab.</li>
+            <li>If “Auto-reimport before ‘Generate Output” is selected, build the output with each of the reimport scenarios and make sure the re-import is done as selected.</li>
+            <li>If "Save&#160;Log" was clicked on during the conversion, then a report file should have been added to the Project/Reports folder which shows the errors from the import.</li>
+        </ol>
+        <p class="note">Stylesheet Notes regarding HTML Files Import<br /></p>
+        <ul>
+            <li>When importing HTML files into an existing project, the import and reimport of HTML files should have no effect on the Master Stylesheet whether linked resources (stylesheets) are included or not.</li>
+            <li>When importing HTML files into a new project, with no linked stylesheets, the new project should be created with Modern.css and Styles.css and the Styles.css should be set as the Master Stylesheet.</li>
+            <li>When importing HTML files into a new project with linked stylesheets, the new project should be created  without creating Modern.css and Style.css and the Master Stylesheet should be “(default)”.</li>
+            <li>Re-importing in any circumstance should never effect the Master Stylesheet.</li>
+        </ul>
+        <h2>Re-import scenarios </h2>
+        <ol style="list-style-type: upper-alpha;">
+            <li>User did not make any changes to imported files or import options<ol><li>User is presented with the “Accept Imported Documents” dialog which lists the files which will be imported and their paths</li><li>If user “Accepts”, replace imported files (all htm and resource files) with the new ones. The old/stale files which were not replaced should be removed.</li><li>If user “Cancels”, he/she is returned to the import editor file</li></ol></li>
+            <li>User did not make any changes to imported files but selects different folders to re-import content<ol><li>User is presented with the “Accept Imported Documents” dialog which lists the files which will be imported and their new paths</li><li>If user “Accepts”, replace imported files (all htm and resource files) with the new ones. The old/stale files which were not replaced should be removed.</li><li>If user “Cancels”, he/she is returned to the import editor file</li></ol></li>
+            <li>User made changes to some of the imported files but does not make any changes in the import options<ol><li>User is presented with the ‘Confirm Overwrite Documents’ dialog</li><li>If user selects to overwrite the documents, perform the steps from scenario A</li><li>If user selects to not overwrite the documents, perform the steps from scenario A but leave the modified document alone – do not delete it. The re-import should create a new appended name instead of replacing the modified file. For example, if a.htm was modified, the re-import should create an a1.htm.</li></ol></li>
+            <li>User made changes to some of the imported files and also makes changes in the import options<ol><li>User is presented with the ‘Confirm Overwrite Documents’ dialog</li><li>If user selects to overwrite the documents, perform the steps from scenario B</li><li>If user selects to not overwrite the documents, perform the steps from scenario B but leave the modified document alone – do not delete it from the original imported location. The re-import should import the selected documents into the new location.</li></ol></li>
+            <li>If a source folder is selected for the import, and there are now new or deleted files from the original folder, then a re-import will do the following<ol><li>Delete stale files within Flare that are no longer in the source folder</li><li>Import any new files found in the source folder</li><li>Source files tab in the Import Editor will be updated to show the new list of files</li></ol></li>
+        </ol>
+        <h2>Auto-reimport scenarios – The re-import happens automatically when the user builds via the UI or command line/madbuild</h2>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Source files have not changed<ol><li>No re-import is needed</li></ol></li>
+            <li>Source files have changed<ol><li>An auto-reimport is done before the rest of the build proceeds. </li><li>If user has modified any of the files in the project since the last import, they will be automatically overwritten/replaced with the files from the new import</li><li>Import file is updated with the new import information so that user can open it after the build and see the changes.</li></ol></li>
+        </ol>
+        <h2>How to handle some possible scenarios</h2>
+        <ol>
+            <li>User selects to auto-include linked files and import resources but some of the links are broken links (Flare is not able to find the linked files)<ul><li>Flare proceeds with the import of all the files it can import and provides a list of errors regarding the linked files it could not import</li></ul></li>
+            <li>The local Flare project already contains a file with the same name as the file that is being imported<ul><li>The new files are brought in with an incremented name such as Topic1.htm, figure1.png, etc.</li><li>Existing links to those files will also be auto-resolved so that the links are not broken</li></ul></li>
+        </ol>
+    </body>
+</html>

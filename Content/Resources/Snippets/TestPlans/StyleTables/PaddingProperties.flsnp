@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="294" MadCap:lastWidth="900">
+    <head>
+        <link href="../../../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="width: 100%;mc-table-style: url('../../../TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XMLEditor" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelpMobile" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.DotNetHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.HTMLHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Word" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Frame" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.PDF" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XPS" class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Padding</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">XPS</p>
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--Padding.Padding">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">padding: The padding around all four edges of an element.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--Padding.Padding">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">padding-bottom: The padding on the bottom edge of an element.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--Padding.Padding">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">padding-left: The padding on the left edge of an element.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--Padding.Padding">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">padding-right: The padding on the right edge of an element.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--Padding.Padding">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">padding-top: The padding on the top edge of an element.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

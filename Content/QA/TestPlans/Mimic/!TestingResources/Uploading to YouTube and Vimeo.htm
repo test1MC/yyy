@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="859" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <h1>Uploading to YouTube and Vimeo</h1>
+        <p>Starting with Mimic v8, there is a new feature in Mimic which allows a user to upload/publish their movies onto their Youtube/Vimeo account. It’s a pane called “Video Services” (!Tools | Video Services).</p>
+        <p>&#160;</p>
+        <h2>Process</h2>
+        <ol>
+            <li>Login – the login process uses OAuth (open authentication) protocol. Users should go through the instructions to authorize their accounts for access. <ol style="list-style-type: lower-alpha;"><li>Test Accounts for QA&#160;to use that has already been set up with allowing Mimic to integrate with their API's<ol style="list-style-type: lower-roman;"><li>&#160;For YouTube:<ol style="list-style-type: lower-roman;"><li>Username - madcapqa@gmail.com</li><li>Password - R3m3mb3r!</li></ol></li><li>For Vimeo:<ol style="list-style-type: lower-roman;"><li>Username - test1@madcapsoftware.com</li><li>Password - R3m3mb3r!</li></ol></li></ol></li><li><i>Instructions for setting up new accounts - t/c</i></li><li>After logging in once, we store the refresh tokens that allow for auto login later on. The login dialog also has a “Manual Access Token Entry” which allow for users to manually enter in their Access Token/Token Secret. (This is applicable for Vimeo uploading)</li></ol></li>
+            <li>Basic API Calls<ol style="list-style-type: lower-alpha;"><li>Retrieve username – the user name should be displayed on the pane once the user has authenticated</li><li>Retrieve uploaded videos – the video pane should display a list of previously uploaded videos (title, thumbnail, uploaded date)<ol style="list-style-type: lower-roman;"><li>This can be called manually with the “Refresh” button at the bottom of the pane</li></ol></li></ol></li>
+            <li>Uploading<ol style="list-style-type: lower-alpha;"><li>The metadata dialog should display giving users parameters and data to attach to their video</li><li>The video pane should display the video and automatically update the progress until the video is finished uploading<ol style="list-style-type: lower-roman;"><li>If it does not display right away, try hitting “Refresh”</li></ol></li><li>Once the video is finished, the video should be “viewable”, the context menu opens an option to view the video. (The actual video may still be processing on the Youtube/Vimeo servers)</li><li>Uploads should be resumable. To test this, disconnect the machine from the network in the middle of a download. Wait until the progress displays, failed. Then reconnect. Then right click the failed download and hit “Retry/Resume Upload”. If the progress is gets stuck for a while, try using this option as well.</li><li>Check to see that the metadata got properly applied in YouTube/Vimeo</li></ol></li>
+            <li>Drag/Drop – drag and dropping videos into the Videos window should automatically pull up the metadata dialog with the filepath pre-filled to allow for quick upload queuing</li>
+            <li>Integration with “Publish To Html5’”. The Publish to Html5 dialog should have Youtube and Vimeo as destinations now. Selecting those will change the options on the bottom to Metadata. Hitting “Start publish” will automatically open up the Video service pane, login, and queue up the Mimic html5 movie (single file format).</li>
+        </ol>
+        <h2>Testing Tips</h2>
+        <h3>YouTube</h3>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Vimeo</h3>
+        <p>&#160;</p>
+    </body>
+</html>

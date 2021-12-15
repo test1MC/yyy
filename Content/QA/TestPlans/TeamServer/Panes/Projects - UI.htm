@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4186" MadCap:lastWidth="930" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.TeamServer,Status.Not Applicable">
+    <head>
+    </head>
+    <body>
+        <h2>Projects - UI</h2>
+        <p class="bold">Opening the Projects pane:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the button in the Standard Toolbar</li>
+            <li>!View |&#160;Projects</li>
+            <li>&lt;Alt&gt;&lt;Shift&gt;+P</li>
+        </ul>
+        <h3>Projects pane:</h3>
+        <p class="bold">Default view:</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/ProjectsPane--DefaultView.png" class="left" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" style="margin-left: 180pt;" />
+        <p>&#160;</p>
+        <p class="bold">MDI&#160;view:</p>
+        <p class="bold">
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/ProjectsPane--MDI.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses)</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Hide/show the info bar):&#160;</span>Lets you hide or show the Info Bar blurb</li>
+            <li><span class="bold">(Refresh): </span>Refreshes the Project list to display the latest data</li>
+            <li><span class="bold">Add Project... (Add a project to the Team Server): </span>Opens the <span class="UI">Add Project From Source Control Wizard</span> which lets you browse for a project to copy to the Team Server.</li>
+            <li><span class="bold">Start Download... (Start downloading selected projects): </span>Lets you manually start a download of any selected Flare and/or Blaze project(s).</li>
+            <li><span class="bold">(Delete):&#160;</span>Deletes the selected Project(s) from the Team Server</li>
+        </ul>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project: </span>Displays each Flare and Blaze project that has been copied to the Team Server.</li>
+            <li><span class="bold">Source: </span>Displays the path of the Flare or Blaze project from which Team Server will download the Project.</li>
+            <li><span class="bold">Download Frequency: </span>Displays the download frequency (Daily, Monday, etc.)&#160;for the Project.</li>
+            <li><span class="bold">Download Time: </span>Displays the download time for the Project.</li>
+            <li><span class="bold">Last Download: </span>Displays the time that Team Server last downloaded the Project.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h3>Adding Projects to Team Server:</h3>
+        <p class="bold">Adding a Project:</p>
+        <ul style="list-style-type: square;">
+            <li>Click the "Add Project..." button in the Projects pane</li>
+            <li>!File |&#160;Add Project...</li>
+            <li>&lt;CTRL&gt;&lt;Shift&gt;+A</li>
+        </ul>
+        <h5>Add Project From Source Control Wizard (Select Source Control Provider...):</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Project--AddProjectWizard1.png" class="right" style="max-width: 350pt;" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(radio buttons):&#160;</span>Let you select the source location of the project you want to copy to the Team Server.</li>
+            <li><span class="bold">Browse/Advanced:&#160;</span>Lets you browse for the project on the selected Source Control provider.</li>
+            <li><span class="bold">&lt; Back: </span>Returns to the previous dialog in the wizard. (Should be grayed out in this dialog.)</li>
+            <li><span class="bold">Next &gt; : </span>Proceeds to the next dialog in the wizard. </li>
+            <li><span class="bold">Finish:&#160;</span>Closes the Wizard. (Should be grayed out in this dialog.)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the Wizard and does not add the project.</li>
+        </ul>
+        <h5>Add Project From Source Control Wizard (Additional Project Settings...):</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Project--AddProjectWizard2.png" class="right" style="max-width: 350pt;" />
+        </p>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project Name:&#160;</span>Lets you set the name of the Project. By default, Team Server should use the project file name minus the file extension.</li>
+            <li><span class="bold">(Download Frequency) Frequency:&#160;</span>Lets you set the frequency of the auto-download functionality.</li>
+            <li><span class="bold">(Download Frequency)&#160;Time of Day: </span>Lets you set the time that the auto-download should occur.</li>
+            <li><span class="bold">&lt; Back: </span>Returns to the previous dialog in the wizard.</li>
+            <li><span class="bold">Next &gt; : </span>Proceeds to the next dialog in the wizard. (Should be grayed out in this dialog.)</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the Wizard, adds the project to the Team Server and prompts if you would like to download the project now.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the Wizard and does not add the project.</li>
+        </ul>
+        <h3>Project viewer:</h3>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses)</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Download Now... (Download the project):</span> Lets you manually start a download of any selected Project(s).</li>
+        </ul>
+        <h5>Basic tab:</h5>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Project--BasicTab.png" />
+        </p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Source Project:&#160;</span>Displays the name and path of the Project.</li>
+            <li><span class="bold">Name:&#160;</span>Displays the name of the Project.</li>
+            <li><span class="bold">(Download Frequency) Frequency:&#160;</span>Lets you set the frequency of the auto-download functionality.</li>
+            <li><span class="bold">(Download Frequency)&#160;Time of Day: </span>Lets you set the time that the auto-download should occur.</li>
+        </ul>
+        <h5>Publishing tab:</h5>
+        <p>This tab displays all of the Destination files that exist in the selected Flare or Blaze project. The purpose for this UI&#160;is to allow the Team Server user to set authentication username and password information for each destination so that Team Server will be able to publish output to these Destinations.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/TeamServer/Project--PublishingTab.png" />
+        </p>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Type:&#160;</span>Displays the type of Destination (file or FTP).</li>
+            <li><span class="bold">Name:&#160;</span>Displays the name of the Destination file.</li>
+            <li><span class="bold">Path: </span>Displays the Destination directory.</li>
+            <li><span class="bold">Username: </span>Lets you set the authentication username for the Destination.</li>
+            <li><span class="bold">Password: </span>Lets you set the authentication password for the Destination.</li>
+        </ul>
+        <p class="bold">Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Save:&#160;</span>Lets the user save any changes made to the Username and Password columns</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+    </body>
+</html>

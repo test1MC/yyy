@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="156" MadCap:lastWidth="1049">
+    <body>
+        <ul style="list-style-type: square;">
+            <li> Dialog Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>  Keyboard can navigate and change settings</li>
+            <li> Dialog is easy to use and understand</li>
+            <li>&lt;Esc&gt;, (X) &amp; &lt;ALT&gt;&lt;F4&gt; closes the dialog without change</li>
+            <li>Dialog opens correctly on a dual monitor system</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="206" MadCap:lastWidth="1293">
+    <body>
+        <p class="bold">Grid View Test Cases:&#160;</p>
+        <ul class="checkbox">
+            <li>All columns are sortable (A-Z and Z-A) (if applicable).</li>
+            <li>Columns are resizable and this setting will be retained when closed and reopened (if applicable).</li>
+            <li>Double-clicking the right border of any column heading resizes the column to fit its longest entry (if applicable).</li>
+            <li>Columns can be dragged to a new location (reordered left-to-right) and this setting will be retained when closed and reopened (if applicable).</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files using <span class="KeyboardShortcut">Shift</span>-Click or <span class="KeyboardShortcut">CTRL</span>-Click (if applicable)</li>
+            <li>Should be able to view/apply properties to a multi-selection (if applicable)</li>
+            <li>Clicking the box in the upper-left corner selects all rows (if applicable)</li>
+            <li>Double-clicking any row will open the item or the <span class="UI">Properties</span> dialog for that item (whichever is applicable)</li>
+            <li>Selecting any row and pressing <span class="KeyboardShortcut">F4</span> will open the <span class="UI">Properties </span>dialog for that item (if applicable)</li>
+            <li>If the contents of any cell is too long to fit within the cell, the contents is appended with "…" and hovering over the cell produces a tooltip that includes the full contents</li>
+        </ul>
+    </body>
+</html>

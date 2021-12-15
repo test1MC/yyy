@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7100" MadCap:lastWidth="1123" MadCap:conditionTagExpression="include[FlareFileTypes.HeaderFile] exclude[Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Project Organizer - UI</h2>
+        <h3>Opening the Project Organizer</h3>
+        <p>The <span class="UI">Project Organizer</span> should be open and docked along the left side using Flare's default layout. If the <span class="UI">Project Organizer</span> is closed or not currently in focus, it can be reopened or given focus by:</p>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">Keyboard:&#160;Press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">[</span></li>
+            <li style="font-weight: normal;">Tool Strip interface: <span class="MenuItem">!View |&#160;Project Organizer</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!View |&#160;Project Organizer</span></li>
+        </ul>
+        <h3>Project Organizer - UI&#160;Test Cases</h3>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p class="bold">Default view docked in left pane (all files added and all folders expanded):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--AllFiles.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p>&#160;</p>
+            <p class="bold">Split Show Folders/Show Files view:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--SplitView.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p>&#160;</p>
+            <p class="bold">Show Files view:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--ShowFilesView.png" class="properties" style="mc-float: none;width: 143px;height: 97px;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <div class="clearleft">
+            <h4>Local Toolbar</h4>
+        </div>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" /> (Show/Hide Folders):&#160;</span>Toggles between showing or hiding the folders in the Project Organizer.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" /> (Show/Hide Files):&#160;</span>Splits the Project Organizer into two halves. The right half shows additional details for the files. When you click a file on the right side, a red circle shows the location in the Project Organizer. See a movie about this feature.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Expand All.png" /> (Expand All):&#160;</span>Expands all of the folders so that you can see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" /> (Collapse All):&#160;</span>Collapses all of the folders so that you can no longer see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowConditionalTags.png" /> (Hide/show Conditional Indicators):&#160;</span>Lets you toggle between showing and hiding conditional indicators in the Project Organizer.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" /> (Up):&#160;</span>Moves up one folder in the hierarchy in the Project Organizer. This button becomes enabled if you use the Split View button and select a file or folder on the right side of the split view.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewFolder.png" style="mc-tag-and-class: ;" /> (New Folder):&#160;</span>Creates a new folder inside the selected folder. If a file is selected, the folder is created in the same location as the file.</li>
+        </ul>
+        <p class="bold">Show Files grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Shows the name of the  file.</li>
+            <li><span class="bold">Size:&#160;</span>Shows the size of the file.</li>
+            <li><span class="bold">Date Modified:&#160;</span>Shows the date and time the file was last modified.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Right-Click Menus</h4>
+        <p class="bold">Right-clicking a file (except an *.mclog file) in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectOrganizer--RightClickMenu.flsnp" />
+        <hr />
+        <p class="bold">Right-clicking an *.mclog file in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--LogFile.png" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open:</span> Opens the selected Project file in the MDI</li>
+                <li><span class="bold">Open with:</span> Gives options to open the Project file in the Internal Text Editor, Internal Browser or another application</li>
+                <li><span class="bold">Delete:</span> Removes the selected Project file from the project</li>
+                <li><span class="bold">Rename:</span> Allows you to rename the Project file<ul><p class="note">Note:&#160;Bug 8840:Log file is saved with the time displayed as H.MM so an attempt to rename the log file only highlights the file name up to the period.</p></ul></li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Project folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ProjectFolder.png" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Add:&#160;</span>Invokes the Add sub-menu which presents menu options to add Content and Project files.</li>
+                <li><span class="bold">Clean Project:&#160;</span>Sends all files in the project's Output folder to the Recycle Bin.</li>
+                <li><span class="bold">Open Output Folder:&#160;</span>Opens the project's Output folder in a Windows browser.</li>
+                <li><span class="bold">Project Properties…:&#160;</span>Opens the <span class="UI">Project Properties</span> dialog.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Advanced folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--AdvancedFolder.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Browse Sequence… (Create a new Browse Sequence File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Browse Sequence preselected in the File Type field.</li>
+                <li><span class="bold">Add Search Filter Set… (Create a new Search Filter Set File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Search Filter Set preselected in the File Type field.</li>
+                <li><span class="bold">Add Synonym File… (Create a new Synonym File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Synonyms File preselected in the File Type field.</li>
+                <li><span class="bold">Add Index Link Set… (Create a new Index Link Set):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Index Link Set preselected in the File Type field.</li>
+                <li><span class="bold">Add Auto-index Phrase Set… (Create a new Auto-index Phrase Set):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with  Auto-index Phrase Set preselected in the File Type field.</li>
+                <li><span class="bold">Add Alias File… (Create a new Alias File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Alias File preselected in the File Type field.</li>
+                <li><span class="bold">Add Header File… (Create a new Header File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Header File preselected in the File Type field.</li>
+                <li><span class="bold">Export Header File(s)... (Export Header Files):&#160;</span>Launches the <span class="UI">Export Header File</span> dialog.</li>
+                <li><span class="bold">Add Relationship Table… (Create a new Relationship Table File):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Relationship Table preselected in the File Type field.</li>
+                <li><b>Add File Tag Set... (Create a new File Tag Set file): </b>Launches the <span class="UI">Add  File</span> dialog with File Tag Set preselected in the File Type field.</li>
+                <li><span class="bold">Add Auto Suggestion List File... (Create a new Auto Suggestion List file):</span>&#160;Launches the <span class="UI">Add  File</span> dialog with Auto Suggestion List File preselected in the File Type field.</li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Conditional Text folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ConditionalTextFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Condition Tag Set… (Create a new Condition Tag Set):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Condition Tag Set preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Destinations folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--DestinationsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Destination… (Create a new Destination file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Destination preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Exports folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ExportsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Export Project File… (Create a new Export Project file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Export Project File preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Glossaries folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--GlossariesFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Glossary… (Create a new Glossary file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Glossary preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Imports folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ImportsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add MS Word Import File… (Create a new MS Word Import file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with MS Word Import File preselected in the File Type field.</li>
+                <li><span class="bold">Add FrameMaker Import File… (Create a new FrameMaker Import file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with FrameMaker Import preselected in the File Type field.</li>
+                <li><span class="bold">Add DITA Import File… (Create a new DITA Import file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with DITA Import File preselected in the File Type field.</li>
+                <li><span class="bold">Add Flare Project Import File… (Create a new Flare Project Import file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Flare Project Import File preselected in the File Type field.</li>
+                <li><span class="bold">Add HTML Import File… (Create a new Flare Project Import file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with HTML Import File preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Reports folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--ReportsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Report File… (Create a new Report file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Report preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Skins folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--SkinsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Skin… (Create a new Skin file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Skin preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Targets folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--TargetsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Target… (Create a new Target file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Target preselected in the File Type field.</li>
+                <li><b>Add Batch Target (Create a new Batch Target file): </b>Launches the <span class="UI">Add  File</span> dialog with Batch Target preselected in the File Type field.</li>
+                <li><span class="bold">Clean Project (Delete all generated output files):&#160;</span>Sends all files in the project's Output folder to the Recycle Bin.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the TOCs folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--TOCsFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Table of Contents… (Create a new Table of Contents file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with TOC preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking the Variables folder in the <span class="UI">Project Organizer</span> should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Project Organizer/ProjectOrganizer--RightClickMenu--VariablesFolder.png" class="left">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p class="bold">Menu Items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:&#160;</span>Invokes the Source Control sub-menu (covered in the Source Control test plan).</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Project files from the clipboard into the selected folder.</li>
+                <li><span class="bold">New Folder:</span>&#160;Creates a new folder inside the selected folder.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog for the selected folder.</li>
+                <li><span class="bold">Add Variable Set… (Create a new Variable Set file):&#160;</span>Launches the <span class="UI">Add  File</span> dialog with Variable Set preselected in the File Type field.</li>
+            </ul>
+        </div>
+        <h3>Keyboard Navigation</h3>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">Enter</span> Open/Closes the selected item (Folders open/close to display/hide their contents – Files open in the correct editor)</li>
+            <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node</li>
+            <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> select and open\close folders will go as far as selecting the first non-folder node in a folder</li>
+            <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the Organizer a page at a time up or down</li>
+            <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node</li>
+            <li><span class="KeyboardShortcut">Insert</span> does nothing</li>
+            <li><span class="KeyboardShortcut">Delete</span> Only works for files inside of the folders. Shouldn’t do anything for folders.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="12" MadCap:lastHeight="5455" MadCap:lastWidth="1344" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Keyword Link (K-Link) - Editing</h2>
+        <h3>Keyword Link in the XML Editor</h3>
+        <p>A keyword link will appear as follows in the <span class="UI">XML Editor</span>:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/KeywordLink---XMLEditor.png" />
+        </p>
+        <p>&#160;</p>
+        <h3>Editing a Keyword Link</h3>
+        <p>To edit a keyword link, you need to re-open the <span class="UI">Insert Keyword Link Control</span> dialog for an existing keyword link. This is done by invoking the MadCap:keywordLink context menu&#160;and selecting Edit Keyword Link…</p>
+        <p>&#160;</p>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/KeywordLink---Context.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">One term, no class:</p><pre>&lt;p&gt;</pre><pre xml:space="preserve">    &lt;MadCap:keywordLink term="keyword" externalHelpSystems="" /&gt;</pre><pre>&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Multiple terms, class, local label and conditions:</p><pre>&lt;p&gt;</pre><pre xml:space="preserve">    &lt;MadCap:keywordLink term="keyword;bagel;donut" externalHelpSystems="" style="mc-label: 'My&#160;Concept Links';" MadCap:conditions="Default.ScreenOnly" class="class1" /&gt;</pre><pre>&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

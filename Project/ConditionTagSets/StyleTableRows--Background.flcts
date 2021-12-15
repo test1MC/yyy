@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="BackgroundRepeat"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="BackgroundPosition"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Background"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="BackgroundAttachment"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="BackgroundColor"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="BackgroundImage"
+    Comment="" />
+</CatapultConditionTagSet>

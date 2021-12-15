@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2568" MadCap:lastWidth="806" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Link Viewer - UI</h2>
+        <h3>Opening the Link Viewer</h3>
+        <ul class="checkbox">
+            <li><span class="UI">Content Explorer</span>:&#160;Right-click a file in the <span class="UI">Content Explorer</span> and select <span class="MenuItem">View Links</span></li>
+            <li><span class="UI">Project Organizer</span>:&#160;Right-click a file in the <span class="UI">Project Organizer</span> and select <span class="MenuItem">View Links</span></li>
+            <li><span class="UI">File List</span>:&#160;Right-click a file in the <span class="UI">File List</span> and select <span class="MenuItem">View Links</span></li>
+            <li><span class="UI">Pending Check-Ins</span>:&#160;Right-click a file in the <span class="UI">Pending Check-Ins</span> window and select <span class="MenuItem">View Links</span></li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;Link Viewer</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!View | Link Viewer</span></li>
+        </ul>
+        <h3>Link Viewer - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Link Viewer/UI--LinkViewer.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---LockView.png" /> <span class="bold">(Lock the Link Viewer):&#160;</span>Locks the current file in the Link Viewer. This allows you to open different files and continue to view links for the original file. <span class="bold">(There's an issue where the Link Viewer stays locked when you close and re-open Flare. Bug #31227 has been entered to consider changing this behavior).</span></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> <span class="bold">(Refresh):&#160;</span>Refreshes the list of links.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Back.png" /> <span class="bold">(Show links for previous file):&#160;</span>Changed the file displayed in the Link Viewer to the previous file that was open in the Link Viewer. </li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Forward.png" /> <span class="bold">(Show links for next file): </span>If you have clicked "Show links for previous file,"&#160;this option will let you browse forward in the sequence of files you have viewed in the <span class="UI">Link Viewer</span>.</li>
+        </ul>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">File Information</p>
+        <ul class="checkbox">
+            <li><span class="bold">(filename):&#160;</span>Current file's filename and the appropriate icon should display.</li>
+            <li><span class="bold">File Path:&#160;</span>Displays the path of the current file</li>
+            <li><span class="bold">Associated Targets:&#160;</span>Displays all targets that the current file is associated with. If there are none, the field should display "(no associated targets)." </li>
+        </ul>
+        <p class="bold">Links</p>
+        <ul class="checkbox">
+            <li><span class="bold">Linked From:&#160;</span>Displays all files which link to the current file. If there are none, the field should display "(no incoming links)." Clicking the column heading should sort files alphabetically and reverse alphabetically.</li>
+            <li><span class="bold">Linked To:&#160;</span>Displays all files which are linked to by the current file. If there are none, the field should display "(no outgoing links)." Clicking the column heading should sort files alphabetically and reverse alphabetically.</li>
+        </ul>
+        <p class="note">The "Links" section of the Link Viewer requires an explicit link to display a link. The Associated Target section will allow for implied links when determining if a target should be associated with a file. For example, all Web-based target will always be "associated"&#160;for all content files since all content files are included in Web-based output. The Link Viewer does not consider Conditional arguments set in the Target.</p>
+        <h4>Right-Click Menus</h4>
+        <p class="bold">Right-clicking any file in the Associated Targets, Linked From or Linked To fields should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Link Viewer/LinkViewer--RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open:</span>&#160;Opens the selected file. In turn, unless the <span class="UI">Link Viewer</span> is locked, the <span class="UI">Link Viewer</span> should update to display links for the newly opened file.</li>
+                <li><span class="bold">View Links:</span> Changes the <span class="UI">Link Viewer</span> view to display links for the selected file. This option will not open the file.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Open every type of file that can be opened in Flare and confirm the <span class="UI">Link Viewer</span> displays links appropriately. </li>
+            <li>Link to every type of file that can be linked to and confirm the <span class="UI">Link Viewer</span> displays links and icons appropriately. This includes but should not be limited to external links of all kinds, broken links, e-mail links, media links, etc.</li>
+            <li>Confirm that the <span class="UI">Link Viewer</span> does not display links for any files that can be opened in the MDI&#160;for which it would be inappropriate to display links (Help topics, files opened in the Differences Viewer, incoming review or contribution files, etc).</li>
+            <li>Hovering over any file in the Associated Targets, Linked From or Linked To fields should produce a tooltip displaying the file's path within the Flare project (beginning with the Content or Project folder)</li>
+            <li>Double-clicking any file in the Associated Targets, Linked From or Linked To fields should open that file.</li>
+        </ul>
+    </body>
+</html>

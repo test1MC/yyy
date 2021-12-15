@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6166" MadCap:lastWidth="1027" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Toc or ProjectOrganizer--Items.TOC] exclude[Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Topic or FlareFileTypes.VariableSet or ProjectOrganizer--Items.BatchTarget or ProjectOrganizer--Items.BrowseSequence or ProjectOrganizer--Items.ConditionTagSet or ProjectOrganizer--Items.Destination or ProjectOrganizer--Items.FileTagSet or ProjectOrganizer--Items.Glossary or ProjectOrganizer--Items.Import or ProjectOrganizer--Items.RelationshipTable or ProjectOrganizer--Items.Report or ProjectOrganizer--Items.SearchFilterSet or ProjectOrganizer--Items.Skin or ProjectOrganizer--Items.Synonyms or ProjectOrganizer--Items.Target or ProjectOrganizer--Items.Variable] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>TOC - Editor</h2>
+        <h3>Opening a TOC File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--TocEditor.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--BrowseSequenceEditor.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span>:&#160;In the General tab of the <span class="UI">Target Editor</span>, in the Master TOC section, select a TOC File and click the "Edit"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>TOC&#160;Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--TreeView.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--LocalToolbar.png" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" alt="" title="" /> <span class="bold">(Hide/show the Info Bar):&#160;</span>Lets you toggle to display or hide the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ExportDataToCSV.png" alt="" title="" /> <span class="bold">(Export the data to a CSV file):&#160;</span>Exports all of the data to a csv file.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ExportSelectionToCSV.png" alt="" title="" /> <span class="bold">(Export the selected data to a CSV file):&#160;</span>Exports only the selected data to a csv file.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---TreeView.png" alt="" title="" /><span class="bold">/</span>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---GridView.png" alt="" title="" /> <span class="bold">(Toggle between tree view and grid view):&#160;</span>Lets you switch between the Tree View of the TOC&#160;which lets you see the multiple levels that exist in your TOC&#160;from TOC&#160;Books, and the Grid View which is a flat, line-item grid view which is useful for quickly viewing the properties of every TOC&#160;node.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Expand All.png" alt="" title="" /> <span class="bold">(Expand all): </span>Expands all TOC&#160;Books in the <span class="UI">TOC&#160;Editor</span>.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" alt="" title="" /> <span class="bold">(Collapse all):&#160;</span>Collapses all TOC&#160;Books in the <span class="UI">TOC&#160;Editor</span>.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---CreateNewTopicAndLinkToIt.png" alt="" title="" /> <span class="bold">(Create a new topic and link to it):&#160;</span>Opens the <span class="UI">Add New Topic</span> dialog, which lets you add a new topic and automatically add it to the TOC. If the selected TOC&#160;node is a book, the new TOC&#160;entry is created at the end of that book. If the selected TOC&#160;entry is not a book, the new TOC&#160;entry is created immediately after the selected node.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---NewItem.png" alt="" title="" /><span class="bold">(New item):&#160;</span>Creates a new, unlinked TOC&#160;node as a child of the selected node.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---NewBook.png" alt="" title="" /><span class="bold">(New book): </span>Creates a new, unlinked TOC Book node with one unlinked child node immediately preceding the currently selected TOC node.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---NewTopLevelBook.png" alt="" title="" /><span class="bold">(New top-level book):&#160;</span>Creates a new, unlinked TOC Book node with one unlinked child node immediately preceding the currently selected TOC node's top-level book.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" style="mc-tag-and-class: ;" /><span class="bold"> (Run Properties dialog for this item): </span>Opens the <span class="UI">Properties</span> dialog for the selected TOC node.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemLeft.png" alt="" title="" /> <span class="bold">(Move item to the left): </span>Moves the selected TOC node to the left one level. This option is only active for TOC nodes inside a TOC Book.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemRight.png" alt="" title="" /> <span class="bold">(Move item to the left): </span>Moves the selected TOC node to the right one level. If the selected node is preceded by a Book, this will move the node into that book. If the selected node is not preceded by a book, this will turn the preceding node into a book and move the selected node into it.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemUp.png" alt="" title="" /> <span class="bold">(Move item up): </span>Moves the selected TOC&#160;node up in the TOC sequence above the first preceding TOC node of the same level. </li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveItemDown.png" alt="" title="" /> <span class="bold">(Move item down): </span>Moves the selected TOC&#160;node down in the TOC sequence below the first acceding TOC node of the same level.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---LocateInContentExplorer.png" /> (Locate file in Content Explorer): </span>Opens the <span class="UI">Content Explorer</span> and highlights the location of the selected content file within it.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SendForReview.png" /> <span class="bold">(Send linked document to reviewers): </span>Invokes the <span class="UI">Send Topic for Review Wizard</span> with all linked topics from the selected TOC&#160;nodes already included in the Wizard's Topic list. Using this method to send topics for review also includes the current TOC file.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---OpenLinkedFile.png" alt="" title="" /><span class="bold">(Open linked file): </span>Opens the file to which the TOC node is linked. This should work for topics as well as linked TOC, Browse Sequence, Flare project, etc. Test for all.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---ShowUnlinkedBooks.png" /><span class="bold">(Show unlinked books):</span> Toggle between showing unlinked TOC&#160;Books as unlinked items or not.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---Warnings.png" alt="" title="" /><span class="bold">(Shows the current warning, if any):&#160;</span>The toolbar item itself will display the number of broken links or (if there are no broken links) the number of unlinked items. If there are no such issues, this item will appear grayed out. Clicking on this button will invoke a Current Issues dialog which details the number of broken links, broken bookmarks, unlinked books and unlinked items.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---PreviousWarning.png" /><span class="bold">(Navigate the previous warning):</span> Lets you quickly navigate through the TOC&#160;to the previous broken link or unlinked item. If there are no such issues, this item will appear grayed out.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---NextWarning.png" /><span class="bold">(Navigate to the next warning):</span> Lets you quickly navigate through the TOC&#160;to the next broken link or unlinked item. If there are no such issues, this item will appear grayed out.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Button---ToggleDoubleClickBehaviour.png" style="mc-tag-and-class: ;" /><span class="bold"> (Toggle the double-click behavior; open topic or display properties):&#160;</span>Toggles the double-click behavior in the <span class="UI">TOC Editor</span> between opening the TOC node's linked file or opening the <span class="UI">Properties</span> dialog for the TOC&#160;node.</li>
+        </ul>
+        <h4>Grid View Test Cases</h4>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">TOC grid: </span>Displays all TOC&#160;Entries and associated properties in a single grid.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li>A column can exist for each and every property that can be set on a TOC&#160;node. The set of visible columns can be changed in the <span class="UI">Columns</span> dialog. To open the <span class="UI">Columns</span> dialog:<ul style="list-style-type: square;"><li>Right-click anywhere in the Grid View TOC&#160;Editor and select Columns from the menu</li><li>Select Columns from the drop-down menu under Tree View/Grid View in the local toolbar</li></ul></li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+        <h4>Right-click menu (Tree View)</h4>
+        <p>Right-clicking anywhere in the Tree View of the <span class="UI">TOC Editor</span> should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--RightClickMenu--TreeView.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 190px;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Expand/Collapse (Expand/collapse node): </span>If a TOC&#160;Book is selected, this option expands the book, but only the first level.</li>
+                <li><span class="bold">Expand All/Collapse All (Expand/collapse node and child nodes): </span>If a TOC&#160;Book is selected, this option expands the and any books contained therein.</li>
+                <li><span class="bold">Add New Topic… (Create a new topic and link to it): </span>Opens the <span class="UI">Add New Topic</span> dialog, which lets you add a new topic and automatically add it to the TOC. If the selected TOC node is a book, the new TOC entry is created at the end of that book. If the selected TOC entry is not a book, the new TOC entry is created immediately after the selected node.</li>
+                <li><span class="bold">Link to New Topic… (Link to a new topic): </span>Opens the <span class="UI">Add New Topic</span> dialog, which lets you add a new topic and automatically link to it from the selected TOC node.</li>
+                <li><span class="bold">Link to Topic (Link to a topic): </span>Opens the <span class="UI">Open File</span> dialog which lets you browse for a topic within the project.</li>
+                <li><span class="bold">Locate in Explorer (Locate file in Content Explorer):&#160;</span>Opens the <span class="UI">Content Explorer</span> and highlights the location of the selected content file within it.</li>
+                <li><b>Send For Review... (Send linked document to reviewers):</b> Invokes the <span class="UI">Send Topic for Review Wizard</span> with all linked topics from the selected TOC&#160;nodes already included in the Wizard's Topic list. Using this method to send topics for review also includes the current TOC file.</li>
+                <li><span class="bold">Open Link (Open linked file):&#160;</span>Opens the file to which the TOC&#160;node is linked. This should work for topics as well as linked TOC, Browse Sequence, Flare project, etc. Test for all.</li>
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected TOC node(s) to the clipboard.</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected TOC node(s) to the clipboard.</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the TOC node(s) from the clipboard.</li>
+                <li><span class="bold">Delete (Delete): </span>Deletes the selected TOC node(s)</li>
+                <li><span class="bold">Properties (Display properties for selected item): </span>Opens the <span class="UI">Properties</span> dialog for the selected TOC node.</li>
+            </ul>
+        </div>
+        <h4>Right-click menu (Grid View)</h4>
+        <p>Right-clicking anywhere in the Grid View of the <span class="UI">TOC Editor</span> should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TocEditor--RightClickMenu--GridView.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 250px;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Columns… (Show/hide columns): </span>Opens the <span class="UI">Columns</span> dialog to customize the columns</li>
+                <li><span class="bold">Export to CSV (Export the data to a CSV file):&#160;</span>Exports all the available data to a CSV&#160;file</li>
+                <li><span class="bold">Export selection to CSV (Export the selected data to a CSV file):&#160;</span>Exports the selected data to a CSV&#160;file</li>
+                <li><span class="bold">Locate in Explorer (Locate file in Content Explorer):&#160;</span>Opens the <span class="UI">Content Explorer</span> and highlights the location of the selected content file within it.</li>
+                <li><b>Send For Review... (Send linked document to reviewers):</b> Invokes the <span class="UI">Send Topic for Review Wizard</span> with all linked topics from the selected TOC&#160;nodes already included in the Wizard's Topic list. Using this method to send topics for review also includes the current TOC file.</li>
+                <li>
+                    <p><span class="bold">Open Link (Open linked file):&#160;</span>Opens the file to which the TOC&#160;node is linked. This should work for topics as well as linked TOC, Browse Sequence, Flare project, etc. Test for all.</p>
+                </li>
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected TOC node(s) to the clipboard.</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected TOC node(s) to the clipboard.</li>
+                <li><span class="bold">Delete (Delete):&#160;</span>Deletes the selected TOC&#160;node(s)</li>
+                <li><span class="bold">Properties (Display properties for the selected item):&#160;</span>Opens the <span class="UI">Properties</span> dialog for the selected TOC node.</li>
+            </ul>
+        </div>
+        <h3>TOC - General Editing Test Cases</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Tooltips.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--ConditionalTags.flsnp" />
+        <p>&#160;</p>
+        <p>For print outputs, this is good enough to prevent the topic from being included in the output. For web outputs however, the topic is still included in the compiled output but it will not be linked to from the TOC (the topic would still be accessible via search, index, links from other topics, etc).</p>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Sample code of each type of TOC&#160;Link with various settings applied:</p><pre xml:space="preserve" xml:lang="none">&lt;CatapultToc Version="1"&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Topic"</pre><pre xml:lang="none" xml:space="preserve">Link="/Content/Topic.htm"</pre><pre xml:lang="none" xml:space="preserve">StartChapter="true"</pre><pre xml:lang="none">PageType="first"</pre><pre xml:lang="none">ChapterName="ChapterName"</pre><pre xml:lang="none">PageNumberReset="reset"</pre><pre xml:lang="none">PageNumberFormat="lower-roman"</pre><pre xml:lang="none">PageNumber="1"</pre><pre xml:lang="none">StartSection="false"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Topic marked as new"</pre><pre xml:lang="none">MarkAsNew="true"</pre><pre xml:lang="none">Link="/Content/Topic.htm" /&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none" xml:space="preserve">Title="Link to another TOC"</pre><pre xml:lang="none" xml:space="preserve">ReplaceMergeNode="true"</pre><pre xml:lang="none">Link="/Project/TOCs/NewToc.fltoc" /&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Flare Project for merging"</pre><pre xml:lang="none">Link="../../../Project/Project.flprj"</pre><pre xml:lang="none" xml:space="preserve">AbsoluteLink="file:///C:/Users/username/Documents/My Projects/Project/Project.flprj"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Browse Sequence"</pre><pre xml:lang="none">Link="/Project/Advanced/NewBrowseSequence.flbrs"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a generated help system"</pre><pre xml:lang="none" xml:space="preserve">Link="../../../MyProject/Output/username/WebHelp/Default.mcwebhelp"</pre><pre xml:lang="none" xml:space="preserve">AbsoluteLink="file:///C:/Users/username/Documents/My Projects/MyProject/Output/username/WebHelp/Default.mcwebhelp"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Mimic movie"</pre><pre xml:lang="none">Link="../../../../My Mimic Movies/Mimic Moview.mimovf/Mimic Moview.mimov"</pre><pre xml:lang="none" xml:space="preserve">AbsoluteLink="file:///C:/Users/username/Documents/My Mimic Movies/Mimic Moview.mimovf/Mimic Moview.mimov"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="Link to a Mimic project"</pre><pre xml:lang="none">Link="../../../../My Mimic Projects/MimicProject/MimicProject.miprj"</pre><pre xml:lang="none" xml:space="preserve">AbsoluteLink="file:///C:/Users/username/Documents/My Mimic Projects/MimicProject/MimicProject.miprj"&gt;&lt;/TocEntry&gt;</pre><pre xml:lang="none">&#160;</pre><pre xml:lang="none">&lt;TocEntry</pre><pre xml:lang="none">Title="HTML Help Icons"&gt;</pre><pre xml:space="preserve" xml:lang="none">    &lt;TocEntry</pre><pre xml:space="preserve" xml:lang="none">    Title="HTML Help Icon 1"</pre><pre xml:space="preserve" xml:lang="none">    HtmlHelpIconIndex="1"</pre><pre xml:space="preserve" xml:lang="none">    ReplaceMergeNode="false"</pre><pre xml:space="preserve" xml:lang="none">    Link="/Content/Topic.htm" /&gt;</pre><pre xml:space="preserve" xml:lang="none">    &lt;/TocEntry&gt;</pre><pre xml:lang="none">&lt;/TocEntry&gt;</pre>
+        <p xml:lang="none">&#160;</p><pre xml:lang="none">&lt;/CatapultToc&gt;</pre>
+    </body>
+</html>

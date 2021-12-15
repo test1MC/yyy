@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="828" MadCap:lastWidth="625" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h1>Import Frame</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Import:&#160;Frame</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>Gives the users the ability to import and reimport Adobe FrameMaker files (MIF, FM and Books) and control the conversion of styles, formatting, and links during the conversion to XML. You can create a new project or add topics to an existing project by importing FrameMaker&#160;files. Special case: Frame import to Frame output “round tripping” will not produce an exact file match. Import is designed to create xml files that can be used in all outputs. Frame specific formatting might be removed or might not map to a specific element in Flare.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Import Frame - Wizard.htm" class="TitleOnly">Import Frame - Wizard</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Import Frame - Add File.htm" class="TitleOnly">Import Frame - Add File</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Import Frame - Properties.htm" class="TitleOnly">Import Frame - Location &amp; Properties</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Import Frame - Editor.htm" class="TitleOnly">Import Frame - Editor</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Frame Import Styles - UI.htm" class="TitleOnly">Frame&#160;Import Styles - UI</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Import Frame - Baseline.htm" class="TitleOnly">Import Frame - Baseline</MadCap:xref>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <p>FrameMaker 6.0 or later and Distiller is needed for importing callouts and some images correctly. </p>
+        <p>Capture 6 or later (Starting with Flare 9).</p>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>Test everything while running the Task Manager Performance tab and note the Memory and CPU usage.</li>
+            <li>Verify all imports in WYSIWYG and all output types.</li>
+            <li>
+                <p>\\fs1\QA\Test Projects\Frame</p>
+            </li>
+            <li>Test projects for converting equations: \\fs1\QA Projects\79988 <ul><li><span class="italic">scala.fm</span> is the original customer’s document</li><li><p><span class="italic">frame_equation_test_Jan27Update.fm</span> has a variety of equation samples and outlines the current limitations in our translation from MathFullForm to MathML</p></li></ul></li>
+            <li>When using the remote Frame Machine, you can test importing FrameMaker documents from any version of FrameMaker.&#160;&#160;For example, if you want to compare an FM9 import to an FM11 import, but you have them both on your machine - open FM9 before you  go through the import wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>All supported versions and filetypes (and into existing project)</li>
+            <li>
+                <p>Frame	Import now supports the following image types: DIB, WMF, EMF, SVG, EPS, and PS</p>
+                <ul>
+                    <li>
+                        <p>	We now create a props file for each frame within a document, which will allow users to edit callouts that were created in Framemaker in Capture after import</p>
+                        <ul>
+                            <li>
+                                <p>	Due to the change in the bullet above, we no longer rely on Distiller to convert anything for us on the import process.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

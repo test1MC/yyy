@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7085" MadCap:lastWidth="1022" MadCap:conditionTagExpression="include[InsertHyperlinkUI.TopicPopup] exclude[Default.UITestsEditors or InsertHyperlinkUI.CrossReference or InsertHyperlinkUI.Hyperlink or InsertHyperlinkUI.ImageMapArea] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Topic Popups - UI</h2>
+        <h3>Inserting a Topic Popup</h3>
+        <p class="note">Topic Popups are basically hyperlinks that have the Target Frame set to "Popup Window".</p>
+        <p>In all cases listed below, you can optionally select the link text in the <span class="UI">XML&#160;Editor</span> prior to inserting the hyperlink.</p>
+        <p><span class="bold">Insert a hyperlink with the Insert Hyperlink dialog:</span>
+        </p>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Topic Popup</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert |&#160;Hyperlink |&#160;Topic Popup</span></li>
+        </ul>
+        <p><span class="bold">Test Cases</span>
+            <ul class="checkbox">
+                <li>Test all Insert Hyperlink methods at an insertion point</li>
+                <li>Test all Insert Hyperlink methods using a text selection</li>
+            </ul>
+        </p>
+        <div class="TestCases">
+            <p><span class="bold">Test making a wide variety of selections:</span>
+            </p>
+            <ul class="checkbox">
+                <li>Text</li>
+                <li>Span</li>
+                <li>Text with span</li>
+                <li> Whole paragraphs</li>
+                <li>List items</li>
+                <li> Etc.</li>
+            </ul>
+            <p>You should only be able to insert a Topic Popup with a valid selection. If selection is invalid (multiple paragraphs, a table, a whole list, etc), the menu option and button should be grayed out.</p>
+            <ul class="checkbox">
+                <li>Verify that the selected text populates the "Link Text"&#160;field of the <span class="UI">Insert Topic Popup</span> dialog</li>
+            </ul>
+        </div>
+        <h3>Insert Topic Popup dialog -&#160;UI&#160;Test Cases</h3>
+        <p>The UI of the <span class="UI">Insert Topic Popup</span> dialog is essentially a subset of the <span class="UI">Insert Hyperlink</span> dialog and  all functionality is essentially the same. However, Topic Popups should be tested independently.</p>
+        <hr />
+        <div style="width: 200px;height: 200px;float: left;">
+            <p><span class="UI">Insert Topic Popup</span> dialog, default view (with Style Class and Target Frame pre-populated):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertTopicPopup.png" class="properties" />
+            </p>
+        </div>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/InsertHyperLinkDialog--VariousViews--TestCases.flsnp" />
+        <h3>Select Class:&#160;UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--SelectClass.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Class: </span>Displays the selected class from the "Defined Classes" list, but also lets you manually enter a class name.</li>
+            <li><span class="bold">Defined Classes: </span>Displays a list of all defined classes of the a style that exist in the project stylesheets.<ul class="checkbox"><li>Add a custom class in the stylesheet and verify that it shows up in this dialog.</li></ul></li>
+        </ul>
+    </body>
+</html>

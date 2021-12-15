@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3372" MadCap:lastWidth="1071">
+    <head>
+    </head>
+    <body>
+        <h3>(<MadCap:snippetText src="Flare--FileTypes.flsnp" />)&#160;Properties dialog</h3>
+        <p class="bold">To open:</p>
+        <ul class="checkbox">
+            <li>Right-click the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI" MadCap:conditions="FlareFileTypes.!ContentFile">Content Explorer</span><span class="UI" MadCap:conditions="FlareFileTypes.!ProjectFileStandard,FlareFileTypes.!ProjectFileAdvanced,FlareFileTypes.!ProjectFileImport">Project Organizer</span> and select <span class="MenuItem">Properties</span> from the context menu.</li>
+            <li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI" MadCap:conditions="FlareFileTypes.!ContentFile">Content Explorer</span><span class="UI" MadCap:conditions="FlareFileTypes.!ProjectFileStandard,FlareFileTypes.!ProjectFileAdvanced,FlareFileTypes.!ProjectFileImport">Project Organizer</span> and press <span class="KeyboardShortcut">F4</span>.</li>
+            <li>With the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> open and in focus in the <span class="UI">MDI</span>, press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">P</span> on the keyboard</li>
+            <li MadCap:conditions="FlareFileTypes.!ContentFile">Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI">Content Explorer</span> and click the <img src="../../Images/TestPlans/Buttons/Button---Properties.png" /> Properties button in the Local Toolbar (of the <span class="UI">Content Explorer</span>).</li>
+            <li>Toolstrip interface:&#160;<ul class="checkbox"><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI" MadCap:conditions="FlareFileTypes.!ContentFile">Content Explorer</span><span class="UI" MadCap:conditions="FlareFileTypes.!ProjectFileStandard,FlareFileTypes.!ProjectFileAdvanced,FlareFileTypes.!ProjectFileImport">Project Organizer</span> and select <span class="MenuItem">!Edit |&#160;Properties</span>.</li><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI" MadCap:conditions="FlareFileTypes.!ContentFile">Content Explorer</span><span class="UI" MadCap:conditions="FlareFileTypes.!ProjectFileStandard,FlareFileTypes.!ProjectFileAdvanced,FlareFileTypes.!ProjectFileImport">Project Organizer</span> and click the <img src="../../Images/TestPlans/Buttons/Button---Properties.png" /> Properties button in the <span class="toolbar">Standard Toolbar</span>.</li><li>With the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> open and in focus in the <span class="UI">MDI</span>, go <span class="MenuItem">!File |&#160;Properties</span></li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI" MadCap:conditions="FlareFileTypes.!ContentFile">Content Explorer</span><span class="UI" MadCap:conditions="FlareFileTypes.!ProjectFileStandard,FlareFileTypes.!ProjectFileAdvanced,FlareFileTypes.!ProjectFileImport">Project Organizer</span> and select <span class="RibbonItem">!Home |&#160;Properties</span>.</li><li>With the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> open and in focus in the <span class="UI">MDI</span>, go <span class="RibbonItem">!File |&#160;Properties</span></li></ul></li>
+        </ul>
+        <h4>Properties dialog:&#160;General tab</h4>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Content Explorer/Dialog--GenericProperties--GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name:&#160;</span>Displays the name of the file.</li>
+            <li><span class="bold">Location:&#160;</span>Displays the location of the file.</li>
+            <li><span class="bold">Open Folder: </span>Opens the Windows folder holding the file.</li>
+            <li><span class="bold">Read Only:&#160;</span>If you do not want the file to be edited, click the check box to add a check mark.</li>
+            <li><span class="bold">Size:&#160;</span>Displays the size of the file.</li>
+            <li><span class="bold">Created: </span>Displays the date and time that the file was created.</li>
+            <li><span class="bold">Modified:&#160;</span>Displays the date and time that the file was last modified.</li>
+        </ul>
+        <h4>Properties dialog:&#160;Conditional Text tab</h4>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Content Explorer/Dialog--GenericProperties--ConditionalTextTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <MadCap:snippetBlock src="UI-ConditionalText.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Properties dialog:&#160;File Tags tab</h4>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Content Explorer/Dialog--GenericProperties--FileTagsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="UI-FileTags.flsnp" />
+    </body>
+</html>

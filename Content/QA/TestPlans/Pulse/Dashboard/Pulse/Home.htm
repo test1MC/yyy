@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="830" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <h2>Home</h2>
+        <p>Home is where you can manage your apps, your news feed, and your lists.</p>
+        <p class="note">Note:&#160;Pulse Dashboard will appear slightly different in different browsers. &#160;For example, the Open dialog in Google Chrome is called a File Upload dialog in Mozilla Firefox.&#160;&#160;Screenshots for this test plan were taken using Google Chrome. During testing, ensure functionality in all browsers.</p>
+        <h3>News Feed</h3>
+        <p>News Feed displays a stream of news about activity on your Pulse server.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UI.png" alt="" title="" class="properties" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--Open.png" alt="" title="" class="properties" />
+        </p>
+        <p>
+            <p>&#160;</p>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--Task.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li><span class="bold">Status: </span>Type content here.&#160;&#160;<ul><li><span class="bold">Share Movie: </span>Opens the <span class="UI">Open</span> dialog where you can browse for a movie. Video must be of type mp4.</li><li><span class="bold">Share Image: </span>Opens the <span class="UI">Open</span> dialog where you can browse for an image. Images must be of type PNG, JPG, or GIF.</li><li><span class="bold">Share File:</span><ul><li><span class="bold">Upload a local file...:&#160;</span>Opens the <span class="UI">Open</span> dialog where you can browse for a file. &#160;Certain file types are not allowed (ex:&#160;.exe)</li><li><span class="bold">Link to a file...:&#160;</span>Opens the <span class="UI">Link&#160;Details</span> dialog where you provide a Name and Url for your link.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--LinkDetails.png" alt="" title="" class="propertiesNoFloat" /></li></ul></li></ul></li>
+                <li><span class="bold">Question:&#160;</span>Type question here. &#160;This text input field can be re sized by dragging the lower right corner.</li>
+                <li><span class="bold">Article:</span>
+                    <ul>
+                        <li><span class="bold">Title:&#160;</span>a title is required when posting an article.</li>
+                        <li><span class="bold">Formatting:&#160;</span>Bold, Italic, Underline, Bullet List and Numbered List.&#160;</li>
+                        <p class="note">Note:&#160;These options will show in the preview, but are lost once you post (Bug 54742:Lists are losing their formatting when inserted via the "Article" link in the Pulse feed).</p>
+                    </ul>
+                </li>
+                <li><span class="bold">Task: </span>Opens the task pane:<ul><li><span class="bold">Enter a name...:&#160;</span>Type a name for the task.</li><li><span class="bold">Description:&#160;</span>Type a description of the task.</li><li><span class="bold">Assigned To: </span>Type the user's name to assign them the task.</li><li><span class="bold">Tags: </span>Type a tag name to associate the task with a tag.</li><li><span class="bold">Due: </span>Click in the text field to see a calendar, then select a date.</li><li><span class="bold">Importance: </span>Assign an importance level of low, medium, or high.</li><li><span class="bold">Status: </span>Assign a status of Pending or Completed.</li><li><span class="bold">Save: </span>Save the task</li><li><span class="bold">Cancel: </span>Exits the task pane</li></ul></li>
+                <li><span class="bold">Share:&#160;</span>Once content has been typed in the Status, Question, or Article field, the Share button appears.&#160;Clicking it will publish your status to the News Feed.</li>
+                <li><span class="bold">Search this Feed: </span>As you type in the search field, the contents of the feed will be filtered and your search term(s) will be highlighted in yellow.</li>
+                <p class="note">Note:&#160;Wildcard, regular expression and partial word searching are not supported.</p>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Boundary test all text input fields with special characters, numbers, formatting, extra long entries, etc.</li>
+                <li>Type something for a Status, then click Question, click back to Status -- your text should still be there.</li>
+            </ul>
+        </div>
+        <h3>Your Apps</h3>
+        <p>All of your content can be viewed through your Pulse Apps. The Apps section on your homepage is where you can list your most often used/viewed apps. Click on the "More" button to add or remove Apps from this section.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--CustomizeYourApps.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <h4>Most Recent</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIMostRecent.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>Most recent simply shows the latest thing posted on the Output. This is the default view when navigating to Pulse |&#160;Home</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ensure all posts are in chronological order, most recent on top</li>
+                <li>Hover over the topic name should show a flyout with a button to Follow the topic.</li>
+            </ul>
+        </div>
+        <h4 class="h4clearleft">Files</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIFiles.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>Lists all files that you have uploaded to the server.&#160;&#160;There are four columns:&#160;Name,&#160;Author,&#160;Size, and Created.</p>
+            <ul class="checkbox">
+                <li><span class="bold">Download Folder:&#160;</span>Downloads a .zip of all files listed</li>
+                <li><span class="bold">Upload Files:&#160;</span>Opens the <span class="UI">Upload Files</span> dialog<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UploadFiles.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Choose Files:&#160;</span>Opens the <span class="UI">Open</span> dialog to browser for a file.</li><p><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--Open.png" alt="" title="" class="propertiesNoFloat" /></p><li><span class="bold">Upload Files:&#160;</span>Uploads the selected files.</li><li><span class="bold">Cancel:&#160;</span>Exits the dialog without uploading a file.</li></ul></li>
+                <li><span class="bold">New Folder:&#160;</span>Opens the <span class="UI">New Folder</span> dialog<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--NewFolder.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Folder Name:&#160;</span>Type the folder name here</li><li><span class="bold">Create Folder:&#160;</span>Creates a folder with the name specified above.</li><li><span class="bold">Cancel: </span>Exits the dialog without creating a folder.</li></ul></li>
+                <li><span class="bold">Name:&#160;</span>Clicking the file name will open a preview of the file</li>
+                <li><span class="bold">Author:&#160;</span>Clicking the author currently takes you to the default IIS page (Bug 90859:Clicking the author in Files directs the site to default IIS page.)</li>
+                <li><span class="bold">Box:&#160;</span>Clicking the square box at the end of the row produces this drop down menu:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--FilesDropDown.png" alt="" title="" class="propertiesNoFloat" /><ul><li><span class="bold">Open:</span><span style="color: #ff0000;">&#160;?</span></li><li><span class="bold">Download:&#160;</span>Downloads the file to your computer's default download location.</li><li><span class="bold">Rename:&#160;</span>Opens the Rename File dialog:<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--RenameFile.png" alt="" title="" class="propertiesNoFloat" /></li><li><span class="bold">Cut:</span><span style="color: #ff0000;">&#160;?</span></li><li><span class="bold">Delete:&#160;</span>Opens the Confirm Delete Activity dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--ConfirmDeleteActivity.png" alt="" title="" class="propertiesNoFloat" /></li></ul></li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Boundary test all text input fields with special characters, numbers, formatting, extra long entries, etc.</li>
+            </ul>
+        </div>
+        <h4>Messages</h4>
+        <p>
+            Messages is covered in its own test plan: <a href="Messages.htm">Messages</a><![CDATA[
+        ]]></p>
+        <h4>Notifications:&#160;</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UINotifications.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>Pulse provides users with various notification types.&#160;&#160;You can filter your notifications by clicking the filters in the upper right corner.</p>
+            <ul class="checkbox">
+                <li>
+                    <p>Click one of the buttons in the upper-right corner of the page to filter your notifications by type.</p>
+                    <ul style="list-style-type: square;" class="checkbox">
+                        <li><span class="bold">Comments: </span>Notifies you when people comment on your posts.</li>
+                        <li><span class="bold">Answers: </span>Notifies you when people post answers to your questions.</li>
+                        <li><span class="bold">Mentions: </span>Notifies you when people mention you in their posts.</li>
+                        <li><span class="bold">Invites: </span>Notifies you when people invite you to join Pulse system feeds.</li>
+                        <li><span class="bold">Tasks: </span>Notifies you when you are assigned a task to complete.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>All activity concerning the above categories should display, most recent on top.</li>
+                <li>Test every link in a given notification, for example, in the notification <u>Simon Customer's</u><u>post</u> to <u>Topic Title</u> is pending approval, the links should go to 1. Simon's page listing all topics he has visited, 2. the post that the made, and 3. the feed for that topic.</li>
+                <li>Time stamps on each notification should be accurate.</li>
+            </ul>
+        </div>
+        <h4>Moderation</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIModeration.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>Moderation allows you to: specify that new posts need to be approved, be notified when a post is pending approval, and approve or reject post. New Pulse communities will initially be set for moderation. Moderators will receive an email notification when there is a new post pending approval. You can then click the link to that topic and accept or reject the post.</p>
+            <ul class="checkbox">
+                <li><span class="bold">Time stamp:&#160;</span>Clicking the time stamp will hide all other posts.</li>
+                <li><span class="bold">Approve:&#160;</span>Approves the post, it will now have the standard options below the post:&#160;Comment, Link, Follow,&#160;Tag, Share. &#160;The user will get an email that their post has been approved. &#160;If you refresh this page, the post will no longer be listed.</li>
+                <li><span class="bold">Reject:&#160;</span>Rejects the post.&#160;The Reject Activity dialog will appear. <br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--RejectActivity.png" alt="" title="" class="propertiesNoFloat" /><br />You must select one of the predetermined reasons for rejecting the comment. The reason "Reject by the administrator." is available by default. The user will receive an email that the post was rejected.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--PreviouslyRejected.png" alt="" title="" class="propertiesNoFloat" /></li>
+                <li><span class="bold">All&#160;Pending: </span>This view will show all active posts that need to be accepted/rejected.</li>
+                <li><span class="bold">Previously Rejected:&#160;</span>This view will show all previously rejected posts. &#160;You can approve any previously rejected posts here by clicking Approve.</li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>By default, moderation is only available  to Administrators and Employees, because they have status as moderators. However, when configuring the privacy settings for the community (i.e., system), you can assign moderation rights to other groups as well. &#160;Test that those other groups have appropriate access to moderation, based on this setting.</p>
+                </li>
+            </ul>
+        </div>
+        <h4>Tasks:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UITasks.png" alt="" title="" class="properties" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--TaskFilter.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>All registered users can create, assign, and manage tasks with Pulse. This gives members of the Customers group the ability to assign a task to any other registered user. It also gives members of the Administrators and Employees groups the ability to assign tasks to each other in any topic, group, tag, and user feed that you have access permission to view.</p>
+            <p>Tasks will show "Tasks Assigned to me by&#160;Status" by default. &#160;The progress bar will show green as an indicator of what percentage of the tasks have been complete.</p>
+            <ul class="checkbox">
+                <li>Click the task name to open the task pane, here you can make changes and save.</li>
+                <li><span class="bold">Accept?:&#160;</span>This task is pending you and will show as "Accept?". Click to show a drop down with the choices:&#160;Accept Task,&#160;Decline Task,&#160;Mark Complete.</li>
+                <li><span class="bold">Declined:&#160;</span>This task has been declined. Click to show a drop down with the choices:&#160;Accept Task,&#160;Mark Complete.</li>
+                <li><span class="bold">Complete?: </span>This task has already been accepted.&#160;Click to show a drop down with the choice&#160;to&#160;Mark&#160;Complete.</li>
+                <li><span class="bold">Completed:&#160;</span>This task has already been completed. Click to show a drop down with the choice&#160;to&#160;Mark&#160;Incomplete.</li>
+            </ul>
+            <p>The filter icon allows to change which tasks are displayed by filtering by people, tags or view.</p>
+            <ul class="checkbox">
+                <li><span class="bold">Assigned to Anyone:&#160;</span>Shows tasks assigned to you and tasks assigned to others by you.</li>
+                <li><span class="bold">Assigned to Me:&#160;</span>Shows tasks assigned to you</li>
+                <li><span class="bold">Assigned by Me:&#160;</span>Shows tasks that you assigned to other users.</li>
+                <li><span class="bold">Assigned to My Direct Reports:&#160;</span>Shows tasks assigned to your Direct Reports folder. Direct Reports is an option you can select in the Notifications tab of the Settings page that deliver daily reports to your email.</li>
+                <li><span class="bold">Assigned to...:&#160;</span>Shows tasks assigned to a specific person or people.</li>
+                <li><span class="bold">Tags:&#160;</span>Shows tasks belonging to a certain tag.</li>
+                <li><span class="bold">Status:&#160;</span>Shows tasks assigned by current status.</li>
+                <li><span class="bold">Upcoming:&#160;</span>Shows tasks with upcoming due dates.</li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ensure notification emails get sent correctly when assigning/modifying tasks</li>
+            </ul>
+        </div>
+        <h4>Mentions</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIMentions.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>You can use the Mentions feature to mention other registered users by name when posting status updates or creating articles. Like many popular social media sites, this feature lets you type the @ sign and then a user name to mention a user in your update.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ensure all proper suggestions come up when typing @ +&#160;user's name or email</li>
+                <li style="font-weight: normal;">Hover over the topic name should show a flyout with a button to Follow the topic.</li>
+            </ul>
+        </div>
+        <h4>Top&#160;News: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UITopNews.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>Top News are the user-specific followed Topics or comments that are receiving the most likes and comments. So if something “exciting or hot” gets posted on your News Feed, you can filter that by looking at your Top News first.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Content should not be sorted strictly in chronological order, rather by popularity.</li>
+            </ul>
+        </div>
+        <h4>Read it Later</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIReadItLater.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>The Read it Later app is available in your user feed and gives you the ability to view the post activity that you bookmarked earlier. If you want to remove the bookmark, click the blue  icon until it turns gray. A gray check mark indicates the next time you open or refresh the page, the post will no longer appear on your Read it Later page.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li><span style="color: #ff0000;">Uploaded files show up here?</span>
+                </li>
+                <li>Clicking "Remove from 'Read it Later'" will remove the bookmark icon,&#160;Refresh the page and it will no longer be listed.</li>
+            </ul>
+        </div>
+        <h4>Statuses</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIStatuses.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>The Statuses app gives you the ability to view the latest updates posted to the selected feed. &#160;Filter statuses by:&#160;Everything, Links, Files, Images, Videos.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Check all links within the statuses (user name, topic links, file links, mentions, etc) and on the status&#160;(comment, link, manage, unfollow, tag, share, etc.)</li>
+                <li style="font-weight: normal;">Hover over the topic name should show a flyout with a button to Follow the topic.</li>
+            </ul>
+        </div>
+        <h4>Questions:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIQuestions.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>The Questions app gives you the ability to read the questions that have been posted to a specific group, tag, topic, or user feed. If you are a member of the Administrators group, you also have the ability to delete the questions and answers that have been posted. Filter questions by:&#160;Recent, Unanswered, Uncategorized, Asked by Me, Followed by Me.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li><span style="color: #ff0000;">Can't mention somebody in a question?</span>
+                </li>
+                <li>Should be able to add detail after question is submitted.</li>
+            </ul>
+        </div>
+        <h4>Articles</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UIArticles.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>The Articles app gives you the ability to read the articles that have been posted to a specific group, tag, topic, or user feed. In addition, it gives you the ability to edit the articles you've posted to a feed. If you post an article, you have the ability to delete it. If you are a member of the Administrators group, you can also delete the articles that others post.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Check all links within the Article (user name, topic links, file links, mentions, etc)</li>
+                <li>Hover over the topic name should show a flyout with a button to Follow the topic.</li>
+            </ul>
+        </div>
+        <h4>Profile</h4>
+        <p>Profile is covered in its own test plan:<MadCap:xref href="Profile.htm"> See Profile</MadCap:xref></p>
+        <h3>Lists</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--UILists.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p>By default, Pulse has created a "Favorites" list for you to add content to. You can, however, create as many different lists as you would like to help you manage your favorite Topics.</p>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li><span style="color: #ff0000;">How do you get topics to show here?</span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

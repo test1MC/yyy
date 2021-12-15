@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2300" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Feedback V2,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Server Import Data - UI</h2>
+        <p>This test plan will cover the UI&#160;associated with importing data from an existing Feedback Server SQL database into an established database. As opposed to importing a previous version database at the point of creating a new database (on the same machine), this process creates the new database first and then allows you to import the SQL&#160;database from any machine on the network.</p>
+        <h3>Importing the SQL Database</h3>
+        <p>If you are installing Feedback Server Admin over an existing install, you can import data from the previous installation at the point the new database is created. That process is covered in the test plan <MadCap:xref href="../Install SQL Database/Install SQL Database - UI.htm" target="" title="" alt="" class="TitleOnly">"Install SQL Database - UI"</MadCap:xref>. Alternatively, once you've set up a new database, you can import data from any database on the network by clicking the <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Button--ImportData.png" alt="" title="" /> button in the Standard Toolbar. This will invoke the <span class="UI">Select SQL Server and Database</span> dialog.</p>
+        <h4>Select SQL Server and Database dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--SelectSQLServerAndDatabase.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">SQL Server:&#160;</span>Displays a list of all instances of supported SQL&#160;and SQL&#160;Express available on the network. Select the instance that contains the SQL&#160;database you want to import.</li>
+            <li>
+                <p><span class="bold">Database: </span>Upon clicking this drop-down the first time, Feedback Server Admin will retrieve all appropriate database files and the following dialog will appear:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--RetrievingListOfDatabases.png" alt="" title="" />
+                </p>
+                <p><span class="bold">Cancel:&#160;</span>Cancels the process and closes the dialog.</p>
+                <p>Once this process complete, all "MadCapFeedbackServer" SQL&#160;databases attached to the selected SQL&#160;Server should appear in the Database drop-down.</p>
+            </li>
+            <li><span class="bold">OK:&#160;</span>Begins the import process. This button should be grayed out until both the SQL&#160;Server an Database fields above are populated.</li>
+        </ul>
+        <h4>Importing data</h4>
+        <p>Upon clicking OK&#160;in the <span class="UI">Select SQL Server and Database</span> dialog, the following warning should appear:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Alert--ImportDatabase1.png" alt="" title="" />
+        </p>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Yes:&#160;</span>Closes the warning and proceeds through the import process.</li>
+            <li>
+                <p><span class="bold">No: </span>Closes the warning and does not proceed through the import process.</p>
+            </li>
+        </ul>
+        <hr />
+        <p>Clicking Yes to the above warning will produce a second confirmation warning:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Alert--ImportDatabase2.png" alt="" title="" />
+        </p>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Yes:&#160;</span>Closes the warning and proceeds through the import process.</li>
+            <li>
+                <p><span class="bold">No: </span>Closes the warning and does not proceed through the import process.</p>
+            </li>
+        </ul>
+        <hr />
+        <p>Upon clicking Yes to the second warning, the following dialog will briefly appear:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--StoppingAppPool.png" alt="" title="" />
+        </p>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Cancel:&#160;</span>This button does nothing and will likely be removed. When it is, replace the screenshot and delete this text.</li>
+        </ul>
+        <hr />
+        <p>Feedback Server Admin will then produce a progress dialog:</p>
+        <p>(not available at this time; see bug 26637)</p>
+        <hr />
+        <p>Once the database has been successfully imported, the following confirmation dialog will appear:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Alert--DatabaseImportedSuccesfully.png" alt="" title="" />
+        </p>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and proceeds to restart the Feedback Service.</li>
+        </ul>
+        <hr />
+        <p>Upon clicking OK to the confirmation dialog above, the following dialog will briefly appear:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--StartingAppPool.png" alt="" title="" />
+        </p>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Cancel:&#160;</span>This button does nothing and will likely be removed. When it is, replace the screenshot and delete this text.</li>
+        </ul>
+        <hr />
+        <p>Once the above dialog disappears, Feedback Server is back up and running.</p>
+    </body>
+</html>

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="6231" MadCap:lastWidth="1077" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Tables - UI   </h2>
+        <h3>Opening the UI</h3>
+        <p class="bold">Insert Table Dialog:</p>
+        <ul class="checkbox">
+            <li>
+                <p>Tool Strip</p>
+                <ul>
+                    <li>!Table | Insert | Table</li>
+                    <li>Text Format Toolbar | Quick table drop-down menu</li>
+                </ul>
+            </li>
+            <li>Ribbon<ul><li>!Table | Insert Table </li><li>!Insert | Table </li></ul></li>
+        </ul>
+        <h3>UI</h3>
+        <h4>Insert Table Dialog General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---InsertTable---GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p><b>UI Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li><span class="bold">Table size</span>
+                <ul>
+                    <li><span class="bold">Number of columns: </span>Sets the number of columns in the table</li>
+                    <li><span class="bold">Number of rows: </span>Sets the number of standard rows in the table</li>
+                    <li><span class="bold">Number of header rows: </span>Sets the number of header rows in the table</li>
+                    <li><span class="bold">Number of footer rows: </span>Sets the number of footer rows in the table</li>
+                </ul>
+            </li>
+            <li><span class="bold">Table Caption</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Text: </span>Enter a caption for the table</li>
+                    <li><span class="bold">Side: </span>Select if the caption should display above or below the table. Select "(default)"&#160;to use the CSS&#160;setting.</li>
+                    <li><span class="bold">Repeat: </span>For print output, if a table crosses a page break, select the "Repeat"&#160;behavior of the caption. Select "(default)"&#160;to the use to CSS&#160;setting.</li>
+                    <li><span class="bold">Continuation: </span>When the caption repeats, you can add continuation content for each repeated instance of the caption. For example, you might enter " (Continued)" here. Select "(default)"&#160;to the use to CSS&#160;setting.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Summary field:</span> Allow you to add a summary to your table. The summary is not displayed in the <span class="UI">XML&#160;Editor</span> or the output, but is used by screen readers for accessibility.</li>
+            <li><span class="bold">AutoFit Behavior: </span>Select an autofit option<ul><li>AutoFit to contents: Table sizes based on the content in the cells</li><li>AutoFit to window: Choose what % of the window the table will take</li><li>Fixed column width: Assign a fixed size of a table</li></ul></li>
+            <li><span class="bold">Align: </span>Set the alignment of the table on the page</li>
+            <li><span class="bold">Table Style: </span>Allows you to add a table style template, a print style, or a CSS class to your table. This is covered in greater detail in the table style test plan.<ul class="checkbox"><li><p>Table Style: Lets you select from any Table Style contained in the project. Verify that Table Styles contained in different content locations appear in this drop-down.</p><p>NOTE:&#160;Selecting "(default)"&#160;here implies that you want to use the Table Style that is referenced for this table class from the project stylesheet. The project stylesheet contains a property called mc-table-style, however this feature has never worked. See bug 40802. </p></li><li>button:</li><li>Style Class:</li></ul></li>
+            <li><span class="bold">Text to Table: </span>Covered below</li>
+            <li><span class="bold">Preview: </span>Displays a preview of the table</li>
+        </ul>
+        <h4>Insert Table Dialog Border Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---InsertTable---BordersTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls:</p>
+        <ul>
+            <li><span class="bold">Outer Borders: </span>Set the length, color, and type of each border individually (Left, Right, Top, and Bottom)&#160;or all borders at the same time using the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /> button.</li>
+            <li><span class="bold">Border Radius: </span>Set how much rounding to be applied to a table  border corner (Left, Right, Top, and Bottom)&#160;or all border corners at the same time using the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" /> button. <span style="color: #0000ff;">(**See overflow**</span>)</li>
+            <li><span class="bold">Cell Border Collapse: </span>Select whether you want to collapse the cell borders in the table. If you collapse the cell borders, the row and cell borders of a table are joined in a single border. If you do not collapse the cell borders, the row and cell borders of a table are detached.</li>
+            <li><span class="bold">Cell Border Spacing: </span>Use this area to increase or decrease the amount of spacing for a cell border.</li>
+            <li><b>Advanced:</b>
+                <ul>
+                    <li><b>Hide bottom ruling when table crosses a page break:</b>
+                    </li>
+                </ul>
+                <ul class="checkbox">
+                    <li><b>True:</b> Will hide the bottom border when the table continues on another page</li>
+                    <li><b>False:</b> Default setting</li>
+                </ul>
+                <ul>
+                    <li><b>Overflow:</b> Determines what happens if the content overflows the table.</li>
+                </ul>
+                <ul class="checkbox">
+                    <li><b>Visible:</b> The overflow is not clipped. It renders outside the table. This is the default state.</li>
+                    <li style="font-style: normal;font-weight: normal;"><b>Hidden:</b> The overflow is clipped and the rest of the content will be invisible. (<span style="color: #0000ff;">**This must be set if using border-radius**</span>)</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Scroll:</b> The overflow is clipped, but a scroll-bar is added to see the rest of the content.</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Auto:</b> If overflow is clipped, a scroll-bar shoud be added to see the rest of the content.</li>
+                    <li style="font-style: normal; font-weight: normal;"><b>Inherit:</b> The value of the overflow property is inherited from the parent element.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Draw various sizes of tables with this toolbar button and make sure the number of columns and rows are correct in all outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Ribbon</h3>
+        <h4>!Insert | Table</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---DrawTableRibbon.png" alt="" title="" style="float: left;">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li><b>Icon Click:</b> Opens the Table properties dialog.</li>
+            <li><b>Drop-Down:</b> Opens the “Quick Table Draw” Dropdown.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Toolbar</h3>
+        <h4>!View | Toolbars | Text Format</h4>
+        <p class="bold">Quick Table Draw Dropdown</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---DrawTableToolbar.png" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <p>This allows you to visually decide how many rows and tables you want your table to be. Select boxes going down to add rows and select boxes going right to add columns.</p>
+            <p> <![CDATA[ ]]></p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Draw various sizes of tables with this toolbar button and make sure the number of columns and rows are correct in all outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Cell Backgrounds</h3>
+        <p>You can now set backgrounds (color, images) on specified cells within a table. Simply select one or more cells in a table, select !Home| Paragraph | button on the lower right hand side in the Ribbon view or Format&gt;Cell(s) in the Tool Strip, and click the Background tab. See Editing Table Cell Properties.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/cell_properties_dialog_example.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <h3>Convert Tables to Text and Text to Tables</h3>
+        <p>You can now convert tables to text and text to tables.</p>
+        <h4>Tables to Text</h4>
+        <p>If you have a table containing text, you can remove the table but keep the text. When doing this, you can choose how the converted text should be represented: paragraphs, separated with commas, separated with text.</p>
+        <h5>Tool strip mode !Table|Convert to text (Drop-down Menu)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TableToText.png" alt="" title="" style="mc-thumbnail: popup;" />
+        </p>
+        <p>&#160;</p>
+        <h5>Ribbon mode !Table|Convert to Text (Ribbon Button)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/Ribbon--TableToText.png" alt="" title="" />
+        </p>
+        <h4>Text to Tables</h4>
+        <p>If you have a series of paragraphs or some text separated by commas or other strings, you can quickly place all of it into a table. Select the content that you want to convert into a table and then go to the table menu and select insert table. In the insert table dialog select a text to table option:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TextToTable.png" style="width: 227px;height: 110px;mc-thumbnail: popup;" />
+        </p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Make sure you can convert text to table with all of the delimiters offered including a few custom ones</li>
+            </ul>
+        </div>
+        <h3>Table merging</h3>
+        <p>If you have two tables in a content file (e.g., topic, snippet) that are positioned one after the other, you can merge those tables so that they become one. You can do this by using the paste icon  that may appear to the right of the tables.</p>
+        <p>&#160;</p>
+        <p class="bold">How to merge tables:</p>
+        <p>1) Open the content file (e.g., topic, snippet).</p>
+        <p>2)Perform an action to display the paste icon. Usually this means removing content between two tables so that they become adjacent, or copying and pasting one table before or after another.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/MergeTable1.png" style="width: 128px;height: 76px;" />
+        </p>
+        <p class="TestCases">Test: select the &lt;p&gt; and delete it using the keyboard as well as by right clicking the structure bar and removing it that way. (currently in V7 using CTRL+X, or dragging the &lt;p&gt; to a new location will not bring of the merge icon.)</p>
+        <p class="TestCases">&#160;</p>
+        <p>3) Click the paste icon to the right of the tables.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/MergeTable2.png" style="width: 314px;height: 114px;" />
+        </p>
+        <p>4) Select the option that best suits your needs, depending on the type of action that you performed.</p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Merge Table Up:</span> Select this option to merge the tables, with the table on top having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Merge Table Down:</span> Select this option to merge the tables, with the table on the bottom having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Don't Merge Tables:</span> Select this option to allow the tables to appear one after the other, without being merged into one table.</li>
+            <li><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/MergeTable3.png" style="width: 367px;height: 81px;" />
+        </p>
+        <h3>Paste Options</h3>
+        <h4>Paste Icon</h4>
+        <p>A new paste icon  <img src="../../../../../Resources/Images/paste_btn2.jpg" />appears when you perform certain actions with tables. This icon allows you to specify how you would like to merge tables or paste content. You can also set the default behavior for similar actions in the future.</p>
+        <p>&#160;</p>
+        <h4>Convert Table to Text</h4>
+        <p>If you use the new "convert table to text" feature, a paste icon displays at the bottom. Following are the different options you can select from the paste icon. See Converting Tables to Text.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TableToTextPaste.png" style="width: 111px;height: 95px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Convert to Paragraphs:</span> Select this option to convert the content in each table cell into separate paragraphs.</li>
+            <li><span class="bold">Separate with Commas:</span> Select this option to convert the content in each table cell into text separated by commas.</li>
+            <li><span class="bold">Separate with Text:</span> Select this option to convert the content in each table cell into text separated by a text string that you specify (e.g., a semicolon).</li>
+            <li>
+                <p><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</p>
+            </li>
+        </ul>
+        <h4>Cut Columns</h4>
+        <p>If you cut entire columns in a table, a paste icon displays after the table. Following are the different options you can select from the paste icon. See Cutting Table Columns and Rows.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/CutColumn.png" style="width: 83px;height: 59px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Cut Columns:</span> Select this option to entirely cut the selected columns, removing both the columns and content from the table.</li>
+            <li><span class="bold">Cut Cell Contents:</span> Select this option to cut only the content from the selected columns, leaving the empty columns in the table.</li>
+            <li>
+                <p><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</p>
+            </li>
+        </ul>
+        <h4>Cut Rows</h4>
+        <p>If you cut entire rows in a table, a paste icon displays after the table. Following are the different options you can select from the paste icon. See Cutting Table Columns and Rows.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/CutRows.png" style="width: 86px;height: 60px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Cut Rows:</span> Select this option to entirely cut the selected rows, removing both the rows and content from the table.</li>
+            <li><span class="bold">Cut Cell Contents:</span> Select this option to cut only the content from the selected rows, leaving the empty rows in the table.</li>
+            <li>
+                <p><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Delete Content or Space Between Tables</h4>
+        <p>If you remove content or empty space between two tables so that the tables are positioned immediately after one another, a paste icon displays to the right. Following are the different options you can select from the paste icon.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TablePasteOptions.png" style="width: 100px;height: 91px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Merge Table Up:</span> Select this option to merge the tables, with the table on top having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Merge Table Down:</span> Select this option to merge the tables, with the table on the bottom having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Don't Merge Tables:</span> Select this option to allow the tables to appear one after the other, without being merged into one table.</li>
+            <li><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</li>
+        </ul>
+        <p class="note">Note: You cannot merge tables if the column count is different in them.</p>
+        <h4>Paste a Table Above or Below Another</h4>
+        <p>If you paste a table immediately above or below another table (or between two tables), a paste icon displays to the right. Following are the different options you can select from the paste icon.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TablePasteOptions.png" style="width: 100px;height: 91px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Merge Table Up:</span> Select this option to merge the tables, with the table on top having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Merge Table Down:</span> Select this option to merge the tables, with the table on the bottom having precedence. Therefore, the merged table will use the table style sheet from that table.</li>
+            <li><span class="bold">Don't Merge Tables:</span> Select this option to allow the tables to appear one after the other, without being merged into one table.</li>
+            <li><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</li>
+        </ul>
+        <h4>Paste Cells Within a Table</h4>
+        <p>If you copy cells from a table, then place your cursor within a table cell and paste the contents, a paste icon displays to the right. Following are the different options you can select from the paste icon. See Pasting Cells Within a table.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/TablePasteCells.png" style="width: 92px;height: 131px;" />
+        </p>
+        <ul style="list-style-type: circle;">
+            <li><span class="bold">Paste Cells:</span> Select this option to paste the copied cells, replacing the cells nearest to where you have placed your cursor.</li>
+            <li><span class="bold">Paste Table:</span> Select this option to paste the copied cells as a separate table. It will be placed within the cell where you have placed your cursor.</li>
+            <li><span class="bold">Paste (Above):</span> Select this option to paste the copied cells above the cell where you have placed your cursor.</li>
+            <li><span class="bold">Paste (Below):</span> Select this option to paste the copied cells below the cell where you have placed your cursor.</li>
+            <li><span class="bold">Paste (Left):</span> Select this option to paste the copied cells to the left of the cell where you have placed your cursor.</li>
+            <li><span class="bold">Paste (Right):</span> Select this option to paste the copied cells to the right of the cell where you have placed your cursor.</li>
+            <li><span class="bold">Set Default:</span> Select this option to open the Default Behavior dialog. Then choose the type of behavior you want to use automatically when performing this action in the future, and click OK.</li>
+        </ul>
+    </body>
+</html>

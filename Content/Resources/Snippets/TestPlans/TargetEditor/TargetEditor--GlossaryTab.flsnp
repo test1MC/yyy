@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="667" MadCap:lastWidth="1051">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Glossary Term Conversion: </span>Select the conversion behavior for glossary terms for this target.<ul style="list-style-type: square;"><li><span class="bold">Do not convert terms:&#160;</span>In the output, none of the glossary terms that appear in topics will be converted to hyperlinks, popups, or expanding text (even if a term was inserted into a topic as a glossary term link).</li><li><span class="bold">Convert only marked terms: </span>In the output, only glossary terms that were inserted into topics as glossary term links will be converted to hyperlinks, popups, or expanding text. Glossary terms that happen to exist in topics as normal text will not be converted.</li><li><span class="bold">Convert first occurrence of term:&#160;</span>In the output, only the first occurrence of a glossary term in a topic will be converted to a hyperlink, popup, or expanding text (per your instructions). This includes terms that were inserted as glossary term links, as well as glossary terms that happen to exist in topics as normal text.</li><li><span class="bold">Convert all occurrences of term: </span>In the output, every occurrence of a glossary term in a topic will be converted to a hyperlink, popup, or expanding text (per your instructions). This includes terms that were inserted as glossary term links, as well as glossary terms that happen to exist in topics as normal text.</li></ul></li>
+            <li>
+                <p><span class="bold">Select Glossaries to use… :&#160;</span>Lets you select one or more glossaries to include in the output. If no glossaries are selected, all are used.</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Glossary File:&#160;</span>Lists all glossary files included in the project. Click the check box next to each glossary that you want to include in the output for the target.</li>
+                </ul>
+                <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Glossary:&#160;</span>Opens the <span class="UI">Glossary Editor</span>, so that you can make changes to selected glossary file.</li>
+            <li><span class="bold">New Glossary… :&#160;</span>Opens the <span class="UI">Add Glossary</span> dialog so that you can create a new glossary file.</li>
+            <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp"><span class="bold">Glossary Master Page:&#160;</span>Select a master page to be associated with your glossary definitions. The master page will be used to display the glossary in the output.<ul style="list-style-type: square;"><li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title=""></img> :&#160;Opens the currently selected Master Page in the <span class="UI">XML Editor</span>.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:
+</p>
+            <ul class="checkbox">
+                <li>Glossary files</li>
+            </ul>
+        </div>
+    </body>
+</html>

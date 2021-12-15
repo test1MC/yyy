@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1049" MadCap:lastWidth="812" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h1>Merging</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li><span>There is no specific area set for Merging in the Bug Base.&#160; </span><span>Depending on the bug, merging bugs might be entered as a Target/Destination bugs, Output:[any output], or any element (glossary term, index keyword, etc.) that doesn’t work properly in the output of a merged project.</span>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description: </p>
+        <p>In Flare, you can merge separate projects together in the following ways:</p>
+        <ul>
+            <li><span class="bold">Merging Flare projects using targets </span>Use this merging method if you have access to all of the Flare project files to be merged. You can merge projects together by linking targets with the same output type (i.e., linking DotNet Help to DotNet Help, linking HTML Help to HTML Help, linking WebHelp to WebHelp). This is one of the easiest method to use for merging projects. </li>
+            <li><span class="bold">Merging output from HTML Help project</span>s Use this merging method if you are developing HTML Help and you want to merge the output files from your "master" project with the HTML Help output files from an external project. This method is useful, for example, if another author is working on the external HTML Help project to which you are linking and you only have access to the output CHM file (not the project files). <br /><span class="bold">Note:</span> You can also link to CHM files from the TOC in DotNet Help, WebHelp, WebHelp Plus, or WebHelp Mobile outputs.</li>
+            <li><span class="bold">Merging output from DotNet Help projects</span> Use this merging method if you are developing DotNet Help and you want to merge the output files from your "master" project with the DotNet Help output files from an external project. This method is useful, for example, if another author is working on the external DotNet Help project to which you are linking and you only have access to the output files (not the project files). </li>
+            <li><span class="bold">Merging output from Flare WebHelp projects</span> Use this merging method if you are developing one of the WebHelp outputs (WebHelp, WebHelp Plus, WebHelp AIR, WebHelp Mobile) and you want to merge the output files from your "master" project with the WebHelp output files from an external Flare project. This method is useful, for example, if another author is working on the external WebHelp project to which you are linking and you only have access to the output files (not the project files). </li>
+            <li><span class="bold">Merging output at runtime using WebHelp Plus</span> Use this merging method if you are developing WebHelp Plus and you are hosting the output files on a Web server running Microsoft IIS. This is an easy way to merge the output from multiple WebHelp Plus Flare targets into one Help system. These targets can be originated from the same Flare project or from different Flare projects. You simply place the output files in the correct location on the server (i.e., within your master project's AutoMerge folder). Flare then automatically merges the output from all of the targets when users access the Help. From the end user's perspective, the results are seamless, appearing as one large Help system. All of the TOCs, browse sequences, indexes, glossaries, and search capabilities for the projects are merged. </li>
+        </ul>
+        <p><span class="bold">Note:</span> If you are working with HTML Help and import a RoboHelp project that has been merged with other CHM files, the linked CHM files are placed in a special subfolder in the Content Explorer (Resources\CHMSupport). For more information, see Importing Tips.</p>
+        <p><span class="bold">Note:</span> If you want to create navigation links from content in one project to content in another project, see Inserting Links to External Files.</p>
+        <p><span class="bold">Note:</span> If you have previously merged Flare projects with WebHelp outputs and then decide to generate WebHelp Plus output from the master project instead, you must make sure that the "child" projects linked to the master contain at least one WebHelp Plus target each. Even if you keep the link from the master project to a WebHelp target in the child, the child project must also have a WebHelp Plus target.</p>
+        <p><span class="bold">Note:</span> If you merge projects, synonym files will remain separate in each project. For example, if you create synonyms in Project A but not in project B, only the topics from Project A will use the synonyms when users perform searches in the output.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li><a href="Merging - Targets.htm">Merging Flare Projects using Targets</a>
+            </li>
+            <li><a href="Merging - Web and DotNet Output.htm">Merging Compiled WebHelp&#160;and DotNet Output</a>
+            </li>
+            <li><a href="Merging - HTML Output.htm">Merging Compiled HTML&#160;Output</a>
+            </li>
+            <li><a href="Merging - Baseline.htm">Merging - Baseline</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li><a href="file://dc2/QA/Test Projects/Test Plan Projects/Merging/Merging" target="_blank">\\dc2\QA\Test Projects\Test Plan Projects\Merging\Merging</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+    </body>
+</html>

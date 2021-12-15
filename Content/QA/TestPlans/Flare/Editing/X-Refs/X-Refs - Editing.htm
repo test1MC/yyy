@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5457" MadCap:lastWidth="1088" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>X-Refs - Editing</h2>
+        <h3>Editing the text of a X-Ref</h3>
+        <p>A X-Ref gets its textual content from the text to which it links, and uses a style to set its format beyond that. Therefore you cannot edit the text of a X-Ref. Although it may be allowable in the <span class="UI">XML Editor</span>, when you build output, the X-Ref will update itself to the format and content reference to which it is set. </p>
+        <h3>Context menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/X-Refs/XRef--ContextMenu.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test copying and cutting a xref from one topic and pasting it into another topic in a different folder. Verify the link updates.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">Simple X-Ref with Screen Tip:</p><pre>&lt;MadCap:xref href="Topic.htm" target="" title="The screen tip" alt="The screen tip"&gt;See "Topic Title"&lt;/MadCap:xref&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Simple X-Ref to "Place in this Document":</p><pre xml:space="preserve">&lt;MadCap:xref href="#Heading2" target="" title="" alt=""&gt;See "Heading 2"&lt;/MadCap:xref&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">X-Ref With Bookmark, Target Frame, Class and Screen Tip:</p><pre>&lt;MadCap:xref href="Topic.htm#bookmark" target="_popup" title="The screen tip" alt="The screen tip" class="class"&gt;Link Text&lt;/MadCap:xref&gt;</pre>
+        <p>&#160;</p>
+    </body>
+</html>

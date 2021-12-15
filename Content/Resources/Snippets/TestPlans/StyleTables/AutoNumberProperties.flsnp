@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="252" MadCap:lastWidth="900">
+    <head>
+        <link href="../../../TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="width: 100%;mc-table-style: url('../../../TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XMLEditor" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelpMobile" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.DotNetHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.HTMLHelp" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Word" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.Frame" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.PDF" class="TableStyle-Basic-Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XPS" class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">AutoNumber</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p style="text-align: center;" class="styleTables">XML Editor</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML Help</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </td>
+                    <td class="TableStyle-Basic-HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">XPS</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--AutoNumber.McAutoNumberClass">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-auto-number-class: The span class for the generated auto-number.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--AutoNumber.McAutoNumberFormat">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-auto-number-format:&#160;The auto-number text format.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--AutoNumber.McAutoNumberOffset">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-auto-number-offset: Offset from left margin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1" MadCap:conditions="StyleTableRows--AutoNumber.McAutoNumberPosition">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-auto-number-position: Position of autonumber.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

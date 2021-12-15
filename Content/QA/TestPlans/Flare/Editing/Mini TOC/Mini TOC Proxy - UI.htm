@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="908" MadCap:lastWidth="800" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Mini-TOC Proxy - UI</h2>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Proxy | Insert Mini-Tic&#160;Proxy…</span> </li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert | Proxy |&#160;Mini-TOC Proxy</span> </li>
+        </ul>
+        <h3>MiniToc Proxy dialog - UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/MiniTOC/UI--MiniTOC Proxy.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>UI&#160;Controls</h4>
+        <ul class="checkbox">
+            <li><span class="bold">TOC Depth: </span>Sets the number of levels that you want to be included in the mini-TOC.</li>
+            <li><span class="bold">Stylesheet class: </span>Lets you select a class for the proxy.</li>
+        </ul>
+        <p class="note"> When generating print outputs, the generated mini TOC relies completely on the actual heading levels used in your content. For print outputs, TOC&#160;Depth establishes the greatest heading level that can appear in the generated mini TOC. So, if I&#160;place a mini-TOC proxy in a topic that begins with an h2 and I&#160;set the TOC&#160;Depth to 4, the generated mini TOC&#160;will display any &lt;h3&gt; and &lt;h4&gt; elements up to the next &lt;h2&gt;. It will not display &lt;h5&gt;, &lt;h6&gt;, etc.</p>
+        <p class="note">When generating web outputs, the generated mini TOC&#160;relies completely on the tree structure of you TOC&#160;file (in the TOC&#160;Editor). For web outputs, the mini TOC&#160;will only appear in topics that are associated with books. So, in the case of web output types, TOC&#160;Depth establishes the actual number of levels that can display in the generated mini TOC. For example, lets say my TOC&#160;file is set up such that I&#160;have a chain of 10 books, one inside the another. I&#160;add a mini-TOC&#160;Proxy with TOC&#160;Depth set to 2 to every topic in the chain. In the output, every one of the generated mini TOCs will contain two levels (except for the last two which don't have two levels within them to display).</p>
+        <p class="note">Additionally for web, if TOC Depth is set to 0, the output will generate as if it were set to 1.</p>
+        <p>&#160;</p>
+    </body>
+</html>

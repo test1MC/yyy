@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="733" MadCap:lastWidth="1044" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h1>Output Eclipse Help</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Output: Eclipse Help</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>Eclipse Help is an embedded format that is exclusively used within the Eclipse framework, requiring either a local or remote install of the Eclipse Help plug-in in order to host the content. This type of help is particularly useful for creating dynamic, searchable help content for Eclipse Workbench plug-ins.</p>
+        <p>Following are some of the key features of the Eclipse Help format.</p>
+        <ul>
+            <li>WebHelp features: This format lets you take advantage of several of the features and benefits available with the WebHelp output type.</li>
+            <li>Dynamic Help: This format allows content developers to provide context help that updates automatically in the Eclipse Dynamic Help view within the Eclipse IDE.</li>
+            <li>Help Index: This format will publish your glossary terms to the searchable index provided by the Eclipse Help system.</li>
+            <li>Local output: This format is also a good choice if you want users to store and open the output locally, rather than from a remote Infocenter server.</li>
+            <li>Single file: This format gives the content developer the option to archive output to a single file (.JAR).</li>
+        </ul>
+        <p>Eclipse Help is viewed utilizing an embedded Jetty server instance that ships with the Eclipse IDE, making it possible for the help developer to either utilize the local Eclipse install as a viewer, or to set up dedicated local or remote help server.</p>
+        <p>The Eclipse Help output consists of several XML files necessary to support hosting the Eclipse Help content via the Eclipse plug-in loader, using help extension plug-ins for Table of Contents, Glossaries and Context Sensitive Help as necessary. Locally installed content is typically distributed via Eclipse software "sites", which allow the user to download software through the "Install New Software" item in the Eclipse Help menu. The resulting output can either be distributed as-is, or bundled side-by-side with associated software plug-ins.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Output Eclipse Help - UI.htm" class="TitleOnly">Output Eclipse Help - UI</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Output Eclipse Help - Command Line.htm" class="TitleOnly">Output Eclipse Help - Command Line</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Output Eclipse Help - Output Files.htm" class="TitleOnly">Output Eclipse Help - Output Files</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Output Eclipse Help - Output Feature Checklist.htm" class="TitleOnly">Output Eclipse Help - Output Feature Checklist</MadCap:xref>
+            </li>
+            <li>
+                <p>
+                    <MadCap:xref href="Output Eclipse Help- Additional testing notes.htm"> Output Eclipse Help- Additional testing notes</MadCap:xref>
+                </p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>Java must be installed to view output (not required to build output)</li>
+            <li>Eclipse executable must be copied locally to view output (not required to build output)</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>Eclipse executable s (various versions):&#160;\\fs1\Software\Eclipse</li>
+            <li>Java (various versions):&#160;\\fs1\Software\Java</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>Working list of Eclipse supported features:&#160;\\fs1\qa\Test Projects\Test Plan Projects\Output Eclipse</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

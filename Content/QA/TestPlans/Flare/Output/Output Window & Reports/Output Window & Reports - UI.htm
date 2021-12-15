@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2495" MadCap:lastWidth="659" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Output Window &amp; Reports - UI</h2>
+        <h3>Generating Output</h3>
+        <p class="bold">To generate the output of the Primary Target:</p>
+        <p>Click Build Primary in the Project Toolbar</p>
+        <p>Press F6 on the keyboard</p>
+        <p>!Build |&#160;Build Primary</p>
+        <p>&#160;</p>
+        <p class="bold">To generate the output of any target:</p>
+        <p>Target Editor:&#160;Open the target you want to build. Click the Build button in the Target Editor's local toolbar.</p>
+        <p>Right-click the Target in the Project Organizer and select Build '[TargetName]'</p>
+        <p>Select a Target in the Project Organizer and !Build |&#160;Build</p>
+        <h4>Build Progress dialog</h4>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p class="bold">Messages tab:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Output Window &amp; Reports/UI--BuildProgress--MessagesTab.png" class="properties" style="mc-float: none;">
+                </img>
+            </p>
+            <p class="bold">Errors tab:</p>
+            <p class="bold">
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Output Window &amp; Reports/UI--BuildProgress--ErrorsTab.png" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Messages tab: </span>Displays messages from the generation of the target that was built.</li>
+            <li>
+                <p><span class="bold">Errors tab: </span>Displays errors that were encountered during the build process.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Description: </span>A description of each error is given.</li>
+                    <li><span class="bold">Subsystem: </span>The Subsystem where the error occurred.</li>
+                    <li><span class="bold">File: </span>The file which caused the error.</li>
+                    <li><span class="bold">Line: </span>The line number in the file where the error occurred.</li>
+                    <li><span class="bold">Char: </span>The character number (within the line) where the error occurred.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li>
+                <p><span class="bold">Save Log: </span>If the build finished and there are errors, this button will become active. Clicking it will create an error report or Log file (*.mclog) and save it to the project's Reports folder, and should produce the following alert:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Output Window &amp; Reports/Alert--LogFileSaved.png" />
+                </p>
+            </li>
+            <li><span class="bold">View Output: </span>Opens the generated output in the appropriate viewer.</li>
+            <li><span class="bold">Open Output Folder: </span>Opens the project's Output folder.</li>
+            <li><span class="bold">Close: </span>Closes the dialog.</li>
+        </ul>
+        <h4>Publishing Log dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/UI--PublishingLog.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Destination List: </span>Lists all Destinations to which content was published. Select a Destination in this column to display the corresponding log. If the output is published to multiple Destinations, verify that this list is sortable by clicking the column heading.</li>
+            <li>
+                <p class="bold">Action List</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Action: </span>Displays the action performed to each published file</li>
+                    <li><span class="bold">File: </span>Displays the filename of each published file</li>
+                    <li><span class="bold">Folder: </span>Displays the path to which each file is published</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Save Log File:&#160;</span>Saves an xml document ("UploadLog")&#160;to the projects Reports folder</li>
+            <li><span class="bold">Log created… :&#160;</span>Verify the created date displays correctly</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

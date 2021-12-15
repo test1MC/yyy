@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\jwulkowicz\My Documents\My Profiles\MyProfile.capro" ProfileHash="8d88eba1588be24a17668dbed0c622b2" ScreenRectangle="3018,182,22,22">
+        <OriginalImage FileName="MyProfile {n}" medium_print_EnableFormat="false" BorderWidth="0" ImageScaleFactor="1.0" Border="solid" PaddingLeft="0" PaddingBottom="0" PaddingRight="0" PaddingTop="0" EnableGrayScaleFormat="False" BackgroundType="Solid" EnableCropRectangle="false" EffectEdges="left,right,top,bottom" BackgroundColor="#008000" Right="0" Bottom="0" Folder="" MinWidth="0" MinHeight="0" EnableShadow="false" ImageBlurFactor="10" ComputedWidth="22" ComputedHeight="22" Format="tiff">SUkqANYCAACAOF3P9/wKCQaCwOEweFQiHQ2IQyJQuKQ+JxaKwpvux/P+Nx2Px6OSKQSOQyeTSmSyuSS2USyXy6Rt2ZzWOzSbzZ/zidzqeT+fUGc0Oe0SgR1tuukUp/0mOgCoU2mU6pUurVWsVStUxMplOv+oAB/12v1ur2Z/tl0x21U+o2GwVG22m13S2XW53m8Xu3WKCWK4Xq74O7P9ruiO4fE4i42LFYbGY/JZHKYvLZCO2TG2OvZjPZPLtVzv1/6LSabS6PU6fVajXa3YazZP9V7V/mNmR0i7vV73X7PUNNy6ThcThv/i8jj8nmcvncboP/dkXb7nqx3aqvldHm9zjtHv+HSZq4ZrwaTzv/0+So5rcR339fpbz0/Xxer7s9yaT9fz9s2v7Num2jbQGuEArg+MFOs7J/v7Bz/wfCUIv+ZpxH4f8LQxDTOK+8rOwW+DrPYsT3OtEL5upDkVwvDMWxZDBlnDGMZn/GUaRxFL5RRHkTx9ETsNtG8bRrIcjSLGpim4fR/yVJknSbJcoyfKUGx7IEdx++UByhLspS9KkmF+bB8H/McyzPM0yTVNE1zTAcryzLESQ7Nk7TTPE1lyaZ7H/Pc+z/P0+UFQFB0DQMrS1OMDrAzdD0NSFCz6WRnHmf9KUtTFL0rTdM05TVQU5OFFS1OjNVDT1U06f5WGSeVWVdWFX1bWdY1pWVcVvW9TM7AddVtYFa2FXNYlMYp3n/Y1kWVZNj2bZdnWZaVo2dRjAKjadoW1Z9uWzbhQGCdp/3BcVyXHcNz3LdFzXZdd0V4r923Ved03reV6k0Xh1n/fN937fl9YBf2A3/guCYPgeE4FheDYVhuGYCShbnSf+JYpi2K4njOL41jGPY7kGOZFjeSY/keTZLjRGlkcx/5XluX5dlmZZhmeY5vm2c5rneaZ7nGeZ/n2ZoCAYAAAAAEAAABgAAAAAQAAAAgACAAIAAgAEAD+AAQAAQAAAAAAAAAAAQMAAQAAABYAAAABAQMAAQAAABYAAAACAQMABAAAAM4CAAADAQMAAQAAAAUAAAAGAQMAAQAAAAIAAAARAQQAAQAAAAgAAAAVAQMAAQAAAAQAAAAWAQQAAQAAABYAAAAXAQQAAQAAALYCAAAaAQUAAQAAAL4CAAAbAQUAAQAAAMYCAAAcAQMAAQAAAAEAAAAoAQMAAQAAAAIAAAA9AQMAAQAAAAEAAABSAQMAAQAAAAIAAAAAAAAA</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="55" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="dd" Comment="">qqq</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

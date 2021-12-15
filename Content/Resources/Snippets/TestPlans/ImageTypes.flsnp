@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="407" MadCap:lastWidth="1504">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li>BMP</li>
+            <li> EMF</li>
+            <li> EPS</li>
+            <li>EXPS</li>
+            <li>GIF</li>
+            <li>HDP</li>
+            <li>JPG</li>
+            <li>JPEG</li>
+            <li>PNG</li>
+            <li>PS</li>
+            <li> SVG</li>
+            <li>SWF</li>
+            <li> TIF</li>
+            <li> TIFF</li>
+            <li> WDP</li>
+            <li> WMF</li>
+            <li> XAML</li>
+            <li> XPS</li>
+        </ul>
+        <p class="note">Refer to the Images test plan to see what types of images don't render in the XML editor or outputs</p>
+    </body>
+</html>

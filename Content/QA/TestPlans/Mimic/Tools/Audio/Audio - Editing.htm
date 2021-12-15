@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2354" MadCap:lastWidth="983" MadCap:conditionTagExpression="include[Default.UITestsDialogs] " MadCap:ignoredWords="Playhead" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head>
+    </head>
+    <body>
+        <h2>Audio - Editing </h2>
+        <h3>Opening the Audio Tab:</h3>
+        <p class="bold">Opening the Editing Tool:</p>
+        <ol>
+            <li style="font-weight: normal;">Open the Audio tab <MadCap:xref href="Audio - UI.htm" target="" title="" alt="">See Audio - UI  </MadCap:xref></li>
+            <li> Click the <span class="bold">Edit </span>button (a sound must be selected first)</li>
+        </ol>
+        <h3>UI - Creating and Editing Conditions:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Editor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>Name of the sound will be shown in the title bar</p>
+                </li>
+                <li><span class="bold">OK:</span>&#160;Closes dialog saving changes to the waveform</li>
+                <li><span class="bold">Cancel:</span>Closes the dialog without saving changes to the waveform</li>
+                <li><span class="bold">Toolbar Items:</span>
+                    <ul style="list-style-type: square;">
+                        <li><span class="bold">Copy:</span>Copies the waveform, or the selected area</li>
+                        <li><span class="bold">Cut:</span>Cuts the selected area of the waveform, adding it to the clipboard</li>
+                        <li><span class="bold">Paste:</span>Pastes copied/cut content from the clipboard at the insertion area</li>
+                        <li><span class="bold">Play/Pause: </span>Will play the audio of the waveform.<ul style="list-style-type: square;"><li>Changes to <span class="bold">Pause </span>while sound is playing. Pressing it will pause the audio.</li><li>While paused, button changes to <span class="bold">Play</span>.&#160;Will play the audio when pressed.</li><li>If a portion of the waveform is selected, <span class="bold">Play </span>will only play that selection</li></ul></li>
+                        <li><span class="bold">Stop: </span>Stops the playback of the waveform, returning the position line to the beginning</li>
+                        <li><span class="bold">Insert Silence...: </span>Opens the <span class="bold">Insert Silence </span>dialog.<br /></li>
+                        <li><span class="bold">Record...:</span> Opens the <span class="bold">Record </span>dialog. <MadCap:xref href="Audio - Recording.htm" target="" title="" alt="">See Audio - Recording </MadCap:xref><ul style="list-style-type: square;"><li>Will insert the new recording at the position line</li></ul></li>
+                        <li><span class="bold">Adjust Volume...:</span> Opens the <span class="bold">Adjust Volume</span> dialog.</li>
+                        <li><span class="bold">Zoom in:&#160;</span>Will zoom into the waveform<ul style="list-style-type: square;"><li>Mouse Wheel up will also accomplish this</li></ul></li>
+                        <li><span class="bold">Zoom out: </span>Will zoom out of the waveform<ul style="list-style-type: square;"><li>Mouse Wheel down will also accomplish this task</li></ul></li>
+                    </ul>
+                </li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <hr>
+        </hr>
+        <h4>Insert Silence</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Insert_Silence.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">Duration: </span>Sets the amount of silence that will be inserted.</p>
+                </li>
+                <li><span class="bold">Position:</span> sets the insertion point for the silence.<ul style="list-style-type: square;"><li><span class="bold">Current Selection: </span>Inserts a silence over the current selection (will ignore the duration setting)</li><li><span class="bold">Playhead position: </span>Inserts a silence at the playhead position of the duration set</li><li><span class="bold">Start of Audio:&#160;</span>Inserts a silence at the start of the audio for the duration set</li><li><span class="bold">End of Audio: </span>Inserts a silence at the end of the audio for the duration set</li></ul></li>
+                <li><span class="bold">OK:</span> Closes the dialog and inserts silence into the waveform, with the chosen settings</li>
+                <li><span class="bold">Cancel: </span>Closes the dialog discarding any silence changes</li>
+            </ul>
+            <p class="bold">Dialog Test Cases:</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Adjust Volume</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Adjust_Volume.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">Volume: </span>Adjusts the volume of the waveform or the selected area of the waveform</p>
+                </li>
+            </ul>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Play/Pause: </span>Will play the audio of the waveform.<ul style="list-style-type: square;"><li>Changes to <span class="bold">Pause </span>while sound is playing. Pressing it will pause the audio.</li><li>While paused, button changes to <span class="bold">Play</span>.&#160;Will play the audio when pressed.</li><li>If a portion of the waveform is selected, <span class="bold">Play </span>will only play that selection</li></ul></li>
+                <li><span class="bold">Stop: </span>Stops the playback of the waveform</li>
+                <li><span class="bold">Normalize: </span>Boosts audio level to maximum levels without clipping</li>
+                <li><span class="bold">Dynamics: </span>Boosts the "quiet" portions of the audio. Use ratio and threshold sliders to determine what constitutes as "quiet".<ul style="list-style-type: square;"><li><span class="bold">Threshold: </span>Specifies the "non-quiet" portion.</li><li><span class="bold">Ratio:&#160;</span>Specifies how much the "non-quiet" portion of the audio will be compressed.<br /></li></ul></li>
+            </ul>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">OK:</span> Closes the dialog and inserts silence into the waveform, with the chosen settings</li>
+                <li><span class="bold">Cancel: </span>Closes the dialog discarding any silence changes</li>
+            </ul>
+            <p class="bold">Dialog Test Cases:</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="95" MadCap:lastWidth="1188">
+    <body>
+        <p>Test renaming the following Linked To files, and make sure that when the associated links are updated, verify that the XML&#160;editor for this file remains unchanged and does not unnecessarily break into multiple lines:</p>
+        <ul class="checkbox">
+            <li>Topic</li>
+            <li>Snippet</li>
+            <li>Rest of this list TBD</li>
+        </ul>
+    </body>
+</html>

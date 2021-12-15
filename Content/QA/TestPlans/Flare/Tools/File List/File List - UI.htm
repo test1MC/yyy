@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5268" MadCap:lastWidth="1230" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>File List - UI</h2>
+        <h3>Opening the File List</h3>
+        <ul class="checkbox">
+            <li>Keyboard: Press <span class="KeyboardShortcut">CTRL</span> + <span class="KeyboardShortcut">Shift</span> + <span class="KeyboardShortcut">J</span></li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;File List</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!View |&#160;File List</span></li>
+        </ul>
+        <h3>File List - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/FileList/FileList---DefaultView.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar and Columns</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/FileList/FileList---MDIViewAllColumns.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ColumnsShowHide.png" />Columns… (Show/Hide Columns):&#160;</span>Opens the <span class="UI">Columns</span> dialog which lets you customize the column order and whether or not each column is shown.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" style="mc-tag-and-class: ;" /> (Open):&#160;</span>Opens the selected file.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" style="mc-tag-and-class: ;" /> (Run Properties dialog for this item):&#160;</span>Opens the <span class="UI">Properties</span> dialog for the selected file.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" style="mc-tag-and-class: ;" /> (Refresh):&#160;</span>Refreshes the list of files in the File List.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ExportDataToCSV.png" style="mc-tag-and-class: ;" /> (Export the data to a CSV file):&#160;</span>Invokes a <span class="UI">Save As</span> dialog which lets you save the full <span class="UI">File List</span> (all columns for all files which are currently displayed) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ExportSelectionToCSV.png" style="mc-tag-and-class: ;" /> (Export the selected data to a CSV&#160;file):</span> Invokes a <span class="UI">Save As</span> dialog which lets you save the currently selected set of files from the <span class="UI">File List</span> (all columns for all files which are currently selected) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+            <li>
+                <p><span class="bold">Filter:&#160;</span>Lets you filter the visible files in the <span class="UI">File List</span> to a particular file type. Verify all files listed are correct and that any new Content file types are added.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---FileFilter.png" class="border" />
+                </p>
+            </li>
+        </ul>
+        <hr />
+        <p class="bold">File List grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Shows the name of the  file.</li>
+            <li><span class="bold">Path: </span>Shows the location of the content file within the project.</li>
+            <li><span class="bold">Size:&#160;</span>Shows the size of the file.</li>
+            <li><span class="bold">Date Modified:&#160;</span>Shows the date and time the file was last modified.</li>
+            <li><span class="bold">Status: </span>If the project is bound to source control, this column displays the current status of the content file.</li>
+            <li><span class="bold">User: </span>If the project is bound to source control, and the file is checked out, this column will display the user who has the file checked out.</li>
+            <li><span class="bold">Title: </span>(Topic files only)&#160;Shows the Topic Title as set in the Topic <span class="UI">Properties</span> dialog.</li>
+            <li><span class="bold">Description:&#160;</span>(Topic files only) Shows the Topic Description as set in the Topic <span class="UI">Properties</span> dialog.</li>
+            <li><span class="bold">Class: </span>Shows the html class for a topic file.</li>
+            <li><span class="bold">Stylesheet:&#160;</span>(Topic files only)&#160;Shows the linked stylesheet for a topic file.</li>
+            <li><span class="bold">Conditions:&#160;</span>Shows any conditions applied to the file.</li>
+            <li><span class="bold">Language:&#160;</span>(Topic files only) Shows the language of the file.</li>
+            <li><span class="bold">Searchable: </span>Shows the "Searchable"&#160;status of a topic file as set in the Topic Properties dialog.</li>
+        </ul>
+        <p class="bold">Additional Columns</p>
+        <p style="margin-left: 10pt;">If you create File Tag Sets in your project, a unique column will appear in the File List for each File Tag Set in your project, so there could be several of these.</p>
+        <ul class="checkbox">
+            <li><span class="bold">[Tag Type]:[File Tag Set Name]: </span>Displays any File Tags applied to the file for the File Tag Set specified.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h4>Right-Click Menu</h4>
+        <p>Right-clicking a file in the <span class="UI">File&#160;List</span> should produce the following menu:</p>
+        <p class="bold"><span class="UI">File List</span> right-click menu (single file):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/FileList/FileList---RightClickMenu.png" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <ul class="checkbox">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Preview:</span>&#160;Opens a Preview of the selected content file (Only active for topic files)</li>
+                <li><span class="bold">Open:</span> Opens the selected Content file in the <span class="UI">MDI</span></li>
+                <li><span class="bold">Open with:</span> Gives options to open the Content file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application</li>
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan)</li>
+                <li><span class="bold">Delete:</span> Removes the selected Content file from the project</li>
+                <li><span class="bold">Rename:</span> Allows you to rename the Content file</li>
+                <li><span class="bold">Export to CSV:&#160;</span>Invokes a <span class="UI">Save As</span> dialog which lets you save the full <span class="UI">File List</span> (all columns for all files which are currently displayed) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+                <li><span class="bold">Export selection to CSV:&#160;</span>Invokes a <span class="UI">Save As</span> dialog which lets you save the currently selected set of files from the <span class="UI">File List</span> (all columns for all files which are currently selected) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+                <li><span class="bold">Edit With MadCap Capture:</span>&#160;Opens the selected image file in MadCap Capture (Menu option only present for image files)</li>
+                <li><span class="bold">Convert to XML...:&#160;</span>(Only active for non-XML&#160;topic files) Invokes the <span class="UI">HTML -&gt; XHTML Conversion</span> dialog which lets you convert non-XML&#160;topic files to XML.</li>
+                <li><span class="bold">Properties:</span> Opens the Properties dialog window for the selected file</li>
+                <li><span class="bold">View&#160;Links:</span> Opens the file in the <span class="UI">Link Viewer</span></li>
+                <li><span class="bold">Locate in TOC:</span> Locates the Content file in the TOC</li>
+                <li><span class="bold">Locate in Explorer:</span> Locates the Content file in the <span class="UI">Content Explorer</span></li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p class="bold"><span class="UI">File List</span> right-click menu (multiple files selected):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/FileList/FileList---RightClickMenuMulti.png" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <ul class="checkbox">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan)</li>
+                <li><span class="bold">Cut, Copy and Paste:&#160;</span>Options should always be disabled (Someday should be removed; see bug 77258).</li>
+                <li><span class="bold">Delete:</span> Removes the selected Content file from the project.</li>
+                <li><span class="bold">Export to CSV:&#160;</span>Invokes a <span class="UI">Save As</span> dialog which lets you save the full <span class="UI">File List</span> (all columns for all files which are currently displayed) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+                <li><span class="bold">Export selection to CSV:&#160;</span>Invokes a <span class="UI">Save As</span> dialog which lets you save the currently selected set of files from the <span class="UI">File List</span> (all columns for all files which are currently selected) to a comma delimited text file (*.csv)&#160;or a tab delimited text file (*.txt).</li>
+                <li><span class="bold">Convert to XML...:&#160;</span>(Only active if all selected files are non-XML&#160;topic files) Invokes the <span class="UI">Convert Files to XML Wizard</span> which lets you convert non-XML&#160;topic files to XML.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected files</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Columns dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/FileList/FileList---ColumnsDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Move Up:&#160;</span>Moves the selected row(s) up in the sequence which in turn moves the corresponding column to the left in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Move Down: </span>Moves the selected row(s) down in the sequence which in turn moves the corresponding column to the right in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Reset to Factory Settings... :&#160;</span>Removes all custom column settings and restores factory defaults.</li>
+        </ul>
+        <p class="bold">Columns dialog grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Show: </span>Lets user show/hide the associated column in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Column: </span>Displays the name of each column that can be displayed in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Width: </span>Lets user set the width in pixels of each column in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Color: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set the font color for each column in the <span class="UI">File List</span>.</li>
+            <li><span class="bold">Background: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set a background color for each column in the <span class="UI">File List</span>.</li>
+        </ul>
+        <p class="bold">Grid Test Cases</p>
+        <ul class="checkbox">
+            <li>Columns dialog columns should not be sortable</li>
+            <li>Columns dialog columns should not be resizable</li>
+            <li>Columns dialog columns cannot be moved by clicking on a column heading and dragging</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Columns dialog rows should not be able to be multi-selected with Shift- or CTRL-click</li>
+            <li>If file tag Sets are used in the project, verify that those files appear as rows in the Columns dialog for the File List</li>
+        </ul>
+        <h3>Link Update dialog - UI&#160;Test Cases</h3>
+        <p>Any renaming or deletion of content files that affects links (either in the affected content files or files that link to them) should open the Link Update dialog.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/Dialog--LinkUpdate.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Update Links:&#160;</span>Completes the changes and updates all of the links in the affected files.</li>
+            <li><span class="bold">Do Not Update Links: </span>Completes the changes, but does not update all of the links in the files in question. If you select this option, you must manually fix or remove the links in affected files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes this dialog and does not make the requested changes to the files.</li>
+        </ul>
+        <p class="bold">Link Update grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Writable/Checked Out: </span>A check mark appears in the "Checked Out" box if the project is bound to a source control application and you currently have the file checked out.
+
+A check mark appears in the "Writable" box if the project is not bound to a source control application and the file is not marked as "Read Only" in its properties dialog. 
+
+A check mark in either box indicates that you are allowed to make changes to the file.</li>
+            <li><span class="bold">File:&#160;</span>Displays the name of each file containing a link to the file in question.</li>
+            <li>
+                <p><span class="bold">Path:&#160;</span>Displays the location of each file in the project.</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <h3>Keyboard Navigation</h3>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">Enter</span> opens the selected file in the correct editor</li>
+            <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node</li>
+            <li><span class="KeyboardShortcut">Left Arrow </span>and <span class="KeyboardShortcut">Right Arrow</span> move the focus to the adjacent cells within a row</li>
+            <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the <span class="UI">File List</span> a page at a time up or down</li>
+            <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first cell or the very last cell in a row</li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Home</span> and <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">End</span> will move the selection to the top or bottom of the <span class="UI">File List</span></li>
+            <li><span class="KeyboardShortcut">Insert</span> does nothing</li>
+            <li><span class="KeyboardShortcut">Delete</span> removes the selected file or folder from the project</li>
+            <li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Up Arrow</span> expands the selection up one row</li>
+            <li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Down Arrow</span> expands the selection down one row</li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Up Arrow</span> moves the selection to the top of the <span class="UI">File List</span></li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Down Arrow</span> moves the selection to the end of the <span class="UI">File List</span></li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Up Arrow</span> expands the selection to include the current file up to the top of the <span class="UI">File List</span></li>
+            <li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Page Up</span> expands the selection up one page</li>
+            <li><span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Page Down</span> expands the selection down one page</li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">Down Arrow</span> expands the selection to include the current file to the end of the <span class="UI">File List</span></li>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">A</span> selects all files in the <span class="UI">File List</span></li>
+            <li>Typing (A-Z, 0-9)&#160;will scroll to and select the first file that begins with the character you type. Typing multiple characters quickly will scroll further. For example, typing 'M' might scroll to MadCap.htm. If you then type 'I' quickly enough, the file list will scroll to Mimic.htm as opposed to scrolling to a topic that begins with an 'I'.</li>
+        </ul>
+        <h3>Drag &amp; Drop</h3>
+        <p class="note">All Drag &amp;&#160;Drop functionality out of the File List requires that you click on and drag the file(s)&#160;from the Icon column.</p>
+        <h4>Single topic selection into XML&#160;Editor</h4>
+        <ul class="checkbox">
+            <li>Into white space: Launches the Hyperlink Dialog with selected file in the Topic field – Inserts Hyperlink using file name as the text</li>
+            <li>Onto a text selection: Launches the Hyperlink Dialog with selected file in the Topic field – Inserts Hyperlink using selection as the text</li>
+            <li>Test dragging into and onto various elements (Lists, tables, cells, etc…) – the results should be desirable</li>
+        </ul>
+        <h4>Multiple topic selection into XML&#160;Editor</h4>
+        <ul class="checkbox">
+            <li>Into white space: Launches the Related Topics Dialog with selected files in the Topic field – Inserts the control</li>
+            <li>Onto a selection: Launches the Related Topics Dialog with selected files in the Topic field – Splits the text and inserts the control</li>
+            <li>Test dragging into and onto various elements (Lists, tables, cells, etc…) – the results should be desirable</li>
+        </ul>
+        <h4>Single file selection (Image, Snippet, Echo file) into XML Editor</h4>
+        <ul class="checkbox">
+            <li>Into white space: Launches the Insert Image/Snippet/Audio Link Dialog with selected file in the linked file field</li>
+            <li>Onto a text selection: Launches the Insert Image/Snippet/Audio Link Dialog with selected file in the linked file field – replaces text selection</li>
+            <li>Test dragging into and onto various elements (Lists, tables, cells, etc…) – the results should be desirable</li>
+        </ul>
+        <h4>Single or Multiple topic selection into TOC&#160;Editor or Browse Sequence Editor</h4>
+        <ul class="checkbox">
+            <li>Creates a page node to the selected item – Uses the Topic Title or the First Heading in the topic as the node label</li>
+        </ul>
+        <h3>Cut, Copy and Paste</h3>
+        <ul class="checkbox">
+            <li>There is currently no Cut, Copy or Paste functionality implemented for the File List.</li>
+        </ul>
+    </body>
+</html>

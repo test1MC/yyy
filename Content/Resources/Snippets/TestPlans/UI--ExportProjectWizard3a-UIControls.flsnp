@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="563" MadCap:lastWidth="810">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Condition Tag Sets: </span>Displays a list of all Condition Tag Sets in the project.</li>
+            <li>
+                <p><span class="bold">Condition Tags:&#160;</span> </p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Condition Tags:&#160;</span>Displays a list of all condition tags included in the Condition Tag Set selected on the left. Use the check box to apply these conditions to the selected item(s).</li>
+                    <li><span class="bold">(Checkbox):&#160;</span>Displays whether or not the condition tag is applied to the selected item(s)</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment as it is entered for that condition tag in the Condition Tag Set.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Set:&#160;</span>Open the selected Condition Tag Set in the <span class="UI">Condition Tag Set Editor</span>.</li>
+            <li><b>Basic:</b> Select the basic mode.</li>
+            <li><b>Advanced:</b> Select the advanced mode where it enables the text area for users to specify custom conditions.</li>
+            <li><b>Quick Help:</b> Invokes a pop up that shows tips and samples.</li>
+            <li><b>Text Area :</b> Display the  conditions selected for basic mode or editable text area where users can input specific conditions for advanced mode.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Export Project Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Export Project Wizard</span>.  (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Export Project Wizard</span>, invokes the <span class="UI">Export Progress</span> dialog and proceeds to import the Project files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Export Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

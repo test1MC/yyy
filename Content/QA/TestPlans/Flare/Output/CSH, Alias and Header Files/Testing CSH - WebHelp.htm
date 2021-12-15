@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="999" MadCap:lastWidth="783" MadCap:fileTags="AuthorFileTagSet.Jay,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Testing CSH - WebHelp</h2>
+        <p>This document will allow testing of CSH&#160;calls to a WebHelp project with minimal CSH&#160;knowledge needed. </p>
+        <h3>Test&#160;Files</h3>
+        <p>Copy down these test files locally for testing. </p>
+        <ul style="list-style-type: square;">
+            <li>CSH_Testing Flare Project :<ul style="list-style-type: square;"><li>\\Dc2\qa\Test Projects\Test Plan Projects\CSH\CSH&#160;Project\CSH_Testing\</li></ul></li>
+            <li>CSH_Calls.htm file :<ul style="list-style-type: square;"><li>\\Dc2\qa\Test Projects\Test Plan Projects\CSH\Web CSH Testing\</li></ul></li>
+        </ul>
+        <h3>Compile and Testing</h3>
+        <ol>
+            <li>Open the project in Flare</li>
+            <li>Generate WebHelp</li>
+            <li>Copy the CSH_Calls.htm file from above into the root webhelp output folder (where Default.htm is located)</li>
+            <li>Open the CSH_Calls.htm file in IE, FireFox and Chrome*</li>
+            <li>Click on each link, comparing each output to the <span class="bold">Expected Result:</span> section of each link</li>
+            <li>All links are currently working as advertised. Any link that does not open, in the manner described, is a bug</li>
+        </ol>
+        <p>&#160;</p>
+        <p>*Chrome support is currently very limited. Verify with the QA&#160;lead what results should be expected.</p>
+        <h3>Accomplished Test&#160;Cases</h3>
+        <p>Verifying the above links will accomplish the following testing scenarios. (<span class="bold">Note: This is for internal QA&#160;auditing purposes only, you do not need to do this step</span>)</p>
+        <p>Note: Using the internal tester will only verify ID Name +&#160;Specified skin</p>
+        <p>&#160;</p>
+        <p>This only fulfills testing local CSH&#160;calls.</p>
+        <h4>HTM&#160;Links</h4>
+        <ul>
+            <li>ID Name</li>
+            <li>ID #</li>
+            <li>Topic Link</li>
+            <li>ID&#160;# +&#160;Specify Skin</li>
+            <li>ID Name +&#160;Specify Skin</li>
+            <li>Valid Search +&#160;ID #</li>
+            <li>Valid Search&#160;+&#160;FirstPick + ID #</li>
+            <li>Invalid Search +&#160;FirstPick +&#160;ID Name</li>
+            <li>Valid Search +&#160;FIrstPick +&#160;ID #</li>
+            <li>Valid ID&#160;Name with no topic associated</li>
+            <li>ID # to a root topic</li>
+            <li>Null Test</li>
+        </ul>
+        <h4>Java Script Links</h4>
+        <ul>
+            <li>ID #</li>
+            <li>ID Name</li>
+            <li>Topic Link +&#160;Specify Skin</li>
+            <li>ID # +&#160;Specify Skin</li>
+            <li>ID Name +&#160;Specify Skin</li>
+            <li>ID # +&#160;Valid Search</li>
+            <li>ID # +&#160;Valid Search +&#160;FirstPick</li>
+            <li>ID Name&#160;+ Invalid Search +&#160;FirstPick</li>
+            <li>Valid ID&#160;Name with no topic associated</li>
+            <li>Null Test</li>
+        </ul>
+    </body>
+</html>

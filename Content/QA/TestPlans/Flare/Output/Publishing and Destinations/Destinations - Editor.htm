@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2185" MadCap:lastWidth="979" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Destination] exclude[Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Destinations - Editor</h2>
+        <h3>Opening a Destination File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span>:&#160;In the Publishing tab of the <span class="UI">Target Editor</span>, select a Destination and click the "Edit Destination"&#160;button.</li>
+            <li><span class="UI">Publish Target </span>dialog:&#160;Initiate the publishing process to open the <span class="UI">Publish Target</span> dialog, select a Destination and click the "Edit Destination"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Destination Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/DestinationEditor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Type: </span>Select either FTP or File System or SFTP, depending on which method you want to use to publish the output files</li>
+            <li><span class="bold">Host Name: </span>Enter the name of the remote server or the computer where the output files will be published. If you use the File System type, this field is disabled.</li>
+            <li><span class="bold">Port: </span>Select the port that you will use to connect to the remote server.</li>
+            <li><span class="bold">Login Credentials… : </span>Select this button to open the <span class="UI">Log In</span> dialog.</li>
+            <li><span class="bold">Anonymous Login: </span>Select this check box if you want to publish to the server without being required to enter a user name or password.</li>
+            <li><span class="bold">Directory: </span>Enter the exact location where the output files will be published.</li>
+            <li><span class="bold">Browse… : </span>If you use the File System type, you can click this button to select a location.</li>
+            <li><span class="bold">Comment: </span>You can use this field to provide a description of the destination so that its purpose is clear.</li>
+            <li><span class="bold">"View"&#160;Url: </span>You can enter an http address in this field to be used for viewing the published files.</li>
+            <li><span class="bold">Upload Log File:</span>Select this to upload the log file<ul style="list-style-type: square;"><li><span class="bold">Update Only Changed Files: </span> Select this option if you want Flare to republish only the files that have changed. This can save significant time.</li><li><span class="bold">Remove Stale Files: </span>Select this option if you want Flare to identify files that were previously published but are no longer needed. Flare will then remove such files from the destination during the publishing process. </li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Log In dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Publishing and Destinations/UI--LogOnAsDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Server:</span> Displays the server where the output is being published.</li>
+            <li><span class="bold">User name: </span>Enter the appropriate user name to access the server.</li>
+            <li><span class="bold">Password:&#160;</span>Enter the appropriate password to access the server.</li>
+            <li><span class="bold">Save password:&#160;</span>Select to automatically save your password</li>
+        </ul>
+        <h3>Destination Editor - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <p>N/A</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p>N/A</p>
+        <h4>Deleting</h4>
+        <p>N/A</p>
+        <h4>Tooltips</h4>
+        <p>There are no tooltips in the Destination Editor</p>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags cannot be applied to anything within a Destination file. Conditional Tags can be applied to the actual Destination file (*.fldes), however, as of Flare V5, this tag can only be used for the purposes of Advanced Global Project importing.</p>
+        <h4>Code</h4>
+        <p class="bold">Default Destination:</p><pre>&lt;CatapultDestination</pre><pre>Version="1"</pre><pre>Comment="This is my publish destination"</pre><pre>Host="ftp.myftpserver.com"</pre><pre>User="MyAccountId"</pre><pre>Password=""</pre><pre>Directory="public_html"</pre><pre>Port=""</pre><pre>ViewUrl="http://www.madcapsoftware.com/"</pre><pre>Type="ftp"&gt;</pre><pre>&lt;/CatapultDestination&gt;</pre><pre>&#160;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="553" MadCap:lastWidth="1520">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">Dialog</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Default.UITestsEditors">Editor</MadCap:conditionalText> title is correct</li>
+            <li>Spelling and grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Tab order is correct (forward and reverse orders)</li>
+            <li>Keyboard can navigate and change settings</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">Dialog</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Default.UITestsEditors">Editor</MadCap:conditionalText> is easy to use and understand</li>
+            <li><span class="KeyboardShortcut">F1</span> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">and “?” </MadCap:conditionalText>function<MadCap:conditionalText MadCap:conditions="Default.UITestsEditors">s</MadCap:conditionalText> and the content is correct</li>
+            <li>Boundary test all controls<ul style="list-style-type: circle;"><li>Negative numbers</li><li>Large number</li><li>Text</li><li>Various characters and symbols (Inc. international)</li></ul></li>
+            <li>The “default” active button should make sense</li>
+            <li>Default options are displayed in the screenshot</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Cancel, <span class="KeyboardShortcut">Esc</span>, Red ‘X’ and <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">F4</span> close the dialog without change</li>
+            <li MadCap:conditions="Default.UITestsDialogs">OK and <span class="KeyboardShortcut">Enter</span> close dialog with changes</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog is resizable and redraws correctly</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog remembers setting and sizes from previous session</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog opens correctly on a dual monitor system</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Clicking the icon in the upper left corner displays options:<ul style="list-style-type: circle;"><li MadCap:conditions="Default.UITestsDialogs">Restore, Move, Size, Min., Max., Close – All work</li><li MadCap:conditions="Default.UITestsDialogs">Restore, Min., Max are disabled</li></ul></li>
+            <li MadCap:conditions="Default.UITestsEditors"><span class="MenuItem">!File | Close</span> or clicking “X” in tab closes the Editor and prompts to save changes if necessary</li>
+            <li MadCap:conditions="Default.UITestsEditors">Making any changes dirties the tab</li>
+            <li MadCap:conditions="Default.UITestsEditors">Saving changes removes “dirty” mark from the tab</li>
+            <li MadCap:conditions="Default.UITestsEditors">Editor can be floated and redocked</li>
+            <li MadCap:conditions="Default.UITestsEditors">All Editor functions work when Editor is floating</li>
+        </ul>
+    </body>
+</html>

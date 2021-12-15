@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="1630" MadCap:lastWidth="1221" MadCap:conditionTagExpression="exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Import Flare - Wizard</h2>
+        <p>There are two ways to import a Flare project into an existing project:</p>
+        <ul style="list-style-type: square;">
+            <li>Option 1: Create a Flare Project Import File to the project first and then import the project from within the Project Import Editor</li>
+            <li>Option 2: Import the project first through the Import Flare Project Wizard which will then create an import file at the end</li>
+        </ul>
+        <p>&#160;</p>
+        <p>This test module covers Option 2.</p>
+        <h3>Import Flare Project Wizard</h3>
+        <p>There are two ways to start the wizard process:</p>
+        <ul style="list-style-type: square;">
+            <li>Tool Strip interface: <span class="MenuItem">!File | Import Project | Flare Project</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!Project | Import | Flare Project</span></li>
+        </ul>
+        <h4>Import Flare&#160;Project Wizard dialog 1:&#160;Select Project</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ImportFlareProjectWizard--SelectProject.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project file: </span>Populates with the file location of the selected project to import.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" alt="" title="" /><span class="bold"> :&#160;</span>Invokes an <span class="UI">Open</span> dialog which lets you browse for the selected project.</li>
+            <li><span class="bold">Auto-reimport before "Generate Output": </span> Allows future changes to the files in the source project to be re-imported automatically.</li>
+            <li><b>Delete stale files: </b> Allows outdated files (e.g. files that have been deleted, renamed, or moved in the parent project) to be deleted from the child project automatically.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Flare Project Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Flare Project Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Flare Project Wizard</span>, invokes the <span class="UI">Accept Imported Documents</span> dialog, and proceeds to import the Flare project files. (Should only be grayed out if no project is selected)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Flare Project Wizard</span> and does not import anything.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Import Flare&#160;Project Wizard dialog 2:&#160;Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Flare/ImportFlareProjectWizard--ImportOptions.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Include Files: </span>A semi-colon delimited filter which allows you to limit the imported files to a particular set of files based on filename or extension. Use the asterisk for Wildcards. Example:&#160;If you enter "<span class="italic">*TestCases*;*.htm;*.html;</span>" in this field, the Flare Project Import file will only import Topic Files that contain "TestCases" in their filename. You can enter the filter rule directly by typing in this field or click Edit… to use the <span class="UI">Import File Filter</span> dialog.</li>
+            <li><span class="bold">Auto-include linked files: </span>Select this option to automatically import all files to which the imported files link, even if they are not specifically included in the Include Files field. These might include any linked resource files (images, snippets, etc) or linked topics that may have been filtered out by the Include Files field or by Conditions (see below).</li>
+            <li><span class="bold">Edit… :&#160;</span>Invokes the <span class="UI">Import File Filter</span> dialog which assists in defining the Include Files filter set..</li>
+            <li><span class="bold">Exclude Files: </span>A semi-colon delimited filter which allows you to exclude certain files from being imported based on filename or extension. Use the asterisk for Wildcards. Example:&#160;If you entered "*.htm; *.html;" in the Include Files filter, and then enter "<span class="italic">*TestCases*;</span>" in this field, the Flare Project Import file will only import Topic Files but exclude those that contain "TestCases" in their filename. You can enter the filter rule directly by typing in this field or click Edit… to use the <span class="UI">Import File Filter</span> dialog..</li>
+            <li><span class="bold">Edit… :&#160;</span>Invokes the <span class="UI">Import File Filter</span> dialog which assists in defining the Exclude Files filter set...</li>
+            <li><span class="bold">Import Conditions:&#160;</span>This filter lets you use the Condition Tags applied to the Flare Project files to determine which files should be imported. The condition logic used here is essentially the same as the logic used when building output.</li>
+            <li><span class="bold">Auto-Exclude Non-Tagged Files: </span>Use this option to exclude from import any files that do not contain any condition tags.</li>
+            <li><span class="bold">Edit… : </span>Invokes the <span class="UI">Import Conditions</span> dialog which displays all condition tags in the linked project and lets you select which tags should be included or excluded in the import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Flare Project Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Flare Project Wizard</span> (Should be grayed out at this point).</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Flare Project Wizard</span>,  proceeds to import the Flare project files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Flare Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="473" MadCap:lastWidth="836">
+    <head>
+    </head>
+    <body>
+         <ul class="checkbox">
+            <li><span class="bold">Source Project: </span>Displays the name and path of the current project.</li>
+            <li><span class="bold">New Project Name: </span>Displays the name of the project that will be exported..</li>
+            <li><span class="bold">New Project Path: </span>Displays the path where the project will be exported.</li>
+            <li><span class="bold">Browse...: </span>Allows user to browse for a different location to which the exported project will be saved.</li>
+            <li><span class="bold">Export From: </span>Displays the following list of dropdown menu.<ul style="list-style-type: square;"><li><span class="bold">Entire Project: </span>Exports the entire project.</li><li><span class="bold">Using Target: </span>Exporting using a target file will attempt to create a new project that mirrors the output when building the selected target. There are options to convert snippets and variables to text in the referenced topics and toc file.</li><li><span class="bold">Using Conditions: </span>Exporting using conditions/conditional expressions will create a new project with all the files tagged with the selected condition or that are included in the conditional expression. All files referenced by the tagged content will also be copied over. Additionally, conditioned content in topic files will be included or removed based on the selected condition/conditional expression. A default target, toc, stylesheet, and pagelayout file will be added to the exported project if they are not present in the new project.</li><li><span class="bold">Using File Tags: </span>Exporting using file tags/file tag expressions will create a new project with all the files tagged with the selected file tag or that are included in the file tag expression. All files referenced by the tagged content will be copied over. A default target, toc, stylesheet, and pagelayout file will be added to the exported project if they are not present in the new project.</li><li><span class="bold">Select Files: </span>Export Select Files will create a new project with files that are selected by the user.</li></ul></li>
+            <li><span class="bold">Output: </span>Lets you cancel the packaging process.</li>
+            <li><span class="bold">Save settings: </span>Lets you cancel the packaging process.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Export Project Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Export Project Wizard</span>.  (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Export Project Wizard</span>, invokes the <span class="UI">Export Progress</span> dialog and proceeds to import the Project files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Export Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

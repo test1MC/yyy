@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Selecting an end action will trigger an action when the object (like a cursor) reaches the end of its trajectory or allotted time on the frame.</p>
+        <ul>
+            <li>
+                <span class="bold">(as is): </span> Applies no changes to the object</li>
+            <li>
+                <span class="bold">(default): </span> No assigned action</li>
+            <li>
+                <span class="bold">GotoFrame: </span> Will send the user to a frame that needs to be designated in the <span class="bold">Argument </span>field&#160;(See below)</li>
+            <li>
+                <span class="bold">GotoFirst: </span>Will return the user to first frame of the movie</li>
+            <li>
+                <span class="bold">GotoNext: </span> Will forward the user to the next frame of the movie</li>
+            <li>
+                <span class="bold">GotoPrevious: </span> Will return the user to the previous frame of the movie</li>
+            <li>
+                <span class="bold">StartCursor: </span> Will start the cursor animation</li>
+            <li>
+                <span class="bold">GotoFirstSection: </span>&#160;will return the user to the first frame of the first section of the movie project</li>
+            <li>
+                <span class="bold">GotoPreviousSection: </span> Will return the user to first frame of the previous section of the movie project</li>
+            <li>
+                <span class="bold">GotoNextSection: </span> Will forward the user to the first frame of the next section of the movie project</li>
+            <li>
+                <span class="bold">GotoSection: </span> Will send the user to the first frame of a section that needs to be designated in the <span class="bold">Argument </span>field (See below)</li>
+            <li>
+                <span class="bold">Pause: </span> Will pause the movie</li>
+            <li>
+                <span class="bold">Accept: </span>&#160;Will accept the input (Requires an input box object)</li>
+            <li>
+                <span class="bold">Open: </span> Open a webpage or a word document in the local viewer/browser (try with http:// and without) designated in the <span class="bold">Argument </span>field&#160;(See below)</li>
+            <li>
+                <span class="bold">OpenWithDefault: </span> Open a webpage or a word document in a new browser window&#160;(try with http:// and without)&#160;designated in the <span class="bold">Argument </span>field (See below)</li>
+            <li>
+                <span class="bold">Argument: </span> Set argument&#160;(Frame name, Section/Movie name, or file/URL path) for <span class="bold">Goto&#160;Frame</span>, <span class="bold">GotoSection</span>, <span class="bold">Open </span>and <span class="bold">OpenWithDefault </span>actions</li>
+        </ul>
+    </body>
+</html>

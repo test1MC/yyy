@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Options Section:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Edge Effect: </span> Select which edge effect to apply to the image from the drop down</li>
+                    <li>
+                        <span class="bold">Wave Length: </span> Adjust the wave length of the edge effect (How many waves the effect will be on the edge of the image)</li>
+                    <li>
+                        <span class="bold">Wave Height: </span> Adjust the wave height of the edge effect (How far into the image the effect will go)</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Edges Section: </span>
+                <ul>
+                    <li>Check the side that the edge effect will be applied on</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

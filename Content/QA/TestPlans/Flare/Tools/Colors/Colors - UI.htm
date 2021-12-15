@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5166" MadCap:lastWidth="1146" MadCap:conditions="" MadCap:conditionTagExpression="include[Default.UITestsDialogs] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Colors - UI</h2>
+        <h3>Opening the UI</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface: <span class="MenuItem">!Format | Color</span></li>
+            <li>Tool Strip interface: <span class="MenuItem">!Format | Background Color</span></li>
+            <li>Tool Strip interface: <span class="MenuItem">!Format | Font | Colors (Text and Background)</span></li>
+        </ul>
+        <h4>Local Formatting:</h4>
+        <ul class="checkbox">
+            <li>Window | Font Node | Color Property</li>
+            <li>Stylesheet Editor | Tag that has Font Properties | Font Node | Color Properties</li>
+            <li>Skin Editor | Styles | Tag that has Font Properties | Font Node | Color Properties</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>UI-Toolbar Icons</h3>
+        <h4>Text Color “Color”</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/FontColor.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li>Clicking the “A” will apply the color to the selection (inline)</li>
+            <li>The drop-down arrow to the right if the icon opens the “popup UI” – (See the UI section below)</li>
+        </ul>
+        <h4>Background Color "Background Color"</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/BackgroundColor.png" class="border" />
+        </p>
+        <ul class="checkbox">
+            <li>Clicking the “bucket” will apply the color to the selection (inline)</li>
+            <li>The drop-down arrow to the right if the icon opens the “popup UI” – (See the UI section below)</li>
+        </ul>
+        <h3>“Popup” UI from BOTH toolbar buttons – Test the functionality for both controls</h3>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ColorPallettePopUp.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>“Default Color Appears as “Black”</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Default Color:</span> sets the color back to the default setting or removed the color tag altogether</li>
+            <li><span class="bold">More Colors:</span> Launches the Color Picker Dialog</li>
+            <li><span class="bold">Pick Screen Color:</span> Launches the “screen color picker” and allows the user to pick a color currently viewable anywhere on the screen</li>
+            <li><span class="bold">Color Grid:</span> Displays 132 colors from the Windows color control – Should always display the same available colors. </li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Selecting a color will apply it INLINE to the selected element and changes the icon on the toolbar.</li>
+                <li>The color under the Icon in the toolbar will change to the last used selected in the color UI.</li>
+                <li>The color under the Icon in the toolbar doesn’t change when selecting text or formatting in WYSIYWG that is of a different color.</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Color is set correctly.</li>
+                <li>Verify in WYSIWYG, Preview and all outputs.</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Background Color is set correctly.</li>
+                <li>Verify in WYSIWYG, Preview and all outputs.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Top-Level Menu</h3>
+        <ul class="checkbox">
+            <li><span class="bold">!Format |Color (Color):</span> Clicking will open the color sub menu</li>
+            <li><span class="bold">!Format | Background Color (Background Color):</span> Clicking will open the color sub menu</li>
+        </ul>
+        <h3>Color Sub Menu from BOTH !Format Menu options – Test the functionality for both controls</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ColorPallettePopUp.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <ul class="checkbox">
+            <li>“Default Color Appears as “Black”</li>
+        </ul>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Default Color:</span> Sets the color back to the default setting or removed the color tag altogether</li>
+            <li><span class="bold">More Colors:</span> Launches the Color Picker Dialog</li>
+            <li><span class="bold">Pick Screen Color:</span> Launches the “screen color picker” and allows the user to pick a color currently viewable anywhere on the screen</li>
+            <li><span class="bold">Color Grid:</span> Displays 132 colors from the Windows color control – Should always display the same available colors.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>The selected color in the UI reflects the color of the element or text in WYSIWYG</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Background Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Font Properties Dialog window</h3>
+        <p>Colors section</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/FontPropertiesColor.png" class="left" />
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>	Spelling and Grammar are correct</li>
+                <li>	Verify that all tooltips are correct</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Color/FontColor.png" alt="" title="" /> Tooltip: “Color”</li>
+                <li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---BackgroundColor.png" /> Tooltip: “Background Color”</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Displayed color is that if the selection in the XML Editor</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Color Sub Menu from BOTH !Format Menu options – Test the functionality for both controls</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ColorPallettePopUp.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>“Default Color Appears as “Black”</li>
+        </ul>
+        <h4>Controls</h4>
+        <ul class="checkbox">
+            <li><span class="bold">Default Color:</span> sets the color back to the default setting or removed the color tag altogether</li>
+            <li><span class="bold">More Colors:</span> A launches the Color Picker Dialog</li>
+            <li><span class="bold">Pick Screen Color:</span> Launches the “screen color picker” and allows the user to pick a color currently viewable anywhere on the screen</li>
+            <li><span class="bold">Color Grid:</span> Displays 132 colors from the Windows color control – Should always display the same available colors.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>There is no selected color in the UI the color is reflected in the Font dialog itself</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Background Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Local Formatting Window | Stylesheet Editor | WebHelp Skin “Popup” UI | Table Style Editor</h3>
+        <p>Test all 4 areas separately.</p>
+        <div class="TestCases">
+            <ul class="checkbox">
+                <li>Verify that the color is written correctly in the XML and appears correctly in WYSIWYG, Preview and all Outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Controls</h4>
+        <ul class="checkbox">
+            <li><span class="bold">Color:</span> Color of an element's text – Verify that it sets the correct colors and launches the correct dialogs.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ColorPallettePopUp.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>“Default Color Appears as “Black”</li>
+        </ul>
+        <h4>Controls</h4>
+        <ul class="checkbox">
+            <li><span class="bold">Default Color:</span> sets the color back to the default setting or removed the color tag altogether</li>
+            <li><span class="bold">More Colors:</span> A launches the Color Picker Dialog</li>
+            <li><span class="bold">Pick Screen Color:</span> Launches the “screen color picker” and allows the user to pick a color currently viewable anywhere on the screen</li>
+            <li><span class="bold">Color Grid:</span> Displays 132 colors from the Windows color control – Should always display the same available colors.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>There is no selected color in the UI the color is reflected in the Font dialog itself</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+                <li>Make various selections with various elements (text, paragraphs, tables, divs, etc) – Verify that the Background Color is set correctly</li>
+                <li>Verify in WYSIWYG, Preview and all outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Color Picker-Launched by clicking “More Colors” from any color UI or ‘popup’ UI</h3>
+        <p>Note: this dialog does not re-size</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ColorPicker.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <h4>Controls</h4>
+        <ul class="checkbox">
+            <li><span class="bold">#&#160;(Color):</span> Displays the #RRGGBB code of the color selected in the UI. – Allows user to type their own value in.<ul><li>Boundary test this field – Large amounts of text, odd characters, letters, numbers, spaces, etc…</li><li>Color preview should update correctly when typing in the above field</li></ul></li>
+            <li><span class="bold">Save:&#160;</span>Adds the selected color to a list called "Saved"</li>
+            <li><span class="bold">Pick Color:</span> Launches the “Screen Color Picker” and allows the user to pick a color currently viewable anywhere on the screen</li>
+            <li><span class="bold">Hue | Saturation | Brightness:</span> Displays the values of the selected or typed color.<ul><li>Boundary test these fields – Large amounts of text, odd characters, letters, numbers, spaces, etc…</li><li>Color preview should update correctly when typing in the fields</li></ul></li>
+            <li><span class="bold">Red | Green | Blue:</span> Displays the values of the selected or typed color<ul><li>Boundary test these fields – Large amounts of text, odd characters, letters, numbers, spaces, etc…</li><li>Color preview should update correctly when typing in the fields</li></ul></li>
+            <li><span class="bold">Enable CMYK:&#160;</span>Activates the C, M, Y, K fields below so that you can use the CMYK color model.<ul><li>Boundary test these fields – Large amounts of text, odd characters, letters, numbers, spaces, etc…</li><li>Color preview should update correctly when typing in the fields</li></ul></li>
+            <li><span class="bold">Named: </span>Displays the colors and values that have textual names.<ul><li>"Name" column is sortable (A-Z and Z-A).</li></ul></li>
+            <li><span class="bold">Web: </span>Displays a list of web safe colors and values.<ul><li>"Name" column is sortable (A-Z and Z-A).</li></ul></li>
+            <li><span class="bold">Saved:&#160;</span>Displays the Colors that user has added from the “save” button<ul><li>"Name" column is sortable (A-Z and Z-A).</li></ul></li>
+            <li><span class="bold">Recent:&#160;</span>Displays the most recent colors that the user has used. To use one of these colors, click it.<ul><li>"Name" column is sortable (A-Z and Z-A).</li></ul></li>
+            <li><span class="bold">Current/New:&#160;</span>The current applied color shows in the top half of this box, the color currently selected shows below.</li>
+            <li><span class="bold">OK:</span> Applies the selected settings in the dialog to the selection or dialog it was called from</li>
+            <li><span class="bold">Cancel:</span> Cancels the actions in the dialog and doesn’t apply any changes</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Screen Color Picker</h3>
+        <p>This UI allows you to select a color that is visible on the screen and use it as a color in the UI</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Color/ScreenColorPicker.png" class="left" />
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>The color at the tip of the cursor arrow is the color selected</li>
+                <li>The color should be displayed in the ‘preview’ box</li>
+                <li>The color should also be represented correctly in RRGGBB code</li>
+                <li>Clicking will select or use the color</li>
+                <li>Verify that it is added to the UI or code correctly</li>
+                <li>&lt;ESC&gt; closes the picker without applying the selection</li>
+                <li>No other keyboard input will work</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

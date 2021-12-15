@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="2052" MadCap:lastWidth="970" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h1>Track Changes - Editing</h1>
+        <h3>XML Editor</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/Track Changes--XML.png" />
+        </p>
+        <p>A sample of what the XML editor should look like if you have made an addition and a deletion. Right-clicking the tracked change balloon should invoke the above menu.</p>
+        <p class="note">Note: The track changes feature is intended only for self-contained operations within the WYSIWYG (XML Editor). For example, if you make changes to index keywords or concepts in the Index and Concept window panes (e.g., renaming, assigning them to topics), those modifications are not indicated as tracked changes because they are considered project-wide "link updating" processes.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/TrackChanges--2 Columns.png" />
+        </p>
+        <p>&#160;</p>
+        <p>This is what a 2 column layout looks like with track changes on. Notice that the two changes on the left column will appear above the changes made on the right column.</p>
+        <h4>Context Menu</h4>
+        <p>Right-clicking on a word/phrase that has a change should result in the following context menu (check to make sure the 'Accept Insertion' and 'Reject Insertion' are available on misspelled words) :</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Track Changes/Track Changes--Context.png" />
+        </p>
+        <p class="note">Right-clicking the block bar and span bar of an added p/heading (any body element) should also show the accept/reject option at the top of the context menu</p>
+        <h4>Code</h4>
+        <p class="note">&lt;MadCap:changeData&gt;&lt;/MadCap:changeData&gt; tags will only appear once per topic around all of the tracked changes change data</p>
+        <p><b>What the code appears like inline for a tracked change:</b>
+        </p>
+        <p>&lt;MadCap:change MadCap:changes="3"&gt;XXXXXXXXX&lt;/MadCap:change&gt;</p>
+        <p>&#160;</p>
+        <p><b>Addition:</b>
+        </p>
+        <p>&lt;MadCap:changeData&gt;</p>
+        <p>&lt;MadCap:AddChange MadCap:userName="mbuckalew" MadCap:initials="MB" MadCap:id="3" MadCap:timestamp="2011-03-23T14:43:45.4738000-07:00" /&gt;</p>
+        <p>&lt;/MadCap:changeData&gt;</p>
+        <p>&#160;</p>
+        <p><b>Deletion:</b>
+        </p>
+        <p>&lt;MadCap:changeData&gt;</p>
+        <p>&lt;MadCap:RemoveChange MadCap:userName="mbuckalew" MadCap:initials="MB" MadCap:id="1" MadCap:timestamp="2011-03-23T14:39:49.4778000-07:00" /&gt;</p>
+        <p>&lt;/MadCap:changeData&gt;</p>
+        <p>&#160;</p>
+        <p><b>Wrapping text/element in a span (ex. selecting some text and applying bold to it):</b>
+        </p>
+        <p>&lt;MadCap:changeData&gt;</p>
+        <p>&lt;MadCap:BindChange MadCap:userName="mbuckalew" MadCap:initials="MB" MadCap:id="4" MadCap:timestamp="2011-03-23T15:18:39.1658000-07:00" /&gt;</p>
+        <p>&lt;/MadCap:changeData&gt;</p>
+        <p>&#160;</p>
+        <p><b>Modified (ex. changing an existing equation to a different one):</b>
+        </p>
+        <p>&lt;MadCap:changeData&gt;</p>
+        <p>&lt;MadCap:ReplaceChange MadCap:userName="mbuckalew" MadCap:initials="MB" MadCap:id="7" MadCap:timestamp="2011-03-23T15:21:10.5008000-07:00"&gt;</p>
+        <p>&lt;/MadCap:changeData&gt;</p>
+        <p>&#160;</p>
+        <p><b>Attribute change (ex. changing multiple styles of text like applying bold and changing the font from Arial to Sans-Serif:</b>
+        </p>
+        <p>&lt;MadCap:changeData&gt;</p>
+        <p>&lt;MadCap:AttributesChange MadCap:userName="mbuckalew" MadCap:initials="MB" MadCap:id="2" MadCap:timestamp="2011-03-23T15:24:45.1728000-07:00" MadCap:attribute="style" MadCap:value="font-family: sans-serif;" /&gt;</p>
+        <p>&lt;/MadCap:changeData&gt;</p>
+    </body>
+</html>

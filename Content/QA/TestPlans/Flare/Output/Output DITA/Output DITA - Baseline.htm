@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="823" MadCap:lastWidth="1083" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Output DITA - Baseline   </h2>
+        <p>&#160;</p>
+        <h3>Baseline</h3>
+        <p><span class="bold">27024 </span>Namespace / doctype needs to be added to our output</p>
+        <p><span class="bold">27467 </span>We are not scrambling DITA output when Flare is in trial mode.</p>
+        <p><span class="bold">27495 </span>Language attributes (xml:lang) are not output to DITA.</p>
+        <p><span class="bold">27586 </span>Our DITA output should put image Alternate Text in the alt element (not the alt attribute)</p>
+        <p><span class="bold">27705 </span>Flare's Index Link's (if created in an Index Link Set) do not output to DITA index links.</p>
+        <p><span class="bold">27710 </span>"See" and "See Also" index links created at the marker level (not in an Index Link set) do not output to DITA correctly.</p>
+        <p><span class="bold">27742 </span>Flare column styles are not outputing to DITA attributes.</p>
+        <p><span class="bold">27831 </span>Tables output to DITA do not include the cols attribute in the tgroup element (cols is a required attribute)</p>
+        <p><span class="bold">27839 </span>If a table contains a footer, when we output to DITA the closing tbody tag gets injected before the footer row.</p>
+        <p><span class="bold">27841 </span>DITA output: Nested tables ("split cells") do not output to DITA correctly.  In DITA, the entry tag cannot contain a table tag.</p>
+        <p><span class="bold">27859 </span>DITA Output Validation error
+Error at line 7, column 9: No declaration for attribute align of element p</p>
+        <p><span class="bold">27863 </span>Table captions are not output to DITA correctly.</p>
+        <p><span class="bold">27866 </span>Validation error:
+Error at line 5, column 29: No declaration for attribute xmlns:MadCap of element reltable</p>
+        <p><span class="bold">27871 </span>Dita Validation Errors: (various topics)</p>
+        <p><span class="bold">27872 </span>Conrefs are not opening up correctly in XMetal: References could not be resolved.</p>
+        <p><span class="bold">27874 </span>'Do not use Content folder' option is not updating links in DITA</p>
+        <p><span class="bold">27877 </span>System variables are not included in DITA output.</p>
+        <p><span class="bold">27880 </span>The mcvars.dita topic file that is created when we generate DITA output when using variables is malformed.  It needs a title.</p>
+        <p><span class="bold">27900 </span>Table Stylesheets are ineffective in DITA output however the css file itself is included in the output.</p>
+        <p><span class="bold">27908 </span>Alignment properties set on a paragraph produce invalid DITA when output to DITA.</p>
+        <p><span class="bold">27913 </span>We do not support project linking with DITA output, we should have a compiler warning.</p>
+        <p><span class="bold">27925 </span>If a Flare project is set to a language other than English, when outputting to DITA, we do not inject that language into each topic</p>
+        <p><span class="bold">27978 </span>If you have a footnote that contains a snippet, the snippet is not included in DITA output.</p>
+        <p><span class="bold">28020 </span>Every instance of every variable used in a Flare project produces a unique element in the output mcvars.dita file.</p>
+        <p><span class="bold">28101 </span>If a TOC node links to a Mimic project or movie, we compile that project or movie when generating DITA output.  The result is an invalid link in the ditamap.</p>
+        <p><span class="bold">28103 </span>An index keyword contained inside a bold tag produces invalid DITA.</p>
+        <p><span class="bold">28154 </span>If your project has an Alias file, when you generate DITA output, any topics referenced in the Alias file get prolog and resourceid elements that create malformed DITA.</p>
+        <p><span class="bold">28157 </span>DITA output does not consider stylesheet mediums when generating output.</p>
+        <p><span class="bold">28236 </span>If the first element in a topic is empty, when that topic is output to DITA, that DITA topic has no title and is malformed.</p>
+        <p><span class="bold">28240 </span>If the first element in a topic is a container (div, table, ul, ol, etc), when output to DITA, the topic title is the text from all the elements inside that container tag.</p>
+        <p><span class="bold">28299 </span>Text on the body tag produces invalid DITA.</p>
+        <p><span class="bold">28329 </span>If the first item in a topic is an image, the result in DITA output is a DITA topic with no title element (malformed DITA)</p>
+        <p><span class="bold">28344 </span>DITA output fails if a snippet is missing</p>
+        <p><span class="bold">28361 </span>If a topic has a set Topic Title (in the Topic Properties dialog), and I output to DITA, the result is a malformed DITA topic with no title element.</p>
+        <p><span class="bold">28364 </span>Condition Tags applied to a TOC node do not convert to the corresponding attribute in DITA output (in the topichead or topicref element of a ditamap).</p>
+        <p><span class="bold">28859 </span>DITA output fails if no language is set.</p>
+        <p><span class="bold">28879 </span>Object reference error received when trying to build DITA output (following a DITA import). (Fixed by 28859, but still a good test case)</p>
+        <p><span class="bold">28882 </span>DITA output fails if the project contains a non-XML topic.</p>
+        <p><span class="bold">29252 </span>Topic will not compile to DITA (Object Reference Error)</p>
+        <p><span class="bold">32934             </span>Only the first condition tag applied to paragraph in a topic is applied to the DITA output paragraph</p>
+        <p><span class="bold">37469      </span>Toggler hotspots are exported as &lt;p&gt; nested inside another &lt;p&gt;</p>
+        <p><b>46857</b> Tables output to DITA that contain a header row (thead) output with the cols attribute in the tgroup element set to zero.   &lt;tgroup cols="0"&gt;.  Cols is a required attribute and should be set to the number of columns.</p>
+    </body>
+</html>

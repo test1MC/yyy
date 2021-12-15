@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2786" MadCap:lastWidth="1130" MadCap:conditionTagExpression="include[AddFile--UIControls.Description or AddFile--UIControls.ProjectFiles or Default.UITestsDialogs or FlareFileTypes.Skin] exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or AddFile--UIControls.TopicFiles or Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] ">
+    <head>
+    </head>
+    <body>
+        <h2>Language Skins - Editor</h2>
+        <h3>Opening a Language Skin File</h3>
+        <p>Language Skin files are opened from the <span class="UI">Language Skins</span> dialog. To open the <span class="UI">Language Skins</span> dialog:</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface: <span class="MenuItem">!Tools |&#160;Manage Language Skins…</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Tools |&#160;Manage Language Skins</span></li>
+        </ul>
+        <h4>Language Skins dialog - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Language Skins/Dialog--LanguageSkins.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Language Skins Grid:</span> Displays a list of all languages supported by Flare. Verify any new languages added appear in this list.</p>
+                <p class="bold">Columns</p>
+                <ul>
+                    <li><span class="bold">Language Skins: </span>Displays the language for each potential Language Skin.</li>
+                    <li><span class="bold">Path: </span>If a Language Skin has been created for your user, this column will display the path to that file. The path should be "C:\Users\[username]\AppData\Roaming\MadCap Software\Flare\Language Skins\[filename].fllng"</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Remove User Defined File…:</span>  (Only active when the selected Language Skin file exists locally) Send the selected Language Skin file from the user's AppData\Roaming folder to the Recycle Bin. A confirmation is required.<ul class="checkbox"><li><span class="bold">OK:&#160;</span>Closes the confirmation dialog and sends the Language Skin file to the Recycle Bin.</li><li><span class="bold">Cancel:&#160;</span>Closes the confirmation dialog and does not send the Language Skin file to the Recycle Bin.</li></ul></li>
+            <li><span class="bold">Open File For Editing:&#160;</span>
+                <ul class="checkbox">
+                    <li>If the selected Language Skin file already exists for your user (displays in italics):&#160;Closes the <span class="UI">Language Skins</span> dialog and opens the selected Language Skin file for editing.</li>
+                    <li>If the selected Language Skin file only exists as a factory template&#160;(displays in bold):&#160;Prompts that a Language Skin file for that language has been created in your AppDate\Roaming folder. Upon clicking OK&#160;to that confirmation dialog, the <span class="UI">Language Skins</span> dialog will close and open the selected Language Skin file for editing.</li>
+                    <li>If the selected Language Skin file does not yet exists (displays in plain text):&#160;Invokes the <span class="UI">Select Template Language Skin</span> dialog which lets you select any existing factory template Language Skin or any user created Language Skin to use as a template to create the new Language Skin file.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Close: </span>Closes the dialog and does not open any Language Skin file.</li>
+        </ul>
+        <h4>Select Template Language Skin dialog - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Language Skins/Dialog--SelectTemplateLanguageSkin.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Template Language Skins Grid:</span> Displays a list of all Language Skins that are either provided by default or have been created by the user. In the default view, factory provided Language Skins will display in alphabetical order first. User created Language Skins will appear at the end of the list. Verify that user created Language Skins do in fact appear in this list.</p>
+                <p class="bold">Columns</p>
+                <ul>
+                    <li><span class="bold">Select Template: </span>Displays the language for each existing Language Skin that could be used as a template.</li>
+                    <li><span class="bold">Path: </span>This column has never populated (See bug 12726)</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">OK: </span>Creates a new Language Skin based on the selected template Language Skin and closes both the <span class="UI">Select Template Language Skin</span> dialog and the <span class="UI">Language Skins</span> dialog.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not open any Language Skin file.</li>
+        </ul>
+        <h3>Language Skin Editor - UI Test Cases</h3>
+        <h4>Language Skin Editor: Local Toolbar</h4>
+        <p class="bold">Toolbar items (Tooltips in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" /> (Cut):</span> Cuts the selected style class. Only relevant for classes created for Relationships, Toc Entry and Toolbar Item styles.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" /> (Copy):</span> Copies the selected style class. Only relevant for classes created for Relationships, Toc Entry and Toolbar Item styles.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" /> (Paste):</span> Pastes the selected style class. Only relevant for classes created for Relationships, Toc Entry and Toolbar Item styles.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" /> (Delete):</span> Deletes the selected style class. Only relevant for classes created for Relationships, Toc Entry and Toolbar Item styles.</li>
+            <li><span class="bold">Add Class:</span>Disabled unless a style is selected in the Style Tab, but only relevant for Relationships, Toc Entry and Toolbar Item styles. Click to add a new class to the selected style in the Style Tab.</li>
+        </ul>
+        <h4>Language Skin Editor: Info Bar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Language Skins/Editor--LanguageSkin--InfoBar.png" />
+        </p>
+        <ul class="checkbox">
+            <li>Since Language Skins reside in your "[Username]/AppData/Roaming/MadCap Software/Flare/Language Skins/" folder, whenever you open a Language Skin for editing, the Language Skin Editor should display the Info Bar pictured above.</li>
+        </ul>
+        <h4>Skin Editor (Standard): General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Language Skins/Editor--LanguageSkin.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Styles:</span> All available styles for items that appear in the Language Skin. See </li>
+            <li><span class="bold">Show Property Groups/Alphabetical List:</span> Choose how you want the Properties to be displayed.</li>
+            <li><span class="bold">Properties:</span> Displays the list of properties available for each style</li>
+            <li><span class="bold">(Description):</span> The description area at the bottom provides a brief description of what the .</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1190" MadCap:lastWidth="1076" MadCap:conditionTagExpression="include[Default.UITestsEditors or TargetEditor.HTMLHelp] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Output HTML Help - Merged Navigation</h2>
+        <p>You can merge HTML Help so that the navigation (table of contents, index, search) for each CHM file is displayed, regardless of which CHM file you open (parent or child). This can be done in a couple of ways, depending on whether you have access to all of the Flare projects or to the CHM files only.</p>
+        <h3>Merged Navigation in HTML&#160;Help - Access to All Flare Projects</h3>
+        <p>This method is used when you are merging by linking to other Flare project files from the parent project's TOC. </p>
+        <p>&#160;</p>
+        <p>Steps for this method:</p>
+        <ol>
+            <li>
+                <p>The author of the parent project creates links in the parent project's TOC&#160;to other Flare projects.</p>
+                <p class="note">NOTE: TOC&#160;entries in the parent project should have the option "When merging, replace node with merged TOC"&#160;enabled. This way the merged navigation will not display a broken link should the child CHM&#160;file be removed from the set of merged CHMs.</p>
+            </li>
+            <li>In the HTML Help target file of the parent project, in the Advanced tab, the author of the parent project enables the option to "Display merged navigation in HTML Help." </li>
+            <li>
+                <p>The author for the parent project generates the main HTML Help target.</p>
+                <p>The parent CHM file and all child CHM files are located in the same output folder, and when you open any of those CHM files, you can see the navigation for any of the other outputs.</p>
+            </li>
+        </ol>
+        <h3>Merged Navigation in HTML&#160;Help - Access to CHM Output Files Only</h3>
+        <p>This method is used when you do not have access to the source Flare projects to which you need to link, but only the CHM&#160;output files. In order for merged navigation to work when you only have access to the CHM&#160;files, it is still required that the child CHM&#160;files be built with Flare, and that the authors of the child Flare project include a specific TXT&#160;file in their Flare project.</p>
+        <p class="note">NOTE:&#160;A sample set of Flare projects that are already set up to test this is available at \\fs1\QA\Test Projects\Test Plan Projects\Output HTML Help\Runtime CHM Merging</p>
+        <p>Steps for this method:</p>
+        <ol>
+            <li>
+                <p>The author for each project (parent and child) places a simple TXT file named <span style="font-family: monospace;">merge.txt</span> in the same folder where the Flare project file (.flprj) is located. This TXT file can be created with Notepad and should simply list the names of all CHM files to be included in the merged output (one on each line), with the name of the parent CHM appearing first.</p>
+                <div class="example">
+                    <p>Example:</p><pre xml:space="preserve">MyParent.chm</pre><pre xml:space="preserve">MyFirstChild.chm</pre><pre xml:space="preserve">MySecondChild.chm</pre><pre xml:space="preserve">MyThirdChild.chm</pre>
+                </div>
+            </li>
+            <li>The author for each child project generates his output and provides the author of the parent project with the CHM files.</li>
+            <li>
+                <p>The author for the parent project brings the child CHM files into the parent project and creates links to the CHM&#160;files in the parent project's TOC.</p>
+                <p class="note">NOTE: TOC&#160;entries in the parent project should have the option "When merging, replace node with merged TOC"&#160;enabled. This way the merged navigation will not display a broken link should the child CHM&#160;file be removed from the set of merged CHMs.</p>
+            </li>
+            <li>
+                <p>The author for the parent project generates the main HTML Help target. </p>
+                <p>The parent CHM file and all child CHM files are located in the same output folder, and when you open any of those CHM files, you can see the navigation for any of the other outputs.</p>
+            </li>
+        </ol>
+        <h3>Merged Navigation in HTML&#160;Help - Test Cases</h3>
+        <p>Using both methods detailed above, verify the following:</p>
+        <ul class="checkbox">
+            <li>Opening any of the CHM&#160;files (parent or any of the children)&#160;will all open with merged navigation.</li>
+            <li>Remove one or more of the linked child CHM&#160;files from the folder containing the CHM&#160;files and verify that its content no longer appears when the other CHM&#160;files are opened.</li>
+            <li>Add the removed CHM&#160;files back to the folder containing all of the CHM&#160;files and verify that when they are reintroduced that opening any of the CHM&#160;files again displays all of the merged CHM&#160;files.</li>
+        </ul>
+        <h4>Merged Navigation in HTML&#160;Help - Troubleshooting</h4>
+        <p>To verify that everything should be working properly, you can open the temporary hhp file that Flare generates for each CHM file. Next to the output folder for each compiled CHM file is a "Temporary"&#160;folder. Browse into "Temporary/[Target Name]/Content" and open _Temp.hhp in Notepad. Scroll to the bottom of the hhp files and you should see a section labeled "[MERGE&#160;FILES]." The hhp for every CHM&#160;file (parent and all children)&#160;should display all linked CHM&#160;files in this list.</p>
+        <div class="example">
+            <p>Example:</p><pre xml:space="preserve">[MERGE FILES]</pre><pre xml:space="preserve">MyParent.chm</pre><pre xml:space="preserve">MyFirstChild.chm</pre><pre xml:space="preserve">MySecondChild.chm</pre><pre xml:space="preserve">MyThirdChild.chm</pre>
+        </div>
+    </body>
+</html>

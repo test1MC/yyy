@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1910" MadCap:lastWidth="953" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Blaze Projects - Export            <![CDATA[ ]]></h2>
+        <h3>Opening the UI</h3>
+        <p>Select File&gt;Export to Blaze… (Tooltip should read: Export translated files back to Blaze)</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>Export Finished Translation dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/ExportFinishedTranslation.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <h4>UI&#160;Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project to Export:</span> <![CDATA[ ]]>Displays the name and path of the current Lingo project.</li>
+            <li><span class="bold">Destination File name:</span> <![CDATA[ ]]>Displays the name you provided for the Lingo project. You can keep the same name or enter a different one for the exported project.</li>
+            <li><span class="bold">Destination Folder:</span> <![CDATA[ ]]>Either accept the folder location entered, or click Browse to find and select a different one. Typically, you want to export the project to a location where the author can retrieve it.</li>
+            <li><span class="bold">Browse:</span> <![CDATA[ ]]>Opens the Browse For Folder dialog, which lets you select a different folder to store the project files.</li>
+            <li><span class="bold">Export:</span> <![CDATA[ ]]>Click this button to export the project.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>'Progress' dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/ProgressDialog.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li> Cancel should stop the export.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Successful export dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/SuccessfulBlazeExportDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests-Small.flsnp">
+            </MadCap:snippetBlock>
+            <ul style="list-style-type: square;">
+                <li>‘Yes’ closes dialog and should open translated project in Blaze</li>
+                <li> ‘No’ closes dialog</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Trial Mode</b>
+        </p>
+        <p>When Lingo is used in Trial Mode, it will prompt you with the following dialog window:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/TrialMode.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Clicking “OK” should still open the translated project in Blaze.</li>
+            <li>Open the exported Blaze project in trial mode and make sure its contents are scrambled.</li>
+            <li>Enter a valid key, export and verify that the contents are not longer scrambled.&#160;</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="note">If Blaze is not installed on the computer, you should get the following message:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/Blaze not Installed.png" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

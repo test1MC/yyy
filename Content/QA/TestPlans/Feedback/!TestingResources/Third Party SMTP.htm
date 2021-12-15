@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="709" MadCap:lastWidth="1053" MadCap:fileTags="Status.Not Applicable,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h1>Setting up a 3rd party SMTP service on Windows Vista</h1>
+        <h2>To send mail via Outlook Express:</h2>
+        <ol>
+            <li>Image a Vista machine</li>
+            <li>	Install and launch the First Mail Server application from <a href="file://dc2/software/First Mail Server/">\\dc2\Software\First Mail Server</a><br />Note: DO&#160;NOT&#160;REGISTER&#160;First Mail Server. It should offer a 30-day trial. This is a specific 3rd party SMTP service. Others should work as well.</li>
+            <li>Open Outlook Express</li>
+            <li>Create an account using Localhost as the SMTP server. Put anything in the POP3 field as that doesn’t concern us for Sending mail. All other fields can be junk (ie bob@adfasd.com), even the password.</li>
+            <li>Create mail and send. Should send it just fine.  If you are on an internal machine, do not send to a madcapsoftware.com email address, as it won’t work. Any external email will work fine.</li>
+            <li>You may receive an error if you click the send/receive button. Receive is not set up for this example. Just try to execute a Send command and see if the error persists.</li>
+        </ol>
+        <p>&#160;</p>
+        <h2>For sending mail via Feedback Server:</h2>
+        <ol>
+            <li>Image a Vista machine. Add it to the domain (necessary for Feedback, not SMTP)</li>
+            <li>Install and launch the First Mail Server application from <a href="file://dc2/software/First Mail Server/">\\dc2\Software\First Mail Server</a><br />Note: DO&#160;NOT&#160;REGISTER&#160;First Mail Server. It should offer a 30-day trial. This is a specific 3rd party SMTP service. Others should work as well. FreeSMTP&#160;is also in the software folder but limits you to 10 emails per day.</li>
+            <li>Install Feedback Server</li>
+            <li>Launch Feedback Server (This assumes you met all the prereq’s for Feedback Server installation)</li>
+            <li>Install the Feedback Service. Local or remote SQL is ok.</li>
+            <li>When the service is installed, the admin UI should launch.</li>
+            <li>In the admin, under the SMTP Server area; enter localhost (or the IP of the local machine)</li>
+            <li>You can leave user name and password blank (this is because the First Mail Server application has no authentication)</li>
+            <li>Click on Test…</li>
+            <li>Fill out an email address (<span class="bold">not a madcap one</span>, since we can’t email those from within our own network)</li>
+            <li>Check your email. Usually ends up in my yahoo junk mail folder, just an FYI.</li>
+        </ol>
+        <p class="note">NOTE:&#160;If you close FreeSMTP, you will not be able to send email from Feedback Server Admin. FreeSMTP needs to be running for email to be sent.</p>
+        <h2>Things to find out…?</h2>
+        <ol>
+            <li>Domain/Workgroup (Workgroup is fine for Outlook testing. Domain is needed for Feedback testing)</li>
+            <li>Local User/ Domain user (Again, local is ok for Outlook. Feedback requires a domain user logged in)</li>
+            <li>UAC on/off (Doesn’t matter. Feedback will need it launched by Right Click | Run as administrator, if UAC is left on)</li>
+            <li>Firewall on/off/exceptions (Didn’t matter for Outlook or Feedback)</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

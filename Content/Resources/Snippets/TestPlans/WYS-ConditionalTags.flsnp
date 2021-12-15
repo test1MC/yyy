@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="385" MadCap:lastWidth="839">
+    <body>
+        <h4>Conditional Tags</h4>
+        <p class="bold">Applying a condition tag to the element:</p>
+        <ul class="checkbox">
+            <li>Select the element and invoke the <span class="UI">Condition Tags</span> dialog<ul class="checkbox"><li>Right-click the element's block/span bar and select <span class="MenuItem">Conditions…</span> from the context menu</li><li>Right-click the element's caret tag neighborhood bar and select <span class="MenuItem">Conditions…</span> from the context menu</li><li>Right-click the selected element in the <span class="UI">XML Editor</span> and select <span class="MenuItem">Conditions…</span> from the context menu</li><li>Select the element and press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">C</span></li><li>Toolstrip interface:&#160;Select the element and then <span class="MenuItem">!Format | Conditions…</span> <![CDATA[ ]]></li><li>Ribbon interface:&#160;Select the element and then <span class="RibbonItem">!Home | Conditions</span> <![CDATA[ ]]></li></ul></li>
+            <li>In the <span class="UI">Condition Tags</span> dialog, select condition tags<ul class="checkbox"><li>Select one or more condition tags to apply to the element. Upon clicking OK, the element's block/span bar will be colored to display the applied condition. </li><li>If available, also test the Exclude Action option. Upon clicking OK, the element's block/span bar will be colored to display the applied condition. </li></ul></li>
+        </ul>
+        <p class="bold">Removing a condition tag from the element:</p>
+        <p>Once conditions are applied, select the element and invoke the <span class="UI">Condition Tags</span> dialog again and deselect all applied conditions.</p>
+        <ul class="checkbox">
+            <li>Verify all conditions are removed in the markup. There should not be an empty attribute (You should not see "MadCap:conditions=" "" in the markup).</li>
+            <li>Verify the Exclude Action markup is also removed if it was set (You should not see "MadCap:excludeAction="unbind"" in the markup).</li>
+        </ul>
+    </body>
+</html>

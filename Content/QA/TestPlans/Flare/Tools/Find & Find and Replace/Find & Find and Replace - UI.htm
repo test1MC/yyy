@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3854" MadCap:lastWidth="1155" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Find &amp; Find and Replace - UI</h2>
+        <h3>Opening the Find and Replace widget</h3>
+        <p class="note"><a name="supported_editors"></a> The Find and Replace widget is supported in the following editors: <span class="UI">Internal Text editor</span>, <span class="UI">XML Editor</span>, <span class="UI">Condition TagSet Editor</span>, <span class="UI">Auto-Index Editor</span>, <span class="UI">Auto Suggestion List Editor</span>, <span class="UI">FileTagSet Editor</span>, <span class="UI">Index Links Editor</span>, <span class="UI">SearchFilterSet Editor</span>, <span class="UI">Glossary Editor</span>, <span class="UI">VariableSet Editor</span>, and <span class="UI">Frame Contents Editor</span></p>
+        <p class="note">If an attempt is made to launch the Find and Replace widget while focus is not in one of the supported editors, then the <span class="UI">Find and Replace in Files</span> pane will open instead.</p>
+        <ul class="checkbox">
+            <li>To open the <span class="UI">Quick Find</span> Widget - Replace option is collapsed by default in the widget<ul><li>Press <span class="KeyboardShortcut">CTRL</span> + <span class="KeyboardShortcut">F</span> on the keyboard</li><li>Toolstrip interface: <span class="MenuItem">!Edit | Find and Replace | Quick Find</span><li>Ribbon interface: <span class="RibbonItem">!Home |Quick Find</span></li></li></ul></li>
+            <li>To open the <span class="UI">Quick Replace</span> Widget - Replace option is expanded by default in the widget<ul><li>Press <span class="KeyboardShortcut">CTRL</span> + <span class="KeyboardShortcut">H</span> on the keyboard</li><li>Toolstrip interface: <span class="MenuItem">!Edit | Find and Replace | Quick Replace</span><li>Ribbon interface: <span class="RibbonItem">!Home |Quick Replace</span></li></li></ul></li>
+        </ul>
+        <h3>Opening the Find and Replace in Files Pane</h3>
+        <ul class="checkbox">
+            <li>Press <span class="KeyboardShortcut">CTRL</span> + <span class="KeyboardShortcut">SHIFT</span> + <span class="KeyboardShortcut">F</span> on the keyboard</li>
+            <li>Toolstrip interface: <span class="MenuItem">!Edit | Find and Replace | Find and Replace in Files</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!Home | Find and Replace in Files</span></li>
+        </ul>
+        <h3>Load Find Selection</h3>
+        <p>Load Find Selection functionality allows you to select text in the <span class="UI">XML Editor</span> and load that selection into either the <span class="UI">Find and Replace Widget</span> pane or the <span class="UI">Find and Replace in Files</span> pane. </p>
+        <p>Load Find Selection functionality occurs by default when using the default commands to open the <span class="UI">Find and Replace</span> widget and the&#160;<span class="UI">Find and Replace in Files</span> pane.</p>
+        <ul class="checkbox">
+            <li>To test this function in the<span class="UI"> Find and Replace</span> widget: select some text in any of the <a href="#supported_editors">supported editors</a> and use any of the commands to launch the widget</li>
+            <li>To test this function in the <span class="UI">Find and Replace in Files</span> pane: select some text in any of the <a href="#supported_editors">supported editors</a> and use any of the commands to launch the pane</li>
+        </ul>
+        <h3>Opening the Find Results panes</h3>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!Edit | Find and Replace | Find Results 1 or Find Results 2</span>
+            </li>
+            <li><span class="RibbonItem">!Home | Find and Replace in Files | Find Results 1 or Find Results 2</span>
+            </li>
+            <li>Expand “Result Options” in the <span class="UI">Find and Replace in Files</span> pane when performing a find (see below).</li>
+        </ul>
+        <h3>Find and Replace Widget - UI Controls</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p class="Pclear"><span class="UI">Quick Find</span>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/QuickFind.png" class="properties" />
+        </p>
+        <p class="Pclear"><span class="UI">Quick Replace</span>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/QuickReplace.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="note">As you type into the “Find” field,, the first instance of the term is highlighted, and a counter in the text field shows how many matches were found in the file.</p>
+            <ul class="checkbox">
+                <li><span class="bold">Find field: </span>Type the text that you want to find.</li>
+                <li>
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FAR_searchOptions.PNG" /><span class="bold">:&#160;</span>You can click the down arrow in the field to select previously used Find and Replace expressions</p>
+                    <p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FAR_searchterms.PNG" />
+                        </p>
+                    </p>
+                </li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/previous.png" /><span class="bold">:&#160;</span>Locates the previous occurrence of the text. The text is highlighted in the file where it is found.</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/Next.png" /><span class="bold">:&#160;</span>Locates the next occurrence of the text. The text is highlighted in the file where it is found.</li>
+                <li>
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FARWidgetFilterOptions.PNG" /><span class="bold">:&#160;</span>Invokes the options available to use during the Find function.</p>
+                    <p>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FilterOptionsMenu.PNG" class="left" style="text-align: left;" />
+                    </p>
+                    <ul style="list-style-type: circle;margin-left: 150pt;">
+                        <li><span class="bold">Regular Expressions:</span> Enables the “Find” expression as a regular expression during the search</li>
+                        <li><span class="bold">Wildcards: </span>Enables use of Wildcards in the “Find” expression</li>
+                        <li><span class="bold">Whole Word: </span>Enables results to only be returned if there is a whole word match</li>
+                        <li><span class="bold">Match case: </span>Enables results to only be returned if it matches the case of the “Find” expression</li>
+                        <li><span class="bold">Find and Replace in Files: </span>Opens the <span class="UI">Find and Replace in Files</span> pane (see below)</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/downArrow.png" /><span class="bold">: </span>Opens the Replace options part of the widget</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/upArrow.png" /><span class="bold">: </span>Closes the Replace options part of the widget</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FARWidgetClose.png" /><span class="bold">: </span>Closes the entire widget.</li>
+                <li><span class="bold">Replace field: </span>Type the text that will replace the found text.</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/replace.png" /><span class="bold">: </span>Replaces only the current instance of found text.</li>
+                <li>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/replaceAll.png" /><span class="bold">: </span>Replaces all instances of the found text in the current file.</li>
+                <li>Spelling and Grammar in Tooltips are appropriate and correct.</li>
+                <li><span class="KeyboardShortcut">F1</span>&#160;functions and the content is correct.</li>
+                <li><span class="KeyboardShortcut">ESC</span>&#160;Closes the entire widget</li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li><span class="KeyboardShortcut">F3</span> should perform as the Find Next button does.</li>
+                <li>Find and replace text contained in various elements: Tables, Drop-Down Text, Footnotes,Text Popups, etc. </li>
+                <li>Find text that contains various characters and symbols.</li>
+                <li>Replace found text with various characters and symbols.</li>
+                <li>Invoke the widget using the split-view editor</li>
+                <li>Test using the widget in the WYSWYG view and also the text editor view - Focus and use of the widget should stay in the portion of the editor where it is open</li>
+            </ul>
+        </div>
+        <h3>Find and Replace in Files Pane- UI Test Cases</h3>
+        <p class="bold">Default view is the top right of the editor from what it was opened</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/FARpane.PNG" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <p class="bold">Find</p>
+        <ul class="checkbox">
+            <li><span class="bold">Find:</span>Type the text that you want to find.</li>
+            <li><span class="bold">Replace with: </span>Type the text that will replace the found text.</li>
+            <li>
+                <p><span class="bold">Find in: </span>Click the down arrow to select the parameters of the search:</p>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">(current document): </span>Flare looks for the text in file that is currently open</li>
+                    <li><span class="bold">(documents in same folder): </span>Flare looks for the text in all files located in the same folder as the current one.</li>
+                    <li><span class="bold">(all open documents): </span>Flare looks for the text in all files currently open in the interface.</li>
+                    <li><span class="bold">(content folder): </span>Flare looks for the text in all files within the "Content" folder.</li>
+                    <li><span class="bold">(pick a folder): </span>Flare looks for the text in all files in the selected folder (and its subfolders).</li>
+                    <li><span class="bold">(whole project): </span>Flare looks for the text in every file in the project.</li>
+                </ul>
+            </li>
+            <li><span class="bold">File types: </span>Select the kind of files that you want to include in the search (topics, stylesheets, snippets, page layouts, glossaries).</li>
+        </ul>
+        <p class="bold">Options</p>
+        <ul class="checkbox">
+            <li><span class="bold">Match case: </span>Finds only occurrences of the text that match the case (e.g., uppercase, lowercase) of the text entered in the "Find what" field.</li>
+            <li><span class="bold">Use: </span>An advanced feature for users who are familiar with wildcard and regular expressions in searches. If you select this check box, you can specify whether the search will include wildcards or regular expressions.</li>
+            <li><span class="bold">Find in source code: </span>Includes the source code of the topics or style sheets in the search.</li>
+            <li><span class="bold">Output in Find Results 1: </span>Displays the search results (list of files) in the <span class="UI">Find Results 1</span> window.</li>
+            <li><span class="bold">Output in Find Results 2: </span>Displays the search results (list of files) in the <span class="UI">Find Results 2</span> window. This is useful if you have already performed a search using the <span class="UI">Find Results 1</span> window and want to keep those results open while you do another search.</li>
+            <li><span class="bold">Find All: </span>Initiates the search, opens the<span class="UI"> Find Results</span> window that is selected and returns all the results in the <span class="UI">Find Results</span> window</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Find text contained in various elements: Tables, Drop-Down Text, Footnotes, etc.</li>
+                <li>Find text that contains various characters and symbols.</li>
+                <li>Replace found text with various characters and symbols.</li>
+            </ul>
+        </div>
+        <h3>Find Results 1 and 2 - UI Test Cases</h3>
+        <p class="bold">Default view docked in bottom pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/UI--FindResults.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/Button---OpenSelected.png" /> (Open selected): </span>Opens the selected file in the <span class="UI">Find Results</span> pane and highlights the found text.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/Button---OpenPrevious.png" /> (Open previous): </span>Opens the file previous to (above) the selected file in the <span class="UI">Find Results</span> pane and highlights the found text.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/Button---OpenNext.png" /> (Open next): </span>Opens the file following (below) the selected file in the <span class="UI">Find Results</span> pane and highlights the found text.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Find &amp; Find and Replace/Button---ClearTable.png" /> (Clear table): </span>Clears the <span class="UI">Find Results</span> pane.</li>
+        </ul>
+        <p class="bold">Find Results grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">File: </span>Shows the name of the  file.</li>
+            <li><span class="bold">Context: </span>Shows the context of the found text within the file.</li>
+            <li><span class="bold">Folder: </span>Shows the location of the file within the project.</li>
+            <li><span class="bold">Title: </span>Shows the Topic Title as set in the <span class="UI">Topic Properties</span> dialog.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Double-clicking any row in the <span class="UI">Find Results</span> pane will open that file and highlight the found text.</li>
+                <li>Find results in long topics (or stylesheets) and confirm that the <span class="UI">XML Editor</span> (or <span class="UI">Stylesheet Editor</span>) scrolls to the highlighted text.</li>
+            </ul>
+        </div>
+    </body>
+</html>

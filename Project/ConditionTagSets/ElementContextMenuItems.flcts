@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="LightBlue"
+    Name="EditWithMadCapCapture"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8fbc8b"
+    Name="Select"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#dc143c"
+    Name="OpenLinkedFileWith"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#87cefa"
+    Name="ResetSize"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="StyleClass"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="Lime"
+    Name="EditElement"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="Green"
+    Name="UnbindElement"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="RemoveHyperlink"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff7f50"
+    Name="OpenLink"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Object"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#7fff00"
+    Name="CreateSnippet"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ced1"
+    Name="RemoveImageMap"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ffff"
+    Name="HyperlinkPicture"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#6495ed"
+    Name="ImageMap"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Copy"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#32cd32"
+    Name="Delete"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#3cb371"
+    Name="Conditions"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ffe4c4"
+    Name="SnippetOptions"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#7fffd4"
+    Name="Cut"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8a2be2"
+    Name="ListCommands"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#da70d6"
+    Name="PasteBeforeAfter"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightCoral"
+    Name="RemoveCrossReference"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#3300ff"
+    Name="VariableCommands"
+    Comment="" />
+  <ConditionTag
+    Name="FootnoteProperties"
+    Comment=""
+    BackgroundColor="#cc9900" />
+  <ConditionTag
+    BackgroundColor="#990099"
+    Name="Move"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="LightCyan"
+    Name="TableCommands"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#808080"
+    Name="Name"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="ParagraphProperties"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="FontProperties"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="BookmarkCommands"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#cc0000"
+    Name="TextBox"
+    Comment=""
+    OriginalName="TextBox" />
+  <ConditionTag
+    BackgroundColor="#fff300"
+    Name="ImageProperties"
+    Comment="" />
+</CatapultConditionTagSet>

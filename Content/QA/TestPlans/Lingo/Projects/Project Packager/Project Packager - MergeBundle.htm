@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1562" MadCap:lastWidth="985" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Project Packager - Merge Bundle </h2>
+        <h3>Opening the UI</h3>
+        <p>&#160;</p>
+        <p>Click on the Merge Completed Bundle button.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackerToolbar2.png" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/MergeBundleButton.png" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Tooltip</b>:&#160;Merge a bundle received from translators</p>
+        <p>&#160;</p>
+        <h3>UI</h3>
+        <p>Find the ZIP&#160;containing all the translated files and open it:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---OpenZipFile.png" />
+        </p>
+        <p>&#160;</p>
+        <p>That will invoke the <b>Processing...</b> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---Processing.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases</b>:</p>
+        <ul>
+            <li>Clicking "Cancel" should stop merging the bundle and close dialog with no changes</li>
+            <li>In the event of an error, the "Cancel" button should change to "Close" and the "Save Log" button should be enabled</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---ProcessingError.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li>Clicking the "Save Log" button should save the errors and make the log accessible via the project properties</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Statistics report</b>:</p>
+        <p>This report should come up after merging the completed bundle and show a description of which files were translated:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---StatisticsAfterMerge.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases for Merging:</b>
+        </p>
+        <ul>
+            <li>Merge after completing statistics.</li>
+            <li>Merge a bundle that was just created and has not yet been translated. File status should return to untranslated.</li>
+            <li>Merge a bundle with a random zip file. You should get no relevant files found.</li>
+            <li>Update the project then Merge a translated bundle.<ul><li>To translate a bundle without other translation software you can use notepad. Just extract the files form the Zip file and open them in notepad. You can find the translated text and change it or even add new lines to the text.</li></ul></li>
+            <li>Send out a bundle. Update the project. It should repackage the bundles. Merge with the first bundle sent out, then merge the second.</li>
+            <li>Merge a bundle from a previous version i.e. a V3 bundle if using V4 Lingo.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

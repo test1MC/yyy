@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="282" MadCap:lastWidth="845">
+    <body>
+        <ul class="checkbox">
+            <li><span class="UI">Project Organizer</span>:&#160;<ul class="checkbox"><li>Double-click the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Project Organizer</span></li><li>Right-click the  <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Project Organizer</span> and select <span class="MenuItem">Open</span></li><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Project Organizer</span> and press <span class="KeyboardShortcut">Enter</span></li></ul></li>
+        </ul>
+    </body>
+</html>

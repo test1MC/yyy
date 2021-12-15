@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.Select or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.StyleClass or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:lastBlockDepth="12" MadCap:lastHeight="12078" MadCap:lastWidth="1068">
+    <head />
+    <body>
+        <h2>Tables - Editing</h2>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Verify different data types like text, images, movies, etc can be inserted into a cell of a table</li>
+                <li>Apply a table style to a table and output to all types</li>
+            </ul>
+        </div>
+        <h3> Table Content Context Menu (no Table Style applied)</h3>
+        <div class="TestCases">
+            <p class="TestCases">Although most of the option in this section and the next are the same, all menu options must be tested in each context. In this section, test with a table that <span style="text-transform: uppercase;">does not use</span> a Table Style.</p>
+        </div>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tables/Menu--TableWithNoTableStyle--Context.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Invoking this Context Menu:</p>
+            <ul class="checkbox">
+                <li>With no selection, simply right-click anywhere inside a table that does not use a Table Style in the <span class="UI">XML Editor</span>. This menu is an expanded version of the <span class="UI">XML Editor</span>'s standard right click menu when there no selection.</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <p> <b>Context Menu Controls (Tooltips in parentheses):</b>Table specific items only</p>
+            <ul class="checkbox">
+                <li><span class="bold">Insert: </span>Invokes a sub-menu of Insert options<ul class="checkbox"><li><span class="bold">Table (Insert Table): </span>(Inactive if multiple cells are selected) Invokes the Insert Table dialog and inserts a table in the current cell.</li><li><span class="bold">Columns to the Left (Insert new column to the right of the selected column): </span>Inserts as many columns as are included in the current selection to the left of the leftmost selected column.</li><li><span class="bold">Columns to the Right (Insert new column to the right of the selected column):&#160;</span>Inserts as many columns as are included in the current selection to the right of the rightmost selected column.</li><li><span class="bold">Rows Above (Insert new row above the selected row):&#160;</span>Inserts as many rows as are included in the current selection above the topmost selected row.</li><li><span class="bold">Rows Below (Insert new row below the selected row):&#160;</span>Inserts as many rows as are included in the current selection below the bottommost selected row.</li></ul></li>
+                <li><span class="bold">Delete: </span>Invokes a sub-menu of Delete options<ul class="checkbox"><li><span class="bold">Table (Delete table):&#160;</span>Deletes the entire table element.</li><li><span class="bold">Column (Delete selected column(s)): </span>Deletes the col elements based on the current selection or insertion point.</li><li><span class="bold">Row (Delete selected row(s)): </span>Deletes the tr elements based on the current selection or insertion point.</li></ul></li>
+                <li><span class="bold">Select: </span>Invokes a sub-menu of Select options<ul class="checkbox"><li><span class="bold">All Cells (Select all cells): </span>Selects all of the th and td elements in the entire table.</li><li><span class="bold">Table (Select table): </span>Selects the table element.</li><li><span class="bold">Column (Select column): </span>Although this appears to select the col elements, it currently (through V9)&#160;selects all of the th and td elements based on the current selection or insertion point.</li><li><span class="bold">Rows (Select row): </span>Although this appears to select the tr elements, it currently (through V9)&#160;selects all of the th and td elements based on the current selection or insertion point.</li><li><span class="bold">Cell (Select cell): </span>Selects the th or td element based on the current insertion point.</li></ul></li>
+                <li><span class="bold">Sort Rows: </span>Invokes a sub-menu which lets you sort the selected table rows. Rows will sort based on the content of the leftmost selected cells for LTR&#160;languages and the rightmost selected cells for RTL&#160;languages.<ul class="checkbox"><li><span class="bold">Ascending (Sort the selected rows in ascending order): </span>Sorts the selected rows in ascending order (symbols, 0-9, A-Z). </li><li><span class="bold">Descending (Sort the selected rows in descending order): </span>Sorts the selected rows in descending order (Z-A, 9-0, symbols)</li></ul></li>
+                <li><span class="bold">Clear Cells (Clear selected cells): </span>Clears the content from the selected cell</li>
+                <li><b>Merge Cells (Merge selected cells):</b> Active only if you have two cells selected. Launches the <span class="UI">Merge Cells</span> dialog</li>
+                <li><span class="bold">Split Cells... (Split selected cells): </span>Invokes the <span class="UI">Split Cells</span> dialog</li>
+                <li><span class="bold">Cell Content Style... (Select style for cell content): </span>Invokes the <span class="UI">Table Cell Content Style</span> dialog which lets you select the style of the cell contents for the selected cells.</li>
+                <li><span class="bold">Cell Class: </span>Invokes the Cell Class sub-menu<ul><li><span class="bold">Create Style Class (Create a new CSS&#160;style class):</span> Launches the <span class="UI">Create Style</span> dialog&#160;</li><li><span class="bold">Edit Style Class (Edit the CSS&#160;style): </span>Opens the associated CSS and selects the element or element.Class</li><li><span class="bold">Reset Style Class (Reset style class): </span>Active only if a class is selected. Removes the class from the tag.</li></ul></li>
+                <li><span class="bold">Reset Local Cell Formatting (Remove potential local formatting set on the cells): </span>Resets the local cell formatting of the selected table cells</li>
+                <li><span class="bold">Table Style: </span>Invokes the Table Style sub-menu<ul><li><span class="bold">Edit Style (Edit the Style document): </span>Active only if a Table Style is selected. Opens the associated Table Style in the <span class="UI">Table Style Editor</span>.</li><li><span class="bold">Reset Table Style (Reset Table Style): </span>Active only if a Table Style is selected. Removes the Table Style association from the Table.</li><li><span class="bold">(Table Styles List):&#160;</span>All Table Styles in the project should appear listed here. The Table Style will have a check next to it if it is applied to the current table.</li></ul></li>
+                <li><span class="bold">Table Class: </span>Invokes the Table Class sub-menu<ul style="list-style-type: circle;"><li><span class="bold">Create Style Class (Create a new CSS&#160;style class): </span>Launches the <span class="UI">Create Style</span> dialog&#160;</li><li><span class="bold">Edit Style Class (Edit the CSS&#160;style): </span>Opens the associated CSS and selects the element or element.Class</li><li><span class="bold">Reset Style Class (Reset style class): </span>Active only if a class is selected. Removes the class from the table tag.</li><li><span class="bold">(Class List):&#160;</span>Lists all of the table classes in the linked stylesheet (or Master Stylesheet). The class will have a check next to it if it is applied to the current table.				</li></ul></li>
+                <li><span class="bold">Table Properties (Run the Table Properties Dialog): </span>Invokes the <span style="color: #006400;font-weight: bold;">Table Properties</span> dialog for the current table</li>
+            </ul>
+        </div>
+        <h3> Table Content Context Menu (Table Style applied)</h3>
+        <div class="TestCases">
+            <p class="TestCases">Although most of the options in this section and the previous are the same, all menu options must be tested in each context. In this section, test with a table that <span style="text-transform: uppercase;">does use</span> a Table Style.</p>
+        </div>
+        <p>
+            <img class="properties" src="../../../../../Resources/Images/TestPlans/Flare/Tables/Menu--TableWithTableStyle--Context.png">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Invoking this Context Menu:</p>
+            <ul class="checkbox">
+                <li>With no selection, simply right-click anywhere inside a table that does use a Table Style in the <span class="UI">XML Editor</span>. This menu is an expanded version of the <span class="UI">XML Editor</span>'s standard right click menu when there no selection.</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <p> <b>Context Menu Controls:</b>Table specific items only</p>
+            <ul class="checkbox">
+                <li><span class="bold">Insert: </span>Invokes a sub-menu of Insert options<ul class="checkbox"><li><span class="bold">Table (Insert Table): </span>(Inactive if multiple cells are selected) Invokes the Insert Table dialog and inserts a table in the current cell.</li><li><span class="bold">Columns to the Left (Insert new column to the right of the selected column): </span>Inserts as many columns as are included in the current selection to the left of the leftmost selected column.</li><li><span class="bold">Columns to the Right (Insert new column to the right of the selected column):&#160;</span>Inserts as many columns as are included in the current selection to the right of the rightmost selected column.</li><li><span class="bold">Rows Above (Insert new row above the selected row):&#160;</span>Inserts as many rows as are included in the current selection above the topmost selected row.</li><li><span class="bold">Rows Below (Insert new row below the selected row):&#160;</span>Inserts as many rows as are included in the current selection below the bottommost selected row.</li></ul></li>
+                <li><span class="bold">Delete: </span>Invokes a sub-menu of Delete options<ul class="checkbox"><li><span class="bold">Table (Delete table):&#160;</span>Deletes the entire table element.</li><li><span class="bold">Column (Delete selected column(s)): </span>Deletes the col elements based on the current selection or insertion point.</li><li><span class="bold">Row (Delete selected row(s)): </span>Deletes the tr elements based on the current selection or insertion point.</li></ul></li>
+                <li><span class="bold">Select: </span>Invokes a sub-menu of Select options<ul class="checkbox"><li><span class="bold">All Cells (Select all cells): </span>Selects all of the th and td elements in the entire table.</li><li><span class="bold">Table (Select table): </span>Selects the table element.</li><li><span class="bold">Column (Select column): </span>Although this appears to select the col elements, it currently (through V9)&#160;selects all of the th and td elements based on the current selection or insertion point.</li><li><span class="bold">Rows (Select row): </span>Although this appears to select the tr elements, it currently (through V9)&#160;selects all of the th and td elements based on the current selection or insertion point.</li><li><span class="bold">Cell (Select cell): </span>Selects the th or td element based on the current insertion point.</li></ul></li>
+                <li><span class="bold">Sort Rows: </span>Invokes a sub-menu which lets you sort the selected table rows. Rows will sort based on the content of the leftmost selected cells for LTR&#160;languages and the rightmost selected cells for RTL&#160;languages.<ul class="checkbox"><li><span class="bold">Ascending (Sort the selected rows in ascending order): </span>Sorts the selected rows in ascending order (symbols, 0-9, A-Z). </li><li><span class="bold">Descending (Sort the selected rows in descending order): </span>Sorts the selected rows in descending order (Z-A, 9-0, symbols)</li></ul></li>
+                <li><span class="bold">Clear Cells (Clear selected cells): </span>Clears the content from the selected cell</li>
+                <li><b>Merge Cells (Merge selected cells):</b> Active only if you have two cells selected. Launches the <span class="UI">Merge Cells</span> dialog</li>
+                <li><span class="bold">Split Cells... (Split selected cells): </span>Invokes the <span class="UI">Split Cells</span> dialog</li>
+                <li><span class="bold">Cell Content Style... (Select style for cell content): </span>Invokes the <span class="UI">Table Cell Content Style</span> dialog which lets you select the style of the cell contents for the selected cells.</li>
+                <li><span class="bold">Reset Local Cell Formatting (Remove potential local formatting set on the cells): </span>Resets the local cell formatting of the selected table cells</li>
+                <li><span class="bold">Table Style: </span>Invokes the Table Style sub-menu<ul><li><span class="bold">Edit Style (Edit the Style document): </span>Active only if a Table Style is selected. Opens the associated Table Style in the <span class="UI">Table Style Editor</span>.</li><li><span class="bold">Reset Table Style (Reset Table Style): </span>Active only if a Table Style is selected. Removes the Table Style association from the Table.</li><li><span class="bold">(Table Styles List):&#160;</span>All Table Styles in the project should appear listed here. The Table Style will have a check next to it if it is applied to the current table.</li></ul></li>
+                <li><span class="bold">Row Style: </span>Invokes a Row Style sub-menu which lets you select the "(default)"&#160;Row Style or any other Row Style that exists in the associated Table Style.</li>
+                <li><span class="bold">Column Style: </span>Invokes a Column Style sub-menu which lets you select the "(default)"&#160;Column Style or any other Column Style that exists in the associated Table Style.</li>
+                <li><span class="bold">Table Properties (Run the Table Properties Dialog): </span>Invokes the <span style="color: #006400;font-weight: bold;">Table Properties</span> dialog for the current table</li>
+            </ul>
+        </div>
+        <h3>Table Context Menu</h3>
+        <div class="TestCases">
+            <p class="TestCases">Test all menu items in a table with a Table Style and without a Table Style.</p>
+        </div>
+        <p>
+            <img style="width: 207px; height: 384px;" class="left" src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---TableElement---Context.png">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        </div>
+        <h3> Table Column (col) Menu</h3>
+        <div class="TestCases">
+            <p class="TestCases">Test all menu items in a table with a Table Style and without a Table Style.</p>
+        </div>
+        <p>
+            <img class="properties" src="../../../../../Resources/Images/TableColumn.png" style="width: 207px;height: 384px;" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <div class="SnippetIndent">
+            <p class="bold">Context Menu Controls (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Select (Select column): </span>Selects the th and td elements within the current column</li>
+                <li><span class="bold">Copy (Copy column): </span>Copies the current column</li>
+                <li><span class="bold">Paste (Left) (Paste column(s)&#160;to the left of the selected column): </span>Active only if you have something copied. Pastes copied selection to the left of the current column.</li>
+                <li><span class="bold">Paste (Right) (Paste column(s)&#160;to the left of the selected column): </span>Active only if you have something copied. Pastes copied selection to the right of the current column.</li>
+                <li><span class="bold">Delete (Delete selected column(s)): </span>Deletes current column.</li>
+                <li><span class="bold">Clear (Clear selected column(s)): </span>Clears the content from each of the cells in current column.</li>
+                <li><span class="bold">Insert New (Left) (Insert new column to the left of the selected column): </span>Inserts a new column to the left of the current column.</li>
+                <li><span class="bold">Insert New (Right) (Insert new column to the left of the selected column):&#160;</span>Inserts a new column to the right of the current column.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Tables/MenuItem--TableWidthAndHeight.png" /> (Set column width):&#160;</span>Menu UI&#160;which lets you set the width of the current column. Set the number first. Changing the unit or clicking the blue arrow will set the value for the column width.</li>
+                <li><span class="bold">Reset Width (Reset column width - remove all widths from column object and the cells):&#160;</span>Removes any width styles set on the current column as well as any of the width styles set on the cells within the current column.</li>
+                <li><span class="bold">Conditions... (Set conditional text properties for selected column(s)): </span>Launches the <span class="UI">Condition Tags</span> dialog&#160;which lets you apply a condition tag to the current col element.</li>
+                <li><span class="bold">Style Class:&#160;</span>(Only present if there is no Table Style association) Currently not present for columns (See bug 50173)</li>
+                <li><span class="bold">Column Style:&#160;</span>(Only present if a Table Style is associated with the table)&#160;Invokes the Column Style Class sub-menu<ul><li><span class="bold">(default) (Use the default style for this element):&#160;</span>Uses the default Column Style that the Table Style would associate with this column. (default) will have a check next to it if the column is using the default Column Style.</li><li><span class="bold">[Table Style Column Styles List] (Use the selected style for this element):&#160;</span>All Column Styles in the associated Table Style should appear listed here. The Column Style will have a check next to it if it is applied to the current column.</li></ul></li>
+            </ul>
+        </div>
+        <h3> Table Row (tr) Menu</h3>
+        <div class="TestCases">
+            <p class="TestCases">Test all menu items in a table with a Table Style and without a Table Style.</p>
+        </div>
+        <p>
+            <img class="properties" src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---TableRow---Context.png" style="width: 207px;height: 384px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <div class="SnippetIndent">
+            <p class="bold">Context Menu Controls (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Select (Select row): </span>Selects the th and td elements within the current row</li>
+                <li><span class="bold">Copy (Copy row): </span>Copies the current row</li>
+                <li><span class="bold">Paste (Above) (Paste row(s)&#160;above the selected row): </span>Active only if you have something copied. Pastes copied selection above the current row.</li>
+                <li><span class="bold">Paste (Below) (Paste row(s)&#160;below the selected row): </span>Active only if you have something copied. Pastes copied selection below the current row.</li>
+                <li><span class="bold">Delete (Delete selected row(s)): </span>Deletes current row.</li>
+                <li><span class="bold">Clear (Clear selected row(s)): </span>Clears the content from each of the cells in current row.</li>
+                <li><span class="bold">Insert New (Above) (Insert new row above the selected row): </span>Inserts a new row above the current row.</li>
+                <li><span class="bold">Insert New (Below) (Insert new row below the selected row):&#160;</span>Inserts a new row below of the current row.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Tables/MenuItem--TableWidthAndHeight.png" /> (Set column height):&#160;</span>Menu UI&#160;which lets you set the height of the current row. Set the number first. Changing the unit or clicking the blue arrow will set the value for the row height.</li>
+                <li><span class="bold">Reset Height (Reset row height):&#160;</span>Removes the height style set on the current row.</li>
+                <li><span class="bold">Conditions... (Set conditional text properties for selected row(s)): </span>Launches the <span class="UI">Condition Tags</span> dialog&#160;which lets you apply a condition tag to the current tr element.</li>
+                <li><span class="bold">Style Class:&#160;</span>(Only present if there is no Table Style association) Invokes the Style Class submenu<ul class="checkbox"><li><span class="bold">Create Style Class  (Create a new CSS&#160;style class): </span>Launches the <span class="UI">Create Style</span> dialog&#160;</li><li><span class="bold">Edit Style Class  (Edit the CSS&#160;style): </span>Opens the associated CSS and select the element or element.Class</li><li><span class="bold">Reset Style Class (Reset style class): </span>Active only if a class is selected. Removes the class from the tag.</li><li><span class="bold">(Class List): </span>Lists all of the element classes in the linked stylesheet (or Master Stylesheet). The class will have a check next to it if it is applied to the current element.</li></ul></li>
+                <li><span class="bold">Row Style:&#160;</span>(Only present if a Table Style is associated with the table)&#160;Invokes the Row Style Class sub-menu<ul><li><span class="bold">(default) (Use the default style for this element):&#160;</span>Uses the default Row Style that the Table Style would associate with this row. (default) will have a check next to it if the row is using the default Row Style.</li><li><span class="bold">[Table Style Row Styles List] (Use the selected style for this element):&#160;</span>All Row Styles in the associated Table Style should appear listed here. The Row Style will have a check next to it if it is applied to the current row.</li></ul></li>
+            </ul>
+        </div>
+        <h3> Table Cell (th/td) Menu</h3>
+        <div class="TestCases">
+            <p class="TestCases">Test all menu items in a table with a Table Style and without a Table Style.</p>
+        </div>
+        <p><a href="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---TableCell---Context.png"><a href="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---TableCell---Context.png"><img src="../../../../../Resources/Images/TestPlans/Flare/Tables/UI---TableCell---Context.png" alt="" title="" style="float: left;" /><![CDATA[
+]]></a></a>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <div class="SnippetIndent">
+            <p class="bold">Context Menu Controls (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><b>Cell (Edit Cell properties (Crtl + Alt + B) ):</b> Opens the Cell Properties dialog<ul><li><b>Borders:</b> Allows you to set and configure a border for a cell</li><li><b>Text:</b> Allows you to set how the text will be displayed in a cell.</li><li><b>Hyphenation:</b> Allows you to configure hyphenation for a cell.</li><li><b>Background:</b> Allows you to configure the background for a cell</li></ul></li>
+                <li><b>Font (Font Properties (Crtl + Shift + B) ):</b> Opens the font properties Dialog.</li>
+                <li><b>Style Class:</b> Opens the Style Sheet editor .<ul><li><span class="bold">Create Style Class  (Create a new CSS&#160;style class): </span>Launches the <span class="UI">Create Style</span> dialog&#160;</li><li><span class="bold">Edit Style Class  (Edit the CSS&#160;style): </span>Opens the associated CSS and select the element or element.Class</li><li><span class="bold">Reset Style Class (Reset style class): </span>Active only if a class is selected. Removes the class from the tag.</li><li><span class="bold">(Class List): </span>Lists all of the element classes in the linked stylesheet (or Master Stylesheet). The class will have a check next to it if it is applied to the current element.</li></ul></li>
+            </ul>
+        </div>
+        <h3>General Editing</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>
+                    <p>Test copying and cutting a table with a Table Style from one topic and pasting it into another topic in a different folder. Verify the links update.</p>
+                </li>
+                <li>Pasting another element or text over a selected table will insert that data into all the cells. – Verify that there is no malformed XML from this</li>
+                <li>Pasting another table over the existing one should replace the selected table – Verify that it renders and display in the block bar correctly.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <p class="note">When selecting the table make sure the table tag is selected and not the table cells.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h3>Structure Bars</h3>
+        <p>The structure bars for tables have been improved for V7 in the XML Editor.</p>
+        <p>&#160;</p>
+        <p class="bold">Table Rows/Tag Bars:</p>
+        <ul style="list-style-type: square;">
+            <li>The table row bars have been merged with the regular tag block bars on the left of the editor. To turn these on, you can click the button for showing tag block bars .</li>
+            <li> Starting with this version, you can see all of the main table row tags, whether you click inside a table or not. You can see additional tags when you click in certain cells.</li>
+            <li>The main &lt;table&gt; tag can be seen. This tag represents the entire table.</li>
+            <li>Within that tag you can see the &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; tags. These tags represent any table captions, header rows, regular table body rows, and footer rows, respectively.</li>
+            <li>Within those tags you can see the &lt;tr&gt; tags, which represent the individual rows in the table.</li>
+            <li>Within those tags you can see &lt;th&gt; or &lt;td&gt; tags when you click in different cells. These tags represent content for table headers or regular cell text, respectively.</li>
+            <li>And finally, within those tags you may see other types of tags such as &lt;p&gt;, &lt;ul&gt;, or &lt;li&gt; (paragraphs, lists), depending on the types of content you add to those rows.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Table Columns/Span Bars:</p>
+        <p>The table column bars are now grouped with the span bars, being displayed above them in the XML Editor. To turn these on, you can click the button for showing span bars . The old button for showing table column bars has been removed.</p>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p><b>Default Empty Table:</b>
+        </p>
+        <p>&lt;table style="width: 100%;"&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;tbody&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/tbody&gt;</p>
+        <p>&lt;/table&gt;</p>
+        <p>&#160;</p>
+        <p><b>Default Empty Table with a Row Conditioned Out:</b>
+        </p>
+        <p>&lt;table style="width: 100%;"&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;col /&gt;</p>
+        <p>&lt;tbody&gt;</p>
+        <p>&lt;tr MadCap:conditions="Default.PrintOnly"&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;tr&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;td&gt;&amp;#160;&lt;/td&gt;</p>
+        <p>&lt;/tr&gt;</p>
+        <p>&lt;/tbody&gt;</p>
+        <p>&lt;/table&gt;</p>
+        <p>&#160;</p>
+        <p><b>Default Empty Table With Header and Footer and Associated Table Style:</b>
+        </p>
+        <div>
+            <p>&lt;table style="margin-left: 0;margin-right: auto;width: ;mc-table-style: url('Resources/TableStyles/NewStyle.css');" class="TableStyle-Basic" cellspacing="0"&gt;</p>
+            <p>&lt;col /&gt;</p>
+            <p>&lt;col /&gt;</p>
+            <p>&lt;col /&gt;</p>
+            <p>&lt;thead&gt;</p>
+            <p>&lt;tr class="Head-Header1"&gt;</p>
+            <p>&lt;th class="HeadE-Column1-Header1"&gt;&amp;#160;&lt;/th&gt;</p>
+            <p>&lt;th class="HeadE-Column1-Header1"&gt;&amp;#160;&lt;/th&gt;</p>
+            <p>&lt;th class="HeadD-Column1-Header1"&gt;&amp;#160;&lt;/th&gt;</p>
+            <p>&lt;/tr&gt;</p>
+            <p>&lt;/thead&gt;</p>
+            <p>&lt;tbody&gt;</p>
+            <p>&lt;tr class="Body-Body1"&gt;</p>
+            <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyD-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;/tr&gt;</p>
+            <p>&lt;tr class="Body-Body1"&gt;</p>
+            <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyE-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyD-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;/tr&gt;</p>
+            <p>&lt;tr class="Body-Body1"&gt;</p>
+            <p>&lt;td class="BodyB-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyB-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="BodyA-Column1-Body1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;/tr&gt;</p>
+            <p>&lt;/tbody&gt;</p>
+            <p>&lt;tfoot&gt;</p>
+            <p>&lt;tr class="Foot-Footer1"&gt;</p>
+            <p>&lt;td class="FootE-Column1-Footer1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="FootE-Column1-Footer1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;td class="FootD-Column1-Footer1"&gt;&amp;#160;&lt;/td&gt;</p>
+            <p>&lt;/tr&gt;</p>
+            <p>&lt;/tfoot&gt;</p>
+            <p>&lt;/table&gt;</p>
+        </div>
+    </body>
+</html>

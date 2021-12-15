@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3931" MadCap:lastWidth="985" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Translation Memory Editor - UI </h2>
+        <h3>Opening the UI</h3>
+        <p>1.	Select Translate&gt; Edit Lingo TM…</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Menus/UI--Menu--Translate.png" style="width: 149px;height: 155px;" />
+        </p>
+        <h3>UI</h3>
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Translation Memory Editor/UI--TranslationMemoryEditor--LocalToolbarV4.png" />
+        </p>
+        <p class="bold">Buttons (Tooltips in Parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">New Item: </span>A new row is added to the bottom of the tab and is highlighted.</li>
+            <li><span class="bold">Delete:</span> Deletes the selected row(s).</li>
+            <li><span class="bold">Filter:      <![CDATA[ ]]></span>Filter for fast search in the TM. Use wild cards as necessary.</li>
+            <li><span class="bold">Language Filter:</span> If more than one language exist it allows the user to select specific languages so only part of the TM is displayed thus improving performance. The language chosen upon creation of a new project is what the language filter in the translation memory will default too.<ul style="list-style-type: square;"><li><span class="bold">Test case:</span> Test to make sure the language of the project is the default language selected in the TM.</li></ul></li>
+            <li><span class="bold"><a href="#Import">Import TMX</a>...(Import translation memory from TMX):</span>Opens Import  TMX File dialogue.&#160;*see below for more testing details</li>
+            <li><span class="bold"><a href="#Export">Export to TMX</a>...(Export translation memory to TMX):</span>Opens Export to TMX dialogue.&#160;*see below for more testing details.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>For all UI Dialogs test the following:</h4>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p class="HowTo" style="font-weight: bold;">How to edit a translation memory database:</p>
+        <li value="1">Select <b>Translate&gt;Edit Lingo TM</b>. The Translation Memory Editor opens.</li>
+        <li>You can do any of the following: </li>
+        <ul>
+            <li>
+                <p class="Bold">Add a segment:</p>
+                <ol style="LIST-STYLE-TYPE: lower-alpha;">
+                    <li value="1">In the local toolbar, click the new item button. A new row is added to  the bottom of the tab and is highlighted. </li>
+                    <li>Double-click on the new row. The Database Segment Editor opens at  the bottom of the interface.</li>
+                    <li>Enter the text for the source language on the left, and enter the  text for the target language on the right.</li>
+                    <li>Press <b>CTRL+S</b> or click   to save your work.</li>
+                    <li>When asked if you want to accept the translation. Click  <b>Yes</b>.</li>
+                </ol>
+            </li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="Bold"><span style="font-weight: bold;">Edit a segment:</span>
+                </p>
+                <ol style="LIST-STYLE-TYPE: lower-alpha;">
+                    <li value="1">Double-click the row that you want to edit or click the <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button--OpenSegmentEditor.png" /> button. The Database Segment  Editor opens at the bottom of the interface. <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--DatabaseSegmentEditor.png" style="width: 390px;height: 121px;" /></li>
+                    <li>Edit the text for the source language on the left, and edit the text  for the target language on the right. </li>
+                    <li>Press <b>CTRL+S</b> or click   to save your work. </li>
+                    <li>When asked if you want to accept the translation. Click  <b>Yes</b>.</li>
+                </ol>
+                <p>&#160;</p>
+                <p class="Bold" MadCap:conditions=""><span style="font-weight: bold;">Delete a segment:</span>
+                </p>
+                <ol style="LIST-STYLE-TYPE: lower-alpha;">
+                    <li value="1">Click the row that you want to delete. A line appears through the  middle of the text. </li>
+                    <li>Press <b>CTRL+S</b> or click   to save your work.</li>
+                </ol>
+                <p>&#160;</p>
+                <p class="Bold" style="font-size: 11pt;"><span style="font-weight: bold;"><a name="Import"></a>Import a Translation Memory eXchange (TMX) file:</span>
+                </p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemory--ImportTMXFileDialogue.png" style="width: 203px;height: 106px;" />
+                </p>
+                <p>&#160;</p>
+                <ol style="LIST-STYLE-TYPE: lower-alpha;">
+                    <li value="1">
+                        <p>In the local toolbar, click <b>Import TMX</b>.</p>
+                        <p>The Import TMX File dialog opens.</p>
+                    </li>
+                    <li value="2">Click <b>Browse</b>. </li>
+                    <li value="3">In the dialog that opens, navigate to the TMX file that you want to  import, and double-click it. </li>
+                    <li value="4">
+                        <p>(Optional) By default, the current database is shown in the <b>Translation  Memory</b> field. If you are working with other databases and want to use a  different one instead, select it from this field.</p>
+                        <p>You might use this field, for example, if you forgot to change to the  database you want before starting the import process.</p>
+                    </li>
+                    <li value="5">
+                        <p>Click <b>Start Import</b>.</p>
+                        <p>A message lets you know the results of the import.</p>
+                    </li>
+                    <li value="6">Click <b>OK</b>.</li>
+                </ol>
+                <p class="Bold" style="font-size: 11pt;"><span style="font-weight: bold;"><a name="Export"></a>Export segments to a TMX file:</span>
+                </p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/Translation Memory Editor/UI--TranslationMemory--ExportTMXFileDialogue.png" style="width: 212px;height: 161px;" />
+                </p>
+                <ol style="LIST-STYLE-TYPE: lower-alpha;">
+                    <li value="1">
+                        <p>In the local toolbar, click <b>Export to TMX</b>.</p>
+                        <p>The Export to TMX Dialog opens.</p>
+                    </li>
+                    <li value="2">Next to the <b>TMX File</b> field, click <b>Browse</b>. </li>
+                    <li value="3">In the dialog that opens, navigate to the folder where you want to  export the file. Also in the <b>File name</b> field, enter a name for the new  TMX file. Then click <b>Save</b>. </li>
+                    <li value="4">
+                        <p>In the <b>Languages to export</b> field, all of the languages involved in  your translation memory database are listed, showing both the source and target  languages. Select the languages that you want to include in the exported TMX  file. </p>
+                    </li>
+                    <li value="5">
+                        <p>In the <b>Source language</b> field, select the language(s) that you want to  be available as the source in the exported TMX file. You can select an  individual language or you can select "Any," which allows tools to use  translations in any direction in the TMX file. </p>
+                    </li>
+                    <li value="6">Click <b>Start Export</b>.  <p>A message lets you know the results of the export.</p></li>
+                    <li value="7">Click <b>OK</b>.</li>
+                </ol>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Translation Editor</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Translation Memory Editor/UI--TranslationMemoryEditor--V4.png" class="properties" style="width: auto;height: 220px;" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Source Language: </span>Shows the source language represented by the first 2 letters in of the language in lowercase (i.e. English=en)</li>
+                    <li><span class="bold">Source: </span>Source text</li>
+                    <li><span class="bold">Target Language: </span>Shows the target language represented by the first 2 letters in of the language in lowercase in it's native spelling ( i.e. Spanish=es for Espanol)</li>
+                    <li><span class="bold">Target:</span>Target text(translated text)</li>
+                </ul>
+            </li>
+        </ul>
+        <li>
+            <p><b>Right Click Menu:</b> Right clicking any row should invoke sub-menu:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Lingo/Translation Memory Editor/UI--TranslationMemoryEditor--SubMenuV4.png" style="width: 125px;height: 87px;">
+                </img>
+            </p>
+        </li>
+        <li><span class="bold">Revert to Source:</span> Reverts the content in the target language column back to the content that is in the source language column.</li>
+        <li><span class="bold">Add Tags From Source:</span> Adds all the tags that are in the content of the source language column to the target language side.</li>
+        <li><span class="bold">Add New Term:</span> Opens the Add to Termbase dialogue window.</li>
+        <p>&#160;</p>
+        <p class="bold">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li>Source and Target Columns are sortable alphabetically both ascending and descending.</li>
+            <li>Test that you can not cut rows.</li>
+        </ul>
+        <h4>Translation Area</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Translation Memory Editor/UI--TranslationArea.png" style="width: 931px;height: 124px;" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="bold">Language picker:</span> This allows you to change the source or the target language of an entry. You can not have the same source and target language.</p>
+        <p><span class="bold">Test case:</span> Test that you can change the language and that it is saved when you click to a different segment. Save the TM, close and reopen, and make sure the change was applied. </p>
+        <p>&#160;</p>
+        <p class="bold">Right Click&#160;Menu:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Translation Memory Editor/UI--RightClickMenu.png" style="width: 142px;height: 141px;" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li><span class="bold">Cut:</span> Cuts out the selected content and copies it to the clipboard</li>
+            <li><b>Copy:</b> Copies the selected content to the clipboard</li>
+            <li><b>Copy Xml as Text:</b> copies the Xml code behind the content to the clipboard</li>
+            <li><b>Paste:</b> Paste the stored content of the clipboard into editor.</li>
+            <li>
+                <p><span class="bold">Revert to Source:</span> Reverts the content in the target language column back to the content that is in the source language column.</p>
+            </li>
+            <li><span class="bold">Add Tags From Source:</span> Adds all the tags that are in the content of the source language column to the target language side.</li>
+            <li><span class="bold">Add New Term:</span> Opens the Add to Termbase dialogue window.</li>
+            <li><span class="bold">Show Space:</span> Toggle show space on/off. Shows the spaces in the content represented by a dot for each space.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Controls: </p>
+        <ul>
+            <li>Up arrow: Move to previous segment (CTRL+Up arrow).</li>
+            <li>
+                <p>Down arrow: Moves to the next segment(CTRL+Down arrow).</p>
+                <p class="note">Note*: any changes in the TM are accepted automatically since the user is editing the database. Hence there is no accept button or accept shortcuts.</p>
+            </li>
+        </ul>
+        <p><b>Test cases:</b>
+        </p>
+        <ul>
+            <li> Make sure that Alt+Up/down does not cause error. </li>
+            <li>If the tags in the translation area match the source then you should be able to move to the previous or next segment. If they do not match the user should get an message saying the tags do not match.</li>
+        </ul>
+    </body>
+</html>

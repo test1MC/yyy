@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="841" MadCap:lastWidth="624" MadCap:ignoredWords="Jolla">
+    <head>
+    </head>
+    <body>
+        <h2>Profile</h2>
+        <p>This lets you edit your profile and update your notification settings. The tasks that you can perform in this page are identical to the ones that you can perform when editing your profile from the embedded discussions forms.</p>
+        <h3>Change Profile Image</h3>
+        <p>Click <span class="UI">Change Image</span>, the <span class="UI">Open</span> dialog will open, navigate to the image that you want to upload. This uploads your image and it appears in the <span class="UI">Crop Your Image</span> dialog. Click <span class="UI">Crop and Save</span> after adjusting the boundaries.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Home--CropYourImage.png" alt="" title="" class="propertiesNoFloat" />
+        </p>
+        <div class="TestCases">
+            <p class="TestCases">Test&#160;Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Image formats, sizes</li>
+            </ul>
+        </div>
+        <h3>Personal</h3>
+        <p>You may be able to update the following information, depending the on the fields that have been included and made editable by the Pulse Administrator.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Profile--Personal.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li><span class="bold">First Name: </span>The first name of the user.</li>
+                <li><span class="bold">Last Name: </span>The last name of the user.</li>
+                <li><span class="bold">Email Address: </span>A valid email address for the user.</li>
+                <li><span class="bold">Title: </span>A title for the user, such as a professional or job title.</li>
+                <li><span class="bold">Department: </span>A department name for the user, such as Engineering or Sales.</li>
+                <li><span class="bold">Location: </span>A location for the user, such as La Jolla or New York City.</li>
+                <li><span class="bold">Phone: </span>A telephone number for the user.</li>
+                <li><span class="bold">Cell: </span>A mobile phone number for the user.</li>
+                <li><span class="bold">Skills &amp; Expertise: </span>Click Edit Skills if you want to associate yourself with any skills added by the Administrator. You can request new skills to be added by clicking I don't see my skill.<ul><li>Start typing to see the Skills available</li><li>Click <span class="UI">I don't see my skill</span> to open the <span class="UI">Request New Skill</span> dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Profile--RequestNewSkill.png" alt="" title="" class="propertiesNoFloat" /></li></ul></li>
+                <li><span class="bold">Experience: </span>Click Add Experience if you want to add any relevant experience:<ul><li><span class="bold">Company Name:&#160;</span>Type your company name.</li><li><span class="bold">Title:&#160;</span>Type your title.</li><li><span class="bold">Time&#160;Period:&#160;</span>Select the begining and ending year from the drop down menu.</li><li><span class="bold">Description: </span>Type your description. This text input field can be re sized by dragging the lower right corner.</li></ul></li>
+                <li><span class="bold">Education: </span>Click Add Education if you want to add any relevant educational background.<ul><li><span class="bold">School Name:&#160;</span>Type your school name.</li><li><span class="bold">Dates Attended:&#160;</span>Select the begining and ending year from the drop down menu.</li><li><span class="bold">Field of Study:&#160;</span>Type your field of study.</li><li><span class="bold">Description: </span>Type your desciption. This text input field can be re sized by dragging the lower right corner.</li></ul></li>
+                <li><span class="bold">Certification: </span>Click Add Certification if you want to add any relevant certifications:<ul><li><span class="bold">Certification Name:&#160;</span>Type your certification name.</li><li><span class="bold">Year:&#160;</span>Select the  year from the drop down menu.</li><li><span class="bold">Description: </span>Type your desciption. This text input field can be re sized by dragging the lower right corner.</li></ul></li>
+            </ul>
+            <p class="TestCases">Test Cases</p>
+        </div>
+        <p class="note">Note: Bug 90727:Pulse Administrators are not able to edit the User Profile fields without enabling the edit feature / ability for the users also</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>When you click Edit Skills (for example) it should hide Add Experience/Education/Certification buttons.</li>
+            </ul>
+        </div>
+        <h3>Notifications</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Pulse/Dashboard/Pulse--Profile--Notifications.png" alt="" title="" class="properties" />
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li><span class="bold">Send me email:&#160;</span>Sends you email when events related to you occur.</li>
+                <li><span class="bold">Answers: </span>Notifies you when people post answers to your questions.</li>
+                <li><span class="bold">Comments: </span>Notifies you when people comment on your posts.</li>
+                <li><span class="bold">Likes: </span>Notifies you when people like your posts.</li>
+                <li><span class="bold">Follows: </span>Notifies you when people follow you.</li>
+                <li><span class="bold">Updates: </span>Notifies you when people post updates on your feed.</li>
+                <li><span class="bold">Mentions: </span>Notifies you when people mention you in their posts.</li>
+                <li><span class="bold">Asks: </span>Notifies you when people ask you a question.</li>
+                <li><span class="bold">Invites: </span>Notifies you when people invite you to join Pulse system feeds.</li>
+                <li><span class="bold">Daily Digest: </span>Send you one daily digest email containing all account-related Pulse activity.</li>
+                <li><span class="bold">Tasks: </span>Notifies you when users assign you a task.</li>
+                <li><span class="bold">Messages: </span>Notifies you when people send you are direct message while you are not actively using Pulse.</li>
+                <li><span class="bold">Skills &amp; Expertise: </span>Notifies you when changes are made to your skills and expertise.</li>
+                <li><span class="bold">Post Approved: </span>Notifies you if you are using the moderation feature and a new post has been approved by a moderator.</li>
+                <li><span class="bold">Post Rejected: </span>Notifies you if you are using the moderation feature and a new post has been rejected by a moderator.</li>
+                <li><span class="bold">Post Pending Moderation: </span>Notifies you if you are using the moderation feature and a new post is waiting for approval by a moderator.</li>
+            </ul>
+        </div>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Click all links in generated emails, make sure they go to the help system and not the Pulse dashboard.</li>
+            </ul>
+        </div>
+    </body>
+</html>

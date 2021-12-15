@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="5234" MadCap:lastWidth="1381" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Object or ElementContextMenuItems.ParagraphProperties or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Text Boxes- Editing</h2>
+        <h3>text box menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/UI--DivContextMenu.png" style="width: 226px; height: 251px;" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <p class="note">If you remove either the height or the width from the code of a text box it will become a div and won't have the Text Box... option in the context menu.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Pasting another text box object over the existing one should replace the selected text box object – Verify that it renders and display in the block bar correctly.</li>
+                <li>Pasting another element or text over a selected text box object will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Inserting another element or typing over a selected text box object will replace it with that data. – Verify that there is no malformed XML from this</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="note">If you remove either the width or the height the 'text box' becomes just a div.</p>
+        <p><b>No Class:</b>
+        </p>
+        <p>&#160;</p>
+        <p>&lt;div style="width: 200px;height: 200px;clear: right;mc-float: none;"&gt;</p>
+        <p>&lt;p&gt;&amp;#160;&lt;/p&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&#160;</p>
+        <p><b>With Class:</b>
+        </p>
+        <p>&#160;</p>
+        <p>&lt;div class="text1" style="width: 260px;height: 251px;"&gt;</p>
+        <p>&lt;p&gt;&amp;#160;&lt;/p&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&#160;</p>
+    </body>
+</html>

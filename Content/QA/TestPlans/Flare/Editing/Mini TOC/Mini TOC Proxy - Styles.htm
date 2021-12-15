@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="5060" MadCap:lastWidth="1401" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or StyleTableColumns.XMLEditor or StyleTableRows--Block.HangingPunctuation or StyleTableRows--Block.VerticalAlign or StyleTableRows--Font.TextDecoration] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Mini-TOC Proxy - Styles                                </h2>
+        <p>The styles detailed below all contribute to the look of the generated Mini-TOC in the output (in place of the Mini-TOC Proxy). Of the styles outlined here, only MadCap|miniTocProxy will allow you to create unique classes. All other styles are generated styles used by all Mini-TOC Proxies regardless of class.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-StyleApplyChange.flsnp" />
+        <h4>Create Style Dialog – Launched from an Mini-TOC Proxy</h4>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp" />
+        <p>&#160;</p>
+        <h4>Stylesheet and Mini-TOC Proxy styles</h4>
+        <p class="bold" style="font-size: 16pt;">MadCap:miniTocProxy</p>
+        <ul class="checkbox">
+            <li>Test creating a new class for MadCap:miniTocProxy</li>
+            <li>Test copying and pasting the MadCap:miniTocProxy node and any class nodes</li>
+            <li>Test deleting the MadCap:miniTocProxy styles and any class nodes of MadCap:miniTocProxy</li>
+        </ul>
+        <p class="note"> When generating print outputs, the generated mini TOC relies completely on the actual heading levels used in your content. For print outputs, "mc-toc-depth" establishes the greatest heading level that can appear in the generated mini TOC. So, if I&#160;place a mini-TOC proxy in a topic that begins with an h2 and I&#160;set the TOC&#160;Depth to 4, the generated mini TOC&#160;will display any &lt;h3&gt; and &lt;h4&gt; elements up to the next &lt;h2&gt;. It will not display &lt;h5&gt;, &lt;h6&gt;, etc.</p>
+        <p class="note">When generating web outputs, the generated mini TOC&#160;relies completely on the tree structure of you TOC&#160;file (in the TOC&#160;Editor). For web outputs, the mini TOC&#160;will only appear in topics that are associated with books. So, in the case of web output types, "mc-toc-depth" establishes the actual number of levels that can display in the generated mini TOC. For example, lets say my TOC&#160;file is set up such that I&#160;have a chain of 10 books, one inside the another. I&#160;add a mini-TOC&#160;Proxy with TOC&#160;Depth set to 2 to every topic in the chain. In the output, every one of the generated mini TOCs will contain two levels (except for the last two which don't have two levels within them to display).</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>border-top-color: black</li>
+            <li>border-top-style: solid</li>
+            <li>border-top-width:&#160;1px</li>
+            <li>margin-top:&#160;10px</li>
+            <li>mc-output-support: all</li>
+            <li>mc-toc-depth:&#160;3</li>
+            <li>padding-left: 20px</li>
+            <li>padding-top:&#160;10px</li>
+        </ul>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">HTML&#160;5 / WebHelp 2</th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                        <p class="styleTables">&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                        <p class="styleTables">&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                        <p class="styleTables">&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-output-support:Defines which output types should include the style.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-toc-depth: Sets the number of heading levels that you want to be included in the mini-TOC.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>Boundary test each of the popup dialogs from the style editor</li>
+            <li>Symbols, Negative #s, long strings, various units of measure, Alt+ characters, large numbers, text</li>
+            <li>Verify that Media types work when applied and generated</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 16pt;">p.MiniTOC1, p.MiniTOC2, p.MiniTOC3, etc.</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>font-weight:&#160;bold (for p.MiniTOC1 only)</li>
+            <li>margin-left:&#160;0pt, 10pt, 20pt, etc. (0pt beginning with p.MiniTOC1 and proceeding up)</li>
+            <li>mc-hidden:&#160;hidden</li>
+            <li>mc-leader-aling:&#160;right</li>
+            <li>mc-leader-format:&#160;.</li>
+            <li>mc-leader-offset:&#160;10pt</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp" />
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>Boundary test each of the popup dialogs from the style editor</li>
+            <li>Symbols, Negative #s, long strings, various units of measure, Alt+ characters, large numbers, text</li>
+            <li>Verify that Media types work when applied and generated</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

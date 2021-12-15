@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4281" MadCap:lastWidth="964" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:ignoredWords="FrameCount">
+    <head>
+    </head>
+    <body>
+        <h2>Conditions - UI  </h2>
+        <p class="bold">Opening the Conditions Tag Tab:</p>
+        <ol>
+            <li style="font-weight: normal;"><span class="bold">!Project|&#160;Project Properties</span> or <span class="bold">!Movie | Movie Properties</span></li>
+            <li> Click the Condition Tags tab item</li>
+        </ol>
+        <p class="bold">Opening the Conditions Tab:</p>
+        <ol>
+            <li><span class="bold">!Project|&#160;Project Properties</span> or <span class="bold">!Movie | Movie Properties</span> or <span class="bold">Frame Properties</span> or <span class="bold">Object properties</span></li>
+            <li>Click the Conditions tab</li>
+        </ol>
+        <h3>UI - Creating and Editing Conditions:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Tab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>A movie inside of a project will not contain this tab in its properties</p>
+                </li>
+                <li>Only a stand alone movie will contain this tab</li>
+                <li>By Default 2 conditions already exist; Demo and Practice</li>
+                <li>To edit a field in the name column, simply click it and start typing<ul><li>Alternatively, select the field and press F2 to start editing</li></ul></li>
+                <li>
+                    <p>To edit a background field, select it and pick a color from the <span class="bold">Pick Color...</span> dialog.</p>
+                </li>
+                <li>To edit a field in the Comment column, simply click it and start typing<ul><li>Alternatively, select the field and press F2 to start editing</li></ul></li>
+                <li>To Create a new condition, click in the Name field of the bottom row and give the condition a name.&#160;<ul><li>As soon as you start typing, a unique color for the condition should be provided automatically</li></ul></li>
+                <li>To delete a condition, select the Name and press delete</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h3>UI - Using Conditions:</h3>
+        <h4>Project</h4>
+        <p><span class="bold">!Project |&#160;Project Properties |&#160;Conditions</span> tab</p>
+        <p>When working in the context of a Project conditions are created, maintained and included/excluded at the Project level instead of the Movie level.</p>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Tab_Project.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>The <span class="bold">Tags</span> section will list the available Conditions will be labeled as <span class="bold">Project.&lt;Condition Name&gt;</span>, where&#160;&lt;condition name&gt; is the name of the condition.</p>
+                </li>
+                <li>The unnamed column shows the associated color of the tag to each condition name</li>
+                <li>The <span class="bold">Include </span>column shows which condition tags are set to be "included" in the output</li>
+                <li>The <span class="bold">Exclude </span>column shows which condition tags are set to be&#160;"excluded" in the output</li>
+                <li>If all options are unchecked, all content will display</li>
+                <li>If one Include item is checked, all other content (flagged by conditions) will not display</li>
+                <li>The top box area is the Include expression area. All conditions set to include will be shown in this box</li>
+                <li>The bottom box area is the exclude expression area. All conditions set to exclude will be shown in this box</li>
+                <li>Clicking on the Include/Exclude column header will select/deselect all options</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h4>Movie in a Project</h4>
+        <p><span class="bold">!Movie |&#160;Movie Properties | Conditions</span> tab</p>
+        <p>When working in the context of a Project, a Movie's condition tab will function just like that of the Object or Frame condition tab. Any condition tag sets created in the movie (you can do this by opening the movie up outside of the project, ie stand alone) will not be displayed.</p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition_Selection.flsnp" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Movie_Indicator.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <hr>
+            </hr>
+            <ul style="list-style-type: square;">
+                <li>Applying a condition to a Movie will display a colored box on the Movie in the Movies pane.<ul style="list-style-type: square;"><li>The color will be the color of the condition applied</li><li>If multiple conditions are applied, the condition indicator will show all colors applied.</li></ul></li>
+                <li>If this Movie is excluded from output, the movie will not generate with the rest of the project<ul style="list-style-type: square;"><li>Any button or action that links to the excluded movie will not resolve</li></ul></li>
+                <li>A movie that contains a condition, will maintain that condition even if imported to another project that no longer has that condition defined</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Stand Alone Movie</h4>
+        <p><span class="bold">!Movie |&#160;Movie Properties |&#160;Conditions</span> tab</p>
+        <p>When working in a Stand Alone movie, the condition tab of the movie will function like that of a Project condition tab. Essentially, it becomes the tab where you select what conditions are included/excluded. </p>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Tab_Movie_StandAlone.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>The <span class="bold">Tags</span> section will list the available Conditions will be labeled as <span class="bold">Movie.&lt;Condition Name&gt;</span>, where&#160;&lt;condition name&gt; is the name of the condition</p>
+                </li>
+                <li>Conditions belonging to a linked Flare project will be labeled as <span class="bold">&lt;Flare Tag Set Name&gt;.&lt;Condition Name&gt;</span>, where &lt;Flare Tag Set name&gt; is the name of the Condition Tag Sets linked from Flare and &lt;Condition Name&gt; is the name of the condition</li>
+                <li>The unnamed column shows the associated color of the tag to each condition name</li>
+                <li>The <span class="bold">Include </span>column shows which condition tags are set to be "included" in the output</li>
+                <li>The <span class="bold">Exclude </span>column shows which condition tags are set to be&#160;"excluded" in the output</li>
+                <li>If all options are unchecked, all content will display</li>
+                <li>If one Include item is checked, all other content (flagged by conditions) will not display</li>
+                <li>The top box area is the Include expression area. All conditions set to include will be shown in this box</li>
+                <li>The bottom box area is the exclude expression area. All conditions set to exclude will be shown in this box</li>
+                <li>Clicking on the Include/Exclude column header will select/deselect all options</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        </div>
+        <h4>Frame</h4>
+        <p><span class="bold">!Frames |&#160;Frame Properties... |&#160;Conditions</span> tab</p>
+        <p>Applying conditions onto frames helps control what frames are shown on generated output. Depending what conditions are included/excluded, any number of frames can be included/excluded from the output.</p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition_Selection.flsnp" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Frame_Indicator.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <hr />
+            <ul style="list-style-type: square;">
+                <li>Applying a condition to a frame will display a colored box on the Frame in the Frames pane.<ul style="list-style-type: square;"><li>The color will be the color of the condition applied</li><li>If multiple conditions are applied, the condition indicator will show all colors applied.</li></ul></li>
+                <li>If this frame is excluded from output, the movie will generate the movie without this Frame<ul style="list-style-type: square;"><li>Any system variables (<MadCap:xref href="../Variables/Variables.htm" target="" title="" alt="">See "Variables"</MadCap:xref>) will resolve as if this frame did not exist</li><li>ie. a FrameCount system variable will count and display only the total number of generated frames</li></ul></li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <h4>Object</h4>
+        <p><span class="bold">Right-Click &lt;object&gt;|&#160;Properties |&#160;Conditions</span> tab</p>
+        <p>Applying conditions onto objects control what objects are shown on generated output. Depending what conditions are included/excluded, any number of objects can be included/excluded from the output.</p>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition_Selection.flsnp">
+        </MadCap:snippetBlock>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Object_Indicator.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <hr>
+            </hr>
+            <ul style="list-style-type: square;">
+                <li>Applying a condition to an object will display a colored box on the box on the object in the main editor.<ul style="list-style-type: square;"><li>The color will be the color of the condition applied</li><li>If multiple conditions are applied, the condition indicator will show all colors applied</li></ul></li>
+                <li>The timeline pane will also indicate when an object has a condition<ul style="list-style-type: square;"><li>The Object will be the color of the condition applied</li><li>If multiple conditions are applied, the object will have a checkered pattern with the colors used</li></ul></li>
+                <li>If this object is excluded from output, the movie will generate the movie without this object<ul style="list-style-type: square;"><li>Any actions associated with the object will not occur</li></ul></li>
+            </ul>
+        </div>
+        <h3>UI - Indicator Toggle:</h3>
+        <p>In the main editor window, clicking the <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Toggle_Indicator.png" /> button will toggle on/off the conditional indicators you see on the objects.&#160;This will not effect the output in any manner.</p>
+    </body>
+</html>

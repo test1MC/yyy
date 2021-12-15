@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="676" MadCap:lastWidth="1051">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Edit Destination:&#160;</span>Opens the <span class="UI">Destination Editor</span>, so that you can make changes to the settings for the selected publishing destination.</li>
+            <li><span class="bold">New Destination… :&#160;</span>Opens the <span class="UI">Add Destination</span> dialog so that you can create a new publishing destination.</li>
+            <li><span class="bold">View Published Help System:&#160;</span>Opens the View URL for the currently selected destination.</li>
+            <li>
+                <p><span class="bold">Destinations:&#160;</span>Displays  all publishing destinations in your project.</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Destination:&#160;</span>Displays the name of each publishing destination in your project.</li>
+                    <li><span class="bold">Publish:&#160;</span>Select the check box next to any destination that you want to be associated with the target.</li>
+                    <li><span class="bold">Target:&#160;</span>Displays the location where the output files for the target will be published.</li>
+                    <li><span class="bold">View URL:&#160;</span>Displays the view URL (if any) associated with the publishing destinations.</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comments (if any) associated with the publishing destinations.</li>
+                </ul>
+                <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+            </li>
+            <li MadCap:conditions="TargetEditor.WebHelpPlus"><span class="bold">WebHelp Plus - Indexing Service:&#160;</span>If users are generating WebHelp Plus output and publishing the files to a server running Microsoft Internet Information Services and Microsoft Indexing Service (Windows XP or Windows Server 2003), type the catalog that users are using for the output. In most cases, this will be Web, which is the default value. (Windows Vista, Windows 7, Windows Server 2008 and Windows Server 2008R2 use Windows Search instead of the Indexing Service. Therefore, this option does not apply to these OS.)</li>
+            <li MadCap:conditions="TargetEditor.HTML5"><b>Server-based Output: </b>Selecting this option is the HTML5 equivalent of building WebHelp Plus output. HTML5 output with this option selection should behave identically to WebHelp Plus output.</li>
+            <li MadCap:conditions="TargetEditor.HTML5"><span class="bold">Indexing Service Catalog Name:&#160;</span>If users are generating Server-based HTML5 output and publishing the files to a server running Microsoft Internet Information Services and Microsoft Indexing Service (Windows XP or Windows Server 2003), type the catalog that users are using for the output. In most cases, this will be Web, which is the default value. (Windows Vista, Windows 7, Windows Server 2008 and Windows Server 2008R2 use Windows Search instead of the Indexing Service. Therefore, this option does not apply to these OS.)</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and that the output publishes correctly:</p>
+            <ul class="checkbox">
+                <li>Destination files</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+    </body>
+</html>

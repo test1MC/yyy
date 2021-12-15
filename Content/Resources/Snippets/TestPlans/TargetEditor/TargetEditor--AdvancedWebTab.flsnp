@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="756" MadCap:lastWidth="956">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Output Options: </span>
+                <ul style="list-style-type: circle;">
+                    <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelp,TargetEditor.EclipseHelp"><span class="bold">Insert Mark of the Web: </span>Select this check box if you want to add Mark of the Web (MOTW) when generating WebHelp output. Default text is "saved from url=(0016)http://localhost"</li>
+                    <li MadCap:conditions="TargetEditor.WebHelp,TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.HTMLHelp,TargetEditor.DITA,TargetEditor.EclipseHelp"><span class="bold">Do not use "Content"&#160;folder in output:&#160;</span>Omits the “Content” folder from the generated output.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpMobile,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelpPlus,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.EclipseHelp"><span class="bold">Generate resized copies of scaled images:&#160;</span>If enabled, Flare will create new copies of images wherever you have specified resizing.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpMobile,TargetEditor.DITA,TargetEditor.WebHelpAIR,TargetEditor.DotNetHelp,TargetEditor.WebHelp,TargetEditor.WebHelpPlus,TargetEditor.HTMLHelp,TargetEditor.EclipseHelp"><span class="bold">Generate "web-safe" images:&#160;</span>Converts images to web-safe formats (e.g., GIF, JPEG, PNG) when you generate online output.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.WebHelpPlus,TargetEditor.HTMLHelp,TargetEditor.EclipseHelp"><span class="bold">Add DOCTYPE declaration to generated topics:&#160;</span>Adds the DOCTYPE declaration to topic files when you generate the output.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpMobile,TargetEditor.HTMLHelp,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpPlus,TargetEditor.DITA,TargetEditor.EclipseHelp"><span class="bold">Replace reserved characters with underscores in filenames:&#160;</span>Converts spaces or unusual characters in your file names or folders to underscores in the output.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpAIR,TargetEditor.DotNetHelp,TargetEditor.WebHelp,TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.EclipseHelp"><span class="bold">Use custom file extension for topics:&#160;</span>Lets you set a specific file extension for topics in the output.</li>
+                    <li MadCap:conditions="TargetEditor.DITA,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.EclipseHelp"><span class="bold">Use lowercase filenames:&#160;</span>Converts output file names and folders (and links pointing to the files)&#160;to all lowercase letters.</li>
+                    <li MadCap:conditions="TargetEditor.HTMLHelp"><span class="bold">Patch stylesheet and image links for HTML&#160;Help printing:&#160;</span>When the option is enabled, the file name of the CHM is hardcoded into the CHM itself.</li>
+                    <li MadCap:conditions="TargetEditor.HTMLHelp"><span class="bold">Display merged navigation in HTML Help:&#160;</span>Include navigation in all of the merged CHMs, even the child outputs. If you are merging by linking to other Flare projects, and this option is enabled, opening a child CHM will open it with merged navigation. For more information see <MadCap:xref href="../../../../QA/TestPlans/Flare/Output/Output HTML Help/Output HTML Help - Merged Navigation.htm" class="TitleOnly">Output HTML Help - Merged Navigation</MadCap:xref></li>
+                    <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp"><span class="bold">Generate all skins:&#160;</span>Controls whether every skin in the project or just the selected skins in the Target Editor (which is set on the Basic tab) and Alias Editor will be generated to the output.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelpMobile,TargetEditor.EclipseHelp"><span class="bold">Exclude content not linked directly or indirectly from the target:&#160;</span>Use this option to control which content is included in the output, based on direct and indirect links in the target.</li>
+                    <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelpMobile,TargetEditor.EclipseHelp"><span class="bold">Use empty ALT text for images that do not have ALT text:</span> Use to add alternative text to images for 508 compliance.</li>
+                    <li><span class="bold">Auto-size Capture Objects to Fit Text:</span>Use to ensure Capture text is displayed appropriately.</li>
+                    <li><span class="bold">Add meta tags to content: </span>This tells which version IE should render in. &#160;Default text in most outputs is "&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;", in DotNet Help and HTML&#160;Help, the default text is "&lt;meta http-equiv="X-UA-Compatible" content="IE=7,8,9,10" /&gt;".</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.EclipseHelp"><span class="bold">Master Page:&#160;</span>Select a master page if you want to associate one with the target.<ul style="list-style-type: circle;"><li><span class="bold"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" />:&#160;</span>Opens the currently selected Master Page in the <span class="UI">XML Editor</span>.</li></ul></li>
+            <li><span class="bold">Stylesheet Medium:&#160;</span>Select a style sheet medium type if you want to associate one with the target.</li>
+            <li MadCap:conditions="TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.WebHelpPlus,TargetEditor.DotNetHelp"><span class="bold">Search Filters:&#160;</span>Select a search filter set if you want to associate one with the target.<ul style="list-style-type: circle;"><li><span class="bold"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" />:&#160;</span>Opens the currently selected Search Filter Set in the <span class="UI">Search Filter Set Editor</span>.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.DotNetHelp,TargetEditor.HTMLHelp,TargetEditor.WebHelp,TargetEditor.WebHelpAIR,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.EclipseHelp"><span class="bold">Alias File:&#160;</span>If you are incorporating context-sensitive Help into your online Help, select an alias file to associate it with the target.<ul style="list-style-type: circle;"><li><span class="bold"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" />:&#160;</span>Opens the currently selected Alias file in the <span class="UI">Alias Editor</span>.</li></ul></li>
+            <li MadCap:conditions="TargetEditor.WebHelp,TargetEditor.WebHelpMobile,TargetEditor.WebHelpPlus,TargetEditor.HTML5"><b>Search Engine Optimization: </b>
+                <ul style="list-style-type: circle;">
+                    <li><b>Generate Sitemap:</b> Select this option if you want to generate a sitemap during compilation. The entire output will be indexed.</li>
+                    <li><b>Web URL:</b> Enter the path where the output is ultimately published (Note: Be sure to include the full path including "http://")</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases" MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp,TargetEditor.HTMLHelp">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:</p>
+            <ul class="checkbox">
+                <li>Master Page</li>
+                <li MadCap:conditions="TargetEditor.WebHelpPlus,TargetEditor.WebHelpMobile,TargetEditor.WebHelpAIR,TargetEditor.WebHelp,TargetEditor.DotNetHelp">Search Filter Set</li>
+                <li>Alias File</li>
+            </ul>
+        </div>
+    </body>
+</html>

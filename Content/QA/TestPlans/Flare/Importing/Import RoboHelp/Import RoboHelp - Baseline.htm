@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica" MadCap:lastBlockDepth="6" MadCap:lastHeight="2244" MadCap:lastWidth="1031">
+    <head />
+    <body>
+        <h2>Import RoboHelp - Baseline</h2>
+        <h3>The Imported Project</h3>
+        <h4>Verifying a successful import</h4>
+        <p>After importing a RoboHelp project you should compare the Flare project to the original RoboHelp Project </p>
+        <ul>
+            <li>Compare the original project with the new one </li>
+            <li>Compare the original output with the new projects output</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Here is a list of things to check that import correctly (Make your own RH projects if necessary)</p>
+        <ul>
+            <li>Topics (Specifically the content and formatting of the content)</li>
+            <li>Lists<ul style="list-style-type: circle;"><li>Bulleted</li><li>Numbered</li><li>Images</li></ul></li>
+            <li>Hyperlinks</li>
+            <li>Bookmarks</li>
+            <li>Index’s</li>
+            <li>Defined targets (Flash help not supported)</li>
+            <li>TOC</li>
+            <li>Glossary</li>
+            <li>Variables</li>
+            <li>Dictionary	</li>
+            <li>Images in topics</li>
+            <li>Tables</li>
+            <li>Colors<ul style="list-style-type: circle;"><li>Font</li><li>Background</li></ul></li>
+            <li>Headers</li>
+            <li>Footers</li>
+            <li>Styles (if you selected the correct option above)</li>
+            <li>Folder structure is maintained</li>
+            <li>All topics are converted correctly to XML</li>
+            <li>Merged Projects (slaves) are imported as well</li>
+            <li>Publishing destinations</li>
+            <li>Shortcuts</li>
+            <li>Anything not listed here! (We import EVERYTHING except skins and Flash Help)</li>
+        </ul>
+        <h3>Baseline</h3>
+        <p><span class="bold">1522 </span>expanding text in RH files imported to FLARE can't be seen clearly and the writings of expanding text are really messed up</p>
+        <p><span class="bold">1524 </span> expanding text in RH files imported to FLARE as ordinary text, and clicking the text in the editor crashes Flare</p>
+        <p><span class="bold">1554	</span>bookmarks in index table in RH projects cannot be properly converted to something that works equivalently in Flare.</p>
+        <p><span class="bold">2061 </span>Condition tags of RH projects are not imported correctly to FLARE.</p>
+        <p><span class="bold">2080	</span>å; ä and ö are not displayed correctly in our Glossary Pane, viewer, in authoring or our HTMHelp.</p>
+        <p>Note that this is only for Imported RHT projects</p>
+        <p><span class="bold">2134 </span>Browse sequence of an imported RH project in FLARE is not giving the same sequence as in RH.</p>
+        <p><span class="bold">6247 </span>Keep comments and status's in RH topics on import and UI to view them in Flare.</p>
+        <p><span class="bold">6577 </span>In Brian's RoboHelp project, there were images in the drop-down bodies.  And the drop-down hotspots have conditional tags applied to it.  After it gets converted into Flare, the drop-downs were converted into togglers and the bodies are not conditionalized anymore.</p>
+        <p><span class="bold">7138	</span>Project Importer (Iternal Error): Illegal characters in path.</p>
+        <p><span class="bold">7470	</span>Importing a RHT Project:Object reference not set to an instance of an object.</p>
+        <p><span class="bold">7587	</span>Concept Links (See Also's) failed to import correctly.  (mpj)</p>
+        <p><span class="bold">7605	</span>We do not import the content of this project.  Each topic is blanked out.</p>
+        <p><span class="bold">7629	</span>Crash importing a project when no Panes are visable</p>
+        <p><span class="bold">7662	</span>Unable to import this RHT project:  System.OutOfMemoryException' was thrown</p>
+        <p><span class="bold">7673	</span>We add spaces and remove some of the styles on the droptext style on import (since we convert then to triggers and &lt;Divs&gt;</p>
+        <p><span class="bold">7887	</span>Importing a project does not set a language. This causes problems with Chinese language machines</p>
+        <p><span class="bold">8783	</span>Links to External HTTP topics are broken on import</p>
+        <p><span class="bold">9737	</span>A RoboHelp project without the .hhp file won't import. "Object reference not set to an instance of an object."</p>
+        <p><span class="bold">9759	</span>Lower-alpha list turned into numbered list after imported from RoboHelp…</p>
+        <p><span class="bold">9962	</span>Drop-down Text not working on Imported RH Project</p>
+        <p><span class="bold">10271	</span>Cannot import RoboHelp Project (Japanese)</p>
+        <p><span class="bold">10559	</span>Cannot import a Polish RHT Project (fails on the HHC)</p>
+        <p><span class="bold">11225	</span>RH6 stuff we don’t import correctly</p>
+        <p><span class="bold">11417	</span>Only Webhelp target available in project.</p>
+        <p><span class="bold">11798	</span>Imported RoboHelp Project does not allow topics to be Previewed</p>
+        <p><span class="bold">11890	</span>Unable to Import RH Project, Failed to Create CSS</p>
+        <p><span class="bold">12171	</span>After importing a project from RoboHelp with "Convert Inline Formatting to CSS" checked, a bunch of styles with names starting with "~" got created</p>
+        <p><span class="bold">13294	</span>&lt;pre&gt; text from RoboHelp topic files did not import over that well into Flare…  The spacings were not kept.</p>
+        <p><span class="bold">14517	</span>Project will not import: Invalid characters in Path.</p>
+        <p><span class="bold">14924	</span>Not all styles are being imported from RoboHelp Project</p>
+        <p><span class="bold">15140	</span>Table from RoboHelp project did not get imported correctly.</p>
+        <p><span class="bold">15252	</span>Problem: Unable to Import RH Project, Project Importer (Internal Error): ' ', hexadecimal value 0x13, is an invalid character.</p>
+        <p><span class="bold">16300	</span>When importing a RH Project with the deafualt target set we use the wrong syntax.</p>
+        <p><span class="bold">16842	</span>Import does not occur (object reference not set to an instance of an object) (RHX5 Project)</p>
+        <p><span class="bold">18767	</span>We are ignoring "&amp;#160;"s in WYSIWYG &amp; - We strip remove them if the topic is dirtied &amp; saved or generated</p>
+        <p><span class="bold">22068	</span>image borders of imported ROBOHELP project is overlapping with text</p>
+        <p><span class="bold">22087	</span>Crash: Index was  out of range. Must be non-negative and less than the size of the  collection. Parameter name: index. See crash log</p>
+        <p><span class="bold">22149	</span>Conditional tags not importing from a RoboHelp5 project</p>
+        <p><span class="bold">22248	</span>Importing topics with nested tables (from RH project) show scrambled ouptut</p>
+        <p><span class="bold">22308	</span>RH 7 Snippets do not come over</p>
+        <p><span class="bold">22309	</span>Variables from RH7 are not importing correctly (almost!)</p>
+        <p><span class="bold">22310	</span>We are not importing multiple TOCs from RH7</p>
+        <p><span class="bold">22311	</span>We don’t import Index entries for multiple Index sets in RH7</p>
+        <p><span class="bold">22312	</span>We don’t import multiple Glossaries from RH7</p>
+        <p><span class="bold">22315	</span>Flare does not import an RH7 TOC with variables correctly</p>
+        <p><span class="bold">22361	</span>We are not maintaining merged TOCs on RH7 import</p>
+        <p><span class="bold">22777	</span>Missing Snippets if the topic is in a folder in RoboHelp. We are looking in the wrong location</p>
+        <p><span class="bold">22792	</span>Importing their sample project - they have .swf files in snippets. After the import - we show the swf file as a missing image</p>
+        <p><span class="bold">22820 </span>Layouts (Targets) with periods in the file names do not import</p>
+        <p><span class="bold">22961	</span>RH7 Project fails to Import: Converting Single Source Layouts -&gt; Targets… Project Importer (Internal Error): Could not find file 'C:\Users\fnovak\Desktop\22308\XML Output.ssl'.</p>
+        <p><span class="bold">28505 </span>When importing RH 7 project with multiple unique TOCs, all TOCs are created but the data of the first one is in all of them.</p>
+        <p><span class="bold">29506 </span>Error: Object reference not set to an instance of an object when importing a RH8 project into Flare.</p>
+        <p><span class="bold">33359                     </span>Robohelp 8 project aborts during import</p>
+        <p><span class="bold">33608         </span>Error when importing an RH8 project. Failed to load the .ali file.</p>
+        <p><span class="bold">33613         </span>Error when importing RH8 project containing a snippet.</p>
+        <p><span class="bold">33627         </span>Flare deletes all entries of the alias file when edited after imported from RoboHelp8</p>
+        <p><span class="bold">33629        </span>Alias file is emtpy in the output for Imported RoboHelp8 projects.</p>
+        <p><span class="bold">33633         </span>Topics missing when Importing this RoboHelp8 Project. Import both Projects and compare topics.</p>
+        <p><span class="bold">33827         </span>Snippets from RH8 do not import correctly. They contain &lt;MadCap:title&gt; tags in the snippet file and the snippet doesn't show up in topics in WYSIWYG.</p>
+        <p><span class="bold">35960         </span>Topics come in empty during import.</p>
+        <p><span class="bold">36206         </span>register mark moves to the end of the paragraph when imported to Flare from RoboHelp 8</p>
+        <p><span class="bold">36425         </span>Error: URL not a local file during stylesheet conversion</p>
+        <p><span class="bold">36708         </span>A number of topics authored in RH 8 do not convert if they have an explicit language set at a topic level</p>
+        <p><span class="bold">37847        </span>Tables and text inside conditional tags does not get imported.</p>
+        <p><span class="bold">38295        </span>RoboHelp drop-downs do not import correctly</p>
+        <p><span class="bold">38332         </span>Content is missing if conditions are applied inline.</p>
+        <p><span class="bold">38607        </span>Importing RH 6 project results in broken links to nonexistent file tag set</p>
+        <p><span class="bold">38774                </span>Drop-Downs in RoboHelp topics do not import correctly. The content is missing from the topics.</p>
+        <p><span class="bold">40042         </span>Importing Merged CHMs from RH to Flare no longer work</p>
+        <p><span class="bold">40064         </span>When importing a RH project with remote links to CHM Files, we do not import the CHMs</p>
+        <p><span class="bold">40851        </span>We do not import symbols anymore from RoboHelp</p>
+        <p><span class="bold">42186         </span>Several errors from importing this project and then trying to open the topics in the editor.</p>
+        <p><span class="bold">42206         </span>We are not importing the TOC for this project</p>
+        <p><span class="bold">42209         </span>Errors in importing RH9 project</p>
+        <p><span class="bold">42210         </span>Errors in importing RH9 project (different than previous)</p>
+        <p><span class="bold">42212                </span>Errors in importing RH9 project (different than previous)</p>
+        <p><span class="bold">42213              </span>Errors in importing RH9 project (different than previous)</p>
+        <p><span class="bold">42507         </span>RoboHelp project fails to import due to a weird character in glossary</p>
+        <p><span class="bold">43040 </span>All content is missing after a snippet in imported topics.</p>
+        <p><span class="bold">43494 </span>Object reference error when importing a RH project with a snippet and unchecking "convert all topics at once" in the import options</p>
+        <p><span class="bold">43623 </span>object reference error when importing this project</p>
+        <p><span class="bold">44391 </span>Conditioned list items from RoboHelp are importing incorrectly.</p>
+        <p><b>45993 </b> Glossaries do not import from RoboHelp 8 or 9 projects</p>
+        <p><b>48457 </b> All content after a mini-TOC proxy in a topic is stripped away after import</p>
+        <p><b>50343</b> When importing a robohelp project with a topic containing "&lt;!--kadov_tag{{&lt;implicit_p&gt;}}--&gt;" we lose anything following the code.</p>
+        <p><b>51630</b> Robohelp tags: &lt;?rh-region_start&gt; and &lt;?rh-region_end&gt; are being stripped from the import to Flare, therefore anything inside is not coming in.</p>
+        <p><b>52528</b> Code content imports Robohelp 7 incorrectly</p>
+        <p><b>53672</b> Failed to convert topic - Object reference not set to an instance of an object.</p>
+        <p><b>53956</b> When importing Robohelp projects "http://w3.org/1999/xhtml" is imported with the source code resulting in two namespace declarations and this can causing functionality from Flare to break.</p>
+    </body>
+</html>

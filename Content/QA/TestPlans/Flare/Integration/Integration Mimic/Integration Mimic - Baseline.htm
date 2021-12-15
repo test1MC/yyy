@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="866" MadCap:lastWidth="1124" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Integration: Mimic - Baseline    </h2>
+        <p>Test all outputs with all Movie types (link to generated and non-generated movies and projects).</p>
+        <p>Verify generating print outputs generate a warning.</p>
+        <p>Test with all appropriate versions of Mimic (the most recent release as well as previous versions of Mimic)</p>
+        <h3>Baseline</h3>
+        <p>From our current bug-base, run the following query:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Mimic/Intergration-Mimic--BugBase-Query.png" style="mc-thumbnail: popup;width: 284px;height: 166px;" />
+        </p>
+        <p>&#160;</p>
+        <p>For historical references only- Use baseline query posted above.</p>
+        <p><b>8407</b>	 Movie who’s movie links are conditionalized out should not build when generating output.</p>
+        <p><b>10769</b>	 Movie preview in Flare plays movie audio if applied.</p>
+        <p><b>11644</b>	Integration problems with Flare. Trials, trial expirations, etc…</p>
+        <p><b>11413</b> Problems in CHM with linked generated movies or movie systems</p>
+        <p><b>12019</b>Linking to a generated Flash movie system creates a different result than linking to pregenerated Mimic movie project.</p>
+        <p><b>17492</b>	When compiling a Flare project containing Mimic Movie links, we should not compile Mimic movies every time you compile the Flare project if the Mimic movies have not changed. Although if Flare makes a change to its Variable set, we have to recompile in case Mimic is using that variable set. That is a different bug set to NV.</p>
+        <p><b>19927</b>	Our Default output for Flare should be Silverlight when compiling web help</p>
+        <p><b>20160</b>	!Insert | Movie Link results in an error. (Test all configurations)</p>
+        <p><b>21490</b>	Our default output type for CHM is currently Silverlight. We need to change to Flash since CHM does not support silverlight</p>
+        <p><b>28996</b> Error when pausing movie player in Flare</p>
+        <p><b>31696</b> Flare 6 is linking to generated movie's different then Flare 5</p>
+        <p><b>31788</b> Compile "errors" given when generating merged projects (TOC nodes which link to other Flare projects).</p>
+        <p><b>33567</b> Compiling a flare project, with a flash mimic movie link in a topic, on a machine with no JRE installed, the compile will fail</p>
+        <p><b>39800</b> Error when compiling a Flare topic with an embeded Mimic swf</p>
+        <p><b>39948</b> We show nothing in the preview when an embedded mimic movie is in the topic</p>
+        <p><b>39963</b> Recompile flag does not work with Flare command line compile, even though we present that message during compile. (For mimic integration)</p>
+        <p><b>39965</b> Background images on mimic movie Frames showing incorrectly in the XML editor, if those images had to be resized to fit in the frame</p>
+        <p><b>39966</b> Reset Size on an embedded mimic movie should set the default size of the movie, not remove all sizing.</p>
+        <p><b>39969</b> Undefined Variable shown on Embedded mimic movie (Variable is a Flare variable, linked to the Mimic movie)</p>
+        <p><b>39973</b> Should we disable the embedded mimic movie option if the user does not have Mimic 5.1 or later installed?</p>
+        <p><b>39991</b> When no JRE is installed, the embedded mimic movie needs to be stripped out of the output</p>
+        <p><b>40000</b> Change to the compile error when compiling a flare project with an embedded mimic movie</p>
+        <p><b>40326</b> Flare build failure due to linked Mimic Movie output being up-to-date</p>
+        <p><b>41255</b> Embedded Mimic movies should default to the movie's size, if no size setting is specified in Flare.</p>
+        <p><b>41264</b> Some issues with new Mimic Dialog</p>
+        <p><b>41494</b> Browse button on Edit Mimic Movie Link is not defaulting to the local URL</p>
+        <p><b>41739</b> Linking to a mimic project in the TOC disables the format</p>
+        <p><b>43738</b> If you apply a border, margin, or padding to an embedded mimic movie that you resized in flare, the size gets reset. If you then change the size again, the border, margin, or padding gets removed</p>
+        <p><b>46433</b> Navigation bar cut off in Flare with Flash Embed movie option and seek bar enabled</p>
+    </body>
+</html>

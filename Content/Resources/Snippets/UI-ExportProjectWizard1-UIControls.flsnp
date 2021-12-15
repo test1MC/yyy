@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li> Dialog Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>  Keyboard can navigate and change settings</li>
+            <li>&#160;</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="46" MadCap:lastWidth="850">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">OK: </span>Closes the dialog and displays the Flare project.</li>
+        </ul>
+    </body>
+</html>

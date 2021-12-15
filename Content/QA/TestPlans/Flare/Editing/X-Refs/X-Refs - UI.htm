@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7697" MadCap:lastWidth="797" MadCap:conditionTagExpression="include[InsertHyperlinkUI.CrossReference] exclude[Default.UITestsEditors or InsertHyperlinkUI.Hyperlink or InsertHyperlinkUI.ImageMapArea or InsertHyperlinkUI.TopicPopup] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>X-Refs - UI</h2>
+        <h3>Inserting a Cross-Reference without the dialog</h3>
+        <p class="bold">Drag and drop method:</p>
+        <ul class="checkbox">
+            <li><span class="UI">Content Explorer</span>:&#160;Drag and drop a topic from the <span class="UI">Content Explorer</span> into another topic that is open in the <span class="UI">XML Editor</span> in Print Layout Mode. Note, if a file is dragged onto a text selection, a hyperlink is inserted instead.<ul class="checkbox"><li>Drop topic at a an insertion point. The parent madcap|xref style will be used.</li><li>Test using topics of varying depth within the Content folder and verify paths are written correctly.</li></ul></li>
+            <li><span class="UI">File List</span>:&#160;Drag and drop a topic from the <span class="UI">File List</span> into another topic that is open in the <span class="UI">XML Editor</span> in Print Layout Mode.<ul class="checkbox"><li>Drop topic at a an insertion point. The parent madcap|xref style will be used.
+</li><li>Test using topics of varying depth within the Content folder and verify paths are written correctly</li></ul></li>
+        </ul>
+        <p class="bold">Quick Cross-Reference method:</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="UI">XML Editor</span>:&#160;Right-click in the <span class="UI">XML Editor</span> at an insertion point or with a text selection  and select <span class="MenuItem">Quick Cross-Reference |&#160;(test all sub-menu options)</span>:</p>
+                <ul class="checkbox">
+                    <li><span class="bold">Bookmarks:&#160;</span>Invokes a sub-menu that displays all bookmarks in the current topic. Select a bookmark to insert a cross-reference to that bookmark. </li>
+                    <li><span class="bold">Same Folder:&#160;</span>Invokes a sub-menu that displays all topic files that exist in the same folder as the current topic. Select a topic to insert a cross-reference to that topic.</li>
+                    <li><span class="bold">Open Documents:&#160;</span>Invokes a sub-menu that displays all topic files that are currently open. Select a topic to insert a cross-reference to that topic.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Inserting a Cross-Reference with the dialog</h3>
+        <p><span class="bold">Insert a cross-reference with the Insert Cross-Reference dialog:</span>
+        </p>
+        <ul class="checkbox">
+            <li>Keyboard:&#160;Press <span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">Shift</span>+<span class="KeyboardShortcut">R</span></li>
+            <li><span class="UI">XML Editor</span>:&#160;Click the Insert Hyperlink button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InsertCrossReference.png" /> in the <span class="UI">XML Editor</span>'s local toolbar</li>
+            <li><span class="UI">XML Editor</span>:&#160;Right-click in the <span class="UI">XML Editor</span> and select <span class="MenuItem">Cross-Reference</span> from the context menu</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Insert | Cross-Reference</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Insert |&#160;Cross-Reference</span></li>
+        </ul>
+        <h3>Insert Cross-Reference dialog&#160;- UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/X-Refs/Dialog--InsertCrossReference.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/InsertHyperLinkDialog--VariousViews--TestCases.flsnp" />
+        <h4>Insert Cross-Reference Test Cases</h4>
+        <ul class="checkbox">
+            <li>Use the "Topic in Project View"&#160;to insert a cross-reference to another topic in the project<ul style="list-style-type: circle;"><li>Topic in same folder</li><li>Topic in a different folder (test various paths; topic at root, topic several sub-folders deep, etc)</li><li>Repeat the above with a cross-reference to a bookmark</li></ul></li>
+            <li>Use the "Topic in Project View"&#160;to insert a cross-reference to a location in the current topic<ul style="list-style-type: circle;"><li>This is primarily applicable to cross-reference a bookmark in the same topic. This needs to be tested uniquely from using the "Place in this Document"&#160;view.</li></ul></li>
+            <li>Use the "Place in this Document"&#160;view to insert a cross-reference to a location in the current topic<ul style="list-style-type: circle;"><li>Above the cross-reference, below the cross-reference, on a separate page (print layout), etc</li></ul></li>
+        </ul>
+        <h3>New/Edit Cross-Reference Style Class&#160;- UI&#160;Test Cases</h3>
+        <p>The UI&#160;for both the <span class="UI">New Cross-Reference Style Class</span> and the <span class="UI">Edit Cross-Reference Style Class</span> dialogs is exactly the same, however both dialogs should be tested independently in their entirety.</p>
+        <hr />
+        <div style="width: 200px;height: 200px;float: left;">
+            <p><span class="UI">New Cross-Reference Style Class</span> dialog</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/X-Refs/Dialog--NewCrossReferenceStyleClass.png" alt="" title="" class="properties" style="mc-float: none;" />
+            </p>
+            <p>&#160;</p>
+            <p><span class="UI">Edit Cross-Reference Style Class</span> dialog</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/X-Refs/Dialog--EditCrossReferenceStyleClass.png" alt="" title="" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">XRef Class: </span>Displays the class of the current xref.<ul style="list-style-type: square;"><li>For the New… dialog, this field will allow you to enter the new class name.</li><li>For the Edit… dialog, this field will be grayed out, but it will display the class name you are editing. It will appear empty and grayed out if you are editing the root style.</li></ul></li>
+            <li><span class="bold">Stylesheet to modify: </span>Offers a drop-down of all stylesheets associated with the current document. Select which stylesheet to modify if the document is associated with more than one.</li>
+            <li><span class="bold">Enter format (preview below): </span>Lets you enter the format for your cross-reference and displays a sample preview below.</li>
+            <li><span class="bold">Available commands: </span>List of commands that can be used in the xref format.<ul style="list-style-type: square;"><li><span class="bold">"Show" drop-down: </span>Lets you filter the list of commands to certain types.</li><li><p class="bold">Available commands grid:</p><p class="bold">Columns</p><ul style="list-style-type: square;"><li><span class="bold">Command: </span>Displays each command available. Double-click a command to insert it into the format area above.</li><li><span class="bold">Description: </span>Provides a description of each command.</li></ul><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" /></li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Test all cross-reference formats in all outputs.</li>
+                <li>Test context-sensitive cross references in all contexts in all supported outputs ("on next page", "on previous page", etc) (See bugs 18456 and 18457 for test projects)</li>
+            </ul>
+        </div>
+        <h3>Updating a Cross-Reference</h3>
+        <p>Although all Cross-References are updated for the output at compile time, they have to be updated manually if you need them to be updated in the <span class="UI">XML Editor</span>. You might need to update a cross-reference if you've cross-referenced to a heading and then changed the textual content of the heading. To do this, open the topic that contains the cross-references and select:</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Tools |&#160;Update Cross-References…</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Tools |&#160;Update Cross-References</span></li>
+        </ul>
+        <h4>Update Cross-Reference dialog:&#160;UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/X-Refs/Dialog--UpdateCrossReferences.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Update Cross-References Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Update: </span>Lets you select which cross-references you want to update and which you don't. By default, all cross-references will be checked each time this dialog is opened.</li>
+                    <li><span class="bold">Cross-Reference: </span>Displays every cross-reference that exists in the current topic.</li>
+                    <li><span class="bold">Link: </span>Displays the href of each cross-reference.</li>
+                    <li><span class="bold">Paragraph:&#160;</span>Displays the textual content of the entire paragraph that contains the cross-reference.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+    </body>
+</html>

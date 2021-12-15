@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5935" MadCap:lastWidth="823">
+    <head>
+    </head>
+    <body>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">"Link To" pulldown: </span>Lets you select the type of link to insert. Each option provides unique UI&#160;in the "Link To" section. The UI&#160;for each option is covered below.<ul style="list-style-type: square;"><li><span class="bold">File in Project:&#160;</span>Provides UI to create a link to any file in the project.</li><li MadCap:conditions="InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.CrossReference"><span class="bold">Place in this Document:&#160;</span>Provides UI to create a link to a location within the same document.</li><li MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.ImageMapArea"><span class="bold">External File: </span>Provides UI to create a link to an external topic file.</li><li MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.Hyperlink"><span class="bold">Website: </span>Provides UI to create a link to a website.</li><li MadCap:conditions="InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.ImageMapArea"><span class="bold">Email: </span>Provides UI to create an email link.</li><li MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.Hyperlink"><span class="bold">HTML Help file: </span>Provides UI&#160;to create a link to a CHM file. More specifically, you can select a topic within the CHM file as the destination for the link.</li></ul></li>
+            <li MadCap:conditions="InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.TopicPopup"><span class="bold">Link Properties:</span> Lets you set properties for the link<ul style="list-style-type: square;"><li><span class="bold">Link Text: </span><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink">The text that will be used by the link. If you invoke the dialog after selecting some text, the selected text should pre-populate this field. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.ImageMapArea">This field is used for standard hyperlinks and is never active in the context of this dialog.</MadCap:conditionalText></li><li><span class="bold">Screen Tip: </span>Lets you add a screen tip (hover text) and alt text for the link. (See bug 34760)</li><li><span class="bold">Style Class:&#160;</span><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink">Lets you set the class that you want use for this link. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.ImageMapArea">This field is used for standard hyperlinks and never active in the context of this dialog.</MadCap:conditionalText><ul style="list-style-type: square;"><li><span class="bold">Select… :&#160;</span><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink">Invokes the <span class="UI">Select Class</span> dialog which displays all style classes that exist in the project's stylesheets. </MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.ImageMapArea">This button is used for standard hyperlinks and never active in the context of this dialog.</MadCap:conditionalText></li></ul></li><li><span class="bold">Target Frame: </span>Lets you set the frame where the linked file will open. <MadCap:conditionalText MadCap:conditions="InsertHyperlinkUI.TopicPopup">For a Topic Popup, this will be set to Popup Window.</MadCap:conditionalText></li><li><span class="bold">Tab index: </span>Lets you set the tab index value for the link.</li></ul></li>
+            <li MadCap:conditions="InsertHyperlinkUI.CrossReference"><span class="bold">Cross-Reference Properties:</span> Lets you set properties for the cross-reference<ul style="list-style-type: square;"><li><span class="bold">XRef Class:&#160;</span>Lets you set the class of MadCap|xref that you want use for this cross-reference. All classes of MadCap|xref that exist in the project's stylesheets should appear in the scrollable UI&#160;below.<ul style="list-style-type: square;"><li><span class="bold">Edit… :&#160;</span>Invokes the <span class="UI">Edit Cross-Reference Style Class</span> dialog which lets you edit the format of the selected MadCap|xref class.</li><li><span class="bold">New… : </span>Invokes the <span class="UI">New Cross-Reference Style Class</span> dialog which lets you create a new class of MadCap|xref</li></ul></li><li><span class="bold">Preview:&#160;</span>Displays the cross-reference format set for the selected XRef class and a preview of the cross-reference </li><li><span class="bold">Target Frame: </span>Lets you set the frame where the cross-referenced file will open.</li><li><span class="bold">Screen Tip: </span>Lets you add a screen tip (hover text) and alt text for the cross-reference. (See bug 34760)</li></ul></li>
+            <li MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink"><span class="bold">Remove Link: </span>Closes the dialog and unbinds the link. This option will only be active when editing an existing link.</li>
+            <li MadCap:conditions="InsertHyperlinkUI.ImageMapArea"><span class="bold">Remove Link: </span>This button is never active in the context of an Image Map (See bug 13843)</li>
+            <li MadCap:conditions="InsertHyperlinkUI.CrossReference"><span class="bold">Remove Cross-Reference: </span>Closes the dialog and deletes the cross-reference. This option will only be active when editing an existing cross-reference.</li>
+        </ul>
+        <h4>"File in Project" views</h4>
+        <p class="bold">File In Project - Local Toolbar</p>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--InsertHyperlink--FileInProject--LocalToolbar.png" alt="" title="">
+            </img>
+        </p>
+        <p class="bold">Toolbar Items (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowAllFiles.png" alt="" title="">
+                </img><span class="bold"> (Show/Hide All Files in Project): </span>Changes the view in the dialog to "Show All Files" view. This view display all topics in the project in one grid.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowFolders.png" alt="" title="">
+                </img><span class="bold"> (Show/Hide Folders):&#160;</span>Changes the view in the dialog to "Show Folders"&#160;view. This view displays all files in the project in a tree view, similar to the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Files" view to offer a "Split" view.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---ShowFiles.png" alt="" title="">
+                </img><span class="bold"> (Show/Hide Files): </span>Changes the view in the dialog to "Show Files"&#160;view. This view displays all files in the project one folder at a time, similar to the "Show Files" view in the <span class="UI">Content Explorer</span>. This view can be combined with the "Show Folders" view to offer a "Split" view.</li>
+            <li>
+                <img src="../../Images/TestPlans/Buttons/Button---UpDirectory.png" alt="" title="">
+                </img><span class="bold"> (Up):</span> Moves up one folder in the hierarchy within the project's Content folder. This button becomes enabled if you use the "Show Folders" or "Split" View and browse into a folder.</li>
+            <li><span class="bold">[File filter]: </span>Use this filter to limit the view of content files to topics (*.htm or *.html) or enter text in the filter (and press <span class="KeyboardShortcut">Enter</span>) to filter by filename.</li>
+        </ul>
+        <h5>File in Project ("Show Folders"&#160;view)</h5>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--FileInProject--ShowFolders.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">"Show Folders"&#160;view Test Cases:</p>
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---TreeViewCollapsed.png" />/<img src="../../Images/TestPlans/Buttons/Button---TreeViewExpanded.png" />:&#160;</span>Expands/collapses the corresponding folder</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---SelectBookmarkWide.png"></img>:&#160;</span>Invokes the <span class="UI">Select Bookmark</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFolderKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFolderKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span> opens/closes the selected folder to display/hide their contents – sets the selected files&#160;as the link and closes the dialog</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node.</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> select and open/close folders will go as far as selecting the first non-folder node in a folder.</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Folder" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h5>File In Project ("Show Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--FileInProject--ShowFiles.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Displays the name of the file or folder.</li>
+                    <li><span class="bold">Size:&#160;</span>Displays the size of the file (empty for folders).</li>
+                    <li><span class="bold">Date Modified:&#160;</span>Displays the date and time the file or folder was last modified.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---SelectBookmarkWide.png" alt="" title=""></img>:&#160;</span>Invokes the <span class="UI">Select Bookmark</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFilesKeyNav">
+                    <li>Enter  sets the selected files&#160;as the link and closes the dialog. In this view, <span class="KeyboardShortcut">Enter</span>&#160;does nothing when a folder is selected.</li>
+                    <li><span class="KeyboardShortcut">Up Arrow </span>and <span class="KeyboardShortcut">Down Arrow</span> move the selection up or down one line in the grid</li>
+                    <li><span class="KeyboardShortcut">Left Arrow </span>and <span class="KeyboardShortcut">Right Arrow</span> do nothing in this context</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first item or the very last displayed item.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h5>File In Project (default "Split"&#160;view)</h5>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--FileInProject--SplitView.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Name: </span>Displays the name of the file or folder.</li>
+                    <li><span class="bold">Size:&#160;</span>Displays the size of the file (empty for folders).</li>
+                    <li><span class="bold">Date Modified:&#160;</span>Displays the date and time the file or folder was last modified.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---TreeViewCollapsed.png" />/<img src="../../Images/TestPlans/Buttons/Button---TreeViewExpanded.png" /> :&#160;</span>Expands/collapses the corresponding folder</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---SelectBookmarkWide.png" alt="" title=""></img>:&#160;</span>Invokes the <span class="UI">Select Bookmark</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowFolderKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowFolderKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span> opens/closes the selected folder to display/hide their contents – sets the selected files&#160;as the link and closes the dialog</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node.</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> select and open\close folders will go as far as selecting the first non-folder node in a folder.</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Folder" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <h5>File In Project (default "Show All Files"&#160;view)</h5>
+        <p class="bold">
+            <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--FileInProject--ShowAllFiles.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (Forward and Reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Dialog is easy to use and understand</li>
+                <li>When focus is in the file selection area, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                <li>Boundary test all controls as appropriate</li>
+                <li>The “default” active button should make sense</li>
+                <li>Dialog is resizable and redraws correctly</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">"Show All Files" Grid</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">File: </span>Displays a list of all Content files in the project (that match the file filter)</li>
+                    <li><span class="bold">Type:&#160;</span>Displays the file extension of the file.</li>
+                    <li><span class="bold">Path:&#160;</span>Displays the location of the file within the project.</li>
+                </ul>
+                <MadCap:snippetBlock src="GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---SelectBookmarkWide.png" alt="" title=""></img>:&#160;</span>Invokes the <span class="UI">Select Bookmark</span> dialog for the selected topic file</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:toggler targets="ShowAllFilesKeyNav">Keyboard navigation (click for test cases)</MadCap:toggler>
+                <ul style="list-style-type: square;" MadCap:targetName="ShowAllFilesKeyNav">
+                    <li><span class="KeyboardShortcut">Enter</span> moves the selection down one line</li>
+                    <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection up or down one line in the grid</li>
+                    <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span> move the focus to the adjacent cell left or right. Only relevant if a horizontal scroll is present.</li>
+                    <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the "Show Files" view a page at a time up or down.</li>
+                    <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first item or the very last displayed item.</li>
+                    <li><span class="KeyboardShortcut">Insert</span> does nothing in this context.</li>
+                    <li><span class="KeyboardShortcut">Delete</span> should do nothing in this context.</li>
+                    <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+                </ul>
+            </li>
+            <li>Right-click should NOT&#160;produce a right-click menu.</li>
+            <li>Horizontal and vertical scroll bars display as appropriate.</li>
+            <li>Conditional indicators display appropriately</li>
+            <li>File filter works in this view</li>
+        </ul>
+        <div MadCap:conditions="InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.CrossReference">
+            <h4>"Place in this Document" view</h4>
+            <p>
+                <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--PlaceInThisDocument.png" alt="" title="" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <ul class="checkbox">
+                    <li>Spelling and Grammar are correct</li>
+                    <li>No duplicate accelerators</li>
+                    <li>All accelerators function</li>
+                    <li>Tab order is correct (Forward and Reverse orders)</li>
+                    <li>Keyboard can navigate and change settings</li>
+                    <li>Dialog is easy to use and understand</li>
+                    <li>When focus is in the file selection area, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                    <li>Boundary test all controls as appropriate </li>
+                    <li>The “default” active button should make sense</li>
+                    <li>Dialog is resizable and redraws correctly</li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---TreeViewCollapsed.png" />/<img src="../../Images/TestPlans/Buttons/Button---TreeViewExpanded.png" /> :&#160;</span>Expands/collapses the corresponding node</li>
+                <li><span class="bold">Top of the document: </span>Select this option to create a hyperlink to the top of the current document.</li>
+                <li><span class="bold">"Headings" node:&#160;</span>Should display a tree view of all headings that exist in the current document. Select a heading to create a link directly to that heading. If no headings exist in the document, it should display "(document has no headings)" in light gray text.</li>
+                <li><span class="bold">"Bookmarks" node:&#160;</span>Should display all bookmarks that exist in the current document. Select a bookmark to create a link directly to that bookmark. If no bookmarks exist in the document, it should display "(document has no bookmarks)" in light gray text.</li>
+            </ul>
+        </div>
+        <div MadCap:conditions="InsertHyperlinkUI.Hyperlink,InsertHyperlinkUI.TopicPopup">
+            <h4>"External File" view</h4>
+            <p>
+                <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--ExternalFile.png" alt="" title="" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <ul class="checkbox">
+                    <li>Spelling and Grammar are correct</li>
+                    <li>No duplicate accelerators</li>
+                    <li>All accelerators function</li>
+                    <li>Tab order is correct (Forward and Reverse orders)</li>
+                    <li>Keyboard can navigate and change settings</li>
+                    <li>Dialog is easy to use and understand</li>
+                    <li>When focus is in the text field, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                    <li>Boundary test all controls as appropriate</li>
+                    <li>The “default” active button should make sense</li>
+                    <li>Dialog is resizable and redraws correctly</li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li><span class="bold">External File: </span>Invokes an <span class="UI">Open </span>dialog which lets you browse for an external topic.</li>
+                <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---SelectBookmarkWide.png" alt="" title="" />:&#160;</span>Invokes the <span class="UI">Select Bookmark</span> dialog for the selected topic file. You must first set an external file to activate this button.</li>
+            </ul>
+        </div>
+        <div MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink">
+            <h4>"Website" view</h4>
+            <p>
+                <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--Website.png" alt="" title="" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <ul class="checkbox">
+                    <li>Spelling and Grammar are correct</li>
+                    <li>No duplicate accelerators</li>
+                    <li>All accelerators function</li>
+                    <li>Tab order is correct (Forward and Reverse orders)</li>
+                    <li>Keyboard can navigate and change settings</li>
+                    <li>Dialog is easy to use and understand</li>
+                    <li>When focus is in the text field, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                    <li>Boundary test all controls<ul style="list-style-type: circle;"><li>Negative numbers</li><li>Large number</li><li>Text</li><li>Various characters and symbols (Inc. international)</li></ul></li>
+                    <li>The “default” active button should make sense</li>
+                    <li>Dialog is resizable and redraws correctly</li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li><span class="bold">Website:&#160;</span>Lets you enter the website for the hyperlink. The pulldown should display recently entered websites, and you should be able to select one of these from the pulldown.</li>
+            </ul>
+        </div>
+        <div MadCap:conditions="InsertHyperlinkUI.ImageMapArea,InsertHyperlinkUI.Hyperlink">
+            <h4>"Email" view</h4>
+            <p>
+                <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--Email.png" alt="" title="" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <ul class="checkbox">
+                    <li>Spelling and Grammar are correct</li>
+                    <li>No duplicate accelerators</li>
+                    <li>All accelerators function</li>
+                    <li>Tab order is correct (Forward and Reverse orders)</li>
+                    <li>Keyboard can navigate and change settings</li>
+                    <li>Dialog is easy to use and understand</li>
+                    <li>When focus is in the text fields or email list, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                    <li>Boundary test all controls as appropriate</li>
+                    <li>The “default” active button should make sense</li>
+                    <li>Dialog is resizable and redraws correctly</li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li><span class="bold">Email address: </span>Lets you enter an email address for the hyperlink.</li>
+                <li><span class="bold">Subject:&#160;</span>Lets you enter a default subject to be included in the email.<ul class="checkbox"><li>Try some Japanese, alternate English characters such as &amp;, and German characters in here</li></ul></li>
+                <li><span class="bold">Recent E-mail Addresses:&#160;</span>Displays a list email addresses recently used in other email hyperlinks. Selecting an email address from this list should populate the Email Address field above. The list should be sortable (A-Z and Z-A).</li>
+            </ul>
+        </div>
+        <div MadCap:conditions="InsertHyperlinkUI.TopicPopup,InsertHyperlinkUI.Hyperlink">
+            <h4>"HTML Help File" view</h4>
+            <p>
+                <img src="../../Images/TestPlans/Flare/Hyperlinks &amp; Popups/Dialog--InsertHyperlink--HTMLHelpFile.png" alt="" title="" class="properties" />
+            </p>
+            <div class="SnippetIndent">
+                <ul class="checkbox">
+                    <li>Spelling and Grammar are correct</li>
+                    <li>No duplicate accelerators</li>
+                    <li>All accelerators function</li>
+                    <li>Tab order is correct (Forward and Reverse orders)</li>
+                    <li>Keyboard can navigate and change settings</li>
+                    <li>Dialog is easy to use and understand</li>
+                    <li>When focus is in the text fields or email list, <span class="KeyboardShortcut">F1</span> functions and the content is correct</li>
+                    <li>Boundary test all controls as appropriate</li>
+                    <li>The “default” active button should make sense</li>
+                    <li>Dialog is resizable and redraws correctly</li>
+                </ul>
+            </div>
+            <hr />
+            <p class="bold">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li><span class="bold">External Help File:</span> Lets you browse for an External Help File.</li>
+                <li><span class="bold">Select Topic:&#160;</span>Lets you select a topic inside of the selected external help file.</li>
+            </ul>
+        </div>
+    </body>
+</html>

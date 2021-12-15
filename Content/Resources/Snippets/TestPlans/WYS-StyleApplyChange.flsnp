@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="391" MadCap:lastWidth="1032">
+    <body>
+        <h3>Applying or changing a style class</h3>
+        <ul class="checkbox">
+            <li>Click on the element, select <span class="MenuItem">Style Class | Create Style Class</span> – Launches Create Style Dialog – Then open the <span class="UI">CSS Editor</span></li>
+            <li>Click on the element, select <span class="MenuItem">Style Class | Edit Style Class</span> – Opens the <span class="UI">CSS Editor</span> with the style/class selected</li>
+            <li>Click on the element, select <span class="MenuItem">Style Class | Reset Style Class</span> – Removes the class applied to the element</li>
+            <li>Click on the element, select <span class="MenuItem">Style Class |&#160;</span>(select a style from the Style Class list)</li>
+            <li>Selecting the element and applying (reset class) from the Style Drop-down on the formatting toolbar</li>
+            <li>Selecting the element and applying a style from the Style Drop-down on the formatting toolbar</li>
+            <li>Verify that Classes applied to the element render correctly in the <span class="UI">XML Editor</span> and all outputs:<ul class="checkbox"><li>HTML5 / WebHelp 2 </li><li>WebHelp</li><li>WebHelp Plus</li><li>WebHelp Air</li><li>WebHelp Mobile</li><li>DotNet</li><li>CHM</li><li>PDF</li><li>Eclipse Help</li><li>EPUB</li><li>XHTML</li><li>XPS</li><li>Word</li><li>Frame</li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="756" MadCap:lastWidth="1150">
+    <head>
+    </head>
+    <body>
+        <p class="TestCases">Test Cases - Elements</p>
+        <p>Insert Menu: Insert all of the following and build output. Verify that output displays correctly.</p>
+        <ul class="checkbox">
+            <li>Image</li>
+            <li>Multimedia</li>
+            <li>QR Code</li>
+            <li>Table</li>
+            <li>Hyperlink</li>
+            <li>X-Ref</li>
+            <li>Bookmark</li>
+            <li MadCap:conditions="TargetEditor.PDF">Named Destination</li>
+            <li>Glossary Term Link</li>
+            <li>Keyword</li>
+            <li>Snippet</li>
+            <li>Variable</li>
+            <li>Toggler</li>
+            <li>Topic popup</li>
+            <li>Drop-down text</li>
+            <li>Drop-down hotspot</li>
+            <li>Expanding text</li>
+            <li>Text Popup</li>
+            <li>Text Box</li>
+            <li>Footnote</li>
+            <li>Rule</li>
+            <li>Help Control:<ul class="checkbox"><li>Concept Link</li><li>Related Topics Control</li><li>Keyword Link Control</li><li MadCap:conditions="TargetEditor.HTMLHelp">Shortcut control</li></ul></li>
+            <li>Characters</li>
+            <li>Equation</li>
+            <li>Script</li>
+            <li>Proxy:<ul class="checkbox"><li>Breadcrumbs Proxy</li><li>Topic Toolbar Proxy</li><li>TOC Proxy</li><li>Mini-Toc Proxy</li><li>Glossary Proxy</li><li>Index Proxy</li><li>Endnotes Proxy</li><li>Concepts Proxy</li><li>List-Of Proxy</li><li>Relationships Proxy</li></ul></li>
+            <li>Page Header</li>
+            <li>Page Footer</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Feedback V2,AuthorFileTagSet.Matthew,Product.Feedback" MadCap:lastBlockDepth="9" MadCap:lastHeight="2569" MadCap:lastWidth="1008">
+    <head>
+    </head>
+    <body>
+        <h2>Install SQL Database - UI</h2>
+        <p>This test plan will cover the UI&#160;associated with installing the IIS Server and setting up the SQL&#160;Database when setting up a Feedback Server. Should you encounter any difficulty setting this up when testing, refer to the Feedback Server Admin Help for more information. If you are testing a remote SQL&#160;server setup, refer to this document for assistance:&#160;<MadCap:xref href="../../!TestingResources/Connecting a Feedback Server to a remote SQL machine.htm" target="" title="" alt="" class="TitleOnly">"Connecting a Feedback Server to a remote SQL machine"</MadCap:xref></p>
+        <h3>Installing Feedback Server</h3>
+        <p>Upon launching Feedback Server Admin for the first time, you will need to install the IIS Server and set up your SQL&#160;Database. Feedback Server Admin will initiate this process automatically when it is launched. If all of the required Windows components are installed on the IIS&#160;machine, you will immediately presented with the <span class="UI">Feedback Server Setup</span> dialog. If not, the <span class="UI">Required Windows Components</span> dialog will appear until all required components or installed/registered.</p>
+        <h4><a name="Required"></a>Required Windows Components dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--RequiredWindowsComponents--Vista.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Internet Information Services (IIS):&#160;</span>Displays whether or not IIS&#160;is installed on the machine. Needs to indicate "Installed"&#160;in green text to proceed.</li>
+            <li><span class="bold">ASP.NET:&#160;</span>Displays whether or not ASP.NET&#160;is registered on the machine. Needs to indicate "Registered"&#160;in green text to proceed.<ul style="list-style-type: circle;"><li><span class="bold">Register:&#160;</span>Use this button to register ASP.NET. After clicking this button, a progress bar should appear. This button will be inactive if IIS is not installed. (It will also be inactive once ASP.NET&#160;gets registered.)</li></ul></li>
+            <li><span class="bold">IIS 6 Metabase Compatibility:&#160;(Vista only)</span>Displays whether or not IIS&#160;6 Metabase Compatibility is installed on the machine. Needs to indicate "Installed"&#160;in green text to proceed. (Verify that this field does not appear on OS&#160;for which it is not applicable.)</li>
+            <li><span class="bold">Try Again: </span>If any of the items above are not installed or registered, use this button to attempt to proceed once you've set up all the components.</li>
+            <li><span class="bold">Cancel:&#160;</span>Cancels the attempt to install the Feedback Server and returns you to Feedback Server Admin.</li>
+        </ul>
+        <h4>Feedback Server Setup dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackServerSetup.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">SQL&#160;Server:&#160;</span>Displays a list of all potential SQL&#160;Servers on the domain. When initially opened, this field should display "(Retrieving list of SQL Servers...)." If the SQL&#160;instance that you would like to use does not appear in the list, you should also be able type the IP&#160;address or the name of the machine in this field. (The drop-down should display all instances of supported SQL&#160;and SQL Express on the network)</li>
+            <li><span class="bold">Database Location: </span>Displays the path to the SQL&#160;database you will be installing. This field will be grayed out if the SQL Server designated above is on a different machine. If a remote SQL&#160;database is used, the default location will always be used.<ul style="list-style-type: circle;"><li><span class="bold">Browse:&#160;</span>Opens a browse dialog that lets you browse for a folder for the SQL&#160;database. This button will only be active if the SQL&#160;Server designated above is not a remote machine.</li></ul></li>
+            <li><span class="bold">Please select the website... :&#160;</span>Select the website where you want MadCap Feedback Server installed.</li>
+            <li>
+                <p class="bold">Manually set IIS authentication setting:&#160;</p>
+                <p>- Remote SQL Server: This option will be grayed out, but selected. You will be required to fill out the "Authentication"&#160;section below.</p>
+                <p>- Local SQL Server:&#160;This setting is optional. In most cases it can be left unchecked. Enabling the option should enable the "Authentication" UI&#160;below.</p>
+            </li>
+            <li><span class="bold">Authentication:</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Domain:&#160;</span>Enter the domain name of the IIS&#160;and SQL&#160;machines for authentication purposes</li>
+                    <li><span class="bold">Username: </span>Enter the username for authentication purposes. The user must have admin rights on the IIS&#160;machine and sysadmin rights on the SQL&#160;machine.</li>
+                    <li><span class="bold">Password: </span>Enter the password for authentication purposes.</li>
+                    <li><span class="bold">Verify Credentials: </span>Ensures</li>
+                </ul>
+            </li>
+            <li><span class="bold">Import data from the previous Feedback Server installation:&#160;</span>If a previous Feedback Server installation is detected on the IIS&#160;machine, this option will become active (and be selected by default). Leave the box checked to import the data from that Feedback Server database to the new version. If there is no previous installation, this option will be grayed out. (It is also possible to import the SQL&#160;database from another machine. This is covered in the test plan <MadCap:xref href="" target="" title="" alt="" class="TitleOnly">"Server Install - UI"</MadCap:xref>.)</li>
+            <li><span class="bold">OK:&#160;</span>In this dialog, if you are using a remote SQL&#160;machine, the OK button will not allow you to proceed until you have successfully verified authentication credentials. Test clicking OK with invalid and unverified authentication data and verify that the messages that appear are appropriate. </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Enter an invalid SQL&#160;Server by typing and verify that an appropriate error is given when you attempt to create the database.</p>
+        </div>
+        <h4>Creating the database</h4>
+        <p>Once all settings in the <span class="UI">Feedback Server Setup</span> dialog are correct, clicking <span class="bold">OK</span> will create the Feedback Server SQL Database. The following UI&#160;should display:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--CreatingFeedbackServerDatabase.png" />
+        </p>
+        <p>&#160;</p>
+        <p>If any error should occur when creating the database, the entire process should rollback. In such a case, you should see the following UI:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--RollingBack.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>Setting up Feedback service for Manifest notifications</h4>
+        <p>This needs to done anytime the server is installed.</p>
+        <p>The following additional steps need to be performed after the server is installed to make sure Manifest reports are sent out.</p>
+        <ol>
+            <li>Click on the start menu and search for ‘services’ or go to Control Panel | Administrative Tools | Services</li>
+            <li>Find the MadCap Service that will be running after you install Feedback Server</li>
+            <li>Right-click on the service<ol style="list-style-type: lower-alpha;"><li>Go to properties</li><li>Log in tab</li><li>Make sure the log in information matches the log in information for the user / machine that Feedback Server is installed on.</li></ol></li>
+            <li>Restart MadCap Service.</li>
+        </ol>
+        <h4>Feedback Server Configuration</h4>
+        <p>After successful creation of the Feedback Server SQL&#160;Database, Feedback Server Admin will open the <span class="UI">Feedback Server Configuration</span> tab. Proceed to <MadCap:xref href="" target="" title="" alt="" class="TitleOnly">"Server Install - UI"</MadCap:xref> for additional testing.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

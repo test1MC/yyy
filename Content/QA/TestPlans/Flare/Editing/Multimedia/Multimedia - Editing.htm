@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6151" MadCap:lastWidth="783" MadCap:conditionTagExpression="exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Description or AddFile--UIControls.Preview or AddFile--UIControls.ProjectFiles or Default.UITestsDialogs or Default.UITestsEditors or ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FontProperties or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.UnbindElement or ElementContextMenuItems.VariableCommands or &quot;FileExplorer.Select External Path/Open&quot; or &quot;FileExplorer.Select Folder&quot; or MenuItems.HelpMenu-CheckForUpdates or MenuItems.HelpMenu-Guides or MenuItems.HelpMenu-HelpCommunity or MenuItems.HelpMenu-VideoTutorials or Mimic.LocalFrameToolbarOnly or Mimic.MasterFramesOnly or Mimic.MimicOnly or Mimic.StandardFrameToolbarOnly or Mimic.WithMasterFrames or Product.Analyzer or Product.Blaze or Product.Capture or Product.Echo or &quot;Product.Feedback Explorer&quot; or &quot;Product.Feedback Server&quot; or Product.Flare or &quot;Product.Help Viewer&quot; or Product.Lingo or Product.Mimic or Product.X-Edit or StyleTableColumns.DotNetHelp or StyleTableColumns.Frame or StyleTableColumns.HTMLHelp or StyleTableColumns.PDF or StyleTableColumns.WebHelp or StyleTableColumns.WebHelpMobile or StyleTableColumns.Word or StyleTableColumns.XMLEditor or StyleTableColumns.XPS] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Multimedia - Editing</h2>
+        <h3>Multimedia menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Multimedia--Object--menu.png" style="width: 226px; height: 251px;" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test copying and cutting multimedia from one topic and pasting it into another topic in a different folder. Verify the link updates.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test copying and cutting a multimedia object from one topic and pasting it into another topic in a different folder. Verify the link updates.</li>
+                <li>Pasting another multimedia object over the existing one should replace the selected multimedia object – Verify that it renders and display in the block bar correctly.</li>
+                <li>Pasting another element or text over a selected multimedia object will replace it with that data. – Verify that there is no malformed XML from this</li>
+                <li>Inserting another element or typing over a selected multimedia object will replace it with that data. – Verify that there is no malformed XML from this</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p><b>No Class:</b>
+        </p><pre xml:space="preserve">&lt;object src="Multimedia/wma.wma"/&gt;</pre>
+        <p>&#160;</p>
+        <p><b>With Class:</b>
+        </p><pre xml:space="preserve">&lt;object src="Multimedia/wma.wma" class="class1"/&gt;</pre><pre xml:space="preserve">&#160;</pre><pre xml:space="preserve">MP3:</pre>
+        <p>&lt;object style="margin-left: 2px;margin-right: 2px;margin-top: 2px;margin-bottom: 2px;border-left-style: groove;border-left-width: 6px;border-left-color: #ff00ff;border-right-style: groove;border-right-width: 6px;border-right-color: #ff00ff;border-top-style: groove;border-top-width: 6px;border-top-color: #ff00ff;border-bottom-style: groove;border-bottom-width: 6px;border-bottom-color: #ff00ff;" classid="clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject"&gt;</p>
+        <p>&lt;param name="url" value="Multimedia/mp3.mp3" /&gt;</p>
+        <p>&lt;embed src="Multimedia/mp3.mp3" type="application/x-mplayer2" <b>class="object_5</b>" ShowControls="0" volume="13" playCount="2" /&gt;</p>
+        <p>&lt;param name="uiMode" value="invisible" /&gt;</p>
+        <p>&lt;param name="volume" value="13" /&gt;</p>
+        <p>&lt;param name="playCount" value="2" /&gt;</p>
+        <p>&lt;/object&gt;&#160;</p>
+        <p>&#160;</p>
+        <p>SWF:</p>
+        <p>&#160;</p>
+        <p>&lt;object style="border-left-style: solid;border-left-width: 0.5in;border-left-color: ;border-right-style: solid;border-right-width: 0.5in;border-right-color: ;border-top-style: solid;border-top-width: 0.5in;border-top-color: ;border-bottom-style: solid;border-bottom-width: 0.5in;border-bottom-color: ;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"&gt;</p>
+        <p>&lt;embed src="Multimedia/swf.swf" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=Shockwaveflash" class="object_21" /&gt;</p>
+        <p>&lt;param name="src" value="Multimedia/swf.swf" /&gt;</p>
+        <p>&lt;/object&gt;</p>
+        <p>&#160;</p>
+        <p>MOV: </p>
+        <p>&lt;object style="width: 350px;height: 200px;border-left-style: double;border-left-width: 3px;border-left-color: #ee82ee;border-right-style: double;border-right-width: 3px;border-right-color: #ee82ee;border-top-style: double;border-top-width: 3px;border-top-color: #ee82ee;border-bottom-style: double;border-bottom-width: 3px;border-bottom-color: #ee82ee;" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab"&gt;</p>
+        <p>&lt;embed src="Multimedia/mov.mov" pluginspage="http://www.apple.com/quicktime/download/" volume="30" class="object_19" /&gt;</p>
+        <p>&lt;param name="src" value="Multimedia/mov.mov" /&gt;</p>
+        <p>&lt;param name="volume" value="30" /&gt;</p>
+        <p>&lt;/object&gt;</p>
+        <p>&#160;</p>
+        <p>Mimic:</p>
+        <p>&lt;p&gt;</p>
+        <p>&lt;a href="../../../../Desktop/mimic.mimovf/mimic.mimov"&gt;mimic&lt;/a&gt;</p>
+        <p>&lt;/p&gt;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

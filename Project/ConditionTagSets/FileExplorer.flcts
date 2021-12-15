@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="Select Folder"
+    BackgroundColor="#cc9900" />
+  <ConditionTag
+    Comment=""
+    Name="Select External Path/Open"
+    BackgroundColor="#ffcc00" />
+</CatapultConditionTagSet>

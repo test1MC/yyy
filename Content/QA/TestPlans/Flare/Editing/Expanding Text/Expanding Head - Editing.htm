@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1547" MadCap:lastWidth="848" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.Conditions or ElementContextMenuItems.Copy or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.Delete or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Name or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Expanding Head - Editing</h2>
+        <p>To edit the Expanding Text Head, place the insertion point inside the MadCap:expandingHead tag and type.                    </p>
+        <h4>Context Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Expanding Text/ContextMenu--ExpandingHead.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <p>&#160;</p>
+        <h4>Selecting:</h4>
+        <p>You should not be able to select the MadCap:expandingHead tag (aside from selecting the content of the tag).</p>
+        <p>&#160;</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p>You should not be able to cut or copy the MadCap:expandingHead tag (aside from copying the selected content of the tag).</p>
+        <p>&#160;</p>
+        <h4>Drag and Drop</h4>
+        <p>You should not be able to drag the MadCap:expandingHead tag outside of its parent MadCap:expanding tag.</p>
+        <p>&#160;</p>
+        <h4>Deleting</h4>
+        <p>You should not be able to delete the MadCap:expandingHead tag aside from deleting the entire MadCap:expanding tag.</p>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <p>&#160;</p>
+        <h4>Conditional Tags</h4>
+        <p>You should not be able to apply a conditional tag to the MadCap:expandingHead tag. You should only be able to apply a condition to the parent MadCap:expanding tag.</p>
+        <p>&#160;</p>
+        <h4>Code</h4>
+        <p class="bold">No Class:</p><pre xml:space="preserve">&lt;MadCap:expanding&gt;</pre><pre xml:space="preserve">    &lt;MadCap:expandingHead&gt;Delete this text&lt;/MadCap:expandingHead&gt;</pre><pre xml:space="preserve">    &lt;MadCap:expandingBody&gt; and replace it with your own content.&lt;/MadCap:expandingBody&gt;</pre><pre>&lt;/MadCap:expanding&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">With Class and Condition:</p><pre xml:space="preserve">&lt;MadCap:expanding class="className1" MadCap:conditions="Default.ScreenOnly"&gt;</pre><pre xml:space="preserve">    &lt;MadCap:expandingHead class="className1"&gt;Delete this text&lt;/MadCap:expandingHead&gt;</pre><pre xml:space="preserve">    &lt;MadCap:expandingBody class="className1"&gt; and replace it with your own content.&lt;/MadCap:expandingBody&gt;</pre><pre>&lt;/MadCap:expanding&gt;</pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

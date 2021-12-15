@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1552" MadCap:lastWidth="812" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Apply TM - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>1.	Select Translate&gt; Apply TM to Project…</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Menus/UI--Menu--Translate.png" style="width: 149px;height: 155px;" />
+        </p>
+        <h3>UI</h3>
+        <h4>For all UI Dialogs test the following:</h4>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>Progress Dialogue:</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ApplyTM--ProcessingDialogue.png" style="width: 211px;height: 187px;" />
+        </p>
+        <p><b>Completed Message:</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ApplyTM--CompleteDialogue.png" style="width: 332px;height: 118px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul>
+            <li>If invalid file it notifies you of the file but still lets you continue. You can save the log.</li>
+            <li>
+                <p>Suggestions were applied and file status updated</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ApplyTM--FileStatus.png" style="width: 290px;height: 116px;" />
+                </p>
+            </li>
+            <li>Cancel Apply TM to Project before it completes and make sure it cancels and allows you to close the dialogue and continue.</li>
+            <li>Apply TM to a variety of projects(Diff, Flare, Dita, .htm files, word, large projects, etc.)</li>
+            <li>Make sure Apply TM is applied to all types of files. Use FlareForAllProject, translate it manually, upload everything, export the TMX file. Then using a clean TM open up the original FlareForAllProject, import the TMX file you saved and Apply TM to project. All Files should be translated.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Note: tools&gt;options: you can set the match percentage that is displayed or automatically translated.</p>
+    </body>
+</html>

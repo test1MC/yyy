@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1272" MadCap:lastWidth="1362" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h1>Characters</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>General Editing</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>Flare allows user to specify characters. Additionally, Flare has the quick character feature: If user uses the character frequently, it allows user to associate the character with the Quick Character button. When clicking on the Quick Character button, the specific character or symbol will be inserted.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Characters - UI.htm" target="" title="" alt="" class="TitleOnly">Characters - UI</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Characters - Baseline.htm" class="TitleOnly">Characters - Baseline</MadCap:xref>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>Include all character things including the Quick Character UI and uses cases</li>
+            <li>There are no test cases for this-just freestyle yo.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Basic Test Plan:</p>
+        <p class="bold">&#160;</p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">Dialogue Box</p>
+        <p>&#160;</p>
+        <p>•	Verify that you can right-click to add a pinned character when appropriate</p>
+        <p>•	Verify that you cannot add any pinned characters after you reach the max number of pinned characters</p>
+        <p>•	Verify you can delete a pinned character and then add a new one</p>
+        <p>•	Verify you can add a pinned character from Recently used or the main symbol area</p>
+        <p>•	Make sure that a clean install of flare (or after removal of the relevant registry key) the default favorite symbols are set to their defaults</p>
+        <p>•	Left-click on the Insert Character icon should open the dialogue</p>
+        <p>•	Verify that searching works, type “euro” for any three fonts and make sure the euro displays</p>
+        <p>•	Verify that the name of the symbol (i.e., the “euro”) appears the in character editor when it is selected</p>
+        <p>•	Verify  that you can resize the dialogue, and that changes in the draw are appropriate</p>
+        <p>•	Mouse-over for the icon in the XML editor toolbar should display “Insert Character”</p>
+        <p>•	Verify left-click on font menu should open font menu, verify the scroll bar works, then left-click on a font should load the symbols for that font</p>
+        <p>•	Verify that enter will add a symbol from the recently used, favorite, or main symbol area</p>
+        <p>•	Verify that double-click will add a symbol from the recently used, favorite, or main symbol area</p>
+        <p>•	Verify that the font symbols load within one second of selection, all actions should be responsive</p>
+        <p>•	Verify that the search is responsive, check single letters (‘t’), check whole words (‘euro’), make sure there are no crashes or hangs if there are odd search terms</p>
+        <p>•	Verify that you can insert all characters on the recently used area without losing focus, be sure to test recently used characters that comes from the end and towards the beginning of the symbol display</p>
+        <p>•	Check that functionality matches when loading from !Insert ribbon or local XML Editor toolbar</p>
+        <p>•	Verify that symbols can be added and removed from recently used and favorites</p>
+        <p>•	Verify that copy to clipboard icon is working</p>
+        <p>•	Verify and that enter, Insert button, and double-click all add the symbols directly when highlighting the symbols from the Favorites and recently used area</p>
+        <p>•	Verify that the icons aren’t placed in bad positions when the window is resized</p>
+        <p>Insertion</p>
+        <p>•	Verify that enter or double-click to add the selected character, be sure to test both methods for  the favorites, recently used, and main symbol display area</p>
+        <p>•	Verify you can only insert one space, and that attempting to insert two spaces will not cause a crash</p>
+        <p>•	Inserting  quick characters should insert and must match the favorites in the character editor</p>
+        <p>•	Verify that the default favorites ( found at the character button on the !Insert ribbon) exist after a clean install</p>
+        <p>•	Verify that you can insert at least 10 different characters from each font (recommended to an automation strategy, scripting, macros, etc.)</p>
+        <p>•	Verify that symbols are inserted into the WYS via a span tag, symbols that share a font should share a span tag</p>
+        <p>•	Verify that inserting a symbol from the pinned or favorites area does not change the order of this while you are in the dialogue</p>
+        <p>•	Verify that the fly-out can be clicked, and that the indicated symbol is inserted</p>
+        <p>•	Verify that the favorites and recently used characters insert correctly from both the tool strip/ribbon menu and the local XML toolbar fly-out</p>
+        <p>•	Check that all fonts actually display in their font – compare to MS Word or Flare 8. For example, insure that the courier font is actually displaying in the courier characters in the WYS</p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Navigation</p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p>•	Verify you can bring up fonts by typing in the font list</p>
+        <p>•	Verify that you can navigate to a font by typing in letters and hitting enter or clicking the result</p>
+        <p>•	Verify that you can navigate to a font by typing in letters and then scrolling (either by key or with the mouse) in the new sub-list a and then hitting enter or left-clicking the result</p>
+        <p>•	Verify you can navigate left/right/up/down in the main symbol selection area (it should only take one key to navigate of course)</p>
+        <p>Known Issues</p>
+        <p>•	On some configurations, a “cannot load font” error message appears for certain fonts (for example, Vivaldi). The issues could be corrupted fonts.</p>
+        <p>•	Recently used symbols only display the corresponding Arial symbol. Many symbols will not appear as they should in that area of the dialogue (for example, Wingdings). So, setting a Wingding as your quick character or favorite will never work as the user would like it to (only the corresponding Arial character will be remembered).</p>
+        <p>&#160;</p>
+        <p><b>Relevant Registry Entries</b>
+        </p>
+        <p>&#160;</p>
+        <p>•	HKEY_CURRENT_USER\Software\MadCap Software\Flare\RecentlyUsedSymbols</p>
+        <p>•	HKEY_CURRENT_USER\Software\MadCap Software\Flare\PinnedSymbols</p>
+    </body>
+</html>

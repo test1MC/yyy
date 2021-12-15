@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2954" MadCap:lastWidth="1129" MadCap:conditionTagExpression="include[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or FlareFileTypes.!ContentFile or FlareFileTypes.Snippet]exclude[AddFile--UIControls.Description or AddFile--UIControls.Multimedia or AddFile--UIControls.ProjectFiles or AddFile--UIControls.TopicFiles or Default.UITestsEditors or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet]" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Snippets - Add File</h2>
+        <h3>Adding a Snippet File to the Project</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/AddFile.flsnp" />
+        <h3>Add File dialog:&#160;Snippet  - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Snippets/Dialog--AddFile--Snippet.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--AddFile--UIControls.flsnp" />
+        <h3>Creating a Snippet from existing content</h3>
+        <p class="bold">Create a snippet from a selection:</p>
+        <p>Select some content in the XML Editor and go <span class="MenuItem">!Format |&#160;Create Snippet…</span> in the tool strip or !Home |Snippet | Create Snippet in the Ribbon menu.</p>
+        <p class="bold">Create a snippet from a tag:</p>
+        <p>Invoke the content menu for any element (p, span, ul, etc)&#160;and select Create Snippet…</p>
+        <h4>Create Snippet - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Snippets/UI--CreateSnippet.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Snippet File: </span>Enter a file name for the snippet</li>
+            <li><span class="bold">Project Folder: </span>The file path to the folder location in which the new snippet will be created. By default, we should use Resources/Snippets.</li>
+            <li><span class="bold">Snippet: </span>Preview window allows user to see content selected to  include in snippet.</li>
+            <li><span class="bold">Replace Source Content with the New Snippet: </span>If this option is selected, upon creation of the snippet file, the selected source content will be replaced with a link to the new snippet.</li>
+            <li><span class="bold">Create: </span>Closes the dialog and creates the snippet (*.flsnp) file in the assigned folder.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not create a new snippet.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+            <li>Type extra long input into fields</li>
+            <li>Type characters and symbols into fields</li>
+            <li>Create snippets in multiple folders at different levels of the project.</li>
+            <li>Create snippets using a variety of elements and combinations of elements in a topic (Lists, Divs, Tables, Inline nodes, drop-downs, etc)</li>
+            <li>Replace snippets and verify new content is updated throughout project.</li>
+            <li>Create snippets from Index Markers, Concepts and Scripts.</li>
+        </ul>
+        <h3>Inserting a Snippet</h3>
+        <p class="bold">Using the Insert Menu:</p><span class="MenuItem">!Insert |Snippet…-</span>
+        <p><b>Using the Ribbon Menu:</b>
+        </p>
+        <p>!Insert |Single Source | Snippet </p>
+        <p class="bold">Drag &amp;&#160;Drop:</p>
+        <p>Click on a Snippet in the <span class="UI">Content Explorer </span>and drag it into a topic.</p>
+        <p>Both methods will invoke the <span class="UI">Insert Snippet Link</span> dialog.</p>
+        <h4>Insert Snippet Link - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Snippets/UI--InsertSnippetLink.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Select Snippet:</span> Displays a list of all snippet files in the project.</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowAllFiles.png" />Shows all of the snippet files in the project in a list in the area below.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" />Shows or hides the folders that the snippet files are stored in.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" />Shows or hides the snippet files. If you click this button when the "Show Folders" button is selected, the area splits into two halves. The folder is shown on the left side, and the files and subfolders within it are shown on the right.</li>
+                    <li>
+                        <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" />If the "Show Files" button is the only one selected, you can click this button to move up one folder level.</li>
+                    <li>*.flsnp;*.mcsnp:&#160;displays the filetypes that will show in the list. You can't change this.</li>
+                </ul>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">File:&#160;</span>Displays the filename of the snippet file.</li>
+                    <li><span class="bold">Path:&#160;</span>Displays the path of the snippet file.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">[File]: </span>Should populate with the file path to the selected snippet file, or the user can type in the path.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" /> :&#160;</span>Launches the Open dialog  with File of type set to Snippet Files (*.flsnp)</li>
+            <li><span class="bold">Preview:&#160;</span>Displays a preview of the snippet file selected to the left.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Insert snippets into tables and other formatted elements, Lists, fieldsets etc…</li>
+            <li>  Test Drag &amp;&#160;Drop of Text and Block Snippets into existing content as well as empty tags.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="7003" MadCap:lastWidth="1143" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Relationship Tables - Output</h2>
+        <ul>
+            <li>The relationships defined in the Relationships Tables are converted to relationship links in the outputs. In order for these links to appear in a topic, the topic needs to have a Relationships Proxy in it. The Relationships Proxy can be added to a Master Page (and applied to every topic when the project is compiled)&#160;or added directly to a topic.</li>
+        </ul>
+        <h4>Target Editor setup: </h4>
+        <ul>
+            <li>By default, all outputs will use all Relationship Tables that exist in the project. If you have multiple Relationship Table files, you can designate specifically which files should be included in the output in the <span class="UI">Target Editor</span>, in the Relationship Table tab:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTableTab---TargetEditor.png" style="mc-thumbnail: popup;max-width: 400pt;" />
+        </p>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">(Checkbox):&#160;</span>Lets you set whether or not the Relationship Table should be included in the output. Deselecting all Relationship Tables will automatically include all files in the output.</li>
+            <li><span class="bold">(Column)&#160;Relationship Table File:&#160;</span>Displays a list of all Relationship Table files that exist in the project.</li>
+            <li><span class="bold">Edit Relationship Table:&#160;</span>Opens the selected Relationship Table file in the <span class="UI">Relationship Table Editor</span>.</li>
+            <li><span class="bold">New Relationship Table:&#160;</span>Open the <span class="UI">Add File</span> dialog</li>
+        </ul>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Support in Web Help Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <hr />
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul class="checkbox">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all web outputs.</p>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in Web Help Air Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all web outputs.</p>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all web outputs.</p>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in CHM Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all web outputs.</p>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in DotNet Outputs: </h4>
+        <ul>
+            <li>In WebHelp, DotNet Help and HTML Help, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb2.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputWeb3.png" style="max-width: 200pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference"&#160;columns of the Relationship Table respectively. As a result, a relationship link is created in the output.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all web outputs.</p>
+        <p>&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in PDF Outputs: </h4>
+        <ul>
+            <li>In PDF, XPS, XHTML Book, Word and FrameMaker outputs, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint1.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint2.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint3.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference" columns of the Relationship Table respectively. As a result, a relationship link is created in the output, complete with page number reference.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all print outputs.</li>
+        </ul>
+        <p class="bold" style="font-size: 14pt;">&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in Word Outputs: </h4>
+        <ul>
+            <li>In PDF, XPS, XHTML Book, Word and FrameMaker outputs, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint1.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint2.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint3.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference" columns of the Relationship Table respectively. As a result, a relationship link is created in the output, complete with page number reference.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all print outputs.</li>
+        </ul>
+        <p class="bold" style="font-size: 14pt;">&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in Frame Outputs: </h4>
+        <ul>
+            <li>In PDF, XPS, XHTML Book, Word and FrameMaker outputs, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint1.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint2.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint3.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference" columns of the Relationship Table respectively. As a result, a relationship link is created in the output, complete with page number reference.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all print outputs.</li>
+        </ul>
+        <p class="bold" style="font-size: 14pt;">&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in XPS Outputs: </h4>
+        <ul>
+            <li>In PDF, XPS, XHTML Book, Word and FrameMaker outputs, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint1.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint2.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint3.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference" columns of the Relationship Table respectively. As a result, a relationship link is created in the output, complete with page number reference.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all print outputs.</li>
+        </ul>
+        <p class="bold" style="font-size: 14pt;">&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <ul>
+            <li>In PDF, XPS, XHTML Book, Word and FrameMaker outputs, the Relationships Proxy will be converted to relationship links that will look something like these three topics:</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint1.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint2.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Relationship Tables/RelTable---OutputPrint3.png" style="max-width: 300pt;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;">
+            </img>
+        </p>
+        <ul>
+            <li>In this example from the project in the Test Plan Testing Resources folder, Concept1, Task1 and Ref1 are three unique topics placed in the "concept," "task" and "reference" columns of the Relationship Table respectively. As a result, a relationship link is created in the output, complete with page number reference.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul>
+            <li style="font-size: 14pt;">Use the project in the Test Plan Testing Resources folder to test more complex Relationship Table configurations in all print outputs.</li>
+        </ul>
+        <p class="bold" style="font-size: 14pt;">&#160;</p>
+        <p class="bold" style="font-size: 11pt;">Test cases</p>
+        <ul style="list-style-type: square;">
+            <li style="font-size: 11pt;">Simple relationships across columns</li>
+            <li style="font-size: 11pt;">Using Groups within cells</li>
+            <li style="font-size: 11pt;">Collection Type relationships within cells</li>
+            <li style="font-size: 11pt;">Linking options (Source Only, Target Only, etc)</li>
+            <li style="font-size: 11pt;">Condition out items from the Relationship</li>
+            <li style="font-size: 11pt;">Condition out topics that are in a Relationship Table out of being included in the output</li>
+            <li style="font-size: 11pt;">Test MadCap|relationshipsProxy, MadCap|relationshipsHeading and MadCap|relationshipsItem styles in all outputs</li>
+        </ul>
+        <p>
+            <br />
+        </p>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>When including a Relationship Table in DITA output, we are essentially copying the Flare Relationship Table to the output DITA map file. After generating DITA output, open the resulting DITA map in Notepad and you should see the same code that you see in the Flare Relationship Table file. </li>
+            <li>The exception to this would be Conditional Tags. Conditional Tags, set up appropriately in the Flare project will be converted to the corresponding DITA attribute. Conditional Tags that are not set up for DITA output will simply be dropped in DITA output. This is covered more in depth in the DITA output test plan. For the purposes of this test plan, realize that most Conditional Tags will simply be dropped.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Example (Flare Relationship Table code):</p><pre xml:space="preserve" style="color: #008000;">  &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">    &lt;topicref href="/Content/Concepts/Concept1.htm" <span style="background-color: #ffff00;">MadCap:conditions="Default.PrintOnly"</span>/&gt;</pre><pre xml:space="preserve" style="color: #008000;">  &lt;/relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">  &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">    &lt;topicref href="/Content/Tasks/Task1.htm" <span style="background-color: #ffff00;">MadCap:conditions="Audience.Beginner"</span> /&gt;</pre><pre xml:space="preserve" style="color: #008000;">  &lt;/relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">  &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">    &lt;topicref href="/Content/References/Ref1.htm" <span style="background-color: #ffff00;">MadCap:conditions="Audience.Advanced"</span> /&gt;</pre><pre xml:space="preserve" style="color: #008000;">  &lt;/relcell&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">Will become (DITA output code):</p><pre>&lt;map&gt;</pre><pre xml:space="preserve">  &lt;topicref href="Content/StartTopic.dita" navtitle="StartTopic" /&gt;</pre><pre xml:space="preserve">  &lt;topicref href="Content/Example.dita" navtitle="Example" /&gt;</pre><pre xml:space="preserve">  &lt;topichead navtitle="Concepts"&gt;</pre><pre xml:space="preserve">    &lt;topicref href="Content/Concepts/Concept1.dita" navtitle="Concept1" /&gt;</pre><pre xml:space="preserve">  &lt;/topichead&gt;</pre><pre xml:space="preserve">  &lt;topichead navtitle="Tasks"&gt;</pre><pre xml:space="preserve">    &lt;topicref href="Content/Tasks/Task1.dita" navtitle="Task1" /&gt;</pre><pre xml:space="preserve">  &lt;/topichead&gt;</pre><pre xml:space="preserve">  &lt;topichead navtitle="References"&gt;</pre><pre xml:space="preserve">    &lt;topicref href="Content/References/Ref1.dita" navtitle="Ref1" /&gt;</pre><pre xml:space="preserve">  &lt;/topichead&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">  &lt;reltable&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">    &lt;relheader&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">      &lt;relcolspec type="concept" /&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">      &lt;relcolspec type="task" /&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">      &lt;relcolspec type="reference" /&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">    &lt;/relheader&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">    &lt;relrow&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">        &lt;topicref href="Content/Concepts/Concept1.dita" /&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;/relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">        &lt;topicref href="Content/Tasks/Task1.dita" <span style="background-color: #ffff00;">audience="Beginner"</span> /&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;/relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;relcell&gt;</pre><pre xml:space="preserve" style="color: #008000;">        &lt;topicref href="Content/References/Ref1.dita" <span style="background-color: #ffff00;">audience="Advanced"</span> /&gt;</pre><pre xml:space="preserve" style="color: #008000;">      &lt;/relcell&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">    &lt;/relrow&gt;</pre><pre xml:space="preserve" style="color: #ff0000;">  &lt;/reltable&gt;</pre><pre>&lt;/map&gt;</pre>
+        <h3>Compiler errors:</h3>
+    </body>
+</html>

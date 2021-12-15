@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="7496" MadCap:lastWidth="1297" MadCap:conditionTagExpression="exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsEditors] " MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Import Word - Wizard</h2>
+        <h3>Launching the Importing Microsoft Word Wizard</h3>
+        <h4>Scenario 1:&#160;Import to a New Project</h4>
+        <p>To create a new project by importing Word files, launch the <span class="UI">Import Microsoft&#160;Word Wizard</span> by:</p>
+        <ul class="checkbox">
+            <li>Toolstrip interface: <span class="MenuItem">!File&#160;|&#160;Import Project |&#160;MS Word Documents…</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!File | New Project | MS Word Documents</span></li>
+            <li>Ribbon interface: Open any project, and then <span class="RibbonItem">!Project | Import | MS Word Documents</span>, and select the radio button option: "Import into a new project"</li>
+        </ul>
+        <h4>Scenario 2:&#160;Import into an Existing Project</h4>
+        <p>To import Word files into an existing project, first open the project you want to import files into, and then launch the <span class="UI">Import Microsoft&#160;Word Wizard</span> by:</p>
+        <ul class="checkbox">
+            <li>Toolstrip interface: <span class="MenuItem">!File&#160;|&#160;Import Project |&#160;MS Word Documents…</span>, and the radio button option "Import into this project" should be preselected</li>
+            <li>Ribbon interface: <span class="RibbonItem">!Project | Import | MS Word Documents</span>, and the radio button option "Import into this project" should be preselected</li>
+        </ul>
+        <h3>Import Microsoft Word Wizard - UI&#160;Test Cases</h3>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 1a (Scenario 1):&#160;Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord1a--ImportOptions.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Project Name: </span>Lets you enter a name for the project that will be created from the imported documents.</li>
+            <li><span class="bold">Project Folder: </span>Lets you set the location of the project <ul class="checkbox"><li><span class="bold">Browse: </span>Invokes the <span class="UI">Browse For Folder</span> dialog to select the folder where project will be saved</li></ul></li>
+            <li><span class="bold">Output Type: </span> Lets you select the output type for the primary target for the new project</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 1b (Scenario 2):&#160;Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord1b--ImportOptions.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Import into a new project: </span>This variation of the <ul class="checkbox"><li><span class="bold">Project Name: </span>Lets you enter a name for the project that will be created from the imported documents.</li><li><span class="bold">Project Folder: </span>Lets you set the location of the project </li><li><span class="bold">Output Type:  </span>Lets you select the primary target for the project</li></ul></li>
+            <li><span class="bold">Import into this project</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Project File: </span> Uneditable field that displays the file location of the current project that is opened in Flare</li>
+                </ul>
+            </li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 2:&#160;Select Microsoft Word&#160;documents to import</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord2--Documents.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Selected Microsoft Word&#160;documents</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">MS Word&#160;Files:&#160;</span>Displays each *.doc, *.docx and *.rtf file added to the import</li>
+                    <li><span class="bold">Status: </span>???</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---OpenFile.png" alt="" title="" />:&#160;</span>Opens the selected file in the default application. Button will gray out with a multi-selection.</li>
+            <li><span class="bold">Link Generate Files To Source Files:&#160;</span>This option creates a connection between the original Microsoft Word files and the files that are created as a result of the import.</li>
+            <li><span class="bold"> <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveUp.png" alt="" title="" />: </span>This moves the selected document higher in the list (if you have more than one document to import). The document at the top is used for the name of the content folder holding the imported topics in Flare. Also, the order determines how the imported documents are arranged in the Flare TOC that is created as a result.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveDown.png" alt="" title="" /> : </span>This moves the selected document lower in the list (if you have more than one document to import).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Remove.png" />: </span>This removes the selected document(s) from the list.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---AddFiles.png" />: </span>Produces the <span class="UI">Open</span> dialog which lets you browse for *.doc, *.docx or *.rtf files to add to the import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Produces the <span class="UI">Scanning Source Documents</span> dialog and then proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>. (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Scanning Documents</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord2b--ScanningDocs.png" style="width: 397px;height: 91px;" />
+        </p>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 3:&#160;New Topic Styles</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord3--NewTopicStyles.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Used Word Styles: </span>Lists all styles used in the Word documents you have added to the import.</li>
+            <li><span class="bold">'New Topic' Styles:&#160;</span>Lists all styles which should split the original Word documents&#160;into separate topics.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveRightWide.png" /> :&#160;</span>Lets you add the Used Word Styles selected from the left side and add them to the 'New Topic' Styles list.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveLeftWide.png" /> :&#160;</span>Lets you select one or more 'New Topic' Styles from the right side and remove it from the 'New&#160;Topic' Styles list.</li>
+            <li><span class="bold">Preview:&#160;</span>Displays a preview of the style selected in the Used Word Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files using <span class="KeyboardShortcut">Shift</span>-Click or <span class="KeyboardShortcut">CTRL</span>-Click</li>
+            <li>Double-clicking a style in the left-hand list will move it to the right-hand list</li>
+            <li>Double-clicking a style in the right-hand list will remove it from the right-hand list</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 4:&#160;Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord4--Options.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Add "Topic Continued"&#160;links when appropriate: </span>Select this option if you want a link called "Topic Continued" to be placed at the bottom of pages when a long topic has been split into multiple topics.<ul style="list-style-type: circle;"><li><span class="bold">Cross-Reference Format:&#160;</span>Use this field to specify the format for the "Topic Continued" links.</li><li><span class="bold">Edit:&#160;</span>If you want to modify the cross-reference format provided, click this button, which opens the <span class="UI">Cross-Reference Format</span> dialog.</li></ul></li>
+            <li><span class="bold">Add "Topic Continued From…" links when appropriate: </span>Select this option if you want a link called "Topic Continued From" to be placed at the top of continued pages when a long topic has been split into multiple ones.<ul style="list-style-type: circle;"><li><span class="bold">Cross-Reference Format:&#160;</span>Use this field to specify the format for the "Topic Continued From" links.</li><li><span class="bold">Edit:&#160;</span>If you want to modify the cross-reference format provided, click this button, which opens the <span class="UI">Cross-Reference Format</span> dialog.</li></ul></li>
+            <li><span class="bold">Split Long Topics:&#160;</span>Select this option if you have long  source documents and want to make sure that they are converted to multiple topics<ul style="list-style-type: circle;"><li><span class="bold">Threshold:&#160;</span>Enter the maximum number of characters to be converted to a topic before a new topic is created.</li></ul></li>
+            <li><span class="bold">Avoid Creating Empty Topics:&#160;</span>Select this option if you want to ensure that new topics are not created when large sections are found in the Word documents without any content.<ul style="list-style-type: circle;"><li><span class="bold">Threshold:&#160;</span>Enter the maximum number of empty character spaces allowed in a topic.</li></ul></li>
+            <li><span class="bold">Auto-reimport before 'Generate Output': </span>Also called "Easy Sync," this option will tell Flare to automatically re-import Microsoft Word files when you attempt to build output.</li>
+            <li><span class="bold">Approximate Filename Length:&#160;</span>Enter the maximum number of characters to use for naming new topic files that are automatically created after splitting a long topic.</li>
+            <li><span class="bold">Convert all tables to"Auto-Fit to Contents":&#160;</span>Select this option if you want to automatically set tables to "Auto-Fit to Contents" when they are imported into Flare.</li>
+            <li><span class="bold">Create a Page Layout for each section header/footer:&#160;</span>Select this option to create a unique Page Layout file during the import for every section break that occurs in the Word document. </li>
+            <li><span class="bold">Automatically set topic title:&#160;</span>Enabled by default. Select this option to have Flare automatically use the first heading of a topic as its title at the point of compile. If you deselect this option, a topic title will be injected during import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 5:&#160;Stylesheet</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord5--Styles.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Stylesheet...:&#160;</span>Produces the <span class="UI">Open</span> dialog which lets you browse for a *.css file.</li>
+            <li><span class="bold">Source Styles:</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Preserve MS Word Styles: </span>This retains any styles from your Word documents so that you can continue to use them in your new project.</li>
+                    <li><span class="bold">Don't Preserve MS Word Styles: </span>This does not keep the styles that were used in the Word documents.</li>
+                    <li><span class="bold">Convert inline formatting to CSS&#160;styles:&#160;</span>This creates new styles based on any local formatting that exists in the Word documents.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 6:&#160;Paragraph Style Mapping</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord6--ParagraphStyleMapping.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Left-hand Columns</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">MS Word Style: </span>Lists all styles used in the Word documents you have added to the import.</li>
+                    <li><span class="bold">Flare Style:&#160;</span>Displays the style name that the Word style will adopt after the documents are imported.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Right-hand Column</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Flare Styles:&#160;</span>List of Flare styles available to be mapped to.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Map:&#160;</span>Lets you map the selected MS Word Style(s) on the left to the selected Flare Style from the far right.</li>
+            <li><span class="bold">Unmap:&#160;</span>Lets you remove the mapped Flare Style from the selected MS Word Style(s).</li>
+            <li><span class="bold">(Left) Preview:&#160;</span>Displays a preview of the style selected in the MS Word Style list.</li>
+            <li><span class="bold">(Right) Preview:&#160;</span>Displays a preview of the style selected in the Flare Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files in the left-hand list using <span class="KeyboardShortcut">Shift</span>-Click or <span class="KeyboardShortcut">CTRL</span>-Click</li>
+            <li>Should not be able to multi-select files in the right-hand list</li>
+            <li>Double-clicking a style in the left-hand list will do nothing</li>
+            <li>Double-clicking a style in the right-hand list will map it to the current selection in the left-hand list</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard - Dialog 7:&#160;Character Style Mapping</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Wizard--ImportWord7--CharacterStyleMapping.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Left-hand Columns</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">MS Word Styles: </span>Lists all styles used in the Word documents you have added to the import.</li>
+                    <li><span class="bold">Flare Style:&#160;</span>Displays the style name that the Word style will adopt after the documents are imported.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Right-hand Column</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Flare Styles:&#160;</span>List of Flare styles available to be mapped to.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Map:&#160;</span>Lets you map the selected MS Word Style(s) on the left to the selected Flare Style from the far right.</li>
+            <li><span class="bold">Unmap:&#160;</span>Lets you remove the mapped Flare Style from the selected MS Word Style(s).</li>
+            <li><span class="bold">(Left) Preview:&#160;</span>Displays a preview of the style selected in the MS Word Style list.</li>
+            <li><span class="bold">(Right) Preview:&#160;</span>Displays a preview of the style selected in the Flare Styles list.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Microsoft Word Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Microsoft Word Wizard</span>.  (Should be grayed out at this point)</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the Microsoft Word files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import Microsoft Word Wizard</span> and does not import anything.</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Columns are sortable (A-Z and Z-A)</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files in the left-hand list using <span class="KeyboardShortcut">Shift</span>-Click or <span class="KeyboardShortcut">CTRL</span>-Click</li>
+            <li>Should not be able to multi-select files in the right-hand list</li>
+            <li>Double-clicking a style in the left-hand list will do nothing</li>
+            <li>Double-clicking a style in the right-hand list will map it to the current selection in the left-hand list</li>
+        </ul>
+        <h4>Import Progress</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Dialog--ImportProgress.png" style="width: 387px;height: 241px;" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul>
+            <li><span class="bold">Save Log: </span>??? Always inactive?</li>
+            <li><span class="bold">Cancel: </span>Cancels the import</li>
+        </ul>
+        <h4>Accept Imported Documents</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import Word/Dialog--AcceptImportedDocuments.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Generated documents grid</p>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">File:&#160;</span>Displays each new Flare file that will be created as a result of the import.</li>
+                    <li><span class="bold">Type: </span>Displays the file extension of each file.</li>
+                    <li><span class="bold">Folder:</span> Displays the location where the file will exist in the Flare project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">(Preview):&#160;</span>Displays a preview (if available) of the file selected on the left.</li>
+            <li><span class="bold">Show Source Code: </span>Shows the source code of the selected file in the preview box.</li>
+            <li><span class="bold">Accept: </span>Closes the dialog and closes the <span class="UI">Import Microsoft Word Wizard</span>. <ul class="checkbox"><li>Scenario 1:&#160;The resulting new Flare project should now be open. </li><li>Scenario 2:&#160;The imported files are now present in the existing project.</li></ul></li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog, does not complete the import and returns to the <span class="UI">Import Microsoft Word Wizard</span></li>
+        </ul>
+    </body>
+</html>

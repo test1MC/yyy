@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7678" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Feedback Explorer - UI</h2>
+        <h3>Opening the Feedback Explorer pane</h3>
+        <p class="bold">!View |&#160;Feedback Explorer</p>
+        <h3>Feedback Explorer pane - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--DefaultView.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Topic Comments - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--TopicComments.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <p>None</p>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Topic Comments grid: </span>Displays all comments that exist on the Feedback Server for the topic currently open in the <span class="UI">MDI</span>.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">User: </span>Displays the username of the user who added the comment.</li>
+                    <li><span class="bold">Subject: </span>Displays the subject of the comment.</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment. Most likely just the beginning of the comment followed by "...". Hovering over the cell will display the full comment in a tooltip.</li>
+                    <li><span class="bold">Date:&#160;</span>Shows the date and time at which the comment was added to the topic.</li>
+                    <li><span class="bold">Status:&#160;</span>Displays the review status of the comment.</li>
+                    <li><span class="bold">CommentID: </span>Displays the Feedback Server comment ID&#160;number for the comment.</li>
+                    <li><span class="bold">ParentID: </span>If the comment is a reply to another comment, displays the Feedback&#160;Server comment ID&#160;number for the parent comment (the comment being replied to).</li>
+                    <li><span class="bold">#: </span>Displays a count for every comment in the list.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Invokes the <span class="UI">Properties</span> dialog for the selected element. See (Comment)&#160;Properties below.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Topic Ratings - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--TopicRatings.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DiscardRating.png" /><span class="bold">(Discard selected topic rating(s)):&#160;</span>Permanently deletes the selected topic rating from the Feedback Server.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Topic Ratings grid: </span>Displays all ratings that exist on the Feedback Server for the topic currently open in the <span class="UI">MDI</span>.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Rating: </span>Displays the numerical value of each rating.</li>
+                    <li><span class="bold">Feedback:&#160;</span>Displays any author-only feedback provided with the rating, if the user provided any. Most likely just the beginning of the comment followed by "...". Hovering over the cell will display the full comment in a tooltip.</li>
+                    <li><span class="bold">Date:&#160;</span>Shows the date and time at which the rating was added to the topic.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Invokes the <span class="UI">Properties</span> dialog for the selected element. See (Rating)&#160;Properties below.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Context-Sensitive Help Calls - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--CSHCalls.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Reset.png" /><span class="bold">(Reset CSH call counts):&#160;</span>Resets the CSH&#160;call counts for the selected terms&#160;to zero.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Context-Sensitive Help Calls grid: </span>Displays all  CSH&#160;Calls tracked by the Feedback Server for any Help system using the Feedback Service key in the project's Primary Target.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">CSH&#160;ID: </span>Displays all CSH&#160;IDs called by the end user.</li>
+                    <li><span class="bold">Path: </span>Displays the path of the topic file within the project.</li>
+                    <li><span class="bold">Call Count:&#160;</span>Displays the total number of times the CSH ID to the left was called.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Opens the linked topic.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Pending Comments - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--PendingComments.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DiscardComment.png" /><span class="bold">(Discard selected comment(s)):&#160;</span>Deletes the comment from the Feedback Server. Clicking this button should prompt for confirmation.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SetCommentStatus.png" /><span class="bold">(Set comment status):&#160;</span>Clicking here invokes a drop-down which lets the reviewer or administrator change the comment status to Accepted, Pending Review or Hidden.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Pending Comments grid: </span>Displays all comments in the "Pending Review"&#160;status on the Feedback Server for any Help system using the Feedback Service key in the project's Primary Target.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Topic: </span>Displays the path and filename of the topic file that received the comment.</li>
+                    <li><span class="bold">User: </span>Displays the username of the user who added the comment.</li>
+                    <li><span class="bold">Subject: </span>Displays the subject of the comment.</li>
+                    <li><span class="bold">Comment:&#160;</span>Displays the comment. Most likely just the beginning of the comment followed by "...". Hovering over the cell will display the full comment in a tooltip.</li>
+                    <li><span class="bold">Date:&#160;</span>Shows the date and time at which the comment was added to the topic.</li>
+                    <li><span class="bold">CommentID: </span>Displays the Feedback Server comment ID&#160;number for the comment.</li>
+                    <li><span class="bold">ParentID: </span>If the comment is a reply to another comment, displays the Feedback&#160;Server comment ID&#160;number for the parent comment (the comment being replied to).</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Invokes the <span class="UI">Properties</span> dialog for the selected element. See (Comment)&#160;Properties below.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Search Phrases - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--SearchPhrases.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Reset.png" /><span class="bold">(Reset search counts):&#160;</span>Resets the search counts for the selected term(s)&#160;to zero. Clicking this button should prompt for confirmation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Search Phrases grid: </span>Displays all search phrases tracked by the Feedback Server for any Help system using the Feedback Service key in the project's Primary Target.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Search query: </span>Displays all search queries submitted in all published help systems using the Feedback Service key set in the configuration file.</li>
+                    <li><span class="bold">Number of searches: </span>Displays the total number of times the search query to the left was submitted.</li>
+                    <li><span class="bold">Number of results:&#160;</span>Displays the number of search results the end user received when performing the search.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Invokes the <span class="UI">Properties</span> dialog for the selected element. See (Query)&#160;Properties below.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Search Phrases With No Results - UI&#160;Controls</h4>
+        <p>Feedback Explorer docked in MDI&#160;in order to display all columns in the screenshot:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--FeedbackExplorer--SearchPhrasesWithNoResults.png">
+            </img>
+        </p>
+        <p class="bold">Local Toolbar:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Reset.png" /><span class="bold">(Reset search counts):&#160;</span>Resets the search counts for the selected term(s)&#160;to zero. Clicking this button should prompt for confirmation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Feedback Explorer |&#160;Search Phrases with No Results grid: </span>Displays all search phrases tracked by the Feedback Server for any Help system using the Feedback Service key in the project's Primary Target that resulted in no results.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Search query: </span>Displays all search queries submitted in all published help systems using the Feedback Service key set in the configuration file.</li>
+                    <li><span class="bold">Number of searches: </span>Displays the total number of times the search query to the left was submitted.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li>
+                <p class="bold">Right-Click Menu:</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/Menu--FeedbackExplorerRightClickMenu.png" alt="" title="" class="left">
+                    </img>
+                </p>
+                <ul style="list-style-type: square;margin-left: 180px;">
+                    <li><span class="bold">Copy: </span>Copies the selected element to the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Paste: </span>Pastes the content from the clipboard (not really applicable in this context; there is a bug to have this item removed)</li>
+                    <li><span class="bold">Properties: </span>Invokes the <span class="UI">Properties</span> dialog for the selected element. See (Query)&#160;Properties below.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>(Comment) Properties Dialog - UI Test Cases</h3>
+        <p class="bold">To open the dialog:</p>
+        <ul style="list-style-type: square;">
+            <li>Double-click an item in the Topic Comments or Pending Comments view</li>
+            <li>Select an item in the Topic Comments or Pending Comments view and press &lt;F4&gt;</li>
+            <li>Right-click an item in the Topic Comments or Pending Comments view and select Properties</li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--PropertiesComment.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>UI Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Subject: </span>Displays the subject of the comment.</li>
+            <li><span class="bold">User: </span>Displays the username of the user who added the comment.</li>
+            <li><span class="bold">Date:&#160;</span>Shows the date and time at which the comment was added to the topic.</li>
+            <li><span class="bold">Comment:&#160;</span>Displays the comment. This field should be scrollable.</li>
+            <li><span class="bold">In reply to: </span>If viewing Properties of a comment that is a reply to another comment, the lower fields will be populated as well. If the comment is not a reply, these lower fields should appear empty.<ul style="list-style-type: square;"><li><span class="bold">User:&#160;</span>Displays the username of the user who added the parent comment.</li><li><span class="bold">Comment:&#160;</span>Displays the parent comment. This field should be scrollable.</li></ul></li>
+        </ul>
+        <h3>(Rating) Properties Dialog - UI Test Cases</h3>
+        <p class="bold">To open the dialog:</p>
+        <ul style="list-style-type: square;">
+            <li>Double-click an item in the Topic Ratings view</li>
+            <li>Select an item in the Topic Ratings view and press &lt;F4&gt;</li>
+            <li>Right-click an item in the Topic Ratings view and select Properties</li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--PropertiesRating.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>UI Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Rating: </span>Displays the numerical value of each rating.</li>
+            <li><span class="bold">Date:&#160;</span>Shows the date and time at which the rating was added to the topic.</li>
+            <li><span class="bold">Feedback:&#160;</span>Displays any author-only feedback provided with the rating, if the user provided any. This field should be scrollable.</li>
+        </ul>
+        <h3>(Query) Properties Dialog - UI Test Cases</h3>
+        <p class="bold">To open the dialog:</p>
+        <ul style="list-style-type: square;">
+            <li>Double-click an item in the Search Phrases or Search Phrases with No Results view</li>
+            <li>Select an item in the Search Phrases or Search Phrases with No Results view and press &lt;F4&gt;</li>
+            <li>Right-click an item in the Search Phrases or Search Phrases with No Results view and select Properties</li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Feedback/UI--PropertiesQuery.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>UI Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Number of times searched: </span>Displays the total number of times the search query was submitted.</li>
+            <li><span class="bold">Query: </span>Displays the search query.</li>
+        </ul>
+    </body>
+</html>

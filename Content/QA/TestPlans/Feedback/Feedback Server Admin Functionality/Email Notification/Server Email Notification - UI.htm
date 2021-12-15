@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2732" MadCap:lastWidth="1019" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs] " MadCap:fileTags="Status.Feedback V2,AuthorFileTagSet.Matthew,Product.Feedback" MadCap:ignoredWords="testplan">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2> Server Admin - UI</h2>
+        <p>This test plan will cover the UI&#160;associated with setting email notification options. For a complete testplan of Feedback Configuration  <MadCap:xref href="../../Feedback Explorer Managing Feedback/Feedback Configuration/Feedback Configuration - UI.htm" target="" title="" alt="">See Feedback Configuration - UI</MadCap:xref> .</p>
+        <p>&#160;</p>
+        <p>Open:</p>
+        <ul style="list-style-type: circle;">
+            <li>In Flare, open a Flare Target and navigate to the Feedback Service Tab.</li>
+            <li>Enable Feedback Service</li>
+            <li>Enter a valid Feedback Server URL and License Key</li>
+            <li>Click the Configure with Feedback Explorer Application</li>
+            <li>Feedback Explorer will open with the Feedback Admin / Clear Data pane open.</li>
+        </ul>
+        <h3>Administrator Email Notification options</h3>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Toolbars/Button---ClearData.png" /><span class="bold">:&#160;</span>Clears all data in the Feedback database with the exception of User Profile data. In order to clear all data, one must click OK in two confirmation dialogs.</p>
+        <h4>Feedback Explorer - (name the UI&#160;where options are set)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/FeedbackAdminGeneral.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <h3>Notifications tab</h3>
+        <p class="bold">UI Controls</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/email_notifications_example.png" style="mc-thumbnail: hover;" />
+        </p>
+        <p>&#160;</p>
+        <p>Notify administrators of the following events:</p>
+        <ul style="list-style-type: circle;">
+            <li>Search is performed which returns no results</li>
+            <li>Topic is rated</li>
+            <li>CSH call is made</li>
+            <li>Topic comment submitted by user</li>
+            <li>Topic comment status changed by reviewer</li>
+        </ul>
+        <h3>Reviewer Email Notification options (Removed in FEEDBACK V4)</h3>
+        <h4>Feedback Explorer - (name the UI&#160;where options are set)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackServerConfiguration--BasicTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">TBD:&#160;</span>(We've discussed adding some new notification options for reviewers in V3. Update this section once those features are developed.)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Registered User Email Notification options</h3>
+        <h4>Feedback Enabled Output - User Registration dialog</h4>
+        <p>&#160;</p>
+        <p class="bold">DotNet output:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--UserRegistrationEmailNotificationOptions.png" alt="" title="" />
+        </p>
+        <p class="bold">WebHelp and HTML Help outputs:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--UserRegistrationEmailNotificationOptions2.png" alt="" title="" />
+        </p>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test that no email notifications are sent when no options are selected.</li>
+                <li>
+                    <p>Test each email notification option independently. Verify that only the appropriate email is sent.</p>
+                    <table style="caption-side: top; mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');" class="TableStyle_Basic" cellspacing="0">
+                        <col style="width: 1in;" />
+                        <col style="width: 1in;" />
+                        <col style="width: 1in;" />
+                        <thead>
+                            <tr>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColSep">Option</th>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColSep">Email</th>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColEnd">Verified</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep">Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep">Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColEnd">&#160;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <p>Test that each combination of options work appropriately. For each combination of options, verify that only one email is sent and that it is the appropriate email.</p>
+                    <table style="caption-side: top; mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');" class="TableStyle_Basic" cellspacing="0">
+                        <col style="width: 2in;" />
+                        <col style="width: 2in;" />
+                        <col style="width: 1in;" />
+                        <col style="width: 1in;" />
+                        <thead>
+                            <tr>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColSep">Options</th>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColSep">Action</th>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColSep">Email</th>
+                                <th class="TableStyle_Basic_Head_0_0_RowSep_ColEnd">Verified</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply made to a comment</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to same topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to another topic in the Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">None</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply made to a comment</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to same topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to another topic in the Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply made to a comment</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to same topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to another topic in the Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply, Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply made to a comment</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Reply, Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Comment added to same topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColSep">Topic</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowSep_ColEnd">&#160;</td>
+                            </tr>
+                            <tr>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep">Reply, Topic &amp;&#160;Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep">Comment added to another topic in the Help System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColSep">Help&#160;System</td>
+                                <td class="TableStyle_Basic_Body_0_0_RowEnd_ColEnd">&#160;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Test the "Reply" link in each variety of the end user notification emails.</p>
+            <ul>
+                <li>"a reply is left to one of my comments"&#160;email</li>
+                <li>"a comment is left on a topic that I&#160;commented on"&#160;email</li>
+                <li>"a comment is left on any topic in the Help System"&#160;email</li>
+            </ul>
+        </div>
+    </body>
+</html>

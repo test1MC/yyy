@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3759" MadCap:lastWidth="1073" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Search&#160;Phrases With No Results - UI</h2>
+        <h3>Opening the Search Phrases With No Results view</h3>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Search Phrases With No Results</li>
+            <li>Press &lt;CTRL&gt;-R on the keyboard</li>
+            <li>Click the Search Phrases With No Results button on the Standard Toolbar</li>
+        </ul>
+        <h3>Search Phrases With No Results - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--SearchPhrasesWithNoResults.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar and Columns</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--SearchPhrasesWithNoResults.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show the Info Bar):&#160;</span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" alt="" title="" /> <span class="bold">(Refresh): </span>Refreshes the data in the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DateFilter.png" alt="" title="" /><span class="bold">(Date filter): </span>Invokes the <span class="UI">Date Filter</span> dialog which lets you limit the visible data to data collected within a particular date range.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Export to csv.png" />Export the data to a csv file: Exports the data to a csv file that can be opened in Microsoft Excel.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Options.png" /><span class="bold">(Select columns to show/chart): </span>Opens the <span class="UI">Options</span> dialog which lets you set which columns are visible and which columns should be included when charting data.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/chart_options.png">
+                </img>Chart Options: Open the Chart Options dialog which allows you customize the row colors of the grid.</li>
+            <li>
+                <p>
+                    <img src="../../../../../Resources/Images/chart_options_dialog.png" style="width: 195px;height: 127px;">
+                    </img>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <p>Add a custom chart color button: <i>tooltip: Add a custom chart color</i>: Opens the color picker dialog.</p>
+                        </li>
+                        <li>
+                            <p>Delete the custom  chart color button: <i>Tooltip: Delete the custom chart color</i>: removes the selected custom chart color.</p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SelectChartType.png" alt="" title="" /> <span class="bold">(Select the chart type):&#160;</span>Lets you select the type of chart which displays for this Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SelectDataToChart.png" alt="" title="" /> <span class="bold">(Select the data for the chart):&#160;</span>Lets you select which rows in the grid view should be considered in the generated chart.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PageSetup.png" alt="" title="" /><span class="bold">(Page Setup): </span>Invokes the <span class="UI">Page Setup</span> dialog which lets you select paper size, orientation and margins.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---PrintPreview.png" alt="" title="" /><span class="bold">(Print Preview): </span>Invokes the <span class="UI">Print Preview</span> dialog which displays a preview of the chart which can be printed from the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Print.png" alt="" title="" /> <span class="bold">(Print): </span>Prints the chart from the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Reset.png" /><span class="bold">(Reset search counts):&#160;</span>Resets the search counts for the selected term(s)&#160;to zero.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Search Phrases with No Results grid</p>
+        <p class="bold">Columns                    </p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Search query: </span>Displays all search queries submitted in all published help systems using the Feedback Service key set in the configuration file.</li>
+            <li><span class="bold">Number of searches: </span>Displays the total number of times the search query to the left was submitted.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Right-Click Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Menu--ReportTabRightClickMenu.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Info Bar:&#160;</span>Displays or hides the Info Bar.</li>
+                <li><span class="bold">Properties:&#160;</span>Invokes the (Comment)&#160;<span class="UI">Properties</span> dialog.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Options dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--SearchPhrasesWithNoResults--OptionsDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Move Up:&#160;</span>Moves the selected row(s) up in the sequence which in turn moves the corresponding column to the left in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Move Down: </span>Moves the selected row(s) down in the sequence which in turn moves the corresponding column to the right in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Reset to Factory Settings... :&#160;</span>Removes all custom column settings and restores factory defaults.</li>
+        </ul>
+        <p class="bold">Columns dialog grid</p>
+        <p class="bold">Columns</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Show: </span>Lets user show/hide the associated column in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Chart: </span>Lets user determine if the column should be included in charting.  Only one column can be selected to chart at any one time.</li>
+            <li><span class="bold">Column: </span>Displays the name of each column that can be displayed in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Width: </span>Lets user set the width in pixels of each column in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Color: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set the font color for each column in the <span class="UI">Search Phrases With No Results</span> view.</li>
+            <li><span class="bold">Background: </span>Lets user open the <span class="UI">Color Picker</span> dialog to set a background color for each column in the <span class="UI">Search Phrases With No Results</span> view.</li>
+        </ul>
+        <p class="bold">Grid Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li><span class="UI">Columns</span> dialog columns should not be sortable</li>
+            <li><span class="UI">Columns</span> dialog columns should not be resizable</li>
+            <li><span class="UI">Columns</span> dialog columns cannot be moved by clicking on a column heading and dragging</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li><span class="UI">Columns</span> dialog rows should not be able to be multi-selected with Shift- or CTRL-click</li>
+        </ul>
+        <h4>(Query) Properties Dialog - UI Test Cases</h4>
+        <p class="bold">To open the dialog:</p>
+        <ul style="list-style-type: square;">
+            <li>Double-click an item in the Search Phrases or Search Phrases with No Results view</li>
+            <li>Select an item in the Search Phrases or Search Phrases with No Results view and press &lt;F4&gt;</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--PropertiesQuery.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Number of times searched: </span>Displays the total number of times the search query was submitted.</li>
+            <li><span class="bold">Query: </span>Displays the search query.</li>
+        </ul>
+        <h3>Keyboard Navigation</h3>
+        <p>&lt;Up Arrow&gt; moves the selection to the row above</p>
+        <p>&lt;Down Arrow&gt; moves the selection to the row below</p>
+        <p>&lt;Enter&gt; moves the focus to the row below</p>
+        <p>&lt;Page Up&gt; will move the selection one page at a time upward</p>
+        <p>&lt;Page Down&gt; will move the selection one page at a time downward</p>
+        <p>&lt;Left Arrow&gt;&#160;and &lt;Right Arrow&gt; do nothing</p>
+        <p>&lt;Home&gt; and &lt;End&gt; do nothing</p>
+        <p>&lt;Insert&gt; does nothing</p>
+        <p>&lt;Delete&gt; does nothing</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(none)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(none)</p>
+    </body>
+</html>

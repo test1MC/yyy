@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4328" MadCap:lastWidth="1361" MadCap:conditionTagExpression="include[FlareFileTypes.Image] exclude[Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Content Explorer - UI</h2>
+        <h3>Opening the Content Explorer</h3>
+        <p>The <span class="UI">Content Explorer</span> should be open and docked along the left side using Flare's default layout. If the <span class="UI">Content Explorer</span> is closed or not currently in focus, it can be reopened doing any of the following:</p>
+        <ul class="checkbox">
+            <li>Press <span class="KeyboardShortcut">CTRL</span> + <span class="KeyboardShortcut">J</span> on the keyboard</li>
+            <li>Tool Strip interface:<ul class="checkbox"><li><span class="MenuItem">!View |&#160;Content Explorer</span></li><li><span class="toolbar">Standard Toolbar</span>:&#160;With any content file open and in focus, click the Locate in Content Explorer button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---LocateInContentExplorer.png" /></li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li><span class="RibbonItem">!View |&#160;Content Explorer</span></li><li>With any content file open and in focus, <span class="RibbonItem">!Project |&#160;Locate in Explorer</span></li></ul></li>
+            <li><span class="UI">TOC&#160;Editor</span>:<ul class="checkbox"><li>Right-click any TOC&#160;node that links to a content file (Topic or Image) and select <span class="MenuItem">Locate in Explorer</span></li><li>Select any TOC&#160;node that links to a content file (Topic or Image) and click the Locate in Content Explorer button <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---LocateInContentExplorer.png" /> in the local toolbar</li></ul></li>
+        </ul>
+        <h3>Content Explorer - UI&#160;Test Cases</h3>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p class="bold">Default view docked in left pane (with default Resources folders added):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---DefaultView.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p>&#160;</p>
+            <p class="bold">Split Show Folders/Show Files view (widened to display all columns):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---SplitView.png" class="properties" style="mc-float: none;mc-thumbnail-max-width: 200px;" />
+            </p>
+            <p class="bold">Split Show Folders/Show Files (tiles) view:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---SplitViewTiles.png" class="properties" style="mc-float: none;mc-thumbnail-max-width: 200px;" />
+            </p>
+            <p class="bold">Show Files view (widened to display all columns):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---ShowFilesView.png" class="properties" style="mc-float: none;" />
+            </p>
+            <p class="bold">Show Files (tiles) view:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---ShowFilesViewTiles.png" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">&#160;</p>
+        <p class="bold">&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" /> (Show/Hide Folders):&#160;</span>Toggles between showing or hiding the Tree View in the <span class="UI">Content Explorer</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" /> (Show/Hide Files):&#160;</span> Toggles between showing and hiding the Files View in the <span class="UI">Content Explorer</span>.<ul><li>Drop down allows you to choose to view files as a <span class="bold">List</span> or <span class="bold">Tiles</span></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>If both options above are enabled, the <span class="UI">Content Explorer</span> displays is what is commonly referred to as "Split View." The left half displays folders only. The right half shows folders and files in the currently selected folder with additional details for the files. As you navigate through folders on the right side, the containing folder should highlight in the left half of the <span class="UI">Content Explorer</span>.</li>
+            <li>Verify that you can never disable both views. If only one view is enabled (you are not in "Split View"), attempting to disable the current view will disable that view and enable the other view.</li>
+        </ul>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Expand All.png" /> (Expand All):&#160;</span>Expands all of the folders so that you can see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" /> (Collapse All):&#160;</span>Collapses all of the folders so that you can no longer see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowConditionalTags.png" /> (Hide/show Conditional Indicators):&#160;</span>Lets you toggle between showing and hiding conditional indicators in the <span class="UI">Content Explorer</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" /> (Up):&#160;</span>Moves up one folder in the hierarchy in the <span class="UI">Content Explorer</span>. This button becomes enabled if you use the Show Folders or Split View and browse into a folder.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> (Refresh):&#160;</span>Refreshes the selected file/folder.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" style="mc-tag-and-class: ;" /> (Open):&#160;</span>Opens the selected file.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" style="mc-tag-and-class: ;" /> (Run Properties dialog for this item):&#160;</span>Opens the <span class="UI">Properties</span> dialog for the selected file.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewFolder.png" style="mc-tag-and-class: ;" /> (New Folder):&#160;</span>Creates a new folder<ul class="checkbox"><li> If clicked when a folder is selected, the new folder is created inside the selected folder.</li><li> If clicked when a file is selected, the folder is created in the same location as the file.</li></ul></li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewTopic.png" style="mc-tag-and-class: ;" /> (Create a new topic file):&#160;</span>Launches the <span class="UI">Add File</span> dialog. <ul class="checkbox"><li>If clicked when a folder is selected in the <span class="UI">Content Explorer</span>, in the <span class="UI">Add File</span> dialog, confirm that the default Folder is the folder which was selected when the Add Topic button was clicked. </li><li>If a file was selected when the Add Topic button is clicked, the default Folder should be the folder containing the selected file.</li></ul></li>
+            <li>
+                <p><span class="bold">Filter:&#160;</span>Lets you filter the visible files in the <span class="UI">Content Explorer</span> to a particular file type. Verify all files listed are correct and that any new Content file types are added.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/ContentExplorer---FileFilter.png" />
+                </p>
+            </li>
+        </ul>
+        <hr />
+        <p class="bold">Show Files grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Shows the name of the  file or folder.</li>
+            <li><span class="bold">Size:&#160;</span>Shows the size of the file (empty for folders).</li>
+            <li><span class="bold">Date Modified:&#160;</span>Shows the date and time the file or folder was last modified.</li>
+            <li><span class="bold">Title: </span>Shows the Topic Title as set in the <span class="UI">Topic Properties</span> dialog.</li>
+            <li><span class="bold">Class: </span>Shows the html class for a topic file.</li>
+            <li><span class="bold">Stylesheet:&#160;</span>Shows the linked stylesheet for a topic file.</li>
+            <li><span class="bold">Conditions:&#160;</span>Shows any conditions applied to the file.</li>
+            <li><span class="bold">Description:&#160;</span>Shows the Topic description as set in the <span class="UI">Topic Properties</span> dialog.</li>
+            <li><span class="bold">Language:&#160;</span>Shows the language of a topic file.</li>
+            <li><span class="bold">Searchable: </span>Shows the "Searchable"&#160;status of a topic file as set in the <span class="UI">Topic Properties</span> dialog.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Content Explorer - Right-Click Menus</h4>
+        <p class="bold">Right-clicking a folder in the <span class="UI">Content Explorer</span> should produce the following menu:</p>
+        <p class="bold">Content folder right-click menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/Menu--ContentExplorer--RightClickFolder.png" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Opens the selected folder in a Windows browser.</li>
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                <li><span class="bold">Cut:</span> Cuts the selected folder and all Content files it contains to the clipboard.</li>
+                <li><span class="bold">Copy:</span> Copies the selected folder and all Content files it contains to the clipboard.</li>
+                <li><span class="bold">Paste:</span> Pastes the folder or Content files from the clipboard into the selected folder.</li>
+                <li><span class="bold">Delete:</span> Removes the selected folder and all Content files it contains from the project.</li>
+                <li><span class="bold">Rename:</span> Allows you to rename the folder.</li>
+                <li><span class="bold">Send to Folder… (Send to Folder): </span>Invokes the <span class="UI">Send to Folder</span> dialog which lets you copy the file out of the project to any location,</li>
+                <li><span class="bold">New:</span>&#160;Invokes a sub-menu which lets you add a new folder or content file inside the selected folder. If you select one the content file types, the <span class="UI">Add File</span> dialog will open with the selected folder and file type preselected to the current folder and selected file type.</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected folder.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Right-clicking a file in the <span class="UI">Content Explorer</span> should produce the following menu:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ContentExplorer--RightClickMenu.flsnp" />
+        <h3>Link Update dialog - UI&#160;Test Cases</h3>
+        <p>Any reorganization of content files or folders that affects links (either in the affected content files or files that link to them) should open the <span class="UI">Link Update</span> dialog. This would include but may not be limited to renaming a file or folder, moving a file or folder or deleting a file or folder.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/Dialog--LinkUpdate.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Update Links:&#160;</span>Completes the changes and updates all of the links in the affected files.</li>
+            <li><span class="bold">Do Not Update Links: </span>Completes the changes, but does not update all of the links in the files in question. If you select this option, you must manually fix or remove the links in affected files.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes this dialog and does not make the requested changes to the files.</li>
+        </ul>
+        <p class="bold">Link Update grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Writable/Checked Out: </span>A check mark appears in the "Checked Out" box if the project is bound to a source control application and you currently have the file checked out.
+
+A check mark appears in the "Writable" box if the project is not bound to a source control application and the file is not marked as "Read Only" in its properties dialog. 
+
+A check mark in either box indicates that you are allowed to make changes to the file.</li>
+            <li><span class="bold">File:&#160;</span>Displays the name of each file containing a link to the file in question.</li>
+            <li>
+                <p><span class="bold">Path:&#160;</span>Displays the location of each file in the project.</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Keyboard Navigation</h3>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">Enter</span> opens/closes the selected folder to display/hide their contents – opens the selected file in the correct editor. (See bug #<b>12778</b>, same as ever)</li>
+            <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node.</li>
+            <li><span class="KeyboardShortcut">Left Arrow</span> and <span class="KeyboardShortcut">Right Arrow</span>select and open/close folders will go as far as selecting the first non-folder node in a folder.</li>
+            <li><span class="KeyboardShortcut">Page Up</span> and <span class="KeyboardShortcut">Page Down</span> will move the selection within the Explorer a page at a time up or down.</li>
+            <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node.</li>
+            <li><span class="KeyboardShortcut">Insert</span> does nothing.</li>
+            <li><span class="KeyboardShortcut">Delete</span> removes the selected file or folder from the project.</li>
+            <li>Keying the first character of a folder or file will move the selection to that file or folder.</li>
+        </ul>
+        <h3>Drag &amp; Drop/Cut, Copy and Paste (within the Content Explorer)</h3>
+        <ul class="checkbox">
+            <li>You should be able to drag and drop folders and files within the <span class="UI">Content Explorer</span> as you would in any Windows Explorer Window.  As indicated above, any changes should result in the <span class="UI">Link Update</span> dialog opening.</li>
+        </ul>
+        <p class="TestCases">Test Cases</p>
+        <ul class="checkbox">
+            <li>For each Test Case identified below, test all common file types (topic files, stylesheets, table stylesheets, images, Page Layouts, Master Pages, and Snippets).    Additionally, test adding a few other types of files (swf, avi, etc.).</li>
+            <li><span class="bold">IMPORTANT: </span>Test dragging &amp; dropping and cutting/copying &amp; pasting files/folders when the affected files are currently open.  Make sure links update correctly.<ul class="checkbox"><li>Dragging and dropping a file from its current location up one or several directories works.  Links update correctly.</li><li>Dragging and dropping a file from the root level into a folder or sub-folder works.  Links update correctly.</li><li>Copying/cutting a file from its current location and pasting it up one or several directories works.  Links update correctly.</li><li>Copying/cutting a file from the root level and pasting into a folder or sub-folder works.  Links update correctly.</li><li>In File view, dragging one or multiple files from their current location up one directory works.  Links update correctly.</li><li>In File view, dragging and dropping one or multiple files from the root level into a folder or sub-folder works.  Links update correctly.</li><li>In File view, copying/cutting a file from its current location and pasting it up one or several directories works.  Links update correctly.</li><li>In File view, copying/cutting a file from the root level and pasting into a folder or sub-folder works.  Links update correctly.</li></ul></li>
+            <li><span class="bold">IMPORTANT: </span>Test Undo/Redo for all actions listed below (again, for all file types and be sure to test undo/redo while the affected files are open in an editor).  Test that links update correctly.<ul class="checkbox"><li>Dragging and dropping a file from its current location up one or several directories works.  Links update correctly.</li><li>Dragging and dropping a file from the root level into a folder or sub-folder works.  Links update correctly.</li><li>Copying/cutting a file from its current location and pasting it up one or several directories works.  Links update correctly.</li><li>Copying/cutting a file from the root level and pasting into a folder or sub-folder works.  Links update correctly.</li><li>In File view, dragging one or multiple files from their current location up one directory works.  Links update correctly.</li><li>In File view, dragging and dropping one or multiple files from the root level into a folder or sub-folder works.  Links update correctly.</li><li>In File view, copying/cutting a file from its current location and pasting it up one or several directories works.  Links update correctly.</li><li>In File view, copying/cutting a file from the root level and pasting into a folder or sub-folder works.  Links update correctly.</li></ul></li>
+        </ul>
+    </body>
+</html>

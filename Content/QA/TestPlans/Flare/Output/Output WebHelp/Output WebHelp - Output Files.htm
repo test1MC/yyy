@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2259" MadCap:lastWidth="1098">
+    <head>
+    </head>
+    <body>
+        <h2>Output WebHelp - Output Files</h2>
+        <p>(Recently copied from WebHelp Plus - contents of this test plan need to be verified)</p>
+        <p>The following is an outline of all files and directories that should be generated when building a WebHelp output.</p>
+        <h3>Root-Level Files</h3>
+        <ul class="checkbox">
+            <li>[Output Filename].htm:&#160;This is the landing page for webhelp output.</li>
+            <li>[Output Filename].js:</li>
+            <li>[Output Filename].mcwebhelp:</li>
+            <li>[Output Filename]_CSH.htm:</li>
+            <li>[Output Filename]_[Nav position set in skin].htm: This filename will change depending where the pane position is set in the skin editor. By default, the pane position is set left.</li>
+        </ul>
+        <h3>Content Folder</h3>
+        <p>This Content folder should contain all of the topic files, stylesheets, and images in the Content folder of your project. Masterpage files, snippet files and page layout files should not appear in this output folder. Other non-Flare file types (*.doc, *.pdf, etc.) included in your Flare project's Content Explorer should appear in this output Content folder as well. The folder structure in this Content folder should mirror the folder structure of your files in the Content Explorer. </p>
+        <h5>Additional Files</h5>
+        <ul class="checkbox">
+            <li>Glossary.htm</li>
+            <li>Glossary.js</li>
+            <li>Glossary.xml</li>
+        </ul>
+        <h4>Resources Folder</h4>
+        <p>All files and folders in the project's Resources folder should appear here. By default, the project's Page&#160;Layout folder is created in this folder, but should not appear in the output unless non-.flpgl files are also present. Flpgl files should never appear in the output</p>
+        <h4>Skin Support Folder</h4>
+        <p>If the option to "Condense JavaScript Files"&#160;is enabled in the Performance tab of the target (which it is by default), this folder will contain the following files:</p>
+        <ul class="checkbox">
+            <li>body_longdesc.htm</li>
+            <li>jquery.js</li>
+            <li>MadCap.css</li>
+            <li>MadCapAll.js (*)</li>
+            <li>MadCapBodyEnd.js</li>
+            <li>mctoolbar_longdesc.htm</li>
+            <li>navigation_longdesc.htm</li>
+            <li>Slideshow.css</li>
+        </ul>
+        <p>&#160;</p>
+        <p>* If the option to "Condense JavaScript Files"&#160;is disabled in the Performance tab of the target, MadCapAll.js will be replaced with:</p>
+        <ul class="checkbox">
+            <li>MadCapAliasFile.js</li>
+            <li>MadCapBody.js</li>
+            <li>MadcapBodyEnd.js</li>
+            <li>MadCapDefault.js</li>
+            <li>MadCapEffects.js</li>
+            <li>MadCapEffectsMenu.js</li>
+            <li>MadCapFavorites.js</li>
+            <li>MadcapGlobal.js</li>
+            <li>MadCapGlossary.js</li>
+            <li>MadCapHighlighter.js</li>
+            <li>MadCapIndex.js</li>
+            <li>MadCapLiveHelpUtilities.js</li>
+            <li>MadCapMerging.js</li>
+            <li>MadCapNavigation.js</li>
+            <li>MadCapParser.js</li>
+            <li>MadCapSearch.js</li>
+            <li>MadCapStemmer.js</li>
+            <li>MadcapSlideshow.js</li>
+            <li>MadCapToc.js</li>
+            <li>MadCapToolbar.js</li>
+            <li>MadCapTopicComments.js</li>
+            <li>MadCapUtilities.js</li>
+        </ul>
+        <h5>Images- This folder contains Slideshow control images</h5>
+        <h3>Data Folder</h3>
+        <p>Root files in this folder will always have the same filename. For example, even if you rename your browse sequence file, the related .js and .xml files will still be named BrowseSequences. Root files:</p>
+        <ul class="checkbox">
+            <li>Alias.js</li>
+            <li>Alias.xml</li>
+            <li>BrowseSequences.js:&#160; (only present if Browse Sequence is enabled in the skin and a Browse Sequence exists in the project.)</li>
+            <li>BrowseSequences.xml :  (only present if Browse Sequence is enabled in the skin and a Browse Sequence exists in the project.)</li>
+            <li>Concepts.js</li>
+            <li>Concepts.xml</li>
+            <li>Filters.js</li>
+            <li>Filters.xml</li>
+            <li>HelpSystem.js</li>
+            <li>Helpsystem.xml</li>
+            <li>Index.js</li>
+            <li>Index.xml</li>
+            <li>Search.js</li>
+            <li>Search.xml</li>
+            <li>Search_Chunk1.js</li>
+            <li>Search_Chunk1.xml</li>
+            <li>Synonyms.js</li>
+            <li>Synonyms.xml</li>
+            <li>Toc.js</li>
+            <li>Toc.xml</li>
+        </ul>
+        <h4>Skin[Skin Name] Folder(s)</h4>
+        <p>There should be a folder named Skin[Skin Name] created for each appropriate skin in your project.</p>
+        <h3>Skin Folder</h3>
+        <ul class="checkbox">
+            <li>Blank.htm</li>
+            <li>BrowseSequences.htm</li>
+            <li>Favorites.htm</li>
+            <li>Index.htm</li>
+            <li>Navigation.htm</li>
+            <li>Search.htm</li>
+            <li>Toc.htm</li>
+            <li>Toolbar.htm</li>
+            <li>TopicComments.htm</li>
+        </ul>
+        <h4>Images Folder</h4>
+        <p>This folder contains various image files used in the navigation pane and the local toolbart. Custom images set for toolbar and navigation items will also be found in this folder.</p>
+        <h5>Files</h5>
+        <ul class="checkbox">
+            <li>ArrowDown.gif</li>
+            <li>ArrowUp.gif</li>
+            <li>CloseButton.gif</li>
+            <li>CloseDialog.png</li>
+            <li>FavoritesBlank.gif</li>
+            <li>FavoritesSearch.gif</li>
+            <li>FavoritesTopic.gif</li>
+            <li>Loading.gif</li>
+            <li>LoadingAnimated.gif</li>
+            <li>Logo.png</li>
+            <li>LogoHtmlHelp.png</li>
+            <li>LogoPlus.png</li>
+            <li>NavigationBottomGradient.jpg</li>
+            <li>NavigationBottomGradient_selected.jpg</li>
+            <li>NewItemIndicator.bmp</li>
+            <li>SearchGradient.jpg</li>
+            <li>SearchGradient_over.jpg</li>
+            <li>SearchGradient_selected.jpg</li>
+            <li>Separator.gif</li>
+        </ul>
+        <h3>Subsystems Folder (optional)</h3>
+        <p>This folder will contain the output folders of any merged WebHelp projects. This folder will only be present if you have linked to another Flare project or compiled WebHelp output in the parent project's fltoc file.</p>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">In Effect section: </span> Controls what type of In effect the object will have when it appears on the frame<ul><li><span class="bold">(default): </span> The objects In effect will revert to its default setting (no effect)</li><li><span class="bold">(as is): </span>Applies no changes to the current setting of the object</li><li><span class="bold">(no effect): </span> The object will appear with no effect</li><li><span class="bold">Fade: </span> Fade will have the object slowly fade in, from zero to 100 transparency</li><li><span class="bold">Reveal: </span>&#160;Will have the object uncover itself, from one end to the other</li></ul></li>
+            <li>
+                <span class="bold">Out Effect section: </span> Controls the type of Out effect the object will have when the object nears the end of its animation</li>
+            <ul>
+                <li>
+                    <span class="bold">(default): </span> The objects out effect will revert to its default setting (no effect)</li>
+                <li>
+                    <span class="bold">(as is): </span>Applies no changes to the current setting of the object</li>
+                <li>
+                    <span class="bold">(no effect): </span> The object will disappear with no effect</li>
+                <li>
+                    <span class="bold">Fade: </span> Fade will have the object slowly fade our, from 100 to 0 transparency</li>
+                <li>
+                    <span class="bold">Reveal: </span>&#160;Will have the object uncover itself, from one end to the other</li>
+            </ul>
+            <li class="bold">Animation section:</li>
+            <ul>
+                <li>
+                    <span class="bold">(default): </span> The objects will revert to the default animation setting (no effect)</li>
+                <li>
+                    <span class="bold">(as is): </span> Applies no changes to the current setting of the object</li>
+                <li>
+                    <span class="bold">(no effect): </span> The object will have no animation effect</li>
+                <li>
+                    <span class="bold">Move: </span> Applies a move effect to the object. <ul><li>Must have a trajectory assigned to the object. </li><li>If no trajectory is assigned to an object, a warning icon will appear on the object <img src="../../../Images/TestPlans/Mimic/Warning Icon.png" /></li></ul></li>
+                <li>
+                    <span class="bold">Shake: </span>&#160;Applies a shaking effect to the object</li>
+            </ul>
+            <li>
+                <span class="bold">Effect Properties:</span>&#160;Will open up the effects properties dialog (See below)</li>
+            <li>
+                <span class="bold">Preview: </span> Will show a preview of the animation if <span class="bold">Play</span> is pressed.<ul><li><span class="bold">Stop: </span>will stop the preview</li></ul></li>
+        </ul>
+        <h4>Effects Properties Dialog - Fade &amp;&#160;Reveal</h4>
+        <p>
+            <img src="../../../Images/TestPlans/Mimic/Properties/Effect Properties Dialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul>
+            <li>
+                <span class="bold">Duration: </span> Controls how long the in/out effect should take</li>
+            <li>
+                <span class="bold">Direction: </span> Controls the direction of the reveal effect<ul><li>This area is disabled if the effect is a <span class="bold">Fade effect</span></li></ul></li>
+            <li>
+                <span class="bold">Play: </span>&#160;Will play a preview of the animation with the settings selected</li>
+            <li>
+                <span class="bold">Stop: </span>&#160;Will stop the preview</li>
+        </ul>
+        <h4>Effects Properties Dialog - Animation Effect</h4>
+        <p>
+            <img src="../../../Images/TestPlans/Mimic/Properties/Effect Properties Dialog - Animation.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul>
+            <li>
+                <span class="bold">Horizontal Distance: </span> Sets the horizontal distance that the object will move for the shake animation</li>
+            <li>
+                <span class="bold">Vertical Distance: </span>Sets the vertical distance that the object will move when performing the shake animation</li>
+            <li>
+                <span class="bold">Duration: </span> Sets the amount of time that the shake animation will be performed</li>
+            <li>All these options are disabled if the animation is a<span class="bold"> Move</span> animation</li>
+            <li>
+                <span class="bold">Play: </span> Will play a preview of the animation with the settings selected</li>
+            <li>
+                <span class="bold">Stop:</span>&#160;Will stop the preview</li>
+        </ul>
+    </body>
+</html>

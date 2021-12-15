@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1172" MadCap:lastWidth="1133" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>Master Frames - Editing</title>
+    </head>
+    <body>
+        <h2>Master Frames - Editing</h2>
+        <p>Editing and assigning master frames are covered here</p>
+        <h4>Editing -&#160;Test Cases</h4>
+        <p><span class="bold">Pick Master Frames dialog</span> is accessed by right-clicking on a frame in the main editor, a frame in the frames pane, or in the Frame's properties dialog.</p>
+        <p><span class="bold">Pick Master Frames dialog</span> contains two drop-down areas:</p>
+        <ul>
+            <li><span class="bold">Bottom Layer:</span>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Pick Bottom Master Frame.png" class="right" />
+                <ul>
+                    <li>Contains all of the movies Master Frames<ul><li>Selecting a Master Frame from this drop-down will set that Master Frame as this Frames Bottom Master Frame.</li><li>Selecting a Master from here, at the Frame level, will take precedence over a Movie level Master Frame that has been set.</li></ul></li>
+                    <li>Contains the option No Bottom Layer Master Frame<ul><li>Will set this Frame to have no bottom layer Master Frame, not even if one is set at the Movie level</li></ul></li>
+                    <li>Contains the option Use Movie's Bottom Layer Master Frame<ul><li>Will use the Bottom Layer Master Frame that has been set at the Movie Level</li></ul></li>
+                </ul>
+            </li>
+            <li><span class="bold">Top Layer:</span> <![CDATA[ ]]><img src="../../../../../Resources/Images/TestPlans/Mimic/Pick Top Master Frame.png" class="right" /><ul><li>Contains all of the movies Master Frames<ul><li>Selecting a Master Frame from this drop-down will set that Master Frame as this Frames Top Master Frame</li><li>Selecting a Master from here, at the Frame level, will take precedence over a Movie level Master Frame that has been set.</li></ul></li><li>Contains the option No Top&#160;Layer Master Frame<ul><li>Will set this Frame to have no top layer Master Frame, not even if one is set at the Movie level</li></ul></li><li>Contains the option Use Movie's Top Layer Master Frame<ul><li>Will use the Top Layer Master Frame that has been set at the Movie Level</li></ul></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p><span class="bold">Master Frame frame property dialog </span>is accessed by focusing on a Master Frame (via the Master Frame Pane) and selecting Frame Properties.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Master Frame Properties.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>Master Frame frame properties contain three tabs:</p>
+        <ul>
+            <li><span class="bold">Appearance: </span> Controls the general look and border of the Master Frame.&#160;See Frame Properties test plan for more information.</li>
+            <li><span class="bold">Bitmap: </span> Sets the background image for the Master Frame. See Frame Properties test plan for more information.</li>
+            <li><span class="bold">Conditions: </span>&#160;Sets what conditions to exclude / include for the Master Frame. See the conditions test plan for more information.</li>
+        </ul>
+        <p>Clicking the <span class="bold">Movie </span>button will open up the movie properties dialog. See the Movie Properties test plan for more information.</p>
+        <p>&#160;</p>
+        <h3>Misc.</h3>
+        <ul>
+            <li>Adding objects to the Master Frame will appear on any frame that applies that Master Frame</li>
+            <li>Adding a variable to an object on a Master Frame will update as needed depending on what frame has applied that Master Frame<ul><li>For example: Putting a FrameName variable on a Master&#160;Frame, that variable will show a different value for each frame that it is applied to</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

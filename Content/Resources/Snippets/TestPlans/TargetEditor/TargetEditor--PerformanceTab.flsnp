@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="531" MadCap:lastWidth="1046">
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Condense JavaScript Files: </span>Causes all of the outputs runtime scripts to be merged into one file.</li>
+            <li MadCap:conditions="TargetEditor.WebHelp"><b>Pre-load Images: </b> Images will be pre-loaded when the output is first opened. <i style="color: #a52a2a; font-weight: bold;">(WebHelp target only)</i></li>
+            <li MadCap:conditions="TargetEditor.WebHelp"><b>Pre-merge Index file: </b> Select this option if you have multiple projects whose outputs are set to be merged, and you would like to merge the Index files for all projects when you build the "master" project.</li>
+            <li><span class="bold">Chunk Large Index Files: </span>Select this option to control the size of "chunks" used when generating the index files for a target.<ul style="list-style-type: circle;"><li><span class="bold">Maximum Chunk Size:&#160;</span>Sets the maximum size of Index file chunks.</li></ul></li>
+            <li><span class="bold">Chunk Large TOCs: </span>Select this option to control the size of "chunks" used when generating the TOCs and content for a target.<ul style="list-style-type: circle;"><li><span class="bold">Maximum Chunk Size:&#160;</span>Sets the maximum size of TOC file chunks.</li></ul></li>
+            <li><b>Chunk large Glossary files:</b>Select this option to control the size of "chunks" used when generating the glossary files for a target.<ul style="list-style-type: circle;"><li><span class="bold">Maximum Chunk Size:&#160;</span>Sets the maximum size of Glossary file chunks.</li></ul></li>
+            <li><span class="bold">Include "Stop-Words"&#160;in Search:&#160;</span>Allows you to include words such as "an" and "the" in the Search Database</li>
+            <li><span class="bold">Exclude "Non-Words"&#160;from Search:&#160;</span>Select this option if you have a project that contains a lot of content that is not comprised of regular letters and numbers (e.g., angled brackets), and you want to set your target to avoid these "non-words" when users perform a search in your Help system.</li>
+            <li><span class="bold">Exclude Index Entries from Search:&#160;</span>Excludes terms added as index keywords from the Search Database</li>
+            <li MadCap:conditions="TargetEditor.DotNetHelp"><span class="bold">Include SQL Search Database:&#160;</span>Include a SQL Compact search database in the output for faster search performance and wildcard searching.</li>
+            <li><span class="bold">Pre-merge Search Database File:&#160;</span>Select this option if you have multiple projects whose outputs are set to be merged, and you would like to merge the Search Database files for all projects when you build the "master" project. <i style="color: #a52a2a; font-weight: bold;">(WebHelp target only)</i></li>
+            <li><b>Enable Partial Word Searching:</b> enabling this allows for portions of words as search parameters.<ul style="list-style-type: circle;"><li><b>Minimum Word Size:</b> Sets the number of characters for word search (Minimum is 3 characters).</li></ul></li>
+            <li><span class="bold">Chunk Large Search Database Files:&#160;</span>Select this option to control the size of "chunks" used when generating the search database files for a target.<ul style="list-style-type: circle;"><li><span class="bold">Maximum Chunk Size:&#160;</span>Sets the maximum size of Search Database file chunks.</li></ul></li>
+            <li><span class="bold">N-Gram Size:&#160;</span>Sets the n-gram size for searching Chinese, Japanese and Korean projects.  (See Flare Help for more details)</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>When merging projects, confirm that pre-merged Index and Search Database files generate properly in Master project output folder.</p>
+            <ul style="list-style-type: circle;">
+                <li>After generating the project, open the Output folder for the Master Project (!Build | Open Output Folder)</li>
+                <li>Open the Target folder</li>
+                <li>Open the Data folder</li>
+                <li>Open Index.xml and Search.xml, and confirm that element from the Slave project appear</li>
+            </ul>
+        </div>
+    </body>
+</html>

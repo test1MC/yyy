@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="867" MadCap:lastWidth="1024" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>Image - UI</title>
+    </head>
+    <body>
+        <h2>Image - UI</h2>
+        <h5>General</h5>
+        <ul>
+            <li>
+                <li>Images are inserted via the<span class="bold"> !Insert</span> menu<img src="../../../../../../Resources/Images/TestPlans/Mimic/Menus/Insert Menu.png" class="right" /></li>
+                <li>Images that can be inserted : <span class="bold">Existing images</span>, <span class="bold">Cursor images</span>, <span class="bold">Captured Region</span>, <span class="bold">Captured UI</span></li>
+                <ul>
+                    <li>Object is realizable by the 8 resize points around the object</li>
+                </ul>
+            </li>
+            <li>Clicking and dragging the cursor will drag the whole object, including the pointer</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>Inserting</h5>
+        <ul>
+            <li><span class="bold">Add Image:</span> Brings up a standard windows dialog<ul><li>File types supported are .bmp, .jpg, .jpeg, .gif, .png, .tif, .tiff</li><li>Image will be inserted at full size</li></ul></li>
+            <li><span class="bold">Add Cursor from File: </span> Brings up a standard windows dialog<ul><li>File types supported are .cur</li><li>Image will be inserted at full size</li><li>Note: Even though you are inserting a cursor, the cursor object you insert is treated as an image file by mimic</li></ul></li>
+        </ul>
+        <table style="width: 100%;">
+            <col style="width: 50%;" />
+            <col style="width: 50%;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><span class="bold">Insert Captured Region</span> will invoke the targeting cursor shown to the right</li>
+                            <li>By default, Mimic should minimize during this step</li>
+                            <li>The Pixel box shows the exact pixel location that the center of the targeting cursor is hovering over</li>
+                            <li>Hitting ESC will return you to Mimic, canceling the operation</li>
+                            <li>A zoom box will appear in the upper left corner of your monitor, </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="../../../../../../Resources/Images/TestPlans/Mimic/Properties/Image/Targeting Cursor.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Clicking and holding the mouse button, while dragging the mouse, will create a region box</li>
+                            <li>The pixel box in the center of the region box shows the dimensions (in pixels) of the rectangle</li>
+                            <li>The Pixel box in the upper left corner, shows the pixel location of where the region box started being drawn from</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="../../../../../../Resources/Images/TestPlans/Mimic/Properties/Image/Region Box Draw.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Releasing the mouse button, the region box is created</li>
+                            <li>The pixel box in the center of the region box shows the dimensions (in pixels)&#160;of the rectangle</li>
+                            <li>Clicking and dragging the center pixel box will relocate the region box</li>
+                            <li>The pixel box in the upper left corner, shows the pixel location of where the Region box started being drawn from</li>
+                            <li>The image can be resized by the 8 resize points around the image</li>
+                            <li>Clicking <span class="bold">OK </span>will take the capture</li>
+                            <li>Clicking <span class="bold">Cancel </span>will cancel the operation and return you to mimic</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="../../../../../../Resources/Images/TestPlans/Mimic/Properties/Image/Region Box.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><span class="bold">Insert Captured UI&#160;Element</span> will minimize mimic, by default and invoke the UI element capture feature</li>
+                            <li>Hovering over various UI elements, a red region capture box will appear, as shown to the right</li>
+                            <li>Clicking will capture that UI&#160;element and insert it as an image object in Mimic</li>
+                            <li>Hitting ESC&#160;will cancel the operation and return you to Mimic</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="../../../../../../Resources/Images/TestPlans/Mimic/Properties/Image/UI Capture.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/Mimic/Object Misc.flsnp" />
+    </body>
+</html>

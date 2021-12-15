@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1998" MadCap:lastWidth="1263" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Project Packager - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>&#160;</p>
+        <p>Select the Files from the File list that you wish to send to the translator. You can select multiple files by holding the Shift key and pressing the Left Mouse Button. You can also select all files by pressing CTRL+A</p>
+        <p>&#160;</p>
+        <p>Click on the Create Bundle or Merge Completed Bundle button.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackagerToolbar.png" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/BundleButton.png" /> &#160;</p>
+        <p>&#160;</p>
+        <p><b>Tooltip</b>:&#160;Create a bundle to send to translators</p>
+        <p>&#160;</p>
+        <h3>UI</h3>
+        <p><b>Processing...</b> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---Processing.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases</b>:</p>
+        <ul>
+            <li>Clicking "Cancel" should stop bundle creation and close dialog with no changes</li>
+            <li>In the event of an error, the "Cancel" button should change to "Close" and the "Save Log" button should be enabled</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---ProcessingError.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li>Clicking the "Save Log" button should save the errors and make the log accessible via the project properties</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Statistics for the new bundle</b> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---StatisticsForBundle.png" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases</b>:</p>
+        <ul>
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+        </ul>
+        <ul>
+            <li MadCap:conditions="Default.UITestsDialogs">Clicking the icon in the upper left corner displays options:<ul><li MadCap:conditions="Default.UITestsDialogs">Restore, Min., are disabled</li><li MadCap:conditions="Default.UITestsDialogs">Move, Size, Max., Close – All work</li></ul></li>
+        </ul>
+        <ul>
+            <li MadCap:conditions="Default.UITestsDialogs">Close and &lt;Enter&gt; close dialog with changes</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog is resizable and redraws correctly</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Right-clicking anywhere “Reset Persistent Data”</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog remembers setting and sizes from previous session</li>
+            <li MadCap:conditions="Default.UITestsDialogs">Dialog opens correctly on a dual monitor system</li>
+            <li>Dialog should show word and segment count (Make sure to use a smaller project and test that the counts match with the ones from the project)</li>
+            <li>Clicking "Close" should close the dialog and show the newly created ZIP file on disk:</li>
+            <li>Compare the bundle statistics to the file statistics created by compute statistics.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---ZipFile.png" />
+        </p>
+        <p>&#160;</p>
+        <p>- Open the ZIP file and make sure all the files are there</p>
+        <p>&#160;</p>
+    </body>
+</html>

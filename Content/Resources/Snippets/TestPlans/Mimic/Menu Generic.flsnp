@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="138" MadCap:lastWidth="1198">
+    <body>
+        <ul>
+            <li>Menu items are correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>All Keyboard shortcuts work</li>
+            <li>Keyboard can navigate and select options</li>
+            <li>Menu is easy to use and understand</li>
+        </ul>
+    </body>
+</html>

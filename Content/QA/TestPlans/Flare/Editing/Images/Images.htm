@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="551" MadCap:lastWidth="1269" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h1>Images </h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Images/Multimedia</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>You can insert a picture into a topic to help explain something. Flare supports the following types of raster and vector image files: BMP, EMF, EPS, EXPS, GIF, HDP, JPG, JPEG, PNG, PS, SVG, SWF, TIF, TIFF, WDP, WMF, XAML, XPS, PDF</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Images - Add File.htm" class="TitleOnly">Images - Add File</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Images - Properties.htm" class="TitleOnly">Images - File Location &amp; Properties</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Images - Editing.htm" class="TitleOnly">Images - Editing</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Images - Styles.htm" class="TitleOnly">Images - Styles</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Images - Output.htm" class="TitleOnly">Images - Output</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Images - Baseline.htm" class="TitleOnly">Images - Baseline</MadCap:xref>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>A test project containing a bunch of images - <a href="file://dc2/QA/Test Projects/Test Plan Projects/">\\dc2\QA\Test Projects\Test Plan Projects\</a></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>Tif/tiff images do not render in Chrome/FF</li>
+            <li>Vector images that are resized do not resize in output in IE 9 when externally linked to</li>
+            <li>Generate web-safe images does not work for images that are linked to externally</li>
+            <li>Thumbnail options do not work on externally linked images</li>
+            <li>Web images are dynamic in web outputs, but for print outputs we grab a copy of the current version and store it locally in the output folder.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

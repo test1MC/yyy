@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1252" MadCap:lastWidth="1033">
+    <head>
+        <link href="Content/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" MadCap:stylesheetType="temporary" href-original="../../../Resources/Stylesheets/Styles.css" />
+    </head>
+    <body>
+        <h3>Contributor - UI</h3>
+        <h4>Review Package Pane</h4>
+        <p>!File |&#160;Open |&#160;*.fltrev</p>
+        <p>&#160;</p>
+        <p>The review packages should open in the review packages pane. You can have more than one review package open at a time</p>
+        <p>
+            <img src="../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/review package pane.jpg" class="properties" src-original="../../../Resources/Images/review package pane.jpg" />
+        </p>
+        <div class="SnippetIndent">
+            <p style="font-weight: bold;">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li style="font-weight: normal;"><b>Save:</b> Saves current changes</li>
+                <li style="font-weight: normal;"><b>Save all:</b> Saves changes to all topics in all review packages</li>
+                <li><b>Return to Sender:</b> Create email message with review package attached (only works if originally sent in the same manner)</li>
+                <li><b>Show/hide columns:</b> Select which columns are displayed</li>
+                <li><b>Open:</b> Open the selected topic in the XML&#160;editor</li>
+                <li><b>Switch to TOC View:</b> Switches to display the TOC&#160;structure of the project</li>
+            </ul>
+        </div>
+        <p class="Pclear">&#160;</p>
+        <hr />
+        <p>Review Package Pane TOC&#160;View</p>
+        <p>
+            <img src="../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/review package pane TOC mode.jpg" class="properties" src-original="../../../Resources/Images/review package pane TOC mode.jpg" />
+        </p>
+        <div class="SnippetIndent">
+            <p style="font-weight: bold;">UI&#160;Controls</p>
+            <ul style="font-weight: bold;">
+                <li style="font-weight: normal;">The TOC structure shown should be the same as it appears in the project</li>
+                <li style="font-weight: normal;">You should not be able to interact with topics in the TOC that weren't included in the review package</li>
+                <li style="font-weight: normal;">Test functionality with all file-types that can be included in a TOC book or node</li>
+                <li style="font-weight: normal;">Topic properties changed while in TOC&#160;view should persist when switching back to grid view (and vice versa)</li>
+            </ul>
+        </div>
+        <p class="Pclear">&#160;</p>
+        <h4>Opening Contributor Documents</h4>
+        <p>!File |&#160;Open |&#160;*.mcco, *.mcdoc</p>
+        <p>&#160;</p>
+        <p>contributor documents will open like any normal topic does in the XML&#160;editor. test this the same as you would when testing the Flare xml editor but keep in mind that Contributor has more limited functionality. When unsure about a behavior or limitation, compare to the previous version of Contributor (unless it's a new feature)</p>
+        <ul>
+            <li><a href="../Flare/Editing/XML Editor/XML Editor - UI.htm">XML Editor - UI</a>
+            </li>
+            <li><a href="../Flare/Editing/XML Editor Print Layout/XML Editor Print Layout - UI.htm">XML Editor:&#160;Print Layout - UI</a>
+            </li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/TestPlans/Flare/Contributions/contribution document.jpg" src-original="../../../Resources/Images/contribution document.jpg" />;</p>
+        <p>&#160;</p>
+        <h4>Creating Contributor Documents</h4>
+        <p>!File | New</p>
+        <p>&#160;</p>
+        <p>That will open the following dialog. If creating a document using a custom template:</p>
+        <p>
+            <img src="../../../Resources/Images/new from template.jpg" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>Select New from existing</li>
+                <li>Select a contribution template (*.mccot, *.mcdoct)</li>
+                <li>Click OK</li>
+                <li> Verify all template resources (images, styles, conditions, etc.) are included</li>
+            </ul>
+            <p>OR if using a default template</p>
+            <ul>
+                <li>Select New from template</li>
+                <li>Select a factory template</li>
+                <li>Click OK</li>
+            </ul>
+        </div>
+        <p class="Pclear">&#160;</p>
+    </body>
+</html>

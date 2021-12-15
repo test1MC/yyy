@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="146" MadCap:lastWidth="624">
+    <head>
+    </head>
+    <body>
+        <p>Check these major browsers:</p>
+        <ul class="checkbox">
+            <li>Firefox</li>
+            <li>Chrome</li>
+            <li>IE8</li>
+            <li>IE9</li>
+            <li>IE10</li>
+            <li>IE11</li>
+            <li>Safari</li>
+        </ul>
+    </body>
+</html>

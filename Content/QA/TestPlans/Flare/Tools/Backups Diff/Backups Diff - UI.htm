@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5841" MadCap:lastWidth="806" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Backups/Diff - UI</h2>
+        <h3>Opening the Backups Pane</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;Backups</span></li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!File |&#160;Backups |&#160;Backups</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!View |&#160;Backups</span></li>
+        </ul>
+        <h3>Sending a file to the Backups folder</h3>
+        <p>The Backups pane can also be opened in the process of sending a copy of a file to the Backups folder. To do this, open any project file in the MDI and give it focus. Then:</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!File | Backups |&#160;Send copy of "[filename]" to the Backups folder</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!File |&#160;Send to Backups |&#160;Send to Backups</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>This will bring up the following:&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/Backups--OpenBackupsAlert.png" />
+        </p>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>Clicking "Yes"&#160;should copy the file to Backups folder and open the <span class="UI">Backups</span> pane. </li>
+            <li>Clicking "No"&#160;will still copy the file to the Backups folder however the <span class="UI">Backups</span> pane will not open.</li>
+        </ul>
+        <h4>Test Cases</h4>
+        <p>You should only be able to send appropriate files to the Backups Folder. Test placing focus on various items in Flare's UI&#160;and test that the "Send copy of..."/"Send&#160;to Backups" option is active/inactive appropriately. Test:</p>
+        <ul class="checkbox">
+            <li>Content Files (should be active)</li>
+            <li>Project Files (should be active)</li>
+            <li>Files opened from External Resources (should be active)</li>
+            <li>Frame Contents Pane (should be <span class="italic">inactive</span>)</li>
+            <li>Start Page (should be <span class="italic">inactive</span>)</li>
+            <li>Help Topic from Flare's internal Help system (should be <span class="italic">inactive</span>)</li>
+            <li>Differences Viewer (currently active although a bug has been entered; 30197)</li>
+            <li>As new features are introduced, make a note here if they should impact the activeness of this menu option</li>
+        </ul>
+        <h3>Backups Folder location</h3>
+        <p>The Backups Folder is created in the "Project"&#160;folder of each individual project. To accommodate for multiple users accessing a single project over a network, unique Backups folders are created per User. From the project file, it can be found here:</p>
+        <p class="bold">\Project\Users\[your username]\Backups</p>
+        <h4>Test Cases</h4>
+        <p>Access a project from \\files\QA or \\dc2 on two unique machines as two completely different users. Have both users send documents to the Backups Folder and confirm that each user has their own folder and that Backup files are created in the user-appropriate folder.</p>
+        <h3>Clearing the Backups Folder</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!File | Backups |&#160;Clear the "Backups Folder"…</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!File | Send&#160;to Backups |&#160;Clear the "Backups Folder"</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>Selecting this menu option will prompt for confirmation first, and then delete all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</p>
+        <h4>Test Cases</h4>
+        <p>Access a project from \\files\QA or \\dc2 on two unique machines as two completely different users. Have both users send documents to the Backups Folder and confirm that clearing the Backups Folder only clears the folder for the appropriate user.</p>
+        <h3>Backups Pane - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in the left pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/Backups--BackupsPane.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">Restore... (Restore selected files(s)):&#160;</span>Prompts for confirmation first, and then restores the active copy of the file to the backup copy and removes the files from the Backups Folder.</li>
+            <li><span class="bold">Differences (Show differences between backup version and current version):&#160;</span>Opens the selected file and its backup copy in the <span class="UI">Differences Viewer</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> (Refresh):&#160;</span>Refreshes the list of Backup files.</li>
+            <li><span class="bold">Clear the "Backups Folder"... (Delete all files in the Backups Folder):&#160;</span>Prompts for confirmation first, and then deletes all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</li>
+        </ul>
+        <p class="bold">Backup Files grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Shows the name of the  file in the Backups folder.</li>
+            <li><span class="bold">Original Path:&#160;</span>Shows the location of the original file in the project.</li>
+            <li><span class="bold">Extension:&#160;</span>Shows the extension of the file</li>
+            <li><span class="bold">Backup Date:&#160;</span>Shows the backup date and time</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h4>Right-Click Menu</h4>
+        <p>Right-clicking anywhere in the Grid area of the Backups pane should produce the following menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/BackupsPane--RightClickMenu.png" />
+        </p>
+        <p class="bold">Menu Items (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold">Restore... (Restore selected files(s)):&#160;</span>Prompts for confirmation first, and then restores the active copy of the file to the backup copy and removes the files from the Backups Folder.</li>
+            <li><span class="bold">Differences (Show differences between backup version and current version):&#160;</span>Opens the selected file and its backup copy in the <span class="UI">Differences Viewer</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> (Refresh):&#160;</span>Refreshes the list of Backup files.</li>
+            <li><span class="bold">Clear the "Backups Folder"... (Delete all files in the Backups Folder):&#160;</span>Prompts for confirmation first, and then deletes all files in the Backups Folder. If the Backups Folder is empty, you should be prompted as such.</li>
+        </ul>
+        <h3>Differences Viewer - UI Test Cases:</h3>
+        <p class="bold">Default view docked in the MDI:</p>
+        <div style="width: 200px;height: 200px;float: left;">
+            <p class="bold">Identical Files:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/DifferencesViewer--FilesIdentical.png" class="properties" style="mc-float: none;">
+                </img>
+            </p>
+            <p class="bold">Differences (Text view):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/DifferencesViewer--FilesDifferent.png" class="properties" style="mc-float: none;">
+                </img>
+            </p>
+            <p class="bold">Differences (WYSIWYG&#160;view):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/DifferencesViewer--FilesDifferentWYSIWYG.png" class="properties" style="mc-float: none;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> (Refresh):&#160;</span>Refreshes the view of the file and the backup file.</li>
+            <li><span class="bold">Options: </span>Opens the <span class="UI">Files Differences</span> dialog which lets you set color options for how differences are displayed in the <span class="UI">Differences Viewer</span>.</li>
+            <li><span class="bold">Show WYSIWYG: </span>Lets you toggle between Text and WYSIWYG&#160;views of the file. Should only be active for Topic, Master Page and Snippet files. All other files should only open in Text view.</li>
+            <li><span class="bold">Ignore Case: </span>If enabled, the <span class="UI">Difference Viewer </span>will ignore differences in letter casing.</li>
+            <li><span class="bold">Ignore Whitespace: </span>If enabled, the Difference Viewer will ignore differences which only involve whitespace.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Test Cases</h4>
+        <p>You should not be able to edit the backup or the current copy of the file in the <span class="UI">Differences Viewer</span>. You should be able to select text and copy it, but in no way should you be able to edit the content.</p>
+        <p>You should not be able to drag and drop anything into the backup or current copy of the file in the <span class="UI">Differences Viewer</span>.</p>
+        <p>When the <span class="UI">Differences Viewer</span> is in focus, the option to "Send for Review"&#160;should be disabled.</p>
+        <p>&#160;</p>
+        <h3>File Differences - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Backups/DifferencesViewer--Options.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>UI&#160;Controls</h4>
+        <p class="bold">Differences Options grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Difference: </span>Displays the four types of differences which can occur in a file.</li>
+            <li><span class="bold">Text:&#160;</span>Sets the color that the text should be when the corresponding difference occurs..</li>
+            <li><span class="bold">Background:&#160;</span>Sets the color that the background highlighting should be when the corresponding difference occurs</li>
+            <li><span class="bold">Preview:&#160;</span>Displays a preview of text against the background color as it will be seen in the <span class="UI">Difference Viewer</span>.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+    </body>
+</html>

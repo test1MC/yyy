@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultFileTagSet
+  Type="Status"
+  Comment="My set of status tags">
+  <FileTag
+    Name="Capture V5"
+    Comment="Verfied accurate for Capture V5" />
+  <FileTag
+    Name="Capture V6"
+    Comment="Verfied accurate for Capture V6" />
+  <FileTag
+    Name="Feedback V2"
+    Comment="Verfied accurate for Feedback V2" />
+  <FileTag
+    Name="Feedback V3"
+    Comment="Verfied accurate for Feedback V3" />
+  <FileTag
+    Name="Lingo V3"
+    Comment="Verfied accurate for Lingo V3" />
+  <FileTag
+    Name="Lingo V4"
+    Comment="Verfied accurate for Lingo V4" />
+  <FileTag
+    Name="Mimic V4"
+    Comment="Verfied accurate for Mimic V4" />
+  <FileTag
+    Name="Mimic V5"
+    Comment="Verfied accurate for Mimic V5" />
+  <FileTag
+    Name="Not Applicable"
+    Comment="Use this for topic files that are not test plans or for test plans to dormant products." />
+  <FileTag
+    Name="Not Updated"
+    Comment="Not yet verified to any product version." />
+  <FileTag
+    Name="Flare V7 Needs Review"
+    Comment="Completed with changes made in Flare V7, but requires review." />
+  <FileTag
+    Name="Flare V7 Verified"
+    Comment="Verified accurate for Flare V7." />
+  <FileTag
+    Name="Flare V8 Needs Review"
+    Comment="Completed with changes made in Flare V8, but requires review."
+    OriginalName="Flare V8 Needs Review" />
+  <FileTag
+    Name="Flare V8 Verified"
+    Comment="Verified accurate for Flare V8."
+    OriginalName="Flare V8 Verified" />
+  <FileTag
+    Name="Flare V9 needs review"
+    Comment="Completed with changes made in Flare V9, but requires review."
+    OriginalName="Flare V9 needs review" />
+  <FileTag
+    Name="Flare V9 Verified"
+    Comment="Verified accurate for Flare V9." />
+</CatapultFileTagSet>

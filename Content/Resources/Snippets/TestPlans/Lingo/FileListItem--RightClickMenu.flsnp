@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="265" MadCap:lastWidth="965">
+    <head>
+    </head>
+    <body>
+        <p class="bold">File List item right-click menu:</p>
+        <p>
+            <img src="../../../Images/TestPlans/Lingo/File List/FileList---RightClickMenu.png" class="left" />
+        </p>
+        <div style="margin-left: 155pt;">
+            <ul style="list-style-type: square;">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Open (Open):</span> Opens the selected file in the MDI.</li>
+                <li><span class="bold">Open with:</span> Gives options to open the Project file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser</span> or another application.</li>
+                <li><span class="bold">Properties (Display Properties for the selected item):</span> Opens the <span class="UI">Properties</span> dialog window for the selected file.</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment=""
+    Name="CrossReference"
+    BackgroundColor="#00ffff" />
+  <ConditionTag
+    Comment=""
+    Name="Hyperlink"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="ImageMapArea"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="TopicPopup"
+    Comment="" />
+</CatapultConditionTagSet>

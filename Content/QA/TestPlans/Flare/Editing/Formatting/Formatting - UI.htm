@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditionTagExpression="include[Default.UITestsDialogs] " MadCap:ignoredWords="tooltips;Outdent" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:lastBlockDepth="9" MadCap:lastHeight="10254" MadCap:lastWidth="883">
+    <head />
+    <body>
+        <h2>Formatting - UI</h2>
+        <h3>Formatting Window</h3>
+        <p>The local <span class="UI">Formatting Window</span> displays style properties for the selected content in a topic. You can then "overrule" the style settings for that specific content, without changing the style settings globally in the stylesheet. Modifying style properties in the <span class="UI">Formatting Window</span> will write the style properties locally to the topic.</p>
+        <h4>Opening the UI</h4>
+        <p>To open the <span class="UI">Formatting Window</span>:</p>
+        <ul>
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">F12</span></li>
+            <li>In the Toolstrip interface, <span class="MenuItem">!View |&#160;Formatting Window</span></li>
+            <li>In the Ribbon interface, <span class="RibbonItem">!Home |&#160;Formatting Window</span></li>
+        </ul>
+        <h4>UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/FormattingPane.png" style="width: 248px; height: 170px;" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Formatting Pane Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/FormattingPane--LocalToolbar.png" alt="" title="" />
+        </p>
+        <p class="bold">Buttons (tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--CurrentElement.png" alt="" title="" /> (no tooltip):&#160;</span>Displays the current tag for which formatting is being displayed</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--ShowGroups.png" alt="" title="" /> (Show groups of properties):&#160;</span>Changes display to show all possible properties arranged by group (Font, Background, Block, Border, etc).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--ShowAlphabetical.png" alt="" title="" /> (Show alphabetical list of all properties):&#160;</span>Changes display to show all possible properties in alphabetical order.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--ShowRelevant.png" alt="" title="" /> (Show assorted relevant properties): </span>Changes display to show only the most relevant properties arranged by group </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--ShowUsed.png" alt="" title="" /> (Show only used properties):&#160;</span>Changes display to show only properties that are set locally (not from the stylesheet). </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/Button--SelectParent.png" alt="" title="" style="mc-tag-and-class: ;" /> (Select Parent Node): </span>Changes the selection to the current tag's parent node and displays formatting for that tag. The selection will also change in the <span class="UI">XML Editor</span>.</li>
+        </ul>
+        <h3>Font Properties Dialog</h3>
+        <h4>Opening the UI</h4>
+        <p>To open the Font Properties dialog, the focus must be in the <span class="UI">XML Editor</span>. Then:</p>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">SHIFT</span>+<span class="KeyboardShortcut">B</span></li>
+            <li>In the Toolstrip interface:&#160;<span class="MenuItem">!Format | Font</span></li>
+            <li>In the Toolstrip interface, in the Text Format Toolbar, click<img src="../../../../../Resources/Images/TestPlans/Buttons/Button---FontProperties.png" /> </li>
+            <li>In the Ribbon interface, click the glyph in the lower right corner of the Font group in the <span class="RibbonItem">Home</span> ribbon</li>
+        </ul>
+        <h4>Font Properties Dialog - Font Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--FontProperties--FontTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls:</p>
+        <ul class="checkbox">
+            <li><span class="bold">Font:</span> Select the font.</li>
+            <li><span class="bold">Pick:</span> Opens the <span class="UI">Font Family Picker</span> dialog, which lets user select fonts, create font sets, and select font family lists.</li>
+            <li><span class="bold">Size:</span> Select the font size.</li>
+            <li><span class="bold">Style:</span> Select the font style (regular, italic, bold, bold italic).</li>
+            <li><span class="bold">Colors/Text:</span> Select the color for the font text.</li>
+            <li><span class="bold">Colors/ Background:</span> Select the color for the font background.</li>
+            <li><span class="bold">Effects:</span> Select the effects that user want to apply to the font (underline, overline, strikethrough, superscript, subscript, smallcaps).</li>
+            <li><span class="bold">Preview:</span> Displays the appearance of the font as user make selections in the tab.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+                <li>Type extra long input into fields</li>
+                <li>Type characters and symbols into fields</li>
+                <li>Type in different measurement units into the ‘Size’ filed – in, em, pt, px, cm, mm, %,</li>
+                <li>Test all possible combination of Effects, Style, Font family, Font Size and colors</li>
+                <li>Verify that the text displays correctly in WYSIWYG, Preview and ALL Outputs</li>
+                <li>Make sure all font families placed  in  C:\WINDOWS\Fonts gets displayed in the Font Family list</li>
+                <li>Apply Font formatting to Headers and footers in MasterPages, Snippets, etc  – Test it in the outputs</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Font Properties Dialog – Advanced Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--FontProperties--AdvancedTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Transform:</span> Apply font case settings to the selected text (all letters uppercase, all letters lowercase, first letter of each word capitalized).</li>
+            <li><span class="bold">Letter Spacing:</span> Set the spacing between letters (expanded or condensed, or customize by entering a number below).</li>
+            <li><span class="bold">Italic Correction: </span>TBW</li>
+            <li><span class="bold">Word Spacing:</span> Set the spacing between words (expanded or condensed, or customize by entering a number below).</li>
+            <li><span class="bold">Redacted Text:&#160;</span>TBW</li>
+            <li><span class="bold">Preview:</span> Displays the appearance of the font as user makes selections in the tab.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+                <li>Type extra long input into fields</li>
+                <li>Type characters and symbols into fields</li>
+                <li>Test all Max and Min values of Letter Spacing and Word Spacing: 0 - 2147483647</li>
+                <li>Try to use various measurement values (%, em, px, pt, cm, mm, etc)</li>
+                <li>Verify that the text displays correctly in WYSIWYG, Preview and ALL Outputs</li>
+                <li>Apply Font formatting to Headers and footers in MasterPages, Snippets, etc  – Test it in the outputs</li>
+                <li>Apply inline styles to text in a &lt;p&gt; tag (must apply to all in &lt;p&gt; tag). Click FORMAT – Create New Style – and verify all the inline styles are in the properties section for the new style</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Paragraph Properties Dialog</h3>
+        <h4>Opening the UI</h4>
+        <p>To open the <span class="UI">Paragraph Properties</span> dialog, select the element (p, div, ul, etc)&#160;that you want to format in the <span class="UI">XML Editor</span>. Then:</p>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">CTRL</span>+<span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">B</span></li>
+            <li>In the Toolstrip interface:&#160;<span class="MenuItem">!Format | Paragraph</span></li>
+            <li>In the Ribbon interface, click the glyph in the lower right corner of the Paragraph group in the <span class="RibbonItem">Home</span> ribbon</li>
+        </ul>
+        <h4>Paragraph Tab</h4>
+        <p>Formatting options in this tab let you determine if and how your test will display in the XML editor and the output.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--ParagraphTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p>You can affect the look and behavior of paragraphs in various ways. These settings can be applied locally or to the style used for the paragraph. Modifying the style is typically preferable to changing the settings locally for a single paragraph.</p>
+        <p class="note">Best Practice: Use styles instead of local formatting.</p>
+        <p>Following are some of the more common ways that you can format paragraphs:</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Alignment:</span> You can format a paragraph so that the text is aligned right, left, centered, or justified. See Aligning Paragraphs.</li>
+            <li><span class="bold">Indentation:</span> You can indent paragraphs so that they start or end at a certain distance from the left or right side of the window or page frame. See Indenting Paragraphs.</li>
+            <li><span class="bold">Line spacing:</span> You can specify the amount of spacing between lines in a paragraph. See Setting Line Spacing.</li>
+            <li><span class="bold">Preview:</span> Verify that preview work with all settings in the dialog.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Type invalid text, numbers, character, etc into fields that will take user input</li>
+                <li>Type extra long input into fields - Type characters and symbols into fields</li>
+                <li>Test all Max and Min values of Letter Spacing and Word Spacing: 0 - 2147483647</li>
+                <li>Try to use various measurement values (%, em, px, pt, cm, mm, etc)</li>
+                <li>Verify that the text displays correctly in WYSIWYG, Preview and ALL Outputs</li>
+                <li>Apply various settings to paragraphs in tables, textboxes, drop-down/expanding areas</li>
+                <li>Apply various settings to paragraphs containing hyperlinks, popups, drop-own/expanding areas, images, etc</li>
+                <li>Make sure paragraph formatting is passed to the next paragraph ????</li>
+                <li>Apply Paragraph formatting to various paragraphs (H1, etc), Headers and footers in MasterPages, Snippets, etc. – Test it in the outputs</li>
+                <li>Changes to elements and selections from this method are placed inline</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Auto-Number Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--Auto-numberTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <p>Auto-numbering lets you control how you want your page numbering to appear and what data you want displayed in it.</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enter format:</span> Enter the format of the data you want to display.</li>
+            <li><span class="bold">Available commands:</span> Double-click a command to insert it into your format formula.</li>
+            <li><span class="bold">Show Commands dropdown:</span> Drop-down where you can choose to the following list of commands: All, AutoNumber, File, Format, Page or Text Commands. Changing this dropdown should change the set of AutoNumber Commands which display in the table below.</li>
+            <li><span class="bold">Position:</span> Adjust the position of your numbering. Inside head, outside head, inside tail, outside tail, default, or none.</li>
+            <li><span class="bold">Offset:</span> Manually offset the position between the autonumber and the element.</li>
+            <li><span class="bold">Span Class: </span>Select a span class from any span class that exists in the current project.</li>
+        </ul>
+        <h4>Borders Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--BordersTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>Click in any of the individual fields (Left, Right, Top, Bottom) to specify the settings for the border. If you click the down arrow to the right of all the fields, the settings will be applied to all of the border fields.When you click that down arrow or in one of the individual fields, a small popup displays.</li>
+            <li>Use the lower-left area of the popup to enter a number for the border thickness.</li>
+            <li>Use the lower-middle area to select a unit of measurement (e.g., point, pixel, centimeter) for the number you entered.</li>
+            <li>Use the upper-right area to select a color for the border.</li>
+            <li>Use the lower-right area to select a line type (e.g., solid, double, dashed) for the border.</li>
+        </ul>
+        <h4>Background Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--BackgroundTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Color: </span>Sets the color of the background. In the Color field, click the down arrow and select a color from the popup.</li>
+            <li><span class="bold">Image: </span>Choose an image for the background.</li>
+            <li><span class="bold">Browse... :&#160;</span>Invokes the <span class="UI">Insert Image</span> dialog which lets you select any image in the project or browse for an external image. If you use an external image, that image should be copied into the project.</li>
+            <li><span class="bold">Repeat: </span>Set the repeat pattern for the background image.</li>
+            <li><span class="bold">X: 	</span>Select or enter the position (in pixels) of the image in the background. This positions the background image horizontally (i.e., on the X axis).</li>
+            <li><span class="bold">Y: 	</span>Select or enter the position (in pixels) of the image in the background. This positions the background image vertically (i.e., on the Y axis).</li>
+            <li><span class="bold">Preview: </span>	Displays the appearance of the background as you make selections in the tab.</li>
+        </ul>
+        <h4>Breaks Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--BreaksTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/Breaks.flsnp" />
+        <p class="note">Microsoft Word does not support page breaks, columns, orphans/widows, and hyphenates its own way</p>
+        <h4>Hyphenation Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--HyphenationTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Hyphenation:</span> Select whether you always or never want words to be hyphenated at the end of lines.</li>
+            <li><span class="bold">Length of shortest word that should be hyphenated: </span>Enter the minimum number of characters that a word must have in order to be hyphenated.</li>
+            <li><span class="bold">The minimum number of characters remaining on the initial line:</span> Enter the minimum number of characters that must remain on the initial line when a word is hyphenated. For example, if you enter 4 in this field, a word that normally could be hyphenated after two characters would not be broken at that point. Instead, it would not be broken until at least four letters make an appearance on the first line.</li>
+            <li><span class="bold">The minimum number of characters carried overto the next line:</span> Enter the minimum number of characters that must be carried over to the second line when a word is hyphenated. For example, if you enter 3 in this field, a hyphenated word must have at least three characters on the second line after it has been broken.</li>
+            <li><span class="bold">The maximum number of adjacent lines that can end in a hyphenated word:</span> Enter the maximum number of lines next to each other that are allowed to end with a hyphenated word. For example, if you do not mind seeing three consecutive lines ending in a hyphenated word, but you want to avoid seeing a fourth adjacent line with a hyphenated word, you can enter 3 in this field.</li>
+        </ul>
+        <h4>Short Line Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/UI--ParagraphProperties--ShortLineTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul>
+            <li><span class="bold">Enable Short Line Elimination:</span> Select whether to enable short line elimination, as well as how it will work.<ul><li><span class="bold">Never:</span> Lines will not be adjusted.</li><li><span class="bold">Tighten:</span> Flare will try to decrease the kerning (i.e., the white space will become more narrow).</li><li><span class="bold">Tighten, Loosen:</span> Flare will first try to decrease the kerning (i.e., the white space will become more narrow) to the maximum setting. Then it will try to increase the kerning (i.e., the white space will become wider).</li><li><span class="bold">Loosen, Tighten:</span> Flare will first try to increase the kerning (i.e., the white space will become wider) to the maximum setting. Then it will try to decrease the kerning (i.e., the white space will become more narrow).</li><li><span class="bold">Loosen:</span> Flare will try to increase the kerning (i.e., white space becomes wider).</li></ul></li>
+            <li><span class="bold">Length of "short line":</span> Specify the length at which a line is considered "short," and therefore the short line settings come into play. If you do not select a length, a line is considered short if it has 10 or fewer characters. You can specify one of the following settings:<ul><li><span class="bold">Hyphenated last word:</span> If the last word in the paragraph is hyphenated, Flare will run short line elimination. To use this option, click the down arrow in the upper-right corner and select Hyphenated Last Word.</li><li><span class="bold">Length:</span> You can choose a specific length for a line to be considered short. To use this option, click the down arrow in the upper-right corner and select Length. Then enter a number in the lower-left field. Finally, click the down arrow in the lower-right corner and select a unit of measurement (UOM). See About Units of Measurement.</li></ul></li>
+            <li><span class="bold">Length of "long line":</span> Specify the length at which a line is considered "long enough." For example, let's say you have specified 8 characters as the length of a short line, and you have specified 15 characters as the length of a long line. In that case, Flare will not allow the final line in a paragraph to have only 8 characters, and when you type content so that the text wraps around to a new line, the paragraph is automatically adjusted so that the new line always starts at a minimum of 15 characters. To use this option, click the down arrow in the upper-right corner and select Number. Then enter the number of characters in the field.</li>
+            <li><span class="bold">Step Kerning By:</span> Specify the number of pixels of kerning should be used incrementally on the entire paragraph until the desired effect is achieved. For example, if you enter .5, the kerning will occur in increments of .5 pixels. To use this option, click the down arrow in the upper-right corner and select Number. Then enter a number in the field.</li>
+            <li><span class="bold">Maximum to Tighten:</span> Specify the maximum number of pixels to tighten during short line elimination. To use this option, click the down arrow in the upper-right corner and select Number. Then enter a number in the field.</li>
+            <li><span class="bold">Maximum to Loosen:</span> Specify the maximum number of pixels to loosen during short line elimination. To use this option, click the down arrow in the upper-right corner and select Number. Then enter a number in the field.</li>
+        </ul>
+        <h3>Text Format Toolbar</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Toolbars/Toolbar--FormatToolbar.png" style="max-width: 8in;" />
+        </p>
+        <p>&#160;</p>
+        <table style="width: 100%; caption-side: top;">
+            <col style="width: 198px;" />
+            <col style="width: 150px;" />
+            <col style="width: 197px;" />
+            <col style="width: 33%;" />
+            <thead>
+                <tr>
+                    <th>If just a p tag is selected you get this text drop down</th>
+                    <th>If text is selected you get this text drop down</th>
+                    <th>Style Menu</th>
+                    <th>Font Menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/TextDropDownMenu1.png" style="max-width: 2in;" />
+                    </td>
+                    <td>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/TextDropDownMenu2.png" style="max-width: 2in;" />
+                    </td>
+                    <td>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/FontStyleMenu.png" style="max-width: 2in;width: 240px;height: 278px;" />
+                    </td>
+                    <td>
+                        <img src="../../../../../Resources/Images/TestPlans/Flare/Formatting/FontSizeMenu.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="bold">Buttons</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Bold:</span> Makes the selected text, paragraph bold</li>
+            <li><span class="bold">Italic:</span> Makes the selected text, paragraph italic</li>
+            <li><span class="bold">Underline:</span> Makes the selected text, paragraph underlined</li>
+            <li><span class="bold">SuperScript:</span> Makes the selected text, paragraph superscript</li>
+            <li><span class="bold">SupScript:</span> Makes the selected text, paragraph subscript</li>
+            <li><span class="bold">Font Properties:</span> Launches the Font Properties Dialog</li>
+            <li><span class="bold">Unformat:</span> Removes the formatting from the selection or selected item</li>
+            <li><span class="bold">Color:</span> Sets the color. Will launch a color popup and color UI.  The popup should be tested; the UI will be covered in another plan.</li>
+            <li><span class="bold">Background Color:</span> Sets the background color. Will launch a color popup and color UI.  The popup should be tested; the UI will be covered in another plan.</li>
+            <li><span class="bold">Align Left:</span> Aligns the selection to the left</li>
+            <li><span class="bold">Align Center:</span> Aligns the selection to the center</li>
+            <li><span class="bold">Align Right:</span> Aligns the selection to the right</li>
+            <li><span class="bold">Align Justify:</span> Justifies the selection</li>
+            <li><span class="bold">Align Default:</span> Aligns the selection to  the default position.</li>
+            <li><span class="bold">List options:</span> This button lets you select one of several kinds of bullet or numbered lists, applying it to the selected content.</li>
+            <li><span class="bold">Outdent Items:</span> This button lets you shift indented content to the left, thus "outdenting" it.</li>
+            <li><span class="bold">Indent Items:</span> This button lets you shift selected content to the right, thus "indenting" it.</li>
+            <li><span class="bold">List Actions:</span> This button lets you apply miscellaneous actions to selected content in a list.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Spelling and Grammar are correct</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>Drop-down list is easy to use and understand</li>
+                <li>Drop-down list opens correctly on a dual monitor system</li>
+                <li>Dialog is resizable</li>
+                <li>Scrollbars display as needed</li>
+                <li>Remembers the size the next time it’s opened</li>
+                <li>Style list Should list all usable styles for the selected Element (Based off of the stylesheet link in the topic)</li>
+                <li>Verify that the fonts are applied to selections and elements  properly (XML code)</li>
+                <li>The Orange border represents the style of the element selected in the XML Editor</li>
+                <li>The Gray border represents the style that is being hovered over by the cursor</li>
+                <li>Keyboard doesn’t work but should not crash application or close window</li>
+                <li>Verify that applying changed to selections through the formatting toolbar populate the appropriate Dialog with the correct information (i.e., font and paragraph dialogs)</li>
+                <li>Changes to elements and selections from this method are placed inline</li>
+                <li>Be sure changes made in toolbar are reflected in WYSISYG, preview and all outputs.</li>
+                <li>The toolbar effects are just shortcuts to those in the UI.  Make sure that they all work as designed.</li>
+                <li>The tooltips and toolbar itself will be covered in the toolbar test plan</li>
+                <li>The List functions will be covered in the List test plan</li>
+                <li>Clicking once on the property will apply it, clicking again will remove it.</li>
+            </ul>
+        </div>
+        <h4>!Format menu items</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Bold &lt;CTRL&gt;&lt;B&gt;:</span> Bolds selected text, paragraph or element</li>
+            <li><span class="bold">Italic &lt;CTRL&gt;&lt;I&gt;:</span> Italicizes selected text, paragraph or element</li>
+            <li><span class="bold">Underline &lt;CTRL&gt;&lt;U&gt;:</span> Underlines selected text, paragraph or element</li>
+            <li><span class="bold">Color:</span> Sets the color. Will launch a color popup and color UI.  The popup should be tested; the UI will be covered in another plan.</li>
+            <li><span class="bold">Background Color:</span> Sets the background color. Will launch a color popup and color UI.  The popup should be tested; the UI will be covered in another plan.</li>
+        </ul>
+    </body>
+</html>

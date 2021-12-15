@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="28148" MadCap:lastWidth="1048" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Glossary and Glossary Term Links - Output</h2>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Support in HTML5 static Outputs:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--HTML5staticOutput.png" alt="" title="" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--HTML5SkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in HTML5 responsive Outputs:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--HTML5responsiveOutput.png" alt="" title="" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--HTML5SkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Web Help Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+        </p>
+        <p class="bold">(Screenshot is from Advanced output)</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WebHelpMobileOutput1.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WebHelpMobileOutput.png" alt="" title="">
+            </img>
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Web Help Air Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+        </ul>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in CHM Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--HtmlHelpOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in DotNet Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--DotNetOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links with each of the available style classes. Test in all web output types.</li>
+        </ul>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 120px;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <col style="width: 33%;" class="TableStyle-Basic-Column-Column1">
+            </col>
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p>&#160;</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold">Text definition</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="bold">Topic definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">default (no class)</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Expanding</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Definition should display in output as an expanding text.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>"Expanding" is not supported for Topic definitions. Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="bold">Hyperlink</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p>Clicking the converted glossary term will open the Glossary pane and scroll to and expand the definition for the selected term. Requires that the Glossary is enabled in the Skin.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">
+                        <p>Definition topic should open like a hyperlink.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="bold">Popup</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p>Definition should display in output as a text popup.*</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">
+                        <p>Definition topic should display in output as a topic popup.*</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>*&#160;Popups are not supported by Mobile devices so "popup"&#160;glossary term definition must be converted to topics for Mobile output. Verify that these "popup"&#160;definitions, when output to Mobile, create topics in the "MyWebHelpMobile\Advanced\Content\MCGeneratedPopups" folder in the output.</p>
+        <ul class="checkbox">
+            <li>Verify that any individual glossary terms used to create multiple glossary term links only generate one "popup"&#160;topic. Verify that each instance of the glossary term generates a working links.</li>
+            <li>Test with all configurations of Advanced target options (lowercase, use underscores, etc)</li>
+        </ul>
+        <hr>
+        </hr>
+        <ul class="checkbox">
+            <li>Test the Glossary Terms that have topic definitions work in all Web output types in all instances where the definition topic is affected by the Advanced Target options:<ul><li>Create a definition topic with mixed case characters and enable "Use lowercase filenames…"</li><li>Create a definition topic with spaces and other reserved characters in the filename and enable "Replace reserved characters with underscores…"</li><li>Enable custom file extensions</li><li>Verify all combinations of the above. Test links from the Glossary Terms within the Glossary Pane. Test links from converted Glossary Terms from within a topic.</li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p>Test cases for converted glossary terms set to "Popup"</p>
+        <ul class="checkbox">
+            <li>Test the "Popup"&#160;definitions work with "Condense JavaScript Files"&#160;disabled in the Performance tab of the target</li>
+            <li>Test the "Popup" definitions with "Condense JavaScript Files"&#160;enabled in the Performance tab of the target</li>
+            <li>For all web outputs, the generated Glossary that appears in the output Glossary pane should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file.<ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li></ul></li>
+            <li>Additionally, Glossary Terms that exist within the content should be converted to Glossary Term Links as defined by the setting in the target file.</li>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+            <li>For Web output types only, you can opt to include a Master Page for the generated Glossary.</li>
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in EPUB&#160;Outputs:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Word Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WordOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in PDF Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Word Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--WordOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in Frame Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--FrameMakerOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in XPS Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h4>Support in XHTML Book Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>Test text and topic definitions for Glossary Term Links  in all Print output types. Term definitions should be converted to footnotes.</li>
+            <li>For all print output types, a Glossary Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print output types, the generated Glossary that replaces the Glossary&#160;Proxy should consist of all Glossary Terms included in all Glossary Files that you have selected to have included in the target file. <ul><li>Glossary Terms from unselected Glossary Files should not appear in the generated Glossary in the output.</li><li>Glossary Terms that use a linked topic for a definition will NOT&#160;appear in the output.</li></ul></li>
+            <li>Additionally, all Glossary Terms that exist within the content from all Glossaries selected in the Target file should be converted to footnotes.<ul><li>The text definition of a glossary term will become the text of the footnote.</li><li>Glossary terms from unselected Glossary Files should not generate footnotes.</li><li> Glossary Terms that use a linked topic for a definition should not generate a footnote. However, up to V6, such terms continue to appear styled in the content with no link.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">In addition, the following basic use cases should be added for print:</p>
+            <ul class="checkbox">
+                <li>Test using glossary terms in the same topic as other footnotes and verify they generate properly in the proper sequence</li>
+            </ul>
+        </div>
+        <ul class="checkbox">
+            <li>For all output types, you need to select which glossary files you want to include in the output as well as set the behavior for Glossary Term conversion. By default, all Glossary Files are used, so if you do not explicitly indicate that only one file should be included, all will be included.</li>
+        </ul>
+        <p class="bold">Target Editor |&#160;Glossary tab</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--TargetSetup.png" style="mc-thumbnail: popup;" />
+        </p>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/TargetEditor/TargetEditor--GlossaryTab.flsnp" />
+        <h3>Support in DITA Output: </h3>
+        <ul class="checkbox">
+            <li>Glossary Proxies and (in-topic)&#160;Glossary Terms are not supported in DITA&#160;output. A compile error should be given when generating DITA&#160;output if a Glossary Proxy exists in a topic.</li>
+            <li>Glossary Files are converted to DITA topics and placed in the Content/Resources folder of the generated DITA output. <ul><li>Flare should generate a unique DITA topic for each Glossary file that exists in the Flare project with the filename of the glossary becoming the topic id and the title of the DITA topic. </li><li>Each glossary term in the Flare project should become a glossentry element in the appropriate DITA&#160;topic. </li><li>Each glossentry element should contain an "id"&#160;attribute. The attribute is simply a number. The first glossary processed (alphabetically)&#160;will contain glossentry elements with id=1, 2, 3 etc. The second glossary processed should continue incrementing id attributes where the first left off, and any additional glossaries would continue </li><li>Each glossentry element in the DITA&#160;output should contain a glossterm and a glossdef element containing the term and the definition respectively. Glossary Terms in Flare which have topic definitions are not supported in DITA&#160;output. Such a term will still generate a glossentry but the glossdef element will contain no text.</li></ul></li>
+        </ul>
+        <p class="bold">DITA&#160;Example:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Composite//EN" "ditabase.dtd"&gt;</pre><pre xml:space="preserve">&lt;topic id="MyGlossary"&gt;</pre><pre xml:space="preserve">  &lt;title&gt;MyGlossary&lt;/title&gt;</pre><pre xml:space="preserve">  &lt;glossentry id="1"&gt;</pre><pre xml:space="preserve">    &lt;glossterm&gt;MyTerm&lt;/glossterm&gt;</pre><pre xml:space="preserve">    &lt;glossdef&gt;Text definition.&lt;/glossdef&gt;</pre><pre xml:space="preserve">  &lt;/glossentry&gt;</pre><pre xml:space="preserve">  &lt;glossentry id="2"&gt;</pre><pre xml:space="preserve">    &lt;glossterm&gt;Topic&lt;/glossterm&gt;</pre><pre xml:space="preserve">    &lt;glossdef&gt;</pre><pre xml:space="preserve">    &lt;/glossdef&gt;</pre><pre xml:space="preserve">  &lt;/glossentry&gt;</pre><pre xml:space="preserve">&lt;/topic&gt;</pre>
+        <p class="bold">A subsequent Glossary will begin with id="3" for its first glossterm element.</p><pre xml:space="preserve">&lt;topic id="MyOtherGlossary"&gt;</pre><pre xml:space="preserve">  &lt;title&gt;MyOtherGlossary&lt;/title&gt;</pre><pre xml:space="preserve">  &lt;glossentry id="3"&gt;</pre><pre xml:space="preserve">    &lt;glossterm&gt;MyOtherTerm&lt;/glossterm&gt;</pre><pre xml:space="preserve">    &lt;glossdef&gt;Text definition.&lt;/glossdef&gt;</pre><pre xml:space="preserve">  &lt;/glossentry&gt;</pre><pre xml:space="preserve">&lt;/topic&gt;</pre>
+        <h3>Compiler errors:</h3>
+        <ul>
+            <li>Attempting to generate any Print output type with a glossary term that uses a Topic link as its defintion:<br></br>"Glossary definition links are not supported in this output type."</li>
+        </ul>
+        <ul>
+            <li>Attempting to use the same Glossary Term in multiple Glossary Files:<br></br>"Term:&#160;[duplicated term], defined in more than one glossary file."</li>
+        </ul>
+        <ul>
+            <li>Attempting to include a Glossary Proxy in DITA&#160;output:<br />"MadCap|glossaryProxy found in file: "[topic filename]". It will be removed from the output."</li>
+        </ul>
+    </body>
+</html>

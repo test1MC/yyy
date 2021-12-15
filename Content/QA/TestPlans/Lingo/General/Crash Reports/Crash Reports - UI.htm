@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3956" MadCap:lastWidth="1233">
+    <head>
+    </head>
+    <body>
+        <h2>Crash Reports - UI</h2>
+        <p>In order to open the UI, you will need to crash the application. Search the BugBase for an active crash bug.</p>
+        <h3>Unhandled Exception dialog - UI&#160;Test Cases</h3>
+        <div style="width: 2in;height: 3.5in;float: left;">
+            <p>Crash Type 1 (force close):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--UnhandledException.png" class="properties" />
+            </p>
+            <p>Other Crash Types (no force close):</p>
+            <p>
+                <img src="../../../../../Resources/Images/Dialog--UnhandledException.png" class="properties" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Other actions…:&#160;</span>Invokes a drop-down which lets you select the following options:<ul class="checkbox"><li><span class="bold">Provide additional information: </span>Invokes the <span class="UI">User Information</span> dialog which lets users add personal information and a description of what they were doing when the exception occurred.</li><li><span class="bold">Report Details: </span>Invokes the <span class="UI">View Exception Log</span> dialog which lets the user see what is being sent.</li><li><span class="bold">Save Log: </span>Invokes the <span class="UI">Save Exception Log</span> dialog which lets you save the report locally as an XML file.</li></ul></li>
+            <li><span class="bold">Send Report:&#160;</span>Submits the report to MadCap and provides a confirmation message. The dialog is then dismissed and the application will continue to crash.</li>
+            <li><span class="bold">Don't Send:&#160;</span>Dismisses the dialog and the application will continue to crash.</li>
+        </ul>
+        <h3>User Information dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--UserInformation.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">First Name: </span>Lets the user enter their first name if they want to include it in the report sent to MadCap</li>
+            <li><span class="bold">Last Name: </span>Lets the user enter their last name if they want to include it in the report sent to MadCap</li>
+            <li><span class="bold">Email: </span>Lets the user enter their email address if they want to include it in the report sent to MadCap</li>
+            <li><span class="bold">Description: </span>Lets the user enter up to 1,024 characters to describe what was happening when the exception occurred</li>
+        </ul>
+        <h3>View Exception Log dialog:&#160;Exception Tab - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Dialog--ViewExceptionLog--ExceptionTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls (Read Only)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Time: </span>Displays the time the crash occurred to be included in the report sent to MadCap</li>
+            <li><span class="bold">Source: </span>Displays the source of the crash to be included in the report sent to MadCap</li>
+            <li><span class="bold">Type: </span>Displays the type of crash to be included in the report sent to MadCap</li>
+            <li><span class="bold">Message: </span>Displays the message the user would have seen when the crash occurred to be included in the report sent to MadCap</li>
+            <li><span class="bold">Stack Trace:&#160;</span>Displays the stack trace for the crash to be included in the report sent to MadCap</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify all fields display the correct type of information</li>
+            <li>Verify all fields are read only</li>
+        </ul>
+        <h3>View Exception Log dialog:&#160;System Tab - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Dialog--ViewExceptionLog--SystemTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls (Read Only)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Exe: </span>Displays the application in which the crash occurred to be included in the report sent to MadCap</li>
+            <li><span class="bold">Exe Version: </span>Displays the version number of the application in which the crash occurred to be included in the report sent to MadCap</li>
+            <li><span class="bold">Framework Version: </span>Displays the Framework version to be included in the report sent to MadCap</li>
+            <li><span class="bold">OS Architecture: </span>Displays the architecture of the user's OS (x64 or x32) to be included in the report sent to MadCap</li>
+            <li><span class="bold">OS&#160;Version:&#160;</span>Displays the version of the user's OS to be included in the report sent to MadCap</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify all fields display the correct type of information</li>
+            <li>Verify all fields are read only</li>
+            <li>Test on different OS</li>
+        </ul>
+        <h3>View Exception Log dialog:&#160;User Tab - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Crash Reports/Dialog--ViewExceptionLog--UserTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls (Read Only)</p>
+        <ul class="checkbox">
+            <li><span class="bold">MachineID:&#160;</span>Displays the MachineID&#160;of the user's machine to be included in the report sent to MadCap</li>
+            <li><span class="bold">First Name: </span>If provided in the User Information dialog, displays the user's first name to be included in the report sent to MadCap</li>
+            <li><span class="bold">Last Name: </span>If provided in the User Information dialog, displays the user's last name to be included in the report sent to MadCap</li>
+            <li><span class="bold">Email: </span>If provided in the User Information dialog, displays the user's first name to be included in the report sent to MadCap</li>
+            <li><span class="bold">Description: </span>If provided in the User Information dialog, displays the description to be included in the report sent to MadCap</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify all fields display the correct type of information</li>
+            <li>Verify all fields are read only</li>
+        </ul>
+        <h3>View Exception Log dialog:&#160;User Tab - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Dialog--ViewExceptionLog--LogTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls (Read Only)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Log:&#160;</span>Displays the actual report that will be sent to MadCap</li>
+        </ul>
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Verify log is read only</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="447" MadCap:lastWidth="1051">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Select Relationship Tables to use… :&#160;</span>Lets you select one or more Relationship Tables to include in the output. If no Relationship Tables are selected, all are used.</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Relationship Table File:&#160;</span>Lists all Relationship Tables included in the project. Click the check box next to each Relationship Table that you want to include in the output for the target.</li>
+                </ul>
+                <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Edit Relationship Table:&#160;</span>Opens the <span class="UI">Relationship Table Editor</span>, so that you can make changes to selected Relationship Table file.</li>
+            <li><span class="bold">New Relationship Table… :&#160;</span>Opens the <span class="UI">Add Relationship Table</span> dialog so that you can create a new Relationship Table file.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all filenames (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the Target Editor and in the output:
+</p>
+            <ul class="checkbox">
+                <li>Relationship Tables</li>
+            </ul>
+        </div>
+    </body>
+</html>

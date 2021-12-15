@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="859" MadCap:lastWidth="624" MadCap:conditionTagExpression="include[ElementContextMenuItems.Conditions or ElementContextMenuItems.Copy or ElementContextMenuItems.Delete or ElementContextMenuItems.Select or ElementContextMenuItems.StyleClass] exclude[Default.UITestsEditors or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.UnbindElement] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Variables - UI</h2>
+        <h3>Opening the UI</h3>
+        <p><b>Open Add variables dialog:</b>
+        </p>
+        <ol>
+            <li>!Insert | Variable...</li>
+            <li>Select Insert&gt;Variable.&#160;<ol><li>The Variables dialog opens, with the variable set(s) on the left and the variables associated with the selected set on the right.</li></ol></li>
+            <li>On the left, select the appropriate variable set.</li>
+            <li>On the right, select the variable you want to insert.</li>
+            <li>Click OK.</li>
+            <li>The variable is added to the topic, with brackets surrounding it. The bracket shows the variable name and the variable definition (as long as markers are turned on and the set marker width allows it).</li>
+            <li>You can adjust the marker width from the Show tags button  to see more or less of the variable information, and you can also tell Flare to turn off the variable names so that you only see the variable definition.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Insert into a TOC, Browse Sequence, and hyperlinks.</li>
+            <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+            <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+            <li>Insert in paragraphs with various elements in them (multimedia, Form elements, Special Characters, Help Controls, etc)</li>
+            <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+            <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+        </ul>
+        <h3>UI</h3>
+        <h4>Variables Dialog</h4>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Variables/UI--Variables--Dialog.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditions="Default.UITestsDialogs" />
+        </div>
+        <hr />
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="note">Note: You can also add variables to content (e.g., TOC entries, browse sequence entries, hyperlinks) manually. In other words, you can rename a TOC entry and replace it with a variable from a variable set. To do this, click on the entry and highlight the text. Then replace it with this syntax: mcvariable:VariableSet.VariableName. For example, if your variable set is called "MyVariables" and you want to use a variable called "CompanyName," you would enter this as the name of the TOC entry: mcvariable:MyVariables.CompanyName. Follow these same steps for browse sequence entries. Similarly, you can use variables in hyperlinks by using this syntax: &lt;a href="mcvariable:VariableSet.VariableName"&gt;My hyperlink text&lt;/a&gt;.</p>
+        <p class="note">Note: In addition to inserting variables the "old-fashioned" way, you can also insert variables when using IntelliSense (a popup window that predicts content as you type).</p>
+        <div class="TestCases">
+            <p class="TestCases">Variable Test Cases</p>
+            <p class="TestCases">&#160;</p>
+            <ul style="list-style-type: square;">
+                <li>test: Add variables to TOC, browse sequence, and hyperlinks.</li>
+                <li>Test: Insert with intellisense.</li>
+                <li>Verify that variables and variables with Classes are rendered correctly in the editor when the editor is resized</li>
+                <li>Verify that variables and variables with Classes are rendered correctly in tables/cells when the table/cell is resized</li>
+                <li>Test: insert variable into page layout header (both system and custom)</li>
+                <p>&#160;</p>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <hr />
+        <h4>Inserting Chapter, Section, and Volume Number Variables into Frames:</h4>
+        <p>For Adobe PDF, Microsoft XPS, and XHTML output, you can insert system variables in page layout frames that display your chapter, section, or volume numbers (if you are using auto-numbers to identify the various parts of a manual). This will be covered in more detail in the page layout test plan.</p>
+        <p>&#160;</p>
+        <p><b>How to insert a Chapter, Section, or Volume Number variable into a page layout frame:</b>
+        </p>
+        <ol>
+            <li>Open a page in a page layout.</li>
+            <li>Click on the frame to which you want to add text or other content.<ol><li>Note: You can add text and content only to header, footer, and decoration frames. You cannot add text and content to a body frame (which automatically displays content from your topics). You can use image frames to insert pictures that use all of the space in the frame.</li></ol></li>
+            <li>Do one of the following:<ol><li>Press F2 on your keyboard. OR</li><li>In the local toolbar, click Edit Text. OR</li><li>Right-click the frame and select Edit Text. A message opens, asking if you want to pick content from a template (e.g., a page number).</li></ol></li>
+            <li>Click No. The Frame Contents window pane opens.<ol><li>Note: If you have already prepared content in the form of a snippet and added it to your template folder, you can click "Yes" instead in order to select the snippet. See About Templates</li></ol></li>
+            <li>Click in the Frame Contents window pane.</li>
+            <li>Select Insert&gt;Variable. The Variables dialog opens, with the variable set(s) on the left and the variables associated with the selected set on the right.</li>
+            <li>Select the System variable set.</li>
+            <li>Select the appropriate variable: ChapterNumber, SectionNumber, or VolumeNumber.</li>
+            <li>Click OK. The variable is added to the Frame Contents window pane.</li>
+            <li>Press CTRL+S or click  to save your work. The variable can now be seen in the frame.<ol><li>Note: If you are using chapter or volume auto-numbers and you want these numbers to be reflected in a print index, you can do so by specifying the auto-numbers at the appropriate locations in your outline TOC (instead of inserting Chapter or Volume Number variables in a page layout). See Including Page Auto-Numbers in Print Indexes.</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Heading variables</h4>
+        <p>You can insert Heading variables into page layouts or master pages in order to automatically display text based on the &lt;h1&gt; through &lt;h6&gt; heading styles that you use in your project. Like Running Head variables, they are useful when creating print-based output. It's an easy way, for example, to automatically display a chapter title in the header of a chapter. For Adobe PDF, Microsoft XPS, and XHTML output, you can also use Heading variables to automatically display glossary headings/terms and index headings/terms in a page layout frame. They will be covered in more detail in the page layout test plan.</p>
+        <p>&#160;</p>
+        <p><b>How to insert a Heading variable into a page layout frame:</b>
+        </p>
+        <ol>
+            <li>Open a page in a page layout.</li>
+            <li>Click on the frame to which you want to add text or other content.<ol><li>Note: You can add text and content only to header, footer, and decoration frames. You cannot add text and content to a body frame (which automatically displays content from your topics). You can use image frames to insert pictures that use all of the space in the frame.</li></ol></li>
+            <li>Do one of the following:<ol><li>Press F2 on your keyboard. OR</li><li>In the local toolbar, click Edit Text. OR</li><li>Right-click the frame and select Edit Text. A message opens, asking if you want to pick content from a template (e.g., a page number).</li></ol></li>
+            <li>Click No. The Frame Contents window pane opens.<ol><li>Note: If you have already prepared content in the form of a snippet and added it to your template folder, you can click "Yes" instead in order to select the snippet. See About Templates.</li></ol></li>
+            <li>Click in the Frame Contents window pane.</li>
+            <li>Select Insert&gt;Variable. The Variables dialog opens, with the variable set(s) on the left and the variables associated with the selected set on the right.</li>
+            <li>Select the Heading variable set.</li>
+            <li>Select the variable you want to add.<ol><li><span class="bold">AnyLevel:</span> Automatically displays the text in the first heading on a page that uses any of the &lt;h1&gt; through &lt;h6&gt; styles.</li><li><span class="bold">FirstGlossaryPageHeading:</span> Automatically displays the first glossary heading (e.g., A, B, C, D, E) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">FirstGlossaryPageTerm:</span> Automatically displays the first glossary term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">FirstIndexHeading:</span> Automatically displays the first index heading (e.g., A, B, C, D, E) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">FirstIndexTerm:</span> Automatically displays the first index term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">LastGlossaryPageHeading:</span> Automatically displays the last glossary heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">LastGlossaryPageTerm:</span> Automatically displays the last glossary term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">LastIndexHeading:</span> Automatically displays the last index heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">LastIndexTerm:</span> Automatically displays the last index term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">Level1:</span> Automatically displays the text in the first heading on a page that uses the &lt;h1&gt; style tag.</li><li><span class="bold">Level2:</span> Automatically displays the text in the first heading on a page that uses the &lt;h2&gt; style tag.</li><li><span class="bold">Level3:</span> Automatically displays the text in the first heading on a page that uses the &lt;h3&gt; style tag.</li><li><span class="bold">Level4:</span> Automatically displays the text in the first heading on a page that uses the &lt;h4&gt; style tag.</li><li><span class="bold">Level5:</span> Automatically displays the text in the first heading on a page that uses the &lt;h5&gt; style tag.</li><li><span class="bold">Level6:</span> Automatically displays the text in the first heading on a page that uses the &lt;h6&gt; style tag.<ol><li>Note: The glossary and index variable options are available only in Adobe PDF, Microsoft XPS, and XHTML output.</li></ol></li></ol></li>
+            <li>Click OK. The variable is added to the Frame Contents window pane.</li>
+            <li>Press CTRL+S or click  to save your work. The variable can now be seen in the frame</li>
+        </ol>
+        <h4>Running Head  variables:</h4>
+        <p>The key appeal of Running Head variables is that they are supported in FrameMaker and will be covered in more detail in the FrameMaker Test plan.</p>
+        <p>&#160;</p>
+        <p><b>Steps for Using Running Head Variables:</b>
+        </p>
+        <p>If you want to incorporate Running Head variables into your output, use the following steps.</p>
+        <ol>
+            <li>Add variable set: When you do this, make sure to select the Running HF template.</li>
+            <li>Insert Running Head variables: You can insert these variables into headers or footers within page layout frames or print master pages.<ol><li>Note: Running Head variables are supported only in Adobe FrameMaker, Microsoft Word, Adobe PDF, and Microsoft XPS output.</li><li>Note: An alternative to Running Head variables, and perhaps an easier one, is to use Heading variables.</li></ol></li>
+        </ol>
+        <p>See the <a href="../../Output/Output Frame/Output Frame.htm">FrameMaker</a> test plan more details about running head variables.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

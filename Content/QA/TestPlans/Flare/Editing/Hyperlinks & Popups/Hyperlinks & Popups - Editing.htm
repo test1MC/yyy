@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6366" MadCap:lastWidth="976" MadCap:conditionTagExpression="exclude[ElementContextMenuItems.BookmarkCommands or ElementContextMenuItems.CreateSnippet or ElementContextMenuItems.Cut or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.FootnoteProperties or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.ImageProperties or ElementContextMenuItems.ListCommands or ElementContextMenuItems.Move or ElementContextMenuItems.Object or ElementContextMenuItems.PasteBeforeAfter or ElementContextMenuItems.RemoveCrossReference or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SnippetOptions or ElementContextMenuItems.TableCommands or ElementContextMenuItems.TextBox or ElementContextMenuItems.VariableCommands] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+    </head>
+    <body>
+        <h2>Hyperlinks &amp; Popups - Editing</h2>
+        <p class="note">To edit the Hyperlink text, place the insertion point in the  Hyperlink and type.                                  </p>
+        <h3>Context menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Hyperlink--ContextMenu.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp" />
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuControls.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/InsertUseCases.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Test copying and cutting a hyperlink from one topic and pasting it into another topic in a different folder. Verify the link updates.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TooltipsBlockBars.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-TrackChanges.flsnp" />
+        <h4>Code</h4>
+        <p class="bold">Simple Hyperlink with Screen Tip:</p><pre xml:space="preserve">&lt;a href="Topic.htm" title="The screen tip" alt="The screen tip"&gt;Link Text&lt;/a&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Simple Hyperlink to "Place in this Document":</p><pre>&lt;a href="#top"&gt;Link to same document&lt;/a&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Simple Email Link:</p><pre>&lt;a href="mailto:simon@madcapsoftware.com?subject=Email subject" title="The screen tip" alt="The screen tip"&gt;Email Link&lt;/a&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Simple Website Link:</p><pre xml:space="preserve">&lt;a href="http://www.madcapsoftware.com/" title="The screen tip" alt="The screen tip"&gt;Website link&lt;/a&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Hyperlink With Bookmark, Target Frame, Class and Screen Tip:</p><pre xml:space="preserve">&lt;a href="Topic.htm#bookmark" target="_popup" title="The screen tip" alt="The screen tip" class="class"&gt;Link Text&lt;/a&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">Hyperlink to HTML help file:</p><pre xml:space="preserve">&lt;a href="CHMSupport\Geoplan_Data_Readme_R48.chm::\AdjacencyDBSumm.htm"&gt;AdjacencyDBSumm.htm&lt;/a&gt;</pre>
+        <p>&#160;</p>
+        <h3>Workflow</h3>
+        <p>Insert a Hyperlink</p>
+        <p>Set the type, style class, and frame</p>
+        <p>Output and click it</p>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1986" MadCap:lastWidth="978" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs] " MadCap:fileTags="Status.Feedback V3,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Server Configuration - UI</h2>
+        <p>This test plan will cover the UI&#160;associated with configuring your Feedback Server.</p>
+        <h3>Feedback Server Configuration</h3>
+        <p>After successful installation of the Feedback Server SQL&#160;Database, Feedback Server Admin will open the Feedback Server Configuration tab in the MDI&#160;area.</p>
+        <h4>Feedback Server Configuration - Basic tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackServerConfiguration--GeneralTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Security:</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Require password from Feedback&#160;Explorer: </span>Select the toggle box enable or disable this option. Toggling the option on will invoke the <span class="UI">Set Server Password</span> dialog.</li>
+                    <li><span class="bold">Set new password… : </span>This option will only be active if a password is already set. Clicking this option will invoke the <span class="bold">Set Server Password</span> dialog.</li>
+                </ul>
+            </li>
+            <li><span class="bold">SQL Server:&#160;</span>Displays information about the SQL&#160;database<ul style="list-style-type: circle;"><li><span class="bold">Server Name:&#160;</span>Displays the name of the machine hosting the SQL&#160;database</li><li><span class="bold">Database Name:&#160;</span>Displays the name of the SQL&#160;database</li><li><span class="bold">Test:&#160;</span>Click this button to test the connection to the SQL&#160;database. Be sure to test a broken connection as well as a good one. Verify the messages are appropriate.</li></ul></li>
+            <li><span class="bold">Website:&#160;</span>Displays information about the Feedback Server Website<ul style="list-style-type: circle;"><li>Location:&#160;Displays the location of the Feedback Server website</li><li>Test:&#160;Click this button to test the connection to the Feedback&#160;Server website. Be sure to test a broken connection as well as a good one. Verify the messages are appropriate.</li></ul></li>
+            <li><span class="bold">SMTP Server:&#160;</span>Displays information about the SMTP Server used to support Feedback comment emails. Additional information for setting up a third party SMTP&#160;Server is available here:&#160;<MadCap:xref href="../../!TestingResources/Third Party SMTP.htm" target="" title="" alt="" class="TitleOnly">"Setting up a 3rd party SMTP service on Windows Vista"</MadCap:xref><ul style="list-style-type: circle;"><li><span class="bold">Server:&#160;</span>Enter the name of the server</li><li><span class="bold">User Name:&#160;</span>Lets you enter a username if the SMTP&#160;server you've identified requires specific credentials. In most cases, this can be left blank. Test both cases.</li><li><span class="bold">Password:&#160;</span>Lets you enter a password if the SMTP&#160;server you've identified requires specific credentials. In most cases, this can be left blank. Test both cases. If you do enter a password here, it should display an asterisk for each typed character.</li><li><span class="bold">"From" Address: </span>Enter the email address that you want email notifications to contain in the "From" field</li><li><span class="bold">Test… : </span>Invokes the <span class="UI">SMTP&#160;Test</span> dialog which allows you to send a test email from the Feedback Server</li></ul></li>
+        </ul>
+        <h4>Feedback Server Configuration - Advanced tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackServerConfiguration--AdvancedTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Activation success page:&#160;</span>Lets you enter a URL to be used as the Web page that displays when the user registration process is successful. The page should display in the area immediately below.</li>
+            <li><span class="bold">Activation failure page:&#160;</span>Lets you enter a URL to be used as the Web page that displays when the user registration process is not successful. The page should display in the area immediately below.</li>
+        </ul>
+        <h4>Feedback Server Configuration - Maintenance tab</h4>
+        <p class="note">NOTE:&#160;The tasks on the Maintenance tab are applicable to SQL Server Express when it is located on the same computer as IIS only. These options should be tested with all supported version of SQL&#160;Express. See the Help for more information.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--FeedbackServerConfiguration--MaintenanceTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Location:&#160;</span>Enter the path where you want backups of the database and transaction log to be stored.<ul style="list-style-type: square;"><li><span class="bold">Browse:&#160;</span>Opens a browse dialog which lets you browse for a backup location.</li></ul></li>
+            <li><span class="bold">Day &amp;&#160;Time:&#160;</span>Three pulldowns which let you specify the day and time you want the backup process to run.             <![CDATA[ ]]></li>
+            <li><span class="bold">SQL&#160;Server Express Maintenance Windows Service (Start/Stop): </span>By default, the <span class="bold">Start</span> button should be engaged which enables backups to be created. Click <span class="bold">Stop</span> to disable the backup process.</li>
+        </ul>
+    </body>
+</html>

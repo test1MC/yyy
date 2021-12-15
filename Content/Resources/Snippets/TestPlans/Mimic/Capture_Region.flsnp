@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>The capture region box will have 8 resize points located around it</li>
+            <li>Each point can be used to resize the capture region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire capture region</li></ul></li>
+            <li>The region box will also have 2 pixel count boxes<ul><li>Box in the upper left contains location of the top left corner of the capture region box</li><li>Box in the center displays the size of the region box, in pixels<ul><li>Clicking and dragging this box will move the capture region accordingly</li></ul></li></ul></li>
+            <li>Verify resizing the capture region box will still result in an accurate capture</li>
+            <li>Three buttons will be displayed in the lower right corner<ul><li><span class="bold">OK</span>: Will set the region box and take a capture</li><li><span class="bold">Cancel</span>:&#160;Will cancel the operation and return the user to Mimic</li><li><span class="bold">Options</span>: Brings up the options context menu</li></ul></li>
+        </ul>
+    </body>
+</html>

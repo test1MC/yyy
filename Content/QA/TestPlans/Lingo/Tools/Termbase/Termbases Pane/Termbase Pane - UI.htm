@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2192" MadCap:lastWidth="886" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo" MadCap:ignoredWords="Termbases’">
+    <head>
+    </head>
+    <body>
+        <h2>Termbase Pane - UI  </h2>
+        <h3>Opening the UI</h3>
+        <ol>
+            <li>Select View&gt;Termbase or...</li>
+            <li>In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" />.</li>
+        </ol>
+        <h3>UI</h3>
+        <h4>Termbase Editor Dialog </h4>
+        <p>This termbase will show you suggestions for the selected segment if the selected segment has matches in the currently selected termbase. If there are no matches nothing will be displayed in this pane. You can also quickly add terms to the termbase using the Quick add Terms button in this pane.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--TermbasePain--Dialog.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Columns:</b>Display only if there is a suggested term, otherwise the columns will not display.</p>
+        <ul style="list-style-type: square;">
+            <li><b>Term:</b> Shows the term in the selected termbase</li>
+            <li><b>Source:</b>Shows the source of the term as written in the Termbase</li>
+            <li><b>Context:</b> Displays the context for that term as written in the Termbase. It may be an example sentence of the term.</li>
+            <li style="margin-left: 50px;">EXAMPLE: If the term is "motorcycle," you might enter "My motorcycle is very fast."</li>
+            <li style="margin-left: 50px;">&#160;</li>
+        </ul>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/TermbasePain/UI--Button--QuickAddTerms.png" /> <![CDATA[ ]]>&#160;&#160;Opens the ‘Batch Add Terms to Termbase’ dialog window. This dialog lets you add many different terms at the same time to a termbase. For example, you might need to add a list of corporate terms from an email. The obvious advantage of this method is that you can quickly add lots of different terms. In addition, you do not need to have any files open for translation at the same time.</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/TermbasePain/UI--Button--ManageTermbases.png" />Opens the ‘Manage Termbases’ dialog window.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="margin-left: 0;">&#160;</p>
+        <h4>Batch Add Terms to Termbase Dialog </h4>
+        <p>"Quick Add Terms" option (add multiple terms at once) In the Termbase window pane you can click the "Quick Add Terms" button, which lets you add many different terms at the same time to a termbase. For example, you might need to add a list of corporate terms from an email. The obvious advantage of this method is that you can quickly add lots of different terms. In addition, you do not need to have any files open for translation at the same time.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/TermbasePain/UI--BatchAddTermstoTermbase--Dialog.png" class="properties" style="width: 231px;height: 49px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Language pickers:</b> Select the source and target languages for the term(s)</li>
+            <li><b>Data grid view:</b> Enter the Original and Translated term (s) on each row</li>
+            <li><b>Termbase picker:</b> Select the termbase to insert quick term(s) to</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">To add terms using the Batch Add Terms to Termbase Dialog or 'Quick Add Terms',</p>
+        <p style="font-weight: bold;">Do one of the following:</p>
+        <ol>
+            <li>Select View&gt;Termbase or...</li>
+            <li>In the Standard toolbar click <img src="../../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--Button--Termbase.png" style="width: 17px;height: 17px;" />.<ol><li>The Termbase window pane opens.<ol><li>In the local toolbar, click Quick Add Terms. The Batch Add Terms to Termbases dialog opens.</li><li>In the Language 1 field, make sure your source language is selected.</li><li>In the Language 2 field, make sure your target language is selected.</li><li>In the first row click in the Original cell and type the term in the source language and press Enter on your keyboard.</li><li>In the first row click in the Translation cell and type the term in the target language and press Enter on your keyboard.</li><li>In the next row repeat steps 4 and 5. Do this until you've added all the terms you need.</li><li>In the field at the bottom of the dialog, select the termbase that you want to add the terms to.</li><li>Click OK. The next time you reopen the Termbase Editor, you will see the terms you added.</li></ol></li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li> Dialog opens when “Quick Add Terms...” Button clicked.</li>
+            <li>Button is inactive when there are no termbases</li>
+            <li>Languages are set to the languages of the project if there is a project open, or to the most recently chosen languages otherwise.</li>
+            <li>Data is saved to the chosen termbase when closing the dialog.</li>
+            <li>Duplicates are only entered once.</li>
+            <li>The termbase is unchanged on Cancel.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><a href="../Termbase Editor/Termbase Editor - UI.htm#Manage">Manage Termbases...</a>
+        </p>
+    </body>
+</html>

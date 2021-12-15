@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2315" MadCap:lastWidth="1299">
+    <head>
+    </head>
+    <body>
+        <h2>Frame Projects - Export        </h2>
+        <h3>Opening the UI</h3>
+        <p>Select File&gt;Export (Tooltip should read: Export translated files back to Frame)</p>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>Export Finished Translation dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/ExportFinishedTranslation.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <h4>UI&#160;Controls</h4>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Project to Export:</span> Displays the name and path of the current Lingo project.</li>
+            <li><span class="bold">Destination File name:</span> Displays the name you provided for the Lingo project. You can keep the same name or enter a different one for the exported project.</li>
+            <li><span class="bold">Destination Folder:</span> Either accept the folder location entered, or click Browse to find and select a different one. Typically, you want to export the project to a location where the author can retrieve it.</li>
+            <li><span class="bold">Browse:</span> Opens the Browse For Folder dialog, which lets you select a different folder to store the project files.</li>
+            <li>
+                <p><span class="bold">Export:</span> Click this button to export the project.</p>
+            </li>
+            <li><b>Make a zip file after export:</b>If you want to create an additional ZIP file when exporting the project, select Make a zip file after export. If you do not select the check box, the project files are still exported, but a ZIP file is not created. If you do select the check box, the project files are exported and an extra ZIP file is produced.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>'Exporting' dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/ProgressDialog.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li> Cancel should stop the export.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Successful export dialog window:</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/SuccessfulWordExportDialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests-Small.flsnp">
+            </MadCap:snippetBlock>
+            <ul style="list-style-type: square;">
+                <li>‘Yes’ closes dialog and should open translated project in Frame</li>
+                <li> ‘No’ closes dialog</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Trial Mode</b>
+        </p>
+        <p>When Lingo is used in Trial Mode, it will prompt you with the following dialog window:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/TrialMode.png">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Clicking “OK” should still open the translated project in Frame.</li>
+            <li>Open the exported Frame project in trial mode and make sure its contents are scrambled.</li>
+            <li>Enter a valid key, export and verify that the contents are not longer scrambled.&#160;</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="note">If Frame is not installed on the computer and you try to create a new project, you should get the following message:</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--NewProject--NoFrameInstalled.png" />
+        </p>
+        <p class="note">If someone creates a Frame project in a machine with Frame Maker, you should be able to open that project using Lingo in a machine without Frame. However, if you try to export that project back to Frame, you should get the following message:</p>
+        <p>
+            <img src="../../../../../Resources/Images/Exporting--NoFrameInstalled.png" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <p>&#160;</p>
+        <p>Get in the habit of computing statistics and translating bundles and exporting to Frame with all test projects you work with. Don't just test the bug but run through other test as well.</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Export to Frame and test to see it exports correctly. In Frame, expand the 'Panels' pane. select "Marker" and make sure the index words that you translated are translated.</li>
+            <li>Do the same for the TOC, Topics, Images and all file types that exist in Frame.</li>
+        </ul>
+    </body>
+</html>

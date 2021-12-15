@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="898" MadCap:lastWidth="1046" MadCap:fileTags="AuthorFileTagSet.Jay,Product.Echo,Status.Not Applicable" MadCap:conditionTagExpression="include[Product.Echo]">
+    <head>
+    </head>
+    <body>
+        <h2>Contributor - Testing</h2>
+        <h3>Contribution Workflow Overview</h3>
+        <p>Contributor is used as a tool to enable additional authors to contribute to or edit content from a Flare project. Contributor can be used to create new topics, or edit topics/review packages sent from a Flare project. When Contributor is run in free review mode, the user will only have the ability to annotate files. In Contributor V4 we introduced the ability to work with the Track Changes feature. When testing Contributor make sure you familiarize yourself with each step of the contribution workflow. There are two basic workflows:</p>
+        <p style="font-weight: bold;">Contributor workflow when receiving a topic/review package from the Flare author</p>
+        <ul>
+            <li style="font-weight: normal;">The Flare author will take content he wants reviewed, and either create a contribution document (.mcco, .mcdoc) or a review package (.fltrev) which he then sends to the reviewer</li>
+            <li style="font-weight: normal;">The Contributor user receives the contribution document or review package, and opens it in Contributor in either the normal mode or free review mode</li>
+            <li style="font-weight: normal;">If in normal mode, the Contributor user can add, remove, or edit content. If in free review mode only, the user will only be able to add annotations</li>
+            <li style="font-weight: normal;">Once the reviewer is done, he sends the contribution document/review package back to the original Flare user</li>
+            <li style="font-weight: normal;">The original Flare user imports the contribution document/review package back into his project, accepts/rejects any changes made, resolve any conflicts, and then accepts the document into the project</li>
+        </ul>
+        <p style="font-weight: bold;">Contributor workflow when creating new content for a Flare project</p>
+        <ul>
+            <li style="font-weight: normal;">(optional)&#160;the Flare author may create template files (.mccot, .mcdoct) from a Flare project that contain styles and resources from that project which a Contributor user can use to create content. This allows the user to style things in the same manner and use existing resources (such as conditions, images, etc.) from that Flare project</li>
+            <li style="font-weight: normal;">The Contributor author creates a topic and saves it as a contribution document. You cannot create content if you are using free review mode</li>
+            <li style="font-weight: normal;">The contribution document is sent to the Flare author</li>
+            <li style="font-weight: normal;">The Flare author imports the contribution document, accepts/rejects any part of the content, resolves any conflicts, and then accepts the document into the project</li>
+        </ul>
+        <p style="font-weight: bold;">Accepting a contribution document or review package back into Flare</p>
+        <ul>
+            <li style="font-weight: normal;">see: <a href="../Flare/Tools/Contributions/Contributions - Contribution Pane UI.htm">Contribution - UI</a></li>
+            <li style="font-weight: normal;">see: <a href="../Flare/Tools/Annotations &amp; Reviewing/Annotations &amp; Reviewing.htm">Annotations/Reviewing</a></li>
+        </ul>
+        <h4>Workflow Checklist and Tips and Tricks</h4>
+        <ul class="checkbox">
+            <li>Content should properly be preserved at each step of the contribution process. If something remains untouched during the entire process, it should re-import into Flare exactly the same. If something was changed at any step, it should preserve those changes at the next step</li>
+            <li>Do not only test using the generic workflows. Test all possible combinations of the various steps, and make sure we handle every situation properly. For example, sending out a review package when one is already out with the same topics should give the sender a warning prompt. Then you can follow up by importing the old review package into Flare instead of the newest one, and then maybe importing the newest review package after that. Be creative and try to break the workflow</li>
+            <li>Make sure to test with and without Track Changes. Accept, reject, add, and remove content with Track Changes enabled at every step and make sure they are accurately preserved at the next step. This includes when importing a contributor document or review package back into flare, and every instance (such as a content preview window in a resolve conflict dialog) where content could be displayed</li>
+            <li>Contributor can have multiple review packages and/or contribution documents open at the same time. When testing, make sure to test in both the single file and multiple different files situation. One example would be when testing find and replace in all open documents with multiple review packages and contribution documents open</li>
+            <li>Keep in mind Flare can also open review packages in Flare's review mode, and essentially perform Contributor's function. When testing functionality, make sure the behavior in Contributor is the same as the behavior when using Flare in review mode</li>
+            <li>Make sure to test both documents and review packages with sub-folder content in mind. Remember that templates and review packages can be created which include or rely on resources that are placed in sub-folders and may share name with identical resources in a different folder. For example you may create a template using content which uses conditions from two different condition tag sets, one of which is in a sub-folder, that may be named the same. When testing the contributor workflow test all combinations of all possible types of content (sub-folders, same names, topic files, advanced files, etc.) that could be included in a template or review package, and make sure the file structure is preserved on both export and import</li>
+            <li>Review packages are essentially zip files. You can change the extension of any .fltrev file to .zip and open the file in explorer. This is useful to check what content/resources were properly included or missing, and if file structures were preserved for example</li>
+            <li>Contributor has "outputs"&#160;also. You can save contributor content as various filetypes such as .pdf, which you can view to see if the content is displaying properly. This should look the same as if built through Flare</li>
+        </ul>
+    </body>
+</html>

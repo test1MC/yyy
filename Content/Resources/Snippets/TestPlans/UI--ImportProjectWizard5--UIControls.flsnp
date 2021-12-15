@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="94" MadCap:lastWidth="850">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import Project Wizard</span>.</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import Project Wizard</span>.  (Should be grayed out at this point)</li>
+            <li><span class="bold">Finish: </span>Closes the <span class="UI">Import Project Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import.</li>
+            <li><span class="bold">Cancel: </span>Closes the <span class="UI">Import Project Wizard</span> and does not import anything.</li>
+        </ul>
+    </body>
+</html>

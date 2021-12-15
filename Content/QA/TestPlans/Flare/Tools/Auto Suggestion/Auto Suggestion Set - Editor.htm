@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6785" MadCap:lastWidth="809" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.AutoSuggestionList] exclude[FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] ">
+    <head>
+    </head>
+    <body>
+        <h2>Auto Suggestion - Editor</h2>
+        <h3>Auto Suggestion- Location in Project and Opening</h3>
+        <p>Auto Suggestion files are saved to the Project/Advanced folder.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Auto Suggestion/Auto Suggestions--ProjectOrganizer.png" />
+        </p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectOrganizer--RightClickMenu.flsnp" />
+        <hr />
+        <p class="bold">Opening an Auto Suggestion file:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Auto Suggestion List Editor - UI Test Cases</h3>
+        <h4>Editor</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Auto Suggestion/Auto Suggestions--Editor.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Auto Suggestion List Editor: </span>Displays and lets you create and edit&#160;Auto Suggestion phrases.</p>
+            </li>
+            <li><span class="bold">Local Toolbar: </span>
+                <ul style="list-style-type: square;">
+                    <li><b>Info Bar:</b> Displays a blurb about limits and enabling the auto suggestion feature.</li>
+                    <li><b>New Item:</b> Inserts a new phrase</li>
+                    <li><b>Cut:</b> Cut the selected phrase(s)</li>
+                    <li><b>Copy:</b> Copy the selected phrase(s)</li>
+                    <li><b>Paste:</b> Paste the selected phrase(s)</li>
+                    <li><b>Delete:</b> Delete the selected phrase(s)</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>
+                    <p>Make sure that you cannot add duplicate words (should be an appropriate error message)</p>
+                    <ul class="checkbox">
+                        <li>Make sure you can add the same word with different capitalizations</li>
+                    </ul>
+                </li>
+                <li>Verify that the 256 character limit is imposed by an error message when you try to save it.</li>
+                <li>Verify that you cannot create a autosuggestion for 2 character words (the minimum length for autosuggestion hints is 3 characters)</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--GenericProperties.flsnp" />
+        <h3>Auto Suggestion- General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the Auto Suggestion Editor</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p>Cut, Copy and Paste functionality should work within an auto suggestion file and across multiple auto suggestion list files</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>
+                    <p>Verify cutting one phrase from an auto suggestion file and pasting into another works</p>
+                    <ul class="checkbox">
+                        <li>Verify the original phrase is removed.</li>
+                        <li>Do the same thing but copy and paste.</li>
+                        <li>Verify that copy and pasting from the XML editor correctly pastes into an auto suggestion list file.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p>&lt;?xml version='1.0'?&gt;</p>
+        <p>&lt;!DOCTYPE martif SYSTEM "TBXBasiccoreStructV02.dtd"&gt;</p>
+        <p>&lt;!-- The following lines are required when validating this file against the TBX-Basic RNG schema.</p>
+        <p>If you want to use this schema for validation, instead of the DTD, you must uncomment the following</p>
+        <p>two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.--&gt;</p>
+        <p>&lt;!--&lt;?oxygen SCHSchema="TBXBasicRNGV02.rng"?&gt;--&gt;</p>
+        <p>&lt;!--&lt;?oxygen RNGSchema="TBXBasicRNGV02.rng" type="xml"?&gt;--&gt;</p>
+        <p>&lt;CatapultTbx&gt;</p>
+        <p>&lt;martif type="TBX-Basic" xml:lang="en-US"&gt;</p>
+        <p>&lt;martifHeader&gt;</p>
+        <p>&lt;fileDesc&gt;</p>
+        <p>&lt;titleStmt&gt;</p>
+        <p>&lt;title&gt;TBX-Basic File&lt;/title&gt;</p>
+        <p>&lt;note&gt;This file provides TBX-Basic functionality in MadCap Flare&lt;/note&gt;</p>
+        <p>&lt;/titleStmt&gt;</p>
+        <p>&lt;sourceDesc&gt;</p>
+        <p>&lt;p&gt;This is a TBX-Basic file from MadCap Flare.&lt;/p&gt;</p>
+        <p>&lt;/sourceDesc&gt;</p>
+        <p>&lt;/fileDesc&gt;</p>
+        <p>&lt;encodingDesc&gt;</p>
+        <p>&lt;p type="XCSURI"&gt;</p>
+        <p>http://www.lisa.org/fileadmin/standards/tbx_basic/TBXBasicXCSV02.XCS</p>
+        <p>&lt;/p&gt;</p>
+        <p>&lt;/encodingDesc&gt;</p>
+        <p>&lt;/martifHeader&gt;</p>
+        <p>&lt;text&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;termEntry</p>
+        <p>id="neweid1"&gt;</p>
+        <p>&lt;langSet</p>
+        <p>xml:lang="en"&gt;</p>
+        <p>&lt;tig</p>
+        <p>id="newtid1"&gt;</p>
+        <p>&lt;term&gt;Enter your phrase here&lt;/term&gt;</p>
+        <p>&lt;termNote</p>
+        <p>type="administrativeStatus"&gt;preferredTerm-admn-sts&lt;/termNote&gt;</p>
+        <p>&lt;/tig&gt;</p>
+        <p>&lt;/langSet&gt;</p>
+        <p>&lt;/termEntry&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;back/&gt;</p>
+        <p>&lt;/text&gt;</p>
+        <p>&lt;/martif&gt;</p>
+        <p>&lt;/CatapultTbx&gt;</p>
+        <h3>Workflow</h3>
+        <p>Type the word that you want to add to the auto suggestion file</p>
+        <p>Select the word and click 'Create Auto Suggestion'</p>
+        <p>Click Ok to create auto suggestion file if you don't have one in your project already</p>
+    </body>
+</html>

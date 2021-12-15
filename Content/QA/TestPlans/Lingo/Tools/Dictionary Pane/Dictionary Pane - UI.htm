@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1632" MadCap:lastWidth="843" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Dictionary Pane - UI  </h2>
+        <h3>Opening the UI</h3>
+        <ol>
+            <li>Make sure you have installed a dictionary.</li>
+            <li>Do one of the following:<ol><li>Select View&gt;Dictionary. Or...</li><li>	In the Standard toolbar, click <img src="../../../../../Resources/Images/TestPlans/Lingo/Dictionary/UI--Button--Dictionary.png" />.</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h3>UI File List Pane</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Dictionary/UI--Dictionary--Pane.png" style="width: 184px;height: 163px;" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Term:</b> 	Displays a translation of the term in the target language.</li>
+            <li><b>Dictionary:</b> 	Displays abbreviations for the dictionary that you are using. For example, if you are using an English-to-German dictionary, this cell displays "en_de."</li>
+            <li><b>Class:</b> 	Displays the type of dictionary that is providing the translation. If "Basic Dictionary" is displayed, it means the words are those that you might find in everyday language. If "Software - Microsoft Terminology" is displayed, it means the words are those from a special Microsoft dictionary used for software terms.</li>
+            <li><b>Path:</b> 	Displays the location where the dictionary is installed on your computer.</li>
+            <li><b>CRTL + #:</b>Add a term.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Following are the basic steps for using a dictionary in Lingo:</b>
+        </p>
+        <p>&#160;</p>
+        <ol>
+            <li value="1"><b>Install SQL Server</b> In order to use features such as  translation memory and dictionary, you need to  install Microsoft SQL Server.</li>
+            <li value="2"><b>Install TM</b> In order to use the dictionary feature, you must  have a <a href="../../Translation Memory/SQL Express/SQL Express - UI.htm#TM_database">TM database</a> installed.</li>
+            <li value="3">
+                <p><b>Download/set up dictionaries</b> Download and  install a dictionary provided by MadCap  Software. </p>
+                <p>You can download language dictionary from the  following link: </p>
+                <p><a href="http://www.madcapsoftware.com/downloads/lingo010-p9nn.aspx" target="_blank">http://www.madcapsoftware.com/downloads/lingo010-p9nn.aspx</a>
+                </p>
+                <p>You can also set up a dictionary in your across  database (if you are using across instead of the built-in Lingo TM system).</p>
+            </li>
+            <li value="4">
+                <p><b>Select appropriate target language</b> When you create a new  Lingo project, you select a target language.  This target language must match the language of the dictionary that you intend to  use. To ensure the correct languages are associated with the project, open the  Project Editor (select <b>File&gt;Project Properties</b>). The Source Language  field should display "English," and the Target Language field should display the  same language as the dictionary that is to be  used. </p>
+            </li>
+        </ol>
+    </body>
+</html>

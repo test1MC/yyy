@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="14796" MadCap:lastWidth="1034" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Glossary Proxy - Styles</h2>
+        <p>The styles detailed below all contribute to the look of the generated glossary in the output (in place of the&#160;Glossary Proxy). Of the styles outlined here, only MadCap|glossaryProxy will allow you to create unique classes. All other styles are generated styles used by all Glossary Proxies regardless of class.</p>
+        <p>The styles applied here should be tested in all outputs, however, keep in mind that these styles only affect the&#160;Glossary Proxy placed inside a topic. These styles do not affect the look of the Glossary&#160;pane that is generated for Web, DotNet and HTML Help outputs. Styles for the&#160;Glossary pane in Web, DotNet, and HTML Help outputs are set in the Skin and will be covered in the <MadCap:xref href="../Skins/Skins.htm" target="" title="" alt="" class="TitleOnly">Skins</MadCap:xref> test plan.</p>
+        <p class="note">You can configure a target to convert glossary terms to links automatically when they are found in topics. In addition, there is a way to purposely ignore some terms so that they are not converted to links. This can be done by setting the<span class="bold"> mc-disable-glossary-terms</span> property on a style. By default, this feature is turned on for &lt;h1&gt; through &lt;h6&gt; styles, as well as hyperlinks (i.e., content with the &lt;a&gt; tag). This means that if a glossary term is found in a heading or text hyperlink, it will not be converted to a link. However, if the same term is found in, say, a regular paragraph, the term will be converted to a link (as long as you do not turn this feature on for that paragraph style).</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-StyleApplyChange.flsnp" />
+        <p>&#160;</p>
+        <h4>Create Style Dialog – Launched from an Index Proxy</h4>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp" />
+        <p>&#160;</p>
+        <h4>Stylesheet and Glossary Proxy styles</h4>
+        <p class="bold" style="font-size: 16pt;">MadCap|glossaryProxy</p>
+        <ul class="checkbox">
+            <li>Create a new class for MadCap|glossaryProxy</li>
+            <li>Copy and paste the MadCap|glossaryProxy node and any class nodes</li>
+            <li>Delete the MadCap|glossaryProxy styles and any class nodes of MadCap|glossaryProxy</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul style="list-style-type: square;">
+            <li>border-top-color: black</li>
+            <li>border-top-style: solid</li>
+            <li>border-top-width:&#160;1px</li>
+            <li>padding-left: 20px</li>
+            <li>padding-top:&#160;10px</li>
+            <li>margin-top:&#160;10px</li>
+            <li style="background-color: #ffffff;">mc-output-support: all</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">HTML5</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/</p>
+                        <p class="styleTables">AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp</p>
+                        <p class="styleTables">Mobile</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables">EPUB</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XPS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">mc-output-support:Defines which output types should include the style.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-glossary-headings: Enable glossary headings</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleEditor--TestCases.flsnp" />
+        <hr />
+        <p class="bold" style="font-size: 16pt;">div.GlossaryPageDefinition</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul style="list-style-type: square;">
+            <li>column-break-before:&#160;avoid</li>
+            <li>display: block</li>
+            <li>font-size:&#160;12pt</li>
+            <li>margin-left:&#160;24pt</li>
+            <li>mc-expandable:&#160;true</li>
+            <li>mc-hidden:&#160;hidden</li>
+            <li>page-break-before: avoid</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 22px;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">HTML5</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/</p>
+                        <p class="styleTables">AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp</p>
+                        <p class="styleTables">Mobile</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables">EPUB</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XPS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-expandable: Show glossary entries as expandable.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleEditor--TestCases.flsnp" />
+        <hr />
+        <p class="bold" style="font-size: 16pt;">div.GlossaryPageEntry</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>display: block</li>
+            <li>margin-bottom:&#160;12pt</li>
+            <li>mc-expandable:&#160;true</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 22px;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">HTML5</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/</p>
+                        <p class="styleTables">AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp</p>
+                        <p class="styleTables">Mobile</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables">EPUB</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XPS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-expandable: Show glossary entries as expandable.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleEditor--TestCases.flsnp" />
+        <hr />
+        <p class="bold" style="font-size: 16pt;">div.GlossaryPageHeading</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>border-bottom-color:&#160;black</li>
+            <li>border-bottom-style:&#160;solid</li>
+            <li>border-bottom-width:&#160;1px</li>
+            <li>column-break-after:&#160;avoid</li>
+            <li>display: block</li>
+            <li>font-weight:&#160;bold</li>
+            <li>margin-bottom: 10pt</li>
+            <li>margin-left: 0pt</li>
+            <li>margin-top: 20pt</li>
+            <li>mc-heading-format: {A}</li>
+            <li>page-break-after:&#160;avoid</li>
+            <li>text-align:&#160;left</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" style="width: 44px;" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 22px;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">HTML5</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/</p>
+                        <p class="styleTables">AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp</p>
+                        <p class="styleTables">Mobile</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables">EPUB</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XPS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-heading-format: Format for glossary headings.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p> </p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleEditor--TestCases.flsnp" />
+        <hr />
+        <p class="bold" style="font-size: 16pt;">div.GlossaryPageTerm (Font group is for Print outputs only)</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>column-break-after:&#160;avoid</li>
+            <li>display: block</li>
+            <li>font-size:&#160;14pt</li>
+            <li>font-weight:&#160;bold</li>
+            <li>mc-expandable:&#160;true</li>
+            <li>page-break-after:&#160;avoid</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');width: 100%;margin-left: 0;margin-right: auto;caption-side: top;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col style="width: 22px;" class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <col class="TableStyle-Basic-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Basic-Head-Header1">
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="bold" style="text-align: left;">(root)</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XML Editor</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">HTML5</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/</p>
+                        <p class="styleTables">AIR</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp</p>
+                        <p class="styleTables">Mobile</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML</p>
+                        <p class="styleTables">Help</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Word</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">Frame</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1">
+                        <p class="styleTables">EPUB</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">PDF</p>
+                    </th>
+                    <th class="TableStyle-Basic-HeadD-Column1-Header1">
+                        <p class="styleTables" style="text-align: center;">XPS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Basic-Body-Body1">
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">mc-expandable: Show glossary entries as expandable.</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td style="text-align: center;" class="TableStyle-Basic-BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Basic-BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="TableStyle-Basic-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p> </p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleEditor--TestCases.flsnp" />
+        <hr />
+        <p class="bold" style="font-size: 16pt;">a.GlossaryPageTerm (for Web outputs only)</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:</p>
+        <ul class="checkbox">
+            <li>mc-disable-glossary-terms: true</li>
+        </ul>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p> </p>
+        <h3>Glossary Proxy Style Guide</h3>
+        <p class="bold">Print output:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--Styles--Print.png" style="mc-thumbnail: popup;" />
+        </p>
+        <p class="bold">Web output types:</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Glossary/Glossary--Styles--Web.png" style="mc-thumbnail: popup;" />
+        </p>
+    </body>
+</html>

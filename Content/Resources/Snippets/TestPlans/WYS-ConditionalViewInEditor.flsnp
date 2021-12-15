@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="372" MadCap:lastWidth="1413">
+    <body>
+        <h4>Conditional View in the Editor</h4>
+        <p>When editing a file in the XML Editor (topics, snippets, master pages), you can click <img src="../../Images/TestPlans/Buttons/Button---ConditionView.png" alt="" title="" />  in the local toolbar to open the <span class="UI">Conditional Text</span> dialog and include and exclude conditions on that file. &#160;When Conditional View is in place, the icon will have a blue border around it <img src="../../Images/TestPlans/Buttons/Button---ConditionViewSelected.png" alt="" title="" />. &#160;This setting does not affect the output. The setting only applies to the file in focus and is reset when the file is closed. If you associate conditions with a file while editing and then open the Send Files For Review Wizard, those settings are preserved. Therefore, you can quickly send the file to a reviewer and that person will initially only see content with conditions that you have included. </p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Test feature in both Print and Web layout</li>
+                <li>All elements will still show in split view</li>
+                <li>Will not affect the output</li>
+                <li>Test in a project with:<ul><li><p>Many Condition Sets</p></li></ul><ul><li><p>Many Condition Tags</p></li></ul><ul><li><p>Condition sets in subfolders</p></li></ul></li>
+                <li>Target list is accurate<ul><li>Targets in subfolders<br /></li></ul></li>
+                <li>Applies only to file in use<ul><li>Resets when file is closed</li></ul></li>
+                <li>Test complex expressions</li>
+            </ul>
+        </div>
+    </body>
+</html>

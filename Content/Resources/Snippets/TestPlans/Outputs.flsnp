@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="254" MadCap:lastWidth="754">
+    <body>
+        <ul MadCap:conditions="TargetEditor.AllOutputTypes" class="checkbox">
+            <li MadCap:conditions="TargetEditor.Web">HTML&#160;5 / WebHelp 2</li>
+            <li MadCap:conditions="TargetEditor.Web">WebHelp</li>
+            <li MadCap:conditions="TargetEditor.Web">WebHelp Plus</li>
+            <li MadCap:conditions="TargetEditor.Web">WebHelp Mobile</li>
+            <li MadCap:conditions="TargetEditor.Web">WebHelp Air</li>
+            <li MadCap:conditions="TargetEditor.Web">DotNet</li>
+            <li MadCap:conditions="TargetEditor.Web">CHM</li>
+            <li MadCap:conditions="TargetEditor.Web">Eclipse Help</li>
+            <li MadCap:conditions="TargetEditor.Print">PDF</li>
+            <li MadCap:conditions="TargetEditor.Print">XPS</li>
+            <li MadCap:conditions="TargetEditor.Print">EPUB</li>
+            <li MadCap:conditions="TargetEditor.Print">Word</li>
+            <li MadCap:conditions="TargetEditor.Print">Frame</li>
+            <li MadCap:conditions="TargetEditor.Print">XHTML</li>
+            <li MadCap:conditions="TargetEditor.DITA">DITA</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3644" MadCap:lastWidth="957" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Style Window - UI</h2>
+        <h3>Opening the Style Window</h3>
+        <ul class="checkbox">
+            <li>Keyboard:&#160;Press <span class="KeyboardShortcut">F12</span></li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;Style Window</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Home | Style Window</span></li>
+        </ul>
+        <h3>Style Window - UI&#160;Test Cases</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Styles Window/UI--StylesWindow.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <p class="bold">Current Style and Local Formatting</p>
+        <ul class="checkbox">
+            <li><span class="bold">(Current Style field):&#160;</span>Displays the style of the current element.</li>
+            <li><span class="bold">Edit Style: </span>Opens  the <span class="UI">Stylesheet Editor</span> so that user can modify the property values for the selected style class. <ul class="checkbox"><li>If a Master Stylesheet is set for the Primary Target, that stylesheet opens.</li><li>If no Master Stylesheet is set for the Primary Target, but a Master Stylesheet is set for the project, the project Master Stylesheet opens.</li><li>If no Master Stylesheet is used by the Primary Target or the project, the stylesheet associated with the current topic opens.</li><li>If no Master Stylesheet is used by the Primary Target or the project, and the current topic is not associated with any stylesheet, you should be prompted that "The topic is not associated with a stylesheet. Do you want to select one?"<ul class="checkbox"><li>Click "Yes"&#160;to invoke the <span class="UI">Stylesheet Links</span> dialog which lets you link the topic to a stylesheet.</li><li>Click "No"&#160;to simply close the dialog.</li></ul></li></ul></li>
+            <li><span class="bold">Create Style…: </span>Opens the <span class="UI">Create Style</span> dialog so that you can create a new style class. The new style class will be based upon the same settings as the current style class, although you can adjust these settings as needed.<ul class="checkbox"><li>If a Master Stylesheet is set for the Primary Target, the class is written to that stylesheet.</li><li>If no Master Stylesheet is set for the Primary Target, but a Master Stylesheet is set for the project, the class is written to the project's Master Stylesheet.</li><li>If no Master Stylesheet is used by the Primary Target or the project, the class is written to the stylesheet associated with the current topic.</li><li>If no Master Stylesheet is used by the Primary Target or the project, and the current topic is not associated with any stylesheet, you should be prompted that "The topic is not associated with a stylesheet. Do you want to select one?"<ul class="checkbox"><li>Click "Yes"&#160;to invoke the <span class="UI">Stylesheet Links</span> dialog which lets you link the topic to a stylesheet.</li><li>Click "No"&#160;to simply close the dialog.</li></ul></li></ul></li>
+            <li><span class="bold">(Local formatting field): </span>Displays any local formatting applied to the current element.</li>
+        </ul>
+        <p><span class="bold">Available Styles:&#160;</span>Select an "available style" to apply it to the selected element.</p>
+        <ul class="checkbox">
+            <li><span class="bold">(reset class):&#160;</span>Resets the element to the basic style (drops the class).</li>
+            <li><span class="bold">(generic style classes): </span>Generic styles should appear at the top of the Available Styles list. Generic Styles can be identified as they display only a class name without any style (for example ".bold" as opposed to "p.bold")</li>
+            <li><span class="bold">(other style classes): </span>Other styles which are available for the selected element are listed below.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Test cases</p>
+        <ul class="checkbox">
+            <li>If Available Styles list is long, vertical scroll bar appears and is functional.</li>
+            <li>Available Styles should only display style classes from the associated stylesheets and any stylesheets linked to associated stylesheets.<ul class="checkbox"><li>If a Master Stylesheet is set for the Primary Target, the Available Styles listed should come from the target's Master Stylesheet as well as any stylesheets to which that stylesheet links.</li><li>If no Master Stylesheet is set for the Primary Target, but a Master Stylesheet is set for the project, the Available Styles listed should come from the project's Master Stylesheet as well as any stylesheets to which that stylesheet links.</li><li>If no Master Stylesheet is used by the Primary Target or the project, the Available Styles listed should come from the all stylesheets associated with the current topic as well as any stylesheets to which that stylesheet links.</li><li>If no Master Stylesheet is used by the Primary Target or the project, and the current topic is not associated with any stylesheet, only parent styles should display in the Available Styles (no style classes).</li></ul></li>
+        </ul>
+        <h3>Stylesheet Links dialog</h3>
+        <h4>Stylesheet Links dialog - Opening the dialog</h4>
+        <p>This dialog is only accessible in a Flare project that does not make use of a Master Stylesheet at the Project or Target level. To open the dialog:</p>
+        <ul class="checkbox">
+            <li>Attempt to edit or create a style from a topic that does not contain a stylesheet link. When prompted to select one, click "Yes"</li>
+            <li>Tool Strip interface:&#160;Open any topic and then <span class="MenuItem">!Tools |&#160;Stylesheet Links…</span></li>
+            <li>Ribbon interface:&#160;Open any topic and then <span class="RibbonItem">!Home |&#160;Stylesheet Links</span></li>
+        </ul>
+        <p>&#160;</p>
+        <p>Attempting to open this dialog in a project that makes use of a Master Stylesheet will prompt: "Local topic stylesheets are disabled since a master style sheet is being used at the project and/or target level"</p>
+        <ul class="checkbox">
+            <li>Verify this prompt displays when using a Master Stylesheet at the project level</li>
+            <li>Verify this prompt displays when using a Master Stylesheet at the target level (no project master stylesheet and the primary target uses a master stylesheet)</li>
+        </ul>
+        <h4>Stylesheet Links dialog - UI Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Styles &amp; Stylesheets/Dialog--StylesheetLinks.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Current Links:</span> All columns should be sortable and not resizable.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Current Links: </span>Displays all stylesheets to which the topic currently links.<ul style="list-style-type: square;"><li>Verify that associated Table Styles do not appear.</li></ul></li>
+                    <li><span class="bold">Path: </span>Displays the absolute path of the linked stylesheet.</li>
+                </ul>
+            </li>
+            <li><span class="bold">[&lt;&lt;]:</span> Associates the selected stylesheets on the right with the topic.</li>
+            <li>
+                <p><span class="bold">[&gt;&gt;]:</span> Removes the selected stylesheets on the left from being associated with the topic.</p>
+            </li>
+            <li>
+                <p><span class="bold">Stylesheets:</span> All columns should be sortable and not resizable.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Stylesheets: </span>Displays all stylesheets in the project so that you can associate them with the topic<ul style="list-style-type: square;"><li>Verify that associated Table Styles do not appear.</li></ul></li>
+                    <li><span class="bold">Path: </span>Displays the absolute path of each stylesheet.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Open File:&#160;</span>Opens the selected stylesheet in the "Current Links"&#160;side in the <span class="UI">Stylesheet Editor</span>. </li>
+            <li><span class="bold">Add…:&#160;</span>Invokes the <span class="UI">Add New Stylesheet</span> dialog which lets you add a stylesheet to the project. (See bug 77974; this should invoke the Add File dialog)</li>
+            <li><span class="bold">OK: </span>Closes the dialog and applies the stylesheet link changes to the topic.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not apply any changes to the topic.</li>
+        </ul>
+        <h3>Create Style dialog - UI Test Cases</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp" />
+        <h3>Style Picker</h3>
+        <p>CRTL+SHIFT+H: opens the Style Picker in the XML editor.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/StylePicker.png" style="width: 145px;height: 170px;" />
+        </p>
+    </body>
+</html>

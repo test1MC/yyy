@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1638" MadCap:lastWidth="1427">
+    <head>
+        <link href="../../TableStyles/Matrix.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Install Uninstall - Quick Checklist</h2>
+        <p>All steps must be done. <u>It is your responsibility</u> that each item is done before release. This is the last checklist before release and therefor our last chance to verify all the critical "gotchas" of past releases are verified. If you have a question on any step, ask the QA&#160;lead on the project or the QA manager.</p>
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li><span class="bold">MCVERSION </span>- version.mcversion matches !Help&#160;|&#160;About</li>
+            <li>Compare !Help |&#160;About Version &amp; Date/Time for Full and Patch installs. <span class="bold">THEY&#160;MUST&#160;MATCH</span><ul style="list-style-type: square;"><li MadCap:conditions="Product.Mimic">Verify MovieSync's version is correct. It will be a different number then Mimic.</li></ul></li>
+            <li><span class="bold">Toolbar </span>- Correct version is displayed</li>
+            <li><span class="bold">Hard Expire </span>- Pushed out / Removed (THIS&#160;IS&#160;NOT&#160;THE&#160;TRIAL&#160;COUNTDOWN)</li>
+            <li><span class="bold">Trial</span> - 30 day trial for all new versions and patches<ul><li>45 Day trial for Beta</li></ul></li>
+            <li><span class="bold">Help</span>:<ul style="list-style-type: square;"><li><span class="bold">Latest Help</span>- The help has been updated&#160;(ask Paul for specifics on verifying)</li><li><span class="bold">ALL&#160;LINKS</span>- Test EVERY&#160;link on the !Help menu</li><li><span class="bold">Search</span>- Search with and without a wildcard<ul style="list-style-type: square;"><li><span class="bold">Search Filters</span>- Use the search filters after each search</li></ul></li><li>Verify links to the PDFs at the bottom of each topic go to the correct version</li></ul></li>
+            <li><span class="bold">Start Page</span> - Verify all contents and links<ul style="list-style-type: square;"><li>Verify with QA&#160;Lead lower section has been updated</li><li>Verify lower section links are correct (click on the Paragraphs)</li></ul></li>
+            <li><span class="bold">Push Text </span>- (Patches Only) Verify its contents; You may have to use the <span class="bold"> 9.9.9.1</span>MCVERSION&#160;trick</li>
+            <li><span class="bold">DLL&#160;versions </span>- Correct version sequence (For patches, check PatchBuildLog.Flare.txt in the build folder for the list of updated dlls)<ul style="list-style-type: square;"><li><span class="bold">B3.IisKit.dl</span>l and <span class="bold">B3.QrCodeEncoderKit.dll</span> need to be manually updated by Vince or Rick. Let them know.</li></ul></li>
+            <li><span class="bold">DLL&#160;Assembly Information</span> - Correct Company &amp;&#160;correct Copyright (Legal Trademarks)</li>
+            <li MadCap:conditions="Product.Flare"><span class="bold">WebHelp DLLs </span>- \Flare.app\Resources\WebHelpPlus\Service\bin\</li>
+            <li><span class="bold">EULA </span>- On disk and during Install. Make sure both have the correct properties set (!File | Info tab | Properties for Word 2010 and Click the office button | Prepare | Properties for Word 2007). If in beta, make sure the "Pre-release EULA"&#160;is used.</li>
+            <li><span class="bold">UNC/Network </span>- Test projects on the network</li>
+            <li><span class="bold">SQL&#160;Compact </span>- Verify we <span class="bold">NO&#160;LONGER</span> prompt to install/upgrade it <ul><li>We install SQLite from&#160;V10 release onward. No prompt, done behind the scenes. </li></ul></li>
+            <li MadCap:conditions="Product.Flare"><span class="bold">Contributor Link </span>- Redstrib is correct MSI. It should point to http://www.madcapsoftware.com/downloads/contributor which will redirect to the latest release of Contributor.</li>
+            <li><span class="bold">No Net Connection </span>- Test launching / running the application on a PC&#160;with no network access</li>
+            <li><span class="bold">All Outputs </span>-&#160;Generate all of them<ul><li>Command line build ALL&#160;of them</li></ul></li>
+            <li><span class="bold">All&#160;Save As </span>- !File |&#160;Save As (to); test all options (Open a topic and do this)</li>
+            <li><b>Uninstall Version Number</b> Add/Remove programs icon is correct and the correct version number is displayed. (Ex:&#160;10.2.1 patch should still be listed as 10.0.0 in Add/Remove programs)<ul class="checkbox"><li><span class="bold">Uninstall Patch</span> - Uninstall the patch and verify correct files have been restored.</li></ul></li>
+            <li><span class="bold">Search Help for 'Missing' </span>- This will help spot any "Missing or Bad Snippet" help topics</li>
+            <li><span class="bold">Verify Certificate </span>- Right-Click |&#160;Properties of the .msi </li>
+            <li><span class="bold">Verify Signed Install Package </span>- Upload to rnd.madcapsoftware.com and download. Should <span class="bold">NOT&#160;</span>say Unknown publisher when running the install after Download.</li>
+            <li><span class="bold">Check .MSI information </span>- Right-Click .MSI |&#160;Properties |&#160;Details (or summary if you are on xp)</li>
+            <li><span class="bold">Using the same key</span> on more than one install (Perpetual). This is to verify key limitation.<ul><li>Test again with 1 user floating on 2 active sessions</li></ul></li>
+            <li><span class="bold">Mixed-Case Email</span> - Make sure to activate using a mixed case email. (ie Bob.Man@Email.com)<ul><li>Close application and re-launch.&#160;Should NOT&#160;be prompted to enter key again.</li></ul></li>
+            <li><span class="bold">Verify Help Movies Work</span> (Verify the paths are correct)</li>
+            <li><span class="bold">Verify Translation string / TOC&#160;Issue</span> - Open a TOC&#160;in Flare, click the nodes and make sure icons and text never overlap.</li>
+            <li><b>Verify java project</b> - Open the java script project, generate everything, view on all browsers</li>
+        </ul>
+        <h3 style="page-break-before: always;">Administration Tasks</h3>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Download Pages </span>-&#160;From Bill</li>
+            <li><span class="bold">Sign up Pages </span>- From Bill</li>
+            <li><span class="bold">Purchase Links </span>- From within the app;&#160;Get coupon from Bill</li>
+            <li><span class="bold">Version information</span> - Update it in the QATestPlans project</li>
+            <li>Copy final Build - \\fs1\QA\Madcap releases\</li>
+            <li>Add 'REM' lines to dashboard (to turn it off)</li>
+            <li>Virus Scan - Run virus scan<ul style="list-style-type: square;"><li>Copy clean results to \\dc2\qa\madcap releases\!VirusScans\</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Install Matrix</h3>
+        <p>This needs to be completed before we ship any product.</p>
+        <p>&#160;</p>
+        <table style="width: 800px;mc-table-style: url('../../TableStyles/Matrix.css');" class="TableStyle-Matrix" cellspacing="0">
+            <col class="Column-Column1">
+            </col>
+            <col class="Column-Column2">
+            </col>
+            <col class="Column-Column3">
+            </col>
+            <col class="Column-Column2">
+            </col>
+            <col class="Column-Column3">
+            </col>
+            <col class="Column-Column2">
+            </col>
+            <col class="Column-Column3">
+            </col>
+            <col class="Column-Column2">
+            </col>
+            <col class="Column-Column3">
+            </col>
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">&#160;</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">US</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">German</th>
+                    <th class="HeadE-Column2-Header1" colspan="2">Japanese</th>
+                    <th class="HeadD-Column2-Header1" colspan="2">Arabic</th>
+                </tr>
+                <tr class="Head-Header2">
+                    <th class="HeadE-Column1-Header2">&#160;</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadE-Column3-Header2">x64</th>
+                    <th class="HeadE-Column2-Header2">x86</th>
+                    <th class="HeadD-Column3-Header2">x64</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Windows 8 &amp;&#160;8.1</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Windows 7</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Windows Vista</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Windows XP</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Win Server 2012</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Win Server 2008 R2</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyE-Column3-Body2">&#160;</td>
+                    <td class="BodyE-Column2-Body2">&#160;</td>
+                    <td class="BodyD-Column3-Body2">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Win Server 2008</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyE-Column3-Body1">&#160;</td>
+                    <td class="BodyE-Column2-Body1">&#160;</td>
+                    <td class="BodyD-Column3-Body1">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">Win Server 2003</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyB-Column3-Body2">&#160;</td>
+                    <td class="BodyB-Column2-Body2">&#160;</td>
+                    <td class="BodyA-Column3-Body2">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>* Should get an error on install stating that you cannot install on a Windows 2000 PC (Add the actual message here).</p>
+        <p>&#160;</p>
+        <h3>Checklist after we "Go Live" (for Bill)</h3>
+        <p>Verify with Bill when he is ready for us to run the following tests. Typically these become available all throughout the "go live" day.</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;">
+            <li><a href="http://www.madcapsoftware.com/support/">http://www.madcapsoftware.com/support/</a> &gt; Getting Started Guide dropdown</li>
+            <li><a href="http://www.madcapsoftware.com/support/">http://www.madcapsoftware.com/support/</a> &gt; System Requirements dropdown</li>
+            <li><a href="https://www.madcapsoftware.com/">https://www.madcapsoftware.com</a> &gt; Main Menu &gt; Support &gt; Web Help &gt; [product]</li>
+            <li><a href="https://www.madcapsoftware.com/support/contact.aspx">https://www.madcapsoftware.com/support/contact.aspx</a> &gt; Version dropdown</li>
+            <li><a href="https://www.madcapsoftware.com/bugs/submit.aspx">https://www.madcapsoftware.com/bugs/submit.aspx</a> &gt; Product Version dropdown</li>
+            <li><a href="http://www.madcapsoftware.com/store/c-9-software.aspx">http://www.madcapsoftware.com/store/c-9-software.aspx</a> &gt; Product Version</li>
+            <li>http://www.madcapsoftware.com/products/[product]/overview.aspx &gt; Header Banner &amp; What’s New</li>
+            <li><a href="https://www.madcapsoftware.com/downloads">https://www.madcapsoftware.com/downloads</a> &gt; Free Trial Signup &gt; Check email download link</li>
+            <li>The download landing page from the Free Trial email link.</li>
+            <li><a href="http://www.madcapsoftware.com/downloads/redistributables.aspx">http://www.madcapsoftware.com/downloads/redistributables.aspx</a>  (If applicable)</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

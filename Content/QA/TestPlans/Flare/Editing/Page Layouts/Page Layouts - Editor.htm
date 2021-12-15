@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="10351" MadCap:lastWidth="2512" MadCap:conditionTagExpression="include[FlareFileTypes.!ContentFile or FlareFileTypes.PageLayout] exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Page Layouts - Editor</h2>
+        <h3>Opening a Page Layout File</h3>
+        <p class="bold">Any Page Layout file:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ContentExplorer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--FileList.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <p>&#160;</p>
+        <p class="bold">The Page Layout file associated with a topic:</p>
+        <p>Open a topic in Print Layout mode and:</p>
+        <ul class="checkbox">
+            <li>Select <span class="MenuItem">Edit Page Layout Document</span> from the XML Editor's "Layout" pull down menu in the local toolbar</li>
+            <li>Right-click anywhere in the margin area of the page and select <span class="MenuItem">Edit Page Layout Document</span></li>
+            <li><span class="MenuItem">!View | Layout Mode | Edit Page Layout Document</span>
+            </li>
+            <li>Locate the topic in the TOC. Select that TOC node and view its Properties. In the Printed Output tab, click the "Open File" button next to the specified Page Layout file for the chapter or page layout break.</li>
+        </ul>
+        <p class="bold">The Master Page Layout:</p>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">CTRL</span>-<span class="KeyboardShortcut">Shift</span>-<span class="KeyboardShortcut">F8</span></li>
+            <li><span class="UI">Target Editor</span>: In the Basic tab of the <span class="UI">Target Editor</span>, click the "Edit"&#160;button next to Master Page Layout</li>
+            <li><span class="UI">Project Properties</span> dialog:&#160;<span class="RibbonItem">!Project | Project Properties</span> to open the dialog, then in the Defaults tab, click the "Edit" button next to Master Page Layout</li>
+            <li>Tool Strip interface:<ul class="checkbox"><li>Click "Open Master Page Layout" in the <span class="UI">Project Toolbar</span></li><li><span class="MenuItem">!View | Open Master Page Layout</span></li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li><span class="RibbonItem">!Project |&#160;Master Page Layout</span></li></ul></li>
+        </ul>
+        <h3>Editing a Page Layout File</h3>
+        <h4>Local Toolbar:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---LocalToolbar.png" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---FileProperties.png" /> (File Properties): </span>Opens the <span class="UI">Properties</span> dialog for the current Page Layout file.</li>
+            <li>
+                <p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---PageProperties.png" alt="" title="" /> (Page Properties…): </span>Invokes the Page Layout "Page" drop-down menu:</p>
+                <hr />
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---PageMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 200pt;">
+                    <li><span class="bold">Copy Page:</span> Places a copy of the open page on the clipboard so that you can paste it, thus creating a copy of the page.</li>
+                    <li><span class="bold">Paste Page:</span> Creates a copy of a page, based on the most recent page that you have added to the clipboard (using the Copy option).</li>
+                    <li><span class="bold">Duplicate Page:</span> Creates a duplicate of the open page. Copying a page accomplishes the same results as duplicating a page. The only difference is that duplicating a page requires one less step.</li>
+                    <li><span class="bold">Remove Page:</span> Removes the open page from the page layout.</li>
+                    <li><span class="bold">Add Page: </span>Invokes a sub-menu which lets you select a specific page type to add to the page layout file.</li>
+                    <li><span class="bold">Mirror Page:</span> Creates a new page, mirroring the settings of the open page</li>
+                    <li><span class="bold">Page Properties:</span> Opens the <span class="UI">Page Properties</span> dialog for the open page</li>
+                </ul>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <hr />
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> (Run Properties Dialog for this item): </span>Opens the <span class="UI">Frame Properties</span> dialog for the selected frame.</li>
+            <li>
+                <p><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---NewFrameMode.png" alt="" title="" /> (New Frame Mode): </span>Invokes the Page Layout "New Frame" drop-down menu:</p>
+                <hr />
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---NewFrameMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 200pt;">
+                    <li><span class="bold">New Frame Mode:</span> The first time you select this option, it will allow you to draw a body frame. The second time you select this option, it will allow you to draw a header frame. The third time, it will allow you to draw a footer frame. And the fourth time, it will allow you to draw a decoration frame.</li>
+                    <li><span class="bold">New Header Frame Mode:</span> This option allows you to draw a header frame</li>
+                    <li><span class="bold">New Footer Frame Mode:</span> This option allows you to draw a footer frame.</li>
+                    <li><span class="bold">New Body Frame Mode:</span> This option allows you to draw a body frame.</li>
+                    <li><span class="bold">New Decoration Frame Mode:</span> This option allows you to draw a decoration frame.</li>
+                    <li><span class="bold">New Image Frame Mode:</span> This option opens the <span class="UI">Insert Picture</span> dialog and lets you insert a decoration frame with the selected image set as the background.</li>
+                </ul>
+                <p>&#160;</p>
+                <p>&#160;</p>
+                <hr />
+            </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---SelectMode.png" alt="" title="" /> (Select Mode): </span>Enables "Select" mode so that you can click on frames that appear in the editor.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---SnapFrames.png" alt="" title="" /> (Snap frames to other display positions):&#160;</span>If this button is enabled, moving and resizing frames will snap to other items on the page (center and edges of other frames as well as the center and edges of the page itself and its margins).</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---EditFrameText.png" /> (Edit Text): </span>Lets you add or modify text in the frame. This button is enabled only if you first select a header, footer, or decoration frame.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Button---SelectFrameText.png" /> (Pick Content Template): </span>Opens the <span class="UI">Select Frame Text</span> dialog, which lets you choose an existing frame text snippet for a frame.</li>
+            <li>
+                <p><span class="bold">Layout: </span>Invokes the Page Layout "Layout" drop-down menu:</p>
+                <hr />
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---LayoutMenu.png" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 150pt;">
+                    <li><span class="bold">Rotate: </span>Opens another submenu with options for rotating frames.<ul style="list-style-type: circle;"><li>Rotate Clockwise: Turns the frame 1 degree clockwise.</li><li>Rotate 45 Clockwise: Turns the frame 45 degrees clockwise.</li><li>Rotate 90 Clockwise: Turns the frame 90 degrees clockwise.</li><li>Rotate Counter Clockwise: Turns the frame 1 degree counter clockwise.</li><li>Rotate 45 Counter Clockwise: Turns the frame 45 degrees counter clockwise.</li><li>Rotate 90 Counter Clockwise: Turns the frame 90 degrees counter clockwise.</li><li>Reset Rotation: Returns the frame to its original setting before it was rotated.</li></ul></li>
+                    <li><span class="bold">Depth:</span> Opens another submenu with options for floating and sinking frames<ul style="list-style-type: circle;"><li>Float: Floats the selected frame, bringing it forward one level if at least one other frame overlaps it (above it).</li><li>Sink: Sinks the selected frame, sending it backward one level if at least one other frame overlaps it (below it).</li><li>Sink to Bottom: Sinks the selected frame, sending it backward to the bottom level if at least one other frame overlaps it (below it).</li><li>Float to Top: Floats the selected frame, bringing it forward to the top level if at least one other frame overlaps it (above it).</li></ul></li>
+                    <li><span class="bold">Align on Canvas:</span> Opens another submenu with options for aligning the frames on the page canvas.<ul style="list-style-type: circle;"><li>Center on Canvas: Centers the selected frame(s) both vertically and horizontally on the canvas.</li><li>Vertically Center on Canvas: Centers the selected frame(s) vertically on the canvas.</li><li>Horizontally Center on Canvas: Centers the selected frame(s) horizontally on the canvas.</li></ul></li>
+                    <li><span class="bold">Make Same:</span> Opens another submenu with options for aligning frames on the page in relation to each other. All positioning and resizing options below are based on the first frame that you select.<ul style="list-style-type: circle;"><li>Same Left: Horizontally aligns the frames so the left border is at the same location.</li><li>Same Right: Horizontally aligns the frames so the right border is at the same location.</li><li>Same Top: Vertically aligns the frames so the top border is at the same location.</li><li>Same Bottom: Vertically aligns the frames so the bottom border is at the same location.</li><li>Same Width: Resizes the width of the selected frames so that they are all the same. </li><li>Same Height: Resizes the height of the selected frames so that they are all the same. </li><li>Same Size: Resizes the width and height of the selected frames so that they are all the same. </li><li>Same Center: Vertically aligns the selected frames so that the center of each is at the same location.</li><li>Same Middle: Horizontally aligns the selected frames so that the middle of each is at the same location.</li></ul></li>
+                    <li><span class="bold">Vertically Align:</span> Opens another submenu with options to align the text in a frame vertically.<ul style="list-style-type: circle;"><li>Top: Aligns the text horizontally along the top edge of the frame.</li><li>Middle: Aligns the text horizontally at the middle point of the frame.</li><li>Bottom: Aligns the text horizontally along the bottom edge of the frame.</li></ul></li>
+                    <li><span class="bold">Align:</span> Opens another submenu with options to align the text in a frame horizontally.<ul style="list-style-type: circle;"><li>Left: Aligns the text vertically along the left edge of the frame.</li><li>Center: Aligns the text vertically at the center point of the frame.</li><li>Right: Aligns the text vertically along the right edge of the frame.</li><li>Justify: Spaces the text in the frame so that both the left and right sides are aligned.</li><li>Default: Resets the alignment of the text in the frame to the default (inherited) setting.</li></ul></li>
+                </ul>
+                <hr />
+            </li>
+            <li>
+                <p><span class="bold">View:&#160;</span>Invokes the Page Layout "View" drop-down menu:</p>
+                <hr />
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---ViewMenu.png" alt="" title="" class="left" />
+                </p>
+                <ul class="checkbox" style="margin-left: 170pt;">
+                    <li><span class="bold">Page Overview Bar: </span>Lets you show or hide the Page Overview bar on the right side of the <span class="UI">Page Layout Editor</span>.</li>
+                    <li><span class="bold">Anchor Lines: </span>Lets you show or hide anchor lines when an anchored frame is selected. Anchor lines will only display for the currently selected frame.</li>
+                    <li><span class="bold">Bleed: </span>Lets you show or hide the bleed area around the outside of the page.</li>
+                    <li><span class="bold">Labels: </span>Lets you show or hide page layout frame labels ("header," "body,"&#160;"footer,"&#160;or "decoration" that appear in the lower-right corner of the frames).</li>
+                    <li><span class="bold">Margin: </span>Lets you show or hide the page margins. You must set margins on the page to see these lines.</li>
+                    <li><span class="bold">Padding: </span>Lets you show or hide page layout frame padding. You must set padding values on a frame in order to see these lines.</li>
+                    <li><span class="bold">Word Overlay: </span>Displays the page layout in a way that represents how Word output will interpret the layout. Word output will not, for example, allow unique margins for the page frames. So this view will display all frames with the same margins.</li>
+                    <li><span class="bold">Hide Vertical Ruler: </span>Lets you show or hide the vertical ruler along the left side of the <span class="UI">Page Layout Editor</span>.</li>
+                    <li><span class="bold">Hide Horizontal Ruler: </span>Lets you show or hide the horizontal ruler along the top side of the <span class="UI">Page Layout Editor</span>.</li>
+                    <li><span class="bold">Scale to 100%: </span>Changes the <span class="UI">Page Layout Editor</span> view to show the page at 100%.</li>
+                    <li><span class="bold">Fit Width: </span>Changes the <span class="UI">Page Layout Editor</span> view to fit the width of the page.</li>
+                    <li><span class="bold">Fit Height: </span>Changes the <span class="UI">Page Layout Editor</span> view to fit the height of the page.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Overview Bar:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---OverviewBar.png" class="left" />
+        </p>
+        <div style="margin-left: 80pt;">
+            <ul class="checkbox">
+                <li style="margin-left: 40pt;">This bar on the right side of the editor displays a small rectangle that represents each page in the layout.</li>
+                <li style="margin-left: 40pt;">The circled letter which appears in the center of each rectangle corresponds to the page Type ('L' for left, 'R' for right, 'F' for first, etc)</li>
+                <li style="margin-left: 40pt;">If you hover over a rectangle, a popup displays the Name of the page and the page Type. </li>
+                <li style="margin-left: 40pt;">If you left-click a rectangle, that page opens in the editor so that you can modify it. </li>
+                <li style="margin-left: 40pt;">Right-clicking a rectangle invokes the Overview Bar context menu.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p class="bold" style="margin-left: 40pt;">&#160;</p>
+        <p>&#160;</p>
+        <p class="bold">Overview Bar Context Menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/PageLayoutEditor---OverviewRightClickMenu.png" class="left" />
+        </p>
+        <ul class="checkbox" style="margin-left: 180pt;">
+            <li><span class="bold">Copy Page:</span> Copies the selected page to the clipboard</li>
+            <li><span class="bold">Paste Page:</span> Pastes the page from the clipboard</li>
+            <li><span class="bold">Duplicate Page:</span>Creates a new page which is an exact duplicate of the selected page.</li>
+            <li><span class="bold">Remove Page:</span> Removes the selected page from the page layout file.</li>
+            <li><span class="bold">Add Page: </span>Creates a new page with no frames. The new page will be the same page type as the currently selected page.</li>
+            <li><span class="bold">Mirror Page:</span>Creates a new page which vertically mirrors the selected page. The new page should contain a set of frames equivalent to the selected page but with mirrored margins, padding, etc. The new page type will be the same as the selected unless the page type is "Left" or "Right" in which case, a "Left" page will produce a "Right"&#160;page and vice versa.</li>
+            <li><span class="bold">Page Properties: </span>Opens the <span class="UI">Page Properties</span> dialog</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3>Editing Page Layout Pages</h3>
+        <h4>Page Properties</h4>
+        <p class="bold">Opening Page Properties for the page currently open in the Page Layout Editor:</p>
+        <ul class="checkbox">
+            <li>Select <span class="MenuItem">Page Properties…</span> from the Page drop-down menu in the <span class="UI">Page Layout Editor</span>'s local toolbar</li>
+            <li>Right-click anywhere in the <span class="UI">Page Layout Editor</span> and select <span class="MenuItem">Page Properties…</span></li>
+            <li>Double-click anywhere in the <span class="UI">Page Layout Editor</span> that is not inside a frame</li>
+        </ul>
+        <p class="bold">Opening Page Properties for another page:</p>
+        <ul class="checkbox">
+            <li>Right-click on the specific page in the Overview Bar and select <span class="MenuItem">Page Properties…</span></li>
+        </ul>
+        <h5>Page Properties dialog: All Tabs</h5>
+        <ul class="checkbox">
+            <li><span class="bold">Page: </span>This drop-down displays the Page Name for the page which is currently being modified by the dialog. If you click the drop-down, you can switch the dialog to edit another page's properties, or you can select &lt;all&gt; to modify properties for every page within the page layout file. <ul class="checkbox"><li>Verify that when changing from one page to another that you are prompted to save changes.</li><li>Verify that if you elect to save changes by clicking "Yes"&#160;that changes are saved.</li><li>Verify that if you elect not to save changes by clicking "No"&#160;that changes are not saved.</li></ul></li>
+        </ul>
+        <h5>Page Properties dialog: General Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--PageProperties--GeneralTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Page Size:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Page Size: </span>Lets you set standard size for the page (e.g., Letter, Legal) or select (custom) to specify a non-standard width and height.</li>
+                    <li><span class="bold">Custom Width: </span>If you selected "(custom)" from the Page Size field, enter a specific width for the page.</li>
+                    <li><span class="bold">Custom Height: </span>If you selected "(custom)" from the Page Size field, enter a specific height for the page.</li>
+                    <li><span class="bold">Orientation: </span>Lets you set the orientation (portrait or landscape) of the page</li>
+                </ul>
+            </li>
+            <li><span class="bold">Margins:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Left:</span> Enter the length of the left margin for the page.</li>
+                    <li><span class="bold">Right: </span>Enter the length of the right margin for the page.</li>
+                    <li><span class="bold">Top: </span>Enter the length of the top margin for the page.</li>
+                    <li><span class="bold">Bottom: </span>Enter the length of the bottom margin for the page.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Page Name: </span>Lets you provide a name for each page that you create in a layout.</li>
+            <li><span class="bold">Page Type: </span>Lets you assign one of the following types to determine how that page behaves in the output: Normal, First, First Left, First Right, Left, Right, Title, Empty, Empty Left, Empty Right</li>
+        </ul>
+        <h5>Page Properties dialog: Background Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--PageProperties--BackgroundTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Color: </span>
+                <ul class="checkbox">
+                    <li><span class="bold">(Gradient): </span>Lets you set the style of the background color to Solid or a gradient (Top to Bottom, Left to Right, etc)</li>
+                    <li><span class="bold">Fill Start: </span>Sets the background color (if Solid is used) or the start color if a gradient is used</li>
+                    <li><span class="bold">Fill End: </span>Sets the end color if a gradient is used</li>
+                </ul>
+            </li>
+            <li><span class="bold">Image:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Browse: </span>Opens the <span class="UI">Insert Image</span> dialog which lets you browse for an image to use as the background</li>
+                    <li><span class="bold">Repeat: </span>Lets you set a repeat style on the background image.</li>
+                    <li><span class="bold">(Position) X: </span>Lets you set the horizontal image position.</li>
+                    <li><span class="bold">(Position) Y: </span>Lets you set the vertical image position.</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Page Properties dialog: Print Marks Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--PageProperties--PrintMarksTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Bleeds: </span>
+                <ul class="checkbox">
+                    <li><span class="bold">Left: </span>Enter the length of the left bleed for the page.</li>
+                    <li><span class="bold">Right: </span>Enter the length of the right bleed for the page.</li>
+                    <li><span class="bold">Top:&#160;</span>Enter the length of the top bleed for the page.</li>
+                    <li><span class="bold">Bottom: </span>Enter the length of the bottom bleed for the page.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Editing Page Layout Frames</h3>
+        <h4>Frame Properties dialog</h4>
+        <p class="bold">Opening the Frame Properties dialog:</p>
+        <ul class="checkbox">
+            <li>Double-click any Frame</li>
+            <li>Right-click any Frame and select <span class="MenuItem">Properties</span></li>
+            <li>Select a Frame and click the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> Properties button in the Page Layout Editor's local toolbar</li>
+            <li>Select a Frame and press <span class="KeyboardShortcut">F4</span></li>
+            <li>Tool Strip interface:&#160;<ul class="checkbox"><li>Select a Frame and click the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> Properties button in the Standard toolbar</li><li>Select a Frame and <span class="MenuItem">!Edit | Properties</span></li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li>Select a Frame and <span class="RibbonItem">!Home | Properties</span></li></ul></li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Frame Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--FrameTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Size and Position:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Left: </span>Lets you set the horizontal position of the frame (from the left edge).</li>
+                    <li><span class="bold">Top: </span>Lets you set the vertical position of the frame (from the top).</li>
+                    <li><span class="bold">Width: </span>Lets you set the (horizontal) width of the frame.</li>
+                    <li><span class="bold">Height: </span>Lets you set the (vertical) height of the frame.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Padding:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Left: </span>Lets you set the left padding for the frame.</li>
+                    <li><span class="bold">Right: </span>Lets you set the right padding for the frame.</li>
+                    <li><span class="bold">Top: </span>Lets you set the top padding for the frame.</li>
+                    <li><span class="bold">Bottom: </span>Lets you set the bottom padding for the frame.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Anchors:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Right: </span>Lets you set the horizontal position of the frame from the right edge (if the right anchor is enabled).</li>
+                    <li><span class="bold">Bottom: </span>Lets you set the vertical position of the frame from the bottom (if the bottom anchor is enabled).</li>
+                    <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/UI--Anchors.png" style="mc-thumbnail: popup;" MadCap:mediastyle="@media print { max-width: 0.50in; }" />:&#160;</span>Lets you enable/disable anchors for the frame</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Columns Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--ColumnsTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Columns:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Count: </span>Lets you set the number of columns the frame should be divided into</li>
+                    <li><span class="bold">Gap: </span>Sets the width of space that should exist between columns</li>
+                </ul>
+            </li>
+            <li><span class="bold">Column Divider:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Style: </span>Sets the style of the column divider (a vertical line that will appear centered inside the column gap)</li>
+                    <li><span class="bold">Width: </span>Sets the width of the column divider</li>
+                    <li><span class="bold">Margin Top: </span>Sets the top margin of the column divider</li>
+                    <li><span class="bold">Margin Bottom: </span>Sets the bottom margin of the column divider</li>
+                    <li><span class="bold">Color: </span>Sets the color of the column divider</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Background Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--BackgroundTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Color:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">(Gradient): </span>Lets you set the style of the background color to Solid or a gradient (Top to Bottom, Left to Right, etc)</li>
+                    <li><span class="bold">Fill Start: </span>Sets the background color (if Solid is used)&#160;or the start color if a gradient is used</li>
+                    <li><span class="bold">Fill End: </span>Sets the end color if a gradient is used</li>
+                </ul>
+            </li>
+            <li><span class="bold">Image:</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Browse: </span>Opens the Insert Picture dialog which lets you browse for an image to use as the background</li>
+                    <li><span class="bold">Repeat: </span>Lets you set a repeat style on the background image.</li>
+                    <li><span class="bold">(Position) X: </span>Lets you set the horizontal image position.</li>
+                    <li><span class="bold">(Position) Y: </span>Lets you set the vertical image position.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Preview: </span>Displays a preview of the background. </li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Borders Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--BordersTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <p class="bold">Borders</p>
+        <ul class="checkbox">
+            <li><span class="bold">Left: </span>Lets you set the style of the frame's left border.</li>
+            <li><span class="bold">Right: </span>Lets you set the style of the frame's right border.</li>
+            <li><span class="bold">Top: </span>Lets you set the style of the frame's top border.</li>
+            <li><span class="bold">Bottom: </span>Lets you set the style of the frame's bottom border.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" />: </span>Lets you set the style of the all of the frame's borders simultaneously</li>
+        </ul>
+        <p class="bold">Border Radius</p>
+        <ul class="checkbox">
+            <li><span class="bold">Top-Left: </span>Lets you set the shape of the of the frame's top-left border. Default value is 0.</li>
+            <li><span class="bold">Top-Right: </span>Lets you set the shape of the of the frame's top-right border. Default value is 0.</li>
+            <li><span class="bold">Bottom-Right: </span>Lets you set the shape of the of the frame's bottom-right border. Default value is 0.</li>
+            <li><span class="bold">Bottom-Left: </span>Lets you set the shape of the of the frame's bottom-left border. Default value is 0.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---SetMultiple.png" />: </span>Lets you set the shape of the all of the frame's borders simultaneously</li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Flow Tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--FlowTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Flow: </span>Lets you set the flow or the type of the frame.</li>
+        </ul>
+        <h5>Frame Properties dialog:&#160;Alignment Tab (Only present for Header, Footer and Decoration Frames)</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Page Layouts/Dialog--FrameProperties--AlignmentTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Horizontal Alignment: </span>Lets you set the horizontal alignment of text contained in the frame.</li>
+            <li><span class="bold">Vertical Alignment: </span>Lets you set the vertical alignment of text contained in the frame.</li>
+        </ul>
+        <h3>Page Layouts - General Editing Test Cases</h3>
+        <h4>Drag and Drop</h4>
+        <ul class="checkbox">
+            <li>Should be able to click on and drag page layout frames within the <span class="UI">Page Layout Editor</span></li>
+            <li>Should not be able to drag content or project files from the <span class="UI">Content Explorer</span>, <span class="UI">Project Organizer</span> or <span class="UI">File List</span> into the <span class="UI">Page Layout Editor</span></li>
+        </ul>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <ul class="checkbox">
+            <li>Right-click on the frame, select <span class="MenuItem">Cut</span> or <span class="MenuItem">Copy</span> and then <span class="MenuItem">Paste</span></li>
+            <li>Select the frame and <span class="KeyboardShortcut">CTRL</span>-<span class="KeyboardShortcut">X</span> or <span class="KeyboardShortcut">CTRL</span>-<span class="KeyboardShortcut">C</span> and then <span class="KeyboardShortcut">CTRL</span>-<span class="KeyboardShortcut">V</span></li>
+            <li>Tool Strip interface:&#160;<ul class="checkbox"><li>Select the frame and then select <span class="MenuItem">!Edit | Cut</span> or <span class="MenuItem">Copy</span> and then <span class="MenuItem">Paste</span></li><li>Select the element and then <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" /> Cut or <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" /> Copy and then <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" /> Paste using the Standard Toolbar buttons</li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li>Select the frame and then select <span class="RibbonItem">!Home | Cut</span> or <span class="RibbonItem">Copy</span> and then <span class="RibbonItem">Paste</span></li></ul></li>
+        </ul>
+        <h4>Deleting a Frame</h4>
+        <ul class="checkbox">
+            <li>Right-click the frame and select <span class="MenuItem">Delete</span></li>
+            <li>Right-click the frame and select <span class="MenuItem">Cut</span></li>
+            <li>Select the frame and press <span class="KeyboardShortcut">Delete</span></li>
+            <li>Select the frame and press <span class="KeyboardShortcut">CTRL</span>-<span class="KeyboardShortcut">X</span></li>
+            <li>Tool Strip interface:&#160;<ul class="checkbox"><li>Select the frame and <span class="MenuItem">!Edit | Delete</span></li><li>Select the frame and click the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" />Delete button on the Standard Toolbar</li></ul></li>
+            <li>Ribbon interface:<ul class="checkbox"><li>Select the frame and <span class="RibbonItem">!Home |&#160;Delete</span></li></ul></li>
+        </ul>
+        <h4>Tooltips</h4>
+        <ul class="checkbox">
+            <li>Hovering over a frame displays the frame flow ("Body&#160;Frame," "Header Frame," etc).</li>
+        </ul>
+        <h4>Flow Arrows</h4>
+        <ul class="checkbox">
+            <li>Clicking the arrow between multiple body frames will reverse the flow order between the two frames.&#160;&#160;Flow order is FlowIndex="#" in the source code.</li>
+        </ul>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags can be applied to the actual Page Layout file (*.flpgl), however, as of Flare V9, this tag can only be used for the purposes of Advanced Global Project importing. You cannot condition out a Page Layout file.</p>
+        <p>You can apply condition tags to content inside a frame and that must be tested. </p>
+        <ul class="checkbox">
+            <li>Add condition tags to content in a header, footer and decoration frame and verify that this content can be conditioned out from the output.</li>
+        </ul>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Default Page Layout file (one "Normal" page):</p><pre>&lt;PageStyles&gt;</pre><pre>&lt;Page Name="Normal" Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="1in" PaddingRight="1in" PaddingTop="1in" PaddingBottom="1in"&gt;</pre><pre>&lt;Frame Flow="header" Height="0.5in" Right="0" X="0" Y="-0.75in" ColumnCount="1" Width="6.5in"&gt;</pre><pre>&lt;/Frame&gt;</pre><pre>&lt;Frame Flow="footer" Height="0.5in" Right="0" Bottom="0" X="0" Y="9.25in" Width="6.5in"&gt;</pre><pre>&lt;/Frame&gt;</pre><pre>&lt;Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="6.5in" Height="9in"&gt;</pre><pre>&lt;/Frame&gt;</pre><pre>&lt;/Page&gt;</pre><pre>&lt;/PageStyles&gt;</pre><pre xml:space="preserve">&#160;</pre>
+        <p class="bold">"Left" page from the factory template ChapterLetter.flpgl:</p><pre>&lt;Page Name="Left" Width="800" Height="800" Padding="20px" PageSize="Letter" PageType="left" PaddingLeft="1.00in" PaddingRight="1.50in" PaddingTop="1in" PaddingBottom="1in"&gt;</pre><pre xml:space="preserve">  &lt;Frame Flow="header" Anchors="" Right="0in" Bottom="0in" X="0in" Y="-0.75in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" Height="0.5in" VerticalAlign="bottom" TextAlign="left" BorderBottomStyle="solid" BorderBottomWidth="3pt" BorderBottomColor="#000000" Width="6in"&gt;</pre><pre xml:space="preserve">    &lt;Content&gt;</pre><pre xml:space="preserve">      &lt;xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml"&gt;</pre><pre xml:space="preserve">        &lt;xhtml:body&gt;</pre><pre xml:space="preserve">          &lt;xhtml:p xhtml:style="margin-right: 0px;margin-left: 0px;"&gt;Chapter&amp;#160;&lt;MadCap:variable xhtml:name="System.ChapterNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/xhtml:p&gt;</pre><pre xml:space="preserve">        &lt;/xhtml:body&gt;</pre><pre xml:space="preserve">      &lt;/xhtml:html&gt;</pre><pre xml:space="preserve">    &lt;/Content&gt;</pre><pre xml:space="preserve">  &lt;/Frame&gt;</pre><pre xml:space="preserve">  &lt;Frame Flow="body" ColumnCount="1" Anchors="" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" X="0in" Y="0in" Right="0in" Bottom="0in" Width="6in" Height="9in"&gt;</pre><pre xml:space="preserve">  &lt;/Frame&gt;</pre><pre xml:space="preserve">  &lt;Frame Flow="footer" Anchors="" Right="0in" X="0in" Y="9.25in" ColumnCount="1" PaddingLeft="0in" PaddingRight="0in" PaddingTop="0in" PaddingBottom="0in" FlowIndex="1" Height="0.5in" VerticalAlign="middle" TextAlign="center" BorderTopStyle="solid" BorderTopWidth="3pt" BorderTopColor="#000000" Width="6in"&gt;</pre><pre xml:space="preserve">    &lt;Content&gt;</pre><pre xml:space="preserve">      &lt;xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml"&gt;</pre><pre xml:space="preserve">        &lt;xhtml:head&gt;</pre><pre xml:space="preserve">        &lt;/xhtml:head&gt;</pre><pre xml:space="preserve">          &lt;xhtml:body&gt;</pre><pre xml:space="preserve">            &lt;xhtml:p&gt;- &lt;MadCap:variable xhtml:name="System.PageNumber" /&gt; -&lt;/xhtml:p&gt;</pre><pre xml:space="preserve">          &lt;/xhtml:body&gt;</pre><pre xml:space="preserve">        &lt;/xhtml:html&gt;</pre><pre xml:space="preserve">    &lt;/Content&gt;</pre><pre xml:space="preserve">  &lt;/Frame&gt;</pre><pre>&lt;/Page&gt;</pre>
+        <p>&#160;</p>
+    </body>
+</html>

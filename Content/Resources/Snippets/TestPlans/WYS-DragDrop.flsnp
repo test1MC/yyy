@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="384" MadCap:lastWidth="1435">
+    <body>
+        <h4>Drag and Drop</h4>
+        <ul class="checkbox">
+            <li>Select the element in the editor and use Alt +&#160;Shift&#160;+&#160;Up/Down Arrow to move the element above/below other elements.</li>
+            <li>Select the element in the editor and drag it to its new location</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Try to drag and drop the element into various elements:<ul class="checkbox"><li> Snippets</li><li> Drop-downs</li><li> Expanding text</li><li>Toggler</li><li>Text Popup</li><li>Div</li><li>Etc.</li></ul></li>
+                <li>Try to drag the element out of the Editor into the <ul class="checkbox"><li><span class="UI">Text Editor</span> <![CDATA[ ]]></li><li><span class="UI">Content Explorer</span> <![CDATA[ ]]></li><li><span class="UI">Project Organizer</span> <![CDATA[ ]]></li><li><span class="UI">Frame Contents Pane</span></li><li>Footnotes area</li><li>Etc.</li></ul></li>
+            </ul>
+        </div>
+    </body>
+</html>

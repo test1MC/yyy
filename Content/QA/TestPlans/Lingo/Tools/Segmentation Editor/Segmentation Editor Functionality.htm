@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="610" MadCap:lastWidth="970">
+    <head>
+    </head>
+    <body>
+        <h1>Segmentation (SRX) Editor Functionality</h1>
+        <p class="note">Some notes about the segmentation editor</p>
+        <ol>
+            <li>Lingo defined rules will not be displayed in the Segmentation Editor</li>
+            <li>Where the rules are stored<ul><li>The default segmentation rules are stored in the Lingo install folder <code>&lt;path to Lingo install folder&gt;\Lingo.app\Resources\Misc</code></li><li>The custom rules created by the user are stored in the users folder \<code>Documents\LingoSRX</code></li><li>The <code>Documents\LingoSRX folder</code> is created the first time the user opens the SRX Editor within Lingo</li><li>If the srx file is deleted outside of Lingo, re-opening the SRX&#160;editor will re-create the file.</li></ul></li>
+            <li>Import and Export Notes<ul><li>Only SRX files created by Lingo can be imported the Lingo SRX editor. Lingo checks to see if it was created by Lingo by checking to see if there is a "languagerulename="UserDefined" within the SRX file</li><li>When you export an SRX file from Lingo, it will include the factory rules that come with Lingo.</li><li>When an SRX file is imported into the SRX editor, any previously created rules will be overwritten</li></ul></li>
+            <li>Precedence rules<ul><li>User defined rules take higher precedence than factory defined rules</li><li>"Do Not Break" rules take higher precedence than "Break" rules</li></ul></li>
+            <li>Any modified/saved rules will take effect the next time a project is created within Lingo or the next time a project update is performed</li>
+            <li>Anything entered in to the editor is taken as a regular expression - so caution must be taken with certain characters.<ul><li><b>Periods</b> (.) - The period in regular expression is used to match up to any character. To ensure only the period character is matched, it needs to be entered with square brackets (e.g. Feb[.] instead of Feb.)</li><li><b>Ampersands (&amp;)</b> - To match the &amp; character, enter<code> &amp;amp; </code> in the editor.</li><li><b>Greater Than (&gt;)</b> - To match the &gt; character, enter<code> &amp;gt; </code> in the editor.</li><li><b>Less Than (&lt;)</b> -   To match the &lt; character, enter<code> &amp;lt; </code> in the editor.</li><li><b>Other Special Characters</b> - Other special characters can be matched by including the break character - backslash (\) before the character. For example,<code> \[</code>, <code>\]</code>, <code>\|</code>, <code>\(</code>, and <code>\)</code> to match<code> [</code>, <code>]</code>, <code>|</code>,<code> (</code>, and <code>)</code></li></ul></li>
+        </ol>
+        <p>&#160;</p>
+        <p class="note">For more  information about regular expressions, see the following:</p>
+        <ul>
+            <li><a href="http://www.regular-expressions.info/">http://www.regular-expressions.info/</a>
+            </li>
+            <li><a href="http://regexlib.com/CheatSheet.aspx">http://regexlib.com/CheatSheet.aspx</a>
+            </li>
+        </ul>
+    </body>
+</html>

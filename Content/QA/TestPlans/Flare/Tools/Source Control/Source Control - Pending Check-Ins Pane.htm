@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2254" MadCap:lastWidth="978" MadCap:fileTags="Product.Flare,Status.Flare V7 Needs Review,AuthorFileTagSet.Jay">
+    <head>
+    </head>
+    <body>
+        <h2>Source Control - Pending Check-Ins Pane</h2>
+        <h3>Opening the Pending Check-Ins Pane</h3>
+        <p>The <span class="UI">Pending Check-Ins Pane</span> should be open and docked along the left side using Flare's default layout when opened by:</p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!View |&#160;Pending Check-Ins</span>
+            </li>
+            <li>Clicking the Source Control button on the standard toolbar and selecting the Pending Check-Ins menu item.</li>
+            <li><span class="MenuItem">!File | Source Control |  Pending Check-Ins</span>
+            </li>
+            <li>Right-click a file bound to Source Control and selecting the Source Control |&#160;Pending Check-Ins context menu item.</li>
+        </ul>
+        <h3>Pending Check-Ins Pane - UI Test Cases</h3>
+        <p class="bold">Default view docked in left pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsPane.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ColumnsShowHide.png" /><span class="bold">Show/Hide Columns: </span>Brings up a columns window that lets you select which columns to show. This window also lets you apply a color to the column and move the column up or down.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" /><span class="bold">Open: </span>Opens the selected file.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /><span class="bold">Properties: </span>Opens the properties of the selected file.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" /> <span class="bold">Refresh: </span>Refreshes the Pending Check-Ins Pane.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsCheckIn.png" /> <span class="bold">Check file(s) into Source Control: </span>Check the selected file into Source Control.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsOtherUsers.png" /><span class="bold">Show Check Outs from Other Users: </span>When Toggled on, show files that are checked out by other users.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsOutofDate.png" /><span class="bold">Show Out of Date Items: </span>When Toggled on, show files that are out of date compared to the server version in Source Control.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsDeleted.png" /><span class="bold">Show Deleted Items: </span>When Toggled on, show files that have been deleted from Source Control.</li>
+            <li><span class="bold">Filter:&#160;</span>Lets you filter the visible files in the <span class="UI">Pending Check-Ins Pane</span> to a particular file type. Verify all files listed are correct and that any new Content file types are added.<br /><img src="../../../../../Resources/Images/TestPlans/Flare/Content Explorer/ContentExplorer---FileFilter.png" class="border" /></li>
+        </ul>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Mapped Resource: </span>Shows an icon if the file is mapped to an external resource such as SharePoint.</li>
+            <li><span class="bold">File Icon: </span>Shows the icon of the file, the same one as the one used in the Content Explorer for that file.</li>
+            <li><span class="bold">Conditional Indicator:&#160;</span>Shows the current condition of the file, whether pending add/delete, out of date, checked out, etc.</li>
+            <li><span class="bold">Name:&#160;</span>Shows the name of the file.</li>
+            <li><span class="bold">Status: </span>Shows the status of the file. Statuses that could be shown include: Checked Out (By Other User),Checked Out, Locked (By Other User), Out of Date, Deleted, Pending Add, Pending Delete, Renamed/ Moved</li>
+            <li><span class="bold">User: </span>Shows the user of the currently selected file, most important for determining the user that has a file checked out.</li>
+            <li><span class="bold">Path:&#160;</span>Shows the relative path of the file.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Right-Click Menu</h4>
+        <p class="bold">Content file right-click menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--PendingCheckInsContextMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 175pt;">
+            <ul class="checkbox">
+                <li>Menu items are correct</li>
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate and select options</li>
+                <li>Menu is easy to use and understand</li>
+            </ul>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Preview:</span>&#160;Opens a Preview of the selected content file (Only active for topic files).</li>
+                <li><span class="bold">Open:</span> Opens the selected Content file in the <span class="UI">MDI</span>.</li>
+                <li><span class="bold">Open with:</span> Gives options to open the Content file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser </span>or another application.</li>
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                <li><span class="bold">Delete:</span> Removes the selected Content file from the project.</li>
+                <li><span class="bold">Rename:</span> Allows you to rename the Content file</li>
+                <li><b>Convert to XML</b> It converts file(s) to XML</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected file.</li>
+                <li><span class="bold">View Links:</span> Opens this file in the <span class="UI">Link Viewer</span>.</li>
+                <li><span class="bold">Locate in TOC:</span> Opens the <span class="UI">TOC&#160;Editor</span> and locates the content file in the TOC. If the content file occurs in multiple TOCs, this will open the </li>
+                <li><span class="bold">Locate in Explorer:</span> Opens the <span class="UI">Content Explorer</span> and locates the content file in the Content Explorer.</li>
+            </ul>
+        </div>
+        <h3>Keyboard Navigation</h3>
+        <ul class="checkbox">
+            <li><span class="KeyboardShortcut">Up Arrow</span> and <span class="KeyboardShortcut">Down Arrow</span> move the selection to the next displayed node.</li>
+            <li><span class="KeyboardShortcut">Page Up </span>and <span class="KeyboardShortcut">Page Down</span> will move the selection within the Explorer a page at a time up or down.</li>
+            <li><span class="KeyboardShortcut">Home</span> or <span class="KeyboardShortcut">End</span> will move the selection to the very first node or the very last displayed node.</li>
+            <li><span class="KeyboardShortcut">Insert</span> does nothing.</li>
+            <li><span class="KeyboardShortcut">Delete</span> removes the selected file (Only applies to items not pending delete)</li>
+            <li>Keying the first character of a  file will move the selection to that file.</li>
+        </ul>
+    </body>
+</html>

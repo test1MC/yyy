@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <b>Enable Audio:</b>Enables audio on the frame (must be turned on to adjust other settings)</li>
+            <li>
+                <b>Settings:</b>
+                <ul>
+                    <li>
+                        <b>Audio:</b> Displays the name of the audio clip selected<ul><li><img src="../Images/TestPlans/Mimic/Properties/Frame/UI--Audio Play.png" />: Plays the selected audio (only enabled after you have picked or recorded an audio clip)</li><li><img src="../Images/TestPlans/Mimic/Properties/Frame/UI--Audio Stop.png" />:Stops the selected audio that is playing (only enabled after you have picked or recorded an audio clip)</li><li><b>Edit...:</b>Edit the selected audio clip</li></ul></li>
+                </ul>
+            </li>
+            <li>
+                <b>Pick Built-In Sound...:</b>Invokes the Pick System Sound Dialog (Covered in the Audio section of the test plan)</li>
+            <li>
+                <b>Pick From Movie Sound Library...:</b>Invokes the Manage Movie Sound Library Dialog (Covered in the Audio section of the test plan)</li>
+            <li>
+                <b>Import Into Sound Library...:</b>Opens a generic windows dialog to select audio files to import into the sound library</li>
+            <li>
+                <b>Record a New Audio Clip...</b>Invokes the Record Dialog (Covered in the Audio section of the test plan)</li>
+            <li>
+                <b>Loop Sound:</b>Loops the selected audio track in the output until the next frame is loaded</li>
+            <li>
+                <b>Stop Sound of Previous Frame:</b>Stops the sound of the previous frame (should be enabled by default for new frames)</li>
+        </ul>
+    </body>
+</html>

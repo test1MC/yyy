@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1858" MadCap:lastWidth="906" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Compute Statistics - UI  </h2>
+        <h3>Opening the UI</h3>
+        <ul style="list-style-type: square;">
+            <li>!File|Compute Statistics</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Compute Statistics/UI--FileComputeStatistics-Menu.png" style="width: 206px;height: 194px;" />
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>In the Project Editor, click Compute Statistics.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Compute Statistics/UI--Button--Compute Statistics.png" style="width: 208px;height: 96px;" />
+        </p>
+        <p>&#160;</p>
+        <h3>UI</h3>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>How to compute statistics:</b>
+        </p>
+        <p>&#160;</p>
+        <p>Do one of the following:</p>
+        <ol>
+            <li>Select File&gt;Compute Statistics. Or..</li>
+            <li>In the Project Editor, click Compute Statistics.</li>
+            <li>The statistics report opens as an HTML file, showing the following information (both for the entire project, as well as for individual documents in the project):</li>
+        </ol>
+        <ul style="list-style-type: square;">
+            <li style="margin-left: 150px;">Number of segments</li>
+            <li style="margin-left: 150px;">Number of words</li>
+            <li style="margin-left: 150px;">Number of duplicates (These are segments that occur multiple times within the project. For example, the first time a segment occurs in the project and there is no match in the translation memory for it, it is counted as "No Match." If it shows up again 20 times in other places, it is counted as a "Duplicate.")</li>
+            <li style="margin-left: 150px;">Number of translated segments and words</li>
+            <li style="margin-left: 150px;">Matching percentages of segments and words in translation memory (e.g., the number of segments and words that have 100% matches, those that have 85%-94% matches, those that have no matches)</li>
+            <li style="margin-left: 150px;">Number of no matches (These are segments that are not translated and have no useful suggestions in the translation memory.)</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Compute Statistics/UI--Statistics-Tab.png" style="width: 548px;height: 555px;" />
+        </p>
+        <p>&#160;</p>
+        <h4>UI-Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Compute Statistics/UI--Statistics-LocalToolbar.png" />
+        </p>
+        <p>&#160;</p>
+        <p>This toolbar is taken from Flare and has un-used UI items which should be removed at some point.</p>
+        <p>&#160;</p>
+        <p><b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Browser is there to let you know that this is an html file that is stored in the Lingo project and can be opened and viewed in a browser.</li>
+            <li>Back and Forward buttons are grayed out and not used</li>
+            <li>The stop button is active but there is nothing to stop</li>
+            <li>The refresh button is active but it does not refresh anything nor does it compute statistics again.</li>
+            <li><b>Print</b>: Allows you to print the statistics report and opens the print dialog.</li>
+            <li><b>Save To</b>: Allows you to choose where you want to save this statistics report and open the save as dialog.</li>
+        </ul>
+        <p>&#160;</p>
+        <p><b>Test:</b>
+        </p>
+        <p><![CDATA[ ]]></p>
+        <ul style="list-style-type: square;">
+            <li>Print and Save To buttons work correctly.</li>
+            <li>Compute statistics on a variety of projects to make sure it is functioning correctly.</li>
+            <li>Compare the statistics to the translation bundle and they should match.</li>
+            <li>Make some changes by uploaded some more translations and compute statistics again to make sure statistics are updated.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

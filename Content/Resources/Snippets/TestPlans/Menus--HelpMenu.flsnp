@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="350" MadCap:lastWidth="963">
+    <body>
+        <p class="bold">Help Menu Items (Tooltips in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Contents (Open the TOC&#160;Pane):&#160;</span>Opens the <span class="UI">Help TOC</span>&#160;pane</li>
+            <li><span class="bold">Index (Open the Index&#160;Pane):&#160;</span>Opens the <span class="UI">Help Index</span> pane</li>
+            <li><span class="bold">Search (Open the Search Pane):&#160;</span> Opens the <span class="UI">Help Search</span> pane</li>
+            <li><span class="bold">Favorites (Open the Favorites&#160;Pane):&#160;</span>Opens the <span class="UI">Help Favorites</span> pane</li>
+            <li><span class="bold">Glossary (Open the Glossary Pane):&#160;</span>Opens the <span class="UI">Glossary</span> pane</li>
+            <li><span class="bold">Help Topic (Open the Topic&#160;Pane):&#160;</span>Opens a Help Topic</li>
+            <li><span class="bold">New Help Topic Window (Opens a new help topic window):&#160;</span>Opens a second Help Topic (only active if one Help Topic is already open)</li>
+            <li><span class="bold">Dynamic Help (Open the Dynamic&#160;Help Pane):&#160;</span>Opens the <span class="UI">Dynamic Help</span> pane</li>
+            <li><span class="bold">Locate in TOC (Locate in TOC):&#160;</span>Opens the <span class="UI">Help TOC</span>&#160;(if it is closed) and highlights the current Help topic</li>
+            <li><span class="bold">Auto-Sync TOC (Auto-Sync TOC):&#160;</span>Enables auto-sync in the <span class="UI">Help TOC</span>. </li>
+            <li><span class="bold">Index Results (Open the Index&#160;Results Pane):&#160;</span>Opens the <span class="UI">Index Results</span> pane</li>
+            <li MadCap:conditions="MenuItems.HelpMenu-HelpCommunity"><span class="bold">Help Community (Go to the Help Community forums):&#160;</span>Launches the default web browse and opens the MadCap Software Forums page</li>
+            <li MadCap:conditions="MenuItems.HelpMenu-Guides"><span class="bold">PDF Guides: </span>Invokes the Guides submenu which displays all PDF&#160;guides available for the application</li>
+            <li MadCap:conditions="MenuItems.HelpMenu-VideoTutorials"><span class="bold">Video Tutorials (Open the video tutorials topic): </span>Opens the Help Topic "Video Tutorials and Movies" from the internal Help</li>
+            <li><span class="bold">Activate Product (Open the Activate Product Wizard):&#160;</span>Invokes the Activate Product Wizard</li>
+            <li><span class="bold">Deactivate Product (Deactivates this product on your machine):&#160;</span>Deactivates this product on your machine</li>
+            <li><span class="bold">Register Product (Open the Register Program Wizard):&#160;</span>Invokes the <span class="UI">Register Program Wizard</span></li>
+            <li MadCap:conditions="MenuItems.HelpMenu-CheckForUpdates"><span class="bold">Check for Updates:&#160;</span>Invokes the <span class="UI">New Updates Available</span> dialog (or the <span class="UI">No Updates Available</span> dialog)</li>
+            <li><span class="bold">Report a Bug (Report a bug):&#160;</span>Report a bug</li>
+            <li><span class="bold">About (Open About Box):&#160;</span>Invokes the About box</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="1"
+  Comment=""
+  Type="WebHelp"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  OutputFile="TestPlans"
+  ConditionTagExpression="include[TargetEditor.WebHelp] "
+  MasterPage="/Content/Resources/MasterPages/TopicTB.flmsp"
+  MasterToc="/Project/TOCs/AAA - Master TOC.fltoc"
+  SearchDatabaseChunkSize="30000"
+  TOCChunkSize="30000"
+  IndexChunkSize="30000"
+  Skin="/Project/Skins/iSkin.flskn">
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/MyDestination.fldes" />
+  </Destinations>
+  <Variables></Variables>
+</CatapultTarget>

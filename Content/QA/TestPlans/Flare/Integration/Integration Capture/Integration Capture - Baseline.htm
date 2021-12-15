@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="779" MadCap:lastWidth="1123" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Integration: Capture - Baseline    </h2>
+        <p>Verify future versions of capture register properly with old/new Flares. Also that old captures register with new Flares.</p>
+        <h3>Baseline</h3>
+        <p>From our current bug-base, run the following query:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Integration--Capture-BugBase-Query.png" style="mc-thumbnail: popup;" />
+        </p>
+        <p>&#160;</p>
+        <p>For historical references only- Use baseline query posted above.</p>
+        <p><b>11331</b>	Using a profile which uses the filename numbering to capture from Flare is problematic.</p>
+        <p>Note: Currently these are limited to the Regenerate Captured Images feature. More to come later.</p>
+        <p><b>12613</b>	Editing a callout in capture will display the image in Flare as really small.</p>
+        <p><b>30289</b>	Crash when opening image in Capture (my Capture's trial was expired)</p>
+        <p><b>30309</b>	Capture watermark that Flare uses, can not be removed</p>
+        <p><b>31798</b>	Error when launching capture from flare when no capture is on the machine (or no capture registry)</p>
+        <p><b>32152</b>	Draggin an image into a topic vs Inserting into a topic leaves out the ALT and Screen Tip text inserted using Capture.</p>
+        <p><b>32550</b>	Some lines in Capture have bends in them for no discernable reason</p>
+        <p><b>32719</b>	Exception thrown when Regenerating Capture Images on a read-only file (Such as files in source safe)</p>
+        <p><b>32720</b>	Regenerate Captured Images works when Capture is not installed on the machine.</p>
+        <p><b>32721</b>	Cant not get watermark removed after registering both flare and capture</p>
+        <p><b>32739</b>	We should be smarter when Regenerating images that have a .props file not created by Capture (conditions)</p>
+        <p><b>33074</b>	Should add "regenerate captured images" to File view and File list</p>
+        <p><b>33075</b>	Add "Regenerate Captured Images" to the right-click context menu when selecting multiple images in file view or file list</p>
+        <p><b>33377</b>	Ignore images with .props files that are not capture .props file. (Related to #32739)</p>
+        <p><b>38604</b>	Since the next version of flare will be released for capture and we support vector graphics in flare but not capture yet, we should have a message when trying to launch capture from within flare to either check for what version of capture is installed (when we do have support in capture and allow capture to open) or throw a message saying your version of capture does not support these file types</p>
+        <p><b>41797</b>	Prompt when a change to the screen tip / alt text is going to happen due to .props file information.</p>
+        <p><b>41798</b>Update the .props file when using check box for alt text /screen tip</p>
+        <p><b>42115</b>Error when trying to update capture images with our new checkbox, when its checked into source control</p>
+        <p><b>47045</b> Capture will need to support Variables and Condition Tag that exist in sets that exist in Project Organizer sub-folders.</p>
+        <p><b>48838</b> !insert | Screen Capture | Capture Application will shrink Flare's size</p>
+        <p><b>48925</b> "Capture Regions Consecutively" does not work for review packages, contribution documents or MadCap documents (*.fltrev, *.mcco and *.mcdoc)</p>
+        <p><b>48927</b> When inserting a screen capture into a fltrev, mcco or mcdoc file, if you delete the Folder location and proceed with the capture, you will ultimately get an error: "Failed to run command 'Screen Capture...'. Exception: Cannot modify a read-only container."</p>
+        <p><b>54163</b> Text in Capture images is not Right-Aligned when the "Invert left/right local styles" is set.</p>
+    </body>
+</html>

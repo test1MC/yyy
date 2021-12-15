@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="533" MadCap:lastWidth="1017" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Feedback V2,AuthorFileTagSet.Matthew,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Toolbars - UI</h2>
+        <h3>Standard Toolbar</h3>
+        <h4>Opening/Closing the Standard Toolbar</h4>
+        <p class="bold">From a menu:</p>
+        <p>!View | Toolbars | Standard</p>
+        <p>Click the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---OpenAToolbar.png" /> button in the upper-left corner (next to the File menu) and select Standard.</p>
+        <p>Additionally, you can close the toolbar by clicking the <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---CloseToolbar.png" /> button which appears to the left of the toolbar.</p>
+        <h4>Standard Toolbar - UI Controls</h4>
+        <p><span class="bold">State #1:&#160;</span>No SQL&#160;Server set up. The Standard Toolbar will appear in this state if you click Cancel in the <span class="UI">Feedback Server Setup</span> dialog or after you uninstall the Feedback Server (SQL&#160;Server).</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--StandardToolbar1.png" />
+        </p>
+        <p><span class="bold">State #2:&#160;</span>SQL Server set up. The Standard Toolbar will appear in this state when Feedback Server Admin is set up with a SQL&#160;Server database.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/UI--StandardToolbar2.png" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Toolbar Items (Tooltips in parentheses)</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Button--InstallFeedbackServer.png" alt="" title="" /><span class="bold">(Install Feedback Server):&#160;</span>Invokes the <span class="UI">Feedback Server Setup</span> dialog which lets you select a SQL&#160;Server.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Button--UninstallFeedbackServer.png" alt="" title="" /><span class="bold">(Uninstall Feedback Server):&#160;</span>Invokes a warning dialog indicating that all data will be lost if you proceed. Clicking "Yes" will proceed to uninstall the linked SQL&#160;database. In the process, this will also permanently delete the linked database.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Server Admin/Button--ImportData.png" alt="" title="" /><span class="bold"> (Import Data):&#160;</span>Invokes the <span class="UI">Select SQL Server and Database</span> dialog which lets you select a SQL&#160;Server and database from which you will import data.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

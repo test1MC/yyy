@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Pulse Test Plans"
+    Link="/Content/QA/TestPlans/Pulse/Pulse.htm">
+    <TocEntry
+      Title="Install/Uninstall"
+      Link="/Content/QA/TestPlans/Pulse/Installation/Install Uninstall.htm" />
+    <TocEntry
+      Title="Configuration">
+      <TocEntry
+        Title="Configuration"
+        Link="/Content/QA/TestPlans/Pulse/Configuration/Configuration.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Dashboard">
+      <TocEntry
+        Title="Pulse"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Pulse/Pulse.htm" />
+      <TocEntry
+        Title="People"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/People/People.htm" />
+      <TocEntry
+        Title="Groups"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Groups/Groups.htm" />
+      <TocEntry
+        Title="Tags"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Tags/Tags.htm" />
+      <TocEntry
+        Title="Systems"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Systems/Systems.htm" />
+      <TocEntry
+        Title="Favorites"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Favorites/Favorites.htm" />
+      <TocEntry
+        Title="Administration"
+        Link="/Content/QA/TestPlans/Pulse/Dashboard/Administration/Administration.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="General">
+      <TocEntry
+        Title="Menus"
+        Link="/Content/QA/TestPlans/Pulse/General/Menus.htm" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

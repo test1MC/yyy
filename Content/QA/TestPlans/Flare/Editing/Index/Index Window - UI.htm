@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3337" MadCap:lastWidth="1087" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Index Window - UI</h2>
+        <h3>Opening the Index pane</h3>
+        <ul class="checkbox">
+            <li>!Tools |&#160;Index |&#160;Index Window ... for the Tool Strip Mode</li>
+            <li>!View |&#160;Reference | Index Window ... for the Ribbon Mode</li>
+            <li>!View |&#160;Index Window</li>
+            <li>Press &lt;F9&gt; on the keyboard</li>
+            <li>In Index Entry Mode (!Tools | Index |&#160;Index Entry Mode), place the insertion point in the XML&#160;Editor and begin typing. The Index Window will open when you start typing, and whatever you type will appear in the Index Window.</li>
+        </ul>
+        <h3>Index - UI&#160;Test Cases</h3>
+        <p class="bold">Docked in right pane by default (screenshot below includes sample keywords, conditioned keywords and index links):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/UI--Index.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Index "Entry" (top half of Index window)</h4>
+        <p>The top portion of the <span class="UI">Index Window</span> is used for displaying, entering and editing a specific instance of a keyword object. A specific instance of a keyword object may include multiple keywords (one per line).</p>
+        <p>&#160;</p>
+        <p class="bold">UI Controls</p>
+        <p><span class="bold">Terms:&#160;</span>Lists and lets you edit, add or remove keywords.</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Index "Explorer" (bottom half of Index window)</h4>
+        <p>The bottom portion of the Index Window is used to view all Index Keywords that exist throughout the project. Additionally, this "explorer"&#160;view will display any Index links ("See"&#160;and "See also"&#160;references)&#160;that exist in any Index Link Sets used in the project. Finally, the "explorer"&#160;view will also display any conditional tags applied to a keyword or its parent elements (p, h1, html, etc).</p>
+        <h5>Local Toolbar</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexPane--ExplorerLocalToolbar.png" alt="" title="" />
+        </p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Expand All.png" style="mc-tag-and-class: ;" /> (Expand all):&#160;</span>Expands all of the nodes so that you can see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ExpandAllIndexExplorer.png" /> (Expand keyword entries):&#160;</span>Expands all of the nodes that have keyword sub-nodes, so that you can see all multi-level keywords.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" style="mc-tag-and-class: ;" /> (Collapse all):&#160;</span>Collapses all of the nodes so that you can no longer see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---CollapseAllIndexExplorer.png" />(Collapse topic entries):&#160;</span>Collapses all of the keyword nodes so that you can no longer see all of the files under each one, but keeps sub-nodes visible.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png"></img> (Open linked file):&#160;</span>Opens the selected topic file in the XML&#160;Editor. Only active when a topic is selected.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test cases</p>
+            <p>Apply condition tags to each of the following and confirm the condition tag is reflected in the <span class="UI">Index Explorer</span>:</p>
+            <ul style="list-style-type: circle;">
+                <li>The keyword itself</li>
+                <li>The paragraph or any other parent element which contains the keyword</li>
+                <li>The topic containing the keyword</li>
+                <li>The folder containing the topic which contains the keyword (Known issue: 30533)</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h5>Right-click menus</h5>
+        <p class="bold">Root node right-click menu:&#160;</p>
+        <p class="bold">
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexPane--ExplorerRootRightClickMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Add Top-Level Keyword (Add a new top-level index keyword):&#160;</span>Adds a new top-level keyword.  Until it is added to a topic, this keyword exists only in a temp file in the project's Output/user/Temporary folder.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Keyword (or sub-keyword) right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexPane--ExplorerKeywordRightClickMenu.png" alt="" title="" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Add Top-Level Keyword (Add a new top-level index keyword):&#160;</span>Adds a new top-level keyword.  Until it is added to a topic, this keyword exists only in a temp file in the project's Output/user/Temporary folder.</li>
+                <li><span class="bold">Add Sub-Keyword (Add a new lower-level index keyword):&#160;</span>Adds a sub-keyword node to the selected keyword. Until it is added to a topic, this sub-keyword exists only in a temp file in the project's Output/user/Temporary folder.</li>
+                <li>
+                    <p><span class="bold">Add Index Link (Add an index link):&#160;</span>
+                    </p>
+                    <ul style="list-style-type: circle;">
+                        <li>If no Index Link Set Exists in the project:&#160;Invokes the <span class="UI">Add Index Link Set</span> dialog. After creation of the Index&#160;Link Set file, a new index link entry is automatically added and it's <span class="UI">Properties</span> dialog is invoked with the selected index term pre-populating the "Term" field.</li>
+                        <li>If an Index Link Set already exists: Open the <span class="UI">Index Link Set Editor</span>, creates a new entry and invokes the <span class="UI">Properties</span> dialog for that new entry with the selected index term pre-populating the "Term" field.</li>
+                    </ul>
+                    <p>In either case, when the <span class="UI">Properties</span> dialog opens, the state of the "See"/"See Also"&#160;radio button is dependent on whether or not the selected keyword is associated with any topics.</p>
+                    <ul style="list-style-type: circle;">
+                        <li>If the selected keyword has associated topics, the <span class="UI">Properties</span> dialog should open the with the "See Also"&#160;option selected.</li>
+                        <li>If the selected keyword does not have associated topics, the <span class="UI">Properties</span> dialog should open the with the "See"&#160;option selected.</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Assign Topic (Assign this keyword to an existing topic):&#160;</span>Invokes the <span class="UI">Open File</span> dialog which lets you select a topic to which the selected keyword will be assigned. Using the "Show Files"&#160;view, you should also be able to selected multiple topics which will allow you to assign the selected keyword to multiple topics at once.</li>
+                <li><span class="bold">Rename Keyword (Rename index keyword):&#160;</span>Let's you globally rename the keyword for all instances of the keyword throughout the project.</li>
+                <li><span class="bold">Remove Keyword (Remove index keyword):&#160;</span>Let's you globally remove the keyword for all instances of the keyword throughout the project.</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Topic right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexPane--ExplorerTopicRightClickMenu.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Add Top-Level Keyword (Add a new top-level index keyword):&#160;</span>Adds a new top-level keyword.  Until it is added to a topic, this keyword exists only in a temp file in the project's Output/user/Temporary folder.</li>
+                <li><span class="bold">Unassign Topic (Remove all "[keyword]" keywords from topic):&#160;</span>Deletes all instances of the selected keyword from the selected topic.</li>
+                <li><span class="bold">Open:&#160;</span>Opens the selected topic in the <span class="UI">XML Editor</span>.</li>
+                <li><span class="bold">Open with:&#160;</span>Gives options to open the selected topic in the Internal Text Editor, Internal Browser or another application .</li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">Index Link ("See"&#160;or "See Also")&#160;right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Index/IndexPane--ExplorerLinkRightClickMenu.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items (tooltips in parenthesis):</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Add Top-Level Keyword (Add a new top-level index keyword):&#160;</span>Adds a new top-level keyword.  Until it is added to a topic, this keyword exists only in a temp file in the project's Output/user/Temporary folder.</li>
+                <li><span class="bold">Edit Link (Edit the index link):&#160;</span>Opens the appropriate Index Link set and invokes the <span class="UI">Properties</span> dialog for the selected index link.</li>
+                <li><span class="bold">Remove Link (Remove the index link):&#160;</span>Invokes a prompt indicating which Index Link set file contains the index link and asks for confirmation that the link should be deleted.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Drag and Drop from the Index "Explorer"</h4>
+        <p>Should be able to select any Index Keyword or sub-keyword from the lower portion of the <span class="UI">Index Window</span> and drag it into a topic in the <span class="UI">XML Editor</span>.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: circle;">
+                <li>Try to drag and drop a keyword and multi-level keywords into various elements (Snippets, Drop-downs, Expanding text, etc)</li>
+                <li>Try to drag the keyword to any pane other than the XML&#160;Editor (Content Explorer, Project Organizer, Frame Contents Pane, Footnotes Pane, etc.). You should not be able to do this.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Keyboard Navigation</h4>
+        <p>Upper portion of the <span class="UI">Index Window</span>:</p>
+        <ul>
+            <li>&lt;F2&gt;&#160;will allow you to rename a selected keyword or sub-keyword</li>
+            <li>&lt;Delete&gt; will delete only the keyword in the selected row if the row is selected by clicking on the area to the left of each keyword, otherwise &lt;Delete&gt; will do nothing</li>
+            <li>&lt;Page Up&gt; will navigate through the list of keywords one "page"&#160;at a time up (requires enough keywords to necessitate a vertical scroll)</li>
+            <li>&lt;Page Down&gt; will navigate through the list of keywords one "page"&#160;at a time down  (requires enough keywords to necessitate a vertical scroll)</li>
+            <li>&lt;Home&gt; and &lt;End&gt; do nothing</li>
+            <li>&lt;Up Arrow&gt; and &lt;Down Arrow&gt; navigate up and down through the keyword list</li>
+            <li>&lt;Left Arrow&gt; and &lt;Right Arrow&gt; do nothing unless you are editing a keyword in which case they are used to assist in editing the keyword text</li>
+            <li>&lt;Enter&gt;&#160;and &lt;Tab&gt;&#160;move the selection to the next keyword in the list</li>
+            <li>&lt;Insert&gt; does nothing</li>
+            <li>&lt;Backspace&gt; does nothing</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Lower portion of the <span class="UI">Index Window</span>:</p>
+        <ul>
+            <li>&lt;F2&gt;&#160;will allow you to rename a selected keyword or sub-keyword</li>
+            <li>&lt;Delete&gt; will delete the keyword or keyword link or unassign the topic depending on which type of item is selected</li>
+            <li>&lt;Page Up&gt; will navigate through the list of keywords one "page"&#160;at a time up</li>
+            <li>&lt;Page Down&gt; will navigate through the list of keywords one "page"&#160;at a time down</li>
+            <li>&lt;Home&gt; will move the selection to the very first node</li>
+            <li>&lt;End&gt;&#160;will move the selection to the very last node</li>
+            <li>&lt;Enter&gt; does nothing unless a topic file is selected in which case &lt;Enter&gt;&#160;will open that topic</li>
+            <li>&lt;Up Arrow&gt; and &lt;Down Arrow&gt; navigate up and down through the keyword list</li>
+            <li>&lt;Left Arrow&gt; collapses an expanded node</li>
+            <li>&lt;Right Arrow&gt; expands a collapsed node</li>
+            <li>&lt;Insert&gt; does nothing</li>
+            <li>&lt;Backspace&gt;&#160;moves the selection to the parent node</li>
+        </ul>
+    </body>
+</html>

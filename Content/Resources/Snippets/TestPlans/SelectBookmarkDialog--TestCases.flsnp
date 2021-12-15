@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="720" MadCap:lastWidth="810">
+    <head>
+    </head>
+    <body>
+        <h3>Select Bookmark&#160;dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../Images/TestPlans/Flare/Bookmarks/Dialog--SelectBookmark.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Headings:</span> Displays the headings contained in the selected linked topic. If you elect to link to a heading, the linked topic will automatically open and a bookmark will be generated and inserted at the selected heading. </li>
+            <li><span class="bold">Bookmarks:</span> Displays a list of all existing bookmarks in the selected linked topic. Select a bookmark to link to that bookmark.</li>
+            <li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---ClearBookmarkWide.png"></img>(Clear Bookmark): </span>If a bookmark is set for the topic link, this button will close the dialog and remove the bookmark from the link.</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and applies the changes.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not apply any changes.</li>
+        </ul>
+    </body>
+</html>

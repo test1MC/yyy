@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2538" MadCap:lastWidth="796" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V9 Verified" MadCap:conditionTagExpression="include[AddFile--UIControls.Description or AddFile--UIControls.ProjectFiles or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.VariableSet]exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Multimedia or AddFile--UIControls.Preview or AddFile--UIControls.TopicFiles or Default.UITestsEditors or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic]">
+    <head>
+    </head>
+    <body>
+        <h2>Variable Set - Add File</h2>
+        <h3>Adding a Variable&#160;Set to the Project</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/AddFile.flsnp" />
+        <h3>Add File dialog:&#160;Variable Set - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Variables/Dialog--AddFile--VariableSet.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--AddFile--UIControls.flsnp">
+        </MadCap:snippetBlock>
+        <p>&#160;</p>
+        <h4>Heading variables</h4>
+        <p>You can insert Heading variables into page layouts or master pages in order to automatically display text based on the &lt;h1&gt; through &lt;h6&gt; heading styles that you use in your project. Like Running Head variables, they are useful when creating print-based output. It's an easy way, for example, to automatically display a chapter title in the header of a chapter. For Adobe PDF, Microsoft XPS, and XHTML output, you can also use Heading variables to automatically display glossary headings/terms and index headings/terms in a page layout frame. They will be covered in more detail in the page layout test plan.</p>
+        <p>&#160;</p>
+        <p><b>How to insert a Heading variable into a page layout frame:</b>
+        </p>
+        <ol>
+            <li>Open a page in a page layout.</li>
+            <li>Click on the frame to which you want to add text or other content.<p class="note">Note: You can add text and content only to header, footer, and decoration frames. You cannot add text and content to a body frame (which automatically displays content from your topics). You can use image frames to insert pictures that use all of the space in the frame.</p></li>
+            <li>Do one of the following:<ol><li>Press F2 on your keyboard. OR</li><li>In the local toolbar, click Edit Text. OR</li><li>Right-click the frame and select Edit Text. A message opens, asking if you want to pick content from a template (e.g., a page number).</li></ol></li>
+            <li>Click No. The Frame Contents window pane opens.<p class="note">Note: If you have already prepared content in the form of a snippet and added it to your template folder, you can click "Yes" instead in order to select the snippet. See About Templates.</p></li>
+            <li>Click in the Frame Contents window pane.</li>
+            <li>Select Insert&gt;Variable. The Variables dialog opens, with the variable set(s) on the left and the variables associated with the selected set on the right.</li>
+            <li>Select the Heading variable set.</li>
+            <li>Select the variable you want to add.<ol><li><span class="bold">AnyLevel:</span> Automatically displays the text in the first heading on a page that uses any of the &lt;h1&gt; through &lt;h6&gt; styles.</li><li><span class="bold">FirstGlossaryPageHeading:</span> Automatically displays the first glossary heading (e.g., A, B, C, D, E) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">FirstGlossaryPageTerm:</span> Automatically displays the first glossary term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">FirstIndexHeading:</span> Automatically displays the first index heading (e.g., A, B, C, D, E) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">FirstIndexTerm:</span> Automatically displays the first index term (e.g., Ants, Bugs, Cats, Dogs, Elephants) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">LastGlossaryPageHeading:</span> Automatically displays the last glossary heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">LastGlossaryPageTerm:</span> Automatically displays the last glossary term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated glossary. In order for this variable to work, it must be inserted in a page layout that is used for the topic where a glossary proxy is inserted. This is covered in more detail in the GLOSSARY test plan.</li><li><span class="bold">LastIndexHeading:</span> Automatically displays the last index heading (e.g., U, V, W, X, Y, Z) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">LastIndexTerm:</span> Automatically displays the last index term (e.g., Sharks, Tigers, Wombats, Zebras) that occurs on a page with a generated index. In order for this variable to work, it must be inserted in a page layout that is used for the topic where an index proxy is inserted. This is covered in more detail in the INDEX test plan.</li><li><span class="bold">Level1:</span> Automatically displays the text in the first heading on a page that uses the &lt;h1&gt; style tag.</li><li><span class="bold">Level2:</span> Automatically displays the text in the first heading on a page that uses the &lt;h2&gt; style tag.</li><li><span class="bold">Level3:</span> Automatically displays the text in the first heading on a page that uses the &lt;h3&gt; style tag.</li><li><span class="bold">Level4:</span> Automatically displays the text in the first heading on a page that uses the &lt;h4&gt; style tag.</li><li><span class="bold">Level5:</span> Automatically displays the text in the first heading on a page that uses the &lt;h5&gt; style tag.</li><li><span class="bold">Level6:</span> Automatically displays the text in the first heading on a page that uses the &lt;h6&gt; style tag.<p class="note">Note: The glossary and index variable options are available only in Adobe PDF, Microsoft XPS, and XHTML output.</p></li></ol></li>
+            <li>Click OK. The variable is added to the Frame Contents window pane.</li>
+            <li>Press CTRL+S or click  to save your work. The variable can now be seen in the frame</li>
+        </ol>
+        <h4>Running Head  variables:</h4>
+        <p>The key appeal of Running Head variables is that they are supported in FrameMaker and will be covered in more detail in the FrameMaker Test plan.</p>
+        <p>&#160;</p>
+        <p><b>Steps for Using Running Head Variables:</b>
+        </p>
+        <p>If you want to incorporate Running Head variables into your output, use the following steps.</p>
+        <ol>
+            <li>Add variable set: When you do this, make sure to select the Running HF template.</li>
+            <li>Insert Running Head variables: You can insert these variables into headers or footers within page layout frames or print master pages.<ol><li>Note: Running Head variables are supported only in Adobe FrameMaker and Microsoft Word output.</li><li>Note: An alternative to Running Head variables, and perhaps an easier one, is to use Heading variables.</li></ol></li>
+        </ol>
+        <p>See the <a href="../../Output/Output Frame/Output Frame.htm">FrameMaker</a> test plan more details about running head variables.</p>
+    </body>
+</html>

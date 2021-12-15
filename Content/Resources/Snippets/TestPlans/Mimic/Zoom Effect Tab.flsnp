@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Enable Zoom Effect: </span> Toggles on/off the zoom effect</li>
+            <li>
+                <span class="bold">Options Section: </span> This section is only enabled if the zoom effect check box is checked<ul><li><span class="bold">Zoom Factor: </span> Controls the magnification of the zoom.&#160;Higher the number, the more the magnification</li><li><span class="bold">X Offset Factor: </span> Controls horizontally where the zoom box will be located</li><li><span class="bold">Y offset Factor: </span> Controls vertically where the zoom box will be located</li><li><span class="bold">Line Width: </span> Controls the thickness of the zoom box lines</li><li><span class="bold">Line Color: </span> Controls the color of the zoom box lines</li></ul></li>
+            <li>
+                <span class="bold">Preview: </span> Shows a real time preview of the options set above</li>
+        </ul>
+    </body>
+</html>

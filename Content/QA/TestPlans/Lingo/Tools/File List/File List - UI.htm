@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5491" MadCap:lastWidth="1427" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>File List - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>View | File List</p>
+        <p>&lt;CTRL&gt;&lt;R&gt;</p>
+        <p>Click the   icon in the Standard toolbar <img src="../../../../../Resources/Images/UI--Button--FileList.png" /></p>
+        <p>Using !Windows | Floating, Float the Files list | Resize and be sure it functions and redraws correctly</p>
+        <p>Redock the Files List to the Main MDI area and be sure it functions and redraws correctly</p>
+        <h3>UI and Local Toolbar</h3>
+        <p><b>Local Toolbar:</b>
+        </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" />(Open) Opens the selected file in the editor.	</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" /> (Run Properties Dialog for this item) Opens the Properties dialog for the selected item.	</p>
+        <p>
+            <img src="../../../../../Resources/Images/Button---Add new file(s).png" />(Add new file(s) to project) Lets you add additional files to a translation project after the project has been created. You can add additional files to any project created from other individual files, such as individual Word documents or XML files.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button---Create Bundle.png" />(Create a bundle to send to translators) Lets you create a translation bundle. If you are working with a translator who is using a third-party tool—such as Trados or memoQ—you first need to "package" your Lingo project in order to separate the necessary files for the translator. You can then send the "bundle" (which is a ZIP file) to the translator. This ZIP file consists of the content files requiring translation.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button---Merge a bundle.png" />(Merge a bundle received from translators) After the translator returns the completed ZIP file, you can use this button to merge its contents into your original Lingo project.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button---Conditional Indicators.png" />(Conditional indicators) Lets you show or hide the small squares next to each folder and file, which are used to show colors representing condition tags that have been applied. Hiding condition tags can greatly speed the population of the window pane.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button--- ShowFolders.png" />(Show Folders) Toggles between showing or hiding the folder structure.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button---Replace images.png" />(Browse and replace images) Lets you replace the selected file with another file of the same type. You might use this button, for example, if you have used a different application to translate the callout in an image file. You can select the image file you want to replace, click this button, and find the new image file on your computer to replace it. If you select a file with a different name, the name will be changed when it is added to the project so that it matches the old file name. This feature does not work for replacing .htm files in this version of Lingo.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--Button--Filter.png" style="width: 170px;height: 25px;" />Lets you limit the files that are displayed by file format:</p>
+        <p>&#160;</p>
+        <p>Select an option from the drop-down:</p>
+        <ul>
+            <li>Type a file type into the drop-down | Press &lt;Enter&gt; to filter</li>
+            <li>Notice that the typed file type is added to the drop-down (a scroll bar appears if the list gets too long).</li>
+        </ul>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><b>Target:</b>Displays only the files associated with a specific Flare target</li>
+            <li><b>Translation Candidates:</b>Displays all files that are likely to require translation.</li>
+            <li><b>All Files:</b> Displays all content files. (*.*)</li>
+            <li><b>Topic Files:</b> Displays only the topic (HTM and HTML) files.</li>
+            <li><b>Page Layout Files:</b> Displays only the page layout (FLPGL) files</li>
+            <li><b>Snippet Files:</b> Displays only the snippet (FLSNP) files.</li>
+            <li><b>Stylesheet Files:</b> Displays only the style sheet (CSS) files.</li>
+            <li><b>MasterPage Files:</b> Displays only the master page (FLMSP) files.</li>
+            <li><b>Image Files:</b> Displays only the image files (BMP, EMF, EXPS, GIF, HDP, JPG, JPEG, PNG, SWF, TIF, TIFF, WDP, WMF, XAML, XPS).</li>
+        </ul>
+        <p>&#160;</p>
+        <p>“No Files” appears in the list if there are no files of the type in the application or the file type was mistyped</p>
+        <p>&#160;</p>
+        <h3>UI File List Pane</h3>
+        <p>
+            <img src="../../../../../Resources/Images/UI--FileList--Pane.png" style="width: 273px;height: 193px;" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p><b>Test:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>If the pane is made really large the accordion view will turn into a Tab view</li>
+            <li>Verify that if auto-hide is ‘On’ and the application is closed and reopened the setting and location are retained.</li>
+            <li>If the pane is too small to view the Filter drop-down, the drop-down will be replaced by a small arrow on the right of the title bar</li>
+            <li>Test the Auto-hide, ½, Float options at all location in the Framework, verifying that the settings are retained upon reopening the framework</li>
+            <li>Test:  Window | Dockable , Auto Hide, Float</li>
+        </ul>
+        <h3>MDI View (Docked in the MDI area of the framework)</h3>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--FileList--Columns.png" style="width: 553px;height: 323px;" />
+        </p>
+        <p>&#160;</p>
+        <p><b>Columns:</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Name:</b> 	Displays the file name for the item.</p>
+        <p><b>Type:</b> 	Displays the type of file (e.g., Topic, Target, Variable Set).</p>
+        <p><b># Segments:</b> Displays the number of text segments in the file.</p>
+        <p><b>Status:</b>Displays the translated status of the file (e.g., In Progress, Completed, Reviewed). You can change the status for a file manually to help you keep track of your work. To do this, select the file in the list, click the Properties button  in the local toolbar, and select the status on the Translation tab of the dialog. </p>
+        <ul>
+            <li>The status also changes automatically after sending files for translation or Updating a project. Every file you send for translation should have the file status set to Sent to translation. When you merge a completed bundle the file status should change and not remain Sent for translation.</li>
+            <li>When you update a project the file status will change to in progress if some of the segments are translated.</li>
+        </ul>
+        <p><b>Difference:</b>&#160;If you have created a "difference" project and the text from previous project is not the same as the new version, the differences are indicated in this cell.</p>
+        <p><b>Title:</b> 	Displays the title for the topic.</p>
+        <p><b>Path:</b> 	Displays the location in the project where the file is stored.</p>
+        <p><b>Date Modified:</b>Displays the most recent date and time when the file was changed.</p>
+        <p><b>File Tags:</b>If the author creates file tags in the source files, these will be displayed in columns with the tag names associated with each file.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Test Cases:</b>
+        </p>
+        <ul>
+            <li>All columns are sortable (A-Z and Z-A)</li>
+            <li>Double-clicking on a column border will snap it to the size of the largest item in the column</li>
+            <li>Columns can be dragged to a new location in the Files list and this setting will be retained when closed and reopened.</li>
+            <li>Horizontal and vertical scrollbars should be working correctly</li>
+            <li>Should be able to multi-select files</li>
+            <li>Double-clicking an item will open it in the Editor</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Editing in the File List</h4>
+        <p>
+            <img src="../../../../../Resources/Images/UI--FileMap--RightClickMenu.png" style="width: 242px;height: 194px;" />File List Right-Click Menu</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png">
+            </img><b>Open:</b>opens the selected topic in the Lingo editor.</p>
+        <p>&#160;&#160;&#160;&#160;&#160;<b>Open with:</b>opens the selected topic in the program of your choosing such as notepad.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button--Save file(s) for review.png" /><b>Save File(s) for Review:</b>Save files to send to a third-party reviewer for comments and revisions.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button---Create Bundle.png" /><b>Prepare Translation Bundle:</b> Lets you create a translation bundle. If you are working with a translator who is using a third-party tool—such as Trados or memoQ—you first need to "package" your Lingo project in order to separate the necessary files for the translator. You can then send the "bundle" (which is a ZIP file) to the translator. This ZIP file consists of the content files requiring translation.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button--ComputeStatistics.png" /><b>Compute Statistics:</b>Generates a statistical report for the selected file(s). It displays the results in an HTML file and lets you see information about your translation work.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Buttons/Button--UploadSelected.png" /><b>Upload Selected:</b>Upload all translated segments in the selected file(s) to the Translation Memory</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png">
+            </img><b>Properties:</b>Opens the Properties dialog window for the selected files</p>
+        <p>&#160;</p>
+        <p><b>Right Clicking on the horizontal and vertical scrollbars:</b>
+        </p>
+        <p>Scroll Here, Left Edge, Right Edge, Page Left, Page Right, Scroll Left, Scroll Right</p>
+        <p>Scroll Here, Top, Bottom, Page Up, Page Down, Scroll Up, Scroll Down</p>
+        <h4>Properties dialog window/ Translation Tab</h4>
+        <p>Use this tab to set the translation status of a particular file. The status that you select affects the "Translated" column in the File Map window pane.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/UI--FileMap--PropertiesDialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Button/Selection:</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Translation Status 	Select the translation status for the selected file:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>In Progress</li>
+            <li>Untranslated</li>
+            <li>Completed</li>
+            <li>Reviewed</li>
+            <li>Approved</li>
+            <li>Sent for translation</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Properties dialog window/ File Tags Tab</h4>
+        <p>If you are translating a MadCap Flare project, use this tab to view and edit file tag values.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/File List/UI--FileMap--File Tags.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Button/Selection:</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Tag Type:</b> Select a tag type, based on any file tag sets that have been created.</p>
+        <p><b>File Tag Sets:</b> Based on the tag type you selected, the appropriate file tag sets are listed.</p>
+        <p><b>File Tags:</b> Based on the file tag set you select from the list on the left, the file tags in it are listed. Click next to each one that you want to associate with the file.</p>
+        <p><b>Comment:</b> Displays comments (if any) next to each file tag.</p>
+        <p><b>Unselect All:</b> Removes check marks from all condition tags above.</p>
+        <p><b>Select All:</b> Adds check marks to all condition tags above.</p>
+        <p>&#160;</p>
+        <h4>Properties dialog Translation/ General Tab</h4>
+        <p>Use this tab to mark the files as "Read Only" so that they cannot be modified. Other information is also shown on this tab, although the word "multiple" will often display in many of the fields (rather than the actual data) if more than one file has been selected.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/PropertiesDialog--General Tab.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p><b>Button/Selection:</b>
+        </p>
+        <p>&#160;</p>
+        <p><b>Name:</b>Displays the name of the file.</p>
+        <p><b>Location:</b>Displays the location of the file.</p>
+        <p><b>Open Folder:</b>Opens the Windows folder holding the file.</p>
+        <p><b>Read Only:</b>If you do not want the file to be edited, click the check box to add a check mark.</p>
+        <p><b>Size:</b>Displays the size of the file.</p>
+        <p><b>Created:</b>Displays the date and time that the file was created</p>
+        <p><b>Modified:</b>Displays the date and time that the file was last modified.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><b>Keyboard Navigation / Multi-Select</b>:</p>
+        <p>&lt;Up Arrow&gt;: Moves the selection “Up”</p>
+        <p>&lt;Up Arrow&gt;&lt;Shift&gt;: Moves the selection “Up” and continues the selection</p>
+        <p>&lt;Up Arrow&gt;&lt;CTRL&gt;: Moves the selection “Up” to the top of the Files Map</p>
+        <p>&lt;Up Arrow&gt;&lt;CTRL&gt;&lt;Shift&gt;: Moves the selection “Up” to the top of the files map, selecting all topics from the initial selection to the top</p>
+        <p>&lt;Down Arrow&gt;: Moves the selection “Down”</p>
+        <p>&lt;Down Arrow&gt;&lt;Shift&gt;: Moves the selection “Down” and continues the selection</p>
+        <p>&lt;Down Arrow&gt;&lt;CTRL&gt;: Moves the selection “Down” to the bottom of the Files Map</p>
+        <p>&lt;Down Arrow&gt;&lt;CTRL&gt;&lt;Shift&gt;: Moves the selection “Down” to the bottom of the files map, selecting all topics from the initial selection</p>
+        <p>&lt;Page Up&gt;: Moves the selection to the top of the next full screen</p>
+        <p>&lt;Page Up&gt;&lt;Shift&gt;: Moves the selection to the top of the next full screen and selects all of the topics in that area.</p>
+        <p>&lt;Page Up&gt;&lt;CTRL&gt;: Same as&lt;Page Up&gt;&lt;Shift&gt;</p>
+        <p>&lt;Page Down&gt;: Moves the selection to the bottom of the next full screen</p>
+        <p>&lt;Page Down&gt;&lt;Shift&gt;: Moves the selection to the bottom of the next full screen and selects all of the topics in that area.</p>
+        <p>&lt;Page Down&gt;&lt;CTRL&gt;: Same as&lt;Page Down&gt;&lt;Shift&gt;</p>
+        <p>&lt;Home&gt;: Moves the list to the top</p>
+        <p>&lt;End&gt;: Moves the list to the bottom</p>
+        <p>&lt;Shift&gt; + Mouse Click: Selects all topics from the original selection to where the mouse was clicked</p>
+        <p>&lt;CTRL&gt; + Mouse Click: Selects or de-Selects only the topics that you click in the multiple selection</p>
+        <p>&#160;</p>
+        <p>Right Click: brings up a menu with Open, Open With, and Properties.</p>
+        <p>
+            <img src="../../../../../Resources/Images/RightClickMenu.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;" />
+        </p>
+        <p style="font-weight: bold;">&#160;</p>
+        <p style="font-weight: bold;">Test Cases:</p>
+        <p>Test to make sure you can't cut or delete files form the file list. Do then separately then again after pressing CTRL + A.</p>
+        <p>&#160;</p>
+    </body>
+</html>

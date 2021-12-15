@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="436" MadCap:lastWidth="887">
+    <body>
+        <ul class="checkbox">
+            <li><span class="UI">Pending Check-Ins</span>:&#160;Requires that the project be bound to source control and that you or another user have the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> checked out. <ul class="checkbox"><li>Double-click the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Pending Check-Ins</span> pane</li><li>Right-click the  <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Pending Check-Ins</span> pane and select <span class="MenuItem">Open</span></li><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> file in the <span class="UI">Pending Check-Ins</span> pane and press <span class="KeyboardShortcut">Enter</span></li><li>Select the <MadCap:snippetText src="Flare--FileTypes.flsnp" /> in the <span class="UI">Pending Check-Ins</span> pane and click the Open button <img src="../../Images/TestPlans/Buttons/Button---Open.png" /> in the local toolbar</li></ul></li>
+        </ul>
+    </body>
+</html>

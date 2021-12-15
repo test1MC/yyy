@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Testing Resources">
+    <TocEntry
+      Title="New Feature Checklists">
+      <TocEntry
+        Title="Flare Project: New File Checklist"
+        Link="/Content/QA/TestPlans/!TestingResources/New Feature Checklists/New File Checklist.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Microsoft UI Guidelines">
+      <TocEntry
+        Title="UI Guidelines vs. Usability Testing"
+        Link="/Content/QA/TestPlans/!TestingResources/Microsoft UI Guidelines/UI Guidelines vs. Usability Testing.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="FTP Server Info"
+      Link="/Content/QA/TestPlans/!TestingResources/FTP Server Info.htm" />
+    <TocEntry
+      Title="License Keys"
+      Link="/Content/QA/TestPlans/!TestingResources/License Keys.htm" />
+    <TocEntry
+      Title="Microsoft UI Guidelines"
+      Link="/Content/QA/TestPlans/!TestingResources/MIcrosoft UI Guidelines.htm" />
+    <TocEntry
+      Title="Update Dashboard Steps"
+      Link="/Content/QA/TestPlans/!TestingResources/Update Dashboard Steps.htm" />
+  </TocEntry>
+</CatapultToc>

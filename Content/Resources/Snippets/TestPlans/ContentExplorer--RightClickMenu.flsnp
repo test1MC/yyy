@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="550" MadCap:lastWidth="1254">
+    <body>
+        <p class="bold">
+            <MadCap:snippetText src="Flare--FileTypes.flsnp" /> right-click menu:</p>
+        <p MadCap:conditions="FlareFileTypes.Topic,FlareFileTypes.TableStyle,FlareFileTypes.Stylesheet,FlareFileTypes.Snippet,FlareFileTypes.PageLayout,FlareFileTypes.Multimedia,FlareFileTypes.MasterPage">
+            <img src="../../Images/TestPlans/Flare/Content Explorer/Menu--ContentExplorer--RightClickFile.png" alt="" title="" class="properties" />
+        </p>
+        <p MadCap:conditions="FlareFileTypes.Image">
+            <img src="../../Images/TestPlans/Flare/Content Explorer/Menu--ContentExplorer--RightClickImage.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="Menu-Tests.flsnp" />
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold">Preview (Preview file with different condition tag expressions):</span>&#160;Opens a Preview of the selected content file (Only active for topic files).</li>
+                <li><span class="bold">Open (Open):</span> Opens the selected Content file in the <span class="UI">MDI</span>.</li>
+                <li><span class="bold">Open with:</span> Gives options to open the Content file in the <span class="UI">Internal Text Editor</span>, <span class="UI">Internal Browser </span>and other applications.</li>
+                <li><span class="bold">Source Control:</span>&#160;Invokes the Source Control sub-menu (covered in the Source Control Test Plan).</li>
+                <li><span class="bold">Cut (Cut):</span> Cuts the selected Content to the clipboard</li>
+                <li><span class="bold">Copy (Copy):</span> Copies the selected Content file to the clipboard.</li>
+                <li><span class="bold">Paste (Paste):</span> Pastes the Content file from the clipboard</li>
+                <li><span class="bold">Delete (Delete):</span> Removes the selected Content file from the project.</li>
+                <li><span class="bold">Rename (Rename):</span> Allows you to rename the Content file</li>
+                <li MadCap:conditions="FlareFileTypes.Image"><span class="bold">Edit with MadCap Capture (Edit this file with MadCap Capture):</span> Opens the selected image file in MadCap Capture. This option is only present when right-clicking an image file.</li>
+                <li MadCap:conditions="FlareFileTypes.Image"><span class="bold">Regenerate Captured Image (Regenerate Captured Image): </span>Regenerates an Image to remove a watermark or regenerates a PROPS file. Only appears when an image is right clicked. </li>
+                <li><span class="bold">Convert to XML: </span>(Only active for non-XML&#160;topic files) Invokes the <span class="UI">HTML -&gt; XHTML Conversion</span> dialog which lets you convert the non-XML&#160;topic file to XML</li>
+                <li><span class="bold">Send to Folder… (Send to Folder): </span>Invokes the <span class="UI">Send to Folder</span> dialog which lets you copy the file out of the project to any location,</li>
+                <li><span class="bold">Properties (Display properties for the selected item):</span> Opens the <span class="UI">Properties</span> dialog window for the selected file.</li>
+                <li><span class="bold">View Links (Open this file in the Link Viewer):</span> Opens this file in the <span class="UI">Link Viewer</span>.</li>
+                <li><span class="bold">Locate in TOC (Locate file in TOC(s)):</span> Opens the <span class="UI">TOC&#160;Editor</span> and locates the content file in the TOC. If the content file occurs in multiple TOCs, this will open an untitled dialog which lets you select between all TOCs in the project which link to the content file.</li>
+            </ul>
+        </div>
+    </body>
+</html>

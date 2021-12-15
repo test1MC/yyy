@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="954" MadCap:lastWidth="1175" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare,AuthorFileTagSet.Steve,Status.Flare V8 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Images:&#160;Thumbnails - UI</h2>
+        <p>Thumbnail Properties can be set locally on an &lt;img&gt;&#160;tag using the <span class="UI">Edit Image</span> dialog.</p>
+        <p>&#160;</p>
+        <p>Starting in Flare 11, the original image for a thumbnail can be previewed in the XML Editor by clicking on it. The preview is centered over the image if the whole preview will be visible. If a part of the preview would be cut off, then the position is adjusted so that the whole preview is visible.</p>
+        <h3>Opening the dialog</h3>
+        <ul style="list-style-type: square;">
+            <li>Right-click an image and select Edit Image… from the context menu</li>
+            <li>Right-click an img block or span bar and select Edit Image… from the context menu</li>
+            <li>Select an image and go !Format |&#160;Image</li>
+            <li>Select an image and press &lt;CTRL&gt;&lt;Alt&gt;-B</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Then, select the Thumbnails tab.</p>
+        <h3>UI&#160;Test Cases</h3>
+        <img src="../../../../../Resources/Images/TestPlans/Flare/Images/EditPicture--Dialog--ThumbnailTab.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">(Behavior):</span> Sets the behavior of the thumbnail in the output<ul style="list-style-type: circle;"><li><span class="bold">(default):&#160;</span>Uses the default behavior as it is set in the Stylesheet.</li><li><span class="bold">(as is):&#160;</span>Used mainly when viewing properties of multiple items. Leaves the previous setting unchanged.</li><li><span class="bold">None:&#160;</span>The image will not be shown as a thumbnail.</li><li><span class="bold">Inherit:&#160;</span>The image will use whatever thumbnail settings are applied to the parent &lt;img&gt;&#160;tag</li><li><span class="bold">Mouse Over:&#160;</span>The end user can see the picture in its full size by hovering the mouse over the thumbnail. As a result, the full size of the image will be shown in a popup window.</li><li><span class="bold">Hyperlink:&#160;</span>The end user can see the picture in its full size by clicking the thumbnail. As a result, the full size of the image will be shown in a new window.</li><li><span class="bold">Popup:&#160;</span>The end user can see the picture in its full size by clicking the thumbnail. As a result, the full size of the image will be shown in a popup window.</li></ul></li>
+            <li><span class="bold">Max Width*:</span> Lets you set the size of the thumbnail by setting the maximum width of the image.</li>
+            <li><span class="bold">Max Height*:</span> Lets you set the size of the thumbnail by setting the maximum height of the image.</li>
+        </ul>
+        <p class="note">*&#160;If both of these properties are set, the property that makes the thumbnail image smaller will be the only relevant property. </p>
+        <p>&#160;</p>
+    </body>
+</html>

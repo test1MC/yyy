@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <span class="bold">Enable Audio: </span> Toggles on/off the audio property of the object</li>
+            <li>
+                <span class="bold">Settings Section:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Audio:</span> Displays the currently selected audio file<ul><li>Drop-down displays used audio in the current movie</li></ul></li>
+                    <li>
+                        <span class="bold">Play: </span> Will play the currently selected audio</li>
+                    <li>
+                        <span class="bold">Stop: </span> Will stop the sound that is playing</li>
+                    <li>
+                        <span class="bold">Edit: </span> Will launch the sound editor (See Audio test plan)</li>
+                    <li>
+                        <span class="bold">Pick Build-In Sound...: </span> Opens dialog of factory sounds to pick from (See Audio test plan)</li>
+                    <li>
+                        <span class="bold">Pick From Movie Sound Library...: </span> Opens dialog of sounds used in the current movie (See Audio test plan)</li>
+                    <li>
+                        <span class="bold">Import Into Sound Library...: </span> Opens a standard windows dialog, for importing sounds into the Movie Sound Library</li>
+                    <li>
+                        <span class="bold">Record a New Audio Clip...: </span> Opens the record audio dialog (See Audio test plan)</li>
+                    <li>
+                        <span class="bold">Loop Sound: </span> Will loop the sound</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

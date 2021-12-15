@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1361" MadCap:lastWidth="632" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Locked Elements - Editing</h2>
+        <h3>Lock/Unlock an Element via the Stylesheet</h3>
+        <p>Set the "mc-locked"&#160;property of any elements to "locked".</p>
+        <h3>Lock/Unlock an Element Inline</h3>
+        <p class="bold">How to lock elements:</p>
+        <ol>
+            <li>Open a topic.</li>
+            <li>
+                <p>Place your cursor on a paragraph that you want to lock, or highlight multiple paragraphs.</p>
+                <p class="note">Note: Only entire blocks of content or paragraphs can be locked, not portions of paragraphs.</p>
+            </li>
+            <li>Select !Format | Locks | Mark Element(s) to be Locked for the tool strip mode</li>
+            <li>Select high light text and the select "!Review | Locks Group |Locks " to select the text to be locked and the select "!Review | Locks Group |Enable Locks " to lock text</li>
+        </ol>
+        <ul style="list-style-type: square;">
+            <li>The paragraphs display a gray background (which will not show up in the output). If you want to hide this shading from the XML Editor, but still keep the locks on the paragraphs, select Format&gt;Locks&gt;Show Locked Elements.</li>
+            <li>Notice that you can still click in the paragraphs and edit the text. That is because the elements have only been marked for locking, but they have not yet been locked.</li>
+        </ul>
+        <ol>
+            <li>Select Format | Locks | Locks (Disabled)<ul style="list-style-type: square;"><li>The paragraphs marked for locking are now locked, and you cannot edit the text within them.</li></ul></li>
+            <li>Press CTRL+S or click  to save your work.</li>
+        </ol>
+        <p class="note">Note: Annotations, which are used in the topic review process, cannot be added to areas of a topic that have been locked. See About Topic Reviews and Contributions.</p>
+        <p class="note">Note: This feature is to be used for locking areas of a file, not the file itself.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Locked Elements/LockedText.png" style="max-width: 6.00in;border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;padding-left: 1px;padding-right: 1px;padding-top: 1px;padding-bottom: 1px;" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">How to unlock elements:</p>
+        <ol>
+            <li>Open a topic where some elements have been locked.</li>
+            <li>Select Format&gt;Locks&gt;Locks (Enabled) for the toolstrip mode "Review|Locks|Enable Locks" to uncheck the lock enable in ribbon mode </li>
+            <li>The elements are now unlocked and you can edit them. However, the paragraphs continue to be "marked for locking," meaning they can be easily be locked again by selecting this option again.</li>
+            <li>(Optional) If you want to remove the "marks" on paragraphs that prepare them for locking, place your cursor on the paragraph or highlight multiple paragraphs. Then select Format&gt;Locks&gt;Unlock Element(s).</li>
+            <li>Press CTRL+S or click  to save your work.</li>
+        </ol>
+        <h4>Code</h4>
+        <p class="bold">Locked paragraph (inline):</p><pre xml:space="preserve">&lt;p class="note" style="mc-locked: locked;"&gt;This is the paragraph content.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+        <p class="bold">Unlocked paragraph (inline):</p><pre xml:space="preserve">&lt;p class="note" style="mc-locked: unlocked;"&gt;This is the paragraph content.&lt;/p&gt;</pre>
+        <p>&#160;</p>
+    </body>
+</html>

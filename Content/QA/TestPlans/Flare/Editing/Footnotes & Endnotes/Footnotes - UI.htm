@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3928" MadCap:lastWidth="1034" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <body>
+            <h2>Footnotes</h2>
+            <h3>Opening the UI</h3>
+            <p class="bold">Open Footnote Properties Dialog:</p>
+            <ol>
+                <li>Right Click a footnote in WYSIWYG</li>
+                <li>Select footnote properties</li>
+            </ol>
+            <p>&#160;</p>
+            <p class="bold">Open Insert Footnote Dialog:</p>
+            <ol>
+                <li>!Insert|Footnote</li>
+                <li>Type into the XML</li>
+            </ol>
+            <p class="bold">&#160;</p>
+            <p class="bold">Test Cases:</p>
+            <p>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</p>
+            <p>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</p>
+            <p>Insert in paragraphs with various elements in them (Images, Form elements, Special Characters, Help Controls, etc)</p>
+            <p>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</p>
+            <p>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</p>
+            <h3>UI</h3>
+            <h4>Insert Footnote/Endnote Dialog</h4>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/InsertFootnoteEndnote-Dialog.png" class="properties">
+            </img>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <h4>Controls</h4>
+            <p>In the first part of the dialog, you can select the location where the accompanying footnote or endnote will be placed in the output. However, it is best practice to set the location in the style sheet and apply it to your entire project.</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">End of Page</span> This places the footnote comment at the end of the page where the in-text footnote number is inserted.</li>
+                <li><span class="bold">End of Topic</span> This places the footnote comment at the end of the topic where the in-text footnote number is inserted. This is similar to the previous option. However, a single topic may result in multiple pages in the output. This option ensures that the footnote is placed at the end of the topic, not necessarily on the same page where the corresponding number or symbol is placed.</li>
+                <li><span class="bold">End of Section</span> This places the footnote comment at the end of the section where the footnote number is inserted. You can create section breaks in the TOC. </li>
+                <li><span class="bold">End of Chapter</span> This places the footnote comment at the end of the chapter where the footnote is inserted. You can create chapter breaks in the TOC. </li>
+                <li><span class="bold">Endnote Proxy</span> This is designed to place the footnote comment at a specific location in the output, such as at the end of the book. It works in conjunction with an endnotes proxy, which you create separately. The comment displays wherever you insert the endnotes proxy.</li>
+            </ul>
+            <h4>Footnote Properties Footnote Dialog -Right click a footnote in WSY and select Footnote Properties</h4>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/FootnotePropertiesFootnote--Dialog.png" class="properties">
+            </img>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <h4>Controls</h4>
+            <p>&#160;</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Comment position:</span> (Footnote tab, Position field) You can change the location where a footnote comment is placed in the output (e.g., end of page, document, chapter, section, book).</li>
+                <li><span class="bold">Number format or symbol:</span> (Footnote tab, Format fields) By default, a decimal number (e.g., 1, 2, 3) is used when you insert a footnote. However, you can select a different format. For example, you can change the format to uppercase alpha (e.g., A, B, C) or lowercase Roman (e.g., i, ii, iii). You can also replace the number with a symbol, such as an asterisk.</li>
+                <li><span class="bold">Number:</span> (Footnote tab, Style CSS Span Class fields) You can change the look of the footnote numbers (both in-text and in-comment), by creating and modifying &lt;span&gt; style classes. Alternatively, you can use the &lt;MadCap|footnote&gt; style or a class of it to modify the look of both the in-text and in-comment footnote numbers. The difference is that the &lt;span&gt; style lets you change the look of one or the other, rather than both at the same time.</li>
+                <li><span class="bold">Number restart:</span> (Footnote tab, Number field) When you insert footnotes, the numbers are incremented throughout your manual. However, you can restart the numbering at a certain location (e.g., at the beginning of the next chapter or section). </li>
+                <li><span class="bold">Style (CSS'span' class for number):</span> Footnote number in the topic itself.&#160;</li>
+                <li><span class="bold">Style(CSS 'span' class for in-comment number, defaults to in-text style):</span> in the footnote area of the topic where the footnotes are listed.</li>
+            </ul>
+            <hr>
+            </hr>
+            <h4>Footnotes Font Dialog</h4>
+            <p>&#160;</p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/FootnotePropertiesFont--Dialog.png" class="properties" style="width: 239px;height: 173px;">
+            </img>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <hr>
+            </hr>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Comment font settings:</span> (Font tab) You can modify the font in a footnote comment. This includes changing the font family, size, color, case, and more. See Editing Footnote Comment Font Settings.</li>
+            </ul>
+            <h4>Footnotes Advanced Dialog</h4>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/FootnotePropertiesAdvanced--Dialog.png" class="properties" style="width: 257px;height: 191px;">
+            </img>
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </div>
+            <h4>Controlse</h4>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Comment spacing:</span> (Advanced tab) You can modify the spacing for the footnote comment text. This includes the ability to change the spacing above or below the comment text, the white space between words or characters, or the indentation before the number and text. </li>
+                <li><span class="bold">Complete Letter Spacing and/or Word Spacing sections:</span> For either section, you can select Expanded or Condensed and enter a number in the field below. Watch the preview area at the bottom to see how the settings affect the spacing.</li>
+            </ul>
+            <p>&#160;</p>
+            <h3>Footnotes UI</h3>
+            <p class="bold">Footnotes are now directly editable in the XML editor. </p>
+            <p class="bold" style="font-weight: normal;">&#160;</p>
+            <p class="bold" style="font-weight: normal;">In V7 drag and drop to and from a footnote as well as within the footnote area and corresponding block bars has been disabled.</p>
+            <p class="bold" style="font-weight: normal;">&#160;</p>
+            <p class="TestCases">Test dragging and dropping various elements into and out of the footnote.</p>
+            <p class="bold" style="font-weight: normal;">&#160;</p>
+            <p class="bold" style="font-weight: normal;">
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/UI_Footnotes_Disabled.png" style="width: 305px;height: 128px;" />
+            </p>
+            <p>&#160;</p>
+            <p class="bold">Web Layout: <span style="font-weight: normal;">In Web Layout all the footnotes are on one page.</span></p>
+            <p class="bold">
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/UI_Footnotes_WebLayout.png" style="width: 392px;height: 325px;" />
+            </p>
+            <p>&#160;</p>
+            <p><b>Print Layout:</b>Print layout list the end of page separately from the rest at the bottom of the page and will not show up with the other type of footnotes. Most users will only use one type of footnote on a page anyways.</p>
+            <p>&#160;</p>
+            <p>&#160;</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Footnotes/UI_Footnotes_PrintLayout.png" style="width: 300px;height: 213px;" />
+            </p>
+            <p>&#160;</p>
+        </body>
+    </body>
+</html>

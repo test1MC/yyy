@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="313" MadCap:lastWidth="1051">
+    <body>
+        <ul style="list-style-type: square;">
+            <li><b>Language:</b> Use this to select the Target Language.</li>
+            <li><b>Right-to-left:</b> Only available for right-to-left languages. (Arabic, Hebrew, Persian, Urdu, Yiddish)<ul style="list-style-type: circle;"><li><b>Invert left/right local styles:</b> Use to maintain localized styles.</li><li><b>Invert left/right stylesheet rules:</b> Used to maintain styles set in style sheets.</li><li><b>Invert Capture captions:</b> Use to have captions read right to left.</li></ul></li>
+        </ul>
+        <MadCap:snippetBlock src="../GridView-Tests.flsnp" />
+    </body>
+</html>

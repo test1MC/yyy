@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1672" MadCap:lastWidth="792" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs] ">
+    <head>
+    </head>
+    <body>
+        <h2>Equations - UI   </h2>
+        <h3>Opening the UI</h3>
+        <ul style="list-style-type: square;">
+            <li>!Insert | Equation</li>
+            <li>CTRL+E</li>
+        </ul>
+        <h3>Misc Test Cases</h3>
+        <p class="TestCases">Test Cases</p>
+        <p>Attempting to insert an equation without Java installed should prompt a similar java dialog:</p>
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--VectorGraphic--SVGJavaPrompt.png" />
+            </p>
+        </p>
+        <p>
+            <p>&#160;</p>
+            <p>Attempting to insert an equation without Ghostscript installed should prompt a similar dialog:</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Images/UI--VectorGraphic--GhostscriptPrompt.png" />
+            </p>
+        </p>
+        <h3>Opening the UI (Insert/Edit Equation)</h3>
+        <p class="bold">Insert Equation dialog</p>
+        <ul style="list-style-type: square;">
+            <li>!Insert | Equation…</li>
+            <li>Hit CTRL+E on your keyboard</li>
+        </ul>
+        <p class="bold">Edit Equation dialog</p>
+        <ul style="list-style-type: square;">
+            <li>Right-click an equation that is already in a topic and select Edit Equation…</li>
+            <li>Select an inserted equation and press CTRL+E</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>Insert in paragraphs selected in various ways (Partial selection, just the insertion point, entire selection)</li>
+                <li>Insert in various formatted paragraphs (Paragraph styles, character styles, Local formatting, etc)</li>
+                <li>Insert in paragraphs with various elements in them (Images, Form elements, Special Characters, Help Controls, etc)</li>
+                <li>Insert with various elements selected (Table Cells, Lists, Divs, Drop-down/Expanding areas, etc.)</li>
+                <li>Insert in many types of Elements (Tables, Forms, Textboxes, Marquees, Lists, Drop-down/Expanding areas, etc.)</li>
+            </ul>
+        </div>
+        <h3>Insert/Edit Equation dialog:&#160;UI Test Cases</h3>
+        <h4>Equation Editor</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Equations/UI--Equations.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p style="font-weight: bold;">***The only things that we can actually control on this editor is the top taskbar and the screen tip and alternate texts.</p>
+        <hr>
+        </hr>
+        <h3>Misc Test Cases</h3>
+        <p class="TestCases">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>Verify that equations and equations with Classes are rendered correctly in the editor when the editor is resized</li>
+            <li>Verify that equations and equations with Classes are rendered correctly in tables/cells when the table/cell is resized</li>
+            <li>Verify equation inserted in Text Boxes are rendered correctly with various Float properties applied.</li>
+            <li>You can apply or change a style to the equation, edit the equation, and delete the equation.</li>
+        </ul>&#160;</body>
+</html>

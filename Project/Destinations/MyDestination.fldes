@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="To the Subsystems folder on MadDev"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="\\winesap\RnDIntranet\Subsystems\TestPlans"
+  Port=""
+  ViewUrl="http://maddev"
+  Type="file"></CatapultDestination>

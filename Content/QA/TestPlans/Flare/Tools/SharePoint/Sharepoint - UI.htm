@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3916" MadCap:lastWidth="1088" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+    <head>
+    </head>
+    <body>
+        <h2>SharePoint Explorer - UI</h2>
+        <h3>Opening the SharePoint Explorer</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;SharePoint Explorer</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Project |&#160;SharePoint Explorer</span></li>
+        </ul>
+        <h3>Adding a SharePoint Server</h3>
+        <p>In order to test anything in the <span class="UI">SharePoint Explorer</span>, you'll first need to add a SharePoint Server.</p>
+        <ol>
+            <li>Click the Connect to SharePoint button <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/Button---ConnectToSharepoint.png" /> in the <span class="UI">SharePoint Explorer</span>'s local toolbar</li>
+            <li>In the <span class="UI">Connect to SharePoint Server</span> dialog, enter the SharePoint site you want to connect to. At the time this test plan was last update, you could use http://appserver01:8080/ (or any sub-site therein)</li>
+            <li>Click the <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/Button---VerifySharePointServer.png" alt="" title="" /> button to verify the SharePoint Server</li>
+            <li>Click OK&#160;to close the <span class="UI">Connect to SharePoint Server</span> dialog and add it to the <span class="UI">SharePoint Explorer</span></li>
+        </ol>
+        <h3>Connect to SharePoint Server - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/Dialog--ConnectToSharePointServer.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enter Server URL:&#160;</span>Enter the SharePoint Server path</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/Button---VerifySharePointServer.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold">: </span>Verify the SharePoint Server path</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and adds the verified SharePoint Server path to the <span class="UI">SharePoint Explorer</span></li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not add anything to the <span class="UI">SharePoint Explorer</span></li>
+        </ul>
+        <h3>SharePoint Explorer - UI&#160;Test Cases</h3>
+        <div style="width: 202px;height: 833px;float: left;">
+            <p class="bold">Default view docked in left , pane (with a standard Resources folders added):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharepointExplorer--DefaultView.png" class="properties" style="mc-float: none;">
+                </img>
+            </p>
+            <p><b>Split Show Folders/Show Files view:</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharepointExplorer--SplitView.png" />
+            </p>
+            <p><b>Show Files view:</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharepointExplorer--FileView.png" class="leftclear" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <div class="SnippetIndent">
+            <p class="bold">&#160;</p>
+            <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+            <ul class="checkbox">
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/Button---ConnectToSharepoint.png" /> (Connect to SharePoint Server):&#160;</span>Invokes the <span class="UI">Connect to SharePoint Server</span> dialog allowing you to add a SharePoint Server.</li>
+            </ul>
+            <ul class="checkbox">
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" /> (Show/Hide Folders):&#160;</span>Toggles between showing or hiding the folders in the <span class="UI">SharePoint Explorer Pane</span>.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" /> (Show/Hide Files):&#160;</span>Splits the <span class="UI">SharePoint Explorer Pane</span> into two halves. The right half shows additional details for the files. When you click a file on the right side, a red circle shows the location in the <span class="UI">SharePoint Explorer Pane</span>. See a movie about this feature.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" /> (Collapse All):&#160;</span>Collapses all of the folders so that you can no longer see all of the files under each one.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" /> (Up):&#160;</span>Moves up one folder in the hierarchy in the <span class="UI">SharePoint Explorer Pane</span>. This button becomes enabled if you use the Show Folders or Split View and browse into a folder.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" style="mc-tag-and-class: ;" /> (Open):&#160;</span>Opens the selected file.</li>
+                <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" style="mc-tag-and-class: ;" /> (Run Properties dialog for this item):&#160;</span>Opens the <span class="UI">Properties</span> dialog for the selected file.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <p class="bold">Show Files grid</p>
+            <p class="bold">Columns</p>
+            <ul class="checkbox">
+                <li><span class="bold">Name: </span>Shows the name of the  file or folder.</li>
+                <li><span class="bold">Date Created: </span>Shows the date and time the file or folder was created.</li>
+                <li><span class="bold">Date Modified:&#160;</span>Shows the date and time the file or folder was last modified.</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h4>Right-Click Menus</h4>
+        <p class="bold">Right-clicking a server should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharePointExplorer--RightClickMenu--Root.png" class="leftclear">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span> Open the SharePoint site in the <span class="UI">Internal Browser</span></li>
+                <li><span class="bold">Remove:</span> Removes the selected SharePoint site from the <span class="UI">SharePoint Explorer</span></li>
+                <li><span class="bold">Refresh:</span> Refreshes the list of subsite, folders and files that appear under the selected site</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a subsite should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharePointExplorer--RightClickMenu--SubSite.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open:</span> Open the selected subsite in the <span class="UI">Internal Browser</span></li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected folder</li>
+                <li><span class="bold">Refresh:</span> Refreshes the list of  folders and files that appear under the selected subsite</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a folder  should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharepointExplorer--RightClickMenu--Folder.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open:</span> Open the SharePoint site for the selected folder in the <span class="UI">Internal Browser</span></li>
+                <li><span class="bold">Copy to Project...:</span> Copy the selected folder and all files contained therein to your project</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected folder</li>
+                <li><span class="bold">Refresh:</span> Refreshes the selected folder</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a file  should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SharePoint/SharePointExplorer--RightClickMenu--File.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open:</span> Open the selected file</li>
+                <li><span class="bold">Copy to Project...:</span> Copy the selected file to your project</li>
+                <li><span class="bold">Check Out...:</span> Check out the selected file from SharePoint</li>
+                <li><span class="bold">Check In...:</span> Check in selected file to SharePoint</li>
+                <li><span class="bold">Undo Check Out...:</span> Undo the check out of selected file from SharePoint</li>
+                <li><span class="bold">Properties:</span> Opens the Properties dialog window for the selected file</li>
+            </ul>
+        </div>
+        <h3>Copy to Project dialog - UI&#160;Test Cases</h3>
+        <p>Any file within a folder copied to project should be listed here:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--CopytoProject.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Keep Folder Synchronized (create mapping):&#160;</span>Create mapping from all files in the folder to all of the external files in that external folder</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+    </body>
+</html>

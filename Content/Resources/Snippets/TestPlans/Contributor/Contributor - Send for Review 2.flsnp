@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="175" MadCap:lastWidth="976">
+    <head>
+    </head>
+    <body>
+        <p>Right-click a TOC&#160;node |&#160;Send For Review</p>
+        <p>
+            <img src="../Images/send for review right click.jpg" />
+        </p>
+        <p>&#160;</p>
+        <p>This should open the following dialogue:</p>
+        <p>
+            <img src="../Images/send topics for review wizard TOC.jpg" />
+        </p>
+        <ul class="checkbox">
+            <li style="font-weight: bold;">Save Package:</li>
+            <li style="font-weight: bold;">Next:</li>
+            <li style="font-weight: bold;">Send:</li>
+            <li style="font-weight: bold;">Cancel:</li>
+        </ul>
+    </body>
+</html>

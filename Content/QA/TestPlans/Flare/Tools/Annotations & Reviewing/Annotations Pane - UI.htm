@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1397" MadCap:lastWidth="1022" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review">
+    <head>
+    </head>
+    <body>
+        <h2>Annotations - UI</h2>
+        <h3>Opening the Annotations Pane (removed in Flare v.7)</h3>
+        <ul class="checkbox">
+            <li>You should not be able to open the Annotations pane</li>
+        </ul>
+        <h3>Annotations Pane- UI&#160;Test Cases (removed in Flare v.7)</h3>
+        <p class="bold">Default view docked in right pane:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/UI--AnnotationsPane.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/Button--OpenEditAnnotationPane.png" />:&#160;Opens the <span class="UI">Edit Annotation Pane</span></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/Button--old_InsertAnnotation.png" />:&#160;</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Annotations &amp; Reviewing/Button--ToggleShowingAnnotations.png" />:&#160;Toggles showing annotations in the <span class="UI">XML Editor</span>.</li>
+            <li>
+                <p><span class="bold">Annotations list:&#160;</span>Grid displays a list of all annotations present in the current file. (This area will display "(there are no annotations in the current file)"&#160;if there are no annotations or if no valid file (topic, snippet, etc)&#160;is currently open.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li>Text: Displays the text of the annotation.</li>
+                    <li>Initials: Displays the initials of the user who added the annotation.</li>
+                    <li>Creator:</li>
+                    <li>Editor:&#160;</li>
+                    <li>Create Date:</li>
+                    <li>Edit Date:</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+    </body>
+</html>

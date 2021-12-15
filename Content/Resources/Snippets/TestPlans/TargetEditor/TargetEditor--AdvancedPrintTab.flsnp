@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="802" MadCap:lastWidth="1211">
+    <body>
+        <ul class="checkbox">
+            <li MadCap:conditions="TargetEditor.Word,TargetEditor.FrameMaker,TargetEditor.EPUB"><span class="bold">Generate resized copies of scaled images: </span>If enabled, Flare will create new copies of images wherever you have specified resizing.</li>
+            <li MadCap:conditions="TargetEditor.PDF"><span class="bold">Use empty ALT&#160;text for images that do not have ALT text:&#160;</span>Select this option to inject empty ALT&#160;attributes (alt="") for every image in the project that does not have ALT&#160;text set.</li>
+            <li><span class="bold">Auto-size Capture captions to fit text:&#160;</span>(TBW)</li>
+            <li><span class="bold">Generate TOC Proxy: </span>Select this option to automatically place a TOC proxy at the beginning of the output, if not already present.</li>
+            <li><span class="bold">Generate Index Proxy: </span>Select this option to automatically place an Index proxy at the end of the output, if not already present.</li>
+            <li><span class="bold">Generate Glossary Proxy: </span>Select this option to automatically place a Glossary proxy at the end of the output, if not already present.</li>
+            <li MadCap:conditions="TargetEditor.Word,TargetEditor.FrameMaker"><span class="bold">Master Page: </span>Select a master page if you want to associate one with the target.<ul style="list-style-type: circle;"><li MadCap:conditions="TargetEditor.Word,TargetEditor.FrameMaker"><span class="bold"><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" />:&#160;</span>Opens the currently selected Master Page in the <span class="UI">XML Editor</span>.</li></ul></li>
+            <li><span class="bold">Stylesheet Medium: </span>Select a style sheet medium type if you want to associate one with the target.</li>
+            <li MadCap:conditions="TargetEditor.PDF,TargetEditor.XPS"><span class="bold">Empty Page Handling |&#160;Inject empty pages as needed to ensure TOC nodes start on their selected pages: </span>Select this option if you want to control the insertion of "Empty"&#160;pages at the target level. Alternatively, it can be done at each "break"&#160;in the TOC. Enabling this option lets the user simply designate the page type each break should start with, and ensures that empty pages are injected when necessary to prevent repeating any "Right" type or "Left" type pages.</li>
+            <li><span class="bold">Expanding Text Effects:&#160;</span>Select how Expanding Text should be converted to the print output.<ul style="list-style-type: circle;"><li><span class="bold">Convert to footnotes:&#160;</span>Select this option if you want expanding text effects in your project to be converted to footnotes when you build the output.</li><li><span class="bold">Expand text inline:&#160;</span>Select this option if you want expanding text effects in your project to be converted to simple text within the paragraph when you build the output.</li><li><span class="bold">Remove the "body":&#160;</span>Select this option if you want the body portion of expanding text effects in your project to be removed when you build the output.</li></ul></li>
+            <li><span class="bold">Text Popup Effects:&#160;</span>Select how Text Popups should be converted to the print output.<ul style="list-style-type: circle;"><li><span class="bold">Convert to footnotes:&#160;</span>Select this option if you want text popups in your project to be converted to footnotes when you build the output.</li><li><span class="bold">Expand text inline:&#160;</span>Select this option if you want text popups in your project to be converted to simple text within the paragraph when you build the output.</li><li><span class="bold">Remove the "body":&#160;</span>Select this option if you want the body portion of text popups in your project to be removed when you build the output.</li></ul></li>
+            <li><span class="bold">Generated TOC:&#160;</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Use TOC&#160;Depth for Heading Levels:&#160;</span>You can select an option to base the heading levels of your generated TOC on the structure of the outline TOC.</li>
+                    <li><span class="bold">Inject Headings for unlinked books in TOC:&#160;</span>You can select an option to create headings in a generated TOC for books that are not linked in your outline TOC.</li>
+                    <li><span class="bold">Remove images from paragraphs with heading levels:&#160;</span>You can select an option to remove images from a generated TOC if you have inserted them into the headings in your topics.</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="TargetEditor.Word"><span class="bold">MS Word Output:&#160;</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Embed images in output:&#160;</span>Embed images in Word output. There should be no resources folder in the output folder and this option should be disabled by default.</li>
+                    <li><span class="bold">Generate PDF for MS Word Output:&#160;</span>Select this option if you want to create a PDF file automatically when you build the target.</li>
+                    <li><span class="bold">Generate XPS for MS Word Output:&#160;</span>Select this option if you want to create a XPS file automatically when you build the target.</li>
+                    <li><span class="bold">Generate multiple documents for MS Word Output:&#160;</span>Select this option if you want to split the generated output into multiple Word documents.</li>
+                    <li><span class="bold">Generate "Mirror Margins" for MS Word Output:&#160;</span>Select this option if you want to create mirror-margins for Microsoft Word output.</li>
+                    <li><span class="bold">Disable Master Pages for MS Word output:&#160;</span>Select this option to disable usage of Master Pages in favor of Page Layouts.</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="TargetEditor.FrameMaker"><span class="bold">FrameMaker Output:&#160;</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Generate PDF for FrameMaker Output:&#160;</span>Select this option if you want to create a PDF file automatically when you build the target.</li>
+                    <li><span class="bold">Disable Master Pages for FrameMaker output:&#160;</span>Select this option to disable usage of Master Pages in favor of Page Layouts.</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="TargetEditor.XPS,TargetEditor.PDF"><span class="bold">Multi-Document Native XPS/PDF Output:&#160;</span>Select this option if you want to split the generated output into multiple XPS/PDF documents.</li>
+            <li MadCap:conditions="TargetEditor.XPS,TargetEditor.PDF"><b>Margins: </b> Select this option if you want to remove extra empty space from top margin of output</li>
+            <li MadCap:conditions="TargetEditor.PDF,TargetEditor.XHTML,TargetEditor.XPS"><span class="bold">Redacted Text:&#160;</span>Select how Redacted Text should be handled in the output.<ul style="list-style-type: circle;"><li><span class="bold">Blackout: </span>Displays black rectangles in places of content that has been redacted.</li><li><span class="bold">Highlight: </span>Displays content that has been redacted with a highlighted background.</li><li><span class="bold">Display as normal text: </span>Displays content that has been redacted in the same way that it displays other content.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases" MadCap:conditions="TargetEditor.Word,TargetEditor.FrameMaker">
+            <p class="TestCases">Test Cases</p>
+            <p>Boundary test all file names (Numbers, Text, Various characters and symbols including international).  Test creating file types with various characters and confirm they appear correctly in the <span class="UI">Target Editor</span> and in the output:</p>
+            <ul class="checkbox">
+                <li>Master Page</li>
+            </ul>
+        </div>
+    </body>
+</html>

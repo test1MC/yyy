@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4740" MadCap:lastWidth="1372" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Comments - UI</h2>
+        <h3>Opening the Comments view</h3>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Comments</li>
+            <li>Press &lt;CTRL&gt;-E on the keyboard</li>
+            <li>Click the Comments button on the Standard Toolbar</li>
+        </ul>
+        <h3>Comments - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/comments_window_pane_example.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar and Columns</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/comments_window_pane_example.png" MadCap:mediastyle="@media print { max-width: 6.5in; }" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---InfoBar.png" /><span class="bold">(Hide/Show the Info Bar):&#160;</span>Displays or hides the Info Bar.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Refresh.png" alt="" title="" /> <span class="bold">(Refresh): </span>Refreshes the data in the Report Tab.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DateFilter.png" alt="" title="" /><span class="bold">(Date filter): </span>Invokes the <span class="UI">Date Filter</span> dialog which lets you limit the visible data to data collected within a particular date range.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Export to csv.png" />Export the data to a csv file: Exports the data to a csv file that can be opened in Microsoft Excel.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SelectDataToChart.png" alt="" title="" /> <span class="bold">(Filter comment status):&#160;</span>Lets you .</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---DiscardComment.png" /><span class="bold">(Discard selected comment(s)):&#160;</span>Deletes the comment from the Feedback Server. Clicking this button should prompt for confirmation.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/Button---SetCommentStatus.png" /><span class="bold">(Set comment status):&#160;</span>Clicking here invokes a drop-down which lets the reviewer or administrator change the comment status to Accepted, Pending Review or Hidden.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Comments grid</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Topic: </span>Displays the path and filename of the topic file that received the comment.</li>
+            <li><span class="bold">User: </span>Displays the username of the user who added the comment.</li>
+            <li><span class="bold">Subject: </span>Displays the subject of the comment.</li>
+            <li><span class="bold">Comment:&#160;</span>Displays the comment. Most likely just the beginning of the comment followed by "...". Hovering over the cell will display the full comment in a tooltip.</li>
+            <li><span class="bold">Date:&#160;</span>Shows the date and time at which the comment was added to the topic.</li>
+            <li><span class="bold">CommentID: </span>Displays the Feedback Server comment ID&#160;number for the comment.</li>
+            <li><span class="bold">ParentID: </span>If the comment is a reply to another comment, displays the Feedback&#160;Server comment ID&#160;number for the parent comment (the comment being replied to).</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <p>&#160;</p>
+        <h4>Right-Click Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/Menu--CommentsRightClickMenu.png" alt="" title="" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <p class="bold">Menu items</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">Info Bar:&#160;</span>Displays or hides the Info Bar.</li>
+                <li><span class="bold">Properties:&#160;</span>Invokes the (Comment)&#160;<span class="UI">Properties</span> dialog.</li>
+                <li><span class="bold">Accept Comment:&#160;</span>Changes the status of all selected comments to Accepted.</li>
+                <li><span class="bold">Pending Review:&#160;</span>Changes the status of all selected comments to Pending Review.</li>
+                <li><span class="bold">Hide Comment:&#160;</span>Changes the status of all selected comments to Hidden.</li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <h4>(Comment) Properties Dialog - UI Test Cases</h4>
+        <p class="bold">To open the dialog:</p>
+        <ul style="list-style-type: square;">
+            <li>Double-click an item in the Comments View</li>
+            <li>Select an item in the Comments  View and press &lt;F4&gt;</li>
+            <li>Right-click an item in the Comments View and select Properties</li>
+        </ul>
+        <hr>
+        </hr>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--PropertiesComment.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Subject: </span>Displays the subject of the comment.</li>
+            <li><span class="bold">User: </span>Displays the username of the user who added the comment.</li>
+            <li><span class="bold">Date:&#160;</span>Shows the date and time at which the comment was added to the topic.</li>
+            <li><span class="bold">Comment:&#160;</span>Displays the comment. This field should be scrollable.</li>
+            <li><span class="bold">In reply to: </span>If viewing Properties of a comment that is a reply to another comment, the lower fields will be populated as well. If the comment is not a reply, these lower fields should appear empty.<ul style="list-style-type: square;"><li><span class="bold">User:&#160;</span>Displays the username of the user who added the parent comment.</li><li><span class="bold">Comment:&#160;</span>Displays the parent comment. This field should be scrollable.</li></ul></li>
+        </ul>
+        <h4>Date Filter dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Report Tabs/UI--DateFilter.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Enable Filter:&#160;</span>Enables/disables the date filter for the data set.</li>
+            <li><span class="bold">Filter Settings: </span>Lets you select between a user-defined date range or a preset date range.<ul style="list-style-type: circle;"><li><span class="bold">Range:&#160;</span> Select this option to set a specific date and time for the filter. Click on the down arrow in the "From"&#160;and "To"&#160;fields to set the specific month and date. You can also click inside the "From" and "To"&#160;fields and type to specify a particular time.</li><li><span class="bold">Preset:&#160;</span>Lets you set the Date filter to one of a set of factory presets. These include:&#160;Today, Yesterday, Last 7 days, and Last 30 days</li></ul></li>
+        </ul>
+        <h3>Keyboard Navigation</h3>
+        <p>&lt;Up Arrow&gt; moves the selection to the row above</p>
+        <p>&lt;Down Arrow&gt; moves the selection to the row below</p>
+        <p>&lt;Enter&gt; moves the focus to the row below</p>
+        <p>&lt;Page Up&gt; will move the selection one page at a time upward</p>
+        <p>&lt;Page Down&gt; will move the selection one page at a time downward</p>
+        <p>&lt;Left Arrow&gt;&#160;and &lt;Right Arrow&gt; do nothing</p>
+        <p>&lt;Home&gt; and &lt;End&gt; do nothing</p>
+        <p>&lt;Insert&gt; does nothing</p>
+        <p>&lt;Delete&gt; does nothing</p>
+        <p>&#160;</p>
+        <h3>EDIT COMMENT DIALOG ADDED V4 (Double click a comment in the comment window)</h3>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Feedback Explorer/EditCommentDialog.png" class="properties" style="width: 230px;height: 157px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>You can Edit the actual content of a comment as well as change the Status of the comment.</p>
+        <p class="TestCases">Test that setting the status from this dialog sends the right email notification to the registered admins.</p>
+        <p>When status is changed to pending review, the admin receives email notification saying the status of that comment was changed to pending review.</p>
+        <p>When status is changed to hidden, the admin receives email notification saying the status of that comment was changed to hidden.</p>
+        <p>When status is changed to accepted, the admin receives email notification saying the status of that comment was changed to accepted.</p>
+        <p>If the status is changed to the same status such as Accepted to Accepted, the administrator should not receive a notification because the status was never changed.</p>
+        <h3>Drag &amp; Drop</h3>
+        <p>(none)</p>
+        <h3>Cut, Copy and Paste</h3>
+        <p>(none)</p>
+    </body>
+</html>

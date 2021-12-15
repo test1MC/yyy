@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="8470" MadCap:lastWidth="1084" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Tools/Options - UI</h2>
+        <h3>Opening the dialog</h3>
+        <ul class="checkbox">
+            <li>Toolstrip interface:&#160;<span class="MenuItem">!Tools |&#160;Options</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!File | Options</span></li>
+        </ul>
+        <h3>Options Dialog - UI&#160;Test Cases:</h3>
+        <h4>General tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--GeneralTab.png" class="properties" style="width: 218px;height: 163px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Auto-Reload Documents:&#160;</span>Select   to reload documents automatically. In other words, if you have topics or editor pages open and then close the project, this option ensures that those same documents are reopened the next time you open the project.</li>
+            <li><span class="bold">Auto-Save Documents:	</span>Select   to periodically auto-save any open files. <ul style="list-style-type: circle;"><li><span class="bold">"#" minutes:&#160;</span>You can specify the number of minutes that should elapse between each auto-save.</li></ul></li>
+            <li><span class="bold">Close others when opening new document:	</span>An option which tells Flare to close other documents as more documents are opened based on the behavior set here:<ul style="list-style-type: circle;"><li><span class="bold">No action: </span>The default option. Opening new files will have no affect on files already open. All files will remain open.</li><li><span class="bold">Close others:</span>&#160;This option automatically closes all other open documents. You should be prompted to save changes to any unsaved files that will be closed.</li><li><span class="bold">Close others with no changes: </span>This option automatically closes all other open documents that do not have unsaved changes. If you have files open where changes have been made but not saved, those files will remain open until you save and close them.</li><li><span class="bold">Close others with same extension: </span>This option automatically closes all other open documents that share the same file extension. For example, let's say you have a topic, a style sheet, and a target open. If you open another topic, the topic file that is currently open will be closed, but the style sheet and target will remain open. You should be prompted to save changes to any unsaved files that will be closed.</li><li><span class="bold">Close others with same extension and no changes: </span>This option is the same as the previous option, except that files with unsaved changes will not automatically be closed. Those files remain open until you save and close them.</li></ul></li>
+            <li><span class="bold">Show Select UI Language Dialog on Startup:	</span>Select this box to show the Select UI Language dialog the next time you launch Flare.</li>
+            <li><span class="bold">Enable Instant Messaging:&#160;</span>TBW</li>
+            <li><span class="bold">Reset "Show Once" Dialogs…:	</span>There are some dialogs in Flare that open just once to give you a message or warning when something changes or you switch modes. An example of this is the dialog that opens when you first switch between layout modes in the XML Editor. These dialogs have a check box labeled "Show this dialog." If you deselect that checkbox, you will not see the dialog again. However, you can use this reset feature to display that dialog (and all other "Show Once" dialogs) again the next time.</li>
+            <li><span class="bold">Import/Export Word Files Without MS Office:&#160;</span>Select to import and export Microsoft Word documents without having Word installed locally, for example, if you use Microsoft Office 365.</li>
+            <li><span class="bold">Automatically resize low DPI images:&#160;</span>&#160;Selected by default, this newer, more precise resizing of low DPI&#160;images  is used. If you do not select this option, the behavior of Version 9 and earlier is used.</li>
+        </ul>
+        <h4>Interface tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--InterfaceTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li style="font-weight: normal;"><span class="bold">Ribbon: </span>Selecting this option should enable the Ribbon-style UI&#160;interface</li>
+            <li><span class="bold">Tool Strip: </span>Selecting this option should enable the classic (V7 and previous)&#160;UI&#160;interface</li>
+            <li><span class="bold">Theme: </span>A drop-down menu allowing you to choose between the three available Flare UI&#160;themes<ul><li><span class="bold">Black: </span>Selecting this should enable our Black UI theme</li><li><span class="bold">Classic: </span>Selecting this should enable our Classic UI&#160;theme</li><li><span class="bold">Silver: </span>Selecting this should enable our Silver UI&#160;theme</li></ul></li>
+        </ul>
+        <h4>Source Control tab</h4>
+        <p class="note">This tab will only be present if you are working in a project that is bound to Source Control. The functionality identified below will be tested in greater depth in the Source Control test plan.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--SourceControlTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Automatically check file out from source control when saving file changes:	</span>When you save changes to a file that is not checked out, we will check that file out for you.<ul style="list-style-type: square;"><li><span class="bold">Lock files when automatically checking out(files cannot ve checked in by other users):	</span>When a file is automatically checked out of source control such as by editing and saving a topic, we will automatically lock the file (only available in TFS and SVN).</li></ul></li>
+            <li><span class="bold">Show prompt to add auto-created files to source control:	</span>Select  to make sure you are prompted when files are automatically created in Flare and may be added to source control.</li>
+            <li><span class="bold">Enable background status checks:	</span>Enable the automatic background checks that Flare performs at the specified interval to determine the status of files bound to a source control application (cannot set this value to 0min and 0secs and disabled by default)</li>
+            <li><span class="bold">Do not prompt to get latest when opening source control bound projects:&#160;</span>TBW</li>
+        </ul>
+        <h4>XML&#160;Editor tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--XMLEditorTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Options</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Enable Drag and Drop Text: </span>Select to enable the drag-and-drop feature for text. If this feature is enabled, you can highlight and drag text to move it within topics.</li>
+                    <li><span class="bold">Show web images: </span>Select to enable showing web images in the XML&#160;Editor.</li>
+                    <li><span class="bold">Insert Empty Alt Text:&#160;</span>Select  to automatically add an empty alt tag to images when you insert them into a topic or snippet (unless you specifically add an alt tag to an image).</li>
+                    <li><span class="bold">                        Replace straight quotes with smart quotes:</span> Select to use single and double curly smart quotes (”) instead of straight quotes (") when you type in the XML Editor. This option is disabled by default<ul style="list-style-type: square;"><p class="note">Note:&#160;Selecting this option does not automatically replace all of the straight quotes that you already have throughout your project. In order to do that, you should use the Find and Replace in Files window pane to find all of the files in the project containing straight quotes and then enter smart quotes in their place.</p></ul></li>
+                </ul>
+            </li>
+            <li><span class="bold">Text Rendering</span>
+                <ul style="list-style-type: square;">
+                    <li><b>Enable ClearType Font Smoothing:</b>Select to enable Microsoft's "ClearType"&#160;technology to improve the readability of text on LCD&#160;screens</li>
+                    <li><b>Enable GDI+&#160;Text Renderer:</b> Toggles between Microsoft Windows Graphics Device Interface (GDI) and GDI+ in terms of how content is rendered on your monitor.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4> Analyzer tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--AnalyzerTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="note">Note: In order for these options to be effective, you must set the options before opening your project. If you have your project open and a scan is in process, setting these options will not improve your system performance.</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Advanced Scan Options</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Collect Segments:</span> Select  if you want Analyzer to collect segments of text while scanning your project. Segment collection allows you to view information about your project such as frequent segments found and index keyword suggestions.</li>
+                    <li><span class="bold">Collect Variable prospects:</span> Select  if you want Analyzer to look for text that you might want to convert to variables.</li>
+                    <li><span class="bold">Collect Snippet prospects:</span> Select  if you want Analyzer to look for text that you might want to convert to snippets.</li>
+                    <li><span class="bold">Collect Local style prospects:</span> Select  if you want Analyzer to look for places where you have applied local formatting and might want to apply styles to those areas instead.</li>
+                    <li>
+                        <p><span class="bold">Collect Embedded stylesheet prospects:</span> Select  if you want Analyzer to look for style information (embedded styles in &lt;style&gt; elements) in your topic files. Disabling this scan limits the results found in the style reports.</p>
+                        <p class="note">Note: You should select this option if you have imported topics that have embedded styles. Otherwise, it is not usually necessary to select this option.</p>
+                    </li>
+                    <li><span class="bold">Collect Accessibility prospects:</span> Select  if you want Analyzer to look for text where you might want to add Web accessibility features (e.g., captions, alternate text). See About Accessibility.</li>
+                    <li><span class="bold">Collect Markup prospects:</span> Select  if you want Analyzer to look for a variety of XHTML markup issues in your content (e.g., extra spaces, empty attributes). You can open the affected files and "clean up" the markup in them. You may be able to fix some issues in the XML Editor, but other issues may require you to open the behind-the-scenes code in the Internal Text Editor. See Internal Text Editor.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Performance Options</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Search Limits:</span> Select a value (All |&#160;5,000 | 1,000 | 500 | 100) from this dropdown to help increase the performance for the following Analyzer  scan options: Undefined Styles, Index Keyword Suggestions, New Style Suggestions, Replace Local Style Suggestions</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Auto Suggestion tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--AutosuggestionTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Enable Auto Suggestion:</span> Enables Auto Suggestion functionality when authoring in the <span class="UI">XML Editor</span>. By default, all Auto Suggestion List Files and all Variable Sets in the project will produce Auto Suggestions. </li>
+            <li><span class="bold">Enable Snippet Auto Suggestion:</span> All snippets will now be included in the suggestions that display.</li>
+            <li><span class="bold">Max Suggestions:</span> The maximum number of suggestions that will display in the suggestion window.</li>
+            <li><span class="bold">Min Character Length:</span> The minimum number of characters a user must type to bring up suggestions. Default is 3 and can not go lower than 3.</li>
+            <li>
+                <p><span class="bold">Enable/disable files:</span> Allows the user to enable or disable specific files that will generate Auto Suggestions. This grid view should display all Auto Suggestion List Files and all Variable Sets that exist in the project.</p>
+                <p class="bold">Columns</p>
+                <ul>
+                    <li><span class="bold">(icon):&#160;</span>Displays either a Variable Set icon or an Auto Suggestion List File icon to easily identify the file type</li>
+                    <li><span class="bold">Enabled: </span>Check the box to include this file for Auto Suggestions</li>
+                    <li><span class="bold">File: </span>Displays the name of the file</li>
+                    <li><span class="bold">Path: </span>Displays the path of the file within the project</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+        <h4>Spelling tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--DictionariesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <p>Select Global Dictionary Locations</p>
+        <ul class="checkbox">
+            <li><span class="bold">Use default location:&#160;</span>Saves the dictionaries to the default location which is C:\Users\[username]\AppData\Roaming\MadCap Software\Flare\Spelling Dictionaries</li>
+            <li><span class="bold">Use custom location:&#160;</span>Saves the dictionary to the path provided.<ul><li><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Browse.png" alt="" title="" style="mc-tag-and-class: ;" /><span class="bold"> (Browse):&#160;</span>Opens the Select Folder dialog to browse for a dictionary location.</li></ul></li>
+        </ul>
+        <p>Installed Dictionaries Grid</p>
+        <ul class="checkbox">
+            <li>Columns<ul><li><span class="bold">Language: </span>This column lists the names of all languages with dictionaries that are installed on your computer. Dictionaries are stored in your AppData Windows folder.</li><li><span class="bold">Code: </span>Displays the code for each language.</li><li><span class="bold">Spell:&#160;</span>Green dots indicate which dictionaries support spell checking.</li><li><span class="bold">Hyphen: </span>Green dots indicate which dictionaries support hyphenators. A hyphenator is used to automatically hyphenate words in an editor based on particular word patterns, as outlined in the dictionary file. (Hyphenators are important only for certain languages.)</li><li><span class="bold">Description: </span>This column provides a short description of each dictionary</li><li><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" /></li><li><span class="bold">Import Dictionaries...:&#160;</span>Invokes the <span class="UI">Select dictionary files</span> dialog which is a browse dialog that lets you find Hunspell dictionary files (*.oxt or *.zip). You can download more dictionaries from OpenOffice.org.</li></ul></li>
+        </ul>
+        <p>Spelling Options (still in development)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Ignore repeated words:&#160;</span>tbd</li>
+            <li><span class="bold">Ignore mixed case words:&#160;</span>tbd</li>
+            <li><span class="bold">Ignore uppercase words:&#160;</span>tbd</li>
+            <li><span class="bold">Ignore words with numbers:&#160;</span>tbd</li>
+            <li><span class="bold">Ignore URLs:&#160;</span>tbd</li>
+            <li><span class="bold">Ignore email addresses:&#160;</span>tbd</li>
+            <li><span class="bold">Ignored&#160;Styles grid:&#160;</span>tbd</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Index &amp;&#160;Concepts tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--Index&amp;ConceptsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Auto-complete Index and Concept Entries:</span>As you enter index keywords in the Index window pane, the application recognizes if you have created a similar index keyword. The similar keywords appear in a list just below the entry field. You can quickly select one of the keywords from the list instead of typing the entire word manually.</li>
+            <li><span class="bold">Mode Warnings for Index and Concept Entries:</span>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Check mode and display the dialog when first topic opened:</span> Select to avoid seeing the Mode Warning dialog</li>
+                    <li><span class="bold">Auto-swith to normal selection mode on launch:</span> Select this option if always want the application to disable the mode automatically when you open the program in the future.</li>
+                    <li><span class="bold">Continue in mode:</span> The "Index Entry Mode" or "Concept Entry Mode" will continue to be enabled after this dialog is closed.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Build tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--BuildTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">&#160;Options</span>
+                <ul>
+                    <li><span class="bold">Save log on file: </span>. Select to automatically save the log file after an output has been generated at a global level for all targets in all projects (command line build too).</li>
+                    <li>
+                        <p><span class="bold">View output after successful build:</span>&#160;Select to automatically view the output after a successful build at a global level for all targets in all projects.</p>
+                    </li>
+                    <li>
+                        <p><span class="bold">Build target (if needed) after selecting 'View':</span>&#160;This feature lets you avoid seeing the message “There is no generated output for the [name] target./The&#160;output&#160;for the [name] target is not up-to-date. Do you want to generate it?”&#160;for all targets in all projects, the target will automatically build when needed after selecting ‘View.’</p>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="bold">Warnings</span> Changes here are applied globally for all targets in all projects, unless targets have the options “Use target build warnings instead of global settings” selected. Deselect certain warnings so that they do not display in the Build Progress dialog when generating output. (Preferences saved to ...\AppData\Roaming\MadCap Software\Flare\CompilerSettings\V10)<ul><li>Expand/Collapse warning categories by clicking the + or - sign.</li><li>Select/Deselect all warnings in a category by toggling the check mark in the root category</li><li><span class="bold">Search warnings by ID</span> allows numerical searching of warnings</li></ul></li>
+            <li><span class="bold">Reset Warnings:&#160;</span>By default, Accessibility and Web Accessibility categories are not selected.</li>
+        </ul>
+        <h4>Review tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--ReviewTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">User</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">User Name:</span> Field to enter the user's name</li>
+                    <li><span class="bold">Initials:</span> Field to enter the user's initials as they want them to appear in annotations and tracked changes</li>
+                </ul>
+            </li>
+            <li><span class="bold">Tracked Change Display</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Display all changes in balloons:</span> All tracked changes will be displayed in balloons.</li>
+                    <li><span class="bold">Display only format changes in balloons:</span> Only format changes will be displayed in balloons. The other changes will be displayed inline.</li>
+                    <li><span class="bold">Display all changes inline:</span> All tracked changes will be displayed inline and none will be displayed in balloons.</li>
+                </ul>
+            </li>
+            <li><span class="bold">User Colors</span>
+                <ul style="list-style-type: circle;">
+                    <li><span class="bold">Use a different color for each user:</span> This will allow you to specify specific colors for each different user that makes tracked changes.</li>
+                    <li><span class="bold">Use the following color for all users:</span> This option allows you to select one color that will be used for all users who make tracked changes.</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Plugins tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Tools Options/Dialog--Options--PluginsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Plugins Grid</p>
+                <p class="bold">Columns</p>
+                <ul>
+                    <li>Name: Displays the name of the plugin, based on the DLL file you have created and added to the Flare installation folder in Windows</li>
+                    <li>Description: Displays a description of the plugin.</li>
+                    <li>Version:&#160;Displays the version number of the plugin.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+    </body>
+</html>

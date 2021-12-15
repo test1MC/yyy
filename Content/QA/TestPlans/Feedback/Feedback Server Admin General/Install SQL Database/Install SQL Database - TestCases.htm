@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Status.Feedback V2,AuthorFileTagSet.Matthew,Product.Feedback" MadCap:lastBlockDepth="4" MadCap:lastHeight="763" MadCap:lastWidth="1361">
+    <head />
+    <body>
+        <h2>Install SQL Database - Test Cases  </h2>
+        <p>Installing Feedback:</p>
+        <ul class="checkbox">
+            <li>To SQL that already has a server</li>
+            <li>To SQL with Custom WebSite</li>
+            <li>To SQL with a Named Instance</li>
+            <li>To SQL with a Domain</li>
+        </ul>
+        <p>&#160;</p>
+        <p>Uninstall with:</p>
+        <ul class="checkbox">
+            <li>SQL Offline</li>
+            <li>Service Stopped</li>
+            <li>Permissions?</li>
+        </ul>
+        <h3>Baseline</h3>
+        <p><span class="bold">14963 </span>Red X is not canceling the install</p>
+        <p><span class="bold">14964 </span>aspnet_regiis.exe is not initialized by us</p>
+        <p><span class="bold">15084 </span>We shouldn’t expire the feedback server keys</p>
+        <p><span class="bold">24648 </span>Error when creating a server but the SQL service is not running</p>
+        <p><span class="bold">24687 </span>We should not allow multiple Feedback Admin installations (on separate PCs) to create Feedback Database on the same SQL server machine. <span style="color: #ff0000; font-weight: bold;">(Determine how this was fixed and add a note to the bug)</span></p>
+        <p><span class="bold">24692 </span>"Getting SQL server list" will overwrite anything typed into the SQL Server field when it is done "getting"</p>
+        <p><span class="bold">24698 </span>Ugly error when creating Feedback database when your Domain user does not have the correct permissions on the SQL Database</p>
+        <p><span class="bold">24716 </span>Our SQL server browser list shows two of the same machine if the SQL machine is using a named instance. One instance it shows has no instance listed and will cause errors if connected to.</p>
+        <p><span class="bold">24732 </span>Crash when launching Feedback Admin on vista with UAC turned on</p>
+        <p><span class="bold">25163 </span>If I try to set up the SQL Server on a remote machine using the same user account that is logged in to the machine running Feedback Server Admin then I get an error.</p>
+        <p><span class="bold">25266 </span>Crash when connecting the Feedback Server to a SQL Express (2003) Database with TCP/IP disabled</p>
+        <p><span class="bold">25269 </span>Crash when changing a Database Path to an existing DB</p>
+        <p><span class="bold">25274 </span>SQL Express didn't automatically start the service when the install finished.  When we try to set up the Server on it we crash.</p>
+        <p><span class="bold">25539 </span>If I send a test e-mail with bogus SMTP settings, I get a message to check my inbox even though no message is sent.</p>
+        <p><span class="bold">25664 </span>Error on Win 2008 machine (test all OS)</p>
+        <p><span class="bold">25668 </span>Cancelling out the server install process when a bogus server name is entered writes the bogus information to the registry, so when you launch Feedback Server admin again, it appears to be installed to an invalid server.</p>
+        <p><span class="bold">25674 </span>Cancelling Feedback Server Setup results in a "Missing File" error</p>
+        <p><span class="bold">25675 </span>Crash when installing a feedback server while logged in as a domain user</p>
+        <p><span class="bold">25843 </span>If using a remote SQL Server, when you uninstall the Feedback Server, we do not delete the SQL database.</p>
+        <p><span class="bold">25975 </span>I can succesfully setup a Feedback Server with a remote SQL database that does not allow end users to register.</p>
+        <p><span class="bold">26110 </span>Crash when connecting to an IP that doesn’t exist…</p>
+        <p><span class="bold">26110 </span>Crash</p>
+        <p><span class="bold">26252 </span>Getting an error when making a change to the config when the SQL is Express and Remote. Error: "Failed to run command 'Save'…"</p>
+        <p><span class="bold">26372 </span>Feedback Server crashes when I try to verify credentials of a domain user when I am not logged in as a domain user.</p>
+        <p><span class="bold">29021 </span>Error "Could not start MadCap Feedback Server Service on Local Computer" When installing Feedback Server</p>
+        <p><span class="bold">29058 </span>Feedback Server lists ASP.NET as not installed, but other software on the computer can see &amp; use it just fine</p>
+        <p><span class="bold">36277</span>  get  error if I try to install the SQL database locally directly to C:Screenshot: \\DC2\QA\TestFiles3\36277</p>
+        <p><span class="bold">36318</span> Can't install Feedback Server Admin on Vista X64 because we are not detecting the IIS 6 metabase compatibility correctly.</p>
+        <p><span class="bold">36320</span> Error launching Feedback Server Admin V3 on a machine that has V2 (when trying to upgrade the Server)<br /></p>
+    </body>
+</html>

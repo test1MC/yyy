@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="2065" MadCap:lastWidth="879" MadCap:conditionTagExpression="include[Default.UITestsDialogs] ">
+    <head>
+    </head>
+    <body>
+        <h2>Segmentation Editor - UI</h2>
+        <h3>Opening the UI</h3>
+        <p class="bold">!Tools | Segmentation Rules Editor</p>
+        <h3>UI</h3>
+        <h4>Segmentation Rules Editor</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SegmentationEditor/SRX_editor.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p><b>Controls:</b>
+        </p>
+        <p>This dialog lets you work add, edit, and remove custom segmentation rules. You can perform any of the following tasks:</p>
+        <ul style="list-style-type: square;">
+            <li><b>Quick Help icon: </b>Provides some quick help regarding the use of spaces in the SRX Editor. Includes a book icon that when clicked, opens the CSH Help topic - "Segmentation Rules and Spaces"</li>
+            <li><b>Add rules:</b> Creates a new rule by which Lingo will segment files the next time it creates a new project or a does a project update</li>
+            <li><b>Remove rules:</b> Any custom rule can be removed by highlighting the rule and then pressing the DELETE key or pressing on the respective "Delete Rule" icon.</li>
+            <li><b>Edit/Modify Rules:</b> A rule can be edited by placing the cursor into the field</li>
+            <li><b>Import SRX files:</b> Any SRX file that was created by Lingo can be imported into the SRX Editor<ul style="list-style-type: square;"><li>If there are no custom rules, and the editor is empty, clicking on "Import"  will invoke the standard Windows Open Files Dialog with the filter set to Segmentation Rules eXchange File (*.srx) .</li><li><p>If there is at least one rule, then the a warning dialog should appear. <MadCap:xref href="#Import">See Import SRX File Warning.</MadCap:xref></p></li></ul></li>
+            <li><b>Export SRX files:</b> Any custom rules currently in the editor and all default rules can be exported. Clicking on 'Export' will invoke the standard Windows Save Files dialog with the filter "Save As Type" set to Segmentation Rules eXchange File (*.srx) .</li>
+            <li><b>Restore Default:</b> Restores the editor to factory state without any custom rules. Clicking on this will invoke a warning dialog. <MadCap:xref href="#Restore">See Restore SRX File Warning</MadCap:xref></li>
+        </ul>
+        <h4><a name="Import"></a>Import SRX File Warning</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SegmentationEditor/srx_import.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>Yes:</b> Invokes the standard Windows Open Files Dialog with the filter set to Segmentation Rules eXchange File (*.srx) .</li>
+            <li><b>No:</b> Returns user to SRX Editor without any changes to custom rules</li>
+        </ul>
+        <h4><a name="Restore"></a>Restore SRX File Warning</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SegmentationEditor/srx_restore.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p><b>Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li><b>OK:</b> Removes all customer / user-defined rules and returns user to Segmentation Rules Editor.</li>
+            <li><b>Cancel:</b> Returns user to SRX Editor without any changes to custom rules</li>
+        </ul>
+    </body>
+</html>

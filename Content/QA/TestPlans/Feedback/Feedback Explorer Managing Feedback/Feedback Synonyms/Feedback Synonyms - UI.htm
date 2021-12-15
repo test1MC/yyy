@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2226" MadCap:lastWidth="972" MadCap:conditionTagExpression="exclude[Default.UITestsDialogs or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SelectContent] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Feedback V3,Product.Feedback">
+    <head>
+    </head>
+    <body>
+        <h2>Feedback Synonyms - UI</h2>
+        <h3>Opening:</h3>
+        <p class="bold">Opening a Feedback key's Synonym set:</p>
+        <ul style="list-style-type: square;">
+            <li>!View |&#160;Synonyms</li>
+            <li>Press CTRL-W on the keyboard</li>
+            <li>Click the Synonyms button in the Standard Toolbar</li>
+        </ul>
+        <h3>Editing Synonyms</h3>
+        <h4>Directional Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Synonyms/UI--SynonymsEditor--DirectionalTab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Directional Synonyms grid: </span>Displays and lets you create and edit&#160;directional Synonyms.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Word: </span>Enter a term that users might use instead of the term that actually occurs throughout your content.</li>
+                    <li><span class="bold">Synonym: </span>Enter the term that exists in your content that should be found when the corresponding "Word"&#160;is used as a search term</li>
+                    <li><span class="bold">Stem: </span>Enable this option to if you want Flare to accept other variations of the search term that have the same stem.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Groups Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Feedback/Synonyms/UI--SynonymsEditor--GroupsTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Groups Synonyms grid: </span>Displays and lets you create and edit&#160;Synonym Groups.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Group: </span>Enter a collection of terms (synonyms) that will produce the same search results for all of the words in the group.</li>
+                    <li><span class="bold">Stem: </span>Enable this option to if you want Flare to accept other variations of the search term that have the same stem.</li>
+                </ul>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the Synonyms Editor (as of Flare V6 and Feedback Explorer V3)</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p>Cut, Copy and Paste functionality is currently unavailable in the Synonyms Editor (as of Flare V6 and Feedback Explorer V3) with regard to the actual synonym rows. You can cut, copy or past text within an individual text box in the grid.</p>
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <p>Select the synonym row and press &lt;Delete&gt; on the keyboard</p>
+        <p>&#160;</p>
+        <p>(Bugs are entered to add more methods of deletion)</p>
+        <h4>Tooltips</h4>
+        <p>If any Word, Synonym or Group is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</p>
+        <p>&#160;</p>
+        <h3>Exporting Synonyms</h3>
+        <p>Synonyms created on the Feedback Server using Feedback Explorer can be exported to a *.flsyns file which can then be added to a Flare project for future use. &#160;To do this:</p>
+        <ol>
+            <li>Open the Synonyms Editor</li>
+            <li>!File |&#160;Save As</li>
+            <li>Browse to the location where you want to save the file and save</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

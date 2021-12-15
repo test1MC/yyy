@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="942" MadCap:lastWidth="983" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:conditionTagExpression="include[Default.UITestsDialogs] ">
+    <head>
+    </head>
+    <body>
+        <h2>Audio - Recording </h2>
+        <h3>Opening the Recording Dialog:</h3>
+        <p class="bold">Opening the Audio Tab <MadCap:xref href="Audio - UI.htm" target="" title="" alt="">See Audio - UI</MadCap:xref> first:</p>
+        <ol>
+            <li style="font-weight: normal;">Click <span class="bold">Record a New Audio Clip...</span></li>
+        </ol>
+        <h3>UI - Creating and Editing Conditions:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Audio/Audio_Record.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p><span class="bold">Sound Name:</span>&#160;Field for giving the recording a name</p>
+                    <ul style="list-style-type: square;">
+                        <li>All audio options will be disabled if this is unchecked</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Input Source:</span> Sets the input source for recording audio<ul style="list-style-type: square;"><li>Will list the available input sources provided by your system</li></ul></li>
+                <li><span class="bold">Encoding Frequency:</span>Sets the frequency that the recording will be encoded in<ul style="list-style-type: square;"><li>Verify on disk that the correct frequency was used</li><li>Recordings are recorded in .mp3 format</li></ul></li>
+                <li><span class="bold">Pick&#160;Built-In Sound...:</span> Opens the <span class="bold">Pick System Sound</span> dialog</li>
+                <li>&#160;<span class="bold">Pick From Movie Sound Library...:</span> Opens the <span class="bold">Manage Movie Sound Library</span> dialog</li>
+                <li><span class="bold">Import Into Sound Library...:</span> Allows the user to browse to external audio files<ul style="list-style-type: square;"><li>Selected files are then imported (copied) into the Mimic movie/project, into the Sounds folder</li><li>If the folder does not exist, we create one automatically</li><li>User can import .mp3 or .wav files only</li></ul></li>
+                <li><span class="bold">Record Time:</span> During the recording process, this will display the amount of time that has passed</li>
+                <li><span class="bold">Record:</span> Initiates the recording process. </li>
+                <li><span class="bold">Pause:&#160;</span>Pauses/Resumes the recording process.</li>
+                <li><span class="bold">Stop: </span>Stops the recording process</li>
+                <li>Recording window: Will display the sound wave while recording<ul style="list-style-type: square;"><li>Louder sounds will be indicated by a higher spike in the wave form</li></ul></li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+    </body>
+</html>

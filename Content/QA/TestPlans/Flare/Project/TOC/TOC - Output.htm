@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="10404" MadCap:lastWidth="978" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>TOC - Output</h2>
+        <h3>TOC Editor Setup for all output types</h3>
+        <p>Topics must be added to the TOC&#160;file via the <span class="UI">TOC&#160;Editor</span>. For all sample screenshots provided in this test plan, I have used a *fltoc file that looks like this to demonstrate the unique behaviors of Web versus Print output types:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--SampleTOC.png" alt="" title="" class="left" />
+        </p>
+        <ul style="list-style-type: square;margin-left: 180pt;">
+            <li>All topics linked from this *.fltoc file use the headings indicated by the TOC&#160;label pictured</li>
+            <li>For the Web-based output types, the TOC&#160;topic was conditioned out</li>
+            <li>No advanced options were enabled (see <MadCap:xref href="#Advanced" target="" title="" alt="" class="TitleOnly">Advanced&#160;Target Options for print output</MadCap:xref> below)</li>
+            <li>No mc-heading-levels were adjusted (see <MadCap:xref href="TOC - Styles.htm#Other" target="" title="" alt="" class="TitleOnly">Other relevant styles:&#160;mc-heading-level</MadCap:xref> in the "Styles" test plan)</li>
+            <li>All defaults settings are used in all screenshots </li>
+        </ul>
+        <h3>Support in Web Outputs: </h3>
+        <h4>Support in HTML5 Static Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--HTML5staticOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in HTML5 Responsive Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--HTML5responsiveOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpMobileOutput1.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpMobileOutput2.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpMobileOutput3.png" alt="" title="">
+            </img>
+        </p>
+        <ul>
+            <li>For WebHelp Mobile output, there is also an option in the Skin to  display the number of sub-items next to the TOC entries.</li>
+        </ul>
+        <p class="bold">Mobile Skin |&#160;Options Tab:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup--TocSubItems.png" alt="" title="" style="mc-thumbnail: popup;" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Air Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WebHelpOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in CHM Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--HtmlHelpOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in DotNet Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--DotNetHelpOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all Web-based outputs, the TOC must be enabled in the Skin in order for an Table of Contents to appear in the output.</li>
+        </ul>
+        <table style="caption-side: top;">
+            <col style="width: 250px;" />
+            <col style="width: 250px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="bold">Standard Skin |&#160;General Tab:</p>
+                    </td>
+                    <td>
+                        <p class="bold">Mobile Skin |&#160;General Tab:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--StandardSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;mc-thumbnail-max-width: 230px;" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/Toc--MobileSkinSetup.png" alt="" title="" style="mc-thumbnail: popup;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h4>Support in Eclipse Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--EclipseOutput.png" alt="" title="" />
+        </p>
+        <p class="note">Note:&#160;Eclipse does not use the Flare skin</p>
+        <ul>
+            <li>For all web outputs, the generated Table of Contents that appears in the output TOC&#160;pane should be exactly what you see in the Flare <span class="UI">TOC&#160;Editor</span>. That is, all TOC&#160;nodes that appear as top-level nodes in the <span class="UI">TOC&#160;Editor</span> will be top-level in the output, second-level nodes will be second-level in the output, etc. The exceptions to this include:<ul><li>A topic in the TOC&#160;is conditioned out at the topic level, in which case the TOC&#160;nodes linking to that topic should not be present in the output</li><li>A TOC&#160;node is conditioned out, in which case the TOC&#160;node will not be present in the output</li><li>The TOC&#160;entry links to another project, TOC or Browse Sequence, that node will be replaced with the linked TOC&#160;or Browse Sequence in the output</li><li>The "Compute sub-entries" option is enabled in the Auto-generate tab of a TOC&#160;node, in which case there may be auto-generated TOC&#160;entries in the output that do not appear in the <span class="UI">TOC&#160;Editor</span>.</li></ul></li>
+        </ul>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in PDF Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <p>
+            <br />
+        </p>
+        <h4>Support in Word Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--WordOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h4>Support in Frame Outputs</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--FrameOutput.png" alt="" title="" />: </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h4>Support in XPS Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--PdfOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Support in EPUB Output:</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TOC--EPUBOutput.png" alt="" title="" />
+        </p>
+        <ul>
+            <li>For all print outputs, a TOC Proxy must be included in a topic and that topic must be included in the TOC&#160;being used by the Print Output Target.</li>
+            <li>For all print outputs, the generated Table of Contents that replaces the TOC&#160;Proxy is based entirely on the sequence of linked topics in the TOC Editor and the heading levels used in those topics. Any levels that exist in the TOC Editor are (by default) completely ignored when generating print output. Unlinked books are also ignored by default. </li>
+        </ul>
+        <h5>Advanced&#160;Target Options for print output</h5>
+        <p>You can opt not to ignore the structure of topics in the <span class="UI">TOC&#160;Editor</span> by enabling some Advanced options in the <span class="UI">Target Editor</span> of a print target. In any print target, select the Advanced tab and find the section labeled "Generated TOC":</p>
+        <p>  <![CDATA[ ]]></p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/TOC/TargetEditor--Print--AdvancedTab.png" alt="" title="" class="left">
+            </img>
+        </p>
+        <div>
+            <p class="bold" style="margin-left: 250pt;">UI Controls</p>
+            <ul style="list-style-type: square;">
+                <li style="margin-left: 250pt;"><span class="bold">Use TOC&#160;depth for heading levels: </span>Enable this option to use the depth of a TOC&#160;node in the <span class="UI">TOC Editor</span> to set the heading level of linked topics. This will change your heading levels in you content based on their position in the <span class="UI">TOC Editor</span>.</li>
+                <li style="margin-left: 250pt;"><span class="bold">Inject headings for unlinked books in TOC: </span>Enable this option to inject a heading into the generated TOC and your content for all unlinked books that exist in the <span class="UI">TOC Editor</span>. This will make the generated TOC&#160;appear more like the TOC&#160;Editor, but it will also add headings to your content.</li>
+                <li style="margin-left: 250pt;">
+                    <p><span class="bold">Remove images from paragraphs with heading levels: </span>This option is only relevant if you've inserted an image into any of the headings in your project. </p>
+                    <ul style="list-style-type: square;">
+                        <li>If this option is left disabled, Word output will include the image in the generated TOC. All other outputs will not include the image in the generated TOC.</li>
+                        <li> If this option is enabled, all outputs will strip the image from the headings completely. The image will not appear in the generated TOC&#160;nor will the image appear in the heading as it appears within the content.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>When generating DITA output, Flare's TOC source code needs to be converted to a DITAMAP. For example, the TOC&#160;used in this Test&#160;Plan should output like this:</li>
+        </ul><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd"&gt;</pre><pre>&lt;map&gt;</pre><pre xml:space="preserve">  &lt;topicref href="Content/TOC.dita" navtitle="TOC" /&gt;</pre><pre xml:space="preserve">  &lt;topicref href="Content/Heading 1.dita" navtitle="Heading 1" /&gt;</pre><pre xml:space="preserve">  &lt;topicref href="Content/Heading 2.dita" navtitle="Heading 2"&gt;</pre><pre xml:space="preserve">    &lt;topicref href="Content/Heading 3.dita" navtitle="Heading 3" /&gt;</pre><pre xml:space="preserve">    &lt;topicref href="Content/Heading 4.dita" navtitle="Heading 4" /&gt;</pre><pre xml:space="preserve">  &lt;/topicref&gt;</pre><pre>&lt;/map&gt;</pre>
+        <h3>Compiler errors:</h3>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="713" MadCap:lastWidth="937">
+    <body>
+        <p class="bold">Window Menu Items (Tooltips in parentheses)</p>
+        <ul class="checkbox">
+            <li><span class="bold">Close All Documents (Close all open documents):&#160;</span>Closes all open documents.</li>
+            <li><span class="bold">Close All Documents Except This One (Close all open documents except the current one):&#160;</span>Closes all open documents except the one that currently has focus.</li>
+            <li><span class="bold">Dock (Dock):&#160;</span>If you select the "Dock" option, the current window becomes "docked" (or "attached").</li>
+            <li><span class="bold">Auto Hide (Auto Hide):&#160;</span>"Pins" the current pane to the side (or bottom or top) of the interface so that you have more room for your workspace. You can show the pane by hovering over the thin bar on the side/bottom/top of the interface. If you select this option again, the pane returns to its previous state (no longer "pinned" to the side/bottom/top).</li>
+            <li><span class="bold">Float (Float):&#160;</span>If you select the "Floating" option, the current window is no longer "docked" (or "attached") to the application; instead, it becomes a free-floating element in the interface.</li>
+            <li>
+                <p><span class="bold">Layouts:&#160;</span>Invokes the Window Layouts sub-menu</p>
+                <hr />
+                <p>
+                    <img src="../../Images/TestPlans/Flare/Menus/Menu--Window--LayoutsMenu.png" alt="" title="" class="left" />
+                </p>
+                <ul style="list-style-type: square;margin-left: 290px;">
+                    <li><span class="bold">Auto-save Window Layout (Set/reset auto-save of window layout): </span>Automatically saves the layout of the workspace when you exit Flare. The next time you launch Flare, that same layout will be displayed.</li>
+                    <li><span class="bold">Save Window Layout ([layout name]) (Save window layout): </span>If you are working in a particular layout and have opened different interface elements or moved interface elements around, you can select this option to save the changes to the layout.</li>
+                    <li><span class="bold">Save Window Layout As… (Save window layout with another name): </span>Opens the <span class="UI">Rename Window Layout</span> dialog, which lets you save the current interface configuration as a layout.</li>
+                    <li><span class="bold">Reload Window Layout… (Reload window layout from saved configuration): </span>If you are working in a particular layout and have opened different interface elements or moved interface elements around, you can select this option to return to the saved configuration of the layout.</li>
+                    <li><span class="bold">Reset Window Layout… (Reset window layout to factory defaults): </span>Returns the current configuration of the interface to the factory layout settings (the original layout when you first installed and launched Flare).</li>
+                    <li><span class="bold">Select Layout: </span>Opens a submenu that lists all saved layouts. Select a layout to display it in the interface.<ul style="list-style-type: square;margin-left: 290px;"><li><span class="bold">Layouts… (Manage set of window layouts): </span>Opens the <span class="UI">Manage Window Layouts</span> dialog, which lets you select or delete an existing layout.</li></ul></li>
+                </ul>
+                <hr />
+            </li>
+            <li><span class="bold">[open files list] (Activate this window):&#160;</span>This portion of the menu display all open documents numbered 1, 2, etc. Selecting an item from the menu will opens that file.</li>
+            <li><span class="bold">Windows… (Manage open windows):&#160;</span>Invokes the <span class="UI">Manage Windows</span> dialog.</li>
+        </ul>
+    </body>
+</html>

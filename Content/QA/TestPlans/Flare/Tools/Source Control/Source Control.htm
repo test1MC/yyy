@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1034" MadCap:lastWidth="1326" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h1>Source Control</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Source Control</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>MadCap Flare includes support for every source control tool on the market by virtue of the fact that Flare uses a wide open architecture. Instead of using proprietary files and databases, all content and project files in Flare are stored as independent XML files. This means that Flare projects are compatible with all source control systems. In addition to this native support for all source control applications, Flare provides integrated support for some source control applications as well.</p>
+        <p>&#160;</p>
+        <p>Source control is a process that allows you to store your project files in a central location and determine which individuals have access to those files. By using a system where individuals must "check in" and "check out" files to edit them, you can ensure that there are no file conflicts when many individuals are working on the same project (multi-authoring teams). You can also revert back to earlier versions of source control files if necessary. Source control is even useful for single authors because it provides a means for maintaining a constant backup of all project files.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Source Control - UI.htm" class="TitleOnly">Source Control - UI</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Source Control - Pending Check-Ins Pane.htm" class="TitleOnly">Source Control - Pending Check-Ins Pane</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Source Control - Servers.htm" class="TitleOnly">Source Control - Servers</MadCap:xref>
+            </li>
+            <li>Testing Matrix<ul><li><MadCap:xref href="TestingMatrix/TFS_2008_Matrix.htm" class="TitleOnly">Team Foundation Server (TFS) 2008- Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/TFS_2010_Matrix.htm" class="TitleOnly">Team Foundation Server (TFS) 2010 - Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/TFS_2012_Matrix.htm" class="TitleOnly">Team Foundation Server (TFS) 2012- Testing Matrix</MadCap:xref></li><li><a href="TestingMatrix/TFS_Online_Matrix.htm">Team Foundation Server (Visual Studio Online) - Testing Matrix</a></li><li><MadCap:xref href="TestingMatrix/SVN_HTTP_Matrix.htm" class="TitleOnly">Subversion - HTTP Protocol - Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/SVN_HTTPS_Matrix.htm" class="TitleOnly">Subversion - HTTPS Protocol - Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/SVN_SVN_Matrix.htm" class="TitleOnly">Subversion - SVN Protocol- Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/SVN_SSH_Matrix.htm" class="TitleOnly">Subversion - svn+ssh:// Protocol - Testing Matrix </MadCap:xref></li><li><MadCap:xref href="TestingMatrix/VSS_multi_Matrix.htm" class="TitleOnly">Visual Source Safe (VSS) (multi-user)- Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/VSS_single_Matrix.htm" class="TitleOnly">Visual Source Safe (VSS) (single user) - Testing Matrix</MadCap:xref></li><li><MadCap:xref href="TestingMatrix/Perforce_Matrix.htm" class="TitleOnly">See Perforce Protocol- Testing Matrix</MadCap:xref></li><li><a href="Performance Test/Performance Matrix.htm">Performance Matrix</a></li></ul></li>
+            <li>
+                <MadCap:xref href="Source Control - Baseline.htm" class="TitleOnly">Source Control - Baseline</MadCap:xref>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>Team Foundation Server (TFS): A server has to be set up with proper access and workspaces set up.</li>
+            <li>
+                <p>Flare's source control integration has been enhanced to support Microsoft Team Foundation Server (TFS) 2010.</p>
+            </li>
+            <li>Visual Source Safe (VSS): A server has to be set up with proper permissions.</li>
+            <li>SVN: In addition to a database set up, users will have to get a plug in (e.g., Tam-tam or Push-OK).<ul><li>V7 of flare removes the need of a third party plug-in.</li></ul></li>
+            <li>TortoiseSVN is a useful application to view the SVN repositories (See Jay or Rick for help with this).</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>VSS Testing databases:<ul><li>Single Checkout: \\winesap\VSS_QA</li><li>Multi-Checkout: &#160;\\winesap\VSS_QA_Multi</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>Set up a Source Control server with the latest versions of the supported Source Control Software: \\SC-Test (Possibly the old \\Source server?)<ul><li>Multi and single check-in / out</li><li>http/https as well as local network.</li></ul></li>
+            <li>Note in TFS&#160;workflow that building of the CACHE&#160;is now done as a batch job, not individual.</li>
+            <li>Test using the Testing Matrix on a project with over 1000+ topics</li>
+            <li>Setup two accounts on web-based subversion repositories:<ul><li>Beanstalk:<ul><li>site: https://madcap2.beanstalkapp.com</li><li>login for the site: mbuckalew@madcapsoftware.com////R3m3mb3r!</li><li><p>repository: https://madcap2.svn.beanstalkapp.com/madcap</p></li><li>login for the repository: buckbomb56////R3m3mb3r!</li></ul></li><li>Codesion:<ul><li>https://madcap.svn.cvsdude.com/madcap</li><li>login: markbuckalew////R3m3mb3r!</li></ul></li></ul></li>
+        </ul>
+    </body>
+</html>

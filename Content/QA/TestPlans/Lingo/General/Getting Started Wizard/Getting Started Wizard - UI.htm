@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="821" MadCap:lastWidth="624" MadCap:conditionTagExpression="exclude[Default.UITestsEditors]" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare" MadCap:conditions="Default.UITestsDialogs">
+    <head>
+    </head>
+    <body>
+        <h2>Getting Started Wizard - UI</h2>
+        <h3>Opening the Getting Started Wizard</h3>
+        <p>By default, when Lingo is first launched, the <span class="UI">Getting Started Wizard</span> should open. There is an option in the <span class="UI">Getting Started Wizard</span> to show it on launch. If that option is turned off, the <span class="UI">Getting Started Wizard</span> can be opened by:</p>
+        <ul style="list-style-type: square;">
+            <li>!File |&#160;Getting Started Wizard</li>
+            <li>In the <span class="UI">Start Page</span>, click the "Launch the Getting Started Wizard"&#160;option in the "Getting Started" section</li>
+        </ul>
+        <h3>Getting Started Wizard - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Getting Started Wizard/Getting started wizard - Lingo.PNG" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>
+                    <MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">Dialog</MadCap:conditionalText> title is correct</li>
+                <li>Spelling and grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Tab order is correct (forward and reverse orders)</li>
+                <li>Keyboard can navigate and change settings</li>
+                <li>
+                    <MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">Dialog</MadCap:conditionalText> is easy to use and understand</li>
+                <li><span class="KeyboardShortcut">F1</span> <![CDATA[ ]]><MadCap:conditionalText MadCap:conditions="Default.UITestsDialogs">and “?” </MadCap:conditionalText>function and the content is correct</li>
+                <li>Default options are displayed in the screenshot</li>
+                <li>Hovering over (New, Open, Align and Tutorials) get's them highlighted.</li>
+                <li>Hovering over the recent projects get's them underlined and blue colored.</li>
+                <li MadCap:conditions="Default.UITestsDialogs">Cancel, <span class="KeyboardShortcut">Esc</span>, Red ‘X’ and <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">F4</span> close the dialog without change</li>
+                <li MadCap:conditions="Default.UITestsDialogs">OK and <span class="KeyboardShortcut">Enter</span> close dialog with changes</li>
+                <li MadCap:conditions="Default.UITestsDialogs">Dialog is resizable and redraws correctly</li>
+                <li MadCap:conditions="Default.UITestsDialogs">Dialog remembers setting and sizes from previous session</li>
+                <li MadCap:conditions="Default.UITestsDialogs">Dialog opens correctly on a dual monitor system</li>
+                <li MadCap:conditions="Default.UITestsDialogs">Clicking the icon in the upper left corner displays options:<ul style="list-style-type: circle;"><li MadCap:conditions="Default.UITestsDialogs">Restore, Move, Size, Min., Max., Close – All work</li><li MadCap:conditions="Default.UITestsDialogs">Restore, Min., Max are disabled</li></ul></li>
+            </ul>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">New: </span> This is the first from the left and takes the user to the "Start New Project Wizard" dialog.</li>
+            <li><b>Open:</b> This  is the 2nd option from the left and takes the user to the "Open" dialog to open an existing Lingo project.</li>
+            <li><b>Align: </b>This is the 3rd option from the left and it takes the user to "Madcap Align" editor to create an alignment project. </li>
+            <li><b>Tutorials:</b> This is the 4th option from the left and it takes the user to "Movies" page of Lingo's help and it displays as a tab within Lingo. </li>
+            <li><b>Recent Projects</b> Which consists of a list of the recent projects created or opened by lingo sorted by order starting from the very recent opened or created project.<ul style="list-style-type: square;"><li>When minimizing the "Getting started wizard" there should be at least 4 projects listed with their names on the left and path on the right.</li><li>When clicing a project that's no longer exists in the defined path, a message below should appear notifying the user that the project cannot be found <br /><p><img src="../../../../../Resources/Images/TestPlans/Lingo/Getting Started Wizard/Cannot find project error message.PNG" style="width: 159px; height: 56px;" class="properties" /><br /><br /><br /></p></li></ul></li>
+            <li><span class="bold">Show this dialog on launch:&#160;</span>If there is a check mark in the box, this wizard will open each time you open Lingo in the future. If you do not want to see the <span class="UI">Getting Started Wizard</span> each time you open Lingo, remove the check mark from the box.</li>
+            <li><span class="bold">Cancel: </span>Closes the Wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <hr />
+    </body>
+</html>

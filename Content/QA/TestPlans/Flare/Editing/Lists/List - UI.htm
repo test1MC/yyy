@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="3173" MadCap:lastWidth="1233" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>List - UI   </h2>
+        <h3>Opening the UI</h3>
+        <p><b>Inserting a List:</b>
+        </p>
+        <ul class="checkbox">
+            <li><span class="MenuItem">!Format | List</span>
+            </li>
+            <li><span class="MenuItem">!View | Toolbars | Text Format | Quick list drop-down menu</span>
+            </li>
+            <li>Import a project that contains lists. <ul class="checkbox"><li>Word (Word only bullet images not supported.)</li><li>Frame</li><li>Robohelp</li><li>HHP</li><li>CHM</li><li>Dita</li><li>Other Flare Project</li></ul></li>
+        </ul>
+        <h3>UI List Menu's</h3>
+        <div class="TestCases">
+            <p><b>Test Cases:</b>
+            </p>
+            <ul class="checkbox">
+                <li>Spelling and Grammar are correct</li>
+                <li>No duplicate accelerators</li>
+                <li>All accelerators function</li>
+                <li>Keyboard can navigate up and down<ul class="checkbox"><li>Expand to next menu</li><li>Change settings such as list start number and item number</li></ul></li>
+                <li>Dialog is easy to use and understand</li>
+                <li>Dropdown retains format settings that are applied to selected list.</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--ListMenuV7.png" style="width: 651px;height: 465px;" />
+        </p>
+        <hr />
+        <h4>List Menu items-shortcuts in parenthesis</h4>
+        <p class="bold">List  drop down (Alt, o, s, l):</p>
+        <ul class="checkbox">
+            <li><b>List Actions:</b>
+                <ul class="checkbox">
+                    <li><span class="bold">Merge With Previous List:</span> Merge the selected list with the previous list</li>
+                    <li><span class="bold">Merge With Next List:</span> Merge the selected list with the next list</li>
+                    <li><span class="bold">Sort List:</span> Reorders the items in the list alphabetically.	</li>
+                    <li><b>Reverse List:</b> Reorders the items in the list so that they appear in reverse order (i.e., first item is last, last item is first).</li>
+                    <li><span class="bold">Unbind List:</span> Removes the list designation from the content so that it displays as regular text.</li>
+                    <li><span class="bold">Continue Sequence: </span>Ensures that the next list you create in the topic starts with the next number in the sequence of the list above (even if the two lists are separated by other content).<ul class="checkbox"><li><span class="bold">List Start Number:</span> Lets you specify a number to start a numbered list. (After you enter a number in this selection, you need to click the blue "enter" arrow at the end to apply the effect.) </li><li><b>Item Number:</b>Change the numbering for a specific item in a numbered list (After you enter a number in this selection, you need to click the blue "enter" arrow at the end to apply the effect.) </li></ul></li>
+                </ul>
+                <ul class="checkbox">
+                    <li><b>Move Up:</b>Move the li up above the li that is currently above it</li>
+                    <li><b>Move Down:</b>Move the li down below the li that is currently below it</li>
+                    <li><b>Make Simple Item(s):</b>Removes p tags from the li.</li>
+                    <li><b>Make Paragraph Item(s):</b>Inserts a p into the li.</li>
+                </ul>
+            </li>
+            <li><span class="bold">Bullet List (Alt, o, s, b):</span> Applies a bulleted list to the selected content.</li>
+            <li><span class="bold">Circle Bullet List (Alt, o, s, c):</span> Applies a bulleted list to the selected content. The bullets are circles.</li>
+            <li><span class="bold">Square Bullet List (Alt, o, s, s):</span> Applies a bulleted list to the selected content. The bullets are squares.</li>
+            <li><span class="bold">Numbered List (Alt, o, s, n):</span> Applies a numbered list to the selected content.</li>
+            <li><span class="bold">Lower-alpha Numbered List (Alt, o, s, o):</span> Applies a numbered list to the selected content where lowercase alpha characters are used (a., b., c., d., etc.)</li>
+            <li><span class="bold">Upper-alpha Numbered List (Alt, o, s, u):</span> Applies a numbered list to the selected content where uppercase alpha characters are used (A., B., C., D., etc.)</li>
+            <li><span class="bold">Lower-roman Numbered List (Alt, o, s, w):</span> Applies a numbered list to the selected content where lowercase Roman numerals are used (i., ii., iii., iv., etc.)</li>
+            <li><span class="bold">Upper-roman Numbered List (Alt, o, s, p):</span> Applies a numbered list to the selected content where uppercase Roman numerals are used (I., II., III., IV., etc.)</li>
+            <li><span class="bold">Outdent Items (Alt, o, s, t):</span> This lets you shift indented content to the left, thus "outdenting" it.</li>
+            <li><span class="bold">Indent Items (Alt, o, s, i):</span> This lets you shift selected content to the right, thus "indenting" it.</li>
+            <li><span class="bold">Custom Format:&#160;</span>
+                <ul>
+                    <li><span class="bold">Create Custom&#160;Format...: </span>Opens the "Create New&#160;List Format"&#160;dialog</li>
+                    <li><span class="bold">(reset class): </span>Resets the class of selected list</li>
+                    <li><span class="bold">[custom list styles in your project]</span> All list styles will show here, click to apply the class to your selected list</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p>Test Cases</p>
+            <ul class="checkbox">
+                <li>Use in paragraphs selected in various ways:<ul class="checkbox"><li> Partial selection </li><li>Just the insertion point </li><li>Entire selection</li></ul></li>
+                <li>Use in various formatted paragraphs:<ul class="checkbox"><li> Paragraph styles </li><li>Character styles </li><li>Local formatting</li><li> Etc.</li></ul></li>
+                <li>Use in paragraphs with various elements in them:<ul class="checkbox"><li> Images</li><li>Form elements </li><li>Special Characters </li><li>Help Controls</li><li>Tables</li><li>Existing lists</li><li> Etc.</li></ul></li>
+                <li>Use with various elements selected:<ul class="checkbox"><li>Table Cells </li><li>Divs </li><li>Drop-down</li><li>Expanding areas</li><li> Etc.</li></ul></li>
+                <li>Insert in many types of Elements <ul class="checkbox"><li>Tables </li><li>Forms </li><li>Divs </li><li>Blockquotes </li><li>Drop-down</li><li>Expanding areas</li><li>Other lists</li><li>Togglers</li><li>Footer</li><li>Header</li><li>Master Page</li><li>Across page breaks in Print Layout</li><li>Etc.</li></ul></li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h3>Toolbar</h3>
+        <h4>!View | Toolbars | Text Format</h4>
+        <p class="bold">Quick List Drop-down</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/List/UI--QuickDropDownList.png" class="left" />
+        </p>
+        <div class="SnippetIndent">
+            <p>&#160;</p>
+            <ul class="checkbox">
+                <li><span class="bold">Bullet List:</span>	Applies a bulleted list to the selected content.</li>
+                <li><span class="bold">Circle Bullet	List:</span> Applies a bulleted list to the selected content. The bullets are circles.</li>
+                <li><span class="bold">Square Bullet	List:</span> Applies a bulleted list to the selected content. The bullets are squares.</li>
+                <li><span class="bold">Numbered List:</span>	Applies a numbered list to the selected content.</li>
+                <li><span class="bold">Lower-alpha Numbered List:</span>	Applies a numbered list to the selected content where lowercase alpha characters are used (a., b., c., d., etc.)</li>
+                <li><span class="bold">Upper-alpha Numbered List:</span> 	Applies a numbered list to the selected content where uppercase alpha characters are used (A.,   B., C., D., etc.)</li>
+                <li><span class="bold">Lower-roman Numbered List:</span> 	Applies a numbered list to the selected content where lowercase Roman numerals are used (i., ii., iii., iv., etc.)</li>
+                <li><span class="bold">Upper-roman Numbered List: 	</span>Applies a numbered list to the selected content where uppercase Roman numerals are used (I., II., III., IV., etc.)</li>
+                <li><span class="bold">Custom Format:&#160;</span>
+                    <ul>
+                        <li><span class="bold">Create Custom&#160;Format...: </span>Opens the "Create New&#160;List Format"&#160;dialog</li>
+                        <li><span class="bold">(reset class): </span>Resets the class of selected list</li>
+                        <li><span class="bold">[custom list styles in your project]</span> All list styles will show here, click to apply the class to your selected list</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul class="checkbox">
+                <li>Using the dropdown list selection apply all list types it will be applied to the location the cursor is inserted:<ul class="checkbox"><li>Bullet</li></ul><ul><li>Circle Bullet</li></ul><ul class="checkbox"><li>Square Bullet</li><li>Numbered</li><li>Lower-alpha</li><li>Upper-alpha</li><li>Lower-roman</li><li>Upper-roman</li></ul></li>
+                <li>When using the dropdown menu from the toolbar the list image on the button should update with the last action performed.</li>
+                <li>You can click the image on the dropdown list to apply that type of list format to the selected content.</li>
+                <li>You should be able to click the same list item type to remove the list.</li>
+                <li>If you Drag select several tags then click the list image twice the list will be applied then removed. (behavior not consistent)</li>
+                <li>Use inline formatting and verify in all outputs:<MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Outputs.flsnp" /></li>
+            </ul>
+        </div>&#160;</body>
+</html>

@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="4987" MadCap:lastWidth="742" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or StyleTableColumns.Frame or StyleTableColumns.PDF or StyleTableColumns.Word or StyleTableColumns.XPS] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Topic Toolbar - Styles</h2>
+        <p>Topic Toolbar Styles are set in two places. If you want to apply properties that affect the entire toolbar, such as displaying a border around the toolbar or setting up the positioning of the toolbar, this can be done in the <span class="UI">Stylesheet Editor</span> by applying properties to the MadCap | topicToolbarProxy style. If you want to style the individual buttons contained within the Topic Toolbar, such as the button icon, the button label, or the button's border and positioning inside the toolbar, this can be done in the <span class="UI">Skin Editor</span>.</p>
+        <h2>Stylesheet Editor Styles</h2>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-StyleApplyChange.flsnp" />
+        <h4>Create Style Dialog – Launched from a Topic&#160;Toolbar Proxy</h4>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp" />
+        <h4>Stylesheet and Topic Toolbar styles</h4>
+        <p>Test creating a new class for MadCap |&#160;topicToolbarProxy</p>
+        <p>Test copying and pasting the MadCap |&#160;topicToolbarProxy node and any class nodes</p>
+        <p>Test deleting the MadCap |&#160;topicToolbarProxy styles and any class nodes of MadCap |&#160;topicToolbarProxy.</p>
+        <p>&#160;</p>
+        <p class="bold">Assorted Relevant Properties</p>
+        <p class="bold">Default properties:&#160;None.</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.XMLEditor" class="Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelp" class="Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.WebHelpMobile" class="Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.DotNetHelp" class="Column-Column1" />
+            <col MadCap:conditions="StyleTableColumns.HTMLHelp" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td class="HeadE-Column1-Header1">
+                        <p class="bold">(root)</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1">
+                        <p style="text-align: center;" class="styleTables">XML Editor</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML Help</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">mc-topic-toolbar-items: The desired buttons for the toolbar.</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">If mc-topic-toolbar-items is not set or set to "(default)," the Toolbar Items identified in the <span class="UI">Skin Editor</span> (Topic Toolbar tab)&#160;will be used.</p>
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BlockProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BoxProperties.flsnp" />
+        <p>&#160;</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/BorderProperties.flsnp" />
+        <p>&#160;</p>
+        <p>Boundary test each of the popup dialogs from the style editor</p>
+        <p>Symbols, Negative #s, long strings, various units of measure, Alt+ characters, large numbers, text</p>
+        <p>Verify that Media types work when applied and generated</p>
+        <h2>Skin Editor Styles</h2>
+        <p>The Topic Toolbar shares its Skin&#160;styles with the standard WebHelp Toolbar. These Styles are set in the "Styles"&#160;tab of the <span class="UI">Skin Editor</span>.</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Topic Toolbar/TopicToolbar--SkinEditorStyles.png" class="properties" />
+        </p>
+        <p style="margin-left: 200pt;">Only the items which are actually allowed to appear in the Topic Toolbar need to be tested. </p>
+        <p style="margin-left: 200pt;">ToolbarItem Styles that apply to the Topic Toolbar:</p>
+        <ul style="list-style-type: circle;">
+            <li style="margin-left: 200pt;">AddTopicToFavorites</li>
+            <li style="margin-left: 200pt;">Back</li>
+            <li style="margin-left: 200pt;">CollapseAll</li>
+            <li style="margin-left: 200pt;">CurrentTopicIndex</li>
+            <li style="margin-left: 200pt;">ExpandAll</li>
+            <li style="margin-left: 200pt;">Forward</li>
+            <li style="margin-left: 200pt;">Home</li>
+            <li style="margin-left: 200pt;">NextTopic</li>
+            <li style="margin-left: 200pt;">PreviousTopic</li>
+            <li style="margin-left: 200pt;">Print</li>
+            <li style="margin-left: 200pt;">QuickSearch</li>
+            <li style="margin-left: 200pt;">Refresh</li>
+            <li style="margin-left: 200pt;">RemoveHighlight</li>
+            <li style="margin-left: 200pt;">SelectBrowseSequence</li>
+            <li style="margin-left: 200pt;">SelectFavorites</li>
+            <li style="margin-left: 200pt;">SelectGlossary</li>
+            <li style="margin-left: 200pt;">SelectIndex</li>
+            <li style="margin-left: 200pt;">SelectSearch</li>
+            <li style="margin-left: 200pt;">SelectTOC</li>
+            <li style="margin-left: 200pt;">Separator</li>
+            <li style="margin-left: 200pt;">Stop</li>
+            <li style="margin-left: 200pt;">ToggleNavigationPane</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Properties</h4>
+        <p>Default values should exist for all Styles for Icon, PressedIcon, HoverIcon and ControlType. Test all styles in all outputs and all supported browsers.</p>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td class="HeadE-Column1-Header1">
+                        <p class="bold">Basic</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">Icon:  The icon.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">PressedIcon: The pressed state icon.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">HoverIcon: The mouse-over state icon.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">Label: The label for the item.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">TextImageRelation: Specifies the position of the text and image relative to each other.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">Tooltip: The tooltip for the item.</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td class="HeadE-Column1-Header1">
+                        <p class="bold">Font</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">FontFamily:  The font family.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">FontSize: The font size.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">FontWeight: The font weight.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">FontStyle: The font style.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">Color: The color.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BackgroundColor: The background color.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BackgroundGradient: The background gradient.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BackgroundGradientHover:&#160;The background gradient when mouse over item.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BackgroundGradientPressed: The background gradient when mouse button pressed.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">PaddingLeft: The left padding value.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">PaddingRight:&#160;The right padding value.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">PaddingTop: The top padding value.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">PaddingBottom:&#160;The bottom padding value.</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td class="HeadE-Column1-Header1">
+                        <p class="bold">Borders</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BorderLeftHover: The left border when the item is in the hover state.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BorderRightHover: The right border when the item is in the hover state.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">BorderTopHover: The top border when the item is in the hover state.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">BorderBottomHover: The bottom border when the item is in the hover state.</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="width: 100%;mc-table-style: url('../../../../../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 3in;" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <col MadCap:conditions="" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <td class="HeadE-Column1-Header1">
+                        <p class="bold">Type</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp/</p>
+                        <p class="styleTables">WebHelp Plus/AIR</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">WebHelp Mobil</p>
+                    </td>
+                    <td class="HeadE-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">DotNet Help</p>
+                    </td>
+                    <td class="HeadD-Column1-Header1" style="text-align: center;">
+                        <p class="styleTables">HTML&#160;Help</p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p class="styleTables">ControlType:  The type of the toolbar item.</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p class="styleTables">OnClick: The Javascript to run when clicked.</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1" style="text-align: center;">
+                        <p class="styleTables">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

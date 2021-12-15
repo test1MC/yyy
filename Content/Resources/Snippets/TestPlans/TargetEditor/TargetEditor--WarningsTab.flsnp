@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="224" MadCap:lastWidth="718">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li><span class="bold">Use target build warnings instead of global settings: </span>Enable this option to use build warning options set in this target over any build warning options set in the global Flare <span class="UI">Options</span> dialog (<span class="RibbonItem">!File |&#160;Options</span>)<ul style="list-style-type: circle;"><li style="font-weight: normal;"><span class="bold">Unchecked: </span>Verify that all UI&#160;in the Warnings group is inactive and cannot be modified.</li><li style="font-weight: normal;"><span class="bold">Checked: </span>Verify that all UI&#160;in the Warnings group becomes active and can be modified.</li></ul></li>
+            <li><span class="bold">Warnings:</span>
+                <ul style="list-style-type: circle;">
+                    <li style="font-weight: normal;"><span class="bold">Search by ID (search box): </span>Lets you enter a warning value (numbers only). Submitting a search should reduce the list of warnings to those that match the search query.</li>
+                    <li style="font-weight: normal;"><span class="bold">[Warnings List]:&#160;</span>Displays a list of all warnings (by group) that are appropriate for the target's output type.</li>
+                    <li style="font-weight: normal;"><span class="bold">Reset Warnings:&#160;</span>Resets the selection state of all warning to the factory default. The default setting should have all warnings selected.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

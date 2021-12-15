@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="831" MadCap:lastWidth="1354" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review" MadCap:ignoredWords="WinMerge">
+    <head>
+    </head>
+    <body>
+        <h1>Output EPUB</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Output: EPub</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>EPUB (electronic publication) file. EPUB is the most commonly used e-book format and is supported by most modern e-book readers. E-books are quickly becoming a strong competitor to traditional paper books because of their cheaper cost, ability to be digitally downloaded, eco-friendliness, and availability of readers (Kindle, Nook, iPad). Flare can tap into this emerging market quite easily since its project structure is already similar to EPUB’s structure.</p>
+        <p>&#160;</p>
+        <p>Flare target files will have a new “EPUB” output type that produces a single, self-contained .epub file, which is a specialized ZIP package. The build process will be similar to existing processes such as PDF output. EPUB-specific target options will be added if necessary, and non-applicable target options will be removed from the UI.</p>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li><a href="Output EPub - UI.htm">Output EPub - UI</a>
+            </li>
+            <li><a href="Output EPub - Command Line.htm">Output EPub - Command Line</a>
+            </li>
+            <li><a href="Output EPub - Baseline.htm">Output EPub - Baseline</a>
+            </li>
+            <li><a href="Output EPub - Output Feature Checklist.htm">Output EPub - Output Feature Checklist</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Useful links:</p>
+        <ul>
+            <li><a href="http://idpf.org/epub">EPUB homepage</a>: For further background information
+            </li>
+            <li><a href="http://www.threepress.org/document/epub-validate/">EPUB validator</a>: Validation information for EPUB documents</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Popular readers:</p>
+        <p>For Windows/Mac:</p>
+        <ul>
+            <li><a href="http://www.adobe.com/products/digitaleditions/">Adobe Digital Editions</a> (latest version: 3.0): Free downloadable e-book viewer</li>
+            <li><a href="http://ebookstore.sony.com/download/">Sony Reader App</a>: Available for PC, Mac, Android, Tablet</li>
+            <li><a href="http://calibre-ebook.com/download">Calibre</a> (latest version: 1.28): Editable reader</li>
+            <li><a href="https://addons.mozilla.org/en-US/firefox/addon/epubreader/">EPUBReader</a> (latest version: 1.4.2.4): Firefox add-on to read EPUB files in the Firefox browser</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Popular Tablets:</p>
+        <ul>
+            <li>iPad</li>
+            <li>Barnes &amp; Nobles Nook *R&amp;D&#160;has purchased a Nook for QA&#160;- please use when testing.</li>
+            <li>Amazon Kindle</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>Test validating all of Paul’s template projects - we should not throw any errors.</li>
+            <li>EPUB 3.0.1 Embedded font support, new to Flare v10:&#160;<a href="file://fs1/QA/Test Projects/Test Plan Projects/Output EPub/EmbededFonts">\\fs1\QA\Test Projects\Test Plan Projects\Output EPub\EmbededFonts</a><ul><li><p>Still some issues with Adobe Digital Editions when it comes to embedded fonts (Bug 46927) or international characters (Bug 46876)</p></li></ul></li>
+            <li>Test MetaData: <a href="file://fs1/QA/Test Projects/Test Plan Projects/Output EPub/EPUBmetaData">\\fs1\QA\Test Projects\Test Plan Projects\Output EPub\EPUBmetaData</a></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>Add v11 Feature:&#160;Support for EPUB3 dynamic content - added option in target</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

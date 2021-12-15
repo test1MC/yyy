@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="6797" MadCap:lastWidth="674" MadCap:conditionTagExpression="exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or ElementContextMenuItems.SelectContent] " MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Search Filter Sets - Editing                                                             </h2>
+        <p>Search Filter Set files are saved to the Project/Advanced folder.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/ProjectOrganizer--SearchFilterSet.png" />
+        </p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectOrganizer--RightClickMenu.flsnp" />
+        <hr />
+        <p class="bold">Opening a Search Filter Set file:</p>
+        <p>Double-click the file in the <span class="UI">Project Organizer</span></p>
+        <p>Right-click the file in the <span class="UI">Project Organizer</span> and select Open</p>
+        <p>Select the file in the <span class="UI">Project Organizer</span> and press &lt;Enter&gt;</p>
+        <p><span class="UI">Target Editor</span>:&#160;In the Advanced tab of the <span class="UI">Target Editor</span>, in the Search Filters section, select a Filter File and click the "Edit"&#160;button.</p>
+        <p>&#160;</p>
+        <h3>Editing Search Filter Sets</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilterSetEditor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilterSetEditor--LocalToolbar.png" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" style="mc-tag-and-class: ;" /><span class="bold">(New item):&#160;</span>Adds a new line to the Search Filter Set Editor using the default filter name "NewFilter."</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" />Cut:</span> Cuts the selected filter(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" />Copy:</span> Copies the selected filter(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" />(Paste):</span> Pastes the filter(s) from the clipboard.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" style="mc-tag-and-class: ;" /><span class="bold"> (Delete):&#160;</span>Deletes the selected filter(s)</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p><span class="bold">Search Filter Set Editor grid: </span>Displays and lets you create and edit&#160;Auto-index Phrases.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Filter Name: </span>Lists the search filters as they will appear in the filter list in the output.</li>
+                    <li><span class="bold">Concept: </span>Displays the concept(s) associated with this filter which will be used to limit the search results.</li>
+                    <li><span class="bold">Comment:&#160;</span>Allows you to add a comment about the filter.  Comments should not affect the output.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>For Filter Name, enter single words, multiple words, numbers, words with international characters, etc.</p>
+        </div>
+        <h4>Right-click menu</h4>
+        <p class="bold">Right-clicking a row in the Search Filter Set Editor should produce the following menu:</p>
+        <p class="bold">Right-click menu:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilterSetEditor--RightClickMenu.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155px;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul style="list-style-type: square;">
+                <li><span class="bold">New:&#160;</span>Adds a new line to the Search Filter Set Editor using the default filter name "NewFilter."</li>
+                <li><span class="bold">Cut:</span> Cuts the selected filter(s) to the clipboard..</li>
+                <li><span class="bold">Copy:</span> Copies the selected filter(s) to the clipboard.</li>
+                <li><span class="bold">Paste:</span> Pastes the filter(s) from the clipboard.</li>
+                <li><span class="bold">Delete:&#160;</span>Deletes the selected filter(s)</li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Select Concepts For Search Filter dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/UI--SelectConceptsForSearchFilter.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Selected Concepts: </span>Displays all concepts associated with the selected search filter.</li>
+            <li><span class="bold">All Concepts:&#160;</span>Displays all concepts contained in all topics throughout the project.</li>
+            <li><span class="bold">[ &lt;&lt; ] :&#160;</span>Adds the concept(s) selected in the All Concepts list to the list of Selected Concepts on the left.</li>
+            <li><span class="bold">[&#160;&gt;&gt; ] :&#160;</span>Removes the concept(s) selected in the Selected list from that list.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Select Concepts and All Concepts lists are sortable.</li>
+                <li>Double-clicking an item in the All Concepts list adds it to the Selected Concepts list.</li>
+                <li>&lt;Shift&gt;-Click and &lt;CTRL&gt;-Click allow for multi-selection in both lists and multi-selections can be added to and removed from the Selected Concepts list.</li>
+                <li>Create concepts with various characters, symbols and international letters and make sure all concepts used in your project appear in the All Concepts list.</li>
+                <li>Create concepts in all files that allow them (topics, snippets, etc)&#160;and make sure all concepts used in your project appear in the All Concepts list.</li>
+            </ul>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI--GenericProperties.flsnp" />
+        <h4>Drag and Drop</h4>
+        <p>There is currently no drag/drop editing functionality within the Search&#160;Filter Set Editor (as of Flare V5)</p>
+        <h4>Cut/Copy &amp; Paste – Paste options will only be active if there is data on the clipboard</h4>
+        <p class="bold">Select one or more filter rows (CTRL-Click)&#160;from any combination of rows and then:</p>
+        <p>Right-click on the filter row | Cut/Copy Paste menu options</p>
+        <p>Cut/Copy Paste Standard Toolbar options</p>
+        <p>Cut/Copy Paste Keyboard keys (CTRL-X, CTRL-C, CTRL-V)</p>
+        <p>Cut/Copy Paste !Edit Menu options</p>
+        <p>&#160;</p>
+        <p>Undo/Redo works and commands display correctly in the Standard Toolbar.</p>
+        <h4>Deleting</h4>
+        <p class="bold">Item:</p>
+        <p>Select the filter row and press &lt;Delete&gt; on the keyboard</p>
+        <p>Select the filter row and click the Delete button on the Standard Toolbar</p>
+        <p>Right-click the filter row and select Delete</p>
+        <p>Select the filter row | !Edit | Delete</p>
+        <p>Select the filter row and “Cut”</p>
+        <h4>Tooltips</h4>
+        <p>If any Filter Name, Concepts list or Comment is so long that it does not fit within the column, hovering over the cell&#160;will display the entire contents of that cell.</p>
+        <h4>Conditional Tags</h4>
+        <p>Conditional Tags cannot be applied to individual Search Filter Set file entries. Conditional Tags can be applied to the actual Search Filter Set file (*.flsfs), however, as of Flare V5, this tag can only be used for the purposes of Advanced Global Project importing.</p>
+        <h4>Code</h4>
+        <p class="bold">Default Search Filter Set:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultSearchFilterSet&gt;</pre><pre>&lt;SearchFilter Name="My Subset"&gt;&lt;/SearchFilter&gt;</pre><pre>&lt;/CatapultSearchFilterSet&gt;</pre><pre>&#160;</pre>
+        <p class="bold">Search Filter Set with two filters, one with two concept associations and a comment:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultSearchFilterSet&gt;</pre><pre>&lt;SearchFilter</pre><pre>Name="My Subset"</pre><pre>Concepts="concept1"&gt;&lt;/SearchFilter&gt;</pre><pre>&lt;SearchFilter</pre><pre>Name="NewFilter"</pre><pre>Comment="Two concept associations"</pre><pre>Concepts="concept2;concept3" /&gt;</pre><pre>&lt;/CatapultSearchFilterSet&gt;</pre><pre>&#160;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

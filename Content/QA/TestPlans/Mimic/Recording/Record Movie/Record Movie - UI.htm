@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="5820" MadCap:lastWidth="751" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic" MadCap:conditionTagExpression="include[Default.UITestsDialogs] ">
+    <head>
+    </head>
+    <body>
+        <h2>Recording Movie -&#160;UI</h2>
+        <p>To access:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Movie.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>!File | New Movie |&#160;Record Movie</p>
+                    <ul style="list-style-type: square;">
+                        <li>Record Application</li>
+                        <li>Record Window</li>
+                        <li>Record Region</li>
+                        <li>Record Full Screen</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Movie_Toolbar.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>Record Icon on the Toolbar:</p>
+                    <ul style="list-style-type: square;">
+                        <li>Record Application</li>
+                        <li>Record Window</li>
+                        <li>Record Region</li>
+                        <li>Record Full Screen</li>
+                    </ul>
+                </li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp" />
+        </div>
+        <h4>Hide on Record</h4>
+        <ul>
+            <li>By default, it is checked</li>
+            <li>When unchecked, when Mimic initiates a record region or record full screen, the Mimic application will not hide itself.</li>
+            <li>When checked, Mimic will hide itself</li>
+        </ul>
+        <h3>Record Application</h3>
+        <p>Record Application brings up the following dialog:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Application.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>All currently opened applications will be listed</p>
+                </li>
+                <li>Selecting an application and hitting OK will minimize mimic (by default) and bring into focus the selected application</li>
+                <li><span class="bold">OK </span>button remains deactivated if no application is selected</li>
+                <li><span class="bold">Cancel </span>will return you to mimic</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h4>Record Application - Record Region</h4>
+        <p>When the selected application is brought into focus, Mimic will put a record region around the application. Here is an example:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Region.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>The record region box will have 8 resize points located around it</li>
+                <li>Each point can be used to resize the record region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire record region</li></ul></li>
+                <li>The region box will also have 2 pixel count boxes<ul><li>Box in the upper left contains location of the top left corner of the record region box</li><li>Box in the center displays the size of the region box, in pixels<ul><li>Clicking and dragging this box will move the record region accordingly</li></ul></li></ul></li>
+                <li>Verify resizing the record region box will still result in accurate recordings</li>
+                <li>Three buttons will be displayed in the lower right corner<ul><li><span class="bold">OK</span>: Will set the region box and allow recording to begin</li><li><span class="bold">Cancel</span>:&#160;Will cancel the operation and return the user to Mimic</li><li><span class="bold">Options</span>: Brings up the options context menu</li></ul></li>
+            </ul>
+        </div>
+        <h3>Record Window</h3>
+        <p>Record Window brings up the following dialog:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Application.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>All currently opened windows will be listed</p>
+                </li>
+                <li>Selecting a window and hitting OK will minimize mimic (by default) and bring into focus the selected window</li>
+                <li><span class="bold">OK </span>button remains deactivated if no application is selected</li>
+                <li><span class="bold">Cancel </span>will return you to mimic</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h4>Record Window - Record Region Box</h4>
+        <p>When the selected window is brought into focus, Mimic will put a record region around the window. Here is an example:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Region.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>The record region box will have 8 resize points located around it</li>
+                <li>Each point can be used to resize the record region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire record region</li></ul></li>
+                <li>The region box will also have 2 pixel count boxes<ul><li>Box in the upper left contains location of the top left corner of the record region box</li><li>Box in the center displays the size of the region box, in pixels<ul><li>Clicking and dragging this box will move the record region accordingly</li></ul></li></ul></li>
+                <li>Verify resizing the record region box will still result in accurate recordings</li>
+                <li>Three buttons will be displayed in the lower right corner<ul><li><span class="bold">OK</span>: Will set the region box and allow recording to begin</li><li><span class="bold">Cancel</span>:&#160;Will cancel the operation and return the user to Mimic</li><li><span class="bold">Options</span>: Brings up the options context menu</li></ul></li>
+            </ul>
+        </div>
+        <h3>Record Region</h3>
+        <p>Record Region brings up the Record Region Box:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Region_Box.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>By default, the record region box will be the size of the last record you have done</li>
+                <li>The record region box will have 8 resize points located around it</li>
+                <li>Each point can be used to resize the record region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire record region</li></ul></li>
+                <li>The region box will also have 2 pixel count boxes<ul><li>Box in the upper left contains location of the top left corner of the record region box</li><li>Box in the center displays the size of the region box, in pixels<ul><li>Clicking and dragging this box will move the record region accordingly</li></ul></li></ul></li>
+                <li>Verify resizing the record region box will still result in accurate recordings</li>
+                <li>Three buttons will be displayed in the lower right corner<ul><li><span class="bold">OK</span>: Will set the region box and allow recording to begin</li><li><span class="bold">Cancel</span>:&#160;Will cancel the operation and return the user to Mimic</li><li><span class="bold">Options</span>: Brings up the options context menu</li></ul></li>
+            </ul>
+        </div>
+        <h3>Record Full Screen</h3>
+        <p>Record Full Screen places a Record&#160;Region Box on the entire screen:</p>
+        <p>&#160;</p>
+        <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Full_Screen.png" class="properties">
+        </img>
+        <div class="SnippetIndent">
+            <ul>
+                <li>The record region box will have 8 resize points located around it<ul><li>Note: you can not see them at first due to them being off screen. However if you move the record region box around you will see them.</li></ul></li>
+                <li>Each point can be used to resize the record region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire record region</li></ul></li>
+                <li>The region box will also have 2 pixel count boxes<ul><li>Box in the upper left contains location of the top left corner of the record region box</li><li>Box in the center displays the size of the region box, in pixels<ul><li>Clicking and dragging this box will move the record region accordingly</li></ul></li></ul></li>
+                <li>Verify resizing the record region box will still result in accurate recordings</li>
+                <li>Three buttons will be displayed in the lower right corner<ul><li><span class="bold">OK</span>: Will set the region box and allow recording to begin</li><li><span class="bold">Cancel</span>:&#160;Will cancel the operation and return the user to Mimic</li><li><span class="bold">Options</span>: Brings up the options context menu</li></ul></li>
+            </ul>
+        </div>
+        <h3>Recording Options</h3>
+        <p>Options Context menu:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Options_Context.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li><span class="bold">Snap to window..</span>. will open the Select Window dialog</li>
+                <li><span class="bold">Move Window into Rectangle...</span> will open the Select Window dialog</li>
+                <li><span class="bold">Options...</span> will open the options dialog</li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <hr />
+        <p><span class="bold">Snap to Window...</span> brings up the Select Window dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Application.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>Displays all the currently opened windows</li>
+                <li>Selecting one and hitting <span class="bold">OK</span> will move the record region box to the selected window<ul><li>This will most likely change the size of the record region box</li></ul></li>
+                <li>Pressing <span class="bold">Cancel </span>will close the dialog and return you to record region box</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p><span class="bold">Move Window Into Rectangle...</span> brings up the Select Window dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Application.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>Displays all the currently opened windows</li>
+                <li>Selecting one and hitting <span class="bold">OK</span> will move the selected window into the region box<ul><li>This will most likely change the size of the selected window</li></ul></li>
+                <li>Pressing <span class="bold">Cancel </span>will close the dialog and return you to record region box</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p><span class="bold">Options...</span> brings up the Recording Options Dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_Options_Dialog.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <ul>
+            <li>Recording Mode area:<ul><li><span class="bold">Automatic:</span> Every mouse Click will record a new frame</li><li><span class="bold">Manual: </span>New frames are only recorded if Print-Screen is pressed</li></ul></li>
+            <li>Options area:<ul><li><span class="bold">Show Magnifier:</span> Will toggle on/off the magnifier region box, while doing a Record&#160;Region operation</li><li><span class="bold">Play Sound effects: </span>Toggles on/off sound effects during recording (mouse clicks, typing, etc...)</li><li><span class="bold">Add callouts: </span>Will toggle on/off Mimic's automatic insertion of callouts where mouse clicks are recorded</li><li><span class="bold">Record cursor movements:&#160;</span>Will toggle on/off Mimic's automatic insertion of mouse cursor movements when clicks are recorded</li></ul></li>
+            <li><span class="bold">Callout Style:</span> Will show what style of callout will be used for your callouts</li>
+            <li><span class="bold">Cursor Style: </span>Will show what style of cursor will be used for your cursors</li>
+            <li><span class="bold">Pick Style...:</span> Launches the Pick Style dialog for the respective object. The dialog consists of a palette of the selected object type for the user to select from.<ul><li>Verify the chosen callouts are used in the recording</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Adding new recorded frames to a Movie</h3>
+        <p>The <span class="bold">Frames</span>menu contains a <span class="bold">Record New Frames...</span> option:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Recording/Record_New_Frames.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul>
+                <li>Selecting this option will bring up a record region that is set to the current size of your movie.<ul><li>Changing the size of this region will record the new size. However once those new frames are inserted into the Mimic movie, they will be condensed/stretched to fit into the current movie size.</li></ul></li>
+                <li>All frames recorded via this option, will appear below the currently selected frame in the Frames Pane.</li>
+            </ul>
+            <p>&#160;</p>
+            <p>&#160;</p>
+        </div>
+        <h3>Recording Windows Tray Menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Record Movie Tray Menu.png" />
+        </p>
+        <p>Record Application: Opens a select window dialog that allows you to select an application to record.</p>
+        <p>Record Window:Opens a select window dialog that allows you to select a window to record.</p>
+        <p>Record Region: Select a region to record using a resizable recording window. <![CDATA[ ]]></p>
+        <p>Record Full Screen: Records the full screen of your desktop.</p>
+        <p>Hide on Record: When enabled, will minimize the recording menu when recording begins so that it does not appear in your recording.</p>
+        <p>Recording Options...: Invokes the Recording Options Dialog.</p>
+        <p>About: Invokes the generic MadCap About splash screen.</p>
+        <p>Exit: Exits recording mode.</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Test all hotkey's</li>
+            </ul>
+        </div>
+    </body>
+</html>

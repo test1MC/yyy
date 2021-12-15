@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="7957" MadCap:lastWidth="743" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>External Resources - UI</h2>
+        <h3>Opening the External Resources Pane</h3>
+        <ul class="checkbox">
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!View |&#160;External Resources</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!View |&#160;External Resources</span></li>
+        </ul>
+        <h3>Adding an External Resource folder</h3>
+        <p>In order to test anything in the <span class="UI">External Resources</span> pane, you'll first need to add an External Resource folder.</p>
+        <ol>
+            <li>Click the Add New External Resource button <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---AddNewExternalResource.png" /> in the <span class="UI">External Resources</span> pane's local toolbar</li>
+            <li>In the <span class="UI">Select Folder</span> dialog, browse for any folder to which you have access</li>
+            <li>Click OK&#160;to close the <span class="UI">Select Folder</span> dialog and add the selected folder to the <span class="UI">External Resources</span> pane</li>
+        </ol>
+        <h3>Select Folder dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--SelectFolder.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Make New Folder:&#160;</span>Creates a new sub-folder in whatever folder you have selected</li>
+        </ul>
+        <h3>External Resources - UI&#160;Test Cases</h3>
+        <div style="float: left;width: 157px;height: 748px;">
+            <p class="bold">Default view docked in left pane (with a standard Resources folders added):</p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--DefaultView.png" class="properties" style="mc-float: none;">
+                </img>
+            </p>
+            <p><b>Split Show Folders/Show Files view:</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--SplitView.png" style="width: 235px;height: 215px;" />
+            </p>
+            <p><b>Show Files view:</b>
+            </p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--FileView.png" style="width: 236px;height: 216px;" />
+            </p>
+        </div>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Local Toolbar Buttons (Tooltips in parentheses):</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---AddNewExternalResource.png" /> (Add a new external resource folder):&#160;</span>Add a folder to the <span class="UI">External Resource</span> pane.  </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---CopyToProject.png" /> (Copy file to your project):&#160;</span>Copy the selected external file to your project</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---ManageMappings.png" /> (Manage mappings of project files to external resources):&#160;</span>Invokes the <span class="UI">Map Files and Folders</span> dialog which lets you manage the mappings of files in your project to those in your <span class="UI">External Resources</span> or any other external location. </li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---SynchronizeFiles.png" /> (Select files and folders to import, export, or synchronize):&#160;</span>Invokes the <span class="UI">Synchronize Files</span> dialog which lets you select mapped project files or folders to import, export or synchronize with those in your <span class="UI">External Resources</span> or any other external location.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png" /> (Show/Hide Folders):&#160;</span>Toggles between showing or hiding the folders in the <span class="UI">External Resources</span> pane.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png" /> (Show/Hide Files):&#160;</span>Splits the <span class="UI">External Resources</span> pane into two halves. The right half shows additional details for the files. When you click a file on the right side, a red circle shows the location in the <span class="UI">External Resources</span> pane. See a movie about this feature.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Collapse All.png" /> (Collapse All):&#160;</span>Collapses all of the folders so that you can no longer see all of the files under each one.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png" /> (Up):&#160;</span>Moves up one folder in the hierarchy in the <span class="UI">External Resources</span> pane. This button becomes enabled if you use the Show Folders or Split View and browse into a folder.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Open.png" style="mc-tag-and-class: ;" /> (Open):&#160;</span>Opens the selected file. A file opened from the <span class="UI">External Resources</span> pane should display an Info Bar indicating that it exists outside the project.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Properties.png" style="mc-tag-and-class: ;" /> (Run Properties dialog for this item):&#160;</span>Opens the <span class="UI">Properties</span> dialog for the selected file.</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">Show Files grid</p>
+        <p class="bold">Columns</p>
+        <ul class="checkbox">
+            <li><span class="bold">Name: </span>Shows the name of the  file or folder.</li>
+            <li><span class="bold">Date Created: </span>Shows the date and time the file or folder was created.</li>
+            <li><span class="bold">Date Modified:&#160;</span>Shows the date and time the file or folder was last modified.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>
+                    <p>Add an External Resources folder thats on SharePoint and verify the following basic commands work:</p>
+                    <ul class="checkbox">
+                        <li>Copy to Project</li>
+                        <li>Create Mappings and Synchronize files both ways</li>
+                    </ul>
+                </li>
+                <li>Add an External Resources folder thats on a SharePoint sub-site and verify the following basic commands work:<ul class="checkbox"><li>Copy to Project</li><li>Create Mappings and Synchronize files both ways</li></ul></li>
+            </ul>
+        </div>
+        <h4>Right-Click Menus</h4>
+        <p class="bold">Right-clicking the root folder you added in the <span class="UI">External Resources Pane</span> should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--RightClickMenu--Root.png" class="left" style="width: 191px;height: 94px;">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span>Open the selected folder in Windows</li>
+                <li><span class="bold">Copy to Project...:</span> Copy the selected folder and all files therein to your project</li>
+                <li><span class="bold">Remove External Resources Folder:</span> Removes the external resource folder from your <span class="UI">External Resources Pane</span>. Does not delete the folder from your hard drive!</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected folder</li>
+                <li><span class="bold">Refresh:</span> Refreshes the selected folder</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a folder that is not the root folder you added in the <span class="UI">External Resources Pane</span> should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--RightClickMenu--Folder.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Open Folder in Windows:</span>Open the selected folder in Windows</li>
+                <li><span class="bold">Copy to Project...:</span> Copy the selected folder and all files therein to your project</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected folder</li>
+                <li><span class="bold">Refresh:</span> Refreshes the selected folder</li>
+            </ul>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">Right-clicking a file in the <span class="UI">External Resources Pane</span> should produce the following menu:</p>
+        <p class="bold">&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/ExternalResources--RightClickMenu--File.png" class="left">
+            </img>
+        </p>
+        <div style="margin-left: 155pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Menu-Tests.flsnp">
+            </MadCap:snippetBlock>
+            <p>&#160;</p>
+            <p class="bold">Right-click menu items:</p>
+            <ul class="checkbox">
+                <li><span class="bold">Copy to Project...:</span> Copy the selected file to your project</li>
+                <li><span class="bold">Properties:</span> Opens the <span class="UI">Properties</span> dialog window for the selected file</li>
+            </ul>
+        </div>
+        <h3>Copy to Project dialog - UI&#160;Test Cases</h3>
+        <p>Right-Click a file in <span class="UI">External Resources</span> pane and click Copy to Project</p>
+        <p>Any file within a folder copied to project should be listed here (including props files):</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--CopytoProject.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Keep Folder Synchronized (create mapping):&#160;</span>Create mapping from all files in the folder to all of the external files in that external folder</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Map Files and Folders dialog</h3>
+        <p>File mapping is not limited to files in your External Resources pane. Mappings that you create to a designated external resource will remain in the project if you remove the external resource folder containing that file.</p>
+        <h4>Opening the dialog</h4>
+        <ul class="checkbox">
+            <li><span class="UI">External Resources</span>:&#160;Click Manage Mappings button <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---ManageMappings.png" /> in the local toolbar</li>
+            <li><span class="UI">Synchronize Files</span> dialog: Click "Manage Mappings…" button</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Tools | Manage Mappings</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Project |&#160;Manage Mappings</span></li>
+        </ul>
+        <h4>Map Files and Folders dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--MapFilesAndFolders.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Click to enter a new project path:&#160;</span>Invokes the <span class="UI">Select Project Path</span> dialog allowing you to choose which project file/folder you want to map</li>
+            <li><span class="bold">Click to enter a new external path:&#160;</span>Invokes the <span class="UI">Select External Path</span> dialog allowing you to choose where to map the selected file/folder mapped from your project to some external place</li>
+            <li><span class="bold">Remove:&#160;</span>Removes selected mapped path</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Select Project Path/External Path dialog - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--SelectExternalPath.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFolders.png"></img> (Show/Hide Folders):&#160;</span>Toggles between showing or hiding the folders in the <span class="UI">External Resources Pane</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---ShowFiles.png"></img> (Show/Hide Files):&#160;</span>Splits the <span class="UI">External Resources Pane</span> into two halves. The right half shows additional details for the files. When you click a file on the right side, a red circle shows the location in the <span class="UI">External Resources Pane</span>.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Hide.png"></img> (Toggle show Hidden Files/Folders):&#160;</span>Lets you hide or show files or folders that are marked as hidden in Windows Explorer.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---UpDirectory.png"></img> (Up):&#160;</span>Moves up one folder in the hierarchy in the <span class="UI">External Resources Pane</span>. This button becomes enabled if you use the Show Folders or Split View and browse into a folder.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>
+                    <p>Verify that copying a file to project invokes the <span class="UI">Select Project Path</span> dialog and that copying a folder to project invokes the <span class="UI">Select Folder</span> dialog</p>
+                </li>
+                <li>Verify that toggling the show hidden files/folders works by setting a folder on your computer to hidden and verify it does not show up when this option is toggled off.</li>
+                <li>When selecting an external path, verify that all designated External Resource folders and SharePoint Sites that you have designated for use while authoring in Flare appear at the bottom of the folder list on the left side.</li>
+            </ul>
+        </div>
+        <h3>Synchronize Files dialog</h3>
+        <ul class="checkbox">
+            <li><span class="UI">External Resources</span>:&#160;Click the Synchronize Files button <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Button---SynchronizeFiles.png" /> in the local toolbar</li>
+            <li>Tool Strip interface:&#160;<span class="MenuItem">!Tools | Synchronize Mapped Files</span></li>
+            <li>Ribbon interface:&#160;<span class="RibbonItem">!Project |&#160;Synchronize Files</span></li>
+        </ul>
+        <h4>Synchronize Files dialog - UI&#160;Test Cases</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/External Resources/Dialog--SynchronizeFiles.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li><b>Dropdown:</b>
+                <ul class="checkbox">
+                    <li><span class="bold">Synchronize Files:&#160;</span>Files in your project that were more recently modified than external files will be copied to external location. External files that were more recently modified than files in your project will be copied to your project.</li>
+                    <li><span class="bold">Import Files:</span>Export files that were more recently modified than files in your project will be copied to your project.</li>
+                    <li><span class="bold">Export Files:&#160;</span>Files in your project that were more recently modified than external files will be copied to external location.</li>
+                </ul>
+            </li>
+            <li><b>Refresh Button:</b> Refreshes the list of mapped files.</li>
+            <li><b>Equals Button:</b> Show/hide synchronized files.</li>
+            <li><b>Manage Mappings:</b> Invokes the <span class="UI">Manage Mappings</span> dialog to manage the mappings in your project.</li>
+            <li><b>Synchronize:</b> Synchronizes the selected files/folders in your project with the external file/folder (If nothing is mapped, this button should be greyed out).</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>
+                    <p>Verify that the timestamps are the same for every file/folder that is mapped for every file/folder that has the equal sign (is currently synchronized)</p>
+                    <ul class="checkbox">
+                        <li>Verify the timestamp is displayed correctly on a German machine (uses the day/month timestamp model)</li>
+                    </ul>
+                </li>
+                <li>Verify that the timestamps are different for files/folders that are not synchronized<ul class="checkbox"><li>Sync some files and folders and verify the timestamps are updated correctly</li></ul></li>
+            </ul>
+        </div>
+    </body>
+</html>

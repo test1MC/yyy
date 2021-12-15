@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1669" MadCap:lastWidth="991" MadCap:fileTags="AuthorFileTagSet.Jay,Status.Not Updated,Product.Mimic">
+    <head><title>Timeline - UI</title>
+    </head>
+    <body>
+        <h2>Timeline - UI </h2>
+        <p class="bold">Opening the Timeline pane:</p>
+        <ol>
+            <li style="font-weight: normal;"><span class="bold">!View |&#160;Timeline</span>
+            </li>
+            <li style="font-weight: normal;">Click the timeline button on the toolbar <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar.png" /></li>
+            <li style="font-weight: normal;"><span class="bold">Ctrl +&#160;T</span>
+            </li>
+        </ol>
+        <h3>UI -&#160;Test Cases</h3>
+        <p>Default location of the Timeline pane is on the bottom of the application<img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Pane.png" class="properties" /></p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h4>Local Toolbar</h4>
+        <ul>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar Properties.png" /> <![CDATA[ ]]><span class="bold">Properties: </span> View properties dialog of selected object.<ul><li>Selecting an object on the timeline and hitting <span class="bold">F4 </span>will also bring up the properties dialog of that object.</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar Toggle.png" /> <![CDATA[ ]]><span class="bold">Toggle Time spanned property: </span>Toggles on / off the Time Span property of the selected object.<ul><li>Turning off will make the object appear for the entirety of the Frame.</li><li>Turning this on will allow the user to specify the duration the object remains on screen during the Frames time span. <ul><li>Manually changing the objects duration will automatically turn this feature on.</li><li>Toggling this off and then back on, Mimic will remember the previous time span that was set.</li><li>Default state of an object is to have this turned off (i.e. an object by default will appear on the frame for the entire duration of the frame).</li></ul></li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar Adjust.png" /> <![CDATA[ ]]><span class="bold">Adjust shape time span automatically when frame time span changes: </span> Toggles on /off the automatic adjust of a shapes time span when the frames time span changes.<ul><li>Toggling this On will automatically change the time span of the object whenever the frames time span changes. Essentially keeping the ratio of the objects duration to that of the frames total time span.</li><li>Toggling this Off will maintain the shapes time span, no matter what the length of the frame is.</li><li>Default state of an object is to have this property turned off.</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar MoveLeft.png" /> <![CDATA[ ]]><span class="bold">Move item to the left: </span>Will move the selected item to the left 0.1 second on the time line. Essentially subtracting 0.1 second from the beginning and end of the objects time span.<ul><li>This will not effect (and should show as disabled)&#160;an object that has its time span property turned off</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar MoveRight.png" /> <![CDATA[ ]]><span class="bold">Move item to the right: </span>Will move the selected item to the right 0.1 second on the time line. Essentially adding 0.1 second from the beginning and end of the objects time span.<ul><li>This will not effect (and should show as disabled)&#160;an object that has its time span property turned off</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar Timespan.png" /> <![CDATA[ ]]><span class="bold">Frame Time span: </span>Sets the time span for the current frame.<ul><li>Using the arrows will increase/decrease the time span by 1.0 second in the appropriate direction.</li><li>Updating the frames time span via the frame properties should be reflected here immediately.</li><li>Updating the frames time span here should be reflected in the frame properties immediately.</li></ul></li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Toolbar MovieLength.png" /> <![CDATA[ ]]><span class="bold">Movie Length: </span>Shows the length of the entire movie.&#160;This area has no interaction capabilities.<ul><li>Updating any time for a frame should update this field immediately.</li></ul></li>
+        </ul>
+        <h3>Misc</h3>
+        <ul>
+            <li>
+                <p>Under the local toolbar will be a list of whole numbers, in seconds, depicting the length of the frame.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Data.png" />
+                </p>
+                <ul>
+                    <li>For Example: A 10 second movie will show seconds 0 through 9.</li>
+                </ul>
+            </li>
+            <li>Every object on the frame should be represented on the Timeline with an icon and name appropriate to the object type listed.</li>
+            <li>Selecting an object on the current frame will highlight that object on the timeline.</li>
+            <li>Selecting an object on the timeline will highlight that item on the current frame.</li>
+            <li>Any object that has the time span property turned on, will have the amount of time (in seconds) it will be displayed on the frame next its name.</li>
+            <li>Any object that has the time span property turned off, will display no number next to its name</li>
+            <li>
+                <p><span class="bold">Right-Clicking</span> on an object in the Timeline will bring up a 2 option menu.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Mimic/Timeline Right-Click.png" />
+                </p>
+                <ul>
+                    <li><span class="bold">Time Spanned:</span> Turns on / off the time span property of the selected object. (See above)</li>
+                    <li><span class="bold">Properties:</span> Will bring up the properties dialog of the selected object. (See above)</li>
+                </ul>
+            </li>
+            <li>An object with a condition on it, will shot that color of the condition in the toolbar. The entire object bar in the timeline will be the condition color.</li>
+        </ul>
+    </body>
+</html>

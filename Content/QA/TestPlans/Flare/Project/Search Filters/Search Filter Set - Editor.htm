@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="4078" MadCap:lastWidth="731" MadCap:conditionTagExpression="include[FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.SearchFilterSet or ProjectOrganizer--Items.SearchFilterSet] exclude[Default.UITestsEditors or ElementContextMenuItems.EditElement or ElementContextMenuItems.EditWithMadCapCapture or ElementContextMenuItems.HyperlinkPicture or ElementContextMenuItems.ImageMap or ElementContextMenuItems.Object or ElementContextMenuItems.OpenLink or ElementContextMenuItems.OpenLinkedFileWith or ElementContextMenuItems.RemoveHyperlink or ElementContextMenuItems.RemoveImageMap or ElementContextMenuItems.ResetSize or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.Skin or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet or ProjectOrganizer--Items.BatchTarget or ProjectOrganizer--Items.BrowseSequence or ProjectOrganizer--Items.ConditionTagSet or ProjectOrganizer--Items.Destination or ProjectOrganizer--Items.FileTagSet or ProjectOrganizer--Items.Glossary or ProjectOrganizer--Items.Import or ProjectOrganizer--Items.RelationshipTable or ProjectOrganizer--Items.Report or ProjectOrganizer--Items.Skin or ProjectOrganizer--Items.Synonyms or ProjectOrganizer--Items.Target or ProjectOrganizer--Items.TOC or ProjectOrganizer--Items.Variable] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Search Filter Set - Editor</h2>
+        <h3>Opening a Search Filter Set</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <ul class="checkbox">
+            <li><span class="UI">Target Editor</span> (HTML5, WebHelp, WebHelp AIR, WebHelp Plus, DotNet):&#160;In the Advanced tab of the <span class="UI">Target Editor</span>, in the Search Filters section, select a Filter File and click the "Edit"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Search Filter Set Editor - UI Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilterSetEditor.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">Local Toolbar:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilterSetEditor--LocalToolbar.png" />
+        </p>
+        <p class="bold">Button (Tooltips in Parentheses):</p>
+        <ul class="checkbox">
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---NewItem.png" style="mc-tag-and-class: ;" /><span class="bold">(New item):&#160;</span>Adds a new line to the Search Filter Set Editor using the default filter name "NewFilter."</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Cut.png" />Cut:</span> Cuts the selected filter(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Copy.png" />Copy:</span> Copies the selected filter(s) to the clipboard.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Paste.png" />(Paste):</span> Pastes the filter(s) from the clipboard.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---Delete.png" style="mc-tag-and-class: ;" /><span class="bold"> (Delete):&#160;</span>Deletes the selected filter(s)</li>
+        </ul>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p><span class="bold">Search Filter Set Editor grid: </span>Displays and lets you create and edit&#160;Auto-index Phrases.</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">Filter Name: </span>Lists the search filters as they will appear in the filter list in the output.</li>
+                    <li><span class="bold">Concepts: </span>Displays the concept(s) associated with this filter which will be used to limit the search results.</li>
+                    <li><span class="bold">Comment:&#160;</span>Allows you to add a comment about the filter.  Comments should not affect the output.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <p>For Filter Name, enter single words, multiple words, numbers, words with international characters, etc.</p>
+        </div>
+        <h4>Right-click menu</h4>
+        <p class="bold">Right-clicking a row in the Search Filter Set Editor should produce the following menu:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--GridViewEditor--RightClickMenu.flsnp" />
+        <h4>Select Concepts For Search Filter dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/UI--SelectConceptsForSearchFilter.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Selected Concepts: </span>Displays all concepts associated with the selected search filter.</li>
+            <li><span class="bold">All Concepts:&#160;</span>Displays all concepts contained in all topics throughout the project.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveRightWide.png" /> :&#160;</span>Adds the concept(s) selected in the All Concepts list to the list of Selected Concepts on the left.</li>
+            <li><span class="bold"><img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveLeftWide.png" /> :&#160;</span>Removes the concept(s) selected in the Selected list from that list.</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and applies the selected concepts to the selected search filter.</li>
+            <li><span class="bold">Cancel: </span>Closes the dialog and does not apply any changes.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Select Concepts and All Concepts lists are sortable.</li>
+                <li>Double-clicking an item in the All Concepts list adds it to the Selected Concepts list.</li>
+                <li><span class="KeyboardShortcut">Shift</span>-Click and <span class="KeyboardShortcut">CTRL</span>-Click allow for multi-selection in both lists and multi-selections can be added to and removed from the Selected Concepts list.</li>
+                <li>Create concepts with various characters, symbols and international letters and make sure all concepts used in your project appear in the All Concepts list.</li>
+                <li>Create concepts in all files that allow them (topics, snippets, etc)&#160;and make sure all concepts used in your project appear in the All Concepts list.</li>
+            </ul>
+        </div>
+        <h3>Search Filter Sets - General Editing Test Cases</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--DragDrop.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--CutCopyPaste.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--Tooltips.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/ProjectFile--ConditionalTags.flsnp" />
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p class="bold">Default Search Filter Set:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultSearchFilterSet&gt;</pre><pre>&lt;SearchFilter Name="My Subset"&gt;&lt;/SearchFilter&gt;</pre><pre>&lt;/CatapultSearchFilterSet&gt;</pre><pre>&#160;</pre>
+        <p class="bold">Search Filter Set with two filters, one with two concept associations and a comment:</p><pre>&lt;?xml version="1.0" encoding="utf-8"?&gt;</pre><pre>&lt;CatapultSearchFilterSet&gt;</pre><pre>&lt;SearchFilter</pre><pre>Name="My Subset"</pre><pre>Concepts="concept1"&gt;&lt;/SearchFilter&gt;</pre><pre>&lt;SearchFilter</pre><pre>Name="NewFilter"</pre><pre>Comment="Two concept associations"</pre><pre>Concepts="concept2;concept3" /&gt;</pre><pre>&lt;/CatapultSearchFilterSet&gt;</pre><pre>&#160;</pre><pre xml:space="preserve">  </pre>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage EnableCropRectangle="true" CropRectangle="0,0,23,23" ComputedWidth="23" ComputedHeight="23">iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAIAAABr4HqSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVEhL1ZQxboQwEEW5097JR+EISO62iNJEacgFqCP3VFR0KMWSCzhv9gcvYVexV6LY/RqNzPD9PAyIKu6qaldafEbc6+fJhajw4Y55bB82gaCkAEq9hPoHJ9aKEpy/RAnRcH3fB/QV2QxLxPM6TNNkt0Kwk3zEg/mfNg2Hm8zmNC+xNtsgckzXdRmcHHquw5Jv7uG8PA6EYo1TRZrnOdGLcC78Ehe0TZD1MAzgjseXRMzjGIpRbP8SZxZ1KAhE6jGPa9vWiM6IFURYzlhN01zjMGdehRycLyJZAkfmLh3xxSDoRTh8uLEenCczMk0NsVCPpThNWjg6IqsXKRXHccSGOfOwcujdee+1TuJybSjC0VRd12TcZInKpshlHlfyqyj0PPjf+HtXVW/vHzvGD4K8kM+TRUnyAAAAAElFTkSuQmCC</OriginalImage>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <Variables />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

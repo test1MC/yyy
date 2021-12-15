@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="6010" MadCap:lastWidth="785" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Flare,Status.Flare V7 Needs Review,Status.Flare V8 Needs Review,AuthorFileTagSet.Steve">
+    <head>
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Hyperlinks &amp; Popups - Styles</h2>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-StyleApplyChange.flsnp" />
+        <p>&#160;</p>
+        <h4>Create Style Dialog – Launched from a Hyperlink</h4>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-CreateStyle.flsnp" />
+        <p>&#160;</p>
+        <h3>Stylesheet and Hyperlink styles</h3>
+        <p class="bold" style="font-size: 16pt;">a</p>
+        <ul class="checkbox">
+            <li>Test creating a new class for a</li>
+            <li>Test copying and pasting the a node and any class nodes</li>
+            <li>Test deleting the a styles and any class nodes of a</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Default properties: None.</p>
+        <p class="bold">Assorted Relevant Properties:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>&#160;</p>
+        <ul class="checkbox">
+            <li>Boundary test each of the popup dialogs from the style editor</li>
+            <li>Symbols, Negative #s, long strings, various units of measure, Alt+ characters, large numbers, text</li>
+            <li>Verify that Media types work when applied and generated</li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--SampleHyperlink.png" class="border" />
+        </p>
+        <p>This is what a default hyperlink should look like. Should look the same in all outputs.</p>
+        <h4>Pseudo Classes</h4>
+        <ul class="checkbox">
+            <li>Test creating a new class for a also creates pseudo classes for that class</li>
+            <li>Test copying and pasting the a node or any class nodes also copies any pseudo class properties</li>
+            <li>Test deleting any class node of a also deletes any pseudo class properties</li>
+            <li>Verify that all pseudo classes that are set override the parent "a" class.</li>
+        </ul>
+        <hr />
+        <p class="bold" style="font-size: 16pt;">a:focus</p>
+        <p class="note">To test this in outputs, tab to the hyperlink after you change the following properties.</p>
+        <p class="bold">Default properties: None</p>
+        <p class="bold">Assorted Relevant Properties:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>What the hyperlink should look like if it has focus and red font (the orange box is a feature in Google Chrome):</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--FocusHyperlink.png" class="border" />
+        </p>
+        <hr />
+        <p class="bold" style="font-size: 16pt;">a:hover</p>
+        <p class="bold">Default properties: None</p>
+        <p class="bold">Assorted Relevant Properties:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp" />
+        <p>What the hyperlink should look like if it is being hovered over and has green font:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--HoverHyperlink.png" class="border" />
+        </p>
+        <hr>
+        </hr>
+        <p class="bold" style="font-size: 16pt;">a:link</p>
+        <p class="note">Applies to all non-visited links</p>
+        <p class="bold">Default properties:</p>
+        <p>color:&#160;purple</p>
+        <p>text-decoration:&#160;underline</p>
+        <p class="bold">Assorted Relevant Properties:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <hr>
+        </hr>
+        <p class="bold" style="font-size: 16pt;">a:visited</p>
+        <p class="bold">Default properties:</p>
+        <p>color:&#160;purple</p>
+        <p>text-decoration:&#160;underline</p>
+        <p class="bold">Assorted Relevant Properties:</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/StyleTables/FontProperties.flsnp">
+        </MadCap:snippetBlock>
+        <p>Default visited hyperlink:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Hyperlinks &amp; Popups/UI--VisitedHyperlink.png" class="border" />
+        </p>
+    </body>
+</html>

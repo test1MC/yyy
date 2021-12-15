@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultBatchTarget
+  Version="1"
+  Comment="New Batch Target">
+  <Targets>
+    <Target
+      Name="HTML5"
+      Type="HTML5"
+      Build="true"
+      Publish="true"
+      LastBuilt=""
+      LastPublished="7/26/2013 9:08:41 AM" />
+    <Target
+      Name="MyWebHelp"
+      Type="WebHelp"
+      LastBuilt=""
+      LastPublished="" />
+    <Target
+      Name="pdf"
+      Type="PDF"
+      LastBuilt=""
+      LastPublished="" />
+  </Targets>
+</CatapultBatchTarget>

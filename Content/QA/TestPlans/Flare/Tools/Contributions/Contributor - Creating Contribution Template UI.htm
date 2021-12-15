@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="12" MadCap:lastHeight="2189" MadCap:lastWidth="1158">
+    <head>
+    </head>
+    <body>
+        <h3>Creating Contribution content from a Flare project - UI</h3>
+        <p style="font-weight: normal;">There are 3 types of content Flare users can send to a Contributor user:&#160;Review Packages, Contributor Documents, and Contribution Templates.  This topic shows the UI for creating  Contributor Documents and Contribution Templates. </p>
+        <h4 style="font-weight: bold;">Creating a Contribution Document from Flare</h4>
+        <p> !File | Save | Save To</p>
+        <p>
+            <img src="../../../../../Resources/Images/file save to.jpg" class="properties" />
+        </p>
+        <p class="Pclear">&#160;</p>
+        <p>In the Save As dialogue, select Flare Contribution File (*.mcco) or MadCap Document File (*.mcdoc). These file formats are effectively the same and interchangeable. </p>
+        <p>
+            <img src="../../../../../Resources/Images/save to.jpg" class="properties" />
+        </p>
+        <p class="Pclear">&#160;</p>
+        <h4>Creating a&#160;Contribution Template from Flare</h4>
+        <p>!File |&#160;Save |&#160;Save As Contribution Template</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Contributions/save as contribution template.jpg" class="properties" />
+        </p>
+        <p class="Pclear">&#160;</p>
+        <p>That will open up the following wizard dialog:</p>
+        <table style="width: 607px;">
+            <col style="width: 235px;">
+            </col>
+            <col style="width: 372px;">
+            </col>
+            <tbody>
+                <tr>
+                    <td class="top">
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Contributions/create contribution template1.jpg" class="properties" style="mc-float: none;clear: none;">
+                            </img>
+                        </p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Contributions/create contribution template2.jpg" class="properties" style="mc-float: none;clear: none;">
+                            </img>
+                        </p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Contributions/create contribution template3.jpg" class="properties" style="mc-float: none;clear: none;">
+                            </img>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>&#160;</p>
+                        <p>Test the "Wizardness" of the UI. </p>
+                        <ul>
+                            <li>Go forward and back to make sure buttons do not get activated etc.</li>
+                            <li>Make selections go forward then back, make sure the selections are still there.</li>
+                        </ul>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <p style="font-weight: bold;">Wizard Page #1: Select template location...</p>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">Template Name:</span> Allows you to Name the .mccot file:</li>
+            <li><span class="bold">Select template location:</span> Allows you to select the location the .mccot file should be saved.<ul style="list-style-type: square;"><li>Names the full path the .mccot file will be stored (by default it will be: "../Documents/My Contribution Templates/").</li><li><span class="bold">Browse:</span> Allows you to browse to an alternate location</li></ul></li>
+            <li><span class="bold">&lt; Back:</span> Inactive.</li>
+            <li><span class="bold">Next &gt;:</span> Active. Proceeds to the next wizard page.         </li>
+            <li><span class="bold">Finish:</span> Active. Finishes the operation copying the files and applying all of the default settings in the wizard to the selected file.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Wizard Page #2: Select content files...</p>
+        <ul style="list-style-type: square;">
+            <li>Displays the Contents folder in the project and allows you to choose what content files and folders to save in the template.<ul style="list-style-type: square;"><li>By default, only files directly referenced from the topic should be pre-selected, but you can select more to include.</li><li>Try different selections. You should not be able to make selections that do not make sense like Files selected but the containing folder is not selected.</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">&lt; Back:</span> Active. Allows you to go back to the first page and make changes. Selections on Page #2 should be retained.</li>
+            <li><span class="bold">Next &gt;:</span> Proceeds to the next wizard page.         </li>
+            <li><span class="bold">Finish:</span> Active. Finishes the operation copying the files and applying all of the settings (default or custom from this screen or the third screen if you hit <span class="bold">&lt;Back</span>) in the wizard to the selected file.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Wizard Page #3: Select project files...</p>
+        <ul style="list-style-type: square;">
+            <li>Displays the Project folder in the project and allows you to choose what project files and folders to save in the template.<ul style="list-style-type: square;"><li>By default, all project files should be selected, but you can choose to exclude files.</li><li>Try different selections. You should not be able to make selections that do not make sense like Files selected but the containing folder is not selected.</li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li><span class="bold">&lt; Back:</span> Active. Allows you to go back to the second page and make changes. Selections on Page #3 should be retained.</li>
+            <li><span class="bold">Next &gt;:</span> Inactive.         </li>
+            <li><span class="bold">Finish:</span> Active. Finishes the operation copying the files and applying all of the settings (default or custom from this screen or the second screen) in the wizard to the selected file.</li>
+            <li><span class="bold">Cancel:</span> Active. Cancels the operation.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>After saving the template you should get a dialog confirming the save and reminding you where the file was saved.</p>
+        <ul>
+            <li>In addition the dialog asks: “Would you like to email the Contribution Template now?”<ul><li>'Yes' will  invoke an outgoing Outlook email with the newly created Contribution template file attached, then it will dismiss the dialog and the wizard</li><li>'No' will dismiss the dialog and the wizard</li></ul></li>
+        </ul>
+    </body>
+</html>

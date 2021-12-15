@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="724" MadCap:lastWidth="1060">
+    <head>
+    </head>
+    <body>
+        <h1 class="productName" style="color: #bed42f;">LICENSING</h1>
+        <p>Our licensing model allows for distribution of single or multi-user product license keys, regulated on MadCap servers by unique machine ID or concurrent active session limits. We can generate single-app or MadPak keys and offer both a non-expiring or subscription based model. We also have the ability to add/remove products from existing licenses, and blacklist licenses.</p>
+        <p>&#160;</p>
+        <p class="bold"> Product Dependencies:</p>
+        <ul>
+            <li>Port: 443</li>
+            <li>(Old? See below) Location: https://activation.madcapsoftware.com/Service.ProductActivation/ActivationService.asmx</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Proxy Server Information <span style="font-weight: normal;">-&#160;URLS that Flare uses (provided by Adam Ashraf on 10/10/2014)</span></p>
+        <ul>
+            <li style="font-weight: normal;">Activation<ul><li>activation.madcapsoftware.com</li><li>activation.madcapsoftware.com:443/Service.ProductActivation/ActivationService.asmx</li><li>activation.madcapsoftware.com:443/Service.ProductLicensing/LicensingService.asmx WSDL</li></ul></li>
+            <li style="font-weight: normal;">Registration<ul><li>Register.madcapsoftware.com:443/Service.RegisterProduct/service.asmx</li></ul></li>
+            <li style="font-weight: normal;">Exception<ul><li>Exceptions.madcapsoftware.com:443/Service.ExceptionLog/ExceptionLogService.svc</li><li>Exceptions.madcapsoftware.com:443/Service.ProductException/ProductExceptionService.asmx</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Test Plans</p>
+        <ul>
+            <li><a href="Licensing - Testing Checklist.htm">Licensing - Testing Checklist</a>
+            </li>
+            <li><a href="Licensing - Baseline.htm">Licensing - Baseline</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources:</p>
+        <ul>
+            <li>none</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">To Do:</p>
+        <ul>
+            <li>
+                <p>Finish updating the testing checklist</p>
+            </li>
+            <li>update baseline</li>
+            <li>get a script to generate a list of keys we need for testing instead of making keys one at a time by request?</li>
+            <li>all products have 30 day activation keys for release, 40-45 for beta</li>
+            <li>need to add check for all dialogs to make sure they are accurate pre-expire, post-expire, and the buy now links are to the proper SKU</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><iframe src="file://winesap/RnDIntranet/Subsystems/TestPlans/Content/QA/TestPlans/Help Viewer/HelpViewerModuleList.htm" width="100%" height="1300px" frameborder="0" scrolling="auto"><p>Your browser does not support iframes.</p></iframe>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay Profile="C:\Documents and Settings\mferguson\My Documents\My Profiles\MyProfile.capro" ProfileHash="873550087e216a3acbda89b7e35a5471" ScreenRectangle="0,0,14,18">
+        <OriginalImage Folder="C:\Documents and Settings\mferguson\Desktop\Bar" Right="0" Bottom="0" BorderWidth="0" FileName="OutputFileName{n}" EnableShadow="false" ComputedWidth="14" ComputedHeight="18" Format="tiff" EnableCropRectangle="false">SUkqAEgCAACAP+BP8AQWDQeEQmFQuGQqBwSDHKJABZvZHQ2MRmDttMQWHxI5AAdEslgADAUCgAEAYDAAFAgES6YTKYgsEgmXAcDyqZgiUABXL9fgAqkQiACHlGlAAA00ANMLK6NVOEv9/QVuJqPQMn10ACywAByBNCgB7PuqRgFSkAMJrwVvputwIm3Wv2FtA9DgB1vCCvN8QV9v2EgQBwUGy0AT8ABEGwVltqCuJPXN/ySS2AWABsA5EgBxOuCpc01NEKyCuy/AAJhDIZIAOZQ5YkbW75trA1GABzu+ChkIwV8vyChMGQU1EqCq5jwVjW8ABbXABmtiCulT5YjdsACrvABpAtIAB3vWtwV6vmCi8RQUyUcAJxdQVtOeChTjgBoNmCu7UKQgYhwEAAVwKABngQSQAHceyCn04gAA06Y2iagptnKgpLFwgoHAUgoJQ8/Rtr+V7LCBE7uu+ZYDEtBcGgAerAgARoxoSNRKuKB6CqcAEQIKaRuuEWbLB7IsUhUABkAQTLyHmgp8H0gp1ychAKselTFIOx0ftgf5bssHMwyOABiAMToAHgeSCnk9QAFiPaCnMdyCjSS8OJ2hAIAc+hurQf5dJSh4a0HAkDGCApQTRNQATY0bSgAeMqDwUk7oTPSCnAbx6KQXrjoeGNQAAFtRgAYACFE8lFwgAB8MGhCfMOAiFAjPYAHGbR2KQYgKQAgQR1+AEwhyABigTSh8RktKFpmABwGaaqkGcFden+DFrIQdIJlNZVuI8aohWpbtxI0gIAAQAP4ABAABAAAAAAAAAAABBAABAAAADgAAAAEBBAABAAAAEgAAAAIBAwAEAAAADgMAAAMBAwABAAAABQAAAAYBAwABAAAAAgAAABEBBAABAAAACAAAABUBAwABAAAABAAAABYBBAABAAAAEgAAABcBBAABAAAAPwIAABoBBQABAAAAFgMAABsBBQABAAAAHgMAABwBAwABAAAAAQAAACgBAwABAAAAAgAAAD0BAwABAAAAAgAAAFIBAwABAAAAAgAAAAAAAAAIAAgACAAIAAB3AQDoAwAAAHcBAOgDAAA=</OriginalImage>
+        <ConditionTagSet>
+            <ConditionTag Name="MyProfileCondition" BackgroundColor="LightBlue" Comment="" />
+        </ConditionTagSet>
+        <Variables>
+            <Variable Name="how" Comment="">tree</Variable>
+        </Variables>
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+    </ImageOverlay>
+</fileProperties>

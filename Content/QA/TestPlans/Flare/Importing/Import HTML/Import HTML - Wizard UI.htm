@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="6594" MadCap:lastWidth="1316" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica">
+    <head>
+    </head>
+    <body>
+        <h2>Import HTML - Wizard UI (in process of being updated)</h2>
+        <h3>Importing HTML&#160;Documents into an existing project</h3>
+        <p>To import HTML&#160;files into an existing project, launch the <span class="UI">Import HTML&#160;Files Wizard</span> by:</p>
+        <ul class="checkbox">
+            <li>Tool Strip interface: <span class="MenuItem">!Project | Import HTML Files...</span></li>
+            <li>Ribbon interface: <span class="RibbonItem">!Project&#160;|&#160;Import | HTML&#160;Files</span></li>
+        </ul>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>Import HTML&#160;Files&#160;Wizard - Dialog 1a (Scenario 1):&#160;Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard1a--ImportOptions.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Project Name: </span>Lets you enter a name for the project that will be created from the imported documents.</li>
+            <li><span class="bold">Project Folder: </span>Lets you set the location of the project <ul class="checkbox"><li><span class="bold">Browse: </span>Invokes the <span class="UI">Browse For Folder</span> dialog to select the folder where project will be saved</li></ul></li>
+            <li><span class="bold">Output Type: </span> Lets you select the output type for the primary target for the new project</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import HTML Files Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the HTML Files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import HTML&#160;Files&#160;Wizard - Dialog 1b (Scenario 2):&#160;Import Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard1b--ImportOptions.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Import into a new project: </span>This variation of the <ul class="checkbox"><li><span class="bold">Project Name: </span>Lets you enter a name for the project that will be created from the imported documents.</li><li><span class="bold">Project Folder: </span>Lets you set the location of the project </li><li><span class="bold">Output Type:  </span>Lets you select the primary target for the project</li></ul></li>
+            <li><span class="bold">Import into this project</span>
+                <ul class="checkbox">
+                    <li><span class="bold">Project File: </span> Uneditable field that displays the file location of the current project that is opened in Flare</li>
+                </ul>
+            </li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import HTML Files Wizard</span>.</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the HTML Files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import HTML&#160;Files&#160;Wizard dialog 2:&#160;Select HTML&#160;files to import…</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard1--SelectHTMLFiles.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Selected HTML&#160;documents</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">HTML&#160;Files:&#160;</span>Displays each *.htm, *.html and *.xhtml file added to the import</li>
+                    <li><span class="bold">Status: </span>??? (There is a bug entered to remove this column)</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Open Selected:&#160;</span>Opens the selected file in the default application. Also opens selected folder via Windows Explorer. Button will gray out with a multi-selection.</li>
+            <li><span class="bold">Preview Conversion:&#160;</span>Opens the <span class="UI">HTML-&gt; XHTML Conversion</span> dialog. Button will gray out when mapped folder is selected.</li>
+            <li><span class="bold">Remove:&#160;</span>This removes the selected document(s) from the list.</li>
+            <li><span class="bold">Add Folder </span>Produces the <span class="UI">Open</span> dialog which lets you browse for a folder that includes *.htm, *.html or *.xhtml files to add to the import.</li>
+            <li><span class="bold">Add Files </span>Produces the <span class="UI">Open</span> dialog which lets you browse for *.htm, *.html or *.xhtml files to add to the import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the HTML files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import HTML&#160;Files&#160;Wizard dialog 3:&#160;Select HTML&#160;files to import…</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard1--SelectHTMLFiles.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Selected Microsoft Word&#160;documents</p>
+                <p class="bold">Columns</p>
+                <ul style="list-style-type: square;">
+                    <li><span class="bold">HTML&#160;Files:&#160;</span>Displays each *.htm, *.html and *.xhtml file added to the import</li>
+                    <li><span class="bold">Status: </span>??? (There is a bug entered to remove this column)</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+            <li><span class="bold">Open Selected:&#160;</span>Opens the selected file in the default application. Also opens selected folder via Windows Explorer. Button will gray out with a multi-selection.</li>
+            <li><span class="bold">Preview Conversion:&#160;</span>Opens the <span class="UI">HTML-&gt; XHTML Conversion</span> dialog. Button will gray out when mapped folder is selected.</li>
+            <li><span class="bold">Remove:&#160;</span>This removes the selected document(s) from the list.</li>
+            <li><span class="bold">Add Folder </span>Produces the <span class="UI">Open</span> dialog which lets you browse for a folder that includes *.htm, *.html or *.xhtml files to add to the import.</li>
+            <li><span class="bold">Add Files </span>Produces the <span class="UI">Open</span> dialog which lets you browse for *.htm, *.html or *.xhtml files to add to the import.</li>
+            <li><span class="bold">Back: </span>Returns to the previous dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should be grayed out at this point)</li>
+            <li><span class="bold">Next: </span>Proceeds to the next dialog in the <span class="UI">Import HTML Files Wizard</span>. (Should produce a warning if you try to proceed without adding any files)</li>
+            <li><span class="bold">Finish:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span>, invokes the <span class="UI">Import Progress</span> dialog and proceeds to import the HTML files. (Should be grayed out at this point)</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the <span class="UI">Import HTML Files Wizard</span> and does not import anything.</li>
+        </ul>
+        <h4>Import Microsoft Word&#160;Wizard dialog 1(a):&#160;HTML-&gt; XHTML&#160;Conversion</h4>
+        <p>
+            <img src="../../../../../Resources/Images/HTMLImportPreviewConversion1a.PNG" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Show Source Code: </span>If this option is toggled on, the <span class="UI">HTML-&gt; XHTML&#160;Conversion</span> dialog will display the original file and the (to be)&#160;converted file in code view. If this option is toggled off, the topics will display in WYSIWYG&#160;view.</li>
+            <li><span class="bold">Cancel:&#160;</span>Cancels the conversion operation and closes the dialog.</li>
+        </ul>
+        <h4>Import HTML Files&#160;Wizard dialog 2:&#160;Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard2--Options.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">Topics: </span>Displays the folder in Content Explorer where the imported files will be stored.<ul style="list-style-type: square;"><li><span class="bold">Import to project content folder:&#160;</span>Select this option if you want to store the files at the root level of the Content Explorer</li><li><span class="bold">Import to folder:&#160;</span>Select this option if you want to store the files in a specific folder  (NOT&#160;AVAILABLE&#160;FOR&#160;SCENARIO&#160;1...into a new project)</li><li><span class="bold">Browse: </span>Opens the <span class="UI">Select Folder</span> dialog which lets you browse for (or create) a target folder to which all linked resources for all imported HTML&#160;files will be placed upon import. (NOT&#160;AVAILABLE&#160;FOR&#160;SCENARIO&#160;1...into a new project)</li><li><span class="bold">Import linked HTML&#160;files:&#160;</span>This option will bring in any linked htm files that may or may not be in the same folder as mapped files/files in mapped folders.</li></ul></li>
+            <li><span class="bold">Import Resources:&#160;</span>Enable this option to automatically import any "resource" files (linked files)&#160;along with all imported HTML&#160;files.<ul style="list-style-type: square;"><li><span class="bold">Keep existing structure:&#160;</span>Select this option to import resources in such a way as to maintain the existing structure of all links in the imported HTML&#160;file(s).</li><li><span class="bold">To project resources folder:&#160;</span>Select this option to import resource files into the Flare or Blaze project's "Resources"&#160;folder</li><li><span class="bold">To folder: </span>Select this option to import resource files into a specific folder in the Flare or Blaze project. (NOT&#160;AVAILABLE&#160;FOR&#160;SCENARIO&#160;1...into a new project)<ul style="list-style-type: square;"><li><span class="bold">(the specific folder): </span>Displays the folder to which all resources for imported HTML&#160;files will be placed upon import. (NOT&#160;AVAILABLE&#160;FOR&#160;SCENARIO&#160;1...into a new project)</li><li><span class="bold">Browse: </span>Opens the <span class="UI">Select Folder</span> dialog which lets you browse for (or create) a target folder to which all linked resources for all imported HTML&#160;files will be placed upon import. (NOT&#160;AVAILABLE&#160;FOR&#160;SCENARIO&#160;1...into a new project)</li></ul></li></ul></li>
+        </ul>
+        <hr />
+        <p class="bold">Test Cases</p>
+        <ul class="checkbox">
+            <li>Test importing linked resources of all types. </li>
+            <li>Test importing linked resources from various locations relative to the imported HTML&#160;file (test links that go backward and forward several directories)</li>
+            <li>Confirm that when "To project resources folder:"&#160;is the selected option that all linked resources (images, snippets, stylesheets, media) are imported to the proper folder.</li>
+            <li>Test importing multiple documents linked to the same resource files. Verify we do not create duplicate resources upon import. Verify links in all imported HTML&#160;files are updated correctly.</li>
+        </ul>
+        <h4>Import HTML Files&#160;Wizard dialog 2(a):&#160;Select Folder dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Import HTML/ImportHTMLWizard2a--SelectTargetFolder.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr />
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li><span class="bold">(Content Tree): </span>Displays a tree view of your Content folder. Click on the folder you want to use for imported HTML&#160;files or their linked resources.</li>
+            <li><span class="bold">Make New Folder: </span>Creates a new folder inside the currently selected folder.</li>
+            <li><span class="bold">OK:&#160;</span>Closes the dialog and sets the selected folder as the Target Folder for imported HTML&#160;files or their linked resources.</li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog and does not set any Target Folder.</li>
+        </ul>
+        <h4>Import Progress</h4>
+        <p> During import as well as reimport, before the import complete, Flare will display the <span class="UI">Import Progress</span> dialog if files associated with the mapped files fail to import, i.e., missing resources.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/ImportProgressHTMLImport.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Generated documents grid</p>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">File:&#160;</span>Displays each new Flare file that will be created as a result of the import.</li>
+                    <li><span class="bold">Type: </span>Displays the file extension of each file.</li>
+                    <li><span class="bold">Folder:</span> Displays the location where the file will exist in the Flare project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Save Log:</span> &#160;Option to save the import progress log to the Project Reports folder</li>
+            <li><span class="bold">Close:&#160;</span>Closes the dialog, then the <span class="UI">Accept Imported Documents</span> appears (There is a Next version bug to have this say "Continue")</li>
+        </ul>
+        <h4>Accept Imported Documents</h4>
+        <p> During import as well as reimport, before the import complete, Flare will display the <span class="UI">Accept Import Documents</span> dialog providing the user with a preview of the files that will be added to the project with the import.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/Dialog-AcceptImportedDocuments_HTML_Import.PNG" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <p class="bold">Generated documents grid</p>
+                <p class="bold">Columns</p>
+                <ul class="checkbox">
+                    <li><span class="bold">File:&#160;</span>Displays each new Flare file that will be created as a result of the import.</li>
+                    <li><span class="bold">Type: </span>Displays the file extension of each file.</li>
+                    <li><span class="bold">Folder:</span> Displays the location where the file will exist in the Flare project.</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp">
+                </MadCap:snippetBlock>
+            </li>
+            <li><span class="bold">Show Source Code:&#160;</span>Displays a source code preview (if available) of the file selected.</li>
+            <li><span class="bold">Accept: </span>Closes the dialog and returns focus to the <span class="UI">HTML&#160;Import Files Wizard</span>. <ul class="checkbox"><li>The imported files are now present in the existing project.</li></ul></li>
+            <li><span class="bold">Cancel:&#160;</span>Closes the dialog, does not complete the import and returns focus to the <span class="UI">HTML&#160;Import Files Wizard</span></li>
+            <li><span class="bold">Converted (tab):&#160;</span>Displays a HTML or Source code preview (if available) of the imported version of the file selected.</li>
+            <li><span class="bold">Original (tab):&#160;</span>Displays a HTML or Source code preview (if available) of the source version of the file selected.</li>
+        </ul>
+    </body>
+</html>
